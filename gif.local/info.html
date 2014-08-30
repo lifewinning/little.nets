@@ -1,0 +1,37 @@
+<head>
+    <meta name="viewport" content="width=device-width, user-scalable=yes">
+    <script type="text/javascript" src="jquery-2.1.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+	<h1><a href="index.html">gif.local</a></h1>
+	<div class="bg">&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;</div>
+    
+    <div class="body-copy">
+        <p>Although the gif format is 26 years old, there has been a renaissance in the past several years within the format. What once was used in the realm of under-construction notifications and loading animations has transformed into a bona-fide art form.</p>
+
+        <p>My goal for this exhibit is to explore the different approaches that artists take towards making gifs, and to showcase the diversity within the medium. The unifying characteristic of these pieces is the loop, short repeating animations that draw the viewer into the piece. Although every gif in this exhibit has a "run-time" of under 10 seconds, I've spent minutes watching each of them. The repetition becomes hypnotic, and with each loop we discover a new detail of the animation.</p>
+
+        <p>The idea behind gif.local was to build a setting where gif art could be properly displayed and appreciated. By distributing the gallery "display" onto visitors' devices, we hope to create a space where viewers can have the time and personal space to consider each piece of art. So take some time, wander through these gifs, and see how far the gif medium has come.</p>
+
+        <p class="right">— Rachel Binx</p>
+    </div>
+
+    <div class="bg">&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;</div>
+
+    <div class="footer info">
+        <a class="button" href="list.html">list of artists</a>
+        <a href="artist.html" class="button artist-button">rand(artwork)</a>
+    </div>
+
+    <script>
+
+        $(".artist-button").attr("href","artist.html#artists/"+
+            (Math.floor(Math.random()*20))
+        );
+
+        var w = $(".footer").width();
+        $(".footer").css("width",w).css("display","block");
+		
+    </script>
+</body>

@@ -1,0 +1,12 @@
+/* Webfont: BertholdAkzidenzGroteskBE-Med */@font-face {
+    font-family: 'BertholdAkzidenzGroteskBEMd';
+    src: url('BertholdAkzidenzGroteskBE-Med1.eot'); /* IE9 Compat Modes */
+    src: url('BertholdAkzidenzGroteskBE-Med1.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('BertholdAkzidenzGroteskBE-Med1.woff') format('woff'), /* Modern Browsers */
+         url('BertholdAkzidenzGroteskBE-Med1.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('BertholdAkzidenzGroteskBE-Med1.svg#BertholdAkzidenzGroteskBE-Med') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}
+

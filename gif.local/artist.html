@@ -1,0 +1,100 @@
+<head>
+	<meta name="viewport" content="width=device-width, user-scalable=yes">
+    <script type="text/javascript" src="jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="hashable.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- {
+		"name":"",
+		"title":"",
+		"date":"",
+		"file":"",
+		"ratio":1
+	}, -->
+</head>
+<body>
+	<h1><a href="index.html">gif.local</a></h1>
+	<div class="nav">
+		<div class="button prev">prev</div>
+		<div class="button randomize">randomize</div>
+		<div class="button next">next</div>
+	</div>
+	<div class="bg">&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;</div>
+	<div class="artwork">
+		<div class="img"></div>
+		<div class="title"></div>
+		<div class="name"></div>
+		<div class="extra"></div>
+		<div class="date"></div>
+	</div>
+	<div class="bg">&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;</div>
+	<div class="footer">
+		<a class="button" href="list.html">list of artists</a>
+		<a href="info.html" class="button">more info</a>
+	</div>
+    <script>
+    	var artistJSON,
+			artist = 0,
+			loaded = false;
+
+    	var hash = hashable.hash()
+			.format("artists/{artistNum}")
+			.change(function(e) {
+				artist = e.data.artistNum;
+				if (loaded)
+					updateArtist(artist);
+			})
+			.enable()
+			.check();
+
+		$.ajax({
+			url: "artists.json"
+		}).done(function(artists) {
+		  	artistJSON = artists;
+    		loaded = true;
+
+    		$(".prev").click(function(){
+	    		if (artist > 0) artist--;
+	    		else artist = artists.length-1;
+
+	    		hash.set({artistNum: artist});
+	    	});
+	    	$(".next").click(function(){
+	    		if (artist < artists.length-1) artist++;
+	    		else artist = 0;
+
+	    		hash.set({artistNum: artist});
+	    	});
+
+    		$(".randomize").click(function(){
+	    		artist = Math.floor(Math.random()*artists.length);
+	    		hash.set({artistNum: artist});
+	    	});
+
+	    	if (hash.data().artistNum) updateArtist(hash.data().artistNum);
+	    	else updateArtist(0);
+		});
+
+        var pageW = $(".img").width();
+
+        var footerW = $(".footer").width();
+        $(".footer").css("width",footerW).css("display","block");
+
+        var navW = $(".nav").width();
+        $(".nav").css("width",navW).css("display","block");
+
+    	function updateArtist(num) {
+    		var art = artistJSON[num];
+
+    		var artwork = $(".artwork");
+
+    		artwork.find(".img")
+                .css("background-image","url(img/"+art.file+")")
+    			.css("height",(pageW/art.ratio)+"px");
+    		artwork.find(".title").text(art.title);
+    		artwork.find(".name").text(art.name);
+    		artwork.find(".date").text(art.date);
+
+    		artwork.find(".extra").html(art.extra ? art.extra : "");
+    	}
+    </script>
+</body>

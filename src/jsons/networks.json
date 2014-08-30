@@ -1,0 +1,20 @@
+[
+	{
+		"name" : "Commotion Wireless",
+		"author" : "The Open Technology Institute", 
+		"desc": "Commotion is a free, open-source communication tool that uses mobile phones, computers, and other wireless devices to create decentralized mesh networks. Commotion provides a way for you to share your Internet connection with the people around you, but it is not a replacement for your Internet connection.",
+		"connect": "Go to the available wireless network 'commotion'&mdash;you have already done that if you are reading this."
+	},
+	{
+		"name" : "90.1 House FM",
+		"author" : "Sarah Grant and Hellyn Teng", 
+		"desc": "90.1 House FM is a local area mesh networked soundscape broadcasting over a low FM frequency. The network consists of a handful of Raspberry Pis, distributed throughout the house, tucked away in discrete corners. Each computer has a unique voice that it broadcasts over local airwaves. Walking from room to room, the audible signal from each Raspberry Pi will fade in and out as you move towards and away from each station. Put on one of the provided wireless FM headphones and tune into an aural sensory experience on 90.1 House FM.",
+		"connect": "Use the headphones available inside the house."
+	},
+	{
+		"name" : "occupy.here",
+		"author" : "Dan Phiffer", 
+		"desc": "Occupy.here is a project designed to be replicated: purchase a supported wifi router, download the software, and follow the DIY guide to create a new open wifi network, OCCUPY.HERE. After logging on, you are redirected to http://occupy.here, a “captive portal” website offering a space to anonymously share messages and files with only those people close enough to connect to the wifi network.",
+		"connect": "Go to the available wireless network OCCUPY.HERE."
+	}
+]

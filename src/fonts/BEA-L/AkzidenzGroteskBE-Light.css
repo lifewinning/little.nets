@@ -1,0 +1,12 @@
+/* Webfont: AkzidenzGroteskBE-Light */@font-face {
+    font-family: 'BertholdAkzidenzGroteskBELt';
+    src: url('AkzidenzGroteskBE-Light.eot'); /* IE9 Compat Modes */
+    src: url('AkzidenzGroteskBE-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('AkzidenzGroteskBE-Light.woff') format('woff'), /* Modern Browsers */
+         url('AkzidenzGroteskBE-Light.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('AkzidenzGroteskBE-Light.svg#AkzidenzGroteskBE-Light') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

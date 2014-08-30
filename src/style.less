@@ -1,0 +1,60 @@
+/*colors*/
+@green: #008C8E;
+@yellow: #DD8300;
+
+/*font*/
+@font-face {
+    font-family: 'BertholdAkzidenzGroteskBEMd';
+    src: url('/src/fonts/BEA-M/BertholdAkzidenzGroteskBE-Med1.eot'); /* IE9 Compat Modes */
+    src: url('/src/fonts/BEA-M/BertholdAkzidenzGroteskBE-Med1.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('/src/fonts/BEA-M/BertholdAkzidenzGroteskBE-Med1.woff') format('woff'), /* Modern Browsers */
+         url('/src/fonts/BEA-M/BertholdAkzidenzGroteskBE-Med1.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('/src/fonts/BEA-M/BertholdAkzidenzGroteskBE-Med1.svg#BEA-M-Med') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}
+@font-face {
+    font-family: 'BertholdAkzidenzGroteskBELt';
+    src: url('/src/fonts/BEA-L/AkzidenzGroteskBE-Light.eot'); /* IE9 Compat Modes */
+    src: url('/src/fonts/BEA-L/AkzidenzGroteskBE-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('/src/fonts/BEA-L/AkzidenzGroteskBE-Light.woff') format('woff'), /* Modern Browsers */
+         url('/src/fonts/BEA-L/AkzidenzGroteskBE-Light.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('/src/fonts/BEA-L/AkzidenzGroteskBE-Light.svg#BEA-L/AkzidenzGroteskBE-Light') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+body h1, h2, h3, h4, h5{
+	font-family: "BertholdAkzidenzGroteskBEMd", serif;
+	color: @yellow;
+}
+body p{
+	font-family: "BertholdAkzidenzGroteskBELt", serif;
+}
+.jumbotron{
+    text-align: center;
+    background-color: white!important;
+}
+// hacky
+.pad{
+	padding: 5%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+// color classes omg
+.green-light{
+	background-color: lighten(@green, 5%)!important;
+    h1, h2, h3, h4, h5, p{color: white;}
+}
+.yellow-light{
+	background-color: lighten(@yellow, 30%);
+	h1, h2, h3, h4, h5{color: @green;}
+}
+.gray{
+    background-color: #eee;
+    h1,h2,h3,h4,h5{color:@green;}
+    p{color:black;}
+}
