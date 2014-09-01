@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=US-ASCII">
+<title>The Temple Operating System</title>
+<meta name="keywords" content="Operating System,64-Bit,64 Bit,Temple,OS,TempleOS,Free,Open Source,Public Domain,x86_64">
+<meta name="generator" content="TempleOS V2.12">
+<style type="text/css">
+.cF0{color:#000000;background-color:#fcfcfc;}
+.cF1{color:#0000a8;background-color:#fcfcfc;}
+.cF2{color:#00a800;background-color:#fcfcfc;}
+.cF3{color:#00a8a8;background-color:#fcfcfc;}
+.cF4{color:#a80000;background-color:#fcfcfc;}
+.cF5{color:#a800a8;background-color:#fcfcfc;}
+.cF6{color:#a85400;background-color:#fcfcfc;}
+.cF7{color:#a8a8a8;background-color:#fcfcfc;}
+.cF8{color:#545454;background-color:#fcfcfc;}
+.cF9{color:#5454fc;background-color:#fcfcfc;}
+.cFA{color:#54fc54;background-color:#fcfcfc;}
+.cFB{color:#54fcfc;background-color:#fcfcfc;}
+.cFC{color:#fc5454;background-color:#fcfcfc;}
+.cFD{color:#fc54fc;background-color:#fcfcfc;}
+.cFE{color:#fcfc54;background-color:#fcfcfc;}
+.cFF{color:#fcfcfc;background-color:#fcfcfc;}
+</style>
+</head>
+<body>
+<pre style="font-family:courier;font-size:10pt">
+<a name="l1"></a></blink><span class=cF5>                             Command Line Overview</span><span class=cF0>
+<a name="l2"></a>
+<a name="l3"></a>The cmd line feeds into the </span><a href="HolyC.html#l1"></blink><span class=cF4>HolyC</span></a></blink><span class=cF0> compiler as you type.  A statement outside a 
+<a name="l4"></a>function executes immediately.  Remember to add a semicolon.
+<a name="l5"></a>
+<a name="l6"></a>Look-up the function headers with </span><span class=cF2>AutoComplete</span><span class=cF0> by hitting </span><span class=cF2>&lt;CTRL-SHIFT-F1&gt;</span><span class=cF0> after 
+<a name="l7"></a>typing the first few letters.
+<a name="l8"></a></span><span class=cF4>
+<a name="l9"></a></span><a href="../Kernel/Dsk/Dsk1b.html#l234"></blink><span class=cF4>Click Here</span></a></blink><span class=cF0> to see the directory cmd header.  It accepts default args from C++.
+<a name="l10"></a>
+<a name="l11"></a>&gt;</span><span class=cF2>Dir(&quot;*.TXT.Z&quot;);</span><span class=cF0>
+<a name="l12"></a>
+<a name="l13"></a>If you don't have args, you don't need parenthesis.
+<a name="l14"></a>
+<a name="l15"></a>&gt;</span><span class=cF2>Dir;</span><span class=cF0>
+<a name="l16"></a>
+<a name="l17"></a>Directories are referenced with </span><span class=cF2>/</span><span class=cF0> not </span><span class=cF2>\</span><span class=cF0>.  There is a current directory, but not 
+<a name="l18"></a>a path.  To run a program, you typically </span><span class=cF2>#include </span><span class=cF0>it.  There are several 
+<a name="l19"></a>shortcuts for </span><span class=cF2>#include</span><span class=cF0>ing files.  Right-click or hit </span><span class=cF2>&lt;ENTER&gt;</span><span class=cF0> on a directory 
+<a name="l20"></a>listing or press </span><span class=cF2>&lt;F5&gt;</span><span class=cF0> while editing.
+<a name="l21"></a>
+<a name="l22"></a>&gt;</span><span class=cF2>Ed(&quot;NewFile.CPP.Z&quot;);</span><span class=cF0>   Invokes the editor. See </span><a href="../Adam/DolDoc/Doc.html#l32"></blink><span class=cF4>Doc Link Type</span></a></blink><span class=cF0>.
+<a name="l23"></a>
+<a name="l24"></a>Most filenames end in </span><span class=cF2>.Z</span><span class=cF0> because they are stored compressed.
+<a name="l25"></a>
+<a name="l26"></a>Drives are specified with a letter.  The boot drive is specified with a '</span><span class=cF2>:</span><span class=cF0>'.
+<a name="l27"></a>
+<a name="l28"></a>&gt;</span><span class=cF2>Drv('B');</span><span class=cF0>      B drive
+<a name="l29"></a>
+<a name="l30"></a>The drive can be specified in a </span><a href="../Kernel/Dsk/Dsk1b.html#l37"></blink><span class=cF4>Cd</span></a></blink><span class=cF0>() command as in:
+<a name="l31"></a>
+<a name="l32"></a>&gt;</span><span class=cF2>Cd(&quot;B:/Temp&quot;);</span><span class=cF0> B drive
+<a name="l33"></a>&gt;</span><span class=cF2>Cd(&quot;::/Demo&quot;);</span><span class=cF0> Boot drive
+<a name="l34"></a>
+<a name="l35"></a>&gt;</span><span class=cF2>Cd(&quot;HOME/Psalmody&quot;);</span><span class=cF0>   HOME is your </span><a href="GuideLines.html#l33"></blink><span class=cF4>acct dir</span></a></blink><span class=cF0>.
+<a name="l36"></a>
+<a name="l37"></a>If a file is not found, </span><span class=cF2>.Z</span><span class=cF0> is added or removed and a search is done, again.  If 
+<a name="l38"></a>a file is still not found, all parent directories are searched.
+<a name="l39"></a>
+<a name="l40"></a>You can place macros in your </span><a href="http://www.templeos.org/Wb/Accts/TS/TAD/PersonalMenu.html#l1"></blink><span class=cF4>PersonalMenu</span></a></blink><span class=cF0> for </span><a href="../Kernel/Dsk/Dsk1b.html#l37"></blink><span class=cF4>Cd</span></a></blink><span class=cF0>() commands.  </span><span class=cF2>&lt;CTRL-m&gt;</span><span class=cF0> to access 
+<a name="l41"></a>your menu.
+<a name="l42"></a>
+<a name="l43"></a>&gt;</span><span class=cF2>Grep(&quot;needle&quot;,&quot;/Demo/*.CPP.Z;*.TXT.Z;&quot;);</span><span class=cF0> See </span><a href="FileUtils.html#l1"></blink><span class=cF4>File Utils</span></a></blink><span class=cF0>.
+<a name="l44"></a></span><span class=cF4>
+<a name="l45"></a>Cmd Line Routines</span><span class=cF0>
+<a name="l46"></a></span><span class=cF9>
+<a name="l47"></a>Take Tour</span><span class=cF0>
+</span></pre></body>
+</html>
+<!-- text below generated by server. PLEASE REMOVE --><!-- Counter/Statistics data collection code --><script language="JavaScript" src="http://l.yimg.com/d/lib/smb/js/hosting/cp/js_source/whv2_001.js"></script><script language="javascript">geovisit();</script><noscript><img src="http://visit.webhosting.yahoo.com/visit.gif?us1409528688" alt="setstats" border="0" width="1" height="1"></noscript><script type="text/javascript" src="https://s.yimg.com/mi/vs4/ywa.js"></script><script type="text/javascript">try {var YWAGTracker = YWA.getTracker("10001849413879", "VSCALE4");YWAGTracker.setDocumentName("WPAGE");YWAGTracker.setDocumentGroup("YSBW");YWAGTracker.setCF(7, "templeos.org");YWAGTracker.setCF(8, "w42");YWAGTracker.submit();} catch (eYWATCUnavailable) {}</script><script type="text/javascript">(function (d, w) {var x = d.getElementsByTagName('SCRIPT')[0];var f = function () {var s = d.createElement('SCRIPT');s.type = 'text/javascript';s.async = true;s.src = "//np.lexity.com/embed/YW/eff965aab4535cd38b91f0976c617496?id=9382d670eca2";x.parentNode.insertBefore(s, x);};w.attachEvent ? w.attachEvent('onload',f) :w.addEventListener('load',f,false);}(document, window));</script>

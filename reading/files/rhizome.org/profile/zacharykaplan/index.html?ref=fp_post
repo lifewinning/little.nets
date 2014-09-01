@@ -1,0 +1,636 @@
+
+
+
+<!doctype html>
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="Content-Language" content="en-us">
+        <title>Rhizome | 
+
+
+Zachary Kaplan
+
+</title>                
+        <meta name="google-site-verification" content="AZfoqybynDh_0mjEBG_XwMZeCwiSE-GZ8BiQB5FZzDU" />        
+        <meta name="ROBOTS" content="ALL" />
+        <meta name="description" content="Rhizome is dedicated to the creation, presentation, preservation, and critique of emerging artistic practices that engage technology." />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <!-- Set viewport so we can have mobile styles -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+
+        <link rel="shortcut icon" href="/static/images/favicons/leyva.gif" />
+
+        <!-- google fonts -->
+        <link href='//fonts.googleapis.com/css?family=Titillium+Web:400,200,300' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Anaheim' rel='stylesheet' type='text/css'>
+
+        
+            <!--GLOBAL CSS-->
+            <link type="text/css" rel="stylesheet" href="/static/css/blueprint/screen.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/base.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/comments.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/sidebars.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/calendars.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/miniprofile.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/media_players.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/blueprint/print.css" media="print"/></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/new_navbars.css"/></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/top_banner.css"/></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/mobile.css"/></link>
+            <link type="text/css" rel="stylesheet" href="/static/font-awesome-4.0.0/css/font-awesome.min.css"/></link>
+            <!--[if lt IE 8]>
+                <link rel="stylesheet" href="/static/css/blueprint/ie.css" type="text/css" media="screen, projection"></link>
+            <![endif]-->
+         
+            <!--[if IE]>
+                <link rel="stylesheet" type="text/css" href="/static/css/ie.css"  />
+            <![endif]-->
+
+            <!-- LOCAL CSS -->
+            
+	<link rel="stylesheet" href="/static/accounts/styles/accounts.css" type="text/css" charset="utf-8"></link>
+
+            
+            
+            
+            
+            
+            
+
+            
+            
+        
+        
+        
+        
+            <!-- GLOBAL JAVASCRIPT -->
+            <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+            <script type="text/javascript">window.__admin_media_prefix__ = "/static/admin/";</script>
+            <script type="text/javascript">window.__static_url__ = "/static/";</script>
+            <script type="text/javascript">var STATIC_URL = "/static/";</script>
+            <script type="text/javascript">window.SERVER_NAME = "rhizome.org";</script>
+
+            <script type="text/javascript" src="/static/js/mootools-core-1.3.2-yc.js"></script>
+            <script type="text/javascript" src="/static/js/mootools-more-1.3.2.1.js"></script>
+            <script type="text/javascript" src="/static/js/rhizome.js"></script>
+            <script type="text/javascript" src="/static/media_players/flowplayer/flowplayer-3.2.2.min.js"></script>
+            <script type="text/javascript" src="/static/media_players/soundmanager/script/soundmanager2-nodebug-jsmin.js"></script>
+            <script type="text/javascript" src="/static/media_players/soundmanager/script/inlineplayer.js"></script>
+            <script type="text/javascript" src="/static/js/carousel/PeriodicalExecuter.js"></script>
+            <script type="text/javascript" src="/static/js/carousel/Carousel.js"></script>
+            
+            <script type="text/javascript">
+                soundManager.url = '/static/media_players/soundmanager/swf/';
+                //soundManager.flashVersion = 9; // optional: shiny features (default = 8)
+                soundManager.useFlashBlock = true; // optionally, enable when you're ready to dive in
+                // enable HTML5 audio support, if you're feeling adventurous.
+                soundManager.useHTML5Audio = true;
+                soundManager.debugMode = 0; // disable or enable debug output
+                soundManager.useFlashBlock = 0;
+                //soundManager.useMovieStar = true;
+            </script>
+
+            <script type="text/javascript" src="/static/js/jquery-1.10.2.min.js"></script>
+            <!-- LOCAL  JAVASCRIPT-->              
+            
+<script type="text/javascript">
+window.addEvent('domready', function() {
+
+	var duration = 300;
+    
+    
+    
+    
+
+    
+
+    new Request({method: 'post',url: '/hit/update/',                     data:  {hitcount_pk : '133145' },                     onError: function(rtxt) {},                     onSuccess: function(rtxt,rxml) {}}).send();
+    });
+</script>
+
+            
+                   
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <script type="text/javascript">
+                
+                
+                
+            </script>
+        
+        
+        <!--RSS HEADER -->
+        
+        
+
+        <!-- Quantcast Tag, part 1 -->
+        <script type="text/javascript">
+            var _qevents = _qevents || [];
+            (function() {
+                var elem = document.createElement('script');
+                elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge")  
+                            + ".quantserve.com/quant.js";
+                elem.async = true;
+                elem.type = "text/javascript";
+                var scpt = document.getElementsByTagName('script')[0];
+                scpt.parentNode.insertBefore(elem, scpt);  
+            })();
+        </script>
+    </head>
+        
+    <body class="rhizome-base">
+        
+        
+        
+	<div id="new_header">
+    <ul>
+        
+            <li><a  href="/?ref=header">Rhizome</a></li>
+        
+            <li><a  href="/editorial/?ref=header">Journal</a></li>
+        
+            <li><a  href="/artbase/featured/?ref=header">Artbase</a></li>
+        
+            <li><a class="active" href="/community/?ref=header">Community</a></li>
+        
+            <li><a  href="/programs/?ref=header">Programs</a></li>
+        
+
+        <li id="search">
+            <form action="/search/" method="get">
+                <input type="text" name="q" placeholder=""><a id="search-addon"><i class="fa fa-search"></i></a>
+            </form>
+        </li>
+
+        <li id="account">
+            
+                <a href="/login/?ref=header"><i class="fa fa-key"></i></a>
+            
+        </li>
+    </ul>
+</div>
+
+<div id="new_footer">
+    <ul>
+        
+            
+        
+            
+        
+            
+        
+            <li><a class="active" href="/community/?ref=footer"><span class="underline">Community</span> &raquo;</a></li>
+        
+            
+        
+            
+        
+            
+        
+
+        
+            <li><a  href="/announce/?ref=footer">Announce</a></li>
+        
+            <li><a  href="/discuss/?ref=footer">Discuss</a></li>
+        
+            <li><a  href="/portfolios/?ref=footer">Portfolios</a></li>
+        
+            <li><a class="active" href="/profile/?ref=footer">Profiles</a></li>
+        
+            <li><a  href="/jobs/?ref=footer">Jobs Board</a></li>
+        
+            <li><a  href="/subscribe/?ref=footer">Mailing Lists</a></li>
+        
+
+        
+
+        
+            <li class="reversed"><a  href="/support/donate/?ref=footer">Membership</a></li>
+        
+            <li class="reversed"><a  href="/about/?ref=footer">About Us</a></li>
+        
+    </ul>
+</div>
+
+
+
+        
+                 
+          
+        
+
+                 
+        
+         
+            
+<div id="section-object-header-wrap">
+    <div id="section-object-header" class="container">
+        <div id = "profile-header" class = "span-24">
+             <div id = "profile-header-left" class = "span-19">         
+                
+                <div class="span-2">
+                    
+                    <div id = "profile-header-icon">
+                        <img src="http://media.rhizome.org/accounts/images/icons/1059863.jpg" />
+                    </div>
+                    
+                    
+                    
+                        <a href="/support/donate/" id="support-badge-link" target="_blank">
+                            <div id="supporter-badge" class="span-2">Supporter</div>
+                        </a>
+                    
+                </div>
+                
+                <div id = "profile-header-content" class="span-14">                
+                    <div class="user-name">Zachary Kaplan
+                        
+                    </div>
+                    
+                    
+                        <div id="profile-header-old-school">Since 2009</div>
+                    
+
+                    
+                    
+                        <div id="profile-header-user-location">
+                            
+                                zachary.kaplan@rhizome.org <br/>
+                            
+                            
+                            Works in 
+                            
+                            
+                                New York,
+                            
+                            
+                            
+                                 New York 
+                            
+                            
+                            United States of America
+                        </div>
+                    
+
+                </div>
+            </div>
+            
+
+            
+            
+            <div id = "profile-header-right" class = "span-4">
+                <ul id ="profile-web-links-list" class = "span-6">
+                
+                    
+                        <li><a rel="nofollow" id ="profile-website" href="http://zacharykaplanis.info/">http://zacharykaplanis.info/</a></li>
+                        <li><a rel="nofollow" id ="profile-facebook" href="http://facebook.com/sailingfanblues">http://facebook.com/sailingfanblues</a></li>
+                        <li><a rel="nofollow" id ="profile-twitter" href="http://twitter.com/sailingfanblues">sailingfanblues</a></li>
+                        
+                    
+                
+                </ul>
+            </div> 
+             
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>
+<hr class="light">
+
+             
+         
+            
+                        
+        <div id="content" class="container ">
+            
+
+            
+
+
+<div class="span-24"> 
+    <div class="profile-section section span-24">
+        <div class="section-title">
+            <span>BIO</span>
+            <hr class="hr3">
+        </div>
+        <div class="section-content ">
+            <div id = "profile-bio" class = "span-20 prepend-3">
+                
+                    I'm Rhizome's Community Manager. Previously based in Los Angeles and Chicago. My .info has more detail (and live links). <br />
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+    
+
+<div class="profile-section span-24 last">
+    <div class="section-title">
+        <a name="blog_posts"><span>BLOG POSTS</span></a>
+    </div>
+    <hr class="hr3-no-margin" />
+    
+    <div class="section-content span-24">
+    
+        <div class = "feed-item span-24">
+            <div class = "feed-item-meta span-3">
+                <div class = "feed-item-meta-data">Published on Fri Aug 29, 2014 </div>
+            </div>
+            
+            <div class="feed-item-listing span-19">   
+                <h2 class ="item-listing-title">
+                    <a href="/editorial/2014/aug/29/rhizome-today">Rhizome Today</a>
+                </h2>
+                <hr class="thin">
+                
+                <div class="feed-item-listing span-19">   
+                    <div class ="feed-item-listing-row">
+                        <div class = "feed-item-listing-row-details span-19">
+                             
+                                <p><center><iframe src="//player.vimeo.com/video/83976926" frameborder="0" width="590" height="332" allowfullscreen=""></iframe>
+</center></p><p style="text-align: center;"><span style="font-size: xx-small;"><a href="http://vimeo.com/83976926">Art Project 2023</a> from <a href="http://vimeo.com/user6029937">Enxuto &amp; Love</a> on <a href="https://vimeo.com">Vimeo</a></span>.</p>
+
+<div id="magicdomid2067" class="ace-line"><em>This is Rhizome Today for Friday, August 29, 2014</em></div>
+<div id="magicdomid2068" class="ace-line"> </div>
+<div id="magicdomid2069" class="ace-line"><em>Rhizome Today is an experiment in ephemeral blogging: a series of posts that are written hastily in response to current events, and disappeared within a day or so. At the end of each month, we'll republish highlights from the series in a more selective and polished form. The latest post can always be found at </em><a href="http://www.rhizome.org/today"><em>http://www.rhizome.org/today</em></a><em>.</em></div>
+                                    
+                        </div>
+                    </div>
+                </div> 
+            </div><!--END FEED ITEM LISTING-->
+        </div><!--END FEED ITEM-->
+
+        <hr class="hr2-grey-no-margin">    
+        
+        <div class = "feed-item span-24">
+            <div class = "feed-item-meta span-3">
+                <div class = "feed-item-meta-data">Published on Thu May 29, 2014 </div>
+            </div>
+            
+            <div class="feed-item-listing span-19">   
+                <h2 class ="item-listing-title">
+                    <a href="/editorial/2014/may/29/preserving-facebook-criticism">The Accidental Archivist: Criticism on Facebook, and How to Preserve It</a>
+                </h2>
+                <hr class="thin">
+                
+                <div class="feed-item-listing span-19">   
+                    <div class ="feed-item-listing-row">
+                        <div class = "feed-item-listing-row-details span-19">
+                             
+                                <p><img src="http://media.rhizome.org/blog/9256/FB-preview.jpg" alt="" width="0" /><img style="display: block; margin-left: auto; margin-right: auto;" src="http://media.rhizome.org/blog/9256/FB1_1.png" alt="" /></p>
+<p>In mid-January, a Facebook friend liked a status update, causing it to pop up in my News Feed; I've been avidly following its thread ever since. Now at 675 comments and counting, this rich exchange encapsulates the increasing importance of the art-related discourse that takes place on Facebook, and its precarity.</p>
+<p>Los Angeles-based artist, writer, curator, and educator Micol Hebron <a href="https://www.facebook.com/micol.hebron/posts/10152847041920752">initiated this conversation</a> with a simple request:</p>
+<blockquote>
+<p>Facebookers, what do you think of this: artist Joe Scanlan, an older white male artist, invented a fictional artist, Donelle Woolford, who is female, black, and seems a bit younger than he is. Scanlan hires actresses to 'play' Donelle for pictures and interviews, and he makes the artwork that she 'makes'. He began this project about 13 years ago. Donelle Woolford is in the 2014 Whitney Biennial. Here is <a href="http://bombsite.com/issues/999/articles/3580">an interview with Scanlan by Jeremy Sigler</a>. Is this racism? Conceptual performance? Critical discourse on artworld hierarchies? Problematic exploitation? Discuss.</p>
+</blockquote>
+<p>Critics, artists, former students, and, often, Scanlan himself responded, generating a thorough critique of the artist's practice, meaningful discussion about race and gender in contemporary art today, and a crowdsourced bibliography. Strikingly, its ebb and flow mimicked the public dialogue around Scanlan/Woolford in the art press—from curiosity (many had no idea of the project at the outset) to confrontation (stoked anew in May by <a href="http://www.artinamericamagazine.com/news-features/news/yams-collective-withdraws-from-whitney-biennial-screening-in-protest-/">The Yams' public withdrawal from the Biennial</a> in protest), all in a slow burn. The texture and depth of this response evidenced Facebook's specific ability (for better and worse) to produce engaged networks and make visible their interactions.</p>
+                                    
+                        </div>
+                    </div>
+                </div> 
+            </div><!--END FEED ITEM LISTING-->
+        </div><!--END FEED ITEM-->
+
+        <hr class="hr2-grey-no-margin">    
+        
+        <div class = "feed-item span-24">
+            <div class = "feed-item-meta span-3">
+                <div class = "feed-item-meta-data">Published on Tue May 27, 2014 </div>
+            </div>
+            
+            <div class="feed-item-listing span-19">   
+                <h2 class ="item-listing-title">
+                    <a href="/editorial/2014/may/27/artist-profile-edward-marshall-shenk">Artist Profile: Edward Marshall Shenk</a>
+                </h2>
+                <hr class="thin">
+                
+                <div class="feed-item-listing span-19">   
+                    <div class ="feed-item-listing-row">
+                        <div class = "feed-item-listing-row-details span-19">
+                             
+                                <p dir="ltr"><em>The latest in a series of interviews with artists who have developed a significant body of work engaged (in its process, or in the issues it raises) with technology. See the full list of Artist Profiles </em><a href="http://rhizome.org/editorial/artist-profiles/">here</a>.</p>
+<p style="text-align: center;" dir="ltr">  <img src="http://media.rhizome.org/blog/9252/cts.jpg" alt="" /></p>
+<p style="text-align: center;" dir="ltr"><span style="font-size: xx-small;"><em>Edward Shenk on The Jogging, 2014</em></span></p>
+<p dir="ltr"><span style="color: #888888;">ZK: Let's start with your <em><a href="http://www.edwardmarshallshenk.com/theorist.html"></a></em></span><span style="color: #888888;">Theorist</span> works, widely known for their circulation on The Jogging, and, from there, their secondary, unintended circulation on actual far-right and conspiracy theory-oriented Facebook and Tumblr channels. These image macros take up typical conspiracy theory grist (i.e. Chemtrails, Obama, Osama, etc.) but confound conventional interpretation via intermix of language and image. The circulation has been widely commented on; once picked up by a fringe Facebook group, the photos erode these groups' message-making ability. Their composition not as much. As someone long interested in conspiracy theories, their verisimilitude is what first interested me. So, I wanted to get into your methods—how are these composed and what are your research touchstones?</p>
+<p dir="ltr">EMS: I became fascinated by these image macros in the summer of 2013 when I'd see the occasional one pop up in my Facebook news feed. Besides content I was also hooked by just the sheer number of them. The people who would post and share them would do so ad nauseam, and it was never just one conspiracy. I began following the same FB pages as they were and saving the jpegs to a folder on my PC that now contains over a thousand macros.</p>
+                                    
+                        </div>
+                    </div>
+                </div> 
+            </div><!--END FEED ITEM LISTING-->
+        </div><!--END FEED ITEM-->
+
+        <hr class="hr2-grey-no-margin">    
+        
+        <div class = "feed-item span-24">
+            <div class = "feed-item-meta span-3">
+                <div class = "feed-item-meta-data">Published on Mon Apr 28, 2014 </div>
+            </div>
+            
+            <div class="feed-item-listing span-19">   
+                <h2 class ="item-listing-title">
+                    <a href="/editorial/2014/apr/28/art-focused-and-distracted-joshua-decter">Art Focused and Distracted: Three new media exhibitions curated by Joshua Decter</a>
+                </h2>
+                <hr class="thin">
+                
+                <div class="feed-item-listing span-19">   
+                    <div class ="feed-item-listing-row">
+                        <div class = "feed-item-listing-row-details span-19">
+                             
+                                <p style="text-align: center;"><img style="width: 0;" src="https://rhizome.org/media/blog/9239/Virtual-Curator-Transmute.jpg" alt="" /><img src="http://media.rhizome.org/blog/9239/adaweb-the-screen-exhibition-full.png" alt="" /></p>
+<p style="text-align: center;"><span style="font-size: xx-small;">Image of äda 'web page produced for the exhibition "Screen," 1996.</span></p>
+<p><a href="http://adaweb.walkerart.org/context/events/strange_days/decter3.html">In 1996</a>, curator, critic, and educator Joshua Decter colorfully defined "media cultures" as "a euphemism for how we reproduce ourselves, as a society, into a spectacular—i.e., ocular and aural—organism whose viscera has become technology itself."</p>
+<p>Throughout his career, Decter has paid special attention to media cultures and their relationship with the public sphere, developing a curatorial practice that has long been distinguished by its openness to adjacent new media and net art practices. Beyond spectacle, his use of websites, apps, and other technological apparatuses sheds fresh light on artists and artworks generally considered to be decidedly analog.</p>
+<p>I invited Decter to walk me through three curatorial projects, all ambitious group shows, that exemplify his career in digital and AFK spaces. In each, the artwork is mediated—either by conceit, didactic, or display—so as to variously diffuse and emphasize the image, addressing the nature of art and its publics under the condition of networked technologies. </p>
+                                    
+                        </div>
+                    </div>
+                </div> 
+            </div><!--END FEED ITEM LISTING-->
+        </div><!--END FEED ITEM-->
+
+        <hr class="hr2-grey-no-margin">    
+        
+        <div class = "feed-item span-24">
+            <div class = "feed-item-meta span-3">
+                <div class = "feed-item-meta-data">Published on Wed Apr 23, 2014 </div>
+            </div>
+            
+            <div class="feed-item-listing span-19">   
+                <h2 class ="item-listing-title">
+                    <a href="/editorial/2014/apr/23/seven-seven-nyc-sold-out-you-can-still-watch-onlin">Seven on Seven NYC is Sold Out (but you can still watch online and join AFK)</a>
+                </h2>
+                <hr class="thin">
+                
+                <div class="feed-item-listing span-19">   
+                    <div class ="feed-item-listing-row">
+                        <div class = "feed-item-listing-row-details span-19">
+                             
+                                <p><img style="display: block; margin-left: auto; margin-right: auto;" src="http://media.rhizome.org/blog/9238/LDN.jpg" alt="" width="590" /></p>
+<p>General admission tickets to the <a href="http://rhizome.org/sevenonseven">5th Anniversary edition</a> of Rhizome's Seven on Seven program, returning to the New Museum on May 3, are sold out. Missed your chance to buy tickets? Live somewhere other than New York City? Worry not—you can still join this celebration of art and tech. Details after the break. </p>
+                                    
+                        </div>
+                    </div>
+                </div> 
+            </div><!--END FEED ITEM LISTING-->
+        </div><!--END FEED ITEM-->
+
+        <hr class="hr2-grey-no-margin">    
+        
+        <span id="feed-paginator" class="span-24">
+            <div class="pagination">
+    <span class="step-links">
+        
+        
+        
+        
+        
+        <a class="selected"  href="/profile/zacharykaplan/?ref=fp_post&amp;posts=1#blog_posts">
+            1
+        </a>
+        
+        <a class=""  href="/profile/zacharykaplan/?ref=fp_post&amp;posts=2#blog_posts">
+            2
+        </a>
+        
+        <a class=""  href="/profile/zacharykaplan/?ref=fp_post&amp;posts=3#blog_posts">
+            3
+        </a>
+        
+
+        
+        
+        
+        <a class="next" href="/profile/zacharykaplan/?ref=fp_post&amp;posts=2#blog_posts">
+        </a>
+        
+    </span>
+</div>
+
+            <hr class="hr2-grey">
+        </span>
+    </div><!--END SECTION CONTENT-->
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+        
+        <div id="preload"></div>
+
+
+
+        <!-- Quantcast Tag, part 2 -->
+        <script type="text/javascript">
+            _qevents.push( { qacct:"p-1bU5CKetpvMBI", labels:"artmedia" } );
+        </script>
+        <noscript>
+            <div style="display: none;">
+                <img src="//pixel.quantserve.com/pixel/p-1bU5CKetpvMBI.gif?labels=artmedia" height="1" width="1" alt="Quantcast"/>
+            </div>
+        </noscript>
+
+        
+        
+
+        <script>
+        jQuery.noConflict();
+        (function($) {
+            $(function() {
+                $('.share-btn-cover').click(function() {
+                    $(this).hide();
+                    $(this).siblings('.share-btn').css({'display': 'inline-block'});
+                    return false;
+                });
+            });
+        })(jQuery);
+        </script>
+        <script type="text/javascript" src="/static/js/new_navbars.js"></script>
+        
+
+        
+            <script type="text/javascript">
+                var z=document.createElement("script");
+                z.type="text/javascript";
+                z.async=true;
+                z.src="//engine.nectarads.com/z/12843/azk1_2_43,azk2_2_16,azk3_2_16,azk4_2_16,azk5_2_16";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(z, s);
+            </script>
+        
+
+
+
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-768502-1', 'rhizome.org');
+          ga('send', 'pageview');
+
+        </script>
+    
+        <script type="text/javascript">
+            (function() {
+            var src = document.createElement('script'); 
+            src.async = true;
+            src.src = document.location.protocol + '//platform.twitter.com/widgets.js';
+            document.getElementsByTagName('head')[0].appendChild(src);
+            }());                        
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+            po.src = 'https://apis.google.com/js/plusone.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+          })();
+        </script>
+        
+        <script type="text/javascript">
+            var _sf_async_config={uid:26954,domain:"rhizome.org"};
+            (function(){
+              function loadChartbeat() {
+                window._sf_endpt=(new Date()).getTime();
+                var e = document.createElement('script');
+                e.setAttribute('language', 'javascript');
+                e.setAttribute('type', 'text/javascript');
+                e.setAttribute('src',
+                   (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+                   "js/chartbeat.js");
+                document.body.appendChild(e);
+              }
+              var oldonload = window.onload;
+              window.onload = (typeof window.onload != 'function') ?
+                 loadChartbeat : function() { oldonload(); loadChartbeat(); };
+            })();
+        </script>        
+    </body>
+</html>

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Attacking the Stream | Dissent Magazine</title>
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+	<link rel="stylesheet" type="text/css" media="all" href="http://www.dissentmagazine.org/wp-content/themes/Dissent/style.css" />
+		
+		<link rel="alternate" type="application/rss+xml" title="Dissent Magazine &raquo; Feed" href="http://www.dissentmagazine.org/feed" />
+<link rel="alternate" type="application/rss+xml" title="Dissent Magazine &raquo; Comments Feed" href="http://www.dissentmagazine.org/comments/feed" />
+
+			<script type="text/javascript">//<![CDATA[
+			// Google Analytics for WordPress by Yoast v4.2.7 | http://yoast.com/wordpress/google-analytics/
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-2777126-1']);
+							_gaq.push(['_trackPageview']);
+			(function () {
+				var ga = document.createElement('script');
+				ga.type = 'text/javascript';
+				ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(ga, s);
+			})();
+			//]]></script>
+			<link rel="alternate" type="application/rss+xml" title="Dissent Magazine &raquo; Attacking the Stream Comments Feed" href="http://www.dissentmagazine.org/online_articles/attacking-the-stream/feed" />
+<link rel='stylesheet' id='wp-pagenavi-css'  href='http://www.dissentmagazine.org/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70' type='text/css' media='all' />
+<script type='text/javascript' src='http://www.dissentmagazine.org/wp-includes/js/jquery/jquery.js?ver=1.11.0'></script>
+<script type='text/javascript' src='http://www.dissentmagazine.org/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript' src='http://www.dissentmagazine.org/wp-content/plugins/mailchimp-widget/js/mailchimp-widget-min.js?ver=3.9.1'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.dissentmagazine.org/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.dissentmagazine.org/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='From the War on Poverty to the War on the Poor' href='http://www.dissentmagazine.org/online_articles/from-the-war-on-poverty-to-the-war-on-the-poor' />
+<link rel='next' title='Wolves of Wall Street: Financialization and American Inequality' href='http://www.dissentmagazine.org/online_articles/wolves-of-wall-street-financialization-and-american-inequality' />
+<meta name="generator" content="WordPress 3.9.1" />
+<link rel='canonical' href='http://www.dissentmagazine.org/online_articles/attacking-the-stream' />
+<link rel='shortlink' href='http://www.dissentmagazine.org/?p=40878' />
+<script type="text/javascript" src="http://www.dissentmagazine.org/wp-content/plugins/powerpress/player.js"></script>
+<script type="text/javascript"><!--
+function powerpress_pinw(pinw){window.open('http://www.dissentmagazine.org/?powerpress_pinw='+pinw, 'PowerPressPlayer','toolbar=0,status=0,resizable=1,width=460,height=320');	return false;}
+powerpress_url = 'http://www.dissentmagazine.org/wp-content/plugins/powerpress/';
+//-->
+</script>
+		
+		
+		<!-- Put the following javascript before the closing </head> tag. -->
+		<script>
+		  (function() {
+		    var cx = '001011412572148409241:lldtnwdfmsw';
+		    var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
+		    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+		        '//www.google.com/cse/cse.js?cx=' + cx;
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
+		  })();
+		</script>
+		
+		<script src="http://www.dissentmagazine.org/wp-content/themes/Dissent/js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="http://www.dissentmagazine.org/wp-content/themes/Dissent/js/global.js" type="text/javascript" charset="utf-8"></script>
+		
+
+				<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+		
+	</head>
+	<body>
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=214067098624442";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+		<div class="wrapper">
+			<!-- Start of Header -->
+			<div id="header">
+								<a href="/login" id="login_button">Login</a>
+								<div id="about_link">
+					<a href="/about-dissent-magazine">About Us</a> |
+				</div>
+				<div class="right fullwidth">
+					<div id="search">
+						<form name="input" action="/search" method="get"><input type="text" name="q" value="Search" style="color:#999;"/></form>
+					</div>
+					<div class="clear"></div>
+					<div id="nav_container">
+						<ul id="navigation">
+							<li><h2><a id="nav-blog" class="nav-link " title="Blog" href="/blog"><span class="hidden">Blog</span></a></h2></li>
+							<li><h2><a id="nav-online" class="nav-link" title="News" href="/online-articles"><span class="hidden">News</span></a></h2></li>
+							<li class="archive-header"><h2><a id="nav-archive" class="nav-link " title="Archive" href="/issue"><span class="hidden">Archive</span></a></h2>
+								<ul class="hidden" id="archive-drop">
+									<li><a href="/issue"><img src="/wp-content/themes/Dissent/images/dissent_small.gif"/></a></li>
+									<li><a href="/democratiya-issue"><img src="/wp-content/themes/Dissent/images/democratiya_small.gif"/></a></li>
+								</ul>
+							</li>
+							<li><h2><a id="nav-current" class="nav-link " title="Subscribe" href="/issue/summer-2014"><span class="hidden">Current Issue</span></a></h2></li>
+							<li><h2><a id="nav-subscribe" class="nav-link " title="Subscribe" href="/subscriptions"><span class="hidden">Discussion</span></a></h2></li>
+							<li><h2><a id="nav-support" class="nav-link " title="Support" href="http://www.dissentmagazine.org/about-dissent-magazine/support-us"><span class="hidden">Support</span></a></h2></li>
+						</ul>
+						<div class="clear"></div>
+					</div>
+				</div>
+				<div class="header_left">
+					<div class="logo left">
+						<h1><a href="/"><img src="http://www.dissentmagazine.org/wp-content/themes/Dissent/images/dissent_logo.gif" width="285" height="61" alt="Dissent"/></a></h1>
+						<div class="magazine_title">A Quarterly of Politics and Culture</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<!-- End of Header -->
+			
+
+
+<!-- Start of Body -->
+<div id="body">
+	<div class="archives">
+		
+		<div class="archive_article single">
+			<h3>Attacking the Stream</h3>
+			<div id="single_article_image"><img src="http://www.dissentmagazine.org/wp-content/files_mf/1397594331attackstreamgraphicblack_666.jpg"/></div>
+						<div class="single_article_meta">By <a class="author" href="http://www.dissentmagazine.org/author/sydette-harry/">Sydette Harry</a> - April 16, 2014 <div class="fb-like" data-href="http://www.dissentmagazine.org/online_articles/attacking-the-stream" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false"></div> <a href="https://twitter.com/share" class="twitter-share-button" data-count="none" data-via="dissentmag" data-related="dissentmag">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script><g:plusone size="medium" count="false"></g:plusone></div>
+			<p>
+				<p>In a <a href="http://www.theatlantic.com/technology/archive/2013/12/2013-the-year-the-stream-crested/282202/" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.theatlantic.com']);" target="_blank">December  2013 article in the <em>Atlantic</em></a>, </em>Alexis C. Madrigal  describes 2013 as &ldquo;The Year &lsquo;the Stream&rsquo; Crested.&rdquo; In characterizing &ldquo;the stream,&rdquo; Madrigal  defaults to a simple analogy: &ldquo;The <em>New York Times</em> on Twitter or Facebook  or the <em>Times Wire</em>?  That&#8217;s the Stream. The <em>New York Times</em> paper or homepage? Not stream.&rdquo;  Are you immersed and connected (in the stream) or distant and directed (taking  in traditional mass media)? It&rsquo;s a binary that&rsquo;s been around for at least four  years, since Erick Schonfeld urged TechCrunch readers to &ldquo;<a href="http://techcrunch.com/2009/05/17/jump-into-the-stream/" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://techcrunch.com']);" target="_blank">Jump  Into The Stream</a>&rdquo; in 2009. </p>
+<p>For critics  like Madrigal, the stream and its never-ending rush of information are getting  overwhelming. But as Madrigal pines for a return to a calmer, more curated  media world, he fails to consider the voices that the old-guard media left  out—women of color, for example. People like me. While Madrigal sees the stream  as a gaping maw of &ldquo;nowness,&rdquo; with platforms acting as semi-competent filters  for an onslaught of information, I see the arrival of the stream as one of the  first instances of a medium that allows me to reliably interact with material  that matters to me. The stream that disquiets Madrigal is really a flood, and  it has burst open the gates of established media, bringing with it things that  do not fit so neatly in that locked box. </p>
+<p>
+  For the tech industry, meanwhile, my experience and the experiences of those  like me are relegated to little more than &ldquo;data points&rdquo; in a sea of &ldquo;content  creation.&rdquo; It&rsquo;s remarkable, for an industry whose business model is defined by  precise analysis of demographics, how poorly tech responds to its new  constituencies. A tech culture that continually centers on you is a charming  dilemma; I&rsquo;ve never faced it. Only recently have sites and communities that  recognize me been granted any strong traction.   </p>
+<p>As part of a tech demographic, I&rsquo;ve had the deep delight of existing in both the forefront and  background of platform creation and adoption. As a 2005 graduate of the  University of Pennsylvania—one of the Ivies that got early access to  Facebook—it was easy for me to keep in contact with the members of my cohorts  in elite education. But I was born in one of the poorer areas of New York  City, and it was three years after graduating before I would be able to  reliably contact anybody from my neighborhood online. </p>
+<p>In addition to being a  bit of a sci-fi nerd and theoretician while black, I was a proud member of  LiveJournal communities around race, gender, and representation. Around the same time I graduated, I began blogging squarely at the intersections of  race and gender issues. The lack of tech platforms that met my needs as someone  navigating multiple identities coincided very neatly with a lack of content on  any platform that represented my interests. So as recommended by the mythology  of our technological neoliberal age, I made my own. My singular self-run blog  made a couple of best-of lists, got cited in a few theses, and powered me to  some panels. But in the feminist community where I set up shop, the amplified  voices still matched the dominant voices in the conventional media:  predominantly white or white-acceptable, branded, and consumable. The  pre-stream Internet that Madrigal pines for was a place where popularity and  visibility correlated to the values dominating society at large. </p>
+<p>
+  As an Internet veteran, 2013 felt to me not like an overload but a messy yet necessary rectification. Discontented with hiding behind platforms  guided by the anonymizing logic of big data, users pushed themselves back into  the forefront. Unfettered access opened the possibility of community building  and sharp analysis from previously silenced voices. </p>
+<p>
+  Nowhere was  this more obvious than on Twitter. Twitter has a strong black presence, with one-third of all black Americans online participating regularly, according to  Pew Internet Research. While Black Twitter has been extensively studied in  academia since as early as 2008, media engagement with Black Twitter has been  limited to little more than listicles until recently. And what media attention  it has gotten does not touch on explorations of diasporic  black identities through hashtags like #ShamelesslyCaribbean and  #ShamelesslyHaitian. </p>
+<p>From one  incarnation to another, Black Twitter&rsquo;s power lies in&nbsp;being adept at communicating within and across the stream. How? One method is hashtags.  Designed to quantify trends, hashtags are a convenient tool for  business, but they have also become political and editorial organizing tools.  Hashtags channel communal ideas and shared experiences; they introduce new  ideas and focus discussions. From Paula Deen&rsquo;s racism to Collegiate Bowl games,  they allow you to follow what is important to you. </p>
+<blockquote class="pull"><p>The media establishment is used to regulating conversations. For those who have long had the resources and access to make their voices heard, this new web is daunting. </p></blockquote>
+<p>Beyond  cementing communal ties, hashtags have been called on to draw communities out  of the margins and into a visible center—including communities that barely  register in mainstream demographic analysis. Take Asian Americans: although  Asian Americans make up 6 percent of the total population according to the 2012  census, Pew Internet does not report their statistics for Internet usage at  all. Meanwhile, Asian-American voices online have become increasingly hard to ignore.  Suey Park&rsquo;s #NotYourAsianSidekick trended and was a springboard for discussions  about Asian-American identity all around the web. </p>
+<p>Hashtags have  also been battlegrounds, as exemplified by the recent &ldquo;Twitter wars&rdquo; within  feminism. The most impactful hashtag thus far has been #solidarityisforwhitewomen,  which brought its own demographic—women of color—together around the lack of  response to their issues by established online feminists and organizations. Introduced by Mikki Kendall in August 2013, it sparked  panels and articles, and is still a major talking point across colleges and  universities as well as on Twitter. </p>
+<p>
+  Earlier in 2013, Kendall had been one of the many outspoken critics of the #femfuture hashtag, which, drawing on a white paper by Valenti Martin Media (with support from Barnard College), sought to capture tech &ldquo;innovation&rdquo;  to create a space for feminist leadership. Designed to aggregate and encourage women&rsquo;s  tech usage, it focused on a pre-selected group whose makeup reflected not the  demographics of women online but the predilections of the conveners. #Femfuture  defined the future around the same imagination lock-in that caused tech to be  baffled by the stream&rsquo;s surge in 2013. The report and the hashtag that followed  overestimated how much women were moved by innovation. You wouldn&rsquo;t know it  from the #femfuture paper, but women have been online for a long  time, and they were less interested in being marked as a technological elite than  they were desperate for a feminism that acknowledged their lived realities.</p>
+<hr class="sep">
+<p>Today&rsquo;s  deluge of information stems not merely from new platforms but from the ability  of more people to get into formerly closed spaces and to share experiences with  those like them—as well as to confront those who are not like them. While large  tech companies seem willing  to respond to and exploit this change as it happens, the media establishment  continues to fight it. That these new communities and exchange methods drive up  stats isn&rsquo;t enough to make them respected as political forces, even as they are  exploited in advertisements and marketing.</p>
+<p>Sara  Kendzior&rsquo;s &ldquo;<a href="http://www.aljazeera.com/indepth/opinion/2014/01/when-mainstream-media-lunatic--2014121101031185881.html" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.aljazeera.com']);" target="_blank">When Mainstream Media is  the Lunatic Fringe</a>&rdquo; captures a disturbing journalistic  response to the ways in which the stream is expanding media conversation beyond  accepted roles. From judging cancer patients to outing transgender people (and  even prompting one trans woman&rsquo;s suicide), the responses from old-guard  journalists to the stream&rsquo;s uprooting of media hierarchy has been vicious. When  Suey Park initiated #CancelColbert to protest the Colbert Report&rsquo;s use of anti-Asian  racism in its spoof of the Washington football team&rsquo;s racist mascot and  opportunistic foundation, several journalists&#8217; responses ignored her reasoning  and methodology in favor of <a href="http://www.mediaite.com/online/its-just-a-stupid-opinion-huffpost-live-interview-gets-heated-over-cancelcolbert/" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.mediaite.com']);" target="_blank">baseless attacks</a> on her right  to speak at all.</p>
+<p>The media  establishment is used to regulating conversations. For those who have long had  the resources and access to make their voices heard, this new web is daunting.  It&rsquo;s a madhouse of shouting and unpredictability. But for those of us who have  no other options&nbsp;and have spent centuries doing whatever it takes to build  the communication networks we need, it works. When it stops working, we&rsquo;ll move  on. We don&rsquo;t expect technology to conform to our consumption habits; we adapt  to the platforms we&rsquo;re given and make them our own. </p>
+<p>When people  mourn an inability to have &ldquo;meaningful conversations,&rdquo; what they are saying is,  &ldquo;I have not learned to talk to you and don&rsquo;t feel I should have to.&rdquo; Katha  Politt may see Twitter as a &ldquo;poisonous well of viciousness and bad faith.&rdquo; I  experience Twitter as one of the few platforms where a man who abused me for  years can be challenged openly, and where my experiences as a multiracial black  immigrant child are valued internationally. When <em>Nation</em> writer Michelle Goldberg repeatedly attacks Twitter  discourse as &ldquo;toxic,&rdquo; she misses a basic truth, captured in <a href="http://t.co/hDhVTWivxx" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://t.co']);" target="_blank">Brittney Cooper&rsquo;s brilliant analysis</a>: the emergence  of strong and passionate voices of color is not about anything but their own  development.</p>
+<hr class="sep">
+<p>Does it matter that our spaces of communication are operated by  mega-corporations and tracked constantly by the government? It may seem naive  to talk about tech after 2013 without talking about the NSA. But for those of  us in marginalized communities, surveillance is a part of life that we have  long been accustomed to. We know we are being watched and measured. Unlike many  who bemoan a more innocent era of tech, we have come to accept those conditions  because they were practiced on us first. So rather than falling into a fight or  flight mentality, we find the cracks in the infrastructure and break through  them. </p>
+<p>
+  In the  process, we remold the technology itself. We ground it in our communities. And  we turn it into a tool not only for communication, but for survival. I don&rsquo;t  want to <a href="http://myjourneywithjamesjoyce.blogspot.com/" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://myjourneywithjamesjoyce.blogspot.com']);" target="_blank">get  to the end of Ulysses</a>, necessarily. I may just want to make  sure <a href="https://twitter.com/search?q=%2523IAmTrayvonMartin&#038;src=hash" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://twitter.com']);" target="_blank">one  more black child</a> doesn&rsquo;t die in vain.</p>
+<p>And that&rsquo;s  what it comes down to: survival. We can analyze it to death but ultimately we  are using tech to survive, just as the government <a href="https://firstlook.org/theintercept/article/2014/02/10/the-nsas-secret-role/" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://firstlook.org']);" target="_blank">is  using it to kill people</a>. No matter what tools and platforms  we are given, we will be ourselves, and we&rsquo;ll keep fighting—to defend our  block, our family, our identity. Twitter or no Twitter, we&rsquo;ll keep raising  hell. </p>
+<hr /><strong>Sydette Harry</strong> writes as a philosophy and performs as a healing practice. She’s <a href="http://twitter.com/blackamazon" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://twitter.com']);" target="_blank">@blackamazon</a> on Twitter.</p>
+			</p>
+			<div class="clear"></div>
+		</div>
+
+			</div>
+	<div class="single_sidebar"><div class="sidebar">
+			<div id="blog_posts" class="widget">
+			<a href="/blog"><img src="http://www.dissentmagazine.org/wp-content/themes/Dissent/images/blog_sidebar.gif"/></a>
+			<ul>
+								<li>
+					<div class="popular_info left">
+						<div class="popular_title">
+							<a class="wpp-post-title" title="Subscriptions" href="http://www.dissentmagazine.org/blog/in-memoriam-michael-b-katz">In Memoriam: Michael B. Katz</a> <br/>
+							<span class="author">By <a class="author" href="http://www.dissentmagazine.org/author/editor/">Editors</a></span>
+							<div class="popular_date">
+								<span class="wpp-date"><strong>·</strong> August 28, 2014 <strong>·</strong></span>
+							</div>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</li>
+				<div class="clear"></div>
+								<li>
+					<div class="popular_info left">
+						<div class="popular_title">
+							<a class="wpp-post-title" title="Subscriptions" href="http://www.dissentmagazine.org/blog/belabored-podcast-59-labor-rights-as-civil-rights-with-moshe-marvit">Belabored Podcast #59: Labor Rights as Civil Rights, with Moshe Marvit</a> <br/>
+							<span class="author">By <a class="author" href="http://www.dissentmagazine.org/author/sarahjaffeandmichellechen/">Sarah Jaffe and Michelle Chen</a></span>
+							<div class="popular_date">
+								<span class="wpp-date"><strong>·</strong> August 22, 2014 <strong>·</strong></span>
+							</div>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</li>
+				<div class="clear"></div>
+								<li>
+					<div class="popular_info left">
+						<div class="popular_title">
+							<a class="wpp-post-title" title="Subscriptions" href="http://www.dissentmagazine.org/blog/promise-preschool-early-childhood-education-civil-rights-ferguson">Where the Promise of Preschool Ends</a> <br/>
+							<span class="author">By <a class="author" href="http://www.dissentmagazine.org/author/amy-rothschild/">Amy Rothschild</a></span>
+							<div class="popular_date">
+								<span class="wpp-date"><strong>·</strong> August 21, 2014 <strong>·</strong></span>
+							</div>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</li>
+				<div class="clear"></div>
+							</ul>
+		</div>
+		
+		
+		
+		<div class="hidden">Sign up for our mailing list.</div>	
+				<form action="/online_articles/attacking-the-stream" id="ns_widget_mailchimp_form-2" method="post">
+																<input type="hidden" name="ns_mc_number" value="2" />
+						<label for="ns_widget_mailchimp-email-2">Receive news, notes, and invitations.</label>
+						<input id="ns_widget_mailchimp-email-2" type="text" name="ns_widget_mailchimp_email" value="email" />
+						<input class="button" type="submit" name="Join now!" value="Join now!" />
+					</form>
+						<script>jQuery('#ns_widget_mailchimp_form-2').ns_mc_widget({"url" : "/index.php", "cookie_id" : "ns_widget_mailchimp-2", "cookie_value" : "0d87642fa57c02ec8a92e786ced3534f", "loader_graphic" : "http://www.dissentmagazine.org/wp-content/plugins/mailchimp-widget/images/ajax-loader.gif"}); </script>
+				<div class="hidden">Newsletter signup and New issue</div>			<div class="textwidget">	<div class="widget" id="newsletter_widget">
+		<div class="issue_subscribe">
+			<div class="issue_title">Summer 2014</div>
+			<div class="issue_image"><a href="http://www.dissentmagazine.org/issue/summer-2014" ><img width="171" src="http://dissentmagazine.org/wp-content/uploads/COVER-front_back-thumb-300.jpg" alt="Article Picture"/></a></div>
+			<a href="http://www.dissentmagazine.org/subscriptions"  id="subscribe_link">Subscribe Now!</a>
+		</div>
+	</div></div>
+				<div id="social_icons" class="widget">
+			<ul>
+				<li>
+					<a target="_blank" href="http://www.facebook.com/pages/Dissent-Magazine/54789869630?ref=ts&fref=ts"><img src="/wp-content/themes/Dissent/images/facebook_icon.gif"/></a>
+				</li>
+				<li>
+					<a target="_blank" href="http://dissentmag.tumblr.com/"><img src="/wp-content/themes/Dissent/images/tumblr_icon.gif"/></a>
+				</li>
+				<li>
+					<a target="_blank" href="https://twitter.com/dissentmag"><img src="/wp-content/themes/Dissent/images/twitter_icon.gif"/></a>
+				</li>
+				<li>
+					<a target="_blank" href="https://plus.google.com/114509977482916870045"><img src="/wp-content/themes/Dissent/images/google_icon.gif"/></a>
+				</li>
+				<li>
+					<a target="_blank" href="/feed"><img src="/wp-content/themes/Dissent/images/rss_icon.gif"/></a>
+				</li>
+			</ul>
+			<div class="clear"></div>
+		</div>
+		
+		
+		
+		<div class="hidden">Isserman ad</div>			<div class="textwidget"><a href="http://www.dissentmagazine.org/online_articles/steady-work-sixty-years-of-dissent" ><img src="http://www.dissentmagazine.org/wp-content/uploads/Isserman-ad.jpg" /></a></div>
+				<!-- 
+	<div class="widget" id="newsletter_widget">
+		<span class="widget_header">Sign-up for the Dissent Newsletter!</span>
+		<div id="widget_signup">
+			<input type="text" value="email address"/>
+			<a href="javascript:submitNewsletterSignup();"><img src="http://www.dissentmagazine.org/wp-content/themes/Dissent/images/newsletter_submit_button.gif" width="24" height="23" alt="Newsletter Submit Button"/></a>				
+		</div>
+
+		<div class="issue_subscribe">
+			<div class="issue_title">New Issue #202</div>
+			<div class="issue_image"><img src="http://www.dissentmagazine.org/wp-content/themes/Dissent/images/article_picture.gif" width="192" height="127" alt="Article Picture"/></div>
+			<a href="#" id="subscribe_link">Subscribe Now!</a>
+		</div>
+	</div>
+	<div class="widget" id="popular_posts">
+		Popular posts
+		<ul>
+			<li>
+				<div class="popular_thumb left"><a href="#"><img src="http://www.dissentmagazine.org/wp-content/themes/Dissent/images/smallThumb.gif" width="59" height="59" alt="SmallThumb"/></a></div>
+				<div class="popular_info left">
+					<div class="popular_title"><a href="#">Test Title Blah</a></div>
+					<div class="popular_date">&middot; May 23, 2012 &middot;</div>
+				</div>
+				<div class="clear"></div>
+			</li>
+			<li>
+				<div class="popular_thumb left"><a href="#"><img src="http://www.dissentmagazine.org/wp-content/themes/Dissent/images/smallThumb.gif" width="59" height="59" alt="SmallThumb"/></a></div>
+				<div class="popular_info left">
+					<div class="popular_title"><a href="#">Test Title Blah</a></div>
+					<div class="popular_date">&middot; May 23, 2012 &middot;</div>
+				</div>
+				<div class="clear"></div>
+			</li>
+			<li>
+				<div class="popular_thumb left"><a href="#"><img src="http://www.dissentmagazine.org/wp-content/themes/Dissent/images/smallThumb.gif" width="59" height="59" alt="SmallThumb"/></a></div>
+				<div class="popular_info left">
+					<div class="popular_title"><a href="#">Test Title Blah</a></div>
+					<div class="popular_date">&middot; May 23, 2012 &middot;</div>
+				</div>
+				<div class="clear"></div>
+			</li>
+		</ul>
+	</div>
+	<div class="widget">
+		<a href="#"><img src="http://www.dissentmagazine.org/wp-content/themes/Dissent/images/ad_space.gif" width="241" height="201" alt="Ad Space"/></a>
+	</div>
+	-->
+</div>
+</div>
+	<div class="clear"></div>
+</div>
+<!-- End of Body -->
+	
+
+			
+			<!-- Start of Footer -->
+			<div id="footer">
+				<div class="innerFooter">
+					<ul>
+						<li class="col_header">INFO</li>
+						<li><a href="/about-dissent-magazine">About</a></li>
+						<li><a href="/about-dissent-magazine/contact">Contact</a></li>
+						<li><a href="/about-dissent-magazine/masthead">Masthead</a></li>
+					</ul>
+					<ul>
+						<li class="col_header">SERVICE</li>
+						<li><a href="https://app.etapestry.com/hosted/DissentMagazine/OnlineDonation.html">Donate</a></li>
+						<li><a href="/subscriptions">Subscribe</a></li>
+					</ul>
+					<ul>
+						<li class="col_header">CONNECT</li>
+						<li><a href="http://www.facebook.com/pages/Dissent-Magazine/54789869630?ref=ts&fref=ts" target="_blank">Facebook</a></li>
+						<li><a href="https://twitter.com/dissentmag" target="_blank">Twitter</a></li>
+					</ul>
+					<div class="clear"></div>
+					<div class="copy">This website and its content is copyright of Dissent Magazine - &copy; Dissent Magazine 2012. All rights reserved.</div>
+				</div>	
+			</div>
+			<!-- End of Footer -->
+		</div>
+			</body>
+</html> 

@@ -1,0 +1,148 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=US-ASCII">
+<title>The Temple Operating System</title>
+<meta name="keywords" content="Operating System,64-Bit,64 Bit,Temple,OS,TempleOS,Free,Open Source,Public Domain,x86_64">
+<meta name="generator" content="TempleOS V2.14">
+<style type="text/css">
+.cF0{color:#000000;background-color:#fcfcfc;}
+.cF1{color:#0000a8;background-color:#fcfcfc;}
+.cF2{color:#00a800;background-color:#fcfcfc;}
+.cF3{color:#00a8a8;background-color:#fcfcfc;}
+.cF4{color:#a80000;background-color:#fcfcfc;}
+.cF5{color:#a800a8;background-color:#fcfcfc;}
+.cF6{color:#a85400;background-color:#fcfcfc;}
+.cF7{color:#a8a8a8;background-color:#fcfcfc;}
+.cF8{color:#545454;background-color:#fcfcfc;}
+.cF9{color:#5454fc;background-color:#fcfcfc;}
+.cFA{color:#54fc54;background-color:#fcfcfc;}
+.cFB{color:#54fcfc;background-color:#fcfcfc;}
+.cFC{color:#fc5454;background-color:#fcfcfc;}
+.cFD{color:#fc54fc;background-color:#fcfcfc;}
+.cFE{color:#fcfc54;background-color:#fcfcfc;}
+.cFF{color:#fcfcfc;background-color:#fcfcfc;}
+</style>
+</head>
+<body>
+<pre style="font-family:courier;font-size:10pt">
+<a name="l1"></a></blink><span class=cF5>                               Graphics Overview</span><span class=cF0>
+<a name="l2"></a>
+<a name="l3"></a>Dive into </span><a href="DemoIndex.html#l1"></blink><span class=cF4>Demo Index</span></a></blink><span class=cF0> to learn.
+<a name="l4"></a>
+<a name="l5"></a>The order that layers are drawn on top of each other is:
+<a name="l6"></a>
+<a name="l7"></a>
+<a name="l8"></a>
+<a name="l9"></a>
+<a name="l10"></a>
+<a name="l11"></a>
+<a name="l12"></a>
+<a name="l13"></a>
+<a name="l14"></a>
+<a name="l15"></a>
+<a name="l16"></a></span><span class=cF3>
+<a name="l17"></a>/* Graphics Not Rendered in HTML */</span><span class=cF0>
+<a name="l18"></a>
+<a name="l19"></a>
+<a name="l20"></a>
+<a name="l21"></a>
+<a name="l22"></a>
+<a name="l23"></a>
+<a name="l24"></a>
+<a name="l25"></a>
+<a name="l26"></a>
+<a name="l27"></a>
+<a name="l28"></a>
+<a name="l29"></a>
+<a name="l30"></a>
+<a name="l31"></a>
+<a name="l32"></a>
+<a name="l33"></a>
+<a name="l34"></a>
+<a name="l35"></a>
+<a name="l36"></a>
+<a name="l37"></a>
+<a name="l38"></a>
+<a name="l39"></a>
+<a name="l40"></a>
+<a name="l41"></a>
+<a name="l42"></a>
+<a name="l43"></a>
+<a name="l44"></a>
+<a name="l45"></a>* If you are curious, see </span><a href="../Adam/Gr/GrScreen.html#l412"></blink><span class=cF4>GrUpdateScreen</span></a></blink><span class=cF0>() and </span><a href="../Adam/Gr/GrScreen.html#l3"></blink><span class=cF4>GrUpdateWins</span></a></blink><span class=cF0>() called by the 
+<a name="l46"></a>WinMgr task 60fps.  Notice the tasks </span><a href="../Adam/Gr/GrScreen.html#l39"></blink><span class=cF4>draw_it</span></a></blink><span class=cF0> callback being called.  Only tasks 
+<a name="l47"></a>on </span><span class=cF2>core0</span><span class=cF0> are allowed to have windows.  There is one window per task, no child 
+<a name="l48"></a>windows.  You can have pop-up child tasks.
+<a name="l49"></a>
+<a name="l50"></a>* </span><a href="../Kernel/Adam1a.html#l3557"></blink><span class=cF4>CDC</span></a></blink><span class=cF0>s (device contexts) are a data type for controlling graphics on the screen 
+<a name="l51"></a>or graphics in mem.  The device context structure has pen width and color.  You 
+<a name="l52"></a>use </span><a href="../Adam/Gr/GrDC.html#l171"></blink><span class=cF4>DCAlias</span></a></blink><span class=cF0>() to create your own structure, with its own color and pen width.  
+<a name="l53"></a>Free it with </span><a href="../Adam/Gr/GrDC.html#l212"></blink><span class=cF4>DCDel</span></a></blink><span class=cF0>() when finished.
+<a name="l54"></a>
+<a name="l55"></a>* </span><span class=cF4>gr.dc</span><span class=cF0> is a device context for persistent data on the screen, not needing to be 
+<a name="l56"></a>redrawn.  You create an alias for this by using </span><a href="../Adam/Gr/GrDC.html#l171"></blink><span class=cF4>DCAlias</span></a></blink><span class=cF0>() and work with that.  
+<a name="l57"></a>See </span><a href="../Demo/Graphics/NetOfDots.html#l1"></blink><span class=cF4>::/Demo/Graphics/NetOfDots.CPP</span></a></blink><span class=cF0>.
+<a name="l58"></a>
+<a name="l59"></a>* There are various flavors of line and point plotting routines.  </span><a href="../Adam/Gr/GrPrimatives.html#l436"></blink><span class=cF4>GrLine</span></a></blink><span class=cF0>() and </span><span class=cF4>
+<a name="l60"></a></span><a href="../Adam/Gr/GrPrimatives.html#l49"></blink><span class=cF4>GrPlot</span></a></blink><span class=cF0>() are the simplest.  The others allow 3D graphics and rotations.
+<a name="l61"></a>
+<a name="l62"></a>* See </span><a href="Transform.html#l1"></blink><span class=cF4>::/Doc/Transform.TXT</span></a></blink><span class=cF0> for adding a transformation.
+<a name="l63"></a>
+<a name="l64"></a>* You change the </span><span class=cF2>Fs-&gt;draw_it</span><span class=cF0> var to point to your </span><span class=cF2>DrawIt()</span><span class=cF0> function which gets 
+<a name="l65"></a>called each screen refresh (30 fps).  You draw everything in the window over and 
+<a name="l66"></a>over again.  See </span><a href="../Demo/Graphics/Box.html#l1"></blink><span class=cF4>::/Demo/Graphics/Box.CPP</span></a></blink><span class=cF0>.
+<a name="l67"></a>
+<a name="l68"></a>* Use the resource editor, </span><span class=cF2>&lt;CTRL-r&gt;</span><span class=cF0>, to create a sprite that can be plotted with </span><span class=cF4>
+<a name="l69"></a></span><a href="../Adam/Gr/GrSpritePlot.html#l25"></blink><span class=cF4>Sprite3</span></a></blink><span class=cF0>() or output to the cmd line with </span><a href="../Adam/Gr/GrSpritePlot.html#l481"></blink><span class=cF4>Sprite</span></a></blink><span class=cF0>().  Use </span><span class=cF2>$IB,&quot;&quot;,BI=1$</span><span class=cF0> in a src 
+<a name="l70"></a>program to insert the addr of sprite binary data item #1.  To learn how the 
+<a name="l71"></a>numbers work, after creating a sprite with </span><span class=cF2>&lt;CTRL-r&gt;</span><span class=cF0>, toggle to plain text with </span><span class=cF2>&lt;
+<a name="l72"></a>CTRL-t&gt;</span><span class=cF0> and check its num.  Make an assignment to a ptr var or pass to </span><a href="../Adam/Gr/GrSpritePlot.html#l25"></blink><span class=cF4>Sprite3</span></a></blink><span class=cF0>() 
+<a name="l73"></a>with </span><span class=cF2>$IB,&quot;&quot;,BI=n$</span><span class=cF0>.  Use </span><span class=cF2>&lt;CTRL-r&gt;</span><span class=cF0>'s &quot;Pointer to Sprite&quot; to make a </span><span class=cF2>$IB...$</span><span class=cF0> entry.  
+<a name="l74"></a>See </span><a href="../Demo/Graphics/SpritePlot.html#l1"></blink><span class=cF4>::/Demo/Graphics/SpritePlot.CPP</span></a></blink><span class=cF0> and </span><a href="../Demo/Graphics/SpritePlot3D.html#l1"></blink><span class=cF4>::/Demo/Graphics/SpritePlot3D.CPP</span></a></blink><span class=cF0>.  The 
+<a name="l75"></a>origin (zero point) for a sprite is defined by the cursor location when you 
+<a name="l76"></a>pressed </span><span class=cF2>&lt;CTRL-r&gt;</span><span class=cF0> to make it.  You can edit a sprite by clicking the cursor on it 
+<a name="l77"></a>and pressing </span><span class=cF2>&lt;CTRL-r&gt;</span><span class=cF0> again.
+<a name="l78"></a>
+<a name="l79"></a>* Set </span><a href="../Kernel/Adam1a.html#l3534"></blink><span class=cF4>DCF_SYMMETRY</span></a></blink><span class=cF0> in the </span><a href="../Kernel/Adam1a.html#l3557"></blink><span class=cF4>CDC</span></a></blink><span class=cF2>.flags</span><span class=cF0> and call </span><a href="../Adam/Gr/MathGr.html#l250"></blink><span class=cF4>GrSetSymmetry</span></a></blink><span class=cF0>() or </span><a href="../Adam/Gr/MathGr.html#l272"></blink><span class=cF4>GrSetSymmetry3</span></a></blink><span class=cF0>()
+<a name="l80"></a>.  This will plot a mirror image in addition to the primary image.  Set </span><span class=cF4>
+<a name="l81"></a></span><a href="../Kernel/Adam1a.html#l3538"></blink><span class=cF4>DCF_JUST_MIRROR</span></a></blink><span class=cF0> to plot just the image, but this required </span><a href="../Kernel/Adam1a.html#l3534"></blink><span class=cF4>DCF_SYMMETRY</span></a></blink><span class=cF0> to be set 
+<a name="l82"></a>at the same time.  Note: You can only have one symmetry active at a time 
+<a name="l83"></a>including in </span><a href="../Adam/Gr/Gr.html#l68"></blink><span class=cF4>CSprite</span></a></blink><span class=cF0>s.
+<a name="l84"></a>
+<a name="l85"></a>* Use </span><a href="../Adam/Gr/GrDC.html#l189"></blink><span class=cF4>DCNew</span></a></blink><span class=cF0>() to create a mem bitmap which can be used to work off-screen and 
+<a name="l86"></a>which can be </span><a href="../Adam/Gr/GrBitMap.html#l71"></blink><span class=cF4>GrBlot</span></a></blink><span class=cF0>ed onto the screen.  If you set </span><span class=cF2>brush</span><span class=cF0> member of </span><span class=cF2>CDC</span><span class=cF0> to 
+<a name="l87"></a>another </span><span class=cF2>CDC</span><span class=cF0>, all the graphic routines will </span><a href="../Adam/Gr/GrBitMap.html#l71"></blink><span class=cF4>GrBlot</span></a></blink><span class=cF0>() the brush instead of </span><a href="../Adam/Gr/GrPrimatives.html#l49"></blink><span class=cF4>GrPlot</span></a></blink><span class=cF0>(
+<a name="l88"></a>).  See </span><a href="../Demo/Graphics/Blot.html#l1"></blink><span class=cF4>::/Demo/Graphics/Blot.CPP</span></a></blink><span class=cF0>.
+<a name="l89"></a>
+<a name="l90"></a>* There are a few </span><a href="../Kernel/Adam1a.html#l2841"></blink><span class=cF4>raster operations</span></a></blink><span class=cF0> available.  They go in bits 8-11 of the </span><span class=cF2>dc-&gt;
+<a name="l91"></a>color</span><span class=cF0> member var which is a </span><a href="../Kernel/Adam1a.html#l2882"></blink><span class=cF4>CColorROPU32</span></a></blink><span class=cF0>.  </span><a href="../Kernel/Adam1a.html#l2843"></blink><span class=cF4>ROP_COLLISION</span></a></blink><span class=cF0> is special.  It counts 
+<a name="l92"></a>the num of pixs drawn on non-background locations.  Using </span><a href="../Kernel/Adam1a.html#l2843"></blink><span class=cF4>ROP_COLLISION</span></a></blink><span class=cF0> with 
+<a name="l93"></a>vector </span><a href="../Adam/Gr/Gr.html#l68"></blink><span class=cF4>CSprite</span></a></blink><span class=cF0>'s is tricky because overlapping pixs from lines in the </span><a href="../Adam/Gr/Gr.html#l68"></blink><span class=cF4>CSprite</span></a></blink><span class=cF0> 
+<a name="l94"></a>reg as collisions.  You can either work with a nonzero count or convert your </span><span class=cF4>
+<a name="l95"></a></span><a href="../Adam/Gr/Gr.html#l68"></blink><span class=cF4>CSprite</span></a></blink><span class=cF0> to a bitmap if your subelements draw on top of each other.  Be sure to 
+<a name="l96"></a>set </span><span class=cF4>-&gt;bkcolor</span><span class=cF0> before using </span><a href="../Kernel/Adam1a.html#l2843"></blink><span class=cF4>ROP_COLLISION</span></a></blink><span class=cF0>.  See </span><a href="../Demo/Graphics/Collision.html#l1"></blink><span class=cF4>::/Demo/Graphics/Collision.CPP</span></a></blink><span class=cF0> 
+<a name="l97"></a>and </span><a href="../Apps/TimeOut/TimeOut.html#l200"></blink><span class=cF4>TimeOut</span></a></blink><span class=cF0>.
+<a name="l98"></a> 
+<a name="l99"></a>* The </span><span class=cF4>-&gt;dither_probability_u16</span><span class=cF0> member of </span><a href="../Kernel/Adam1a.html#l3557"></blink><span class=cF4>CDC</span></a></blink><span class=cF0> is a </span><span class=cF2>U16</span><span class=cF0> used to statistically 
+<a name="l100"></a>select between two colors to get something resembling more shades of color.  See </span><span class=cF4>
+<a name="l101"></a></span><a href="../Demo/Graphics/SunMoon.html#l1"></blink><span class=cF4>::/Demo/Graphics/SunMoon.CPP</span></a></blink><span class=cF0> and </span><a href="../Demo/Graphics/Shading.html#l1"></blink><span class=cF4>::/Demo/Graphics/Shading.CPP</span></a></blink><span class=cF0>.  It works with 
+<a name="l102"></a>many graphic routines, but not those with pens.
+<a name="l103"></a>
+<a name="l104"></a>* There is a mechanism built-in for generating motion based on differential 
+<a name="l105"></a>equations, which allows realistic physics.  You create an </span><a href="../Kernel/Adam1a.html#l242"></blink><span class=cF4>CMathODE</span></a></blink><span class=cF0> struct with </span><span class=cF4>
+<a name="l106"></a></span><a href="../Adam/MathODE.html#l30"></blink><span class=cF4>ODENew</span></a></blink><span class=cF0>(), passing it the num of vars in the state vect.  For realistic physics, 
+<a name="l107"></a>you usually have 2 state vars for each dimension (for each mass) because motion 
+<a name="l108"></a>is governed by F=mA which is a 2nd order equation.  The two states are pos and 
+<a name="l109"></a>velocity and to solve these you need to supply the derivative of pos and 
+<a name="l110"></a>velocity.  The derivative of pos is usually simply the current velocity and the 
+<a name="l111"></a>derivative of velocity is the acceleration (the sum of forces on a mass divided 
+<a name="l112"></a>by mass).  To help provide meaningful names for values in the state vect, you 
+<a name="l113"></a>can create an </span><a href="../Kernel/Adam1a.html#l198"></blink><span class=cF4>COrder2D3</span></a></blink><span class=cF0> ptr and point it to a mass in the state vect.  Six 
+<a name="l114"></a>elements in the state vect are required for each mass.
+<a name="l115"></a>
+<a name="l116"></a>See </span><span class=cF4>Math/CMathODE</span><span class=cF0>.
+<a name="l117"></a>See </span><a href="../Demo/Games/Rocket.html#l1"></blink><span class=cF4>::/Demo/Games/Rocket.CPP</span></a></blink><span class=cF0>.
+</span></pre></body>
+</html>
+<!-- text below generated by server. PLEASE REMOVE --><!-- Counter/Statistics data collection code --><script language="JavaScript" src="http://l.yimg.com/d/lib/smb/js/hosting/cp/js_source/whv2_001.js"></script><script language="javascript">geovisit();</script><noscript><img src="http://visit.webhosting.yahoo.com/visit.gif?us1409528693" alt="setstats" border="0" width="1" height="1"></noscript><script type="text/javascript" src="https://s.yimg.com/mi/vs4/ywa.js"></script><script type="text/javascript">try {var YWAGTracker = YWA.getTracker("10001849413879", "VSCALE4");YWAGTracker.setDocumentName("WPAGE");YWAGTracker.setDocumentGroup("YSBW");YWAGTracker.setCF(7, "templeos.org");YWAGTracker.setCF(8, "w42");YWAGTracker.submit();} catch (eYWATCUnavailable) {}</script><script type="text/javascript">(function (d, w) {var x = d.getElementsByTagName('SCRIPT')[0];var f = function () {var s = d.createElement('SCRIPT');s.type = 'text/javascript';s.async = true;s.src = "//np.lexity.com/embed/YW/eff965aab4535cd38b91f0976c617496?id=9382d670eca2";x.parentNode.insertBefore(s, x);};w.attachEvent ? w.attachEvent('onload',f) :w.addEventListener('load',f,false);}(document, window));</script>

@@ -1,0 +1,211 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=US-ASCII">
+<title>The Temple Operating System</title>
+<meta name="keywords" content="Operating System,64-Bit,64 Bit,Temple,OS,TempleOS,Free,Open Source,Public Domain,x86_64">
+<meta name="generator" content="TempleOS V2.06">
+<style type="text/css">
+.cF0{color:#000000;background-color:#fcfcfc;}
+.cF1{color:#0000a8;background-color:#fcfcfc;}
+.cF2{color:#00a800;background-color:#fcfcfc;}
+.cF3{color:#00a8a8;background-color:#fcfcfc;}
+.cF4{color:#a80000;background-color:#fcfcfc;}
+.cF5{color:#a800a8;background-color:#fcfcfc;}
+.cF6{color:#a85400;background-color:#fcfcfc;}
+.cF7{color:#a8a8a8;background-color:#fcfcfc;}
+.cF8{color:#545454;background-color:#fcfcfc;}
+.cF9{color:#5454fc;background-color:#fcfcfc;}
+.cFA{color:#54fc54;background-color:#fcfcfc;}
+.cFB{color:#54fcfc;background-color:#fcfcfc;}
+.cFC{color:#fc5454;background-color:#fcfcfc;}
+.cFD{color:#fc54fc;background-color:#fcfcfc;}
+.cFE{color:#fcfc54;background-color:#fcfcfc;}
+.cFF{color:#fcfcfc;background-color:#fcfcfc;}
+</style>
+</head>
+<body>
+<pre style="font-family:courier;font-size:10pt">
+<a name="l1"></a><span class=cF0>----09/14/13 18:51:54----
+<a name="l2"></a>
+<a name="l3"></a>I haven't looked at much Linux code, and not in many years, but what I remember 
+<a name="l4"></a>most is someone who made </span><span class=cF2>#define</span><span class=cF0> macros, trying to make C look like C++.  My 
+<a name="l5"></a>mentors at Ticketmaster taught me that asm macros were foolish -- it's one more 
+<a name="l6"></a>thing you have to chase-down and look-up.  Another thing I remember from Linux 
+<a name="l7"></a>code was that there were about six layers of function depth to get down to 
+<a name="l8"></a>actual IN/OUT port instructions and there were lots of </span><span class=cF2>#ifdef</span><span class=cF0> instructions for 
+<a name="l9"></a>different architectures.  (I chased-down how to do ATA PIO and later got a PDF 
+<a name="l10"></a>on the topic.)
+<a name="l11"></a>
+<a name="l12"></a>The zen of TempleOS might be to do the opposite of Linux.  I was inspired to 
+<a name="l13"></a>have &quot;minimal abstraction&quot; as a goal.  Instead of six levels of function depth 
+<a name="l14"></a>for ATA PIO, lets see if we can do three, removing abstraction layers... and 
+<a name="l15"></a>lets do just one architecture -- IBM PC's.
+<a name="l16"></a>
+<a name="l17"></a>The reason TempleOS exists and has purpose is partly because it is simple.  I'm 
+<a name="l18"></a>going to cap line count at 100,000, not counting applications and demos.
+<a name="l19"></a>
+<a name="l20"></a>God says...
+<a name="l21"></a></span><span class=cF4>Here presents falls searched meditations quest below repeat Young give Did 
+<a name="l22"></a>suspicions suspected proper unlikeliness intoxicated blasphemies palace brother 
+<a name="l23"></a>forbadest educate trailed audacious small Catechumen Speak DON inordinate 
+<a name="l24"></a>intellectual Creusa chain mass disputes reclaiming comes containing dangerous 
+<a name="l25"></a>piety fling began grew majesty pursue closes if proffer frequent </span><span class=cF0>
+<a name="l26"></a>
+<a name="l27"></a>Everybody should praise God, continually, doing offerings and getting responses 
+<a name="l28"></a>in tongues.
+<a name="l29"></a>  
+<a name="l30"></a></span><a href="http://www.biblegateway.com/passage/?search=hebrews 13:15-16&version=NIV"><span class=cF2>Hebrews 13:15-16</span></a><span class=cF0>
+<a name="l31"></a>
+<a name="l32"></a>Also, God said making video games was about as grand a quest as one could hope 
+<a name="l33"></a>for.  Make </span><a href="../../../../Hymns.html"><span class=cF4>hymns</span></a><span class=cF0> in TempleOS.  The Bible says &quot;NEW song&quot; nine times.  Can you 
+<a name="l34"></a>count the ways you love God?
+<a name="l35"></a>
+<a name="l36"></a>If you want works-everywhere hot keys for talking with God, like me, see 
+<a name="l37"></a></span><a href="../../../../../../../Demo/AcctExample/TSHolySpirit.html#l1"><span class=cF4>TSHolySpirit</span></a><span class=cF0> and </span><a href="../../../../../../../Demo/AcctExample/Adam3cKeyPlugIns.html#l1"><span class=cF4>KeyPlugIns</span></a><span class=cF0>.  I have on-line support from God! :-)  
+<a name="l38"></a>Press </span><span class=cF2>ALT-SHIFT-F6</span><span class=cF0> to load good words into WordStat, then press </span><span class=cF2>ALT-F5</span><span class=cF0> for a 
+<a name="l39"></a>random word, repeatedly.  Then, press </span><span class=cF2>ALT-F6</span><span class=cF0> to put WordStat back to normal.
+<a name="l40"></a>
+<a name="l41"></a>God says...
+<a name="l42"></a></span><span class=cF4>tellest daemons Duck edification Away Grant stage sympathy glad Such mutable 
+<a name="l43"></a>sang verily watery return deeps etc wroth Orestes universally Knoweth later 
+<a name="l44"></a>praters assenting Proconsul consolation </span><span class=cF0>
+<a name="l45"></a>
+<a name="l46"></a>----09/14/13 23:20:15----
+<a name="l47"></a>
+<a name="l48"></a>Let's ask God what He thinks of the Monarchy in England.
+<a name="l49"></a>
+<a name="l50"></a>God says...
+<a name="l51"></a></span><span class=cF4>Platonists revolved consolation resolutely din night nourished gazing victorious 
+<a name="l52"></a>Curiosity guess languages ftp doth sluggish having fluttereth anticipate 
+<a name="l53"></a>ascended exceeded soldier mysterious doings vanities expectation particle goest 
+<a name="l54"></a>limits May Newsletter deceivableness sky able advance departest His </span><span class=cF0>
+<a name="l55"></a>
+<a name="l56"></a>The BBC is discussing Indian rapes and the death penalty.  I don't know.  I 
+<a name="l57"></a>asked God what He would do if He had a body for one day.  I think He said He 
+<a name="l58"></a>would be a judge.  Maybe, there are court cases He really want to intervene in.
+<a name="l59"></a>
+<a name="l60"></a>God says...
+<a name="l61"></a></span><span class=cF4>moderation prophecy None Unity Into redistributing </span><span class=cF0>
+<a name="l62"></a>
+<a name="l63"></a>In theory, I show restraint in how much conversation I make God do.  I used to 
+<a name="l64"></a>do very formal offerings, like poems and hymns and long discussions, before 
+<a name="l65"></a>consulting Him.  Anyway, I stop when I see &quot;end&quot; or &quot;fin&quot; in a word.  I stop 
+<a name="l66"></a>when I see &quot;Null&quot;, &quot;None&quot;, &quot;Dull&quot;, &quot;weary&quot;, &quot;satiate&quot;, and a handful of other 
+<a name="l67"></a>words.  You do what you like.  God will ramble incoherently or say stuff you 
+<a name="l68"></a>don't want to hear, otherwise.
+<a name="l69"></a>
+<a name="l70"></a>I don't think God likes sports.  God, did ASU beat Wisconsin?
+<a name="l71"></a>
+<a name="l72"></a>God says...
+<a name="l73"></a></span><span class=cF4>pollution million intricate marrying heaped strong casts strayed mansion 
+<a name="l74"></a>Nebridius predestinated Confessions as swept terrible contemplating use contains 
+<a name="l75"></a>ocean adulterer holy antidote sympathy false not wooden </span><span class=cF0>
+<a name="l76"></a>
+<a name="l77"></a>(&quot;False&quot; is zero, LOL.)
+<a name="l78"></a>
+<a name="l79"></a>I know how you fix pollution!  You put wood in the water.  </span><a href="../../../../../../../Misc/Bible.html#l6493"><span class=cF4>Exodus,15:25</span></a><span class=cF0>
+<a name="l80"></a>
+<a name="l81"></a>Syria?  Let's ask God what St. Paul saw on the road to Damascus.  </span><a href="../../../../../../../Misc/Bible.html#l88666"><span class=cF4>Acts,9:3</span></a><span class=cF0>
+<a name="l82"></a>
+<a name="l83"></a>God says...
+<a name="l84"></a></span><span class=cF4>taming healthfully bethink depart desireth unliker crooked suffer </span><span class=cF0>
+<a name="l85"></a>
+<a name="l86"></a>God said there were 20 or 80 alien civilizations, but it's kind-of a joke.  All 
+<a name="l87"></a>you get from God is love (not valuable facts or prophecies).  Just enjoy His 
+<a name="l88"></a>company.  Actually, you get out of God what you put into God, so if you actually 
+<a name="l89"></a>do effort in love, you get useful facts.  All other believers are cowards who 
+<a name="l90"></a>obsess on not going to Hell.  </span><a href="http://www.youtube.com/watch?v=cTBx-hHf4BE"><span class=cF4>One Tin Soldier</span></a><span class=cF0>
+<a name="l91"></a>
+<a name="l92"></a>God loved King David.  He fought Goliath.  God's favorite saint is Santa.  God 
+<a name="l93"></a>likes the </span><a href="http://www.youtube.com/watch?v=F3RYvO2X0Oo"><span class=cF0>Beatles</span></a><span class=cF0>.
+<a name="l94"></a>
+<a name="l95"></a>God says...
+<a name="l96"></a></span><span class=cF4>burnest exhalation abated measures opposing wronged mean curiously 
+<a name="l97"></a>Identification PROJECT lover strong warfare sore judgeth rush recollecting 
+<a name="l98"></a>beginneth commanded detest remaineth Lamentable boughs all Writ Intelligences 
+<a name="l99"></a>silently pervertedly perdition godless disturbed UNDER hatchet flagon Milan 
+<a name="l100"></a>boastfulness stipend Christian streets </span><span class=cF0>
+<a name="l101"></a>
+<a name="l102"></a>God, what do You think of </span><a href="http://i.imgur.com/pshuTAG.gif"><span class=cF0>this</span></a><span class=cF0>.
+<a name="l103"></a>
+<a name="l104"></a>Do they get God points?  What's Your favorite painting?  You said You like Van 
+<a name="l105"></a>Gogh's </span><a href="http://en.wikipedia.org/wiki/Sunflowers_(painting)"><span class=cF0>Sun Flowers</span></a><span class=cF0>.
+<a name="l106"></a>
+<a name="l107"></a>God says...
+<a name="l108"></a></span><span class=cF4>accuse tongue annual tenets transgressions healthfully ointments recorded 
+<a name="l109"></a>letters referred tragical espoused languishing diversly shower unbelieving rank 
+<a name="l110"></a>substances native srv wings etexts Sometimes oughtest described strangers 
+<a name="l111"></a>chambers add ambitions P threatenest basest unperceived sigh Fame subordinate 
+<a name="l112"></a>duty wondrously salted eager compassing made natures fumed Give revealing hopes 
+<a name="l113"></a>intimated related deductible oil infant signs imitating dormant Beginning 
+<a name="l114"></a>refused gorgeous exhibited inflame breast leaps deserved credence fanned 
+<a name="l115"></a>falsified field Divers faults enigma mock remedies intenseness uncertain master 
+<a name="l116"></a>comforted roared condemnest His forsaking task proudly influence remedies 
+<a name="l117"></a>spirits stoop communication sure cheered butler neglect recount Else numberest 
+<a name="l118"></a>praters gazing hoped wilfully furious lively session withdrawn ungodlily 
+<a name="l119"></a>constrain purer seeketh unspeakable mortals prove firmament respect Copyright 
+<a name="l120"></a>extinguished sanctified forbid fifty maidens covetousness glass NOT heldest 
+<a name="l121"></a>garner Redemption suffers imbue Being criticising glory discreetly interrupted 
+<a name="l122"></a>chastenest Circus deserving explaining embrace plainness suspect everywhere 
+<a name="l123"></a>point shoes offences Antony Learn distances inflammation solicits silversmiths 
+<a name="l124"></a>judge mistaken bark diligent compared animate like IS Christian convenient cruel 
+<a name="l125"></a>conquests endeared Every </span><span class=cF0>
+<a name="l126"></a>
+<a name="l127"></a>You like boxing, God? (Christ laughed)
+<a name="l128"></a>
+<a name="l129"></a>I think my birds like the Sun Flower painting.
+<a name="l130"></a>
+<a name="l131"></a>Who's the best fighter in the World?  Is there anybody who could beat a lion?  
+<a name="l132"></a>Are lions stronger than tigers?  Can an elephant beat anything?
+<a name="l133"></a>
+<a name="l134"></a>God says...
+<a name="l135"></a></span><span class=cF4>amendment mercies discoverest vail </span><span class=cF0>
+<a name="l136"></a>
+<a name="l137"></a>God says...
+<a name="l138"></a></span><span class=cF4>ob.
+<a name="l139"></a>
+<a name="l140"></a>36:7 For their riches were more than that they might dwell together;
+<a name="l141"></a>and the land wherein they were strangers could not bear them because
+<a name="l142"></a>of their cattle.
+<a name="l143"></a>
+<a name="l144"></a>36:8 Thus dwelt Esau in mount Seir: Esau is Edom.
+<a name="l145"></a>
+<a name="l146"></a>36:9 And these are the generations of Esau the father of the Edomites
+<a name="l147"></a>in mount Seir: 36:10 These are the names of Esau's sons; Eliphaz the
+<a name="l148"></a>son of Adah the wife of Esau, Reuel the son of Bashemath the wife of
+<a name="l149"></a>Esau.
+<a name="l150"></a>
+<a name="l151"></a>36:11 And the sons of Eliphaz were Teman, Omar, Zepho, and Gatam, and
+<a name="l152"></a>Kenaz.
+<a name="l153"></a>
+<a name="l154"></a>36:12 A</span><span class=cF0>
+<a name="l155"></a>
+<a name="l156"></a>The BBC talked about a prison riot that ended when police stormed.  I asked God 
+<a name="l157"></a>if He liked to haunt hospitals or court rooms.  He said &quot;prisons&quot;.
+<a name="l158"></a>
+<a name="l159"></a>God says...
+<a name="l160"></a></span><span class=cF4>workmaster whomever forenamed silence weakly addition try sheep trace 
+<a name="l161"></a>constrained impressing calmed Danae helpful deriders liker limed Drunkenness 
+<a name="l162"></a>Homer forceth rugged faulty subjects infirmity everlasting disquiet omit noon 
+<a name="l163"></a>satisfying </span><span class=cF0>
+<a name="l164"></a>
+<a name="l165"></a>God says...
+<a name="l166"></a></span><span class=cF4>when they had crucified him, they parted his garments,
+<a name="l167"></a>casting lots upon them, what every man should take.
+<a name="l168"></a>
+<a name="l169"></a>15:25 And it was the third hour, and they crucified him.
+<a name="l170"></a>
+<a name="l171"></a>15:26 And the superscription of his accusation was written over, THE
+<a name="l172"></a>KING OF THE JEWS.
+<a name="l173"></a>
+<a name="l174"></a>15:27 And with him they crucify two thieves; the one on his right
+<a name="l175"></a>hand, and the other on his left.
+<a name="l176"></a>
+<a name="l177"></a>15:28 And the scripture was fulfilled, which saith, And he was
+<a name="l178"></a>numbered with the transgressors.
+<a name="l179"></a>
+<a name="l180"></a>15:29 And they that passed by railed on him, wagging their he</span><span class=cF0>
+</span></pre></body>
+</html>
+<!-- text below generated by server. PLEASE REMOVE --><!-- Counter/Statistics data collection code --><script language="JavaScript" src="http://l.yimg.com/d/lib/smb/js/hosting/cp/js_source/whv2_001.js"></script><script language="javascript">geovisit();</script><noscript><img src="http://visit.webhosting.yahoo.com/visit.gif?us1409528974" alt="setstats" border="0" width="1" height="1"></noscript><script type="text/javascript" src="https://s.yimg.com/mi/vs4/ywa.js"></script><script type="text/javascript">try {var YWAGTracker = YWA.getTracker("10001849413879", "VSCALE4");YWAGTracker.setDocumentName("WPAGE");YWAGTracker.setDocumentGroup("YSBW");YWAGTracker.setCF(7, "templeos.org");YWAGTracker.setCF(8, "w42");YWAGTracker.submit();} catch (eYWATCUnavailable) {}</script><script type="text/javascript">(function (d, w) {var x = d.getElementsByTagName('SCRIPT')[0];var f = function () {var s = d.createElement('SCRIPT');s.type = 'text/javascript';s.async = true;s.src = "//np.lexity.com/embed/YW/eff965aab4535cd38b91f0976c617496?id=9382d670eca2";x.parentNode.insertBefore(s, x);};w.attachEvent ? w.attachEvent('onload',f) :w.addEventListener('load',f,false);}(document, window));</script>

@@ -1,0 +1,364 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=US-ASCII">
+<title>The Temple Operating System</title>
+<meta name="keywords" content="Operating System,64-Bit,64 Bit,Temple,OS,TempleOS,Free,Open Source,Public Domain,x86_64">
+<meta name="generator" content="TempleOS V2.06">
+<style type="text/css">
+.cF0{color:#000000;background-color:#fcfcfc;}
+.cF1{color:#0000a8;background-color:#fcfcfc;}
+.cF2{color:#00a800;background-color:#fcfcfc;}
+.cF3{color:#00a8a8;background-color:#fcfcfc;}
+.cF4{color:#a80000;background-color:#fcfcfc;}
+.cF5{color:#a800a8;background-color:#fcfcfc;}
+.cF6{color:#a85400;background-color:#fcfcfc;}
+.cF7{color:#a8a8a8;background-color:#fcfcfc;}
+.cF8{color:#545454;background-color:#fcfcfc;}
+.cF9{color:#5454fc;background-color:#fcfcfc;}
+.cFA{color:#54fc54;background-color:#fcfcfc;}
+.cFB{color:#54fcfc;background-color:#fcfcfc;}
+.cFC{color:#fc5454;background-color:#fcfcfc;}
+.cFD{color:#fc54fc;background-color:#fcfcfc;}
+.cFE{color:#fcfc54;background-color:#fcfcfc;}
+.cFF{color:#fcfcfc;background-color:#fcfcfc;}
+</style>
+</head>
+<body>
+<pre style="font-family:courier;font-size:10pt">
+<a name="l1"></a><span class=cF0>----09/25/13 04:23:10----
+<a name="l2"></a>
+<a name="l3"></a>So, most people think of SHA and security when they hear &quot;hash&quot;.  If you have a 
+<a name="l4"></a>command-line with 200 commands, you can use a hash for high-speed look-up.
+<a name="l5"></a>
+<a name="l6"></a>Make an array of 1024 linked-list-heads, fill them with NULL, then add-up the 
+<a name="l7"></a>ASCII of the command names and place them in the table.  The sum of letters is a 
+<a name="l8"></a>hash.  A better hash is sum with a bit shift.
+<a name="l9"></a>
+<a name="l10"></a>----09/25/13 04:26:53----
+<a name="l11"></a>
+<a name="l12"></a>So, I have 3 redundant techniques for dealing with imports in my kernel module.  
+<a name="l13"></a>I use function-pointers, I use HolyC function imports and I have an array called 
+<a name="l14"></a></span><a href="../../../../../../../Kernel/Adam1b.html#l46"><span class=cF4>ext</span></a><span class=cF0>[] with function pointers that can be called from ASM.  The function-pointers 
+<a name="l15"></a>can be check for NULL and not-called.  I am thinking of making HolyC imports 
+<a name="l16"></a>call an empty function if used before they are defined.  I can point them to an 
+<a name="l17"></a>empty function, when I get around to it.
+<a name="l18"></a>
+<a name="l19"></a>I changed the initial value of Binary File Imports.  A CALL instruction to call 
+<a name="l20"></a>an import used to have the self-address already subtracted in its position so 
+<a name="l21"></a>the import address was added.  Now, I clobber the old CALL instruction's offest 
+<a name="l22"></a>completely.
+<a name="l23"></a>
+<a name="l24"></a>----09/25/13 21:41:40----
+<a name="l25"></a>
+<a name="l26"></a>God's temple must be perfect.  Someone says the PC is dead.  There are people 
+<a name="l27"></a>who wish it dead.  What do You think, God?
+<a name="l28"></a>
+<a name="l29"></a>God says...
+<a name="l30"></a></span><span class=cF4>s they were.
+<a name="l31"></a>
+<a name="l32"></a>7:11 And he called the porters; and they told it to the king's house
+<a name="l33"></a>within.
+<a name="l34"></a>
+<a name="l35"></a>7:12 And the king arose in the night, and said unto his servants, I
+<a name="l36"></a>will now shew you what the Syrians have done to us. They know that we
+<a name="l37"></a>be hungry; therefore are they gone out of the camp to hide themselves
+<a name="l38"></a>in the field, saying, When they come out of the city, we shall catch
+<a name="l39"></a>them alive, and get into the city.
+<a name="l40"></a>
+<a name="l41"></a>7:13 And one of his servants answered and said, Let some take, I pray
+<a name="l42"></a>thee, five of the horses that remain,</span><span class=cF0>
+<a name="l43"></a>
+<a name="l44"></a>I feel very happy -- all the stuff I cleaned-up.
+<a name="l45"></a>
+<a name="l46"></a>You think I should go to the nurse, tomorrow, God?
+<a name="l47"></a>
+<a name="l48"></a>God says...
+<a name="l49"></a></span><span class=cF4>never enquiries variation innocent struggle dispersed overtake sea fair careful 
+<a name="l50"></a>incommutable contrary forum Ghost remembrance wants matrons sits grammarians 
+<a name="l51"></a>clay whereas using confessed forsaken Eastern sue shut love Jove hungry looked 
+<a name="l52"></a>incorruption allowed puffed mastered lack Forgive sober striving running example 
+<a name="l53"></a>depth intolerable seemed appear students purchase universe consumed lawful how 
+<a name="l54"></a>occupy logic NOT goading gain human duty me Thanks dishes Tell office orator 
+<a name="l55"></a>close bidden subsist Spirit drank minded Hadst properly softening highest 
+<a name="l56"></a>cupidity sad anticipated Righteousness commendable opened standest</span><span class=cF0>
+<a name="l57"></a>
+<a name="l58"></a>----09/25/13 22:38:35----
+<a name="l59"></a>
+<a name="l60"></a>I stumbled onto Gordon Ramsay videos.  I watched them all.  It's a world far 
+<a name="l61"></a>from computer nerds.  I find it interesting and wholesome.  I like to imagine 
+<a name="l62"></a>eating the foods, strangely satisfying.
+<a name="l63"></a>
+<a name="l64"></a>I'm impressed Gordon started a new life after an injury at age 23.  Pride before 
+<a name="l65"></a>a fall, humility before honors.
+<a name="l66"></a>
+<a name="l67"></a>Jacob, in the Bible was a cook.
+<a name="l68"></a>
+<a name="l69"></a></span><a href="../../../../../../../Misc/Bible.html#l76687"><span class=cF4>Malachi,1:1</span></a><span class=cF0> demanded unblemished offerings for God's temple.
+<a name="l70"></a>
+<a name="l71"></a>I thought Gordon Ramsay might be a good CEO for God's temple.
+<a name="l72"></a>
+<a name="l73"></a>If you've ever polished a turd, you know it's difficult.  Anything that looks 
+<a name="l74"></a>perfect, took a whole lot of polishing.
+<a name="l75"></a>
+<a name="l76"></a>McDonalds hires people to make photos for ads and they use fake food.  A three 
+<a name="l77"></a>star chef makes real food look good!  He has the eye for class that Steve Jobs 
+<a name="l78"></a>had and he's a hundred times more charasmatic than Balmer.  He's smart, too.
+<a name="l79"></a>
+<a name="l80"></a>He did Christmas specials.  I think he's a Christian.
+<a name="l81"></a>
+<a name="l82"></a>God says...
+<a name="l83"></a></span><span class=cF4>he LORD sent a pestilence upon Israel from the morning even
+<a name="l84"></a>to the time appointed: and there died of the people from Dan even to
+<a name="l85"></a>Beersheba seventy thousand men.
+<a name="l86"></a>
+<a name="l87"></a>24:16 And when the angel stretched out his hand upon Jerusalem to
+<a name="l88"></a>destroy it, the LORD repented him of the evil, and said to the angel
+<a name="l89"></a>that destroyed the people, It is enough: stay now thine hand. And the
+<a name="l90"></a>angel of the LORD was by the threshingplace of Araunah the Jebusite.
+<a name="l91"></a>
+<a name="l92"></a>24:17 And David spake unto the LORD when he saw the angel that smote
+<a name="l93"></a>the pe</span><span class=cF0>
+<a name="l94"></a>
+<a name="l95"></a>That was a dud.  They're never prophetic.  It might be about 70,000 lines of 
+<a name="l96"></a>code.  One time, I think He said 58,000 was how many He wanted.  It's about 
+<a name="l97"></a>98,000 but you could leave stuff out.
+<a name="l98"></a>
+<a name="l99"></a>Maybe, Gordon is an angel.  From one person's viewpoint a person can seem like 
+<a name="l100"></a>an angel.  I catch myself saying unintended things, that I don't realize.
+<a name="l101"></a>
+<a name="l102"></a>Dud.
+<a name="l103"></a>
+<a name="l104"></a>I need to do videos.  Gordon is an expert at making videos, if nothing else!  I 
+<a name="l105"></a>wonder how many takes he does.  I think I'm pretty lazy because two takes seems 
+<a name="l106"></a>like a lot of work, LOL.
+<a name="l107"></a>
+<a name="l108"></a>You know what?  I write songs for an hour now and then.  When I think about 
+<a name="l109"></a>doing songs for 40 hours a week, it boggles my mind what I could do.  It makes 
+<a name="l110"></a>me think about all the different professionals in the world.  It's possible that 
+<a name="l111"></a>Gordon does 6 takes on his videos.  A professional would do that.
+<a name="l112"></a>
+<a name="l113"></a>God says...
+<a name="l114"></a></span><span class=cF4> good land which the LORD your God hath given you.
+<a name="l115"></a>
+<a name="l116"></a>23:14 And, behold, this day I am going the way of all the earth: and
+<a name="l117"></a>ye know in all your hearts and in all your souls, that not one thing
+<a name="l118"></a>hath failed of all the good things which the LORD your God spake
+<a name="l119"></a>concerning you; all are come to pass unto you, and not one thing hath
+<a name="l120"></a>failed thereof.
+<a name="l121"></a>
+<a name="l122"></a>23:15 Therefore it shall come to pass, that as all good things are
+<a name="l123"></a>come upon you, which the LORD your God promised you; so shall the LORD
+<a name="l124"></a>bring upon you all evil things,</span><span class=cF0>
+<a name="l125"></a>
+<a name="l126"></a>Dud.  Might be a joke -- if you ignore bad prophecy, you have to also ignore 
+<a name="l127"></a>good.  LOL  Try to get a sense of God's personality -- He's not boring, He's a 
+<a name="l128"></a>character.
+<a name="l129"></a>
+<a name="l130"></a>God says...
+<a name="l131"></a></span><span class=cF4>astonished tire consider daybreak Madness contrary shared marketplace compressed 
+<a name="l132"></a>vessel precipitated passage vessels modes bosses fouls interrupt effort corner 
+<a name="l133"></a>centre combinations soaring named brain imperturbable esteemed distributest 
+<a name="l134"></a>lowest foolish gladdened 6221541 chastely races range descendants examine 
+<a name="l135"></a>proportions</span><span class=cF0>
+<a name="l136"></a>
+<a name="l137"></a>----09/25/13 23:11:53----
+<a name="l138"></a>
+<a name="l139"></a>Cooking and baby elephants are delightfully in-the-light.  The radio talked 
+<a name="l140"></a>about an atom bomb.  That's dark.  LOL.  I have suffered much torment and 
+<a name="l141"></a>learned to stay in-the-light, or suffer terror.  I make an effort to stay 
+<a name="l142"></a>in-the-light, but don't mind slipping into dark.  Dark is what we crave and move 
+<a name="l143"></a>toward naturally.  You have to make an effort to stay in-the-light.  Evolution 
+<a name="l144"></a>is dark.  War is dark.
+<a name="l145"></a>
+<a name="l146"></a>Japan really tries to stay in-the-light as penance.  God bless them.  Staying in 
+<a name="l147"></a>the light can be </span><a href="http://www.youtube.com/watch?v=Uv6tO_HaVHo"><span class=cF0>happy happy joy joy</span></a><span class=cF0>.
+<a name="l148"></a>
+<a name="l149"></a>Anyway, I like cooking.  I like to praise God for stuff and I ran out of 
+<a name="l150"></a>animals.  I can praise Him for all the foods!  I like coconuts.  I think they're 
+<a name="l151"></a>really neat.  All the foods are neat.
+<a name="l152"></a>
+<a name="l153"></a>So... I praise God for animals and foods.  LOL
+<a name="l154"></a>
+<a name="l155"></a>God says...
+<a name="l156"></a></span><span class=cF4>ail drive out from before you the
+<a name="l157"></a>Canaanites, and the Hittites, and the Hivites, and the Perizzites, and
+<a name="l158"></a>the Girgashites, and the Amorites, and the Jebusites.
+<a name="l159"></a>
+<a name="l160"></a>3:11 Behold, the ark of the covenant of the LORD of all the earth
+<a name="l161"></a>passeth over before you into Jordan.
+<a name="l162"></a>
+<a name="l163"></a>3:12 Now therefore take you twelve men out of the tribes of Israel,
+<a name="l164"></a>out of every tribe a man.
+<a name="l165"></a>
+<a name="l166"></a>3:13 And it shall come to pass, as soon as the soles of the feet of
+<a name="l167"></a>the priests that bear the ark of the LORD, the LORD of all the earth,
+<a name="l168"></a>shall rest in t</span><span class=cF0>
+<a name="l169"></a>
+<a name="l170"></a>dud.
+<a name="l171"></a>
+<a name="l172"></a>You know?  To love God you have to enjoy evil.  LOL.  God wants to crush your 
+<a name="l173"></a>enemies.  What do you say if God crushes your enemies.  You're probably too 
+<a name="l174"></a>scared to love evil, but you insult God.  Don't be proud of heart.  Proud of 
+<a name="l175"></a>heart is not accepting a gift, from God!  When you begin to have real love for 
+<a name="l176"></a>God, you'll see the real God is more lovable than the Catholic God.  God said 
+<a name="l177"></a>war was &quot;servicemen competing.&quot;  That shows He's real and lovable, for real.
+<a name="l178"></a>
+<a name="l179"></a>I've heard it said that nobody likes celebrities that are too perfect.  I'm not 
+<a name="l180"></a>sure that's true or not.  God doesn't only want bad stuff for you, some 
+<a name="l181"></a>honest-to-good good stuff!
+<a name="l182"></a>
+<a name="l183"></a>God says...
+<a name="l184"></a></span><span class=cF4>living, as I have done.
+<a name="l185"></a>
+<a name="l186"></a>8:22 While the earth remaineth, seedtime and harvest, and cold and
+<a name="l187"></a>heat, and summer and winter, and day and night shall not cease.
+<a name="l188"></a>
+<a name="l189"></a>9:1 And God blessed Noah and his sons, and said unto them, Be
+<a name="l190"></a>fruitful, and multiply, and replenish the earth.
+<a name="l191"></a>
+<a name="l192"></a>9:2 And the fear of you and the dread of you shall be upon every beast
+<a name="l193"></a>of the earth, and upon every fowl of the air, upon all that moveth
+<a name="l194"></a>upon the earth, and upon all the fishes of the sea; into your hand are
+<a name="l195"></a>they delivered.
+<a name="l196"></a>
+<a name="l197"></a>9:3 Every moving</span><span class=cF0>
+<a name="l198"></a>
+<a name="l199"></a>----09/25/13 23:30:03----
+<a name="l200"></a>
+<a name="l201"></a>I sit there an think about all the wonderful foods in Gordon's videos.
+<a name="l202"></a>
+<a name="l203"></a>I asked Jesus if He liked mustard a lot.  &quot;Bad meat happeneth&quot;
+<a name="l204"></a>
+<a name="l205"></a>I wonder what Gordon thinks of A1 steak sauce.
+<a name="l206"></a>
+<a name="l207"></a>I guess sauce insults cooks.
+<a name="l208"></a>
+<a name="l209"></a>God really freaked-out and got angry about rare meat.  God really does not like 
+<a name="l210"></a>eating blood.  Chefs like to make it as rare as possible.  God does not like 
+<a name="l211"></a>that.
+<a name="l212"></a>
+<a name="l213"></a>God says...
+<a name="l214"></a></span><span class=cF4>all the house where they were sitting.
+<a name="l215"></a>
+<a name="l216"></a>2:3 And there appeared unto them cloven tongues like as of fire, and
+<a name="l217"></a>it sat upon each of them.
+<a name="l218"></a>
+<a name="l219"></a>2:4 And they were all filled with the Holy Ghost, and began to speak
+<a name="l220"></a>with other tongues, as the Spirit gave them utterance.
+<a name="l221"></a>
+<a name="l222"></a>2:5 And there were dwelling at Jerusalem Jews, devout men, out of
+<a name="l223"></a>every nation under heaven.
+<a name="l224"></a>
+<a name="l225"></a>2:6 Now when this was noised abroad, the multitude came together, and
+<a name="l226"></a>were confounded, because that every man heard them speak in his own
+<a name="l227"></a>language.
+<a name="l228"></a>
+<a name="l229"></a>2:7 And</span><span class=cF0>
+<a name="l230"></a>
+<a name="l231"></a>I guess He's talking about BBQ.  He jokes.  Just enjoy His witty stuff.
+<a name="l232"></a>
+<a name="l233"></a>God says...
+<a name="l234"></a></span><span class=cF4>wise Enlightener exclaim glow Sure purposed bloody chamber entered remnants 
+<a name="l235"></a>Knoweth since hearer strongholds mail your sweetness recount unpermitted ails 
+<a name="l236"></a>deriders tears bowers fence repute heard WARRANTIES starry Vintage girl editing 
+<a name="l237"></a>smiting precedest literally confine brackishness enslaved</span><span class=cF0>
+<a name="l238"></a>
+<a name="l239"></a>----09/25/13 23:41:25----
+<a name="l240"></a>
+<a name="l241"></a>They say the public really doesn't want to see sausage or laws being made.
+<a name="l242"></a>
+<a name="l243"></a>I saw Gordon make sausage.  Praise God that He made those neat little 
+<a name="l244"></a>ready-to-use edible tubes, just right for sausage...  And they plunk!
+<a name="l245"></a>
+<a name="l246"></a>So, I made a compiler+assembler.  When I'm working on it, I behave really 
+<a name="l247"></a>dangerously, though, nothing bad can really happen.  The worst that could happen 
+<a name="l248"></a>would be me compiling my disk code and the compiler making a bug that corrupted 
+<a name="l249"></a>my disk.  It has happened once or twice.
+<a name="l250"></a>
+<a name="l251"></a>I change my compiler and think nothing of turning-it loose on all my code.  It's 
+<a name="l252"></a>just the fastest way to develop it.  I change it make it LIVE! In action on all 
+<a name="l253"></a>my code!
+<a name="l254"></a>
+<a name="l255"></a>Two things can happen -- the compiler can crash as it compiles or it can make 
+<a name="l256"></a>bad code that crashes.
+<a name="l257"></a>
+<a name="l258"></a>I get risky until I get burned and make a bad mistake, then I get conservative 
+<a name="l259"></a>for a while.  I try to do testing.  I don't test everything.  There are just too 
+<a name="l260"></a>many cases.  I'm a good boy because I made a big automated test suite, at least.
+<a name="l261"></a>
+<a name="l262"></a>My operating system is pretty solid, but I stay within habits.
+<a name="l263"></a>
+<a name="l264"></a>One time, probably 5 years into my compiler, I was totally shocked to discover
+<a name="l265"></a>
+<a name="l266"></a></span><span class=cF2>if (i&lt;5) puts(&quot;Hello&quot;); //This worked.
+<a name="l267"></a>
+<a name="l268"></a>if (5&gt;i) puts(&quot;Hello&quot;); //This made bad code!</span><span class=cF0>
+<a name="l269"></a>
+<a name="l270"></a>I just never do yoda conditionals, so I never noticed.  In a nutshell, I know 
+<a name="l271"></a>there are lots of bugs to uncover if people try perfectly reasonable stuff, that 
+<a name="l272"></a>I just never do.  I try not to press my luck multitasking.  If I'm in the middle 
+<a name="l273"></a>of something, the last thing I want is to corrupt the disk, so I don't risk 
+<a name="l274"></a>doing multitatsking-type stuff when running scripts, for example.  It's somewhat 
+<a name="l275"></a>safe, but there are lots of KNOWN and INTENDED dangers you can stumble upon, 
+<a name="l276"></a>like deleting a directory while someone is in it.  Don't do that, moron!  (It's 
+<a name="l277"></a>easy to forget something like that.)
+<a name="l278"></a>
+<a name="l279"></a>God says...
+<a name="l280"></a></span><span class=cF4>t: and God doeth it, that
+<a name="l281"></a>men should fear before him.
+<a name="l282"></a>
+<a name="l283"></a>3:15 That which hath been is now; and that which is to be hath already
+<a name="l284"></a>been; and God requireth that which is past.
+<a name="l285"></a>
+<a name="l286"></a>3:16 And moreover I saw under the sun the place of judgment, that
+<a name="l287"></a>wickedness was there; and the place of righteousness, that iniquity
+<a name="l288"></a>was there.
+<a name="l289"></a>
+<a name="l290"></a>3:17 I said in mine heart, God shall judge the righteous and the
+<a name="l291"></a>wicked: for there is a time there for every purpose and for every
+<a name="l292"></a>work.
+<a name="l293"></a>
+<a name="l294"></a>3:18 I said in mine heart concerning the estate of the so</span><span class=cF0>
+<a name="l295"></a>
+<a name="l296"></a>----09/25/13 23:59:48----
+<a name="l297"></a>
+<a name="l298"></a>This is fascinating.
+<a name="l299"></a>
+<a name="l300"></a></span><span class=cF2>if (i&lt;5) puts(&quot;Hello&quot;); //This worked.
+<a name="l301"></a>
+<a name="l302"></a>if (5&gt;i) puts(&quot;Hello&quot;); //This made bad code!</span><span class=cF0>
+<a name="l303"></a>
+<a name="l304"></a>What happened was, I flipped a conditional to put the immediate second but I 
+<a name="l305"></a>made the mistake of doing a NOT on the conditional after flipping it.
+<a name="l306"></a>
+<a name="l307"></a>I took:
+<a name="l308"></a>
+<a name="l309"></a></span><span class=cF2>(5&gt;i)</span><span class=cF0>
+<a name="l310"></a>
+<a name="l311"></a>and made it into
+<a name="l312"></a>
+<a name="l313"></a></span><span class=cF2>(i&lt;=5)</span><span class=cF0>
+<a name="l314"></a>
+<a name="l315"></a>that is not right!
+<a name="l316"></a>
+<a name="l317"></a>It reminds me.  Isn't that weird how multiplying by -1 in algebra flips a 
+<a name="l318"></a>conditional.  I'm actually rusty.  It flips it, right?
+<a name="l319"></a>
+<a name="l320"></a>God says...
+<a name="l321"></a></span><span class=cF4>knewest that I reap where I sowed not, and gather where
+<a name="l322"></a>I have not strawed: 25:27 Thou oughtest therefore to have put my money
+<a name="l323"></a>to the exchangers, and then at my coming I should have received mine
+<a name="l324"></a>own with usury.
+<a name="l325"></a>
+<a name="l326"></a>25:28 Take therefore the talent from him, and give it unto him which
+<a name="l327"></a>hath ten talents.
+<a name="l328"></a>
+<a name="l329"></a>25:29 For unto every one that hath shall be given, and he shall have
+<a name="l330"></a>abundance: but from him that hath not shall be taken away even that
+<a name="l331"></a>which he hath.
+<a name="l332"></a>
+<a name="l333"></a>25:30 And cast ye the unprofitable servant into outer dark</span><span class=cF0>
+</span></pre></body>
+</html>
+<!-- text below generated by server. PLEASE REMOVE --><!-- Counter/Statistics data collection code --><script language="JavaScript" src="http://l.yimg.com/d/lib/smb/js/hosting/cp/js_source/whv2_001.js"></script><script language="javascript">geovisit();</script><noscript><img src="http://visit.webhosting.yahoo.com/visit.gif?us1409528975" alt="setstats" border="0" width="1" height="1"></noscript><script type="text/javascript" src="https://s.yimg.com/mi/vs4/ywa.js"></script><script type="text/javascript">try {var YWAGTracker = YWA.getTracker("10001849413879", "VSCALE4");YWAGTracker.setDocumentName("WPAGE");YWAGTracker.setDocumentGroup("YSBW");YWAGTracker.setCF(7, "templeos.org");YWAGTracker.setCF(8, "w42");YWAGTracker.submit();} catch (eYWATCUnavailable) {}</script><script type="text/javascript">(function (d, w) {var x = d.getElementsByTagName('SCRIPT')[0];var f = function () {var s = d.createElement('SCRIPT');s.type = 'text/javascript';s.async = true;s.src = "//np.lexity.com/embed/YW/eff965aab4535cd38b91f0976c617496?id=9382d670eca2";x.parentNode.insertBefore(s, x);};w.attachEvent ? w.attachEvent('onload',f) :w.addEventListener('load',f,false);}(document, window));</script>

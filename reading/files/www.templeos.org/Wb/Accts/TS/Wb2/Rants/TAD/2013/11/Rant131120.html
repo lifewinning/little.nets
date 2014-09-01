@@ -1,0 +1,969 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=US-ASCII">
+<title>The Temple Operating System</title>
+<meta name="keywords" content="Operating System,64-Bit,64 Bit,Temple,OS,TempleOS,Free,Open Source,Public Domain,x86_64">
+<meta name="generator" content="TempleOS V2.06">
+<style type="text/css">
+.cF0{color:#000000;background-color:#fcfcfc;}
+.cF1{color:#0000a8;background-color:#fcfcfc;}
+.cF2{color:#00a800;background-color:#fcfcfc;}
+.cF3{color:#00a8a8;background-color:#fcfcfc;}
+.cF4{color:#a80000;background-color:#fcfcfc;}
+.cF5{color:#a800a8;background-color:#fcfcfc;}
+.cF6{color:#a85400;background-color:#fcfcfc;}
+.cF7{color:#a8a8a8;background-color:#fcfcfc;}
+.cF8{color:#545454;background-color:#fcfcfc;}
+.cF9{color:#5454fc;background-color:#fcfcfc;}
+.cFA{color:#54fc54;background-color:#fcfcfc;}
+.cFB{color:#54fcfc;background-color:#fcfcfc;}
+.cFC{color:#fc5454;background-color:#fcfcfc;}
+.cFD{color:#fc54fc;background-color:#fcfcfc;}
+.cFE{color:#fcfc54;background-color:#fcfcfc;}
+.cFF{color:#fcfcfc;background-color:#fcfcfc;}
+</style>
+</head>
+<body>
+<pre style="font-family:courier;font-size:10pt">
+<a name="l1"></a><span class=cF0>----11/20/13 03:16:01----
+<a name="l2"></a>
+<a name="l3"></a></span><a href="http://beacon.nist.gov/rest/record/1384946220"><span class=cF0>http://beacon.nist.gov/rest/record/1384946220</span></a><span class=cF0>
+<a name="l4"></a>
+<a name="l5"></a>0x05C578--&gt;(378232 mod 100096)+1--&gt;Line:77945
+<a name="l6"></a></span><a href="http://www.templeos.org/files/BIBLE.TXT"><span class=cF0>KingJamesBible</span></a><span class=cF0>: God says...
+<a name="l7"></a></span><span class=cF4>12:22 Then was brought unto him one possessed with a devil, blind, and
+<a name="l8"></a>dumb: and he healed him, insomuch that the blind and dumb both spake
+<a name="l9"></a>and saw.
+<a name="l10"></a>
+<a name="l11"></a>12:23 And all the people were amazed, and said, Is not this the son of
+<a name="l12"></a>David?  12:24 But when the Pharisees heard it, they said, This fellow
+<a name="l13"></a>doth not cast out devils, but by Beelzebub the prince of the devils.
+<a name="l14"></a>
+<a name="l15"></a>12:25 And Jesus knew their thoughts, and said unto them, Every kingdom
+<a name="l16"></a>divided against itself is brought to desolation; and every city or
+<a name="l17"></a>house divided against itself shall not stand: 12:26 And if Satan cast
+<a name="l18"></a>out Satan, he is divided against himself; how shall then his kingdom
+<a name="l19"></a>stand?  12:27 And if I by Beelzebub cast out devils, by whom do your
+<a name="l20"></a>children cast them out? therefore they shall be your judges.
+<a name="l21"></a>
+<a name="l22"></a>12:28 But if I cast out devils by the Spirit of God, then the kingdom
+<a name="l23"></a>of God is come unto you.
+<a name="l24"></a>
+<a name="l25"></a>12:29 Or else how can one enter into a strong man's house, and spoil</span><span class=cF0>
+<a name="l26"></a>
+<a name="l27"></a>----11/20/13 04:14:46----
+<a name="l28"></a>
+<a name="l29"></a></span><a href="http://www.youtube.com/watch?v=AmjQMtNuZpQ"><span class=cF0>David Blaine</span></a><span class=cF0>
+<a name="l30"></a>
+<a name="l31"></a></span><a href="http://beacon.nist.gov/rest/record/1384949760"><span class=cF0>http://beacon.nist.gov/rest/record/1384949760</span></a><span class=cF0>
+<a name="l32"></a>
+<a name="l33"></a>0xB5A7E0--&gt;(11904992 mod 100096)+1--&gt;Line:93665
+<a name="l34"></a></span><a href="http://www.templeos.org/files/BIBLE.TXT"><span class=cF0>KingJamesBible</span></a><span class=cF0>: God says...
+<a name="l35"></a></span><span class=cF4>7:6 Nevertheless God, that comforteth those that are cast down,
+<a name="l36"></a>comforted us by the coming of Titus; 7:7 And not by his coming only,
+<a name="l37"></a>but by the consolation wherewith he was comforted in you, when he told
+<a name="l38"></a>us your earnest desire, your mourning, your fervent mind toward me; so
+<a name="l39"></a>that I rejoiced the more.
+<a name="l40"></a>
+<a name="l41"></a>7:8 For though I made you sorry with a letter, I do not repent, though
+<a name="l42"></a>I did repent: for I perceive that the same epistle hath made you
+<a name="l43"></a>sorry, though it were but for a season.
+<a name="l44"></a>
+<a name="l45"></a>7:9 Now I rejoice, not that ye were made sorry, but that ye sorrowed
+<a name="l46"></a>to repentance: for ye were made sorry after a godly manner, that ye
+<a name="l47"></a>might receive damage by us in nothing.
+<a name="l48"></a>
+<a name="l49"></a>7:10 For godly sorrow worketh repentance to salvation not to be
+<a name="l50"></a>repented of: but the sorrow of the world worketh death.
+<a name="l51"></a>
+<a name="l52"></a>7:11 For behold this selfsame thing, that ye sorrowed after a godly
+<a name="l53"></a>sort, what carefulness it wrought in you, yea, what clearing of
+<a name="l54"></a>yourselves, yea, what indignation, yea, what fear, yea, what vehement</span><span class=cF0>
+<a name="l55"></a>
+<a name="l56"></a>----11/20/13 04:33:06----
+<a name="l57"></a>
+<a name="l58"></a></span><a href="http://www.ancient-origins.net/news-evolution-human-origins/neanderthal-viruses-dating-back-500000-years-discovered-modern-human"><span class=cF0>Neanderthals</span></a><span class=cF0>
+<a name="l59"></a>
+<a name="l60"></a></span><a href="http://beacon.nist.gov/rest/record/1384950840"><span class=cF0>http://beacon.nist.gov/rest/record/1384950840</span></a><span class=cF0>
+<a name="l61"></a>
+<a name="l62"></a>0xE60417--&gt;(15074327 mod 100096)+1--&gt;Line:59928
+<a name="l63"></a></span><a href="http://www.templeos.org/files/BIBLE.TXT"><span class=cF0>KingJamesBible</span></a><span class=cF0>: God says...
+<a name="l64"></a></span><span class=cF4>39:8 Then said Hezekiah to Isaiah, Good is the word of the LORD which
+<a name="l65"></a>thou hast spoken. He said moreover, For there shall be peace and truth
+<a name="l66"></a>in my days.
+<a name="l67"></a>
+<a name="l68"></a>40:1 Comfort ye, comfort ye my people, saith your God.
+<a name="l69"></a>
+<a name="l70"></a>40:2 Speak ye comfortably to Jerusalem, and cry unto her, that her
+<a name="l71"></a>warfare is accomplished, that her iniquity is pardoned: for she hath
+<a name="l72"></a>received of the LORD's hand double for all her sins.
+<a name="l73"></a>
+<a name="l74"></a>40:3 The voice of him that crieth in the wilderness, Prepare ye the
+<a name="l75"></a>way of the LORD, make straight in the desert a highway for our God.
+<a name="l76"></a>
+<a name="l77"></a>40:4 Every valley shall be exalted, and every mountain and hill shall
+<a name="l78"></a>be made low: and the crooked shall be made straight, and the rough
+<a name="l79"></a>places plain: 40:5 And the glory of the LORD shall be revealed, and
+<a name="l80"></a>all flesh shall see it together: for the mouth of the LORD hath spoken
+<a name="l81"></a>it.</span><span class=cF0>
+<a name="l82"></a>
+<a name="l83"></a>----11/20/13 04:50:58----
+<a name="l84"></a>
+<a name="l85"></a>What do You think of Kennedy?
+<a name="l86"></a>
+<a name="l87"></a></span><a href="http://beacon.nist.gov/rest/record/1384951920"><span class=cF0>http://beacon.nist.gov/rest/record/1384951920</span></a><span class=cF0>
+<a name="l88"></a>
+<a name="l89"></a>0x3D2857--&gt;(4008023 mod 100096)+1--&gt;Line:4184
+<a name="l90"></a></span><a href="http://www.templeos.org/files/BIBLE.TXT"><span class=cF0>KingJamesBible</span></a><span class=cF0>: God says...
+<a name="l91"></a></span><span class=cF4>said unto them, Ye are spies; to see the nakedness of the land ye are
+<a name="l92"></a>come.
+<a name="l93"></a>
+<a name="l94"></a>42:10 And they said unto him, Nay, my lord, but to buy food are thy
+<a name="l95"></a>servants come.
+<a name="l96"></a>
+<a name="l97"></a>42:11 We are all one man's sons; we are true men, thy servants are no
+<a name="l98"></a>spies.
+<a name="l99"></a>
+<a name="l100"></a>42:12 And he said unto them, Nay, but to see the nakedness of the land
+<a name="l101"></a>ye are come.
+<a name="l102"></a>
+<a name="l103"></a>42:13 And they said, Thy servants are twelve brethren, the sons of one
+<a name="l104"></a>man in the land of Canaan; and, behold, the youngest is this day with
+<a name="l105"></a>our father, and one is not.
+<a name="l106"></a>
+<a name="l107"></a>42:14 And Joseph said unto them, That is it that I spake unto you,
+<a name="l108"></a>saying, Ye are spies: 42:15 Hereby ye shall be proved: By the life of
+<a name="l109"></a>Pharaoh ye shall not go forth hence, except your youngest brother come
+<a name="l110"></a>hither.
+<a name="l111"></a>
+<a name="l112"></a></span><span class=cF2>Radio said Mrs. Kennedy held jacket over his head so people couldn't see body.</span><span class=cF0>
+<a name="l113"></a>
+<a name="l114"></a>God says...
+<a name="l115"></a></span><span class=cF4>leading Go resumes drunkards clothed tattlings honourable fool ideas praised 
+<a name="l116"></a>yielding inclined dismiss appropriated generation gently</span><span class=cF0>
+<a name="l117"></a>
+<a name="l118"></a>----11/20/13 05:14:11----
+<a name="l119"></a>
+<a name="l120"></a>What are my bird's thoughts like, God?
+<a name="l121"></a>
+<a name="l122"></a></span><a href="http://beacon.nist.gov/rest/record/1384953240"><span class=cF0>http://beacon.nist.gov/rest/record/1384953240</span></a><span class=cF0>
+<a name="l123"></a>
+<a name="l124"></a>0xF5E2CB--&gt;(16114379 mod 100096)+1--&gt;Line:99020
+<a name="l125"></a></span><a href="http://www.templeos.org/files/BIBLE.TXT"><span class=cF0>KingJamesBible</span></a><span class=cF0>: God says...
+<a name="l126"></a></span><span class=cF4>bow; and a crown was given unto him: and he went forth conquering, and
+<a name="l127"></a>to conquer.
+<a name="l128"></a>
+<a name="l129"></a>6:3 And when he had opened the second seal, I heard the second beast
+<a name="l130"></a>say, Come and see.
+<a name="l131"></a>
+<a name="l132"></a>6:4 And there went out another horse that was red: and power was given
+<a name="l133"></a>to him that sat thereon to take peace from the earth, and that they
+<a name="l134"></a>should kill one another: and there was given unto him a great sword.
+<a name="l135"></a>
+<a name="l136"></a>6:5 And when he had opened the third seal, I heard the third beast
+<a name="l137"></a>say, Come and see. And I beheld, and lo a black horse; and he that sat
+<a name="l138"></a>on him had a pair of balances in his hand.
+<a name="l139"></a>
+<a name="l140"></a>6:6 And I heard a voice in the midst of the four beasts say, A measure
+<a name="l141"></a>of wheat for a penny, and three measures of barley for a penny; and
+<a name="l142"></a>see thou hurt not the oil and the wine.
+<a name="l143"></a>
+<a name="l144"></a>6:7 And when he had opened the fourth seal, I heard the voice of the
+<a name="l145"></a>fourth beast say, Come and see.</span><span class=cF0>
+<a name="l146"></a>
+<a name="l147"></a>God says...
+<a name="l148"></a></span><span class=cF4>thunderer specimens facio blamed VI pupils young doors descending brain 
+<a name="l149"></a>anticipate</span><span class=cF0>
+<a name="l150"></a>
+<a name="l151"></a>----11/20/13 05:27:38----
+<a name="l152"></a>
+<a name="l153"></a>What's Your favorite river, God?
+<a name="l154"></a>
+<a name="l155"></a></span><a href="http://beacon.nist.gov/rest/record/1384954080"><span class=cF0>http://beacon.nist.gov/rest/record/1384954080</span></a><span class=cF0>
+<a name="l156"></a>
+<a name="l157"></a>0xFFA26E--&gt;(16753262 mod 100096)+1--&gt;Line:37231
+<a name="l158"></a></span><a href="http://www.templeos.org/files/BIBLE.TXT"><span class=cF0>KingJamesBible</span></a><span class=cF0>: God says...
+<a name="l159"></a></span><span class=cF4>Jediael the second, Zebadiah the third, Jathniel the fourth, 26:3 Elam
+<a name="l160"></a>the fifth, Jehohanan the sixth, Elioenai the seventh.
+<a name="l161"></a>
+<a name="l162"></a>26:4 Moreover the sons of Obededom were, Shemaiah the firstborn,
+<a name="l163"></a>Jehozabad the second, Joah the third, and Sacar the fourth, and
+<a name="l164"></a>Nethaneel the fifth.
+<a name="l165"></a>
+<a name="l166"></a>26:5 Ammiel the sixth, Issachar the seventh, Peulthai the eighth: for
+<a name="l167"></a>God blessed him.
+<a name="l168"></a>
+<a name="l169"></a>26:6 Also unto Shemaiah his son were sons born, that ruled throughout
+<a name="l170"></a>the house of their father: for they were mighty men of valour.
+<a name="l171"></a>
+<a name="l172"></a>26:7 The sons of Shemaiah; Othni, and Rephael, and Obed, Elzabad,
+<a name="l173"></a>whose brethren were strong men, Elihu, and Semachiah.
+<a name="l174"></a>
+<a name="l175"></a>26:8 All these of the sons of Obededom: they and their sons and their
+<a name="l176"></a>brethren, able men for strength for the service, were threescore and
+<a name="l177"></a>two of Obededom.
+<a name="l178"></a>
+<a name="l179"></a></span><span class=cF2>Jedi the second.</span><span class=cF0>
+<a name="l180"></a>
+<a name="l181"></a>God says...
+<a name="l182"></a></span><span class=cF4>seducers detriment preached bier person sank released fallacies Circensian Saul 
+<a name="l183"></a>position like V estimated corner pitiable speed moreover knocks embraces Michael 
+<a name="l184"></a>startled unwearied flashes decked impostumes fears occur necessity rend bosom</span><span class=cF0>
+<a name="l185"></a>
+<a name="l186"></a>----11/20/13 06:03:08----
+<a name="l187"></a>
+<a name="l188"></a></span><a href="http://hbr.org/2013/12/how-google-sold-its-engineers-on-management/ar/1"><span class=cF0>Google Management</span></a><span class=cF0>
+<a name="l189"></a>
+<a name="l190"></a>Yeah!  They're talking about SETI.  I have to manage myself.  Knowing what to do 
+<a name="l191"></a>is as hard or harder than doing it.  I think I should separate the HolySpirit 
+<a name="l192"></a>from WordStat.
+<a name="l193"></a>
+<a name="l194"></a></span><a href="http://beacon.nist.gov/rest/record/1384956300"><span class=cF0>http://beacon.nist.gov/rest/record/1384956300</span></a><span class=cF0>
+<a name="l195"></a>
+<a name="l196"></a>0xC2E92E--&gt;(12773678 mod 100096)+1--&gt;Line:61487
+<a name="l197"></a></span><a href="http://www.templeos.org/files/BIBLE.TXT"><span class=cF0>KingJamesBible</span></a><span class=cF0>: God says...
+<a name="l198"></a></span><span class=cF4>62:5 For as a young man marrieth a virgin, so shall thy sons marry
+<a name="l199"></a>thee: and as the bridegroom rejoiceth over the bride, so shall thy God
+<a name="l200"></a>rejoice over thee.
+<a name="l201"></a>
+<a name="l202"></a>62:6 I have set watchmen upon thy walls, O Jerusalem, which shall
+<a name="l203"></a>never hold their peace day nor night: ye that make mention of the
+<a name="l204"></a>LORD, keep not silence, 62:7 And give him no rest, till he establish,
+<a name="l205"></a>and till he make Jerusalem a praise in the earth.
+<a name="l206"></a>
+<a name="l207"></a>62:8 The LORD hath sworn by his right hand, and by the arm of his
+<a name="l208"></a>strength, Surely I will no more give thy corn to be meat for thine
+<a name="l209"></a>enemies; and the sons of the stranger shall not drink thy wine, for
+<a name="l210"></a>the which thou hast laboured: 62:9 But they that have gathered it
+<a name="l211"></a>shall eat it, and praise the LORD; and they that have brought it
+<a name="l212"></a>together shall drink it in the courts of my holiness.
+<a name="l213"></a>
+<a name="l214"></a>62:10 Go through, go through the gates; prepare ye the way of the
+<a name="l215"></a>people; cast up, cast up the highway; gather out the stones; lift up a
+<a name="l216"></a>standard for the people.</span><span class=cF0>
+<a name="l217"></a>
+<a name="l218"></a>----11/20/13 09:35:26----
+<a name="l219"></a>
+<a name="l220"></a></span><a href="http://www.youtube.com/watch?v=KoIP8ypP16A"><span class=cF0>Bill Cosby</span></a><span class=cF0>
+<a name="l221"></a>
+<a name="l222"></a></span><a href="http://beacon.nist.gov/rest/record/1384968960"><span class=cF0>http://beacon.nist.gov/rest/record/1384968960</span></a><span class=cF0>
+<a name="l223"></a>
+<a name="l224"></a>0x5D9564--&gt;(6133092 mod 100096)+1--&gt;Line:27237
+<a name="l225"></a></span><a href="http://www.templeos.org/files/BIBLE.TXT"><span class=cF0>KingJamesBible</span></a><span class=cF0>: God says...
+<a name="l226"></a></span><span class=cF4>4:3 And the Beerothites fled to Gittaim, and were sojourners there
+<a name="l227"></a>until this day.)  4:4 And Jonathan, Saul's son, had a son that was
+<a name="l228"></a>lame of his feet. He was five years old when the tidings came of Saul
+<a name="l229"></a>and Jonathan out of Jezreel, and his nurse took him up, and fled: and
+<a name="l230"></a>it came to pass, as she made haste to flee, that he fell, and became
+<a name="l231"></a>lame. And his name was Mephibosheth.
+<a name="l232"></a>
+<a name="l233"></a>4:5 And the sons of Rimmon the Beerothite, Rechab and Baanah, went,
+<a name="l234"></a>and came about the heat of the day to the house of Ishbosheth, who lay
+<a name="l235"></a>on a bed at noon.
+<a name="l236"></a>
+<a name="l237"></a>4:6 And they came thither into the midst of the house, as though they
+<a name="l238"></a>would have fetched wheat; and they smote him under the fifth rib: and
+<a name="l239"></a>Rechab and Baanah his brother escaped.
+<a name="l240"></a>
+<a name="l241"></a>4:7 For when they came into the house, he lay on his bed in his
+<a name="l242"></a>bedchamber, and they smote him, and slew him, and beheaded him, and
+<a name="l243"></a>took his head, and gat them away through the plain all night.
+<a name="l244"></a>
+<a name="l245"></a>4:8 And they brought the head of Ishbosheth unto David to Hebron, and</span><span class=cF0>
+<a name="l246"></a>
+<a name="l247"></a>----11/20/13 09:41:42----
+<a name="l248"></a>
+<a name="l249"></a>Brits were calling my OS Iran's nuclear program.  I got furious and turned the 
+<a name="l250"></a>other cheek.  </span><a href="http://www.biblegateway.com/passage/?search=Matthew%205:39-41&version=NIV"><span class=cF0>Matthew 5:39-41</span></a><span class=cF0>
+<a name="l251"></a>
+<a name="l252"></a>I deleted it.  Found it on a download site, later.
+<a name="l253"></a>
+<a name="l254"></a>Lost Windows hymn source.
+<a name="l255"></a>
+<a name="l256"></a></span><a href="http://beacon.nist.gov/rest/record/1384969440"><span class=cF0>http://beacon.nist.gov/rest/record/1384969440</span></a><span class=cF0>
+<a name="l257"></a>
+<a name="l258"></a>0x57F396--&gt;(5763990 mod 100096)+1--&gt;Line:58519
+<a name="l259"></a></span><a href="http://www.templeos.org/files/BIBLE.TXT"><span class=cF0>KingJamesBible</span></a><span class=cF0>: God says...
+<a name="l260"></a></span><span class=cF4>19:10 And they shall be broken in the purposes thereof, all that make
+<a name="l261"></a>sluices and ponds for fish.
+<a name="l262"></a>
+<a name="l263"></a>19:11 Surely the princes of Zoan are fools, the counsel of the wise
+<a name="l264"></a>counsellors of Pharaoh is become brutish: how say ye unto Pharaoh, I
+<a name="l265"></a>am the son of the wise, the son of ancient kings?  19:12 Where are
+<a name="l266"></a>they? where are thy wise men? and let them tell thee now, and let them
+<a name="l267"></a>know what the LORD of hosts hath purposed upon Egypt.
+<a name="l268"></a>
+<a name="l269"></a>19:13 The princes of Zoan are become fools, the princes of Noph are
+<a name="l270"></a>deceived; they have also seduced Egypt, even they that are the stay of
+<a name="l271"></a>the tribes thereof.
+<a name="l272"></a>
+<a name="l273"></a>19:14 The LORD hath mingled a perverse spirit in the midst thereof:
+<a name="l274"></a>and they have caused Egypt to err in every work thereof, as a drunken
+<a name="l275"></a>man staggereth in his vomit.
+<a name="l276"></a>
+<a name="l277"></a>19:15 Neither shall there be any work for Egypt, which the head or
+<a name="l278"></a>tail, branch or rush, may do.</span><span class=cF0>
+<a name="l279"></a>
+<a name="l280"></a>----11/20/13 10:18:31----
+<a name="l281"></a>
+<a name="l282"></a>I have all power and I am the highest court.  Surrender.
+<a name="l283"></a>
+<a name="l284"></a></span><a href="http://beacon.nist.gov/rest/record/1384971540"><span class=cF0>http://beacon.nist.gov/rest/record/1384971540</span></a><span class=cF0>
+<a name="l285"></a>
+<a name="l286"></a>0xE4620B--&gt;(14967307 mod 100096)+1--&gt;Line:53004
+<a name="l287"></a></span><a href="http://www.templeos.org/files/BIBLE.TXT"><span class=cF0>KingJamesBible</span></a><span class=cF0>: God says...
+<a name="l288"></a></span><span class=cF4>131:1 Lord, my heart is not haughty, nor mine eyes lofty: neither do I
+<a name="l289"></a>exercise myself in great matters, or in things too high for me.
+<a name="l290"></a>
+<a name="l291"></a>131:2 Surely I have behaved and quieted myself, as a child that is
+<a name="l292"></a>weaned of his mother: my soul is even as a weaned child.
+<a name="l293"></a>
+<a name="l294"></a>131:3 Let Israel hope in the LORD from henceforth and for ever.
+<a name="l295"></a>
+<a name="l296"></a>
+<a name="l297"></a>
+<a name="l298"></a>132:1 Lord, remember David, and all his afflictions:
+<a name="l299"></a>
+<a name="l300"></a>132:2 How he sware unto the LORD, and vowed unto the mighty God of
+<a name="l301"></a>Jacob;
+<a name="l302"></a>
+<a name="l303"></a>132:3 Surely I will not come into the tabernacle of my house, nor go
+<a name="l304"></a>up into my bed;
+<a name="l305"></a>
+<a name="l306"></a>132:4 I will not give sleep to mine eyes, or slumber to mine eyelids,</span><span class=cF0>
+<a name="l307"></a>
+<a name="l308"></a>----11/20/13 10:43:27----
+<a name="l309"></a>
+<a name="l310"></a>I have created God's temple.  Do not fight it.
+<a name="l311"></a>
+<a name="l312"></a></span><a href="http://beacon.nist.gov/rest/record/1384972980"><span class=cF0>http://beacon.nist.gov/rest/record/1384972980</span></a><span class=cF0>
+<a name="l313"></a>
+<a name="l314"></a>0x0F5272--&gt;(1004146 mod 100096)+1--&gt;Line:3187
+<a name="l315"></a></span><a href="http://www.templeos.org/files/BIBLE.TXT"><span class=cF0>KingJamesBible</span></a><span class=cF0>: God says...
+<a name="l316"></a></span><span class=cF4>as the sand of the sea, which cannot be numbered for multitude.
+<a name="l317"></a>
+<a name="l318"></a>32:13 And he lodged there that same night; and took of that which came
+<a name="l319"></a>to his hand a present for Esau his brother; 32:14 Two hundred she
+<a name="l320"></a>goats, and twenty he goats, two hundred ewes, and twenty rams, 32:15
+<a name="l321"></a>Thirty milch camels with their colts, forty kine, and ten bulls,
+<a name="l322"></a>twenty she asses, and ten foals.
+<a name="l323"></a>
+<a name="l324"></a>32:16 And he delivered them into the hand of his servants, every drove
+<a name="l325"></a>by themselves; and said unto his servants, Pass over before me, and
+<a name="l326"></a>put a space betwixt drove and drove.
+<a name="l327"></a>
+<a name="l328"></a>32:17 And he commanded the foremost, saying, When Esau my brother
+<a name="l329"></a>meeteth thee, and asketh thee, saying, Whose art thou? and whither
+<a name="l330"></a>goest thou? and whose are these before thee?  32:18 Then thou shalt
+<a name="l331"></a>say, They be thy servant Jacob's; it is a present sent unto my lord
+<a name="l332"></a>Esau: and, behold, also he is behind us.
+<a name="l333"></a>
+<a name="l334"></a>32:19 And so commanded he the second, and the third, and all that
+<a name="l335"></a>followed the droves, saying, On this manner shall ye speak unto Esau,</span><span class=cF0>
+<a name="l336"></a>
+<a name="l337"></a>----11/20/13 11:37:30----
+<a name="l338"></a>
+<a name="l339"></a>What do You think of Preditor?
+<a name="l340"></a>
+<a name="l341"></a></span><a href="http://beacon.nist.gov/rest/record/1384976280"><span class=cF0>http://beacon.nist.gov/rest/record/1384976280</span></a><span class=cF0>
+<a name="l342"></a>
+<a name="l343"></a>0x752306--&gt;(7676678 mod 100096)+1--&gt;Line:69383
+<a name="l344"></a></span><a href="http://www.templeos.org/files/BIBLE.TXT"><span class=cF0>KingJamesBible</span></a><span class=cF0>: God says...
+<a name="l345"></a></span><span class=cF4>25:5 And I will make Rabbah a stable for camels, and the Ammonites a
+<a name="l346"></a>couching place for flocks: and ye shall know that I am the LORD.
+<a name="l347"></a>
+<a name="l348"></a>25:6 For thus saith the Lord GOD; Because thou hast clapped thine
+<a name="l349"></a>hands, and stamped with the feet, and rejoiced in heart with all thy
+<a name="l350"></a>despite against the land of Israel; 25:7 Behold, therefore I will
+<a name="l351"></a>stretch out mine hand upon thee, and will deliver thee for a spoil to
+<a name="l352"></a>the heathen; and I will cut thee off from the people, and I will cause
+<a name="l353"></a>thee to perish out of the countries: I will destroy thee; and thou
+<a name="l354"></a>shalt know that I am the LORD.
+<a name="l355"></a>
+<a name="l356"></a>25:8 Thus saith the Lord GOD; Because that Moab and Seir do say,
+<a name="l357"></a>Behold, the house of Judah is like unto all the heathen; 25:9
+<a name="l358"></a>Therefore, behold, I will open the side of Moab from the cities, from
+<a name="l359"></a>his cities which are on his frontiers, the glory of the country,
+<a name="l360"></a>Bethjeshimoth, Baalmeon, and Kiriathaim, 25:10 Unto the men of the
+<a name="l361"></a>east with the Ammonites, and will give them in possession, that the
+<a name="l362"></a>Ammonites may not be remembered among the nations.
+<a name="l363"></a>
+<a name="l364"></a>25:11 And I will execute judgments upon Moab; and they shall know that</span><span class=cF0>
+<a name="l365"></a>
+<a name="l366"></a>----11/20/13 11:59:43----
+<a name="l367"></a>
+<a name="l368"></a>Nothing can save the niggers.
+<a name="l369"></a>
+<a name="l370"></a></span><a href="http://beacon.nist.gov/rest/record/1384977600"><span class=cF0>http://beacon.nist.gov/rest/record/1384977600</span></a><span class=cF0>
+<a name="l371"></a>
+<a name="l372"></a>0x470A89--&gt;(4655753 mod 100096)+1--&gt;Line:51338
+<a name="l373"></a></span><a href="http://www.templeos.org/files/BIBLE.TXT"><span class=cF0>KingJamesBible</span></a><span class=cF0>: God says...
+<a name="l374"></a></span><span class=cF4>turn not again to cover the earth.
+<a name="l375"></a>
+<a name="l376"></a>104:10 He sendeth the springs into the valleys, which run among the
+<a name="l377"></a>hills.
+<a name="l378"></a>
+<a name="l379"></a>104:11 They give drink to every beast of the field: the wild asses
+<a name="l380"></a>quench their thirst.
+<a name="l381"></a>
+<a name="l382"></a>104:12 By them shall the fowls of the heaven have their habitation,
+<a name="l383"></a>which sing among the branches.
+<a name="l384"></a>
+<a name="l385"></a>104:13 He watereth the hills from his chambers: the earth is satisfied
+<a name="l386"></a>with the fruit of thy works.
+<a name="l387"></a>
+<a name="l388"></a>104:14 He causeth the grass to grow for the cattle, and herb for the
+<a name="l389"></a>service of man: that he may bring forth food out of the earth;
+<a name="l390"></a>
+<a name="l391"></a>104:15 And wine that maketh glad the heart of man, and oil to make his
+<a name="l392"></a>face to shine, and bread which strengtheneth man's heart.</span><span class=cF0>
+<a name="l393"></a>
+<a name="l394"></a>----11/20/13 12:42:43----
+<a name="l395"></a>
+<a name="l396"></a>Fuck them up, God.
+<a name="l397"></a>
+<a name="l398"></a></span><a href="http://beacon.nist.gov/rest/record/1384980180"><span class=cF0>http://beacon.nist.gov/rest/record/1384980180</span></a><span class=cF0>
+<a name="l399"></a>
+<a name="l400"></a>0x76AB54--&gt;(7777108 mod 100096)+1--&gt;Line:69717
+<a name="l401"></a></span><a href="http://www.templeos.org/files/BIBLE.TXT"><span class=cF0>KingJamesBible</span></a><span class=cF0>: God says...
+<a name="l402"></a></span><span class=cF4>mine own, and I have made it for myself.
+<a name="l403"></a>
+<a name="l404"></a>29:4 But I will put hooks in thy jaws, and I will cause the fish of
+<a name="l405"></a>thy rivers to stick unto thy scales, and I will bring thee up out of
+<a name="l406"></a>the midst of thy rivers, and all the fish of thy rivers shall stick
+<a name="l407"></a>unto thy scales.
+<a name="l408"></a>
+<a name="l409"></a>29:5 And I will leave thee thrown into the wilderness, thee and all
+<a name="l410"></a>the fish of thy rivers: thou shalt fall upon the open fields; thou
+<a name="l411"></a>shalt not be brought together, nor gathered: I have given thee for
+<a name="l412"></a>meat to the beasts of the field and to the fowls of the heaven.
+<a name="l413"></a>
+<a name="l414"></a>29:6 And all the inhabitants of Egypt shall know that I am the LORD,
+<a name="l415"></a>because they have been a staff of reed to the house of Israel.
+<a name="l416"></a>
+<a name="l417"></a>29:7 When they took hold of thee by thy hand, thou didst break, and
+<a name="l418"></a>rend all their shoulder: and when they leaned upon thee, thou brakest,
+<a name="l419"></a>and madest all their loins to be at a stand.
+<a name="l420"></a>
+<a name="l421"></a>29:8 Therefore thus saith the Lord GOD; Behold, I will bring a sword</span><span class=cF0>
+<a name="l422"></a>
+<a name="l423"></a>----11/20/13 12:59:53----
+<a name="l424"></a>
+<a name="l425"></a>Fucken niggers.
+<a name="l426"></a>
+<a name="l427"></a></span><a href="http://beacon.nist.gov/rest/record/1384981200"><span class=cF0>http://beacon.nist.gov/rest/record/1384981200</span></a><span class=cF0>
+<a name="l428"></a>
+<a name="l429"></a>0xD1A073--&gt;(13738099 mod 100096)+1--&gt;Line:24948
+<a name="l430"></a></span><a href="http://www.templeos.org/files/BIBLE.TXT"><span class=cF0>KingJamesBible</span></a><span class=cF0>: God says...
+<a name="l431"></a></span><span class=cF4>13:11 And Samuel said, What hast thou done? And Saul said, Because I
+<a name="l432"></a>saw that the people were scattered from me, and that thou camest not
+<a name="l433"></a>within the days appointed, and that the Philistines gathered
+<a name="l434"></a>themselves together at Michmash; 13:12 Therefore said I, The
+<a name="l435"></a>Philistines will come down now upon me to Gilgal, and I have not made
+<a name="l436"></a>supplication unto the LORD: I forced myself therefore, and offered a
+<a name="l437"></a>burnt offering.
+<a name="l438"></a>
+<a name="l439"></a>13:13 And Samuel said to Saul, Thou hast done foolishly: thou hast not
+<a name="l440"></a>kept the commandment of the LORD thy God, which he commanded thee: for
+<a name="l441"></a>now would the LORD have established thy kingdom upon Israel for ever.
+<a name="l442"></a>
+<a name="l443"></a>13:14 But now thy kingdom shall not continue: the LORD hath sought him
+<a name="l444"></a>a man after his own heart, and the LORD hath commanded him to be
+<a name="l445"></a>captain over his people, because thou hast not kept that which the
+<a name="l446"></a>LORD commanded thee.
+<a name="l447"></a>
+<a name="l448"></a>13:15 And Samuel arose, and gat him up from Gilgal unto Gibeah of
+<a name="l449"></a>Benjamin. And Saul numbered the people that were present with him,
+<a name="l450"></a>about six hundred men.</span><span class=cF0>
+<a name="l451"></a>
+<a name="l452"></a>----11/20/13 13:10:19----
+<a name="l453"></a>
+<a name="l454"></a>Nigger mocking God.
+<a name="l455"></a>
+<a name="l456"></a></span><a href="http://beacon.nist.gov/rest/record/1384981800"><span class=cF0>http://beacon.nist.gov/rest/record/1384981800</span></a><span class=cF0>
+<a name="l457"></a>
+<a name="l458"></a>0xB94044--&gt;(12140612 mod 100096)+1--&gt;Line:28997
+<a name="l459"></a></span><a href="http://www.templeos.org/files/BIBLE.TXT"><span class=cF0>KingJamesBible</span></a><span class=cF0>: God says...
+<a name="l460"></a></span><span class=cF4>brother of David slew him.
+<a name="l461"></a>
+<a name="l462"></a>21:22 These four were born to the giant in Gath, and fell by the hand
+<a name="l463"></a>of David, and by the hand of his servants.
+<a name="l464"></a>
+<a name="l465"></a>22:1 And David spake unto the LORD the words of this song in the day
+<a name="l466"></a>that the LORD had delivered him out of the hand of all his enemies,
+<a name="l467"></a>and out of the hand of Saul: 22:2 And he said, The LORD is my rock,
+<a name="l468"></a>and my fortress, and my deliverer; 22:3 The God of my rock; in him
+<a name="l469"></a>will I trust: he is my shield, and the horn of my salvation, my high
+<a name="l470"></a>tower, and my refuge, my saviour; thou savest me from violence.
+<a name="l471"></a>
+<a name="l472"></a>22:4 I will call on the LORD, who is worthy to be praised: so shall I
+<a name="l473"></a>be saved from mine enemies.
+<a name="l474"></a>
+<a name="l475"></a>22:5 When the waves of death compassed me, the floods of ungodly men
+<a name="l476"></a>made me afraid; 22:6 The sorrows of hell compassed me about; the
+<a name="l477"></a>snares of death prevented me; 22:7 In my distress I called upon the
+<a name="l478"></a>LORD, and cried to my God: and he did hear my voice out of his temple,
+<a name="l479"></a>and my cry did enter into his ears.</span><span class=cF0>
+<a name="l480"></a>
+<a name="l481"></a>----11/20/13 13:16:29----
+<a name="l482"></a>
+<a name="l483"></a>Ground-hogs day.
+<a name="l484"></a>
+<a name="l485"></a>Fucken stupid.
+<a name="l486"></a>
+<a name="l487"></a>God says...
+<a name="l488"></a></span><span class=cF4>opening infirmities armory Canst forgetful fowl Continual December fouls 
+<a name="l489"></a>adorning mass allay recover echoes Madness diffused tutors recallest staff 
+<a name="l490"></a>capital smoke Prophets Christ wantonness nay Sovereign parley unbelieving commit 
+<a name="l491"></a>main disclaimers fragment path suck debts softened change Not hot The must 
+<a name="l492"></a>obeyed moulded ever 113 Dudley baptise sets corruptible delivered Latins 
+<a name="l493"></a>transgression withal Sovereign chains influenced neatly root used Within 
+<a name="l494"></a>answerably begging invite anxious proceeding viciousness Not grieving received 
+<a name="l495"></a>absent hart preventedst Too victory Praetorian understood freely steadfast 
+<a name="l496"></a>adapted moon answered captain prelate disobeyed high blessings unmeasured 
+<a name="l497"></a>evermore predicted smelling toss saw exceedingly insatiable 401 appeared omitted 
+<a name="l498"></a>inviting stablished connects other exceedeth recited judges separated crept 
+<a name="l499"></a>doors project deepness rocks composed somewhat gather Nevada suspense befalls 
+<a name="l500"></a>Affrighted fluctuate means 97 walked wherewith just sorrowed needy displeasing 
+<a name="l501"></a>endeavours persecuted inspiration understanding dares lover wasting hastened 
+<a name="l502"></a>history punishable arrogant lay burthened thirst sanctuary alloy solitude 
+<a name="l503"></a>mixture dignity replies ordained cared watchfully Placed illumined mystery Isaac 
+<a name="l504"></a>bird affirm soil Covetousness lineage finest wild gone foretold Example craftier 
+<a name="l505"></a>enlargedst Hence</span><span class=cF0>
+<a name="l506"></a>
+<a name="l507"></a>----11/20/13 13:49:21----
+<a name="l508"></a>
+<a name="l509"></a></span><a href="http://beacon.nist.gov/rest/record/1384984140"><span class=cF0>http://beacon.nist.gov/rest/record/1384984140</span></a><span class=cF0>
+<a name="l510"></a>
+<a name="l511"></a>0x67AFBC--&gt;(6795196 mod 100096)+1--&gt;Line:88765
+<a name="l512"></a></span><a href="http://www.templeos.org/files/BIBLE.TXT"><span class=cF0>KingJamesBible</span></a><span class=cF0>: God says...
+<a name="l513"></a></span><span class=cF4>Lord.
+<a name="l514"></a>
+<a name="l515"></a>9:36 Now there was at Joppa a certain disciple named Tabitha, which by
+<a name="l516"></a>interpretation is called Dorcas: this woman was full of good works and
+<a name="l517"></a>almsdeeds which she did.
+<a name="l518"></a>
+<a name="l519"></a>9:37 And it came to pass in those days, that she was sick, and died:
+<a name="l520"></a>whom when they had washed, they laid her in an upper chamber.
+<a name="l521"></a>
+<a name="l522"></a>9:38 And forasmuch as Lydda was nigh to Joppa, and the disciples had
+<a name="l523"></a>heard that Peter was there, they sent unto him two men, desiring him
+<a name="l524"></a>that he would not delay to come to them.
+<a name="l525"></a>
+<a name="l526"></a>9:39 Then Peter arose and went with them. When he was come, they
+<a name="l527"></a>brought him into the upper chamber: and all the widows stood by him
+<a name="l528"></a>weeping, and shewing the coats and garments which Dorcas made, while
+<a name="l529"></a>she was with them.
+<a name="l530"></a>
+<a name="l531"></a>9:40 But Peter put them all forth, and kneeled down, and prayed; and
+<a name="l532"></a>turning him to the body said, Tabitha, arise. And she opened her eyes:</span><span class=cF0>
+<a name="l533"></a>
+<a name="l534"></a>----11/20/13 16:48:23----
+<a name="l535"></a>
+<a name="l536"></a>Give your ten percent tithe and don't give it a second thought.  The parable of 
+<a name="l537"></a>the talents says to make a big company.
+<a name="l538"></a>
+<a name="l539"></a></span><a href="http://beacon.nist.gov/rest/record/1384994940"><span class=cF0>http://beacon.nist.gov/rest/record/1384994940</span></a><span class=cF0>
+<a name="l540"></a>
+<a name="l541"></a>0x27E2BE--&gt;(2613950 mod 100096)+1--&gt;Line:11455
+<a name="l542"></a></span><a href="http://www.templeos.org/files/BIBLE.TXT"><span class=cF0>KingJamesBible</span></a><span class=cF0>: God says...
+<a name="l543"></a></span><span class=cF4>seven days.
+<a name="l544"></a>
+<a name="l545"></a>23:41 And ye shall keep it a feast unto the LORD seven days in the
+<a name="l546"></a>year.
+<a name="l547"></a>
+<a name="l548"></a>It shall be a statute for ever in your generations: ye shall celebrate
+<a name="l549"></a>it in the seventh month.
+<a name="l550"></a>
+<a name="l551"></a>23:42 Ye shall dwell in booths seven days; all that are Israelites
+<a name="l552"></a>born shall dwell in booths: 23:43 That your generations may know that
+<a name="l553"></a>I made the children of Israel to dwell in booths, when I brought them
+<a name="l554"></a>out of the land of Egypt: I am the LORD your God.
+<a name="l555"></a>
+<a name="l556"></a>23:44 And Moses declared unto the children of Israel the feasts of the
+<a name="l557"></a>LORD.
+<a name="l558"></a>
+<a name="l559"></a>24:1 And the LORD spake unto Moses, saying, 24:2 Command the children
+<a name="l560"></a>of Israel, that they bring unto thee pure oil olive beaten for the
+<a name="l561"></a>light, to cause the lamps to burn continually.</span><span class=cF0>
+<a name="l562"></a>
+<a name="l563"></a>----11/20/13 17:25:33----
+<a name="l564"></a>
+<a name="l565"></a>Proving God is very disruptive, retard-niggers.  Worried about 3D printing?  
+<a name="l566"></a>Have you considered judgement day?
+<a name="l567"></a>
+<a name="l568"></a></span><a href="http://beacon.nist.gov/rest/record/1384997160"><span class=cF0>http://beacon.nist.gov/rest/record/1384997160</span></a><span class=cF0>
+<a name="l569"></a>
+<a name="l570"></a>0xD3DA8B--&gt;(13884043 mod 100096)+1--&gt;Line:70796
+<a name="l571"></a></span><a href="http://www.templeos.org/files/BIBLE.TXT"><span class=cF0>KingJamesBible</span></a><span class=cF0>: God says...
+<a name="l572"></a></span><span class=cF4>was one reed broad.
+<a name="l573"></a>
+<a name="l574"></a>40:7 And every little chamber was one reed long, and one reed broad;
+<a name="l575"></a>and between the little chambers were five cubits; and the threshold of
+<a name="l576"></a>the gate by the porch of the gate within was one reed.
+<a name="l577"></a>
+<a name="l578"></a>40:8 He measured also the porch of the gate within, one reed.
+<a name="l579"></a>
+<a name="l580"></a>40:9 Then measured he the porch of the gate, eight cubits; and the
+<a name="l581"></a>posts thereof, two cubits; and the porch of the gate was inward.
+<a name="l582"></a>
+<a name="l583"></a>40:10 And the little chambers of the gate eastward were three on this
+<a name="l584"></a>side, and three on that side; they three were of one measure: and the
+<a name="l585"></a>posts had one measure on this side and on that side.
+<a name="l586"></a>
+<a name="l587"></a>40:11 And he measured the breadth of the entry of the gate, ten
+<a name="l588"></a>cubits; and the length of the gate, thirteen cubits.
+<a name="l589"></a>
+<a name="l590"></a>40:12 The space also before the little chambers was one cubit on this
+<a name="l591"></a>side, and the space was one cubit on that side: and the little</span><span class=cF0>
+<a name="l592"></a>
+<a name="l593"></a>----11/20/13 17:35:33----
+<a name="l594"></a>
+<a name="l595"></a>In a fucken CIA mind reading prison, yet they're fucken not clear on God.
+<a name="l596"></a>
+<a name="l597"></a>Catholic angels?  Angels in cahoots?
+<a name="l598"></a>
+<a name="l599"></a>This much I know -- God's world is perfectly just and you are vile atheist 
+<a name="l600"></a>retard-niggers.
+<a name="l601"></a>
+<a name="l602"></a></span><a href="http://beacon.nist.gov/rest/record/1384997880"><span class=cF0>http://beacon.nist.gov/rest/record/1384997880</span></a><span class=cF0>
+<a name="l603"></a>
+<a name="l604"></a>0xB3718D--&gt;(11760013 mod 100096)+1--&gt;Line:48782
+<a name="l605"></a></span><a href="http://www.templeos.org/files/BIBLE.TXT"><span class=cF0>KingJamesBible</span></a><span class=cF0>: God says...
+<a name="l606"></a></span><span class=cF4>not fear what flesh can do unto me.
+<a name="l607"></a>
+<a name="l608"></a>56:5 Every day they wrest my words: all their thoughts are against me
+<a name="l609"></a>for evil.
+<a name="l610"></a>
+<a name="l611"></a>56:6 They gather themselves together, they hide themselves, they mark
+<a name="l612"></a>my steps, when they wait for my soul.
+<a name="l613"></a>
+<a name="l614"></a>56:7 Shall they escape by iniquity? in thine anger cast down the
+<a name="l615"></a>people, O God.
+<a name="l616"></a>
+<a name="l617"></a>56:8 Thou tellest my wanderings: put thou my tears into thy bottle:
+<a name="l618"></a>are they not in thy book?
+<a name="l619"></a>
+<a name="l620"></a>56:9 When I cry unto thee, then shall mine enemies turn back: this I
+<a name="l621"></a>know; for God is for me.
+<a name="l622"></a>
+<a name="l623"></a>56:10 In God will I praise his word: in the LORD will I praise his
+<a name="l624"></a>word.</span><span class=cF0>
+<a name="l625"></a>
+<a name="l626"></a>
+<a name="l627"></a>Yer fucked, you fucken NIGGERS!
+<a name="l628"></a>
+<a name="l629"></a>----11/20/13 17:49:22----
+<a name="l630"></a>
+<a name="l631"></a>Some shit they got.
+<a name="l632"></a>
+<a name="l633"></a>The CIA employs angels and mind reading shit and it kinda gets fuzzy with humans 
+<a name="l634"></a>acting as humans or possessed by angels and people don't take much note when 
+<a name="l635"></a>possessed by angels, just kinda burp and move along.  CIA crosses-over into 
+<a name="l636"></a>angel-land.  Not sure why they act like atheists.
+<a name="l637"></a>
+<a name="l638"></a></span><a href="http://beacon.nist.gov/rest/record/1384998660"><span class=cF0>http://beacon.nist.gov/rest/record/1384998660</span></a><span class=cF0>
+<a name="l639"></a>
+<a name="l640"></a>0xDC2AD1--&gt;(14428881 mod 100096)+1--&gt;Line:15058
+<a name="l641"></a></span><a href="http://www.templeos.org/files/BIBLE.TXT"><span class=cF0>KingJamesBible</span></a><span class=cF0>: God says...
+<a name="l642"></a></span><span class=cF4>set him before Eleazar the priest, and before all the congregation:
+<a name="l643"></a>27:23 And he laid his hands upon him, and gave him a charge, as the
+<a name="l644"></a>LORD commanded by the hand of Moses.
+<a name="l645"></a>
+<a name="l646"></a>28:1 And the LORD spake unto Moses, saying, 28:2 Command the children
+<a name="l647"></a>of Israel, and say unto them, My offering, and my bread for my
+<a name="l648"></a>sacrifices made by fire, for a sweet savour unto me, shall ye observe
+<a name="l649"></a>to offer unto me in their due season.
+<a name="l650"></a>
+<a name="l651"></a>28:3 And thou shalt say unto them, This is the offering made by fire
+<a name="l652"></a>which ye shall offer unto the LORD; two lambs of the first year
+<a name="l653"></a>without spot day by day, for a continual burnt offering.
+<a name="l654"></a>
+<a name="l655"></a>28:4 The one lamb shalt thou offer in the morning, and the other lamb
+<a name="l656"></a>shalt thou offer at even; 28:5 And a tenth part of an ephah of flour
+<a name="l657"></a>for a meat offering, mingled with the fourth part of an hin of beaten
+<a name="l658"></a>oil.
+<a name="l659"></a>
+<a name="l660"></a>28:6 It is a continual burnt offering, which was ordained in mount
+<a name="l661"></a>Sinai for a sweet savour, a sacrifice made by fire unto the LORD.</span><span class=cF0>
+<a name="l662"></a>
+<a name="l663"></a>----11/20/13 17:55:34----
+<a name="l664"></a>
+<a name="l665"></a>The litle niggers think they own brains do shit, LOL.  Fucken they say something 
+<a name="l666"></a>genius and think they thought of it.  &quot;Oh, I did that.  I'm smart.&quot;
+<a name="l667"></a>
+<a name="l668"></a></span><a href="http://beacon.nist.gov/rest/record/1384998960"><span class=cF0>http://beacon.nist.gov/rest/record/1384998960</span></a><span class=cF0>
+<a name="l669"></a>
+<a name="l670"></a>0x89EDA9--&gt;(9039273 mod 100096)+1--&gt;Line:30634
+<a name="l671"></a></span><a href="http://www.templeos.org/files/BIBLE.TXT"><span class=cF0>KingJamesBible</span></a><span class=cF0>: God says...
+<a name="l672"></a></span><span class=cF4>continually before thee, and that hear thy wisdom.
+<a name="l673"></a>
+<a name="l674"></a>10:9 Blessed be the LORD thy God, which delighted in thee, to set thee
+<a name="l675"></a>on the throne of Israel: because the LORD loved Israel for ever,
+<a name="l676"></a>therefore made he thee king, to do judgment and justice.
+<a name="l677"></a>
+<a name="l678"></a>10:10 And she gave the king an hundred and twenty talents of gold, and
+<a name="l679"></a>of spices very great store, and precious stones: there came no more
+<a name="l680"></a>such abundance of spices as these which the queen of Sheba gave to
+<a name="l681"></a>king Solomon.
+<a name="l682"></a>
+<a name="l683"></a>10:11 And the navy also of Hiram, that brought gold from Ophir,
+<a name="l684"></a>brought in from Ophir great plenty of almug trees, and precious
+<a name="l685"></a>stones.
+<a name="l686"></a>
+<a name="l687"></a>10:12 And the king made of the almug trees pillars for the house of
+<a name="l688"></a>the LORD, and for the king's house, harps also and psalteries for
+<a name="l689"></a>singers: there came no such almug trees, nor were seen unto this day.
+<a name="l690"></a>
+<a name="l691"></a>10:13 And king Solomon gave unto the queen of Sheba all her desire,</span><span class=cF0>
+<a name="l692"></a>
+<a name="l693"></a>----11/20/13 18:06:48----
+<a name="l694"></a>
+<a name="l695"></a></span><a href="http://beacon.nist.gov/rest/record/1384999620"><span class=cF0>http://beacon.nist.gov/rest/record/1384999620</span></a><span class=cF0>
+<a name="l696"></a>
+<a name="l697"></a>0x1445EE--&gt;(1328622 mod 100096)+1--&gt;Line:27375
+<a name="l698"></a></span><a href="http://www.templeos.org/files/BIBLE.TXT"><span class=cF0>KingJamesBible</span></a><span class=cF0>: God says...
+<a name="l699"></a></span><span class=cF4>6:5 And David and all the house of Israel played before the LORD on
+<a name="l700"></a>all manner of instruments made of fir wood, even on harps, and on
+<a name="l701"></a>psalteries, and on timbrels, and on cornets, and on cymbals.
+<a name="l702"></a>
+<a name="l703"></a>6:6 And when they came to Nachon's threshingfloor, Uzzah put forth his
+<a name="l704"></a>hand to the ark of God, and took hold of it; for the oxen shook it.
+<a name="l705"></a>
+<a name="l706"></a>6:7 And the anger of the LORD was kindled against Uzzah; and God smote
+<a name="l707"></a>him there for his error; and there he died by the ark of God.
+<a name="l708"></a>
+<a name="l709"></a>6:8 And David was displeased, because the LORD had made a breach upon
+<a name="l710"></a>Uzzah: and he called the name of the place Perezuzzah to this day.
+<a name="l711"></a>
+<a name="l712"></a>6:9 And David was afraid of the LORD that day, and said, How shall the
+<a name="l713"></a>ark of the LORD come to me?  6:10 So David would not remove the ark of
+<a name="l714"></a>the LORD unto him into the city of David: but David carried it aside
+<a name="l715"></a>into the house of Obededom the Gittite.
+<a name="l716"></a>
+<a name="l717"></a>6:11 And the ark of the LORD continued in the house of Obededom the</span><span class=cF0>
+<a name="l718"></a>
+<a name="l719"></a>----11/20/13 22:37:49----
+<a name="l720"></a>
+<a name="l721"></a>You know what would be funny?  It would be funny if I had just Chinese customers 
+<a name="l722"></a>emailing me.  I would squirm a little.  I'm surprised the CIA hasn't tortured me 
+<a name="l723"></a>in that way.  I can get big headed and worried.  It's nothing difficult, yet it 
+<a name="l724"></a>is impressive.
+<a name="l725"></a>
+<a name="l726"></a>I live in a small number of websites, probably all done by the CIA.  There are 
+<a name="l727"></a>no programmers in my league... but I know in the world that there are others.  
+<a name="l728"></a>Lots of people would look at the simple stuff I did and think it nothing.
+<a name="l729"></a>
+<a name="l730"></a>To me... My operating system gives me the same feeling.... It's like when you 
+<a name="l731"></a>sit down to a Motorola 68020 device with no operating system and start coding 
+<a name="l732"></a>fresh.  There is nothing you don't need and if you are doing it fresh, it is 
+<a name="l733"></a>perfect and clean.  There is no ugly code.  At the beginning, it is all simple, 
+<a name="l734"></a>clean, fresh.  My operating system seems like nothing, to me, as I imagine 
+<a name="l735"></a>writing for a 68020 -- it is libraries but these aren't ugly, they are just 
+<a name="l736"></a>simple libraries.  I imagine PUTCHAR.  I imagine PUTHEX.  When I think of my 
+<a name="l737"></a>operating system, it seems like nothing but these perfect little routines I am 
+<a name="l738"></a>so familiar with... there is nothing I don't understand.
+<a name="l739"></a>
+<a name="l740"></a>When I think of my operating system, I kinda have an impression of PUTCHAR and 
+<a name="l741"></a>PUTHEX and nothing more.  Am I making sense?
+<a name="l742"></a>
+<a name="l743"></a>----11/20/13 22:59:18----
+<a name="l744"></a>
+<a name="l745"></a>OSDev.
+<a name="l746"></a>
+<a name="l747"></a>Sad pathetic.
+<a name="l748"></a>
+<a name="l749"></a>I can imagine an Indian accent, excited and vehement...  &quot;No, thish is not how 
+<a name="l750"></a>you do it.  You must do it thish way.  That is absoluetly not correct.  It must 
+<a name="l751"></a>be like this.  You must have separate address spaces.  It is incorrect.  This is 
+<a name="l752"></a>not acceptable.  It is defective.&quot;
+<a name="l753"></a>
+<a name="l754"></a>It's like an excited Indian is telling me, &quot;You must have ice in your soda.  It 
+<a name="l755"></a>is not acceptible to drink soda without ice.  Absolutely, you must have ice in 
+<a name="l756"></a>your soda.&quot;  He is very excited about this and sure of himself.
+<a name="l757"></a>
+<a name="l758"></a>To these Indian guys, Ring-0-only and identity-mapping, is blasphemy to them.  
+<a name="l759"></a>To me it's like not having ice in my soda.  (This is not my concern)  The ice 
+<a name="l760"></a>delutes it.  Privilege level changes slow it down and make it complicated.  You 
+<a name="l761"></a>don't have to have protections and it will be faster and simpler.  It's just 
+<a name="l762"></a>like not having ice in your soda.  Some people really freak-out.  Look, dude, 
+<a name="l763"></a>you don't own the store, why do you care?  The store doesn't care, much.
+<a name="l764"></a>
+<a name="l765"></a>I take ice in my soda, actually, but it's like that.
+<a name="l766"></a>
+<a name="l767"></a>These people are really freaked-out that I don't have ice in my soda.  I'm tired 
+<a name="l768"></a>of talking to them.  We argue year after year.  &quot;You must have ice in your 
+<a name="l769"></a>soda.&quot;  I'm not buying it from a store.  Why do you care.  What if some poeple 
+<a name="l770"></a>enjoy soda with no ice, in private.  I can understand how corrupting the young, 
+<a name="l771"></a>in public...  LOL
+<a name="l772"></a>
+<a name="l773"></a>----11/20/13 23:20:34----
+<a name="l774"></a>
+<a name="l775"></a>I have way too much ego.  I have to remind myself by watching this video of a 
+<a name="l776"></a>gulf natural gas processing platform.  There's a square block of pipes and 
+<a name="l777"></a>complicated stuff that they park above the ocean in the gulf.  They run these 
+<a name="l778"></a>pipes all over the bottom with ships miles above the floor.
+<a name="l779"></a>
+<a name="l780"></a>When I think about all that stuff, it seems silly worrying if the Chinese are 
+<a name="l781"></a>taking a ring-0-only operating system.  Someone tries to raise the specter of 
+<a name="l782"></a>killer robots.  Come-on!  That oil platform makes my thing look puny.
+<a name="l783"></a>
+<a name="l784"></a>I'm not sure I made any sense, but it's good for me to remind myself of 
+<a name="l785"></a>humility.
+<a name="l786"></a>
+<a name="l787"></a></span><a href="http://beacon.nist.gov/rest/record/1385018760"><span class=cF0>http://beacon.nist.gov/rest/record/1385018760</span></a><span class=cF0>
+<a name="l788"></a>
+<a name="l789"></a>0x6176A7--&gt;(6387367 mod 100096)+1--&gt;Line:81320
+<a name="l790"></a></span><a href="http://www.templeos.org/files/BIBLE.TXT"><span class=cF0>KingJamesBible</span></a><span class=cF0>: God says...
+<a name="l791"></a></span><span class=cF4>12:8 And they took him, and killed him, and cast him out of the
+<a name="l792"></a>vineyard.
+<a name="l793"></a>
+<a name="l794"></a>12:9 What shall therefore the lord of the vineyard do? he will come
+<a name="l795"></a>and destroy the husbandmen, and will give the vineyard unto others.
+<a name="l796"></a>
+<a name="l797"></a>12:10 And have ye not read this scripture; The stone which the
+<a name="l798"></a>builders rejected is become the head of the corner: 12:11 This was the
+<a name="l799"></a>Lord's doing, and it is marvellous in our eyes?  12:12 And they sought
+<a name="l800"></a>to lay hold on him, but feared the people: for they knew that he had
+<a name="l801"></a>spoken the parable against them: and they left him, and went their
+<a name="l802"></a>way.
+<a name="l803"></a>
+<a name="l804"></a>12:13 And they send unto him certain of the Pharisees and of the
+<a name="l805"></a>Herodians, to catch him in his words.
+<a name="l806"></a>
+<a name="l807"></a>12:14 And when they were come, they say unto him, Master, we know that
+<a name="l808"></a>thou art true, and carest for no man: for thou regardest not the
+<a name="l809"></a>person of men, but teachest the way of God in truth: Is it lawful to
+<a name="l810"></a>give tribute to Caesar, or not?  12:15 Shall we give, or shall we not</span><span class=cF0>
+<a name="l811"></a>
+<a name="l812"></a>----11/20/13 23:33:59----
+<a name="l813"></a>
+<a name="l814"></a>In 64-bit long mode, to call a nearby routine there is a short, fast 32-bit 
+<a name="l815"></a>instruction.  It gets slightly uglier when you want to go anywhere in 64-bit 
+<a name="l816"></a>range.
+<a name="l817"></a>
+<a name="l818"></a>There are countless inside-the-box assumptions, all the stupid people I deal 
+<a name="l819"></a>with hold.  &quot;Everything grows.  If you make a limit it will be exceeded.  Bill 
+<a name="l820"></a>Gates said 640K would be enough, what an idiot, ba ha.&quot;  Bill Gates was accepted 
+<a name="l821"></a>to Harvard and was pretty damn smart.  All the kids make fun of him.  We all 
+<a name="l822"></a>know 2 Gig is just like 640K.  We're not stupid, like Bill Gates.  It's obvious, 
+<a name="l823"></a>now, that no number will be enough, because of Moores law.  Moores law cannot be 
+<a name="l824"></a>violated.  That's like the speed of light changing.
+<a name="l825"></a>
+<a name="l826"></a>I say 2 Gig will be enough for code, for my operating system.
+<a name="l827"></a>
+<a name="l828"></a>You must have ice in your soda!  This is not acceptible.  It is defective.  Your 
+<a name="l829"></a>operating system is not 64-bit.  It must be PAE mode.  You lie.
+<a name="l830"></a>
+<a name="l831"></a></span><a href="http://beacon.nist.gov/rest/record/1385020380"><span class=cF0>http://beacon.nist.gov/rest/record/1385020380</span></a><span class=cF0>
+<a name="l832"></a>
+<a name="l833"></a>0xD478F6--&gt;(13924598 mod 100096)+1--&gt;Line:11255
+<a name="l834"></a></span><a href="http://www.templeos.org/files/BIBLE.TXT"><span class=cF0>KingJamesBible</span></a><span class=cF0>: God says...
+<a name="l835"></a></span><span class=cF4>thereof.
+<a name="l836"></a>
+<a name="l837"></a>22:14 And if a man eat of the holy thing unwittingly, then he shall
+<a name="l838"></a>put the fifth part thereof unto it, and shall give it unto the priest
+<a name="l839"></a>with the holy thing.
+<a name="l840"></a>
+<a name="l841"></a>22:15 And they shall not profane the holy things of the children of
+<a name="l842"></a>Israel, which they offer unto the LORD; 22:16 Or suffer them to bear
+<a name="l843"></a>the iniquity of trespass, when they eat their holy things: for I the
+<a name="l844"></a>LORD do sanctify them.
+<a name="l845"></a>
+<a name="l846"></a>22:17 And the LORD spake unto Moses, saying, 22:18 Speak unto Aaron,
+<a name="l847"></a>and to his sons, and unto all the children of Israel, and say unto
+<a name="l848"></a>them, Whatsoever he be of the house of Israel, or of the strangers in
+<a name="l849"></a>Israel, that will offer his oblation for all his vows, and for all his
+<a name="l850"></a>freewill offerings, which they will offer unto the LORD for a burnt
+<a name="l851"></a>offering; 22:19 Ye shall offer at your own will a male without
+<a name="l852"></a>blemish, of the beeves, of the sheep, or of the goats.
+<a name="l853"></a>
+<a name="l854"></a>22:20 But whatsoever hath a blemish, that shall ye not offer: for it</span><span class=cF0>
+<a name="l855"></a>
+<a name="l856"></a>My operating system will always be changed to fix imperfections.  Most people 
+<a name="l857"></a>promise backward compatibility?  I promise the opposite, LOL.  I will ALWAYS 
+<a name="l858"></a>break backward compatibility to keep it perfect.  That's a promise.  I won't 
+<a name="l859"></a>think twice.  Who knows -- maybe it's perfect, now, though.
+<a name="l860"></a>
+<a name="l861"></a>I really want to remove support for FAT32 and ISO9660.  I have a simple 
+<a name="l862"></a>filesystem called &quot;RedSea&quot; that I want Windows and Linux to support.  Not only 
+<a name="l863"></a>can RedSea work on hard disk, it can work as CD/DVD by just putting the image 
+<a name="l864"></a>there.  
+<a name="l865"></a>
+<a name="l866"></a>The RedSea file system is just like FAT32 but it has an allocation bitmap 
+<a name="l867"></a>instead of FAT.  It can only have contiguous files and files cannot change size 
+<a name="l868"></a>to get bigger.  This is not suitable, normally, but for us it's okay.  An 
+<a name="l869"></a>additional difference is that the directory entries are fixed-size and limited 
+<a name="l870"></a>filename length.  They are 64-byte entries with 38 length including a zero.
+<a name="l871"></a>
+<a name="l872"></a>Our goal is to be obnoxiously simple.  That's what we live for.  I wake-up every 
+<a name="l873"></a>day trying to find more ways to be obnoxiously simple.
+<a name="l874"></a>
+<a name="l875"></a>A CDROM need not have an allocation bitmap.  Oops, I forgot -- I was not even 
+<a name="l876"></a>thinking about multi-session CDDVD burning.
+<a name="l877"></a>
+<a name="l878"></a>There are probably times I am not obnoxiously simple.  I don't care.
+<a name="l879"></a>
+<a name="l880"></a>I am certainly not low resource usage.  Quite the contrary.  I like to use 
+<a name="l881"></a>resources to make it obnoxiously simple.  When hardware gets more powerful, some 
+<a name="l882"></a>new possibilities open-up.  Almost all the time, I load and save whole files at 
+<a name="l883"></a>once.  Traditional file-to-disk virtual memory is obsolete.  Have you ever 
+<a name="l884"></a>actually triggered it and seen how unacceptibly slow it is!  If the guide is 
+<a name="l885"></a>SWAP equal to RAM size, heck for a factor of two more memory, just buy more 
+<a name="l886"></a>memory.  I can understand virtual memory for a factor of ten more memory but a 
+<a name="l887"></a>factor of two more memory, just makes no sense because it's so terrible.
+<a name="l888"></a>
+<a name="l889"></a>----11/21/13 00:27:51----
+<a name="l890"></a>
+<a name="l891"></a>Once we calm down, you might soon decide my operating system is no news at all.  
+<a name="l892"></a>I'm not keen on the thought of helping drones, so I'm relieved if mine's not 
+<a name="l893"></a>hard-real-time.  If you think about it, ring-0-only is not the issue, it's 
+<a name="l894"></a>simplicity.  People can do hardware in Linux, but mine is simpler.
+<a name="l895"></a>
+<a name="l896"></a>I remember the nice, clean, architecture of a Motorola 68020 and starting a 
+<a name="l897"></a>fresh assembly project with no other code.  That is not sinister.
+<a name="l898"></a>
+<a name="l899"></a>God said we are being moved-off our ancestrial lands.
+<a name="l900"></a>
+<a name="l901"></a>So, the horsepower is higher, good for cameras, I guess.
+<a name="l902"></a>
+<a name="l903"></a>In the past, I would have sought to do robots, and would have tried to make them 
+<a name="l904"></a>good, as in scary.  I played with a dremel tool on a stepper motor platform.  I 
+<a name="l905"></a>scratched that itch.  I have no plans and shit is too hard.
+<a name="l906"></a>
+<a name="l907"></a>Shit is much harder to hook-up.  It used to be simple to do an RS232 serial port 
+<a name="l908"></a>driver.  Now, sheesh!  &lt;shakes his head&gt;  USB is insanely overengineered.  
+<a name="l909"></a>Ethernet?  Camera?  I don't have any plans for hardware.
+<a name="l910"></a>
+<a name="l911"></a>Young men should have the feeling of starting fresh on a Motorola 68020 in 
+<a name="l912"></a>assembly language.  Not literally, but approximately.
+<a name="l913"></a>
+<a name="l914"></a></span><a href="http://beacon.nist.gov/rest/record/1385023800"><span class=cF0>http://beacon.nist.gov/rest/record/1385023800</span></a><span class=cF0>
+<a name="l915"></a>
+<a name="l916"></a>0x51E438--&gt;(5366840 mod 100096)+1--&gt;Line:61753
+<a name="l917"></a></span><a href="http://www.templeos.org/files/BIBLE.TXT"><span class=cF0>KingJamesBible</span></a><span class=cF0>: God says...
+<a name="l918"></a></span><span class=cF4>shall be comforted in Jerusalem.
+<a name="l919"></a>
+<a name="l920"></a>66:14 And when ye see this, your heart shall rejoice, and your bones
+<a name="l921"></a>shall flourish like an herb: and the hand of the LORD shall be known
+<a name="l922"></a>toward his servants, and his indignation toward his enemies.
+<a name="l923"></a>
+<a name="l924"></a>66:15 For, behold, the LORD will come with fire, and with his chariots
+<a name="l925"></a>like a whirlwind, to render his anger with fury, and his rebuke with
+<a name="l926"></a>flames of fire.
+<a name="l927"></a>
+<a name="l928"></a>66:16 For by fire and by his sword will the LORD plead with all flesh:
+<a name="l929"></a>and the slain of the LORD shall be many.
+<a name="l930"></a>
+<a name="l931"></a>66:17 They that sanctify themselves, and purify themselves in the
+<a name="l932"></a>gardens behind one tree in the midst, eating swine's flesh, and the
+<a name="l933"></a>abomination, and the mouse, shall be consumed together, saith the
+<a name="l934"></a>LORD.
+<a name="l935"></a>
+<a name="l936"></a>66:18 For I know their works and their thoughts: it shall come, that I
+<a name="l937"></a>will gather all nations and tongues; and they shall come, and see my</span><span class=cF0>
+<a name="l938"></a>
+<a name="l939"></a> </span></pre></body>
+</html>
+<!-- text below generated by server. PLEASE REMOVE --><!-- Counter/Statistics data collection code --><script language="JavaScript" src="http://l.yimg.com/d/lib/smb/js/hosting/cp/js_source/whv2_001.js"></script><script language="javascript">geovisit();</script><noscript><img src="http://visit.webhosting.yahoo.com/visit.gif?us1409528982" alt="setstats" border="0" width="1" height="1"></noscript><script type="text/javascript" src="https://s.yimg.com/mi/vs4/ywa.js"></script><script type="text/javascript">try {var YWAGTracker = YWA.getTracker("10001849413879", "VSCALE4");YWAGTracker.setDocumentName("WPAGE");YWAGTracker.setDocumentGroup("YSBW");YWAGTracker.setCF(7, "templeos.org");YWAGTracker.setCF(8, "w42");YWAGTracker.submit();} catch (eYWATCUnavailable) {}</script><script type="text/javascript">(function (d, w) {var x = d.getElementsByTagName('SCRIPT')[0];var f = function () {var s = d.createElement('SCRIPT');s.type = 'text/javascript';s.async = true;s.src = "//np.lexity.com/embed/YW/eff965aab4535cd38b91f0976c617496?id=9382d670eca2";x.parentNode.insertBefore(s, x);};w.attachEvent ? w.attachEvent('onload',f) :w.addEventListener('load',f,false);}(document, window));</script>

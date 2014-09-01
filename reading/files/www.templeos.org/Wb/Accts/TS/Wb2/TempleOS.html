@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=US-ASCII">
+<title>The Temple Operating System</title>
+<meta name="keywords" content="Operating System,64-Bit,64 Bit,Temple,OS,TempleOS,Free,Open Source,Public Domain,x86_64">
+<meta name="generator" content="TempleOS V2.15">
+<style type="text/css">
+.cF0{color:#000000;background-color:#fcfcfc;}
+.cF1{color:#0000a8;background-color:#fcfcfc;}
+.cF2{color:#00a800;background-color:#fcfcfc;}
+.cF3{color:#00a8a8;background-color:#fcfcfc;}
+.cF4{color:#a80000;background-color:#fcfcfc;}
+.cF5{color:#a800a8;background-color:#fcfcfc;}
+.cF6{color:#a85400;background-color:#fcfcfc;}
+.cF7{color:#a8a8a8;background-color:#fcfcfc;}
+.cF8{color:#545454;background-color:#fcfcfc;}
+.cF9{color:#5454fc;background-color:#fcfcfc;}
+.cFA{color:#54fc54;background-color:#fcfcfc;}
+.cFB{color:#54fcfc;background-color:#fcfcfc;}
+.cFC{color:#fc5454;background-color:#fcfcfc;}
+.cFD{color:#fc54fc;background-color:#fcfcfc;}
+.cFE{color:#fcfc54;background-color:#fcfcfc;}
+.cFF{color:#fcfcfc;background-color:#fcfcfc;}
+</style>
+</head>
+<body>
+<pre style="font-family:courier;font-size:10pt">
+<a name="l1"></a></blink><span class=cF5>                          </span><a href="http://www.templeos.org"></blink><span class=cF5>The Temple Operating System</span></a></blink><span class=cF0>
+<a name="l2"></a></span><span class=cF3>
+<a name="l3"></a></span><iframe width="640" height="520" src="http://www.youtube.com/embed/EViG0Q4lTeA" frameborder="0" allowfullscreen></iframe></blink><span class=cF0>                                                                                                                         
+<a name="l4"></a>(* Has a 64-Bit AOT/JIT compiler, not interpreter.)
+<a name="l5"></a>
+<a name="l6"></a></span><span class=cF3>
+<a name="l7"></a></span><object width="640" height="520"><param name="movie" value="http://www.youtube.com/v/OWU5e0eNjho"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/OWU5e0eNjho" type="application/x-shockwave-flash" allowscriptaccess="always" width="640" height="520"></embed></object></blink><span class=cF0>                                                                                                                                                                                                                                                                                                                             
+<a name="l8"></a>
+<a name="l9"></a>
+<a name="l10"></a>TempleOS is an </span><a href="http://en.wikipedia.org/wiki/Amd64#AMD64"></blink><span class=cF4>x86_64</span></a></blink><span class=cF0>, multi-tasking, multi-cored, public domain, open source, </span><span class=cF4>
+<a name="l11"></a></span><a href="http://en.wikipedia.org/wiki/Ring_(computer_security)"></blink><span class=cF4>ring-0-only</span></a></blink><span class=cF0>, single-address-map (</span><a href="http://en.wikipedia.org/wiki/Identity_(mathematics)"></blink><span class=cF4>identity-mapped</span></a></blink><span class=cF0>), non-networked, PC operating 
+<a name="l12"></a>system for recreational programming.  It sticks to common, 64-bit hardware 
+<a name="l13"></a>instead of distinct drivers because you must </span><a href="http://en.wikipedia.org/wiki/Hearts#Shooting_the_moon"></blink><span class=cF4>shoot-the-moon</span></a></blink><span class=cF0>.  Also, redundancy 
+<a name="l14"></a>and varied capabilities are unpleasant compared to everybody-has-the-same-thing.
+<a name="l15"></a>
+<a name="l16"></a>Normally, &quot;failure is not an option&quot; applies.  Since TempleOS accompanies 
+<a name="l17"></a>Windows or Linux, however, failure is an option.  There is no reason to 
+<a name="l18"></a>duplicate all use cases -- browsing, multimedia, desktop publishing, etc.  
+<a name="l19"></a>Instead, it's simple, fun, and beautiful.  I capped the lines of code at 
+<a name="l20"></a>100,000, so it will never be an ugly monstrocity.  Currently, it is 80,935.  
+<a name="l21"></a>Since God's temple must be perfect and we have 1,000 years in mind, I do not 
+<a name="l22"></a>promise that anything is future-proof.
+<a name="l23"></a>
+<a name="l24"></a>The main reason TempleOS is simple and beautiful is because it's </span><a href="http://en.wikipedia.org/wiki/Ring_(computer_security)"></blink><span class=cF4>ring-0-only</span></a></blink><span class=cF0> and </span><span class=cF4>
+<a name="l25"></a></span><a href="http://en.wikipedia.org/wiki/Identity_(mathematics)"></blink><span class=cF4>identity-mapped</span></a></blink><span class=cF0>.  Linux wants to be a secure, multi-user mainframe.  That's the 
+<a name="l26"></a>vision for Linux.  That's why it has file permissions.  The vision for TempleOS 
+<a name="l27"></a>is a modern, 64-bit Commodore 64.  The C64 was a home computer mostly used for 
+<a name="l28"></a>games.  It trained my generation how to program.  It was simple, open and 
+<a name="l29"></a>hackable.  It was not networked.  The games were not multimedia works of art, 
+<a name="l30"></a>but generated programmatically with innocent, programmer (non-artist) quality 
+<a name="l31"></a>graphics.  It was simple and unsecure.  If you don't have malware and you don't 
+<a name="l32"></a>have bugs, protection just slows things down and makes the code complicated.
+<a name="l33"></a>
+<a name="l34"></a>A troll might ask, &quot;Why not just use </span><a href="http://en.wikipedia.org/wiki/DOS"></blink><span class=cF4>DOS</span></a></blink><span class=cF0>?  It was ring-0-only and 
+<a name="l35"></a>single-address-map.&quot;  Actually, they wouldn't because many people would say, 
+<a name="l36"></a>&quot;Cool idea!  I'm gonna dust-off </span><a href="http://en.wikipedia.org/wiki/DOS"></blink><span class=cF4>DOS</span></a></blink><span class=cF0> right now and have some fun!&quot;  </span><a href="http://en.wikipedia.org/wiki/DOS"></blink><span class=cF4>DOS</span></a></blink><span class=cF0> is 16-bit 
+<a name="l37"></a>with segmentation, though, which is awful.  TempleOS is 64-bit, flat, 
+<a name="l38"></a>non-segmented and multi-cored.  It's like a modern, souped-up, multi-tasking, 
+<a name="l39"></a>cross between </span><a href="http://en.wikipedia.org/wiki/DOS"></blink><span class=cF4>DOS</span></a></blink><span class=cF0> and a Commodore 64.  It has a C64-like shell with </span><a href="../../../Doc/HolyC.html#l1"></blink><span class=cF4>HolyC</span></a></blink><span class=cF0>, a 
+<a name="l40"></a>dialect of C/C++, instead of BASIC.  It was written from scratch, and not even 
+<a name="l41"></a>ASCII was sacred -- it has 8-bit unsigned character source code to support 
+<a name="l42"></a>European languages.  Also, the source code has graphics.
+<a name="l43"></a>
+<a name="l44"></a>A troll might say, &quot;But, it can crash!&quot;  We all used </span><a href="http://en.wikipedia.org/wiki/DOS"></blink><span class=cF4>DOS</span></a></blink><span class=cF0> for years and loved it. 
+<a name="l45"></a>Computers even had a reset switch!  Just think of the power of ring-0, muhahaha! 
+<a name="l46"></a>Think of the speed and simplicity of </span><a href="http://en.wikipedia.org/wiki/Ring_(computer_security)"></blink><span class=cF4>ring-0-only</span></a></blink><span class=cF0> and </span><a href="http://en.wikipedia.org/wiki/Identity_(mathematics)"></blink><span class=cF4>identity-mapping</span></a></blink><span class=cF0>.  It's 
+<a name="l47"></a>only </span><a href="LineRep.html#l600"></blink><span class=cF4>121,115</span></a></blink><span class=cF0> lines of code, including the compiler and can change tasks in half 
+<a name="l48"></a>a microsecond because it doesn't mess with page tables or privilege levels.  
+<a name="l49"></a>Inter-process communication is effortless because every task can access every 
+<a name="l50"></a>other task's memory.
+<a name="l51"></a>
+<a name="l52"></a>It's fun having access to everything.  When I was a teenager, I had a book, </span><span class=cF4>
+<a name="l53"></a></span><a href="http://unusedino.de/ec64/technical/project64/mapping_c64.html"></blink><span class=cF4>Mapping the Commodore 64</span></a></blink><span class=cF0>, that told what every location in memory did.  I liked 
+<a name="l54"></a>copying the ROM to RAM and poking around at the ROM BASIC's variables.  
+<a name="l55"></a>Everybody directly poked the hardware ports.
+<a name="l56"></a>
+<a name="l57"></a>TempleOS is simpler than Linux and you can have hours of fun tinkering because 
+<a name="l58"></a>all memory and ports are accessible.  Memory is </span><a href="http://en.wikipedia.org/wiki/Identity_(mathematics)"></blink><span class=cF4>identity-mapped</span></a></blink><span class=cF0> at all times, so 
+<a name="l59"></a>you can modify any task's memory from any other task.  You can access all disk 
+<a name="l60"></a>blocks, too.  I had a blast using a C64 disk block editor to modify directories 
+<a name="l61"></a>to un-delete files, when I was a kid.  Maybe, you want to play with a raw-block 
+<a name="l62"></a>database, or make your own file system?
+<a name="l63"></a>
+<a name="l64"></a>I wrote all </span><a href="LineRep.html#l600"></blink><span class=cF4>121,115</span></a></blink><span class=cF0> lines of TempleOS over the last 11.1 years, full-time, 
+<a name="l65"></a>including the 64-bit compiler.  It was called, at various times, &quot;</span><a href="http://web.archive.org/web/*/http://www.simstructure.hare.com/*"></blink><span class=cF4>Hoppy</span></a></blink><span class=cF0>&quot;, &quot;</span><span class=cF4>
+<a name="l66"></a></span><a href="http://wayback.archive.org/web/*/http://www.justrighteous.org/*"></blink><span class=cF4>The J Operating System</span></a></blink><span class=cF0>&quot;, &quot;</span><a href="http://web.archive.org/web/*/http://www.losethos.com/*"></blink><span class=cF4>LoseThos</span></a></blink><span class=cF0>&quot; and &quot;</span><a href="http://web.archive.org/web/*/http://www.sparrowos.com/*"></blink><span class=cF4>SparrowOS</span></a></blink><span class=cF0>&quot;.  Here are my </span><span class=cF4>
+<a name="l67"></a></span><a href="http://www.templeos.org/files/ASU_Transcripts.pdf"></blink><span class=cF4>college transcripts</span></a></blink><span class=cF0>.  I've been a professional operating system developer since 
+<a name="l68"></a>1990 when I was hired to work on Ticketmaster's VAX OS.
+<a name="l69"></a>
+<a name="l70"></a>
+<a name="l71"></a></span><a href="Downloads.html"></blink><span class=cF4>Downloads</span></a></blink><span class=cF4>
+<a name="l72"></a>
+<a name="l73"></a></span><a href="ScreenShots.html"></blink><span class=cF4>Screen Shots</span></a></blink><span class=cF4>
+<a name="l74"></a>
+<a name="l75"></a></span><a href="Tutorials.html"></blink><span class=cF4>Tutorial Videos</span></a></blink><span class=cF4>
+<a name="l76"></a>
+<a name="l77"></a></span><a href="Games.html"></blink><span class=cF4>Game Videos</span></a></blink><span class=cF4>
+<a name="l78"></a></span><span class=cF4>
+<a name="l79"></a></span><a href="../../../Doc/Welcome.html#l1"></blink><span class=cF4>Introduction</span></a></blink><span class=cF4>
+<a name="l80"></a></span><span class=cF4>
+<a name="l81"></a></span><a href="../../../Doc/Features.html#l1"></blink><span class=cF4>Features</span></a></blink><span class=cF4>
+<a name="l82"></a></span><span class=cF4>
+<a name="l83"></a></span><a href="../../../Doc/Mysteries.html#l1"></blink><span class=cF4>F.A.Q.</span></a></blink><span class=cF4>
+<a name="l84"></a></span><span class=cF4>
+<a name="l85"></a></span><a href="../../../Doc/HelpIndex.html#l1"></blink><span class=cF4>TempleOS Help</span></a></blink><span class=cF4>
+<a name="l86"></a></span><span class=cF4>
+<a name="l87"></a></span><a href="LineRep.html#l578"></blink><span class=cF4>Source Code By File</span></a></blink><span class=cF4>
+<a name="l88"></a>
+<a name="l89"></a></span><a href="SymsAlpha.html"></blink><span class=cF4>Source Code By Sym</span></a></blink><span class=cF4>
+<a name="l90"></a>
+<a name="l91"></a></span><a href="SymsAddress.html"></blink><span class=cF4>Source Code By Address</span></a></blink><span class=cF4>
+<a name="l92"></a>
+<a name="l93"></a></span><a href="../../../index.html"></blink><span class=cF4>Source Code (Raw)</span></a></blink><span class=cF0>
+<a name="l94"></a></span><span class=cF4>
+<a name="l95"></a></span><a href="../../../Doc/ChangeLog.html#l1"></blink><span class=cF4>Change Log</span></a></blink><span class=cF0>
+<a name="l96"></a></span><span class=cF3>
+<a name="l97"></a></span><iframe width="640" height="520" src="http://www.youtube.com/embed/yyPEDxQKlSY" frameborder="0" allowfullscreen></iframe></blink><span class=cF0>                                                                                                                         
+<a name="l98"></a>                                  Hello World
+<a name="l99"></a>
+<a name="l100"></a></span><span class=cF8>
+<a name="l101"></a>* &quot;Commodore 64&quot; was a trademark of Commodore Business Machines.
+<a name="l102"></a>* &quot;Linux&quot; is probably a trademark owned by Linus Torvalds.
+<a name="l103"></a>* &quot;Windows&quot; and &quot;DOS&quot; are trademark of MicroSoft Corp.
+</span></pre></body>
+</html>
+<!-- text below generated by server. PLEASE REMOVE --><!-- Counter/Statistics data collection code --><script language="JavaScript" src="http://l.yimg.com/d/lib/smb/js/hosting/cp/js_source/whv2_001.js"></script><script language="javascript">geovisit();</script><noscript><img src="http://visit.webhosting.yahoo.com/visit.gif?us1409528900" alt="setstats" border="0" width="1" height="1"></noscript><script type="text/javascript" src="https://s.yimg.com/mi/vs4/ywa.js"></script><script type="text/javascript">try {var YWAGTracker = YWA.getTracker("10001849413879", "VSCALE4");YWAGTracker.setDocumentName("WPAGE");YWAGTracker.setDocumentGroup("YSBW");YWAGTracker.setCF(7, "templeos.org");YWAGTracker.setCF(8, "w42");YWAGTracker.submit();} catch (eYWATCUnavailable) {}</script><script type="text/javascript">(function (d, w) {var x = d.getElementsByTagName('SCRIPT')[0];var f = function () {var s = d.createElement('SCRIPT');s.type = 'text/javascript';s.async = true;s.src = "//np.lexity.com/embed/YW/eff965aab4535cd38b91f0976c617496?id=9382d670eca2";x.parentNode.insertBefore(s, x);};w.attachEvent ? w.attachEvent('onload',f) :w.addEventListener('load',f,false);}(document, window));</script>

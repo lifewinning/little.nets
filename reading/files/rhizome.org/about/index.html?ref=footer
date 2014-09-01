@@ -1,0 +1,523 @@
+
+
+
+<!doctype html>
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="Content-Language" content="en-us">
+        <title>Rhizome | About</title>                
+        <meta name="google-site-verification" content="AZfoqybynDh_0mjEBG_XwMZeCwiSE-GZ8BiQB5FZzDU" />        
+        <meta name="ROBOTS" content="ALL" />
+        <meta name="description" content="Rhizome is dedicated to the creation, presentation, preservation, and critique of emerging artistic practices that engage technology." />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <!-- Set viewport so we can have mobile styles -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+
+        <link rel="shortcut icon" href="/static/images/favicons/leyva.gif" />
+
+        <!-- google fonts -->
+        <link href='//fonts.googleapis.com/css?family=Titillium+Web:400,200,300' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Anaheim' rel='stylesheet' type='text/css'>
+
+        
+            <!--GLOBAL CSS-->
+            <link type="text/css" rel="stylesheet" href="/static/css/blueprint/screen.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/base.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/comments.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/sidebars.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/calendars.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/miniprofile.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/media_players.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/blueprint/print.css" media="print"/></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/new_navbars.css"/></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/top_banner.css"/></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/mobile.css"/></link>
+            <link type="text/css" rel="stylesheet" href="/static/font-awesome-4.0.0/css/font-awesome.min.css"/></link>
+            <!--[if lt IE 8]>
+                <link rel="stylesheet" href="/static/css/blueprint/ie.css" type="text/css" media="screen, projection"></link>
+            <![endif]-->
+         
+            <!--[if IE]>
+                <link rel="stylesheet" type="text/css" href="/static/css/ie.css"  />
+            <![endif]-->
+
+            <!-- LOCAL CSS -->
+            
+	<link rel="stylesheet" href="/static/about/styles/about.css" type="text/css" />
+
+            
+            
+            
+            
+            
+            
+
+            
+            
+        
+        
+        
+        
+            <!-- GLOBAL JAVASCRIPT -->
+            <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+            <script type="text/javascript">window.__admin_media_prefix__ = "/static/admin/";</script>
+            <script type="text/javascript">window.__static_url__ = "/static/";</script>
+            <script type="text/javascript">var STATIC_URL = "/static/";</script>
+            <script type="text/javascript">window.SERVER_NAME = "rhizome.org";</script>
+
+            <script type="text/javascript" src="/static/js/mootools-core-1.3.2-yc.js"></script>
+            <script type="text/javascript" src="/static/js/mootools-more-1.3.2.1.js"></script>
+            <script type="text/javascript" src="/static/js/rhizome.js"></script>
+            <script type="text/javascript" src="/static/media_players/flowplayer/flowplayer-3.2.2.min.js"></script>
+            <script type="text/javascript" src="/static/media_players/soundmanager/script/soundmanager2-nodebug-jsmin.js"></script>
+            <script type="text/javascript" src="/static/media_players/soundmanager/script/inlineplayer.js"></script>
+            <script type="text/javascript" src="/static/js/carousel/PeriodicalExecuter.js"></script>
+            <script type="text/javascript" src="/static/js/carousel/Carousel.js"></script>
+            
+            <script type="text/javascript">
+                soundManager.url = '/static/media_players/soundmanager/swf/';
+                //soundManager.flashVersion = 9; // optional: shiny features (default = 8)
+                soundManager.useFlashBlock = true; // optionally, enable when you're ready to dive in
+                // enable HTML5 audio support, if you're feeling adventurous.
+                soundManager.useHTML5Audio = true;
+                soundManager.debugMode = 0; // disable or enable debug output
+                soundManager.useFlashBlock = 0;
+                //soundManager.useMovieStar = true;
+            </script>
+
+            <script type="text/javascript" src="/static/js/jquery-1.10.2.min.js"></script>
+            <!-- LOCAL  JAVASCRIPT-->              
+            
+            
+                   
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <script type="text/javascript">
+                
+                
+                
+            </script>
+        
+        
+        <!--RSS HEADER -->
+        
+        
+
+        <!-- Quantcast Tag, part 1 -->
+        <script type="text/javascript">
+            var _qevents = _qevents || [];
+            (function() {
+                var elem = document.createElement('script');
+                elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge")  
+                            + ".quantserve.com/quant.js";
+                elem.async = true;
+                elem.type = "text/javascript";
+                var scpt = document.getElementsByTagName('script')[0];
+                scpt.parentNode.insertBefore(elem, scpt);  
+            })();
+        </script>
+    </head>
+        
+    <body class="rhizome-base">
+        
+        
+        
+    <div id="new_header">
+    <ul>
+        
+            <li><a  href="/?ref=header">Rhizome</a></li>
+        
+            <li><a  href="/editorial/?ref=header">Journal</a></li>
+        
+            <li><a  href="/artbase/featured/?ref=header">Artbase</a></li>
+        
+            <li><a  href="/community/?ref=header">Community</a></li>
+        
+            <li><a  href="/programs/?ref=header">Programs</a></li>
+        
+
+        <li id="search">
+            <form action="/search/" method="get">
+                <input type="text" name="q" placeholder=""><a id="search-addon"><i class="fa fa-search"></i></a>
+            </form>
+        </li>
+
+        <li id="account">
+            
+                <a href="/login/?ref=header"><i class="fa fa-key"></i></a>
+            
+        </li>
+    </ul>
+</div>
+
+<div id="new_footer">
+    <ul>
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            <li><a class="active" href="/about/?ref=footer"><span class="underline">About Us</span> &raquo;</a></li>
+        
+            
+        
+
+        
+            <li><a  href="http://nectarads.com?ref=footer">Advertise</a></li>
+        
+            <li><a  href="/about/policy/?ref=footer">Policy</a></li>
+        
+            <li><a  href="/about/press/?ref=footer">Press</a></li>
+        
+            <li><a  href="http://labs.rhizome.org?ref=footer">Rhizome Labs</a></li>
+        
+
+        
+
+        
+            <li class="reversed"><a  href="/support/donate/?ref=footer">Membership</a></li>
+        
+            <li class="reversed"><a class="active" href="/about/?ref=footer">About Us</a></li>
+        
+    </ul>
+</div>
+
+
+
+        
+                 
+          
+        
+
+                 
+        
+             
+         
+            
+                        
+        <div id="content" class="container ">
+            
+<div class="column-wrapper span-24">
+    <div class= "left-column span-15">
+        <div class="section span-15">
+            <div class="section-row-titles">
+                <span class="nav-item"><a class="anchor-name" name="mission">MISSION</a></span>
+            </div>
+            <hr class="hr3-no-margin">
+            <div class="about-content">
+                <p>Rhizome advocates for contemporary art that creates richer and more critical digital cultures. As an arts organization based on the internet, we re-think artistic creation, distribution, and reception in relation to changing conditions associated with network technologies: shifting attentions, uncertain objects, multiple authors, casual labors. We are a leading international organization to support art and technology, online since 1996. </p>
+            </div>
+            <div class="about-images span-4">
+                <img src="/static/about/images/rhizome_logo_1998.jpg" />
+                <img src="/static/about/images/rhizome_logo_2004.jpg" />
+                <img src="/static/about/images/rhizome_logo_2010.jpg" />
+            </div>
+            <div class="about-content span-10">
+                <p>Founded in 1996 by artist Mark Tribe as an intimate email list subscribed to by some of the first artists to work online and now a thriving nonprofit, Rhizome has played an integral role in the history, definition and growth of contemporary art engaged with technology and the Internet. Our website is a dynamic, interactive platform, rich in historical resources and updated continually with new art and commentary by a vast community. The Rhizome <a href="http://rhizome.org/artbase/about/">ArtBase</a> was founded in 1999, as an online archive of digital art containing over 2,500 art works, acting as the bedrock of our leading digital preservation program.</p>
+            </div>    
+        </div>
+        
+        <div class="section span-15">
+            <div class="section-row-titles">
+                <span class = "nav-item"><a class="anchor-name" name ="access">ACCESS & MEMBERSHIP</a></span>
+            </div>
+            <hr class="hr3-no-margin">
+            <div class="about-content">
+                <ul><li>Non-paying users of the Rhizome website can view all of the work in
+Rhizome’s ArtBase collection for free. They can also sign up to receive our weekly newsletter, Rhizome News; create a portfolio page or profile, and submit work to the ArtBase. 
+	
+</li><li><a href="/support/individual/">Rhizome Members</a> have advanced access to the website and the ability to use a
+variety of tools. They can view the full record of individual artworks; annotate and comment on works; curate online exhibitions, and vote in our commissions program.</li>
+<li><a href="/join/organizations/">Organizational subscriptions</a> are available to institutions, such as universities, art schools, art centers, libraries and clubs. These Subscriptions allow staff, faculty, students to gain access to all of Rhizome.org's features and services for free. For schools and organizations in poor or excluded areas, Rhizome has different organizational access program: contact membership@rhizome.org for details.</li>
+</ul>
+            </div>
+       </div>
+       
+    </div>
+    
+    <div class= "right-column span-8"> 
+        
+        <div class="section span-8">
+            <div class="section-row-titles">
+                <span class = "nav-item"><a class="anchor-name" name ="contact">CONTACT</a></span>
+            </div>
+            <hr class="hr3-no-margin">
+            <div class="about-content">
+                <span class="center">
+                    <img src = "/static/about/images/newmuseum.jpg" />
+                </span>
+                <p>Rhizome is located within the <a href="http://newmuseum.org">New Museum</a> at:<br />
+235 Bowery<br />New York, NY<br />10002</p>
+<p>Phone: +1 (212) 219-1288 <br />
+Fax: +1 (212) 431-5328<br /><br />
+General: info@rhizome.org<br /><br />
+Editorial pitches: editor@rhizome.org<br /><br />
+Membership and subscription: membership@rhizome.org<br /><br />
+firstname.lastname@rhizome.org</p>
+            </div>   
+        </div>
+        
+        <div class="section span-8">
+            <div class="section-row-titles">
+                <span class = "nav-item"><a class="anchor-name" name="board">BOARD OF TRUSTEES</a></span>
+            </div>
+            <hr class="hr3-no-margin">
+            <div class="about-content">
+                <p>Peter Rojas, Chairman<br />
+Fred Benenson, Vice Chair<br />
+John Borthwick<br />
+JK Brown<br />
+Lauren Cornell<br />
+Saul Dennison<br />
+Sima Familant<br />
+Renny Gleeson<br />
+William Palmer<br />
+Greg Pass<br />
+Lisa Phillips<br />
+Ron Rosenzweig<br />
+Lisa Roumell, Treasurer<br />
+Mark Tribe<br />
+Karen Wong<br />
+John Wotowicz<br /></p>
+            </div>   
+        </div>
+
+        <div class="section span-8">
+            <div class="section-row-titles">
+                <span class = "nav-item"><a class="anchor-name" name ="board">Support</a></span>
+            </div>
+            <hr class="hr3-no-margin">
+            <div class="about-content">
+                Support for Rhizome is provided in part by the New York City Department of Cultural Affairs and the New York State Council on the Arts with the support of Governor Andrew Cuomo and the New York State Legislature.
+                <div style="margin-top:10px; text-align:center;">
+                    <img src="/static/images/ny_culture_logo.png" width="125" style="float:left;margin:0 20px;"/>               
+                    <img src="/static/images/nycsa_rgb.png" width="90" style="float:left;margin:0 20px;"/> 
+                    <div class="clear"></div>
+                </div>
+            </div>   
+        </div>
+
+    
+    </div>
+</div>
+
+<div class="section span-24">
+    <div class="section-row-titles">
+        <span id ="staff" name ="staff" class = "nav-item"><a class="anchor-name" name ="staff">Rhizome Staff</a></span>
+    </div>
+    <hr class="hr3-no-margin">
+    
+    <div class="about-content span-24">
+
+        <h5 id="press-h3"><a href="/profile/michaelconnor3/">Michael Connor</a></h5>
+        <div>
+            <b>Editor &amp; Curator</b><br/>
+            <div class="span-20">Michael Connor first learned about Internet art in 1999 during a conversation in a North Carolina bar with Alex Galloway, who was then editor of Rhizome. As a writer and curator, Connor focuses on the connections among art, technology and the moving image. Prior to joining Rhizome, he worked as Curator at FACT in Liverpool, UK and as Head of Exhibitions at BFI Southbank in London; he has also worked in an independent capacity for organizations including the Australian Center for the Moving Image, TIFF Bell Lightbox and Museum of the Moving Image, among others.</div>
+        </div>
+    </div>   
+    
+    <div class="about-content span-24">
+
+        <h5 id="press-h3"><a href="">Heather Corcoran</a></h5>
+        <div>
+            <b>Executive Director</b><br/>
+            <div class="span-20">Heather Corcoran comes to Rhizome from Film and Video Umbrella in London where she served as Deputy Director, and was previously Curator at FACT, the UK’s leading center for new media. She has held positions at Interaccess Electronic Media Arts, Toronto, SPACE, London, and has produced large-scale projects with the Barbican Centre, AND Festival and the 2010 Liverpool Biennial, where she was a contributing Curator. Heather holds a BFA from Ryerson University in Toronto, and an MBA from Imperial College, London.  
+</div>
+        </div>
+    </div>   
+    
+    <div class="about-content span-24">
+
+        <h5 id="press-h3"><a href="/profile/despens/">Dragan Espenschied</a></h5>
+        <div>
+            <b>Digital Conservator</b><br/>
+            <div class="span-20">Since 2011, Dragan Espenschied has been restoring and culturally analyzing 1TB of Geocities data. From 2012-13, he lead on a renowned research project to conceptually and technically integrate the Transmediale Festival&#39;s collection of CD-ROM art into the Emulation as a Service framework, &quot;bwFLA&quot;. In 2013, with the University of Freiburg, Espenschied helped preserve a personal computer from the legacy of media philosopher Vilem Flusser. His publications include the influential reader &quot;Digital Folklore&quot;, and the papers &quot;Large-Scale Curation and Presentation of CD-ROM Art&quot;, &quot;Emulation in the Context of Digital Art and Cultural Heritage&quot;, and &quot;An Architecture for Community-based Curation and Presentation of Complex Digital Objects&quot;. In his artistic career, Espenschied focuses on the historization of Digital Culture from the perspective of computer users rather than hackers, developers or &quot;inventors&quot; and together with net art pioneer Olia Lialina has created a significant body of work concerned with how to represent and write a culture-centric history of the networked age.</div>
+        </div>
+    </div>   
+    
+    <div class="about-content span-24">
+
+        <h5 id="press-h3"><a href="/profile/oritgat/">Orit Gat</a></h5>
+        <div>
+            <b>Contributing Editor</b><br/>
+            <div class="span-20">Orit Gat is a writer based in New York. She writes about contemporary art, publishing, the internet, and all sorts of links between these. In addition to Rhizome, her writing has appeared in frieze, ArtReview, The Brooklyn Rail, The White Review, LEAP, and Modern Painters, where she was senior editor until 2013. She is also the managing editor at WdW Review and the online art editor at BOMB magazine.
+</div>
+        </div>
+    </div>   
+    
+    <div class="about-content span-24">
+
+        <h5 id="press-h3"><a href="/profile/zacharykaplan/">Zachary Kaplan</a></h5>
+        <div>
+            <b>Community Manager</b><br/>
+            <div class="span-20">Zachary Kaplan is responsible for continuously re-imagining and re-considering what participation and engagement means for Rhizome, both online and off. Previously, he worked at the Renaissance Society in Chicago and the Museum of Contemporary Art, Los Angeles, and studied art history at Occidental College and the Roski School at USC, both in Los Angeles. </div>
+        </div>
+    </div>   
+    
+    <div class="about-content span-24">
+
+        <h5 id="press-h3"><a href="/profile/protonpopsicle/">Scott Meisburger</a></h5>
+        <div>
+            <b>Senior Developer</b><br/>
+            <div class="span-20">As Senior Developer, Scott Meisburger manages and evolves the Rhizome website, co-manages the ArtBase, and serves as an advocate for digital art and digital preservation. As an artist, Scott channels computer science, popular science fiction and the history of technology to explore the border between logical reasoning and ungraspable truths. Scott received a B.A. in Photography from Columbia College Chicago.</div>
+        </div>
+    </div>   
+    
+    <div class="about-content span-24">
+
+        <h5 id="press-h3"><a href="">Lucy  Sollitt </a></h5>
+        <div>
+            <b>Associate</b><br/>
+            <div class="span-20">Lucy Sollitt contributes to the development of Rhizome&#39;s London-based programs as Associate. Alongside this, she leads on art and technology at the London office of Arts Council England. At the Arts Council she works across the arts, creative and technology sectors to develop projects and collaborations aimed at advancing artistic practice and supporting arts organisations to utilise digital technologies. She has previously worked at Tate Modern, the Royal Society of Arts, Design for London, the Association of Art Historians and Royal Academy. She has an MPhil in continental Philosophy and a BA in Combined Arts.</div>
+        </div>
+    </div>   
+    
+    <div class="about-content span-24">
+
+        <h5 id="press-h3"><a href="">Kristen Wawruck</a></h5>
+        <div>
+            <b>Development Manager</b><br/>
+            <div class="span-20">Kristen Wawruck joined Rhizome’s staff in 2010 to manage all grant fundraising efforts, in addition to supporting membership and board of trustee activities. Kristen is also the Associate Development Director, Grants, at the New Museum. Previously, she was the Manager of Government and Foundation Relations at the Institute of Contemporary Art in Boston, MA, where she also organized “Experiment” live music and art events. From 2006 to 2007, Kristen was the Program Manager for Planning and Development at the Mayor’s Office of Arts, Tourism, and Special Events at Boston City Hall where she facilitated community art projects and handled the department’s grant writing.</div>
+        </div>
+    </div>   
+    
+</div>
+<div class="section span-24 about-website">
+    <div class="section-row-titles">
+        <span class = "nav-item"><a class="anchor-name" name ="website">WEBSITE</a></span>
+    </div>
+    <hr class="hr3-no-margin">
+    <div class="about-content">
+        <p>The current Rhizome site launched on January 17th, 2011.</p>
+
+<p><span style="margin-right:119px;">Project Director</span>     <a target="_blank" href="http://jnhasty.com">Nick Hasty</a></p>
+
+<p><span style="margin-right:120px;">Lead Developer</span>     <a target="_blank" href="https://github.com/swannodette">David Nolen</a></p>
+
+<p><span style="margin-right:175px;">Design</span>                   <a target="_blank" href="http://www.shual.com/">Shual / Mushon Zer-Aviv</a></p>
+
+<p><span style="margin-right:115px;">Design Assistant</span>    <a  target="_blank" href="http://www.EdNacional.com/">Ed Nacional</a></p>
+
+<p><span style="margin-right:107px;">Additional Design</span>    <a  target="_blank" href="http://www.gooooooooooooooooooooooooooooooooooooooooooooooooooooogle.com/">John Michael Boling</a></p>
+
+<p><span style="margin-right:61px;">DB/Archiving Consultant</span> Ward Smith</p>
+
+<p>Read more about the site development process on our <a href="http://rhizome.org/editorial/2011/jan/21/new-rhizomeorg/">site launch post</a>.</p>
+
+<p>The site runs on a number of open-source platforms, such as <a target="_blank" href="https://www.djangoproject.com/">Django</a>, <a target="_blank" href="http://www.mysql.com/">MySQL</a>, <a target="_blank" href="http://couchdb.apache.org/">CouchDB</a>, <a target="_blank"  href="http://mootools.net/">Mootools</a>,  and <a target="_blank" href="http://www.blueprintcss.org/">Blueprint</a>. </p>
+    </div>
+</div>
+
+        </div>
+        
+        <div id="preload"></div>
+
+
+
+        <!-- Quantcast Tag, part 2 -->
+        <script type="text/javascript">
+            _qevents.push( { qacct:"p-1bU5CKetpvMBI", labels:"artmedia" } );
+        </script>
+        <noscript>
+            <div style="display: none;">
+                <img src="//pixel.quantserve.com/pixel/p-1bU5CKetpvMBI.gif?labels=artmedia" height="1" width="1" alt="Quantcast"/>
+            </div>
+        </noscript>
+
+        
+        
+
+        <script>
+        jQuery.noConflict();
+        (function($) {
+            $(function() {
+                $('.share-btn-cover').click(function() {
+                    $(this).hide();
+                    $(this).siblings('.share-btn').css({'display': 'inline-block'});
+                    return false;
+                });
+            });
+        })(jQuery);
+        </script>
+        <script type="text/javascript" src="/static/js/new_navbars.js"></script>
+        
+
+        
+            <script type="text/javascript">
+                var z=document.createElement("script");
+                z.type="text/javascript";
+                z.async=true;
+                z.src="//engine.nectarads.com/z/12843/azk1_2_43,azk2_2_16,azk3_2_16,azk4_2_16,azk5_2_16";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(z, s);
+            </script>
+        
+
+
+
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-768502-1', 'rhizome.org');
+          ga('send', 'pageview');
+
+        </script>
+    
+        <script type="text/javascript">
+            (function() {
+            var src = document.createElement('script'); 
+            src.async = true;
+            src.src = document.location.protocol + '//platform.twitter.com/widgets.js';
+            document.getElementsByTagName('head')[0].appendChild(src);
+            }());                        
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+            po.src = 'https://apis.google.com/js/plusone.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+          })();
+        </script>
+        
+        <script type="text/javascript">
+            var _sf_async_config={uid:26954,domain:"rhizome.org"};
+            (function(){
+              function loadChartbeat() {
+                window._sf_endpt=(new Date()).getTime();
+                var e = document.createElement('script');
+                e.setAttribute('language', 'javascript');
+                e.setAttribute('type', 'text/javascript');
+                e.setAttribute('src',
+                   (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+                   "js/chartbeat.js");
+                document.body.appendChild(e);
+              }
+              var oldonload = window.onload;
+              window.onload = (typeof window.onload != 'function') ?
+                 loadChartbeat : function() { oldonload(); loadChartbeat(); };
+            })();
+        </script>        
+    </body>
+</html>

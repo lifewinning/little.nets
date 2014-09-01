@@ -1,0 +1,612 @@
+
+
+
+<!doctype html>
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="Content-Language" content="en-us">
+        <title>Rhizome | 
+
+
+Adam Rothstein
+
+</title>                
+        <meta name="google-site-verification" content="AZfoqybynDh_0mjEBG_XwMZeCwiSE-GZ8BiQB5FZzDU" />        
+        <meta name="ROBOTS" content="ALL" />
+        <meta name="description" content="Rhizome is dedicated to the creation, presentation, preservation, and critique of emerging artistic practices that engage technology." />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <!-- Set viewport so we can have mobile styles -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+
+        <link rel="shortcut icon" href="/static/images/favicons/leyva.gif" />
+
+        <!-- google fonts -->
+        <link href='//fonts.googleapis.com/css?family=Titillium+Web:400,200,300' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Anaheim' rel='stylesheet' type='text/css'>
+
+        
+            <!--GLOBAL CSS-->
+            <link type="text/css" rel="stylesheet" href="/static/css/blueprint/screen.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/base.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/comments.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/sidebars.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/calendars.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/miniprofile.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/media_players.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/blueprint/print.css" media="print"/></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/new_navbars.css"/></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/top_banner.css"/></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/mobile.css"/></link>
+            <link type="text/css" rel="stylesheet" href="/static/font-awesome-4.0.0/css/font-awesome.min.css"/></link>
+            <!--[if lt IE 8]>
+                <link rel="stylesheet" href="/static/css/blueprint/ie.css" type="text/css" media="screen, projection"></link>
+            <![endif]-->
+         
+            <!--[if IE]>
+                <link rel="stylesheet" type="text/css" href="/static/css/ie.css"  />
+            <![endif]-->
+
+            <!-- LOCAL CSS -->
+            
+	<link rel="stylesheet" href="/static/accounts/styles/accounts.css" type="text/css" charset="utf-8"></link>
+
+            
+            
+            
+            
+            
+            
+
+            
+            
+        
+        
+        
+        
+            <!-- GLOBAL JAVASCRIPT -->
+            <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+            <script type="text/javascript">window.__admin_media_prefix__ = "/static/admin/";</script>
+            <script type="text/javascript">window.__static_url__ = "/static/";</script>
+            <script type="text/javascript">var STATIC_URL = "/static/";</script>
+            <script type="text/javascript">window.SERVER_NAME = "rhizome.org";</script>
+
+            <script type="text/javascript" src="/static/js/mootools-core-1.3.2-yc.js"></script>
+            <script type="text/javascript" src="/static/js/mootools-more-1.3.2.1.js"></script>
+            <script type="text/javascript" src="/static/js/rhizome.js"></script>
+            <script type="text/javascript" src="/static/media_players/flowplayer/flowplayer-3.2.2.min.js"></script>
+            <script type="text/javascript" src="/static/media_players/soundmanager/script/soundmanager2-nodebug-jsmin.js"></script>
+            <script type="text/javascript" src="/static/media_players/soundmanager/script/inlineplayer.js"></script>
+            <script type="text/javascript" src="/static/js/carousel/PeriodicalExecuter.js"></script>
+            <script type="text/javascript" src="/static/js/carousel/Carousel.js"></script>
+            
+            <script type="text/javascript">
+                soundManager.url = '/static/media_players/soundmanager/swf/';
+                //soundManager.flashVersion = 9; // optional: shiny features (default = 8)
+                soundManager.useFlashBlock = true; // optionally, enable when you're ready to dive in
+                // enable HTML5 audio support, if you're feeling adventurous.
+                soundManager.useHTML5Audio = true;
+                soundManager.debugMode = 0; // disable or enable debug output
+                soundManager.useFlashBlock = 0;
+                //soundManager.useMovieStar = true;
+            </script>
+
+            <script type="text/javascript" src="/static/js/jquery-1.10.2.min.js"></script>
+            <!-- LOCAL  JAVASCRIPT-->              
+            
+<script type="text/javascript">
+window.addEvent('domready', function() {
+
+	var duration = 300;
+    
+    
+    
+    
+
+    
+
+    new Request({method: 'post',url: '/hit/update/',                     data:  {hitcount_pk : '102326' },                     onError: function(rtxt) {},                     onSuccess: function(rtxt,rxml) {}}).send();
+    });
+</script>
+
+            
+                   
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <script type="text/javascript">
+                
+                
+                
+            </script>
+        
+        
+        <!--RSS HEADER -->
+        
+        
+
+        <!-- Quantcast Tag, part 1 -->
+        <script type="text/javascript">
+            var _qevents = _qevents || [];
+            (function() {
+                var elem = document.createElement('script');
+                elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge")  
+                            + ".quantserve.com/quant.js";
+                elem.async = true;
+                elem.type = "text/javascript";
+                var scpt = document.getElementsByTagName('script')[0];
+                scpt.parentNode.insertBefore(elem, scpt);  
+            })();
+        </script>
+    </head>
+        
+    <body class="rhizome-base">
+        
+        
+        
+	<div id="new_header">
+    <ul>
+        
+            <li><a  href="/?ref=header">Rhizome</a></li>
+        
+            <li><a  href="/editorial/?ref=header">Journal</a></li>
+        
+            <li><a  href="/artbase/featured/?ref=header">Artbase</a></li>
+        
+            <li><a class="active" href="/community/?ref=header">Community</a></li>
+        
+            <li><a  href="/programs/?ref=header">Programs</a></li>
+        
+
+        <li id="search">
+            <form action="/search/" method="get">
+                <input type="text" name="q" placeholder=""><a id="search-addon"><i class="fa fa-search"></i></a>
+            </form>
+        </li>
+
+        <li id="account">
+            
+                <a href="/login/?ref=header"><i class="fa fa-key"></i></a>
+            
+        </li>
+    </ul>
+</div>
+
+<div id="new_footer">
+    <ul>
+        
+            
+        
+            
+        
+            
+        
+            <li><a class="active" href="/community/?ref=footer"><span class="underline">Community</span> &raquo;</a></li>
+        
+            
+        
+            
+        
+            
+        
+
+        
+            <li><a  href="/announce/?ref=footer">Announce</a></li>
+        
+            <li><a  href="/discuss/?ref=footer">Discuss</a></li>
+        
+            <li><a  href="/portfolios/?ref=footer">Portfolios</a></li>
+        
+            <li><a class="active" href="/profile/?ref=footer">Profiles</a></li>
+        
+            <li><a  href="/jobs/?ref=footer">Jobs Board</a></li>
+        
+            <li><a  href="/subscribe/?ref=footer">Mailing Lists</a></li>
+        
+
+        
+
+        
+            <li class="reversed"><a  href="/support/donate/?ref=footer">Membership</a></li>
+        
+            <li class="reversed"><a  href="/about/?ref=footer">About Us</a></li>
+        
+    </ul>
+</div>
+
+
+
+        
+                 
+          
+        
+
+                 
+        
+         
+            
+<div id="section-object-header-wrap">
+    <div id="section-object-header" class="container">
+        <div id = "profile-header" class = "span-24">
+             <div id = "profile-header-left" class = "span-19">         
+                
+                <div class="span-2">
+                    
+                    <div id = "profile-header-icon">
+                        <img src="http://media.rhizome.org/accounts/images/icons/1084179.jpg" />
+                    </div>
+                    
+                    
+                    
+                </div>
+                
+                <div id = "profile-header-content" class="span-14">                
+                    <div class="user-name">Adam Rothstein
+                        
+                    </div>
+                    
+                    
+
+                    
+                    
+
+                </div>
+            </div>
+            
+
+            
+            
+            <div id = "profile-header-right" class = "span-4">
+                <ul id ="profile-web-links-list" class = "span-6">
+                
+                    
+                        <li><a rel="nofollow" id ="profile-website" href="http://www.poszu.com/">http://www.poszu.com/</a></li>
+                        
+                        <li><a rel="nofollow" id ="profile-twitter" href="http://twitter.com/@interdome">@interdome</a></li>
+                        
+                    
+                
+                </ul>
+            </div> 
+             
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>
+<hr class="light">
+
+             
+         
+            
+                        
+        <div id="content" class="container ">
+            
+
+            
+
+
+<div class="span-24"> 
+    <div class="profile-section section span-24">
+        <div class="section-title">
+            <span>BIO</span>
+            <hr class="hr3">
+        </div>
+        <div class="section-content ">
+            <div id = "profile-bio" class = "span-20 prepend-3">
+                
+                    Adam writes about media, technology, and politics wherever he can get a signal. You can find him online at <a rel="nofollow" href="http://www.poszu.com">http://www.poszu.com</a>, and on Twitter @interdome.
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+    
+
+<div class="profile-section span-24 last">
+    <div class="section-title">
+        <a name="blog_posts"><span>BLOG POSTS</span></a>
+    </div>
+    <hr class="hr3-no-margin" />
+    
+    <div class="section-content span-24">
+    
+        <div class = "feed-item span-24">
+            <div class = "feed-item-meta span-3">
+                <div class = "feed-item-meta-data">Published on Thu Aug 14, 2014 </div>
+            </div>
+            
+            <div class="feed-item-listing span-19">   
+                <h2 class ="item-listing-title">
+                    <a href="/editorial/2014/aug/14/containers">Containers</a>
+                </h2>
+                <hr class="thin">
+                
+                <div class="feed-item-listing span-19">   
+                    <div class ="feed-item-listing-row">
+                        <div class = "feed-item-listing-row-details span-19">
+                             
+                                <p style="text-align: center;"><img src="http://media.rhizome.org/blog/9308/Allan-Sekula.jpg" alt="" /></p>
+<p style="text-align: center;"><span style="font-size: xx-small;">Allan Sekula and Noël Burch, still from <em>The Forgotten Space (</em>2010).</span></p>
+<p>I woke up at the chime, looked at the mobile. New work available. I clocked in, made coffee, sat at the desk. Two hours of work right away, even before Twitter. Felt accomplished. I invoiced, and collected.</p>
+<p>I met Sandra for breakfast. She's in Miami. She had the ceiling open to let in the sun. She got into a new task queue, editorial work. It's good work, she said, even though the pay isn't quite as good as advertising. What's the difference, I said, sipping my Bloody Mary. Different algorithmic authors, same algorithmic grammar problems.</p>
+                                    
+                        </div>
+                    </div>
+                </div> 
+            </div><!--END FEED ITEM LISTING-->
+        </div><!--END FEED ITEM-->
+
+        <hr class="hr2-grey-no-margin">    
+        
+        <div class = "feed-item span-24">
+            <div class = "feed-item-meta span-3">
+                <div class = "feed-item-meta-data">Published on Thu Jul 10, 2014 </div>
+            </div>
+            
+            <div class="feed-item-listing span-19">   
+                <h2 class ="item-listing-title">
+                    <a href="/editorial/2014/jul/10/dancing-about-architecture-ministry-highways-and-a">Dancing About Architecture: Artists&#39; reponses to the built environment</a>
+                </h2>
+                <hr class="thin">
+                
+                <div class="feed-item-listing span-19">   
+                    <div class ="feed-item-listing-row">
+                        <div class = "feed-item-listing-row-details span-19">
+                             
+                                <p style="text-align: center;" dir="ltr"><img src="http://media.rhizome.org/blog/9283/Ministry-of-Highways.jpg" alt="" /></p>
+<p style="text-align: center;" dir="ltr"><span style="font-size: xx-small;">Former Ministry of Highways Building, Tbilisi.</span></p>
+<p dir="ltr">There is a sense in which all architecture is authoritarian, regardless of its ideals. No matter how many community meetings a planning process incorporates, in the end only one building may be built; one architecture, which by its very existence precludes another. The eventual users and non-users of the space may make minor modifications. They may open or close windows, but in the end they must deal with the consequences of the building, whether it is a postwar housing project or a San Jose strip mall. They must negotiate its little manipulations, and have little in the way of recourse if these should become oppressive.</p>
+<p>Artists, at least of a particular bent, are not the sort to take authority at its word. Even under the most oppressive of conditions artists find ways to critique and to criticize, and to present alternate theories of the world. They respond to all forms of power, architecture included, through gestures that range from the most basic act of graffiti to Ai Weiwei's "studies of perspective."   </p>
+                                    
+                        </div>
+                    </div>
+                </div> 
+            </div><!--END FEED ITEM LISTING-->
+        </div><!--END FEED ITEM-->
+
+        <hr class="hr2-grey-no-margin">    
+        
+        <div class = "feed-item span-24">
+            <div class = "feed-item-meta span-3">
+                <div class = "feed-item-meta-data">Published on Fri Apr 11, 2014 </div>
+            </div>
+            
+            <div class="feed-item-listing span-19">   
+                <h2 class ="item-listing-title">
+                    <a href="/editorial/2014/apr/11/smart-property-ethereum">Beware of Geeks Bearing Formulas: When property becomes smart </a>
+                </h2>
+                <hr class="thin">
+                
+                <div class="feed-item-listing span-19">   
+                    <div class ="feed-item-listing-row">
+                        <div class = "feed-item-listing-row-details span-19">
+                             
+                                <p><img style="display: block; margin-left: auto; margin-right: auto;" src="http://media.rhizome.org/blog/9233/Hyper-Geography.jpg" alt="" /></p>
+<p style="text-align: center;"><span style="font-size: xx-small;">From Joe Hamilton, <em><a title="hypergeography" href="http://hypergeography.tumblr.com/post/9240867586/ultrazapping-darrellg">hypergeography</a>. </em>Sources: <a href="http://ultrazapping.tumblr.com/post/8254191956/pipco-green-blue-horizontal-2005-by-sandy" target="_blank">ultrazapping</a> and <a href="http://www.flickr.com/photos/darrellg/5281960204/in/set-72157600345884548" target="_blank">darrellg</a>.</span></p>
+<p>If you thought cryptocurrencies were hard to understand, you probably want to sit down for your first introduction to smart property.</p>
+                                    
+                        </div>
+                    </div>
+                </div> 
+            </div><!--END FEED ITEM LISTING-->
+        </div><!--END FEED ITEM-->
+
+        <hr class="hr2-grey-no-margin">    
+        
+        <div class = "feed-item span-24">
+            <div class = "feed-item-meta span-3">
+                <div class = "feed-item-meta-data">Published on Tue Feb 18, 2014 </div>
+            </div>
+            
+            <div class="feed-item-listing span-19">   
+                <h2 class ="item-listing-title">
+                    <a href="/editorial/2014/feb/18/bitcoin-and-speculative-anarchist">Bitcoin and the Speculative Anarchist</a>
+                </h2>
+                <hr class="thin">
+                
+                <div class="feed-item-listing span-19">   
+                    <div class ="feed-item-listing-row">
+                        <div class = "feed-item-listing-row-details span-19">
+                             
+                                <p><img style="display: block; margin-left: auto; margin-right: auto;" src="http://media.rhizome.org/blog/9191/Kari-Altmann-Soft-Mobility-2.jpg" alt="" width="300" height="300" /></p>
+<p style="text-align: center;"><span style="font-size: xx-small;">Kari Altmann, image from <a href="http://www.newmuseum.org/exhibitions/view/kari-altmann-soft-mobility-abstracts"><em>Soft Mobility Abstracts</em></a> (2014). </span></p>
+<p>When I tell my close friends—who know of, and share, my anti-capitalist anarchist views—that I own some cryptocurrency (my current holdings equal something under 10 USD) I get the same sort of looks that I did when I told them in 2009 that I used Twitter. "How can you support that libertarian bullshit?"</p>
+                                    
+                        </div>
+                    </div>
+                </div> 
+            </div><!--END FEED ITEM LISTING-->
+        </div><!--END FEED ITEM-->
+
+        <hr class="hr2-grey-no-margin">    
+        
+        <div class = "feed-item span-24">
+            <div class = "feed-item-meta span-3">
+                <div class = "feed-item-meta-data">Published on Tue Jan 28, 2014 </div>
+            </div>
+            
+            <div class="feed-item-listing span-19">   
+                <h2 class ="item-listing-title">
+                    <a href="/editorial/2014/jan/28/land-art-anthropocene">Land Art of the Anthropocene</a>
+                </h2>
+                <hr class="thin">
+                
+                <div class="feed-item-listing span-19">   
+                    <div class ="feed-item-listing-row">
+                        <div class = "feed-item-listing-row-details span-19">
+                             
+                                <p><img style="display: block; margin-left: auto; margin-right: auto;" src="http://media.rhizome.org/blog/9172/Paglen-Limit-Telephotography.jpg" alt="" width="590" height="590" /></p>
+<p style="text-align: center;"><span style="font-size: xx-small;">Trevor Paglen, <em>Chemical and Biological Weapons Proving Ground; Dugway, UT; Distance ~ 42 miles; 10:51 A.M. (2006). </em>From the series Limit-Telephotography.</span></p>
+<blockquote>
+<p>every room has an accessible history<br /> every place has emotional attachments you can open and save<br /> you can search for sadness in new york<br /><br /> paths compete to offer themselves to you<br /> life flows into inanimate objects<br /> the trees hum advertising jingles<br /> everything in the world, animate and inanimate, abstract and concrete, has thoughts attached</p>
+<p>— from <em>Headmap Manifesto</em> by Ben Russell</p>
+</blockquote>
+<p><em>Headmap Manifesto</em> was a groundbreaking exploration of the possibilities of location-aware technology when it was released in 1999. A decade and a half later, many people have a wireless network device with them at all times, and the author of the manifesto seems to have disappeared from the internet. The landscape of our cities is irrevocably changed, as the data accumulates, erupting from our pockets and pooling in the network.</p>
+                                    
+                        </div>
+                    </div>
+                </div> 
+            </div><!--END FEED ITEM LISTING-->
+        </div><!--END FEED ITEM-->
+
+        <hr class="hr2-grey-no-margin">    
+        
+        <span id="feed-paginator" class="span-24">
+            <div class="pagination">
+    <span class="step-links">
+        
+        
+        
+        
+        
+        <a class="selected"  href="/profile/interdome/?ref=ftsidebar&amp;posts=1#blog_posts">
+            1
+        </a>
+        
+        <a class=""  href="/profile/interdome/?ref=ftsidebar&amp;posts=2#blog_posts">
+            2
+        </a>
+        
+        <a class=""  href="/profile/interdome/?ref=ftsidebar&amp;posts=3#blog_posts">
+            3
+        </a>
+        
+        <a class=""  href="/profile/interdome/?ref=ftsidebar&amp;posts=4#blog_posts">
+            4
+        </a>
+        
+
+        
+        
+        
+        <a class="next" href="/profile/interdome/?ref=ftsidebar&amp;posts=2#blog_posts">
+        </a>
+        
+    </span>
+</div>
+
+            <hr class="hr2-grey">
+        </span>
+    </div><!--END SECTION CONTENT-->
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+        
+        <div id="preload"></div>
+
+
+
+        <!-- Quantcast Tag, part 2 -->
+        <script type="text/javascript">
+            _qevents.push( { qacct:"p-1bU5CKetpvMBI", labels:"artmedia" } );
+        </script>
+        <noscript>
+            <div style="display: none;">
+                <img src="//pixel.quantserve.com/pixel/p-1bU5CKetpvMBI.gif?labels=artmedia" height="1" width="1" alt="Quantcast"/>
+            </div>
+        </noscript>
+
+        
+        
+
+        <script>
+        jQuery.noConflict();
+        (function($) {
+            $(function() {
+                $('.share-btn-cover').click(function() {
+                    $(this).hide();
+                    $(this).siblings('.share-btn').css({'display': 'inline-block'});
+                    return false;
+                });
+            });
+        })(jQuery);
+        </script>
+        <script type="text/javascript" src="/static/js/new_navbars.js"></script>
+        
+
+        
+            <script type="text/javascript">
+                var z=document.createElement("script");
+                z.type="text/javascript";
+                z.async=true;
+                z.src="//engine.nectarads.com/z/12843/azk1_2_43,azk2_2_16,azk3_2_16,azk4_2_16,azk5_2_16";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(z, s);
+            </script>
+        
+
+
+
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-768502-1', 'rhizome.org');
+          ga('send', 'pageview');
+
+        </script>
+    
+        <script type="text/javascript">
+            (function() {
+            var src = document.createElement('script'); 
+            src.async = true;
+            src.src = document.location.protocol + '//platform.twitter.com/widgets.js';
+            document.getElementsByTagName('head')[0].appendChild(src);
+            }());                        
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+            po.src = 'https://apis.google.com/js/plusone.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+          })();
+        </script>
+        
+        <script type="text/javascript">
+            var _sf_async_config={uid:26954,domain:"rhizome.org"};
+            (function(){
+              function loadChartbeat() {
+                window._sf_endpt=(new Date()).getTime();
+                var e = document.createElement('script');
+                e.setAttribute('language', 'javascript');
+                e.setAttribute('type', 'text/javascript');
+                e.setAttribute('src',
+                   (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+                   "js/chartbeat.js");
+                document.body.appendChild(e);
+              }
+              var oldonload = window.onload;
+              window.onload = (typeof window.onload != 'function') ?
+                 loadChartbeat : function() { oldonload(); loadChartbeat(); };
+            })();
+        </script>        
+    </body>
+</html>

@@ -1,0 +1,721 @@
+
+
+
+<!doctype html>
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="Content-Language" content="en-us">
+        <title>Rhizome | Somebody: A New Messaging Service by Miranda July</title>                
+        <meta name="google-site-verification" content="AZfoqybynDh_0mjEBG_XwMZeCwiSE-GZ8BiQB5FZzDU" />        
+        <meta name="ROBOTS" content="ALL" />
+        <meta name="description" content="Rhizome is dedicated to the creation, presentation, preservation, and critique of emerging artistic practices that engage technology." />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <!-- Set viewport so we can have mobile styles -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+
+        <!-- FB & Twitter meta -->
+
+        <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+ 
+        <meta property="og:site_name"              content="rhizome.org">
+        <meta name="twitter:site"                  content="@rhizome">
+
+        <meta property="og:type"                   content="article">
+        <meta name="twitter:card"                  content="summary">
+        <meta property="article:section"           content="Editorial">
+
+        <meta name="twitter:url"                   content="http://rhizome.org/editorial/2014/aug/28/first-look-miranda-july/?ref=ftsidebar">
+        <meta property="og:url"                    content="http://rhizome.org/editorial/2014/aug/28/first-look-miranda-july/?ref=ftsidebar">
+ 
+        <meta property="og:title"                  content="Somebody: A New Messaging Service by Miranda July">
+        <meta name="twitter:title"                 content="Somebody: A New Messaging Service by Miranda July">
+
+        <meta property="article:published_time"    content="2014-08-28T12:15:00"> 
+
+        
+        
+            
+        <meta property="article:tag"             content="app">
+            
+        <meta property="article:tag"             content="iOS">
+            
+        <meta property="article:tag"             content="Miranda July">
+            
+        <meta property="article:tag"             content="Somebody">
+            
+        
+
+        <meta name="twitter:description" content="&quot;Texting is tacky. Calling is awkward. Email is old.&quot; ">
+        <meta property="og:description"          content="&quot;Texting is tacky. Calling is awkward. Email is old.&quot; "> 
+        
+        
+            <meta name="twitter:image" content="http://media.rhizome.org/blog/9326/Miranda-July-Somebody.jpg">
+            <meta property="og:image"  content="http://media.rhizome.org/blog/9326/Miranda-July-Somebody.jpg">    
+        
+
+	<meta property="fb:admins" content="14500625" />
+	<meta property="fb:admins" content="1277404618" />
+
+
+        <link rel="shortcut icon" href="/static/images/favicons/leyva.gif" />
+
+        <!-- google fonts -->
+        <link href='//fonts.googleapis.com/css?family=Titillium+Web:400,200,300' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Anaheim' rel='stylesheet' type='text/css'>
+
+        
+            <!--GLOBAL CSS-->
+            <link type="text/css" rel="stylesheet" href="/static/css/blueprint/screen.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/base.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/comments.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/sidebars.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/calendars.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/miniprofile.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/media_players.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/blueprint/print.css" media="print"/></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/new_navbars.css"/></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/top_banner.css"/></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/mobile.css"/></link>
+            <link type="text/css" rel="stylesheet" href="/static/font-awesome-4.0.0/css/font-awesome.min.css"/></link>
+            <!--[if lt IE 8]>
+                <link rel="stylesheet" href="/static/css/blueprint/ie.css" type="text/css" media="screen, projection"></link>
+            <![endif]-->
+         
+            <!--[if IE]>
+                <link rel="stylesheet" type="text/css" href="/static/css/ie.css"  />
+            <![endif]-->
+
+            <!-- LOCAL CSS -->
+            
+	<link rel="stylesheet" href="/static/css/editorial.css" type="text/css" media="screen" charset="utf-8" />
+
+            
+            
+            
+            
+            
+            
+
+            
+            
+        
+        
+        
+        
+            <!-- GLOBAL JAVASCRIPT -->
+            <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+            <script type="text/javascript">window.__admin_media_prefix__ = "/static/admin/";</script>
+            <script type="text/javascript">window.__static_url__ = "/static/";</script>
+            <script type="text/javascript">var STATIC_URL = "/static/";</script>
+            <script type="text/javascript">window.SERVER_NAME = "rhizome.org";</script>
+
+            <script type="text/javascript" src="/static/js/mootools-core-1.3.2-yc.js"></script>
+            <script type="text/javascript" src="/static/js/mootools-more-1.3.2.1.js"></script>
+            <script type="text/javascript" src="/static/js/rhizome.js"></script>
+            <script type="text/javascript" src="/static/media_players/flowplayer/flowplayer-3.2.2.min.js"></script>
+            <script type="text/javascript" src="/static/media_players/soundmanager/script/soundmanager2-nodebug-jsmin.js"></script>
+            <script type="text/javascript" src="/static/media_players/soundmanager/script/inlineplayer.js"></script>
+            <script type="text/javascript" src="/static/js/carousel/PeriodicalExecuter.js"></script>
+            <script type="text/javascript" src="/static/js/carousel/Carousel.js"></script>
+            
+            <script type="text/javascript">
+                soundManager.url = '/static/media_players/soundmanager/swf/';
+                //soundManager.flashVersion = 9; // optional: shiny features (default = 8)
+                soundManager.useFlashBlock = true; // optionally, enable when you're ready to dive in
+                // enable HTML5 audio support, if you're feeling adventurous.
+                soundManager.useHTML5Audio = true;
+                soundManager.debugMode = 0; // disable or enable debug output
+                soundManager.useFlashBlock = 0;
+                //soundManager.useMovieStar = true;
+            </script>
+
+            <script type="text/javascript" src="/static/js/jquery-1.10.2.min.js"></script>
+            <!-- LOCAL  JAVASCRIPT-->              
+            
+            
+                   
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <script type="text/javascript">
+                
+                
+                
+            </script>
+        
+        
+        <!--RSS HEADER -->
+        
+        
+
+        <!-- Quantcast Tag, part 1 -->
+        <script type="text/javascript">
+            var _qevents = _qevents || [];
+            (function() {
+                var elem = document.createElement('script');
+                elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge")  
+                            + ".quantserve.com/quant.js";
+                elem.async = true;
+                elem.type = "text/javascript";
+                var scpt = document.getElementsByTagName('script')[0];
+                scpt.parentNode.insertBefore(elem, scpt);  
+            })();
+        </script>
+    </head>
+        
+    <body class="blog post_detail">
+        
+        
+        
+    <div id="new_header">
+    <ul>
+        
+            <li><a  href="/?ref=header">Rhizome</a></li>
+        
+            <li><a class="active" href="/editorial/?ref=header">Journal</a></li>
+        
+            <li><a  href="/artbase/featured/?ref=header">Artbase</a></li>
+        
+            <li><a  href="/community/?ref=header">Community</a></li>
+        
+            <li><a  href="/programs/?ref=header">Programs</a></li>
+        
+
+        <li id="search">
+            <form action="/search/" method="get">
+                <input type="text" name="q" placeholder=""><a id="search-addon"><i class="fa fa-search"></i></a>
+            </form>
+        </li>
+
+        <li id="account">
+            
+                <a href="/login/?ref=header"><i class="fa fa-key"></i></a>
+            
+        </li>
+    </ul>
+</div>
+
+<div id="new_footer">
+    <ul>
+        
+            
+        
+            <li><a class="active" href="/editorial/?ref=footer"><span class="underline">Journal</span> &raquo;</a></li>
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+
+        
+            <li><a  href="/editorial/artist-profiles/?ref=footer">Artist Profiles</a></li>
+        
+            <li><a  href="/editorial/tag/surf-report/?ref=footer">Surf Reports</a></li>
+        
+            <li><a  href="/editorial/tag/e-cig-in-context/?ref=footer">E-Cig in Context</a></li>
+        
+
+        
+
+        
+            <li class="reversed"><a  href="/support/donate/?ref=footer">Membership</a></li>
+        
+            <li class="reversed"><a  href="/about/?ref=footer">About Us</a></li>
+        
+    </ul>
+</div>
+
+
+
+        
+                 
+          
+        
+
+                 
+        
+             
+         
+            
+                        
+        <div id="content" class="container ">
+            
+
+
+
+
+
+    <script type="text/javascript" src="/static/discuss/scripts/add_comment_toggler.js"></script>
+    <script type="text/javascript" src="/static/js/bbcode/editor.js"></script>   
+    <script type="text/javascript" src="/static/js/bbcode/color_palette.js"></script>   
+    <script type="text/javascript" src="/static/js/loadingOverlay.js"></script>
+    <script type="text/javascript">
+        window.addEvent('domready', function() {
+            new Request({method: 'post',url: '/hit/update/',                     data:  {hitcount_pk : '138585' },                     onError: function(rtxt) {},                     onSuccess: function(rtxt,rxml) {}}).send();
+        });
+    </script>
+
+
+
+
+<div class="column-wrapper span-24">
+    <div id="editorial-posts"  class= "left-column span-15">
+        <div data-live-url="/editorial/body/9326/" class="single-post span-15 ">
+            
+                <h2 class="post-title"><a href="/editorial/2014/aug/28/first-look-miranda-july">Somebody: A New Messaging Service by Miranda July</a></h2>
+             
+
+            <div class="post-details clearfix">
+                <div class="post-meta">
+                    
+                        
+                            <span class="authors bold-upper blue">
+                                <a href="/profile/lauren23//">Lauren Cornell</a> 
+                            </span>
+                        
+                        <span class="blue">|</span>
+                    
+                        <span class="bold">Thu Aug 28th, 2014 12:15 p.m.</span>
+                </div>
+                
+                
+                    
+<a class="comment-summary" href="/editorial/2014/aug/28/first-look-miranda-july/#comments"><i class="fa fa-comment fa-lg"></i> (0)</a>
+
+<div class="new-share">
+    <a class="share-btn-cover" href="#">Share</a>
+
+    <a class="share-btn" href="https://twitter.com/share?url=http://rhizome.org/editorial/2014/aug/28/first-look-miranda-july/?ref=ftsidebar" target="_blank"><i class="fa fa-twitter"></i></a>
+
+    <a class="share-btn" href="http://www.tumblr.com/share/link?url=http%3A//rhizome.org/editorial/2014/aug/28/first-look-miranda-july/%3Fref%3Dftsidebar" title="Share on Tumblr"><i class="fa fa-tumblr-square"></i></a>
+
+    <a class="share-btn" href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=http://rhizome.org/editorial/2014/aug/28/first-look-miranda-july/?ref=ftsidebar', 'facebook-share-dialog', 'width=626,height=436'); return false;"><i class="fa fa-facebook-square"></i></a>
+</div>
+                
+            </div>
+        
+            <hr class= "black-thin">
+            
+            <div class="post-body">
+                <div><em>Miranda July's messaging service </em>Somebody<em> is presented as part of <a href="http://www.newmuseum.org/exhibitions/online" target="_blank">First Look</a>, the New Museum's ongoing series of digital projects, now co-curated and copresented by Rhizome. Because the app relies on face-to-face interaction, the New Museum (along with other sites around the world) </em><em>will serve as a "hotspot" for users of the app. </em></div>
+<p><em><img style="display: block; margin-left: auto; margin-right: auto;" src="http://media.rhizome.org/blog/9326/Miranda-July-Somebody.jpg" alt="" /></em></p>
+<p style="text-align: center;"><span style="font-size: xx-small;">Miranda July, <em>Somebody</em>, 2014 (still, featuring July). Video, dir. Miranda July. Courtesy the artist and Miu Miu.</span></p>
+<p>"Texting is tacky. Calling is awkward. Email is old." —Miranda July</p>
+<p>In Miranda July's 1998 experimental video <em>The Amateurist</em>, a young woman with a jet-black pixie haircut in a stiff professional dress (played by July) studies a TV set displaying a fuzzy surveillance feed of a blonde woman (also played by July), who is squirming in the corner of a small cell. While speaking to the camera, the pixied professional reels off all sorts of absurd quantifications and explanations of the surveilled woman's movements. She maps her emotions to a numbered grid, psychoanalyzes her behavior, quips about her habits, and consistently runs roughshod across boundaries between doctor and patient, subject and object, viewer and viewed, public and private, in what is ultimately an excessive examination without any apparent justification. Since the video was produced, July's body of work has expanded from video and performance to include online works, novels, and feature films—all of which attempt to dissolve boundaries between fictionalized personae, or between the artist and her audience. It's significant to note that July started out in the experimental-video scene of the '90s, since so much of her work is about how the adaptation of new technologies affects us on a very personal level. Regardless of medium, her works reflect how broad social changes inflect our most intimate relations.</p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="http://media.rhizome.org/blog/9326/Miranda-July-Amateurist.jpg" alt="" /></p>
+<p style="text-align: center;"><span style="font-size: xx-small;">Miranda July, <em>The Amateurist </em>(1998). Still image from single channel video.</span></p>
+<p>July's new iOS application, <a href="https://itunes.apple.com/us/app/somebody/id897593878?mt=8"><em>Somebody</em></a>™, which the New Museum is proud to copresent as part of a distributed international launch with multiple international partners (see list below), continues these profound investigations into the ways technology mediates our interpersonal communications.</p>
+<p>July describes this new messaging service in the following way:</p>
+<p><em>"When you send your friend a message through</em> Somebody, <em>it goes—not to your friend—but to the Somebody user nearest your friend. This person (probably a stranger) delivers the message verbally, acting as your stand-in."</em></p>
+<p><em>Somebody</em> is available as a free download via the iTunes Store, and <a href="http://somebodyapp.com">somebodyapp.com</a> can be visited for an overview of the work.</p>
+<p>An accompanying video by July will also be screened in the New Museum's Lobby. The artist will speak about <em>Somebody</em> at the New Museum on October 9 (details to come).</p>
+<p style="text-align: center;"><iframe src="//www.youtube.com/embed/iz13HMsvb6o" frameborder="0" width="590" height="332" allowfullscreen=""></iframe> </p>
+<p>Notes about <em>Somebody</em>:</p>
+<p>• You can choose actions and directions for your stand-in, such as [cry] or [hug]—or write your own.<br />• The recipient always has the option of declining a delivery before the message is set in motion, if now's not a good time.<br />• The first sentence of the message is automatically "[Recipient's name]? It's me, [Sender's Name]," thus reminding the stand-in to assume the identity of the sender.<br />• Somebody uses GPS to locate your friend, then presents you with photos and performance ratings of nearby users so you can choose the best possible delivery person for your message.<br />• If there's no one nearby, you can choose to "float" your message indefinitely. Users interested in being a stand-in can browse nearby floating messages and pick one to deliver.</p>
+<p><em>Somebody</em> was created with support from Miu Miu. Official <em>Somebody</em> hotspots so far include Los Angeles County Museum of Art (with a presentation by July on September 11); the New Museum (presentation on October 9); Yerba Buena Center for the Arts, San Francisco; Portland Institute of Contemporary Art; the Walker Art Center, Minneapolis; and Museo Jumex, Mexico City. Museum-goers are invited to send and deliver messages in these spaces where there are likely to be other users.</p>
+<p><strong>About Miranda July</strong></p>
+<p>Miranda July is a filmmaker, artist, and writer. She wrote, directed, and starred in <em>The Future</em> (2011) and <em>Me and You and Everyone We Know</em> (2005), which won a special jury prize at the Sundance Film Festival and four prizes at the Cannes Film Festival, including the Caméra d'Or. July's fiction has appeared in the <em>Paris Review</em>,<em>Harper's</em> magazine, and the <em>New Yorker</em>; her collection of stories, <em>No One Belongs Here More Than You</em> (2007), won the Frank O'Connor International Short Story Award and has been published in twenty-three countries. The nonfictional work <em>It Chooses You</em> was published in 2011. In 2000, July created the participatory website<em>Learning to Love You More</em> with artist Harrell Fletcher, and a companion book was published in 2007; the work is now in the collection of the San Francisco Museum of Modern Art. She designed <em>Eleven Heavy Things</em>, an interactive sculpture garden, for the 2009 Venice Biennale, and in 2013, more than a hundred thousand people subscribed to her email-based artwork <em>We Think Alone</em> (commissioned by Magasin 3, Stockholm). In 2014, she debuts the audience participatory performance <em>New Society</em> at the Walker Art Center in Minneapolis and launches the app <em>Somebody</em>, a messaging service created with the support of Miu Miu. <em>The First Bad Man</em>, a novel, will be published in January 2015. Raised in Berkeley, California, July lives in Los Angeles.</p>
+<p><strong>Sponsors</strong> </p>
+<p>First Look is made possible, in part, by the New York State Council on the Arts with the support of Governor Andrew Cuomo and the New York State Legislature.</p>
+<p><img src="http://235bowery.s3.amazonaws.com/images/1009/thumbnails/792x792x1.jpg" alt="" width="81" height="102" /></p>
+<p>Additional support provided by the Toby Devan Lewis Emerging Artists Exhibitions Fund.</p> 
+            </div>
+                
+            
+              <!--TAGS-->	
+            
+            
+            <div class="post-tags-and-share span-15">
+                <span class="tags essay-tags">
+                    <label>Tags:</label>
+                    
+                        <a class="tag blue" href="/editorial/tags/app/">app</a>
+                    
+                        <a class="tag blue" href="/editorial/tags/ios/">iOS</a>
+                    
+                        <a class="tag blue" href="/editorial/tags/miranda-july/">Miranda July</a>
+                    
+                        <a class="tag blue" href="/editorial/tags/somebody/">Somebody</a>
+                    
+                </span>
+            </div>
+            
+            
+            
+                        
+            <hr class="black-thin span-15">
+            
+            <div class="post-nav last span-15">
+                
+                    <a class="previous span-7" href="/editorial/2014/aug/27/vote-now-internet-art-microgrants">Previous Post</a>
+                
+                
+                    
+                        <a class="next span-7" href="/editorial/2014/aug/29/rhizome-today">Next Post</a>
+                    
+                
+            </div>
+
+        </div> 
+        
+            
+                
+ 
+ <!--COMMENTS LIST-->
+
+
+<!--END COMMENTS LIST-->
+ <!--ADD COMMENT -->	
+
+ <!--ADD COMMENT -->
+    <div class="section-row-titles mini-nav">
+        <a name="comments" id="comments-section" class="anchor-name">Reply to this Post</a>
+    </div>
+    <hr class="hr3"> 	
+     
+        <div class= "login">
+            You must be logged in to post a comment.
+            <a id="section-login" class="round-blue" href = "/login/?next=/editorial/2014/aug/28/first-look-miranda-july/?ref=ftsidebar#comments">Log In</a>
+        </div>
+    
+
+<!--END ADD COMMENT -->
+
+<!--END ADD COMMENT -->
+
+            
+        
+    </div>
+   
+   <!--end left column-->
+    <div class= "right-column span-8">
+        <div id="nectar-ads">
+    <div id="featured-ad">
+        <div style="height: 600px; width: 300px" id="azk1"></div>    
+    </div>
+    
+    <div id="adsquares">
+        <div style="height: 141; width: 137;" id="azk2"></div>
+        
+        <div style="height: 141; width: 137;" id="azk3"></div>
+        
+        <div style="height: 141; width: 137;" id="azk4"></div>
+        
+        <div style="height: 141; width: 137;" id="azk5"></div>
+    </div>
+    <div>
+        <a style="font-weight:bold;" href="http://nectarads.com">Advertise on Rhizome with Nectar Ads</a>
+    </div>
+</div>
+        
+        
+
+<div id ="sidebar">
+  <div class="sidebar-element ">
+        <div class="section-title"><a href="/announce">Rhizome News</a></div>
+        <div class="content-wrap ">
+            <div class="content" id="subscribe">
+                <div class="content-body subscribe ">
+                    <div class="subscribe-description">
+                    Our weekly email newsletter including featured stories, events, job listings, announcements and opportunities in the fields of art & technology.
+                    </div>
+                    
+                    <div id="rhizome-news-signup-form">
+                        <!-- Begin MailChimp Signup Form -->
+<div id="mc_embed_signup">
+<form action="http://rhizome.us1.list-manage.com/subscribe/post?u=a1487b13ca8ed17d052f71f12&amp;id=6f6e0ea86b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+	<fieldset>
+	
+<div class="mc-field-group">
+<input type="text" placeholder="YOUR EMAIL" name="EMAIL" id="newsletter-input">
+</div>
+		<div id="mce-responses">
+			<div class="response" id="mce-error-response" style="display:none"></div>
+			<div class="response" id="mce-success-response" style="display:none"></div>
+		</div>
+		<div><input type="submit" value="Subscribe to Rhizome News" name="subscribe" id="mc-embedded-subscribe"></div>
+	</fieldset>	
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+                    </div>                
+                </div>
+                
+                 <div class="content-body subscribe ">
+                    <div id="connect-links">
+                        
+                        <!-- twitter follow button -->
+                        <a href="https://twitter.com/rhizomedotorg" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @rhizomedotorg</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                        
+                        <!-- fb like button -->
+                       <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Frhizome.org%2F&amp;send=false&amp;layout=button_count&amp;width=77&amp;show_faces=false&amp;font&amp;colorscheme=light&amp;action=like&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:77px; height:20px;" allowTransparency="true"></iframe>
+
+                        <!-- youtube subscribe button -->
+                        <a class="youtube-subscribe-button" href="http://www.youtube.com/subscription_center?add_user=RhizomeDotOrg1" title="Subscribe to Rhizome's YouTube Channel">Subscribe to Rhizome's YouTube Channel</a>
+
+                        <!-- vimeo button -->
+
+
+                        <!-- rss button -->
+                        <a class="rhizome-fp-rss" href="http://feeds.feedburner.com/rhizome-fp/" title="Rhizome RSS">Rhizome RSS</a>
+
+                        <!-- tumblr button -->
+                        <iframe class="btn" frameborder="0" border="0" scrolling="no" allowtransparency="true" height="18" width="18" src="http://platform.tumblr.com/v1/follow_button.html?button_type=3&tumblelog=rhizomedotorg&color_scheme=dark"></iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>    
+</div>
+
+        
+<div id ="sidebar">
+
+    <div class="sidebar-element ">
+        <div class="section-title">
+            <a href="/editorial/">Featured Articles</a>
+        </div>
+        <div class="content-wrap ">
+            <div class="content ">
+                
+                
+                <div class="content-body ">
+                    <div class="sidebar-post">
+                        
+                        <div class = "post-image">
+                            <a class="bold" href="/editorial/2014/aug/28/first-look-miranda-july?ref=ftsidebar">
+			      
+                                <img src="http://media.rhizome.org/blog/9326/Miranda-July-Somebody.jpg.100x80_q95_crop.jpg">
+                            </a>
+                        </div>
+                        <div class="sidebar-post-title ">
+                            <a class = "bold" href="/editorial/2014/aug/28/first-look-miranda-july?ref=ftsidebar">Somebody: A New Messaging Service by Miranda July</a>                                   
+                        </div>
+                        
+                        <div class="sidebar-post-info ">
+                            <span class="descriptor">by 
+                                
+                                    
+                                        <span class="authors bold-upper blue">
+                                            <a href="/profile/lauren23/?ref=ftsidebar">Lauren Cornell</a> 
+                                        </span>
+                                    
+                                
+                            on Aug 28th, 2014</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-body ">
+                    <div class="sidebar-post">
+                        
+                        <div class = "post-image">
+                            <a class="bold" href="/editorial/2014/aug/27/artist-profile-femke-herregraven?ref=ftsidebar">
+			      
+                                <img src="http://media.rhizome.org/blog/9322/Taxodus.gif.100x80_q95_crop.png">
+                            </a>
+                        </div>
+                        <div class="sidebar-post-title ">
+                            <a class = "bold" href="/editorial/2014/aug/27/artist-profile-femke-herregraven?ref=ftsidebar">Artist Profile: Femke Herregraven</a>                                   
+                        </div>
+                        
+                        <div class="sidebar-post-info ">
+                            <span class="descriptor">by 
+                                
+                                    
+                                        <span class="authors bold-upper blue">
+                                            <a href="/profile/lucy_chinen/?ref=ftsidebar">Lucy Chinen</a> 
+                                        </span>
+                                    
+                                
+                            on Aug 27th, 2014</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-body ">
+                    <div class="sidebar-post">
+                        
+                        <div class = "post-image">
+                            <a class="bold" href="/editorial/2014/aug/20/twine-could-be-your-life?ref=ftsidebar">
+			      
+                                <img src="http://media.rhizome.org/blog/9315/Do-you-want.jpg.100x80_q95_crop.jpg">
+                            </a>
+                        </div>
+                        <div class="sidebar-post-title ">
+                            <a class = "bold" href="/editorial/2014/aug/20/twine-could-be-your-life?ref=ftsidebar">Hypertext and Destiny: This Twine Could be Your Life</a>                                   
+                        </div>
+                        
+                        <div class="sidebar-post-info ">
+                            <span class="descriptor">by 
+                                
+                                    
+                                        <span class="authors bold-upper blue">
+                                            <a href="/profile/Gconverse/?ref=ftsidebar">Grace Converse</a> 
+                                        </span>
+                                    
+                                
+                            on Aug 20th, 2014</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-body ">
+                    <div class="sidebar-post">
+                        
+                        <div class = "post-image">
+                            <a class="bold" href="/editorial/2014/aug/14/containers?ref=ftsidebar">
+			      
+                                <img src="http://media.rhizome.org/blog/9308/Allan-Sekula.jpg.100x80_q95_crop.jpg">
+                            </a>
+                        </div>
+                        <div class="sidebar-post-title ">
+                            <a class = "bold" href="/editorial/2014/aug/14/containers?ref=ftsidebar">Containers</a>                                   
+                        </div>
+                        
+                        <div class="sidebar-post-info ">
+                            <span class="descriptor">by 
+                                
+                                    
+                                        <span class="authors bold-upper blue">
+                                            <a href="/profile/interdome/?ref=ftsidebar">Adam Rothstein</a> 
+                                        </span>
+                                    
+                                
+                            on Aug 14th, 2014</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+
+</div>
+
+
+        
+
+
+        </div>
+        
+        <div id="preload"></div>
+
+
+
+        <!-- Quantcast Tag, part 2 -->
+        <script type="text/javascript">
+            _qevents.push( { qacct:"p-1bU5CKetpvMBI", labels:"artmedia" } );
+        </script>
+        <noscript>
+            <div style="display: none;">
+                <img src="//pixel.quantserve.com/pixel/p-1bU5CKetpvMBI.gif?labels=artmedia" height="1" width="1" alt="Quantcast"/>
+            </div>
+        </noscript>
+
+        
+        
+
+        <script>
+        jQuery.noConflict();
+        (function($) {
+            $(function() {
+                $('.share-btn-cover').click(function() {
+                    $(this).hide();
+                    $(this).siblings('.share-btn').css({'display': 'inline-block'});
+                    return false;
+                });
+            });
+        })(jQuery);
+        </script>
+        <script type="text/javascript" src="/static/js/new_navbars.js"></script>
+        
+
+        
+            <script type="text/javascript">
+                var z=document.createElement("script");
+                z.type="text/javascript";
+                z.async=true;
+                z.src="//engine.nectarads.com/z/12843/azk1_2_43,azk2_2_16,azk3_2_16,azk4_2_16,azk5_2_16";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(z, s);
+            </script>
+        
+
+
+
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-768502-1', 'rhizome.org');
+          ga('send', 'pageview');
+
+        </script>
+    
+        <script type="text/javascript">
+            (function() {
+            var src = document.createElement('script'); 
+            src.async = true;
+            src.src = document.location.protocol + '//platform.twitter.com/widgets.js';
+            document.getElementsByTagName('head')[0].appendChild(src);
+            }());                        
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+            po.src = 'https://apis.google.com/js/plusone.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+          })();
+        </script>
+        
+        <script type="text/javascript">
+            var _sf_async_config={uid:26954,domain:"rhizome.org"};
+            (function(){
+              function loadChartbeat() {
+                window._sf_endpt=(new Date()).getTime();
+                var e = document.createElement('script');
+                e.setAttribute('language', 'javascript');
+                e.setAttribute('type', 'text/javascript');
+                e.setAttribute('src',
+                   (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+                   "js/chartbeat.js");
+                document.body.appendChild(e);
+              }
+              var oldonload = window.onload;
+              window.onload = (typeof window.onload != 'function') ?
+                 loadChartbeat : function() { oldonload(); loadChartbeat(); };
+            })();
+        </script>        
+    </body>
+</html>

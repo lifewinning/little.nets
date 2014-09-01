@@ -1,0 +1,223 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=US-ASCII">
+<title>The Temple Operating System</title>
+<meta name="keywords" content="Operating System,64-Bit,64 Bit,Temple,OS,TempleOS,Free,Open Source,Public Domain,x86_64">
+<meta name="generator" content="TempleOS V2.12">
+<style type="text/css">
+.cF0{color:#000000;background-color:#fcfcfc;}
+.cF1{color:#0000a8;background-color:#fcfcfc;}
+.cF2{color:#00a800;background-color:#fcfcfc;}
+.cF3{color:#00a8a8;background-color:#fcfcfc;}
+.cF4{color:#a80000;background-color:#fcfcfc;}
+.cF5{color:#a800a8;background-color:#fcfcfc;}
+.cF6{color:#a85400;background-color:#fcfcfc;}
+.cF7{color:#a8a8a8;background-color:#fcfcfc;}
+.cF8{color:#545454;background-color:#fcfcfc;}
+.cF9{color:#5454fc;background-color:#fcfcfc;}
+.cFA{color:#54fc54;background-color:#fcfcfc;}
+.cFB{color:#54fcfc;background-color:#fcfcfc;}
+.cFC{color:#fc5454;background-color:#fcfcfc;}
+.cFD{color:#fc54fc;background-color:#fcfcfc;}
+.cFE{color:#fcfc54;background-color:#fcfcfc;}
+.cFF{color:#fcfcfc;background-color:#fcfcfc;}
+</style>
+</head>
+<body>
+<pre style="font-family:courier;font-size:10pt">
+<a name="l1"></a></blink><span class=cF5>                              Welcome to TempleOS</span><span class=cF0>
+<a name="l2"></a></span><span class=cF4>
+<a name="l3"></a></span><a href="TrivialSolutions.html#l1"></blink><span class=cF4>Trivial Solutions</span></a></blink><span class=cF0>'s TempleOS is a x86_64, multi-cored, multi-tasking, 
+<a name="l4"></a>ring-0-only, single-address_mapped (identity), operating system for recreational 
+<a name="l5"></a>programming:
+<a name="l6"></a>
+<a name="l7"></a>  * Professionals doing hobby projects
+<a name="l8"></a>  * Teenagers doing projects
+<a name="l9"></a>  * Non-professional, older-persons projects
+<a name="l10"></a>
+<a name="l11"></a>Simplicity is a goal to </span><a href="Strategy.html#l1"></blink><span class=cF4>keep the line count down</span></a></blink><span class=cF0>, so it's easy to tinker with.  
+<a name="l12"></a>As it turns-out, simplicity makes it faster in some ways, too.  It never 
+<a name="l13"></a>switches privilege levels, never changes address maps, tends to load whole 
+<a name="l14"></a>contiguous files and other, similar things which boost speed.  It's only 
+<a name="l15"></a>121,147 lines of code including the kernel, the 64-bit compiler, the graphics 
+<a name="l16"></a>library and all the tools.  More importantly, it's designed to keep the user's 
+<a name="l17"></a>line count down -- you can do a &quot;hello world&quot; application in one line of code 
+<a name="l18"></a>and can put graphics on the screen with a three line program!
+<a name="l19"></a>
+<a name="l20"></a>It's a kayak, not a Titanic -- it will crash if you do something wrong.  You 
+<a name="l21"></a>quickly reboot, however.  DOS and the 8-bit home computers of the 80's worked 
+<a name="l22"></a>fine without memory protection and most computers in the world -- the embedded 
+<a name="l23"></a>ones -- operate without protection.  The resulting simplicity of no protections 
+<a name="l24"></a>is why TempleOS has value.  In facts, that's the point of TempleOS.  See the </span><span class=cF4>
+<a name="l25"></a></span><a href="Charter.html#l1"></blink><span class=cF4>TempleOS Charter</span></a></blink><span class=cF0>.
+<a name="l26"></a>
+<a name="l27"></a>Conventional thinking is &quot;failure is not an option&quot; for general purpose 
+<a name="l28"></a>operating systems.  Since this OS is used in addition to Windows or Linux, 
+<a name="l29"></a>however, failure is an option -- just use Windows if you can't do something.
+<a name="l30"></a>
+<a name="l31"></a>Two things to know about TempleOS are that </span><span class=cF0>tasks</span><span class=cF0> have </span><a href="../Kernel/Mem1b.html#l373"></blink><span class=cF4>MAlloc</span></a></blink><span class=cF0>/</span><a href="../Kernel/Mem1b.html#l369"></blink><span class=cF4>Free</span></a></blink><span class=cF0> heap memory, 
+<a name="l32"></a>not applications, and tasks have compiler symbol tables that persist at a scope 
+<a name="l33"></a>like environment variables in other operating systems, and the symbols can 
+<a name="l34"></a>include functions.
+<a name="l35"></a>
+<a name="l36"></a>In other operating systems, I hated learning one language for command line 
+<a name="l37"></a>scripts and another for programming.  With </span><span class=cF2>TempleOS</span><span class=cF0>, the command line feeds 
+<a name="l38"></a>right into the </span><a href="HolyC.html#l1"></blink><span class=cF4>HolyC</span></a></blink><span class=cF0> compiler, line by line, and it places code into memory it </span><span class=cF4>
+<a name="l39"></a></span><a href="../Kernel/Mem1b.html#l373"></blink><span class=cF4>MAlloc</span></a></blink><span class=cF0>()s.  The compiler is paused at the command line, waiting for input.  
+<a name="l40"></a>Naturally, you </span><span class=cF2>#include</span><span class=cF0> a program to load it into memory and, usually, start it. 
+<a name="l41"></a> During the boot process, many files get </span><a href="../Kernel/Adam1.html#l1"></blink><span class=cF4>compiled</span></a></blink><span class=cF0> before you have access to the 
+<a name="l42"></a>command line.  (Don't worry, booting takes only a couple of seconds.)  All the 
+<a name="l43"></a>header declarations for the operating system are compiled and are available for 
+<a name="l44"></a>use in your programs without needing to </span><span class=cF2>#include </span><span class=cF0>them.  Everything is truly 
+<a name="l45"></a>compiled to native </span><a href="http://en.wikipedia.org/wiki/Amd64#AMD64"></blink><span class=cF2>x86_64</span></a></blink><span class=cF0> machine code, nothing is </span><span class=cF2>interpreted</span><span class=cF0> and there is no </span><span class=cF2>b
+<a name="l46"></a>yte code</span><span class=cF0>.
+<a name="l47"></a>
+<a name="l48"></a>Statements at the global scope -- outside the scope of functions -- execute 
+<a name="l49"></a>immediately.  There is no </span><span class=cF2>main()</span><span class=cF0> function.  Instead, you give meaningful names 
+<a name="l50"></a>to what would be </span><span class=cF2>main()</span><span class=cF0> functions and you invoke them by calling them with a 
+<a name="l51"></a>statement in the global scope, usually at the bottom of your file.
+<a name="l52"></a>
+<a name="l53"></a>I started with </span><span class=cF2>C</span><span class=cF0> syntax, but didn't like the command line for a directory 
+<a name="l54"></a>listing looking like this:
+<a name="l55"></a>
+<a name="l56"></a>&gt;</span><span class=cF2>Dir(&quot;*.*&quot;,FALSE);
+<a name="l57"></a>
+<a name="l58"></a></span><span class=cF0>So, I added default args from </span><span class=cF2>C++</span><span class=cF0> and it looked like this:
+<a name="l59"></a>
+<a name="l60"></a>&gt;</span><span class=cF2>Dir();
+<a name="l61"></a>
+<a name="l62"></a></span><span class=cF0>I didn't like that, so I made parentheses optional on calls with no args and it, 
+<a name="l63"></a>now, looks like this:
+<a name="l64"></a>
+<a name="l65"></a>&gt;</span><span class=cF2>Dir;</span><span class=cF0>
+<a name="l66"></a>
+<a name="l67"></a>The syntax change created an ambiguity when specifying function addresses.  To 
+<a name="l68"></a>resolve it, I  made a '</span><span class=cF2>&amp;</span><span class=cF0>' required in front of function names when specifying an 
+<a name="l69"></a>address of a function, which is better anyway.
+<a name="l70"></a>
+<a name="l71"></a>Once I was no longer using standard C/C++ syntax, I decided to change everything 
+<a name="l72"></a>I didn't like and call it </span><a href="HolyC.html#l1"></blink><span class=cF4>HolyC</span></a></blink><span class=cF0>.  Here are the new </span><a href="HolyC.html#l203"></blink><span class=cF4>operator precedence</span></a></blink><span class=cF0> rules.  
+<a name="l73"></a>It's Biblical!  See </span><a href="../Misc/Bible.html#l82641"></blink><span class=cF4>Luke,5:37</span></a></blink><span class=cF0>.
+<a name="l74"></a>
+<a name="l75"></a>There are no object files in TempleOS and, normally, you don't make executable 
+<a name="l76"></a>files either, but you can.  That's known as &quot;</span><span class=cF2>Ahead-Of-Time</span><span class=cF0>&quot; compilation.  
+<a name="l77"></a>Instead, you &quot;</span><span class=cF2>Just-In-Time</span><span class=cF0>&quot; compile.
+<a name="l78"></a>
+<a name="l79"></a>Tasks have no priority and are never removed from the queue.  Instead, they 
+<a name="l80"></a>often poll whatever they are waiting on and swap-out.  (Swapping tasks takes 
+<a name="l81"></a>half a microsecond and does not involve disk activity or memory maps.)  See </span><span class=cF4>
+<a name="l82"></a></span><a href="../Kernel/Sched.html#l1"></blink><span class=cF4>Scheduler</span></a></blink><span class=cF0>.  Polling keeps it simple.  It's might be a problem if you had lots of 
+<a name="l83"></a>tasks busy, which rarely happens on a home computer.  The order of the tasks in 
+<a name="l84"></a>the queue determines front-to-back window order.  See </span><a href="MultiTasking.html#l1"></blink><span class=cF4>TempleOS MultiTasking</span></a></blink><span class=cF0>.
+<a name="l85"></a>
+<a name="l86"></a>The </span><span class=cF2>FAT32</span><span class=cF0> filesystem is supported to makes exchanging files with a dual booted 
+<a name="l87"></a>other operating system easy and there is the simple, 64-bit TempleOS </span><a href="RedSea.html#l1"></blink><span class=cF4>RedSea</span></a></blink><span class=cF0> 
+<a name="l88"></a>filesystem.  The </span><a href="RedSea.html#l1"></blink><span class=cF4>RedSea</span></a></blink><span class=cF0> has allocation bitmap for clusters and all files are 
+<a name="l89"></a>stored contiguously.  You can't grow files.
+<a name="l90"></a>
+<a name="l91"></a>TempleOS is geared toward reading and writing whole files.  Since whole files 
+<a name="l92"></a>are processed, compression is possible.  Filenames ending in &quot;</span><span class=cF2>.Z</span><span class=cF0>&quot; are 
+<a name="l93"></a>automatically compressed or uncompressed when stored and fetched.  TempleOS does 
+<a name="l94"></a>support direct block random access into files, however -- </span><a href="../Kernel/Dsk/DskCFile.html#l129"></blink><span class=cF4>FRBlks</span></a></blink><span class=cF0>() and </span><a href="../Kernel/Dsk/DskCFile.html#l181"></blink><span class=cF4>FWBlks</span></a></blink><span class=cF0>().
+<a name="l95"></a>
+<a name="l96"></a>If a file is not found, &quot;</span><span class=cF2>.Z</span><span class=cF0>&quot; is added or removed and a search is done, again.  
+<a name="l97"></a>There is no </span><span class=cF2>PATH</span><span class=cF0>, but parent directories are searched when a file is not found.  
+<a name="l98"></a>This feature is especially useful for default account files.
+<a name="l99"></a>
+<a name="l100"></a>It's fun being able to turn-off interrupts with the asm instruction, CLI, and on 
+<a name="l101"></a>with STI.  </span><span class=cF2>TempleOS</span><span class=cF0> runs all programs in kernel mode, ring 0, so no instructions 
+<a name="l102"></a>are off-limits.  Turning-off and on preemption with </span><a href="../Kernel/Adam1b.html#l227"></blink><span class=cF4>Preempt</span></a></blink><span class=cF0>() is a less drastic 
+<a name="l103"></a>measure that is usually sufficient.  A newly </span><a href="../Kernel/Task1a.html#l221"></blink><span class=cF4>Spawn</span></a></blink><span class=cF0>()ed task begins with 
+<a name="l104"></a>preemption off.
+<a name="l105"></a>
+<a name="l106"></a>The graphic resolution is poor, </span><span class=cF2>640x480 16 color</span><span class=cF0>, but God said that and that's 
+<a name="l107"></a>all I feel comfortable with without GPU acceleration supported.  A </span><span class=cF2>1600x1200x24</span><span class=cF0> 
+<a name="l108"></a>bit screen takes 37 times more memory, implying 37 times the CPU power.  Also, a 
+<a name="l109"></a>fixed size keeps it simple with everybody machine having the same appearance.  
+<a name="l110"></a>Look on the bright-side -- you won't spend as much time twiddling pixels for 
+<a name="l111"></a>your game art and you'll have tons of CPU power available, especially with 
+<a name="l112"></a>multicore systems.
+<a name="l113"></a>
+<a name="l114"></a>TempleOS is for hobbyist programmers on single user (at a time) home computers, 
+<a name="l115"></a>not mainframes or servers, but it is preemptive multitasking.  The focus task is 
+<a name="l116"></a>all-important so symmetrical multiprocessing is almost pointless.  Why does it 
+<a name="l117"></a>matter running two apps at the same time twice as fast when you really want to 
+<a name="l118"></a>run one faster?  You could say TempleOS does master/slave multiprocessing.  The 
+<a name="l119"></a>anticipated use for multicore is primarily putting graphics on the screen.  
+<a name="l120"></a>Hardware graphics acceleration is not used, so this is possible.  See </span><span class=cF4>
+<a name="l121"></a></span><a href="MultiCore.html#l1"></blink><span class=cF4>TempleOS MultiCore</span></a></blink><span class=cF0>.
+<a name="l122"></a>
+<a name="l123"></a>There is no distinction between the terms </span><span class=cF2>task</span><span class=cF0>, </span><span class=cF2>process</span><span class=cF0> or </span><span class=cF2>thread</span><span class=cF0>.  All have a 
+<a name="l124"></a>task record, </span><a href="../Kernel/Adam1a.html#l3214"></blink><span class=cF4>CTask</span></a></blink><span class=cF0>, pointed to by the </span><span class=cF2>FS</span><span class=cF0> segment reg and are accessed with </span><span class=cF4>Fs-&gt;</span><span class=cF0> 
+<a name="l125"></a>while </span><span class=cF4>Gs-&gt;</span><span class=cF0> points to a </span><a href="../Kernel/Adam1a.html#l3339"></blink><span class=cF4>CCPU</span></a></blink><span class=cF0> for the current CPU core.  Each task can have just 
+<a name="l126"></a>one window, but a task can have children with windows.  (The segment regs are 
+<a name="l127"></a>just used as extra regs -- there is nothing segmented about TempleOS' memory.)
+<a name="l128"></a>
+<a name="l129"></a>In TempleOS, </span><span class=cF2>Adam</span><span class=cF0> refers to a task that is the father of all tasks.  He's never 
+<a name="l130"></a>supposed to die.  Since tasks inherit the symbols of parents, system-wide stuff 
+<a name="l131"></a>is associated with </span><span class=cF2>Adam</span><span class=cF0>.  His heap is like kernel memory in other operating 
+<a name="l132"></a>systems.  Since </span><span class=cF2>Adam</span><span class=cF0> is immortal, it's safe to allocate objects, not tied to any 
+<a name="l133"></a>mortal task, from </span><span class=cF2>Adam</span><span class=cF0>'s heap.  He stays in a server mode, taking requests, so 
+<a name="l134"></a>you can ask him to </span><span class=cF2>#include</span><span class=cF0> something, placing that code system-wide.  A funny 
+<a name="l135"></a>story is that originally I called it the </span><span class=cF2>root</span><span class=cF0> task and even had a </span><span class=cF2>/Root</span><span class=cF0> 
+<a name="l136"></a>directory ;-)  </span><span class=cF2>Adam</span><span class=cF0> executes </span><a href="../Kernel/Adam1.html#l1"></blink><span class=cF4>::/Kernel/Adam1.CPP</span></a></blink><span class=cF0> at boot time.
+<a name="l137"></a>
+<a name="l138"></a>For easy back-ups, place everything you author in your </span><span class=cF2>HOME</span><span class=cF0> directory and 
+<a name="l139"></a>subdirectories.  Then, use </span><a href="../Adam/Dsk/Dsk2a.html#l135"></blink><span class=cF4>CopyTree</span></a></blink><span class=cF0>().  That should make upgrading easy, too.  
+<a name="l140"></a>To make an account use </span><a href="../Kernel/Dsk/Dsk1c.html#l82"></blink><span class=cF4>MkDir</span></a></blink><span class=cF0>() to create a directory under </span><span class=cF2>/Accts</span><span class=cF0>.  It will be </span><span class=cF2>H
+<a name="l141"></a>OME</span><span class=cF0> if you boot to it.  Recompile with </span><a href="../Adam/Boot/InsBoot.html#l135"></blink><span class=cF4>MakeOSPrtBootInstall</span></a></blink><span class=cF0>() and make it boot 
+<a name="l142"></a>your acct.  Customizable start-up scripts go in your </span><span class=cF2>HOME</span><span class=cF0> directory.  The 
+<a name="l143"></a>default start-up scripts are in </span><span class=cF2>/Accts</span><span class=cF0>, the parent of all accounts.  Copy the 
+<a name="l144"></a>start-up files you wish to customize into </span><span class=cF2>HOME</span><span class=cF0> and modify them.  See </span><a href="GuideLines.html#l33"></blink><span class=cF4>Acct Files</span></a></blink><span class=cF0>. 
+<a name="l145"></a> You can make your own distro that includes everything and is a bootable live CD 
+<a name="l146"></a>with </span><a href="../Misc/MakeDistro.html#l1"></blink><span class=cF4>::/Misc/MakeDistro.CPP</span></a></blink><span class=cF0>.
+<a name="l147"></a>
+<a name="l148"></a>Typically, your usage pattern through the day will be repeatedly left or right 
+<a name="l149"></a>clicking on filenames in a cmd line </span><a href="../Kernel/Dsk/Dsk1b.html#l234"></blink><span class=cF4>Dir</span></a></blink><span class=cF0>() listing.  You left-click files to edit 
+<a name="l150"></a>them and right-click to </span><span class=cF2>#include</span><span class=cF0> them.  To begin a project, type </span><a href="../Adam/DolDoc/DocMain.html#l3"></blink><span class=cF4>Ed</span></a></blink><span class=cF0>(&quot;filename&quot;);
+<a name="l151"></a>, supplying a filename.  You can also run programs with </span><span class=cF2>&lt;F5&gt;</span><span class=cF0> when in the editor. 
+<a name="l152"></a> </span><span class=cF2>&lt;ESC&gt;</span><span class=cF0> to save and exit the file.  You'll need to do a new </span><a href="../Kernel/Dsk/Dsk1b.html#l234"></blink><span class=cF4>Dir</span></a></blink><span class=cF0>() cmd, 
+<a name="l153"></a>periodically, so make a macro on your PersonalMenu.  Access your PersonalMenu by 
+<a name="l154"></a>pressing </span><span class=cF2>&lt;CTRL-m&gt;</span><span class=cF0>, cursoring until you are on top of it and pressing </span><span class=cF2>&lt;SPACE&gt;</span><span class=cF0>.
+<a name="l155"></a>
+<a name="l156"></a></span><span class=cF2>&lt;CTRL-t&gt;</span><span class=cF0> toggles plain text mode, showing format commands, a little like viewing 
+<a name="l157"></a>html code.
+<a name="l158"></a></span><span class=cF2>&lt;CTRL-l&gt;</span><span class=cF0> inserts a nongraphic widget.
+<a name="l159"></a></span><span class=cF2>&lt;CTRL-r&gt;</span><span class=cF0> inserts a graphic resource or edits the graphic under the cursor.
+<a name="l160"></a></span><span class=cF2>&lt;CTRL-d&gt;</span><span class=cF0> brings-up the file manager.  It's pretty crappy.  I find I don't need 
+<a name="l161"></a>it very often, believe it or not.
+<a name="l162"></a></span><span class=cF2>&lt;CTRL-b&gt;</span><span class=cF0> toggles window border.
+<a name="l163"></a>
+<a name="l164"></a></span><span class=cF2>&lt;ALT-m&gt;</span><span class=cF0> maximizes a window.
+<a name="l165"></a></span><span class=cF2>&lt;ALT-SHIFT-w&gt;</span><span class=cF0> closes AutoComplete.
+<a name="l166"></a></span><span class=cF2>&lt;ALT-w&gt;</span><span class=cF0> brings back AutoComplete.
+<a name="l167"></a></span><span class=cF2>&lt;ALT-v&gt;</span><span class=cF0> vertically tiles windows.
+<a name="l168"></a></span><span class=cF2>&lt;ALT-h&gt;</span><span class=cF0> horizontally tiles windows.
+<a name="l169"></a>The </span><span class=cF2>ALT</span><span class=cF0> keys are defined in </span><a href="http://www.templeos.org/Wb/Accts/TS/TAD/Adam3cKeyPlugIns.html#l1"></blink><span class=cF4>HOME/Adam3cKeyPlugIns.CPP</span></a></blink><span class=cF0>.  You can customize them.
+<a name="l170"></a>
+<a name="l171"></a></span><span class=cF2>&lt;CTRL-ALT-e&gt;</span><span class=cF0> creates a new terminal window.  </span><span class=cF2>&lt;CTRL-ALT-x&gt;</span><span class=cF0> kills a window.  
+<a name="l172"></a>You'll do these periodically.
+<a name="l173"></a></span><span class=cF4>
+<a name="l174"></a></span><a href="../Adam/Utils/Grep.html#l143"></blink><span class=cF4>Grep</span></a></blink><span class=cF0>() is your best friend.  There's a wrapper function called </span><a href="http://www.templeos.org/Wb/Accts/TS/TAD/Adam3dWrappers.html#l8"></blink><span class=cF4>F</span></a></blink><span class=cF0>() in your </span><span class=cF2>HOME/
+<a name="l175"></a>Adam3dWrappers.CPP.Z</span><span class=cF0> file.  Feel free to make wrapper functions for functions 
+<a name="l176"></a>you use often and customize the args.  By the way, </span><a href="../Adam/Utils/Grep.html#l143"></blink><span class=cF4>Grep</span></a></blink><span class=cF0>() or </span><a href="http://www.templeos.org/Wb/Accts/TS/TAD/Adam3dWrappers.html#l13"></blink><span class=cF4>R</span></a></blink><span class=cF0>() can be used to 
+<a name="l177"></a>replace strings across multiple files.  You can access </span><a href="../Adam/Utils/Grep.html#l143"></blink><span class=cF4>Grep</span></a></blink><span class=cF0>() using </span><span class=cF2>&lt;CTRL-SHIFT-
+<a name="l178"></a>f&gt;</span><span class=cF0>.
+<a name="l179"></a>
+<a name="l180"></a>As you browse code, use the </span><span class=cF2>AutoComplete</span><span class=cF0> window to look-up functions, etc.  </span><span class=cF2>&lt;CTR
+<a name="l181"></a>L-SHIFT-F1&gt;</span><span class=cF0> (or whatever number) to follow a sym to it's source.  You can browse 
+<a name="l182"></a>deeper and deeper.  You go back with </span><span class=cF2>&lt;SHIFT-ESC&gt;</span><span class=cF0>.
+<a name="l183"></a>
+<a name="l184"></a>Use the </span><a href="HelpIndex.html#l1"></blink><span class=cF4>Help &amp; Index</span></a></blink><span class=cF0> or </span><a href="DemoIndex.html#l1"></blink><span class=cF4>Demo Index</span></a></blink><span class=cF0> to find-out what exists.  Press </span><span class=cF2>&lt;F1&gt;</span><span class=cF0> for help 
+<a name="l185"></a>or use the links on your menu (</span><span class=cF2>&lt;CTRL-m&gt;</span><span class=cF0>).  Also, look in the </span><span class=cF2>/Demo</span><span class=cF0> or </span><span class=cF2>/Apps</span><span class=cF0> 
+<a name="l186"></a>directories for inspiration.
+<a name="l187"></a>
+<a name="l188"></a></span><span class=cF9>
+<a name="l189"></a>Take Tour</span><span class=cF0>
+<a name="l190"></a>
+<a name="l191"></a></span><span class=cF8>
+<a name="l192"></a>* &quot;Windows&quot; is a trademark of MicroSoft Corp.
+<a name="l193"></a></span></pre></body>
+</html>
+<!-- text below generated by server. PLEASE REMOVE --><!-- Counter/Statistics data collection code --><script language="JavaScript" src="http://l.yimg.com/d/lib/smb/js/hosting/cp/js_source/whv2_001.js"></script><script language="javascript">geovisit();</script><noscript><img src="http://visit.webhosting.yahoo.com/visit.gif?us1409528703" alt="setstats" border="0" width="1" height="1"></noscript><script type="text/javascript" src="https://s.yimg.com/mi/vs4/ywa.js"></script><script type="text/javascript">try {var YWAGTracker = YWA.getTracker("10001849413879", "VSCALE4");YWAGTracker.setDocumentName("WPAGE");YWAGTracker.setDocumentGroup("YSBW");YWAGTracker.setCF(7, "templeos.org");YWAGTracker.setCF(8, "w42");YWAGTracker.submit();} catch (eYWATCUnavailable) {}</script><script type="text/javascript">(function (d, w) {var x = d.getElementsByTagName('SCRIPT')[0];var f = function () {var s = d.createElement('SCRIPT');s.type = 'text/javascript';s.async = true;s.src = "//np.lexity.com/embed/YW/eff965aab4535cd38b91f0976c617496?id=9382d670eca2";x.parentNode.insertBefore(s, x);};w.attachEvent ? w.attachEvent('onload',f) :w.addEventListener('load',f,false);}(document, window));</script>

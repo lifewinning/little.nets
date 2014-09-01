@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=US-ASCII">
+<title>The Temple Operating System</title>
+<meta name="keywords" content="Operating System,64-Bit,64 Bit,Temple,OS,TempleOS,Free,Open Source,Public Domain,x86_64">
+<meta name="generator" content="TempleOS V2.08">
+<style type="text/css">
+.cF0{color:#000000;background-color:#fcfcfc;}
+.cF1{color:#0000a8;background-color:#fcfcfc;}
+.cF2{color:#00a800;background-color:#fcfcfc;}
+.cF3{color:#00a8a8;background-color:#fcfcfc;}
+.cF4{color:#a80000;background-color:#fcfcfc;}
+.cF5{color:#a800a8;background-color:#fcfcfc;}
+.cF6{color:#a85400;background-color:#fcfcfc;}
+.cF7{color:#a8a8a8;background-color:#fcfcfc;}
+.cF8{color:#545454;background-color:#fcfcfc;}
+.cF9{color:#5454fc;background-color:#fcfcfc;}
+.cFA{color:#54fc54;background-color:#fcfcfc;}
+.cFB{color:#54fcfc;background-color:#fcfcfc;}
+.cFC{color:#fc5454;background-color:#fcfcfc;}
+.cFD{color:#fc54fc;background-color:#fcfcfc;}
+.cFE{color:#fcfc54;background-color:#fcfcfc;}
+.cFF{color:#fcfcfc;background-color:#fcfcfc;}
+</style>
+</head>
+<body>
+<pre style="font-family:courier;font-size:10pt">
+<a name="l1"></a><span class=cF5>                                 Psalmody Help</span><span class=cF0>
+<a name="l2"></a>
+<a name="l3"></a>* The keyboard can be used as an organ by typing letter keys or clicking the 
+<a name="l4"></a>mouse on the keyboard diagram.  You can &quot;record&quot; notes by pressing the red 
+<a name="l5"></a>button and typing letters.  They will appear on the musical staff.  You can edit 
+<a name="l6"></a>and save them.
+<a name="l7"></a>
+<a name="l8"></a>* The clipboard can be used to cut and paste.
+<a name="l9"></a>
+<a name="l10"></a>* </span><span class=cF2>Psalmody</span><span class=cF0> uses </span><a href="../../Doc/HolyC.html#l1"><span class=cF4>HolyC</span></a><span class=cF0> files as it's fmt!  See </span><span class=cF4>
+<a name="l11"></a></span><a href="Examples/personal.html#l1"><span class=cF4>::/Apps/Psalmody/Examples/personal.CPP</span></a><span class=cF0>.  It does not fully parse them when 
+<a name="l12"></a>loading back in, so changes made outside </span><span class=cF2>Psalmody</span><span class=cF0> can be lost.
+<a name="l13"></a>
+<a name="l14"></a>* The first line of the </span><a href="../../Doc/HolyC.html#l1"><span class=cF4>HolyC</span></a><span class=cF0> song files is a comment with a category recognized 
+<a name="l15"></a>by </span><a href="JukeBox.html#l54"><span class=cF4>JukeBox</span></a><span class=cF0>().  The categories are </span><span class=cF2>&quot;no nothing&quot;</span><span class=cF0>, </span><span class=cF2>&quot;has words&quot;</span><span class=cF0>, </span><span class=cF2>&quot;has graphics&quot;</span><span class=cF0>, or </span><span class=cF2>
+<a name="l16"></a>&quot;special&quot;</span><span class=cF0>.  The third character in the song comment is a digit rating number, 
+<a name="l17"></a>shown in </span><a href="JukeBox.html#l54"><span class=cF4>JukeBox</span></a><span class=cF0>().  You can set the song rating in </span><a href="JukeBox.html#l54"><span class=cF4>JukeBox</span></a><span class=cF0>() by pressing </span><span class=cF2>0</span><span class=cF0>-</span><span class=cF2>9</span><span class=cF0>.  
+<a name="l18"></a>You can press </span><span class=cF2>&lt;DELETE&gt;</span><span class=cF0> to delete songs.
+<a name="l19"></a>
+<a name="l20"></a>* You can take the </span><a href="../../Adam/Snd/Music.html#l98"><span class=cF4>Play</span></a><span class=cF0>() statements out of a song file and place them in your 
+<a name="l21"></a>programs.  You can also add a song to a document with </span><span class=cF2>&lt;CTRL-l&gt;</span><span class=cF0>, but you should 
+<a name="l22"></a>do it after pressing </span><span class=cF2>&lt;CTRL-t&gt;</span><span class=cF0> because the clipboard-insert in </span><span class=cF2>&lt;CTRL-l&gt;</span><span class=cF0> is 
+<a name="l23"></a>screwy.  See this &lt;Song&gt; after pressing </span><span class=cF2>&lt;CTRL-t&gt;</span><span class=cF0>, now.
+<a name="l24"></a>
+<a name="l25"></a>* You can call </span><a href="JukeBox.html#l54"><span class=cF4>JukeBox</span></a><span class=cF0>(&quot;HOME/Psalmody&quot;); to play your songs.
+<a name="l26"></a>
+<a name="l27"></a>* To create a </span><span class=cF2>.SND</span><span class=cF0> file which can be exported and played under Windows, set the </span><span class=cF2>
+<a name="l28"></a>Bool</span><span class=cF0> </span><a href="../../Kernel/Adam1a.html#l3739"><span class=cF4>snd.record</span></a><span class=cF0> to </span><span class=cF2>TRUE</span><span class=cF0>, play music, and set it to </span><span class=cF2>FALSE</span><span class=cF0>.  Then, call </span><span class=cF4>
+<a name="l29"></a></span><a href="../../Adam/Snd/SndFile.html#l19"><span class=cF4>SndFileCreate</span></a><span class=cF0>().  You might wish to make a </span><span class=cF2>&lt;CTRL-ALT-key&gt;</span><span class=cF0> to toggle this system 
+<a name="l30"></a>level recording feat.  See </span><a href="../../Kernel/Misc1a.html#l161"><span class=cF4>Snd</span></a><span class=cF0>().  Add this code to your </span><span class=cF4>
+<a name="l31"></a></span><a href="http://www.templeos.org/Wb/Accts/TS/TAD/Adam3cKeyPlugIns.html#l1"><span class=cF4>HOME/Adam3cKeyPlugIns.CPP</span></a><span class=cF0> file.
+<a name="l32"></a>
+<a name="l33"></a></span><span class=cF5>U0 CtrlAltR(I64)
+<a name="l34"></a>{
+<a name="l35"></a>  snd.record=!snd.record;
+<a name="l36"></a>}
+<a name="l37"></a>SetCtrlAltLetCB('R',&amp;CtrlAltR,&quot;Toggle snd.record&quot;);</span><span class=cF0>
+<a name="l38"></a>
+<a name="l39"></a>* When calling </span><a href="../../Adam/Snd/SndFile.html#l19"><span class=cF4>SndFileCreate</span></a><span class=cF0>() you can set a waveform.  The PC speaker is </span><span class=cF4>
+<a name="l40"></a></span><a href="../../Adam/Snd/MathAudio.html#l118"><span class=cF4>WF_SQUARE</span></a><span class=cF0>.  You can select reverb and averaging, also.
+<a name="l41"></a>
+</span></pre></body>
+</html>
+<!-- text below generated by server. PLEASE REMOVE --><!-- Counter/Statistics data collection code --><script language="JavaScript" src="http://l.yimg.com/d/lib/smb/js/hosting/cp/js_source/whv2_001.js"></script><script language="javascript">geovisit();</script><noscript><img src="http://visit.webhosting.yahoo.com/visit.gif?us1409528831" alt="setstats" border="0" width="1" height="1"></noscript><script type="text/javascript" src="https://s.yimg.com/mi/vs4/ywa.js"></script><script type="text/javascript">try {var YWAGTracker = YWA.getTracker("10001849413879", "VSCALE4");YWAGTracker.setDocumentName("WPAGE");YWAGTracker.setDocumentGroup("YSBW");YWAGTracker.setCF(7, "templeos.org");YWAGTracker.setCF(8, "w42");YWAGTracker.submit();} catch (eYWATCUnavailable) {}</script><script type="text/javascript">(function (d, w) {var x = d.getElementsByTagName('SCRIPT')[0];var f = function () {var s = d.createElement('SCRIPT');s.type = 'text/javascript';s.async = true;s.src = "//np.lexity.com/embed/YW/eff965aab4535cd38b91f0976c617496?id=9382d670eca2";x.parentNode.insertBefore(s, x);};w.attachEvent ? w.attachEvent('onload',f) :w.addEventListener('load',f,false);}(document, window));</script>

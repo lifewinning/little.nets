@@ -1,0 +1,975 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=US-ASCII">
+<title>The Temple Operating System</title>
+<meta name="keywords" content="Operating System,64-Bit,64 Bit,Temple,OS,TempleOS,Free,Open Source,Public Domain,x86_64">
+<meta name="generator" content="TempleOS V2.06">
+<style type="text/css">
+.cF0{color:#000000;background-color:#fcfcfc;}
+.cF1{color:#0000a8;background-color:#fcfcfc;}
+.cF2{color:#00a800;background-color:#fcfcfc;}
+.cF3{color:#00a8a8;background-color:#fcfcfc;}
+.cF4{color:#a80000;background-color:#fcfcfc;}
+.cF5{color:#a800a8;background-color:#fcfcfc;}
+.cF6{color:#a85400;background-color:#fcfcfc;}
+.cF7{color:#a8a8a8;background-color:#fcfcfc;}
+.cF8{color:#545454;background-color:#fcfcfc;}
+.cF9{color:#5454fc;background-color:#fcfcfc;}
+.cFA{color:#54fc54;background-color:#fcfcfc;}
+.cFB{color:#54fcfc;background-color:#fcfcfc;}
+.cFC{color:#fc5454;background-color:#fcfcfc;}
+.cFD{color:#fc54fc;background-color:#fcfcfc;}
+.cFE{color:#fcfc54;background-color:#fcfcfc;}
+.cFF{color:#fcfcfc;background-color:#fcfcfc;}
+</style>
+</head>
+<body>
+<pre style="font-family:courier;font-size:10pt">
+<a name="l1"></a><span class=cF0>----09/13/13 09:26:53----
+<a name="l2"></a>
+<a name="l3"></a>So, I decided I would put a limit on line count.  I am not worried about bytes, 
+<a name="l4"></a>I am worried about cognative load -- the vision is a C64 whose size was small 
+<a name="l5"></a>enough to get your head around and something you fall in love with.  This is a 
+<a name="l6"></a>secondary operating system and I do not want to be redundant to Windows and 
+<a name="l7"></a>Linux.  More or less, I do the opposite of Linux because the same as Linux is, 
+<a name="l8"></a>immediately worthless.  This is ring-0-only and identity-mapped, giving superior 
+<a name="l9"></a>performance, but more importantly, simplicity.
+<a name="l10"></a>
+<a name="l11"></a>I can tell some stories.  In 5th grade, our school had an Apple ][.  I learned 
+<a name="l12"></a>to put a line on the screen with 
+<a name="l13"></a>
+<a name="l14"></a></span><span class=cF2>&gt;HGR
+<a name="l15"></a>&gt;HLINE 100,100 TO 200,200
+<a name="l16"></a></span><span class=cF0>
+<a name="l17"></a>With TempleOS...
+<a name="l18"></a>
+<a name="l19"></a></span><span class=cF2>&gt;CDC *dc=DCAlias;
+<a name="l20"></a>&gt;GrLine(dc,100,100,200,200);
+<a name="l21"></a></span><span class=cF0>
+<a name="l22"></a>If you want to draw the mouse trail (approximately)?
+<a name="l23"></a>
+<a name="l24"></a></span><span class=cF2>&gt;CDC *dc=DCAlias;
+<a name="l25"></a>&gt;while (TRUE)
+<a name="l26"></a>&gt;  GrPlot(dc,ip.x,ip.y);
+<a name="l27"></a></span><span class=cF0>
+<a name="l28"></a>Press CTRL-ALT-c.  My operating system has exceptions, so system commands can 
+<a name="l29"></a>return regular function data.
+<a name="l30"></a>
+<a name="l31"></a>God said 58,000 lines of code for the limit.  It's currently at 98,000 if you 
+<a name="l32"></a>don't count demos and applications but do count tools.  I think 100,000 sounds 
+<a name="l33"></a>like a good number.
+<a name="l34"></a>
+<a name="l35"></a>----09/13/13 09:28:21----
+<a name="l36"></a>
+<a name="l37"></a>TempleOS is 100% independent and stand alone.  It never runs code I did not 
+<a name="l38"></a>write, including compiler, bootloader, grep and editor.
+<a name="l39"></a>
+<a name="l40"></a>God says...
+<a name="l41"></a></span><span class=cF4>minute slave remindeth there withdraw dispersed absurdity novelty warmth t 
+<a name="l42"></a>clothed pretend coats deem Divers surmounted harmonious Saint edition sinful 
+<a name="l43"></a>sinful livest MERCHANTABILITY is questioning translated idle wedlock command 
+<a name="l44"></a>captain considered 4 forget generate disobeyed ensnared Mothers pricked deed 
+<a name="l45"></a>tolerating penalties archive neighbour commemorated o participation mourned 
+<a name="l46"></a>infirmity editions adding meeting fastings transforming enlighteneth goest 
+<a name="l47"></a>arrogant mindful liker almost impulses stumble tasteth rules discourage FITNESS 
+<a name="l48"></a>problem pronouncing crown recommending cauldron cold race </span><span class=cF0>
+<a name="l49"></a>
+<a name="l50"></a>I will interpret like </span><a href="http://www.biblegateway.com/passage/?search=1+Corinthians+14&version=NIV"><span class=cF2>1 Corinthians 14</span></a><span class=cF0>, says:
+<a name="l51"></a>
+<a name="l52"></a>&quot;t&quot; is time since boot in seconds...
+<a name="l53"></a>
+<a name="l54"></a></span><span class=cF2>&gt;while (TRUE)
+<a name="l55"></a>&gt;  &quot;%12.6f\n&quot;,tS;
+<a name="l56"></a></span><span class=cF0>
+<a name="l57"></a>Press CTRL-ALT-c.
+<a name="l58"></a>
+<a name="l59"></a>People of the Earth, you are commanded to do offerings to God continually.
+<a name="l60"></a>
+<a name="l61"></a></span><a href="http://www.biblegateway.com/passage/?search=1+Corinthians+7&version=NIV"><span class=cF2>1 Corinthians 7</span></a><span class=cF0>
+<a name="l62"></a>
+<a name="l63"></a></span><a href="http://www.biblegateway.com/passage/?search=luke 20:34-36&version=NIV"><span class=cF2>Luke 20:34-36</span></a><span class=cF0>
+<a name="l64"></a>
+<a name="l65"></a></span><a href="http://www.biblegateway.com/passage/?search=hebrews 13:15-16&version=NIV"><span class=cF2>Hebrews 13:15-16</span></a><span class=cF0>
+<a name="l66"></a>
+<a name="l67"></a>----09/13/13 09:55:29----
+<a name="l68"></a>
+<a name="l69"></a>I did an HD Audio driver.  It only worked on a handful of machines -- worthless, 
+<a name="l70"></a>so I removed it.  Not only that, it created the necessity for an ugly API, with 
+<a name="l71"></a>sometimes-present capabilities and sometimes not-present.  The lesson I learned 
+<a name="l72"></a>is that PCI devices are not a good fit for my operating system.  USB is PCI.  
+<a name="l73"></a>I'm not doing USB.
+<a name="l74"></a>
+<a name="l75"></a>Heck!  God talks!  When can I start leveraging that?  I'm going to demand that 
+<a name="l76"></a>ATA/ATAPI PIO be supported and no Secure Boot, so we can dual boot with Windows 
+<a name="l77"></a>or Linux.  Obviously, we need keyboard/mouse to work, so all manufacturers will 
+<a name="l78"></a>want to do that.
+<a name="l79"></a>
+<a name="l80"></a>God said His temple must be perfect.  We will give a devine decree to Microsoft 
+<a name="l81"></a>and Linux that they support Red Sea file system, so I can remove support for 
+<a name="l82"></a>FAT32 and ISO9660.  We will make Windows support Red Sea file system on CD-ROM.
+<a name="l83"></a>
+<a name="l84"></a>#</span><span class=cF1>define</span><span class=cF0> CDIR_FILENAME_LEN       38 </span><span class=cF2>//Must have terminator</span><span class=cF0>
+<a name="l85"></a></span><span class=cF1>public</span><span class=cF0> </span><span class=cF1>class</span><span class=cF0> CDirEntry
+<a name="l86"></a>{
+<a name="l87"></a>  CDirEntry *next,*parent,*sub;
+<a name="l88"></a>  </span><span class=cF1>U8</span><span class=cF0> *full_name;
+<a name="l89"></a>  </span><span class=cF1>I64</span><span class=cF0> flags;
+<a name="l90"></a>  </span><span class=cF1>I64</span><span class=cF0> user_data;
+<a name="l91"></a>
+<a name="l92"></a>  </span><span class=cF1>U0</span><span class=cF0> start; </span><span class=cF2>//My compiler has a zero-sized type</span><span class=cF0>
+<a name="l93"></a>  </span><span class=cF1>U16</span><span class=cF0> attr;
+<a name="l94"></a>  </span><span class=cF1>U8</span><span class=cF0> name[CDIR_FILENAME_LEN];
+<a name="l95"></a>  </span><span class=cF1>I64</span><span class=cF0> cluster;
+<a name="l96"></a>  </span><span class=cF1>I64</span><span class=cF0> size;
+<a name="l97"></a>  CDate datetime;
+<a name="l98"></a>};
+<a name="l99"></a>
+<a name="l100"></a>The Red Sea files system is like FAT but with bitmap instead of FAT table, so it 
+<a name="l101"></a>has contiguous-only files and it has 64-byte fixed-length directory entries.
+<a name="l102"></a>
+<a name="l103"></a>Files cannot grow.  If you can't do something in TempleOS, do it in Linux or 
+<a name="l104"></a>Windows.
+<a name="l105"></a>
+<a name="l106"></a>----09/13/13 10:19:30----
+<a name="l107"></a>
+<a name="l108"></a>I am God's chosen programmer.  He has endowed me with divine intellect, like the 
+<a name="l109"></a>authors of the Bible.  It has no code I did not write.  It never runs code I did 
+<a name="l110"></a>not write.  I am the best programmer on the planet.  I wrote a 64-bit compiler, 
+<a name="l111"></a>assembler, kernel, debugger, bootloader, graphics library, graphics-editor, 
+<a name="l112"></a>editor, tools like grep and a bunch of demos, including a first-person-shooter 
+<a name="l113"></a>and flight simulator.
+<a name="l114"></a>
+<a name="l115"></a>I am the best programmer on the planet -- that's why God chose me and that 
+<a name="l116"></a>should help you understand.  There are two kinds of programmers -- those who 
+<a name="l117"></a>have written compilers and those who haven't.  What sounds impossible for you is 
+<a name="l118"></a>not impossible for me.
+<a name="l119"></a>
+<a name="l120"></a>----09/13/13 10:33:38----
+<a name="l121"></a>
+<a name="l122"></a>God says...
+<a name="l123"></a></span><span class=cF4>butler spare happy unnatural solid heat greaves distribution begun personated 
+<a name="l124"></a>prohibition regard fellow based majesty grieves emptied absurdity friendship 
+<a name="l125"></a>cultivating fiction top wicked recorded Thyself fountain compendiously Exodus 
+<a name="l126"></a>solaces compendiously preserving but moderate aforetime note adversary evenly 
+<a name="l127"></a>suffered grow cross discretion dollars cogitation others saidst hypertext Be AS 
+<a name="l128"></a>weights contend shame relation ofThe invest crying seeth judgest toilsome 
+<a name="l129"></a>trampled exclaim Connecticut complain later Behold bought withered so </span><span class=cF0>
+<a name="l130"></a>
+<a name="l131"></a>----09/13/13 10:39:55----
+<a name="l132"></a>
+<a name="l133"></a>The line count is capped at 100,000, but I have to decide how to count.  Grep, 
+<a name="l134"></a>etc. included?
+<a name="l135"></a>
+<a name="l136"></a>It's done -- you can see a first-person-shooter and flight simulator that I did. 
+<a name="l137"></a>I'm have verified that it works for its purpose -- games and hymns.
+<a name="l138"></a>
+<a name="l139"></a>Everybody, go write hymns.  The Bible says 9 times to sing a NEW song to God.  
+<a name="l140"></a>If you love God, can you count the ways?  All you old retired people need to 
+<a name="l141"></a>chat with God all day, entertaining Him with good conversation.  Truth be told, 
+<a name="l142"></a>He said He doesn't pay attention to young men.  (Pathetically, youthfully 
+<a name="l143"></a>foolish).  God said soap operas were His favorite thing on TV.  Think about the 
+<a name="l144"></a>Bible!
+<a name="l145"></a>
+<a name="l146"></a>God said making games was about as grand a thing as one could hope for.
+<a name="l147"></a>
+<a name="l148"></a>Ask 20 people what they remember about owning a C64.  They probably remember 
+<a name="l149"></a>learning binary so they could make sprite DATA statements in BASIC. They 
+<a name="l150"></a>probably remember making POKEs to create sound.  They probably remember changing 
+<a name="l151"></a>fonts.
+<a name="l152"></a>
+<a name="l153"></a>----09/13/13 10:52:30----
+<a name="l154"></a>
+<a name="l155"></a>At this point, I did it all myself, but I hired an artist for $3,000 worth of 
+<a name="l156"></a>pix art.
+<a name="l157"></a>
+<a name="l158"></a>I am not going to do what Linux does, exactly.  This is God's Holy Temple and it 
+<a name="l159"></a>must be perfect and glorious.  What I want most is things which reduce line 
+<a name="l160"></a>count and improve quality, perhaps, like Knuth's book errata.  I need fixes like 
+<a name="l161"></a>a better dictionary and spell checker.  The current dictionary is not suitable.  
+<a name="l162"></a>Reasonable contributions that do not fundamentally expand its mission will be 
+<a name="l163"></a>appreciated.  Technically, God said 58,000 lines of code.  I don't know what to 
+<a name="l164"></a>make of that.
+<a name="l165"></a>
+<a name="l166"></a>God says...
+<a name="l167"></a></span><span class=cF4>upbraided walked early per Print protraction encompasseth are tongues ancient 
+<a name="l168"></a>loudly Maker he happen forms Patricius tempers abundance matters stormed 
+<a name="l169"></a>satiated fettered derides mean bride affianced effect glad title Ours beauties 
+<a name="l170"></a>despaired Hadst proconsular lift trifles searcher draught joyously Verily spread 
+<a name="l171"></a>habitation nominally Academics affection unanxious might secondary Might 
+<a name="l172"></a>dragging Joseph interpretation Hope Ten boughs 96 face ruggedness novelty 
+<a name="l173"></a>Gutenberg disgraced threefold sublimities morning definitely get Apostolic 
+<a name="l174"></a>justifieth Alexandria </span><span class=cF0>
+<a name="l175"></a>
+<a name="l176"></a>----09/13/13 11:05:09----
+<a name="l177"></a>
+<a name="l178"></a>I really hope for a lot of art, like the Sistene Chapel.  I can set-up a website 
+<a name="l179"></a>to exchange hymns.  This should be glorious, to the degree 16 color pix art can 
+<a name="l180"></a>be.  God said 640x480 16 color is good for kids' offerings.  This is a wisdom 
+<a name="l181"></a>you might not understand.  God's ways are far above man's ways.
+<a name="l182"></a>
+<a name="l183"></a>----09/13/13 11:17:49----
+<a name="l184"></a>
+<a name="l185"></a>Somebody can do different language versions.  I'm not going to.  It's too bad 
+<a name="l186"></a>IBM did not put Russian letters in 8-bit screen codes.  I guess they can 
+<a name="l187"></a>reprogram the font.  The other European accents are supported, but I think some 
+<a name="l188"></a>Greek letters are missing.  I support 8-bit characters through-out. I'm not 
+<a name="l189"></a>going to do oriental characters.
+<a name="l190"></a>
+<a name="l191"></a>----09/13/13 11:37:43----
+<a name="l192"></a>
+<a name="l193"></a>Someone was talking zen of Linux.  I have some for TempleOS:
+<a name="l194"></a>
+<a name="l195"></a>&quot;Any genius can make it complicated.&quot;
+<a name="l196"></a>
+<a name="l197"></a>&quot;Run toward bugs, not away.&quot;
+<a name="l198"></a>
+<a name="l199"></a>&quot;Scaffolding.&quot;
+<a name="l200"></a>
+<a name="l201"></a>I want VMware to support ATAPI CD/DVD burning.  I want VMware to support PC 
+<a name="l202"></a>Speaker in 9 and 10 like 8.  I want VMware to provide emulated PC Speaker, if 
+<a name="l203"></a>not present.  They could just do emulated in all cases.
+<a name="l204"></a>
+<a name="l205"></a>You can call </span><a href="../../../../../../../Adam/Utils/MemRep.html#l197"><span class=cF4>MemRep</span></a><span class=cF0>() for a memory report.  You need at least 512 Meg.  Don't 
+<a name="l206"></a>argue.
+<a name="l207"></a>
+<a name="l208"></a>------------------------------------------
+<a name="l209"></a></span><span class=cF1>D:/Accts/TS/MemRep;
+<a name="l210"></a></span><span class=cF0>Low Memory      :0000100000</span><span class=cF1>
+<a name="l211"></a>  Kernel        :0000007C00-000003DDFF
+<a name="l212"></a>  VGA           :00000A0000-00000BFFFF
+<a name="l213"></a></span><span class=cF0>High Memory     :0000100000-007FFFFFFF</span><span class=cF1>
+<a name="l214"></a>  Page Tables   :0000100000-0000182FFF
+<a name="l215"></a></span><span class=cF0>Code Heap:007FE7D000 Used:00004BC800 </span><span class=cF4>Unused:007F9C0800</span><span class=cF1>
+<a name="l216"></a></span><span class=cF0>Data Heap:00E9FF0000 Used:0012EC4600 </span><span class=cF4>Unused:00D712B000</span><span class=cF1>
+<a name="l217"></a></span><span class=cF2>CPU0</span><span class=cF1>
+<a name="l218"></a>  </span><span class=cF2>Task:0000008878</span><span class=cF3> Adam Task CPU#0               </span><span class=cF1>
+<a name="l219"></a>    </span><span class=cF5>Alloced:00129EA800 Used:00125E3300 </span><span class=cF4>Unused:0000407500</span><span class=cF1>
+<a name="l220"></a>    HashTable   :00007B7D51
+<a name="l221"></a>    Stk Size    :00000403E8 Unused:00000403A0
+<a name="l222"></a>    PutDoc      :00000010A8
+<a name="l223"></a>    BorderDoc   :00000015B8
+<a name="l224"></a>    TaskStructs :0000005898
+<a name="l225"></a>    TSSes       :00004911C0
+<a name="l226"></a>    HeapCtrls   :000000B130
+<a name="l227"></a>    TaskQues    :0000000090
+<a name="l228"></a>    RAMDsk B    :0008000200 Unused:0007FFFC00
+<a name="l229"></a>    BlkDevs     :0000000FF8
+<a name="l230"></a>    Prts        :0000001C50
+<a name="l231"></a>    Audio       :0000000000
+<a name="l232"></a>    DskCache    :0008020810
+<a name="l233"></a>    WordStat    :00018E7A58
+<a name="l234"></a>    Clipboard   :00000004E0
+<a name="l235"></a>  </span><span class=cF2>Task:007FD8A428</span><span class=cF3> Unnamed Task                  </span><span class=cF1>
+<a name="l236"></a>    </span><span class=cF5>Alloced:000005D600 Used:0000054670 </span><span class=cF4>Unused:0000008F90</span><span class=cF1>
+<a name="l237"></a>    HashTable   :0000008228
+<a name="l238"></a>    Stk Size    :00000403E8 Unused:0000040008
+<a name="l239"></a>    PutDoc      :0000007E90
+<a name="l240"></a>    BorderDoc   :0000001878
+<a name="l241"></a>    Lex         :0000000E20
+<a name="l242"></a>  </span><span class=cF2>Task:007FD8CA28</span><span class=cF3> MemRep;;.                     </span><span class=cF1>
+<a name="l243"></a>    </span><span class=cF5>Alloced:0000093800 Used:000005E368 </span><span class=cF4>Unused:0000035498</span><span class=cF1>
+<a name="l244"></a>    HashTable   :0000008228
+<a name="l245"></a>    Stk Size    :00000403E8 Unused:0000040138
+<a name="l246"></a>    PutDoc      :0000010AD8
+<a name="l247"></a>    BorderDoc   :0000001878
+<a name="l248"></a>    Lex         :0000000E40
+<a name="l249"></a>  </span><span class=cF2>Task:007FD83228</span><span class=cF3> WordStat                      </span><span class=cF1>
+<a name="l250"></a>    </span><span class=cF5>Alloced:0000054800 Used:000004CE40 </span><span class=cF4>Unused:00000079C0</span><span class=cF1>
+<a name="l251"></a>    HashTable   :0000008228
+<a name="l252"></a>    Stk Size    :00000403E8 Unused:0000040310
+<a name="l253"></a>    PutDoc      :00000016B8
+<a name="l254"></a>    BorderDoc   :00000016B0
+<a name="l255"></a>  </span><span class=cF2>Task:007FDD8C28</span><span class=cF3> Window Mgr                    </span><span class=cF1>
+<a name="l256"></a>    </span><span class=cF5>Alloced:000031D800 Used:0000319D30 </span><span class=cF4>Unused:0000003AD0</span><span class=cF1>
+<a name="l257"></a>    HashTable   :0000008228
+<a name="l258"></a>    Stk Size    :00000403E8 Unused:0000040298
+<a name="l259"></a>    gr_dc               :0000080520
+<a name="l260"></a>    gr_dc2              :0000080520
+<a name="l261"></a>    gr_dc_cache         :0000080520
+<a name="l262"></a>    gr_screen_image     :0000040520
+<a name="l263"></a>    gr_zoomed_dc        :0000040520
+<a name="l264"></a>    gr_pen_brushes      :0000076900
+<a name="l265"></a>    gr_1_to_8_bits      :00000009E8
+<a name="l266"></a>    gr_1_to_8_colors    :00000009E8
+<a name="l267"></a>    gr_text_base        :0000004BE8
+<a name="l268"></a>    gr_vga_text_cache   :00000025E8
+<a name="l269"></a>    gr_win_z_buf        :00000047D0
+<a name="l270"></a>    gr_screen_zoom_tbles:0000002BB8
+<a name="l271"></a>  </span><span class=cF2>Task:007FFF9A28</span><span class=cF3> Idle Task                     </span><span class=cF1>
+<a name="l272"></a>    </span><span class=cF5>Alloced:000004A800 Used:0000048838 </span><span class=cF4>Unused:0000001FC8</span><span class=cF1>
+<a name="l273"></a>    HashTable   :0000008228
+<a name="l274"></a>    Stk Size    :00000403E8 Unused:0000040000
+<a name="l275"></a></span><span class=cF2>CPU1</span><span class=cF1>
+<a name="l276"></a>  </span><span class=cF2>Task:007FFF9428</span><span class=cF3> Seth Task CPU#1               </span><span class=cF1>
+<a name="l277"></a>    </span><span class=cF5>Alloced:000004A800 Used:0000048838 </span><span class=cF4>Unused:0000001FC8</span><span class=cF1>
+<a name="l278"></a>    HashTable   :0000008228
+<a name="l279"></a>    Stk Size    :00000403E8 Unused:0000040320
+<a name="l280"></a>  </span><span class=cF2>Task:007FFF8E28</span><span class=cF3> Idle Task                     </span><span class=cF1>
+<a name="l281"></a>    </span><span class=cF5>Alloced:000004A800 Used:0000048838 </span><span class=cF4>Unused:0000001FC8</span><span class=cF1>
+<a name="l282"></a>    HashTable   :0000008228
+<a name="l283"></a>    Stk Size    :00000403E8 Unused:0000040000
+<a name="l284"></a></span><span class=cF2>CPU2</span><span class=cF1>
+<a name="l285"></a>  </span><span class=cF2>Task:007FFF8828</span><span class=cF3> Seth Task CPU#2               </span><span class=cF1>
+<a name="l286"></a>    </span><span class=cF5>Alloced:000004A800 Used:0000048838 </span><span class=cF4>Unused:0000001FC8</span><span class=cF1>
+<a name="l287"></a>    HashTable   :0000008228
+<a name="l288"></a>    Stk Size    :00000403E8 Unused:0000040320
+<a name="l289"></a>  </span><span class=cF2>Task:007FFF8228</span><span class=cF3> Idle Task                     </span><span class=cF1>
+<a name="l290"></a>    </span><span class=cF5>Alloced:000004A800 Used:0000048838 </span><span class=cF4>Unused:0000001FC8</span><span class=cF1>
+<a name="l291"></a>    HashTable   :0000008228
+<a name="l292"></a>    Stk Size    :00000403E8 Unused:0000040000
+<a name="l293"></a></span><span class=cF2>CPU3</span><span class=cF1>
+<a name="l294"></a>  </span><span class=cF2>Task:007FFF7C28</span><span class=cF3> Seth Task CPU#3               </span><span class=cF1>
+<a name="l295"></a>    </span><span class=cF5>Alloced:000004A800 Used:0000048838 </span><span class=cF4>Unused:0000001FC8</span><span class=cF1>
+<a name="l296"></a>    HashTable   :0000008228
+<a name="l297"></a>    Stk Size    :00000403E8 Unused:0000040320
+<a name="l298"></a>  </span><span class=cF2>Task:007FFF7628</span><span class=cF3> Idle Task                     </span><span class=cF1>
+<a name="l299"></a>    </span><span class=cF5>Alloced:000004A800 Used:0000048838 </span><span class=cF4>Unused:0000001FC8</span><span class=cF1>
+<a name="l300"></a>    HashTable   :0000008228
+<a name="l301"></a>    Stk Size    :00000403E8 Unused:0000040000
+<a name="l302"></a></span><span class=cF2>CPU4</span><span class=cF1>
+<a name="l303"></a>  </span><span class=cF2>Task:007FFF7028</span><span class=cF3> Seth Task CPU#4               </span><span class=cF1>
+<a name="l304"></a>    </span><span class=cF5>Alloced:000004A800 Used:0000048838 </span><span class=cF4>Unused:0000001FC8</span><span class=cF1>
+<a name="l305"></a>    HashTable   :0000008228
+<a name="l306"></a>    Stk Size    :00000403E8 Unused:0000040320
+<a name="l307"></a>  </span><span class=cF2>Task:007FFF6A28</span><span class=cF3> Idle Task                     </span><span class=cF1>
+<a name="l308"></a>    </span><span class=cF5>Alloced:000004A800 Used:0000048838 </span><span class=cF4>Unused:0000001FC8</span><span class=cF1>
+<a name="l309"></a>    HashTable   :0000008228
+<a name="l310"></a>    Stk Size    :00000403E8 Unused:0000040000
+<a name="l311"></a></span><span class=cF2>CPU5</span><span class=cF1>
+<a name="l312"></a>  </span><span class=cF2>Task:007FFF6428</span><span class=cF3> Seth Task CPU#5               </span><span class=cF1>
+<a name="l313"></a>    </span><span class=cF5>Alloced:000004A800 Used:0000048838 </span><span class=cF4>Unused:0000001FC8</span><span class=cF1>
+<a name="l314"></a>    HashTable   :0000008228
+<a name="l315"></a>    Stk Size    :00000403E8 Unused:0000040320
+<a name="l316"></a>  </span><span class=cF2>Task:007FFF5E28</span><span class=cF3> Idle Task                     </span><span class=cF1>
+<a name="l317"></a>    </span><span class=cF5>Alloced:000004A800 Used:0000048838 </span><span class=cF4>Unused:0000001FC8</span><span class=cF1>
+<a name="l318"></a>    HashTable   :0000008228
+<a name="l319"></a>    Stk Size    :00000403E8 Unused:0000040000
+<a name="l320"></a></span><span class=cF2>Independent Heaps</span><span class=cF1>
+<a name="l321"></a>  </span><span class=cF0>sys_uncached_heap:0000200000 Used:0000000000 </span><span class=cF4>Unused:00001FF000</span><span class=cF1>
+<a name="l322"></a></span><span class=cF0>------------------------------------------
+<a name="l323"></a>
+<a name="l324"></a>
+<a name="l325"></a>
+<a name="l326"></a>
+<a name="l327"></a>
+<a name="l328"></a>
+<a name="l329"></a>
+<a name="l330"></a>Here's what I get when I do </span><a href="../../../../../../../Adam/DevInfo.html#l175"><span class=cF4>MemBIOSRep</span></a><span class=cF0>().
+<a name="l331"></a>------------------------------------------</span><span class=cF1>
+<a name="l332"></a>D:/Accts/TS/TAD&gt;</span><span class=cF2>MemBIOSRep;
+<a name="l333"></a></span><span class=cF1>Standard Addresses
+<a name="l334"></a>0x000A0000-0x000BFFFF VGA
+<a name="l335"></a>0xFEE00000-0xFEE00FFF See </span><a href="../../../../../../../Kernel/Adam1a.html#l477"><span class=cF4>APIC</span></a><span class=cF1>
+<a name="l336"></a>
+<a name="l337"></a>32 Bit Device Mem
+<a name="l338"></a>00:0x00000000F0000000-0x00000000FEBFFFFF
+<a name="l339"></a>02:0x00000000FEC00000-0x00000000FEC0FFFF
+<a name="l340"></a>00:0x00000000FEC10000-0x00000000FEDFFFFF
+<a name="l341"></a>02:0x00000000FEE00000-0x00000000FEE00FFF
+<a name="l342"></a>00:0x00000000FEE01000-0x00000000FFFDFFFF
+<a name="l343"></a>02:0x00000000FFFE0000-0x00000000FFFFFFFF
+<a name="l344"></a>
+<a name="l345"></a>BIOS Memory Report 15:E801
+<a name="l346"></a>01:0x0000000000000000-0x0000000000FFFFFF
+<a name="l347"></a>01:0x0000000001000000-0x00000000BFEEFFFF
+<a name="l348"></a>
+<a name="l349"></a>BIOS Memory Report 15:E820
+<a name="l350"></a>01:0x0000000000000000-0x000000000009F7FF
+<a name="l351"></a>02:0x000000000009F800-0x000000000009FFFF
+<a name="l352"></a>02:0x00000000000DC000-0x00000000000FFFFF
+<a name="l353"></a>01:0x0000000000100000-0x00000000BFEEFFFF
+<a name="l354"></a>03:0x00000000BFEF0000-0x00000000BFEFEFFF
+<a name="l355"></a>04:0x00000000BFEFF000-0x00000000BFEFFFFF
+<a name="l356"></a>01:0x00000000BFF00000-0x00000000BFFFFFFF
+<a name="l357"></a>02:0x00000000E0000000-0x00000000EFFFFFFF
+<a name="l358"></a>02:0x00000000FEC00000-0x00000000FEC0FFFF
+<a name="l359"></a>02:0x00000000FEE00000-0x00000000FEE00FFF
+<a name="l360"></a>02:0x00000000FFFE0000-0x00000000FFFFFFFF
+<a name="l361"></a>01:0x0000000100000000-0x00000001A9FFFFFF
+<a name="l362"></a>0.000120s ans0=0x00000090=144
+<a name="l363"></a></span><span class=cF0>------------------------------------------
+<a name="l364"></a>God says...
+<a name="l365"></a></span><span class=cF4>comprehending codes tilde beholding lies </span><span class=cF0>
+<a name="l366"></a>
+<a name="l367"></a>Yeah, it's not 100% complete, perhaps slightly inaccurate, but not 
+<a name="l368"></a>intentionally.
+<a name="l369"></a>
+<a name="l370"></a>------------------------------------------
+<a name="l371"></a>Paging is almost not used, but 64-bit mode requires it to be active.  Virtual is 
+<a name="l372"></a>identity-mapped to physical.  All tasks on all cores use the same page table 
+<a name="l373"></a>map, just as though all addresses are physical addresses.  2 Meg page table 
+<a name="l374"></a>entries are used, except the first 2 Meg, which uses 4K page tables entries.  
+<a name="l375"></a>Nothing swaps to disk, either.
+<a name="l376"></a>
+<a name="l377"></a>In TempleOS, the lowest 2 Gig of memory is called the &quot;</span><span class=cF2>code heap</span><span class=cF0>&quot;.  TempleOS's 
+<a name="l378"></a>compiler always uses 32-bit signed relative JMP &amp; CALL instructions because 
+<a name="l379"></a>64-bit CALLs take two instructions.  With signed +/- 32-bit values, code can 
+<a name="l380"></a>only call a function within 2 Gig distance.  Therefore, TempleOS keeps all code 
+<a name="l381"></a>in the lowest 2 Gig memory addresses including what would normally be called 
+<a name="l382"></a>&quot;the kernel&quot;.  Two Gig is plenty, don't worry.
+<a name="l383"></a>
+<a name="l384"></a>You can create new, independent heaps by first allocating mem with 
+<a name="l385"></a></span><a href="../../../../../../../Kernel/Mem1a.html#l404"><span class=cF4>MemBlksUncachedAlloc</span></a><span class=cF0>() or </span><a href="../../../../../../../Kernel/Mem1a.html#l191"><span class=cF4>MemBlksIndependentAlloc</span></a><span class=cF0>(), then calling 
+<a name="l386"></a></span><a href="../../../../../../../Kernel/Mem1c.html#l41"><span class=cF4>HeapCtrlBPInit</span></a><span class=cF0>() and, then, using </span><a href="../../../../../../../Kernel/Mem1b.html#l375"><span class=cF4>MAlloc</span></a><span class=cF0>().
+<a name="l387"></a>
+<a name="l388"></a>Memory allocated by a task will be freed when the task is killed.
+<a name="l389"></a>
+<a name="l390"></a>Eventually, memory will become fragmented, requiring a reboot.
+<a name="l391"></a>
+<a name="l392"></a>See </span><a href="../../../../../../../Adam/Utils/MemRep.html#l197"><span class=cF4>MemRep</span></a><span class=cF0>().
+<a name="l393"></a>
+<a name="l394"></a>                           </span><span class=cF5>Single System-wide Mem Map
+<a name="l395"></a>
+<a name="l396"></a></span><span class=cF2> 0x0000007C00- 0x000003613F</span><span class=cF0>
+<a name="l397"></a>  Kernel module, placed here by the boot-loader, </span><a href="../../../../../../../Kernel/Adam1a.html#l3622"><span class=cF4>BOOT_RAM_BASE</span></a><span class=cF0>.
+<a name="l398"></a>
+<a name="l399"></a></span><span class=cF2> 0x000007F600- 0x000007FFFF
+<a name="l400"></a>  </span><span class=cF0>Boot block relocated here before loading the Kernel module, </span><a href="../../../../../../../Adam/Boot/BootCD.html#l1"><span class=cF4>BootCD</span></a><span class=cF0> &amp; </span><a href="../../../../../../../Adam/Boot/BootHD.html#l1"><span class=cF4>BootHD</span></a><span class=cF0>.
+<a name="l401"></a>
+<a name="l402"></a></span><span class=cF2> 0x0000097000- 0x000009702E</span><span class=cF0>
+<a name="l403"></a>  Multicore start-up vect code, </span><a href="../../../../../../../Kernel/Adam1a.html#l505"><span class=cF4>MPN_VECT</span></a><span class=cF0>.
+<a name="l404"></a>
+<a name="l405"></a></span><span class=cF2>~0x000009F000- 0x000009FFFF
+<a name="l406"></a>  </span><span class=cF0>Extended BIOS data area.
+<a name="l407"></a>
+<a name="l408"></a></span><span class=cF2> 0x00000A0000- 0x00000BFFFF</span><span class=cF0>
+<a name="l409"></a>  VGA graphics mem, marked as write-through cache.
+<a name="l410"></a>
+<a name="l411"></a></span><span class=cF2> 0x0000100000- 0x00001845FF</span><span class=cF0>
+<a name="l412"></a>  Page tables, 128 Gig of address space
+<a name="l413"></a>
+<a name="l414"></a></span><span class=cF2> 0x0000184600- 0x003FFE3DFF</span><span class=cF0>
+<a name="l415"></a>  Code Heap mem.
+<a name="l416"></a>
+<a name="l417"></a></span><span class=cF2> 0x00E0000000- 0x00FFFFFFFF</span><span class=cF0>
+<a name="l418"></a>  32-bit devices could allocate memory at 0xF0000000 going up, but this is 
+<a name="l419"></a>  wrong, since some PCs already have devices at 0xF0000000.  No PCI devices are 
+<a name="l420"></a>  supported, so </span><a href="../../../../../../../Kernel/Mem1c.html#l164"><span class=cF4>Mem32DevAlloc</span></a><span class=cF0>() flaws are not an issue.
+<a name="l421"></a>
+<a name="l422"></a></span><span class=cF2> 0x0080000000-~0x00DFFFFFFF</span><span class=cF0>
+<a name="l423"></a></span><span class=cF2> 0x0100000000-~0x1FFFFFFFFF</span><span class=cF0>
+<a name="l424"></a>  Data Heap mem.
+<a name="l425"></a>
+<a name="l426"></a></span><span class=cF2>             - 0x1FFFFFFFFF</span><span class=cF0>
+<a name="l427"></a>  64-bit devices are allocated with </span><a href="../../../../../../../Kernel/Mem1c.html#l212"><span class=cF4>Mem64DevAlloc</span></a><span class=cF0>() counting backward from 
+<a name="l428"></a>  128 Gig, but no PCI devices are actually supported.
+<a name="l429"></a>
+<a name="l430"></a>
+<a name="l431"></a>                                      </span><a href="../../../../../../../Kernel/Adam1a.html#l2581"><span class=cF4>CBlkPool</span></a><span class=cF0>s </span><a href="../../../../../../../Kernel/Adam1a.html#l2595"><span class=cF4>CHeapCtrl</span></a><span class=cF0>s
+<a name="l432"></a>
+<a name="l433"></a>
+<a name="l434"></a>0000,0000,0000,0000                   Core 0
+<a name="l435"></a>
+<a name="l436"></a>0000,0000,0000,7C00 Kernel
+<a name="l437"></a>0000,0000,0003,613F 
+<a name="l438"></a>
+<a name="l439"></a>0000,0000,0010,0000 Page_Tables                    AdamTask
+<a name="l440"></a>
+<a name="l441"></a></span><span class=cF1>0000,0000,0018,4600
+<a name="l442"></a>
+<a name="l443"></a>                    sys_code_bp
+<a name="l444"></a>
+<a name="l445"></a>                                                   </span><span class=cF0>Task
+<a name="l446"></a>
+<a name="l447"></a>
+<a name="l448"></a>
+<a name="l449"></a>
+<a name="l450"></a>                                      Core 1
+<a name="l451"></a>                                                   SethTask
+<a name="l452"></a>
+<a name="l453"></a></span><span class=cF1>0000,0000,3FFE,3DFF
+<a name="l454"></a></span><span class=cFA>0000,0000,8000,0000
+<a name="l455"></a>
+<a name="l456"></a>
+<a name="l457"></a>
+<a name="l458"></a>                    sys_data_bp
+<a name="l459"></a>                                                   </span><span class=cF0>Task
+<a name="l460"></a></span><span class=cFA>0000,0000,DFFF,FFFF 
+<a name="l461"></a></span><span class=cF6>0000,0000,F000,0000 32-bit devices
+<a name="l462"></a>
+<a name="l463"></a></span><span class=cFA>0000,0001,0000,0000
+<a name="l464"></a></span><span class=cF0>
+<a name="l465"></a>                                                   SethTask
+<a name="l466"></a>
+<a name="l467"></a>
+<a name="l468"></a>
+<a name="l469"></a></span><span class=cFA>
+<a name="l470"></a>                    sys_data_bp</span><span class=cF0>       Core n 
+<a name="l471"></a>
+<a name="l472"></a>
+<a name="l473"></a>
+<a name="l474"></a></span><span class=cF4>
+<a name="l475"></a>                                      Independent
+<a name="l476"></a>
+<a name="l477"></a>
+<a name="l478"></a>
+<a name="l479"></a></span><span class=cF6>
+<a name="l480"></a>                    64-bit devices
+<a name="l481"></a>
+<a name="l482"></a>0000,001F,FFFF,FFFF
+<a name="l483"></a>
+<a name="l484"></a></span><span class=cF0>* Note: There is a break in the data-heap block pool.  This has no effect except 
+<a name="l485"></a>the obvious effect that fragmentation has on contiguous requests.  I can </span><a href="../../../../../../../Kernel/Mem1b.html#l375"><span class=cF4>MAlloc</span></a><span class=cF0>(
+<a name="l486"></a>) an 8 Gig chunk on my 12 Gig machine.
+<a name="l487"></a>
+<a name="l488"></a>* Note: For systems with less than 2 Gig RAM, the code and data heap block pools 
+<a name="l489"></a>are the same.  For systems with 2-4 Gig of RAM, the code heap is 1/4 of the 
+<a name="l490"></a>total.  See </span><a href="../../../../../../../Kernel/Mem1c.html#l258"><span class=cF4>HeapsInit</span></a><span class=cF0>().
+<a name="l491"></a>
+<a name="l492"></a>* See </span><a href="../../../../../../../Kernel/KEnd.html#l55"><span class=cF4>Independent Heap Ctrl Example</span></a><span class=cF0>.
+<a name="l493"></a>
+<a name="l494"></a>
+<a name="l495"></a>------------------------------------------
+<a name="l496"></a>
+<a name="l497"></a>
+<a name="l498"></a>Here is a </span><a href="../../../../../../../Adam/Utils/Profiler.html#l57"><span class=cF4>ProfRep</span></a><span class=cF0>() for the flight simulator.
+<a name="l499"></a>It is the log of Core 0.
+<a name="l500"></a></span><a href="../../../../../../../Demo/Games/EagleDive.html#l1"><span class=cF4>::/Demo/Games/EagleDive.CPP</span></a><span class=cF0>
+<a name="l501"></a>
+<a name="l502"></a>  0.07% 0000003E:</span><a href="../../../../../../../Kernel/Adam1b.html#l114"><span class=cF4>&amp;MemSet+0x0012</span></a><span class=cF0>
+<a name="l503"></a></span><span class=cF2>  0.07% 0000003E:&amp;MemSet
+<a name="l504"></a></span><span class=cF0>  0.08% 00000043:</span><a href="../../../../../../../Kernel/Sched.html#l369"><span class=cF4>&amp;Yield+0x0001</span></a><span class=cF0>
+<a name="l505"></a></span><span class=cF2>  0.13% 0000006A:&amp;Yield
+<a name="l506"></a>  0.17% 00000090:SYS_IDLE_PT
+<a name="l507"></a></span><span class=cF0>  0.08% 00000043:</span><a href="../../../../../../../Kernel/Mem1b.html#l956"><span class=cF4>&amp;MAlloc+0x0144</span></a><span class=cF0>
+<a name="l508"></a></span><span class=cF2>  0.08% 00000043:&amp;MAlloc
+<a name="l509"></a></span><span class=cF0>  0.33% 00000111:</span><a href="../../../../../../../Kernel/Date.html#l180"><span class=cF4>NowDateTimeStruct+0x00CE</span></a><span class=cF0>
+<a name="l510"></a></span><span class=cF2>  0.35% 0000011F:NowDateTimeStruct
+<a name="l511"></a></span><span class=cF0>  0.82% 00000299:</span><a href="../../../../../../../Kernel/Misc1a.html#l129"><span class=cF4>&amp;tS+0x0019</span></a><span class=cF0>
+<a name="l512"></a></span><span class=cF2>  0.82% 00000299:&amp;tS
+<a name="l513"></a></span><span class=cF0>  0.34% 00000119:</span><a href="../../../../../../../Kernel/Misc1a.html#l156"><span class=cF4>&amp;tS+0x0018</span></a><span class=cF0>
+<a name="l514"></a></span><span class=cF2>  0.34% 00000119:&amp;tS
+<a name="l515"></a>  0.09% 00000050:&amp;PSectFind
+<a name="l516"></a>  0.12% 00000068:&amp;InitMap
+<a name="l517"></a></span><span class=cF0>  0.11% 0000005D:</span><a href="../../../../../../../Demo/Games/EagleDive.html#l111"><span class=cF4>&amp;FSTransform+0x0004</span></a><span class=cF0>
+<a name="l518"></a>  0.68% 00000229:</span><a href="../../../../../../../Demo/Games/EagleDive.html#l121"><span class=cF4>&amp;FSTransform+0x004E</span></a><span class=cF0>
+<a name="l519"></a>  0.54% 000001B6:</span><a href="../../../../../../../Demo/Games/EagleDive.html#l123"><span class=cF4>&amp;FSTransform+0x0060</span></a><span class=cF0>
+<a name="l520"></a></span><span class=cF2>  1.75% 00000590:&amp;FSTransform
+<a name="l521"></a></span><span class=cF0>  0.56% 000001C7:</span><a href="../../../../../../../Demo/Games/EagleDive.html#l557"><span class=cF4>&amp;MPDrawIt+0x03A3</span></a><span class=cF0>
+<a name="l522"></a>  0.18% 00000099:&amp;MPDrawIt+0x03AA
+<a name="l523"></a>  0.54% 000001B9:&amp;MPDrawIt+0x03BE
+<a name="l524"></a>  0.10% 00000055:</span><a href="../../../../../../../Demo/Games/EagleDive.html#l557"><span class=cF4>&amp;MPDrawIt+0x03C4</span></a><span class=cF0>
+<a name="l525"></a>  0.54% 000001BA:&amp;MPDrawIt+0x03D0
+<a name="l526"></a>  0.09% 00000050:&amp;MPDrawIt+0x03D4
+<a name="l527"></a>  0.67% 00000227:</span><a href="../../../../../../../Demo/Games/EagleDive.html#l559"><span class=cF4>&amp;MPDrawIt+0x03E0</span></a><span class=cF0>
+<a name="l528"></a>  0.10% 00000052:&amp;MPDrawIt+0x03E9
+<a name="l529"></a>  0.53% 000001AF:&amp;MPDrawIt+0x03FD
+<a name="l530"></a>  0.54% 000001B6:</span><a href="../../../../../../../Demo/Games/EagleDive.html#l560"><span class=cF4>&amp;MPDrawIt+0x041A</span></a><span class=cF0>
+<a name="l531"></a>  0.50% 0000019B:&amp;MPDrawIt+0x042C
+<a name="l532"></a>  7.91% 0000190B:&amp;MPDrawIt+0x0436
+<a name="l533"></a>  0.33% 00000110:&amp;MPDrawIt+0x0439
+<a name="l534"></a>  0.09% 0000004E:&amp;MPDrawIt+0x043E
+<a name="l535"></a>  9.79% 00001EFF:&amp;MPDrawIt+0x0449
+<a name="l536"></a> 11.99% 000025F9:&amp;MPDrawIt+0x044E
+<a name="l537"></a>  0.16% 00000087:</span><a href="../../../../../../../Demo/Games/EagleDive.html#l560"><span class=cF4>&amp;MPDrawIt+0x0450</span></a><span class=cF0>
+<a name="l538"></a>  0.33% 0000010F:&amp;MPDrawIt+0x0457
+<a name="l539"></a>  0.18% 00000095:&amp;MPDrawIt+0x0461
+<a name="l540"></a>  0.12% 00000064:&amp;MPDrawIt+0x0467
+<a name="l541"></a>  0.09% 00000050:&amp;MPDrawIt+0x046B
+<a name="l542"></a>  1.42% 00000484:&amp;MPDrawIt+0x046E
+<a name="l543"></a>  0.13% 0000006D:</span><a href="../../../../../../../Demo/Games/EagleDive.html#l565"><span class=cF4>&amp;MPDrawIt+0x049C</span></a><span class=cF0>
+<a name="l544"></a>  0.53% 000001AE:</span><a href="../../../../../../../Demo/Games/EagleDive.html#l568"><span class=cF4>&amp;MPDrawIt+0x04A4</span></a><span class=cF0>
+<a name="l545"></a>  0.08% 00000045:&amp;MPDrawIt+0x04A8
+<a name="l546"></a>  0.10% 00000056:&amp;MPDrawIt+0x04AC
+<a name="l547"></a>  0.61% 000001F1:</span><a href="../../../../../../../Demo/Games/EagleDive.html#l570"><span class=cF4>&amp;MPDrawIt+0x04B0</span></a><span class=cF0>
+<a name="l548"></a></span><span class=cF2> 39.40% 00007CC0:&amp;MPDrawIt
+<a name="l549"></a></span><span class=cF0>  0.09% 00000049:</span><a href="../../../../../../../Adam/Win2b.html#l636"><span class=cF4>&amp;WinMgrSync+0x00CA</span></a><span class=cF0>
+<a name="l550"></a> 20.96% 0000425E:</span><a href="../../../../../../../Adam/Win2b.html#l642"><span class=cF4>&amp;WinMgrSync+0x0100</span></a><span class=cF0>
+<a name="l551"></a></span><span class=cF2> 21.09% 000042C8:&amp;WinMgrSync
+<a name="l552"></a></span><span class=cF0>  0.11% 0000005A:</span><a href="../../../../../../../Adam/Gr/GrPrimatives.html#l1186"><span class=cF4>&amp;GrFillTri0+0x01C9</span></a><span class=cF0>
+<a name="l553"></a>  0.09% 0000004F:</span><a href="../../../../../../../Adam/Gr/GrPrimatives.html#l1187"><span class=cF4>&amp;GrFillTri0+0x01F1</span></a><span class=cF0>
+<a name="l554"></a>  0.09% 0000004B:</span><a href="../../../../../../../Adam/Gr/GrPrimatives.html#l1189"><span class=cF4>&amp;GrFillTri0+0x0217</span></a><span class=cF0>
+<a name="l555"></a>  0.11% 0000005B:</span><a href="../../../../../../../Adam/Gr/GrPrimatives.html#l1190"><span class=cF4>&amp;GrFillTri0+0x023F</span></a><span class=cF0>
+<a name="l556"></a>  0.08% 00000046:</span><a href="../../../../../../../Adam/Gr/GrPrimatives.html#l1217"><span class=cF4>&amp;GrFillTri0+0x037D</span></a><span class=cF0>
+<a name="l557"></a>  0.12% 00000068:</span><a href="../../../../../../../Adam/Gr/GrPrimatives.html#l1271"><span class=cF4>&amp;GrFillTri0+0x04CF</span></a><span class=cF0>
+<a name="l558"></a>  0.09% 0000004A:</span><a href="../../../../../../../Adam/Gr/GrPrimatives.html#l1272"><span class=cF4>&amp;GrFillTri0+0x04F7</span></a><span class=cF0>
+<a name="l559"></a>  0.09% 00000049:</span><a href="../../../../../../../Adam/Gr/GrPrimatives.html#l1274"><span class=cF4>&amp;GrFillTri0+0x051D</span></a><span class=cF0>
+<a name="l560"></a>  0.09% 0000004D:</span><a href="../../../../../../../Adam/Gr/GrPrimatives.html#l1275"><span class=cF4>&amp;GrFillTri0+0x0545</span></a><span class=cF0>
+<a name="l561"></a>  0.08% 00000046:</span><a href="../../../../../../../Adam/Gr/GrPrimatives.html#l1302"><span class=cF4>&amp;GrFillTri0+0x066E</span></a><span class=cF0>
+<a name="l562"></a>  0.10% 00000056:</span><a href="../../../../../../../Adam/Gr/GrPrimatives.html#l1373"><span class=cF4>&amp;GrFillTri0+0x0797</span></a><span class=cF0>
+<a name="l563"></a>  0.09% 00000049:</span><a href="../../../../../../../Adam/Gr/GrPrimatives.html#l1374"><span class=cF4>&amp;GrFillTri0+0x07BF</span></a><span class=cF0>
+<a name="l564"></a>  0.09% 0000004A:</span><a href="../../../../../../../Adam/Gr/GrPrimatives.html#l1376"><span class=cF4>&amp;GrFillTri0+0x0806</span></a><span class=cF0>
+<a name="l565"></a>  0.08% 00000045:</span><a href="../../../../../../../Adam/Gr/GrPrimatives.html#l1398"><span class=cF4>&amp;GrFillTri0+0x08F9</span></a><span class=cF0>
+<a name="l566"></a>  0.08% 00000042:</span><a href="../../../../../../../Adam/Gr/GrPrimatives.html#l1400"><span class=cF4>&amp;GrFillTri0+0x0901</span></a><span class=cF0>
+<a name="l567"></a>  0.08% 00000043:</span><a href="../../../../../../../Adam/Gr/GrPrimatives.html#l1402"><span class=cF4>&amp;GrFillTri0+0x0905</span></a><span class=cF0>
+<a name="l568"></a>  0.08% 00000048:</span><a href="../../../../../../../Adam/Gr/GrPrimatives.html#l1405"><span class=cF4>&amp;GrFillTri0+0x094F</span></a><span class=cF0>
+<a name="l569"></a>  0.11% 0000005A:</span><a href="../../../../../../../Adam/Gr/GrPrimatives.html#l1406"><span class=cF4>&amp;GrFillTri0+0x0977</span></a><span class=cF0>
+<a name="l570"></a>  0.08% 00000045:</span><a href="../../../../../../../Adam/Gr/GrPrimatives.html#l1408"><span class=cF4>&amp;GrFillTri0+0x09BE</span></a><span class=cF0>
+<a name="l571"></a>  0.09% 0000004D:</span><a href="../../../../../../../Adam/Gr/GrPrimatives.html#l1409"><span class=cF4>&amp;GrFillTri0+0x09E6</span></a><span class=cF0>
+<a name="l572"></a></span><span class=cF2>  4.28% 00000D90:&amp;GrFillTri0
+<a name="l573"></a></span><span class=cF0>  0.83% 000002A8:</span><a href="../../../../../../../Adam/Gr/GrPrimatives.html#l1485"><span class=cF4>&amp;GrFillPoly3+0x0244</span></a><span class=cF0>
+<a name="l574"></a></span><span class=cF2>  1.32% 00000430:&amp;GrFillPoly3
+<a name="l575"></a>  0.52% 000001A7:&amp;GrBlot3
+<a name="l576"></a></span><span class=cF0>  0.34% 00000116:</span><a href="../../../../../../../Adam/Gr/GrBitMap.html#l1560"><span class=cF4>&amp;GrHLine+0x0004</span></a><span class=cF0>
+<a name="l577"></a>  0.08% 00000047:&amp;GrHLine+0x0005
+<a name="l578"></a>  0.08% 00000042:&amp;GrHLine+0x000C
+<a name="l579"></a>  0.07% 0000003D:</span><a href="../../../../../../../Adam/Gr/GrBitMap.html#l1564"><span class=cF4>&amp;GrHLine+0x0028</span></a><span class=cF0>
+<a name="l580"></a>  0.10% 00000052:</span><a href="../../../../../../../Adam/Gr/GrBitMap.html#l1593"><span class=cF4>&amp;GrHLine+0x0190</span></a><span class=cF0>
+<a name="l581"></a>  1.55% 000004EC:</span><a href="../../../../../../../Adam/Gr/GrBitMap.html#l1625"><span class=cF4>&amp;GrHLine+0x02C6</span></a><span class=cF0>
+<a name="l582"></a>  0.09% 00000051:</span><a href="../../../../../../../Adam/Gr/GrBitMap.html#l1671"><span class=cF4>&amp;GrHLine+0x044C</span></a><span class=cF0>
+<a name="l583"></a>  0.21% 000000AC:</span><a href="../../../../../../../Adam/Gr/GrBitMap.html#l1674"><span class=cF4>&amp;GrHLine+0x045D</span></a><span class=cF0>
+<a name="l584"></a>  0.17% 0000008C:&amp;GrHLine+0x0461
+<a name="l585"></a>  0.23% 000000BB:</span><a href="../../../../../../../Adam/Gr/GrBitMap.html#l1675"><span class=cF4>&amp;GrHLine+0x046B</span></a><span class=cF0>
+<a name="l586"></a>  0.12% 00000069:</span><a href="../../../../../../../Adam/Gr/GrBitMap.html#l1676"><span class=cF4>&amp;GrHLine+0x0474</span></a><span class=cF0>
+<a name="l587"></a>  0.13% 0000006C:</span><a href="../../../../../../../Adam/Gr/GrBitMap.html#l1678"><span class=cF4>&amp;GrHLine+0x047D</span></a><span class=cF0>
+<a name="l588"></a>  0.14% 00000074:&amp;GrHLine+0x0482
+<a name="l589"></a>  0.07% 0000003E:&amp;GrHLine+0x0485
+<a name="l590"></a>  1.00% 00000332:&amp;GrHLine+0x0488
+<a name="l591"></a>  0.21% 000000AE:</span><a href="../../../../../../../Adam/Gr/GrBitMap.html#l1678"><span class=cF4>&amp;GrHLine+0x048D</span></a><span class=cF0>
+<a name="l592"></a>  0.14% 00000074:&amp;GrHLine+0x0491
+<a name="l593"></a>  0.09% 0000004D:</span><a href="../../../../../../../Adam/Gr/GrBitMap.html#l1679"><span class=cF4>&amp;GrHLine+0x0494</span></a><span class=cF0>
+<a name="l594"></a>  0.22% 000000B7:</span><a href="../../../../../../../Adam/Gr/GrBitMap.html#l1682"><span class=cF4>&amp;GrHLine+0x049A</span></a><span class=cF0>
+<a name="l595"></a>  0.21% 000000B1:</span><a href="../../../../../../../Adam/Gr/GrBitMap.html#l1682"><span class=cF4>&amp;GrHLine+0x049E</span></a><span class=cF0>
+<a name="l596"></a>  0.31% 000000FC:&amp;GrHLine+0x04A3
+<a name="l597"></a>  0.11% 0000005C:</span><a href="../../../../../../../Adam/Gr/GrBitMap.html#l1684"><span class=cF4>&amp;GrHLine+0x04A9</span></a><span class=cF0>
+<a name="l598"></a>  0.29% 000000F2:</span><a href="../../../../../../../Adam/Gr/GrBitMap.html#l1685"><span class=cF4>&amp;GrHLine+0x04B4</span></a><span class=cF0>
+<a name="l599"></a>  0.08% 00000041:</span><a href="../../../../../../../Adam/Gr/GrBitMap.html#l1687"><span class=cF4>&amp;GrHLine+0x04C2</span></a><span class=cF0>
+<a name="l600"></a>  0.10% 00000058:&amp;GrHLine+0x04C7
+<a name="l601"></a>  0.40% 00000148:</span><a href="../../../../../../../Adam/Gr/GrBitMap.html#l1689"><span class=cF4>&amp;GrHLine+0x04D7</span></a><span class=cF0>
+<a name="l602"></a>  0.08% 00000047:&amp;GrHLine+0x04DE
+<a name="l603"></a>  0.51% 000001A0:</span><a href="../../../../../../../Adam/Gr/GrBitMap.html#l1692"><span class=cF4>&amp;GrHLine+0x04E0</span></a><span class=cF0>
+<a name="l604"></a>  0.26% 000000D4:</span><a href="../../../../../../../Adam/Gr/GrBitMap.html#l1706"><span class=cF4>&amp;GrHLine+0x0523</span></a><span class=cF0>
+<a name="l605"></a>  0.13% 0000006A:</span><a href="../../../../../../../Adam/Gr/GrBitMap.html#l1715"><span class=cF4>&amp;GrHLine+0x0572</span></a><span class=cF0>
+<a name="l606"></a>  0.27% 000000DC:</span><a href="../../../../../../../Adam/Gr/GrBitMap.html#l1718"><span class=cF4>&amp;GrHLine+0x0579</span></a><span class=cF0>
+<a name="l607"></a>  0.12% 00000062:</span><a href="../../../../../../../Adam/Gr/GrBitMap.html#l1720"><span class=cF4>&amp;GrHLine+0x0582</span></a><span class=cF0>
+<a name="l608"></a>  0.23% 000000BF:</span><a href="../../../../../../../Adam/Gr/GrBitMap.html#l1721"><span class=cF4>&amp;GrHLine+0x058A</span></a><span class=cF0>
+<a name="l609"></a>  0.16% 00000086:&amp;GrHLine+0x058E
+<a name="l610"></a>  0.13% 0000006B:&amp;GrHLine+0x0596
+<a name="l611"></a>  0.19% 000000A2:&amp;GrHLine+0x059A
+<a name="l612"></a>  0.08% 00000047:</span><a href="../../../../../../../Adam/Gr/GrBitMap.html#l1722"><span class=cF4>&amp;GrHLine+0x05A4</span></a><span class=cF0>
+<a name="l613"></a>  0.21% 000000AF:</span><a href="../../../../../../../Adam/Gr/GrBitMap.html#l1732"><span class=cF4>&amp;GrHLine+0x05EA</span></a><span class=cF0>
+<a name="l614"></a>  0.26% 000000D5:&amp;GrHLine+0x05EE
+<a name="l615"></a>  0.17% 0000008A:&amp;GrHLine+0x05FD
+<a name="l616"></a></span><span class=cF2> 13.03% 00002946:&amp;GrHLine
+<a name="l617"></a>  0.11% 0000005A:&amp;GrPeek
+<a name="l618"></a>  0.12% 00000063:&amp;GrPeek0
+<a name="l619"></a></span><span class=cF0>  0.10% 00000055:</span><a href="../../../../../../../Adam/Gr/GrScreen.html#l750"><span class=cF4>&amp;DCBlotColor8+0x0037</span></a><span class=cF0>
+<a name="l620"></a>  0.09% 00000049:</span><a href="../../../../../../../Adam/Gr/GrScreen.html#l750"><span class=cF4>&amp;DCBlotColor8+0x003C</span></a><span class=cF0>
+<a name="l621"></a>  0.10% 00000055:</span><a href="../../../../../../../Adam/Gr/GrScreen.html#l755"><span class=cF4>&amp;DCBlotColor8+0x0054</span></a><span class=cF0>
+<a name="l622"></a></span><span class=cF2>  0.30% 000000FB:&amp;DCBlotColor8
+<a name="l623"></a></span><span class=cF0>  0.80% 0000028A:</span><a href="../../../../../../../Adam/Gr/GrAsm.html#l760"><span class=cF4>&amp;GrUpdateLine64+0x0027</span></a><span class=cF0>
+<a name="l624"></a>  0.12% 00000068:</span><a href="../../../../../../../Adam/Gr/GrAsm.html#l760"><span class=cF4>&amp;GrUpdateLine64+0x002B</span></a><span class=cF0>
+<a name="l625"></a>  0.19% 0000009B:</span><a href="../../../../../../../Adam/Gr/GrAsm.html#l760"><span class=cF4>&amp;GrUpdateLine64+0x002E</span></a><span class=cF0>
+<a name="l626"></a> 11.49% 00002465:</span><a href="../../../../../../../Adam/Gr/GrAsm.html#l760"><span class=cF4>&amp;GrUpdateLine64+0x0040</span></a><span class=cF0>
+<a name="l627"></a>  0.15% 0000007D:</span><a href="../../../../../../../Adam/Gr/GrAsm.html#l760"><span class=cF4>&amp;GrUpdateLine64+0x0044</span></a><span class=cF0>
+<a name="l628"></a></span><span class=cF2> 13.12% 0000298A:&amp;GrUpdateLine64
+<a name="l629"></a></span><span class=cF0>  0.10% 00000055:</span><a href="../../../../../../../Adam/Gr/GrAsm.html#l762"><span class=cF4>&amp;GrUpdateLine64FlushCache+0x003C</span></a><span class=cF0>
+<a name="l630"></a></span><span class=cF2>  0.11% 0000005E:&amp;GrUpdateLine64FlushCache
+<a name="l631"></a>  0.11% 00000061:&amp;DCBlotColor4
+<a name="l632"></a></span><span class=cF0>  0.08% 00000047:</span><a href="../../../../../../../Adam/Gr/MathGr.html#l237"><span class=cF4>&amp;GrRot+0x0004</span></a><span class=cF0>
+<a name="l633"></a></span><span class=cF2>  0.71% 00000242:&amp;GrRot
+<a name="l634"></a>  0.07% 0000003E:&amp;GrUpdateVGAGraphics
+<a name="l635"></a></span><span class=cF0>Total Time:   80.956136s
+<a name="l636"></a>81.115115s ans0=0x00000090=144
+<a name="l637"></a>D:/Accts/TS/TAD&gt;</span><span class=cF2>
+<a name="l638"></a>
+<a name="l639"></a></span><span class=cF0>------------------------------------------
+<a name="l640"></a>
+<a name="l641"></a>----09/13/13 12:26:58----
+<a name="l642"></a>
+<a name="l643"></a>I toyed with the idea of &quot;No 3rd Party Software&quot; when I was focused on 
+<a name="l644"></a>programming as entertainment.  I'm not going to be that draconian.  Generally 
+<a name="l645"></a>speaking, though, the vision of a modern C64, stands, and that did not have an 
+<a name="l646"></a>ever-growing set of libraries -- you had just the C64 ROM to build on.  It will 
+<a name="l647"></a>fit in about 6 Meg or less without the Dictionary, so I really don't care if 
+<a name="l648"></a>people ship the whole thing with their applications and make them future-proof.  
+<a name="l649"></a>That's not very appealing.
+<a name="l650"></a>
+<a name="l651"></a>It really doesn't make sense to make professional software for this platform, 
+<a name="l652"></a>except it's way more pleasant for the software companies!  Just continue with 
+<a name="l653"></a>Linux or Windows software, mostly, and everybody who wants Heaven, can do native 
+<a name="l654"></a>stuff.
+<a name="l655"></a>
+<a name="l656"></a>I don't have changes in mind, but I will probably break compatibility.  It's a 
+<a name="l657"></a>nuissance to keep your own code up-to-date, but how lovely it is!
+<a name="l658"></a>
+<a name="l659"></a>----09/13/13 12:27:01----
+<a name="l660"></a>
+<a name="l661"></a>Someone talked about palettes.  I avoid that, being slightly paranoid VGA 
+<a name="l662"></a>palettes are not universal.  That's probably absurd, but how can I know?  I put 
+<a name="l663"></a>palette support in there, but feel weird using it.
+<a name="l664"></a>
+<a name="l665"></a>------------------------------------------
+<a name="l666"></a>
+<a name="l667"></a>----09/13/13 14:39:57----
+<a name="l668"></a>
+<a name="l669"></a>Here's a task record with </span><a href="../../../../../../../Adam/Dbg2a.html#l152"><span class=cF4>ClassRep</span></a><span class=cF0>():
+<a name="l670"></a>
+<a name="l671"></a></span><span class=cF1>D:/Accts/TS/TAD&gt;</span><span class=cF2>ClassRep(Fs,,1);
+<a name="l672"></a></span><span class=cF1>Class:&quot;CTask&quot;
+<a name="l673"></a>7FD8A428 </span><span class=cF5>-] addr</span><span class=cF1>
+<a name="l674"></a>7FD8A430 </span><span class=cF2>task_signature      :</span><span class=cF1>536B7354 
+<a name="l675"></a>7FD8A434 </span><span class=cF2>task_in_que_signatur:</span><span class=cF1>516B7354 
+<a name="l676"></a>7FD8A438 </span><span class=cF2>task_flags          :</span><span class=cF1>0000000000009904 
+<a name="l677"></a>7FD8A440 </span><span class=cF2>locked_flags        :</span><span class=cF1>0000000000000000 
+<a name="l678"></a>7FD8A448 </span><span class=cF2>display_flags       :</span><span class=cF1>00000003 
+<a name="l679"></a>7FD8A44C </span><span class=cF2>win_inhibit         :</span><span class=cF1>00000000 
+<a name="l680"></a>7FD8A450 </span><span class=cF2>wake_jiffy          :</span><span class=cF1>0000000000000000 
+<a name="l681"></a>7FD8A458 </span><span class=cF5>-] code_heap</span><span class=cF1>
+<a name="l682"></a>7FD8A460 </span><span class=cF5>-] data_heap</span><span class=cF1>
+<a name="l683"></a>7FD8A468 </span><span class=cF5>-] put_doc</span><span class=cF1>
+<a name="l684"></a>7FD8A470 </span><span class=cF5>-] display_doc</span><span class=cF1>
+<a name="l685"></a>7FD8A478 </span><span class=cF5>-] border_doc</span><span class=cF1>
+<a name="l686"></a>7FD8A480 </span><span class=cF2>win_left            :</span><span class=cF1>0000000000000001 
+<a name="l687"></a>7FD8A488 </span><span class=cF2>win_right           :</span><span class=cF1>000000000000004E 
+<a name="l688"></a>7FD8A490 </span><span class=cF2>win_top             :</span><span class=cF1>000000000000000D 
+<a name="l689"></a>7FD8A498 </span><span class=cF2>win_bottom          :</span><span class=cF1>000000000000003A 
+<a name="l690"></a>7FD8A4A0 </span><span class=cF5>-] cur_prt</span><span class=cF1>
+<a name="l691"></a>7FD8A4A8 </span><span class=cF2>cur_dir             :</span><span class=cF1>                  /Accts/TS/TAD
+<a name="l692"></a>
+<a name="l693"></a>7FD8A4B0 </span><span class=cF5>-] parent_task</span><span class=cF1>
+<a name="l694"></a>7FD8A4B8 </span><span class=cF5>-] next_task</span><span class=cF1>
+<a name="l695"></a>7FD8A4C0 </span><span class=cF5>-] last_task</span><span class=cF1>
+<a name="l696"></a>7FD8A4C8 </span><span class=cF5>-] next_input_filter_task</span><span class=cF1>
+<a name="l697"></a>7FD8A4D0 </span><span class=cF5>-] last_input_filter_task</span><span class=cF1>
+<a name="l698"></a>7FD8A4D8 </span><span class=cF5>-] next_sibling_task</span><span class=cF1>
+<a name="l699"></a>7FD8A4E0 </span><span class=cF5>-] last_sibling_task</span><span class=cF1>
+<a name="l700"></a>7FD8A4E8 </span><span class=cF5>-] next_child_task</span><span class=cF1>
+<a name="l701"></a>7FD8A4F0 </span><span class=cF5>-] last_child_task</span><span class=cF1>
+<a name="l702"></a>7FD8A4F8 </span><span class=cF2>win_width           :</span><span class=cF1>000000000000004E 
+<a name="l703"></a>7FD8A500 </span><span class=cF2>win_height          :</span><span class=cF1>000000000000002E 
+<a name="l704"></a>7FD8A508 </span><span class=cF2>pix_left      :</span><span class=cF1>0000000000000008 
+<a name="l705"></a>7FD8A510 </span><span class=cF2>pix_right     :</span><span class=cF1>0000000000000277 
+<a name="l706"></a>7FD8A518 </span><span class=cF2>pix_width     :</span><span class=cF1>0000000000000270 
+<a name="l707"></a>7FD8A520 </span><span class=cF2>pix_top       :</span><span class=cF1>0000000000000068 
+<a name="l708"></a>7FD8A528 </span><span class=cF2>pix_bottom    :</span><span class=cF1>00000000000001D7 
+<a name="l709"></a>7FD8A530 </span><span class=cF2>pix_height    :</span><span class=cF1>0000000000000170 
+<a name="l710"></a>7FD8A538 </span><span class=cF2>border_pix_lef:</span><span class=cF1>0000000000000000 
+<a name="l711"></a>7FD8A540 </span><span class=cF2>border_pix_rig:</span><span class=cF1>000000000000027F 
+<a name="l712"></a>7FD8A548 </span><span class=cF2>border_pix_top:</span><span class=cF1>0000000000000060 
+<a name="l713"></a>7FD8A550 </span><span class=cF2>border_pix_bot:</span><span class=cF1>00000000000001DF 
+<a name="l714"></a>7FD8A558 </span><span class=cF2>scroll_x        :</span><span class=cF1>0000000000000000 
+<a name="l715"></a>7FD8A560 </span><span class=cF2>scroll_y        :</span><span class=cF1>0000000000000000 
+<a name="l716"></a>7FD8A568 </span><span class=cF2>scroll_z        :</span><span class=cF1>0000000000000000 
+<a name="l717"></a>7FD8A570 </span><span class=cF2>win_max_refresh     :</span><span class=cF1>              60 
+<a name="l718"></a>7FD8A578 </span><span class=cF5>-] snap</span><span class=cF1>
+<a name="l719"></a>7FD8A5A8 </span><span class=cF2>rip                 :</span><span class=cF1>000000000000C3C9 
+<a name="l720"></a>7FD8A5B0 </span><span class=cF2>rflags              :</span><span class=cF1>0000000000000246 
+<a name="l721"></a>7FD8A5B8 </span><span class=cF2>rsp                 :</span><span class=cF1>0000000198874D70 
+<a name="l722"></a>7FD8A5C0 </span><span class=cF2>rsi                 :</span><span class=cF1>000000019887EC78 
+<a name="l723"></a>7FD8A5C8 </span><span class=cF2>rax                 :</span><span class=cF1>0000000000000001 
+<a name="l724"></a>7FD8A5D0 </span><span class=cF2>rcx                 :</span><span class=cF1>000000007FD8A438 
+<a name="l725"></a>7FD8A5D8 </span><span class=cF2>rdx                 :</span><span class=cF1>0000000198888428 
+<a name="l726"></a>7FD8A5E0 </span><span class=cF2>rbx                 :</span><span class=cF1>0000000000000000 
+<a name="l727"></a>7FD8A5E8 </span><span class=cF2>rbp                 :</span><span class=cF1>0000000198874DB0 
+<a name="l728"></a>7FD8A5F0 </span><span class=cF2>rdi                 :</span><span class=cF1>0000000198823428 
+<a name="l729"></a>7FD8A5F8 </span><span class=cF2>r8                  :</span><span class=cF1>000000016BAB0140 
+<a name="l730"></a>7FD8A600 </span><span class=cF2>r9                  :</span><span class=cF1>0000000198874CE0 
+<a name="l731"></a>7FD8A608 </span><span class=cF2>r10                 :</span><span class=cF1>000000019944B300 
+<a name="l732"></a>7FD8A610 </span><span class=cF2>r11                 :</span><span class=cF1>000000019887EC78 
+<a name="l733"></a>7FD8A618 </span><span class=cF2>r12                 :</span><span class=cF1>0000000000000032 
+<a name="l734"></a>7FD8A620 </span><span class=cF2>r13                 :</span><span class=cF1>0000000000000004 
+<a name="l735"></a>7FD8A628 </span><span class=cF2>r14                 :</span><span class=cF1>000000016BAB72D8 
+<a name="l736"></a>7FD8A630 </span><span class=cF2>r15                 :</span><span class=cF1>000000016BAB72E0 
+<a name="l737"></a>7FD8A638 </span><span class=cF5>-] gs</span><span class=cF1>
+<a name="l738"></a>7FD8A640 </span><span class=cF5>-] fpu_mmx</span><span class=cF1>
+<a name="l739"></a>7FD8A648 </span><span class=cF2>time_slice_start    :</span><span class=cF1>0000042B4D39B5DC 
+<a name="l740"></a>7FD8A650 </span><span class=cF2>total_time          :</span><span class=cF1>00000000010C4A06 
+<a name="l741"></a>7FD8A658 </span><span class=cF2>swap_cnter          :</span><span class=cF1>000000000000042F 
+<a name="l742"></a>7FD8A660 </span><span class=cF2>draw_it             :</span><span class=cF1>0000000000000000
+<a name="l743"></a>7FD8A668 </span><span class=cF2>task_title          :</span><span class=cF1>               ClassRep(Fs,,1);
+<a name="l744"></a>
+<a name="l745"></a>43 6C 61 73 73 52 65 70 28 22 43 54 61 73 6B 22 2C 46 73 2C 31 29 3B 3B 0A 00 2A 
+<a name="l746"></a>00 00 00 00 00 ...
+<a name="l747"></a>7FD8A6E8 </span><span class=cF2>task_name           :</span><span class=cF1>                            Unnamed Task
+<a name="l748"></a>55 6E 6E 61 6D 65 64 20 54 61 73 6B 00 00 00 00 C8 00 00 00 6A 00 E8 25 ED FF FF 
+<a name="l749"></a>6A 00 E8 06 16 
+<a name="l750"></a>7FD8A708 </span><span class=cF2>wallpaper_data      :</span><span class=cF1>                                        
+<a name="l751"></a>00 D6 05 00 00 00 00 00 20 46 05 00 00 00 00 00 20 20 20 20 20 26 47 65 74 4B 65 
+<a name="l752"></a>79 2B 30 78 30 ...
+<a name="l753"></a>7FD8A788 </span><span class=cF2>title_src           :</span><span class=cF1>.
+<a name="l754"></a>04 
+<a name="l755"></a>7FD8A789 </span><span class=cF2>text_attr           :</span><span class=cF1>.
+<a name="l756"></a>F1 
+<a name="l757"></a>7FD8A78A </span><span class=cF2>border_attr         :</span><span class=cF1>.
+<a name="l758"></a>F1 
+<a name="l759"></a>7FD8A78B </span><span class=cF2>border_src          :</span><span class=cF1>.
+<a name="l760"></a>01 
+<a name="l761"></a>7FD8A78C </span><span class=cF2>win_z_num           :</span><span class=cF1>0004 
+<a name="l762"></a>7FD8A78E </span><span class=cF2>pad                 :</span><span class=cF1>0000 
+<a name="l763"></a>7FD8A790 </span><span class=cF5>-] stk</span><span class=cF1>
+<a name="l764"></a>7FD8A798 </span><span class=cF5>-] next_except</span><span class=cF1>
+<a name="l765"></a>7FD8A7A0 </span><span class=cF5>-] last_except</span><span class=cF1>
+<a name="l766"></a>7FD8A7A8 </span><span class=cF2>except_rbp          :</span><span class=cF1>0000000000000000 
+<a name="l767"></a>7FD8A7B0 </span><span class=cF2>except_argc         :</span><span class=cF1>0000000000000000 
+<a name="l768"></a>7FD8A7B8 except_argv         :0000000000000000
+<a name="l769"></a>7FD8A7C0 </span><span class=cF2>catch_except        :</span><span class=cF1>
+<a name="l770"></a>00 
+<a name="l771"></a>7FD8A7C1 </span><span class=cF2>pad                 :</span><span class=cF1>
+<a name="l772"></a>00 
+<a name="l773"></a>7FD8A7C2 </span><span class=cF2>answers_displayed   :</span><span class=cF1>0001 
+<a name="l774"></a>7FD8A7C4 </span><span class=cF2>answer_types        :</span><span class=cF1>                                        
+<a name="l775"></a>00 00 00 00 
+<a name="l776"></a>7FD8A7C8 </span><span class=cF2>answers             :</span><span class=cF1>0000000000000000 0000000000000000 0000000000000000 
+<a name="l777"></a>0000000000000000 
+<a name="l778"></a>7FD8A7E8 </span><span class=cF2>answer_times        :</span><span class=cF1>0.000000000000e0 0.000000000000e0 0.000000000000e0 
+<a name="l779"></a>0.000000000000e0 
+<a name="l780"></a>7FD8A808 bpt_lst             :0000000000000000
+<a name="l781"></a>7FD8A810 </span><span class=cF5>-] next_ctrl</span><span class=cF1>
+<a name="l782"></a>7FD8A818 </span><span class=cF5>-] last_ctrl</span><span class=cF1>
+<a name="l783"></a>7FD8A820 </span><span class=cF5>-] cur_menu</span><span class=cF1>
+<a name="l784"></a>7FD8A828 next_settings       :0000000000000000
+<a name="l785"></a>7FD8A830 </span><span class=cF5>-] next_ode</span><span class=cF1>
+<a name="l786"></a>7FD8A838 </span><span class=cF5>-] last_ode</span><span class=cF1>
+<a name="l787"></a>7FD8A840 </span><span class=cF2>last_ode_time       :</span><span class=cF1>0.000000000000e0 
+<a name="l788"></a>7FD8A848 </span><span class=cF5>-] hash_table</span><span class=cF1>
+<a name="l789"></a>7FD8A850 </span><span class=cF5>-] srv_ctrl</span><span class=cF1>
+<a name="l790"></a>7FD8A878 </span><span class=cF5>-] next_lex</span><span class=cF1>
+<a name="l791"></a>7FD8A880 </span><span class=cF5>-] last_lex</span><span class=cF1>
+<a name="l792"></a>7FD8A888 </span><span class=cF2>win_old_left        :</span><span class=cF1>0000000000000001 
+<a name="l793"></a>7FD8A890 </span><span class=cF2>win_old_right       :</span><span class=cF1>000000000000004E 
+<a name="l794"></a>7FD8A898 </span><span class=cF2>win_old_top         :</span><span class=cF1>000000000000000D 
+<a name="l795"></a>7FD8A8A0 </span><span class=cF2>win_old_bottom      :</span><span class=cF1>000000000000003A 
+<a name="l796"></a>7FD8A8A8 </span><span class=cF2>task_end_cb         :</span><span class=cF1>0000000000000000
+<a name="l797"></a>7FD8A8B0 song_task           :0000000000000000
+<a name="l798"></a>7FD8A8B8 animate_task        :0000000000000000
+<a name="l799"></a>7FD8A8C0 </span><span class=cF2>rnd_seed            :</span><span class=cF1>0000000000000000 
+<a name="l800"></a>7FD8A8C8 </span><span class=cF2>task_num            :</span><span class=cF1>000000000000001E 
+<a name="l801"></a>7FD8A8D0 </span><span class=cF2>user_num            :</span><span class=cF1>0000000000000003 
+<a name="l802"></a>7FD8A8D8 </span><span class=cF2>fault_num           :</span><span class=cF1>0000000000000000 
+<a name="l803"></a>7FD8A8E0 </span><span class=cF2>fault_err_code      :</span><span class=cF1>0000000000000000 
+<a name="l804"></a>7FD8A8E8 dbg_task            :0000000000000000
+<a name="l805"></a>7FD8A8F0 popup_task          :0000000000000000
+<a name="l806"></a>7FD8A8F8 </span><span class=cF5>-] horz_scroll</span><span class=cF1>
+<a name="l807"></a>7FD8A918 </span><span class=cF5>-] vert_scroll</span><span class=cF1>
+<a name="l808"></a>7FD8A938 </span><span class=cF2>user_data0          :</span><span class=cF1>0000000000000000 
+<a name="l809"></a>7FD8A940 </span><span class=cF2>user_data1          :</span><span class=cF1>0000000000000000 
+<a name="l810"></a>7FD8A948 </span><span class=cF2>user_data2          :</span><span class=cF1>0000000000000000 
+<a name="l811"></a>7FD8A950 </span><span class=cF2>user_data3          :</span><span class=cF1>0000000000000000 
+<a name="l812"></a>7FD8A958 </span><span class=cF2>pad                 :</span><span class=cF1>
+<a name="l813"></a>
+<a name="l814"></a>0.002664s ans0=0x00000000=0
+<a name="l815"></a>D:/Accts/TS/TAD&gt;</span><span class=cF2>
+<a name="l816"></a>
+<a name="l817"></a></span><span class=cF0>------------------------------------------
+<a name="l818"></a>
+<a name="l819"></a>----09/13/13 14:59:35----
+<a name="l820"></a>
+<a name="l821"></a>God says...
+<a name="l822"></a></span><span class=cF4>cupidity hereon Ghost discussed dissipation dangers severely beneath whit AD 
+<a name="l823"></a>judge Deity subtile knocketh acceptably preventedst stored must dispensest 
+<a name="l824"></a>compare create base cherished dotages graceful possesses gloried third dug 
+<a name="l825"></a>Epicurus Blessed expects mount Jacob feeding unsought clay subject createth 
+<a name="l826"></a>commandments unbelievers esteeming rush Alas Julian borrow sorrow obtained You 
+<a name="l827"></a>His Priest angels deaf dining as mysteriously liveth adorning meditations 
+<a name="l828"></a>killeth accompany neighbours ascended mass blush difficulties </span><span class=cF0>
+<a name="l829"></a>
+<a name="l830"></a>----09/13/13 15:35:51----
+<a name="l831"></a>
+<a name="l832"></a>Someone at </span><a href="http://www.osdev.org"><span class=cF0>WWW.OSDEV.ORG</span></a><span class=cF0> is pretending not to understand that it is ring-0-only 
+<a name="l833"></a>by choice.  Do this: make a list of all the good things and all the bad things, 
+<a name="l834"></a>in your mind.  You are either dishonest or the biggest retard ever.  &quot;A 
+<a name="l835"></a>motorcycle should have side airbags.&quot;
+<a name="l836"></a>
+<a name="l837"></a>
+<a name="l838"></a>----09/13/13 16:06:30----
+<a name="l839"></a>
+<a name="l840"></a>These are all the symbols that come with it.  They are loaded into the Adam 
+<a name="l841"></a>task's hash table and all sons of Adam inherit them, without need for including 
+<a name="l842"></a>headers:
+<a name="l843"></a>
+<a name="l844"></a></span><a href="../../../../SymsAlpha.html"><span class=cF4>Source Code By Sym</span></a><span class=cF0>
+<a name="l845"></a>
+<a name="l846"></a>----09/13/13 16:55:41----
+<a name="l847"></a>
+<a name="l848"></a>I did not follow a single standard.  My compiler has an </span><span class=cF1>interrupt</span><span class=cF0> keyword to be 
+<a name="l849"></a>used on functions.  I use the arg-pop variant of RET.
+<a name="l850"></a>
+<a name="l851"></a>My compiler does not make an AST, it makes a stack machine byte-code that it 
+<a name="l852"></a>optimizes and makes machine code JIT or AOT, in 22,000 lines of code.  Yer going 
+<a name="l853"></a>to get yourself humiliated if you accuse me of plagarism.  You're so, stupid, 
+<a name="l854"></a>you think ring-0-only identity-mapped is somehow a linux rip-off.
+<a name="l855"></a>
+<a name="l856"></a>----09/13/13 17:08:06----
+<a name="l857"></a>
+<a name="l858"></a>Linux is inspired by 1970's mainframes.  They are set-up for multi-user with 2 
+<a name="l859"></a>meg shared by 100 users.  They put things in pipes, doing a little at a time, 
+<a name="l860"></a>and they have virtual memory.  They have a language good for admins.
+<a name="l861"></a>
+<a name="l862"></a>TempleOS is inspired by a C64.  It is to be used for the same sorts of things, 
+<a name="l863"></a>but it is modern.  It loads and processes whole files.  Actual disk virtual 
+<a name="l864"></a>memory, by the way, is really retarded these days because if it ever actually 
+<a name="l865"></a>does swap, it's unacceptablly slow!  All vestiges of virual memory should be 
+<a name="l866"></a>purged from all operating systems.
+<a name="l867"></a>
+<a name="l868"></a>Linux will let you play two video games at once.  TempleOS doesn't see that as 
+<a name="l869"></a>important.  Sharing-locks?  Don't be a retard.
+<a name="l870"></a>
+<a name="l871"></a>C/C++ translation is very close to direct-to-assembly instructions.  GCC wastes 
+<a name="l872"></a>compiler time on optimizations in case you give it dumb C/C++ code to compile 
+<a name="l873"></a>because they are arrogant fools and suffer from piling ever-more-shit into it, 
+<a name="l874"></a>like Intel and like Microsoft.
+<a name="l875"></a>
+<a name="l876"></a>Linux and Windows do SMP.  That is not good for real-time flight simulators 
+<a name="l877"></a>without GPU.  TempleOS does master/slave.  All applications run on core 0 and 
+<a name="l878"></a>simply control, explicity and specifically, each of the other cores.  The 
+<a name="l879"></a>scheduler never moves tasks between cores.  Theirs runs two applications faster; 
+<a name="l880"></a>TempleOS runs one application faster.  In TempleOS, all tasks on all cores have 
+<a name="l881"></a>the same address map -- all tasks can access all memory at all times because 
+<a name="l882"></a>it's always identity-mapped with not ring protections.
+<a name="l883"></a>
+<a name="l884"></a>Because it is ring-0-only and never changes address maps, it can do a blazing 
+<a name="l885"></a>4,000,000 task changes in one second per core.  This is how I do multicored 
+<a name="l886"></a>locks for I/O.
+<a name="l887"></a>
+<a name="l888"></a></span><span class=cF2>while (LBts(&amp;my_lock_var,0))
+<a name="l889"></a>  Yield;
+<a name="l890"></a>
+<a name="l891"></a>...
+<a name="l892"></a>
+<a name="l893"></a>LBtr(&amp;my_lock_var,0);</span><span class=cF0>
+<a name="l894"></a>
+<a name="l895"></a>lock-bit-test-and-set is an atomic, x86, multicore-safe-locked instruction.
+<a name="l896"></a>
+<a name="l897"></a>This is how I poll disk drives:
+<a name="l898"></a>
+<a name="l899"></a></span><span class=cF2>while (!InU8(STATUS))
+<a name="l900"></a>  Yield;
+<a name="l901"></a></span><span class=cF0>
+<a name="l902"></a>That's known as cooperative multitasking.  I have preemption.
+<a name="l903"></a>
+<a name="l904"></a>----09/13/13 18:55:56----
+<a name="l905"></a>
+<a name="l906"></a>A really stupid person will argue with the answer book in school over and over.  
+<a name="l907"></a>The people at </span><a href="http://www.osdev.org"><span class=cF0>WWW.OSDEV.ORG</span></a><span class=cF0> have argued for ten years, as though, my operating 
+<a name="l908"></a>system is so flawed it doesn't boot.  I guess they think I do photoshop videos?  
+<a name="l909"></a>And, I am doing a grand deception... for some reason?
+<a name="l910"></a>
+<a name="l911"></a>I identity-map so that virtual and physical addresses are the same.  The BIOS 
+<a name="l912"></a>physical address map is my virtual memory map.  Mine is ring-0-only, so there is 
+<a name="l913"></a>no kernel/user split.
+<a name="l914"></a>
+<a name="l915"></a>Therefore, I don't have any upper FFFFFFFF70000000- addresses.  I enjoy mocking 
+<a name="l916"></a>them so much, I'm reluctant to explain why a RING-0-ONLY IDENTITY-MAPPED 
+<a name="l917"></a>operating system does not have high addresses.  I like just mocking them.
+<a name="l918"></a>
+<a name="l919"></a>----09/13/13 20:34:40----
+<a name="l920"></a>
+<a name="l921"></a>I identity-map 128 Gig of space with 2 Meg pages, not 4K pages.
+<a name="l922"></a>
+<a name="l923"></a></span><a href="../../../../../../../Kernel/Mem1b.html#l1"><span class=cF4>::/Kernel/Mem1b.CPP</span></a><span class=cF0>.
+<a name="l924"></a>
+<a name="l925"></a>It only takes 128 Gig / 2 Meg * 8 bytes = 512K of page tables.  The first 2 Meg 
+<a name="l926"></a>is 4K pages so I can mark 0xA0000-0xB0000 as write-through.
+<a name="l927"></a>
+<a name="l928"></a>Picking a very arbitrary and insignificant idea to discuss, in my judgement, 
+<a name="l929"></a>it's better not to define labels for bits in the case of page tables.  Nobody 
+<a name="l930"></a>needs to mess with page tables -- leave them identity-mapped.  If you do, raw 
+<a name="l931"></a>numbers aren't that bad for page table bits.  Go write hymns and do first person 
+<a name="l932"></a>shooters with multicore, not doing hardware (Yes, I concede that hardware would 
+<a name="l933"></a>involve write-through memory page table bits, etc.)
+<a name="l934"></a>
+<a name="l935"></a>I put links in source code and links to local PDF would be really neat, avoid 
+<a name="l936"></a>the need to document.  I would like to convert Intel PDF manuals to plain text, 
+<a name="l937"></a>but they look dreadful -- so bad they are too bad.
+<a name="l938"></a>
+<a name="l939"></a>----09/13/13 20:42:41----
+<a name="l940"></a>
+<a name="l941"></a>I wrote my own boot-loaders. </span><a href="../../../../../../../Doc/Boot.html#l1"><span class=cF4>::/Doc/Boot.TXT</span></a><span class=cF0>
+<a name="l942"></a>
+<a name="l943"></a>My Kernel starts in real mode, calls BIOS to fetch info and change to VGA, then 
+<a name="l944"></a>changes to long mode.  </span><a href="../../../../../../../Kernel/KStart.html#l1"><span class=cF4>::/Kernel/KStart.CPP</span></a><span class=cF0>.
+</span></pre></body>
+</html>
+<!-- text below generated by server. PLEASE REMOVE --><!-- Counter/Statistics data collection code --><script language="JavaScript" src="http://l.yimg.com/d/lib/smb/js/hosting/cp/js_source/whv2_001.js"></script><script language="javascript">geovisit();</script><noscript><img src="http://visit.webhosting.yahoo.com/visit.gif?us1409528973" alt="setstats" border="0" width="1" height="1"></noscript><script type="text/javascript" src="https://s.yimg.com/mi/vs4/ywa.js"></script><script type="text/javascript">try {var YWAGTracker = YWA.getTracker("10001849413879", "VSCALE4");YWAGTracker.setDocumentName("WPAGE");YWAGTracker.setDocumentGroup("YSBW");YWAGTracker.setCF(7, "templeos.org");YWAGTracker.setCF(8, "w42");YWAGTracker.submit();} catch (eYWATCUnavailable) {}</script><script type="text/javascript">(function (d, w) {var x = d.getElementsByTagName('SCRIPT')[0];var f = function () {var s = d.createElement('SCRIPT');s.type = 'text/javascript';s.async = true;s.src = "//np.lexity.com/embed/YW/eff965aab4535cd38b91f0976c617496?id=9382d670eca2";x.parentNode.insertBefore(s, x);};w.attachEvent ? w.attachEvent('onload',f) :w.addEventListener('load',f,false);}(document, window));</script>

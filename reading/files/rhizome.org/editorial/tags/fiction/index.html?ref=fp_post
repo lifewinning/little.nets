@@ -1,0 +1,2394 @@
+
+
+
+<!doctype html>
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="Content-Language" content="en-us">
+        <title>Rhizome | Blog Posts tagged "fiction"</title>                
+        <meta name="google-site-verification" content="AZfoqybynDh_0mjEBG_XwMZeCwiSE-GZ8BiQB5FZzDU" />        
+        <meta name="ROBOTS" content="ALL" />
+        <meta name="description" content="Rhizome is dedicated to the creation, presentation, preservation, and critique of emerging artistic practices that engage technology." />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <!-- Set viewport so we can have mobile styles -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+
+        <link rel="shortcut icon" href="/static/images/favicons/leyva.gif" />
+
+        <!-- google fonts -->
+        <link href='//fonts.googleapis.com/css?family=Titillium+Web:400,200,300' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Anaheim' rel='stylesheet' type='text/css'>
+
+        
+            <!--GLOBAL CSS-->
+            <link type="text/css" rel="stylesheet" href="/static/css/blueprint/screen.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/base.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/comments.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/sidebars.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/calendars.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/miniprofile.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/media_players.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/blueprint/print.css" media="print"/></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/new_navbars.css"/></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/top_banner.css"/></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/mobile.css"/></link>
+            <link type="text/css" rel="stylesheet" href="/static/font-awesome-4.0.0/css/font-awesome.min.css"/></link>
+            <!--[if lt IE 8]>
+                <link rel="stylesheet" href="/static/css/blueprint/ie.css" type="text/css" media="screen, projection"></link>
+            <![endif]-->
+         
+            <!--[if IE]>
+                <link rel="stylesheet" type="text/css" href="/static/css/ie.css"  />
+            <![endif]-->
+
+            <!-- LOCAL CSS -->
+            
+	<link rel="stylesheet" href="/static/css/editorial.css" type="text/css" media="screen" charset="utf-8" />
+
+            
+            
+            
+            
+            
+            
+
+            
+            
+        
+        
+        
+        
+            <!-- GLOBAL JAVASCRIPT -->
+            <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+            <script type="text/javascript">window.__admin_media_prefix__ = "/static/admin/";</script>
+            <script type="text/javascript">window.__static_url__ = "/static/";</script>
+            <script type="text/javascript">var STATIC_URL = "/static/";</script>
+            <script type="text/javascript">window.SERVER_NAME = "rhizome.org";</script>
+
+            <script type="text/javascript" src="/static/js/mootools-core-1.3.2-yc.js"></script>
+            <script type="text/javascript" src="/static/js/mootools-more-1.3.2.1.js"></script>
+            <script type="text/javascript" src="/static/js/rhizome.js"></script>
+            <script type="text/javascript" src="/static/media_players/flowplayer/flowplayer-3.2.2.min.js"></script>
+            <script type="text/javascript" src="/static/media_players/soundmanager/script/soundmanager2-nodebug-jsmin.js"></script>
+            <script type="text/javascript" src="/static/media_players/soundmanager/script/inlineplayer.js"></script>
+            <script type="text/javascript" src="/static/js/carousel/PeriodicalExecuter.js"></script>
+            <script type="text/javascript" src="/static/js/carousel/Carousel.js"></script>
+            
+            <script type="text/javascript">
+                soundManager.url = '/static/media_players/soundmanager/swf/';
+                //soundManager.flashVersion = 9; // optional: shiny features (default = 8)
+                soundManager.useFlashBlock = true; // optionally, enable when you're ready to dive in
+                // enable HTML5 audio support, if you're feeling adventurous.
+                soundManager.useHTML5Audio = true;
+                soundManager.debugMode = 0; // disable or enable debug output
+                soundManager.useFlashBlock = 0;
+                //soundManager.useMovieStar = true;
+            </script>
+
+            <script type="text/javascript" src="/static/js/jquery-1.10.2.min.js"></script>
+            <!-- LOCAL  JAVASCRIPT-->              
+            
+<script type="text/javascript" src="http://media.rhizome.org/discuss/scripts/add_comment_toggler.js"></script>
+
+            
+                   
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <script type="text/javascript">
+                
+                
+                
+            </script>
+        
+        
+        <!--RSS HEADER -->
+        
+        
+
+        <!-- Quantcast Tag, part 1 -->
+        <script type="text/javascript">
+            var _qevents = _qevents || [];
+            (function() {
+                var elem = document.createElement('script');
+                elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge")  
+                            + ".quantserve.com/quant.js";
+                elem.async = true;
+                elem.type = "text/javascript";
+                var scpt = document.getElementsByTagName('script')[0];
+                scpt.parentNode.insertBefore(elem, scpt);  
+            })();
+        </script>
+    </head>
+        
+    <body class="blog tag_detail">
+        
+        
+        
+    <div id="new_header">
+    <ul>
+        
+            <li><a  href="/?ref=header">Rhizome</a></li>
+        
+            <li><a class="active" href="/editorial/?ref=header">Journal</a></li>
+        
+            <li><a  href="/artbase/featured/?ref=header">Artbase</a></li>
+        
+            <li><a  href="/community/?ref=header">Community</a></li>
+        
+            <li><a  href="/programs/?ref=header">Programs</a></li>
+        
+
+        <li id="search">
+            <form action="/search/" method="get">
+                <input type="text" name="q" placeholder=""><a id="search-addon"><i class="fa fa-search"></i></a>
+            </form>
+        </li>
+
+        <li id="account">
+            
+                <a href="/login/?ref=header"><i class="fa fa-key"></i></a>
+            
+        </li>
+    </ul>
+</div>
+
+<div id="new_footer">
+    <ul>
+        
+            
+        
+            <li><a class="active" href="/editorial/?ref=footer"><span class="underline">Journal</span> &raquo;</a></li>
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+
+        
+            <li><a  href="/editorial/artist-profiles/?ref=footer">Artist Profiles</a></li>
+        
+            <li><a  href="/editorial/tag/surf-report/?ref=footer">Surf Reports</a></li>
+        
+            <li><a  href="/editorial/tag/e-cig-in-context/?ref=footer">E-Cig in Context</a></li>
+        
+
+        
+
+        
+            <li class="reversed"><a  href="/support/donate/?ref=footer">Membership</a></li>
+        
+            <li class="reversed"><a  href="/about/?ref=footer">About Us</a></li>
+        
+    </ul>
+</div>
+
+
+
+        
+                 
+          
+        
+
+                 
+        
+             
+         
+            
+                        
+        <div id="content" class="container ">
+             
+<div class="column-wrapper span-24">
+
+    <div id="editorial-posts"  class= "left-column span-15">
+        
+            
+                
+
+<div data-live-url="/editorial/tease/9308/" class="post ">
+    <h2 class="post-title"><a href="/editorial/2014/aug/14/containers?ref=tags_fiction_post_title">Containers</a></h2>
+    <div class="post-details clearfix">
+
+        <div class="post-meta">
+            
+            
+                <span class="authors bold-upper blue"><a href="/profile/interdome/?ref=tags_fiction_post">Adam Rothstein</a> </span>
+            
+                <span class="blue">|</span>
+                <span class="bold post-date">Thu Aug 14th, 2014 9:30 a.m.</span>
+            
+        </div>
+        
+        
+            
+<a class="comment-summary" href="/editorial/2014/aug/14/containers/#comments"><i class="fa fa-comment fa-lg"></i> (0)</a>
+
+<div class="new-share">
+    <a class="share-btn-cover" href="#">Share</a>
+
+    <a class="share-btn" href="https://twitter.com/share?url=rhizome.org/editorial/2014/aug/14/containers" target="_blank"><i class="fa fa-twitter"></i></a>
+
+    <a class="share-btn" href="http://www.tumblr.com/share/link?url=rhizome.org/editorial/2014/aug/14/containers" title="Share on Tumblr"><i class="fa fa-tumblr-square"></i></a>
+
+    <a class="share-btn" href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=rhizome.org/editorial/2014/aug/14/containers', 'facebook-share-dialog', 'width=626,height=436'); return false;"><i class="fa fa-facebook-square"></i></a>
+</div>
+        
+    </div>
+    <hr class="black-thin"></hr>
+
+    <div class="post-body">
+        
+            <p style="text-align: center;"><img src="http://media.rhizome.org/blog/9308/Allan-Sekula.jpg" alt="" /></p>
+<p style="text-align: center;"><span style="font-size: xx-small;">Allan Sekula and Noël Burch, still from <em>The Forgotten Space (</em>2010).</span></p>
+<p>I woke up at the chime, looked at the mobile. New work available. I clocked in, made coffee, sat at the desk. Two hours of work right away, even before Twitter. Felt accomplished. I invoiced, and collected.</p>
+<p>I met Sandra for breakfast. She's in Miami. She had the ceiling open to let in the sun. She got into a new task queue, editorial work. It's good work, she said, even though the pay isn't quite as good as advertising. What's the difference, I said, sipping my Bloody Mary. Different algorithmic authors, same algorithmic grammar problems.</p>
+            
+                
+                    <p class="more span-15"><a href="/editorial/2014/aug/14/containers?ref=tags_fiction_post_readbtn">READ ON &raquo;</a></p>
+                
+            
+        
+        
+        
+    </div>
+    
+    
+    
+        <div class="post-tags-and-share span-15">
+            <span class="tags essay-tags">
+                <label>Tags:</label>
+                
+                    <a class="tag blue" href="/editorial/tags/critical-infrastructure/?ref=tags_fiction_post">Critical Infrastructure</a>
+                
+                    <a class="tag blue" href="/editorial/tags/dystopia-everyday/?ref=tags_fiction_post">Dystopia Everyday</a>
+                
+                    <a class="tag blue" href="/editorial/tags/fiction/?ref=tags_fiction_post">fiction</a>
+                
+                    <a class="tag blue" href="/editorial/tags/futurity/?ref=tags_fiction_post">futurity</a>
+                
+                    <a class="tag blue" href="/editorial/tags/mobile-workplace/?ref=tags_fiction_post">mobile workplace</a>
+                
+                    <a class="tag blue" href="/editorial/tags/sex/?ref=tags_fiction_post">sex</a>
+                
+            </span>
+        </div>
+    
+    <hr class="black-thin">
+</div>
+
+            
+                
+
+<div data-live-url="/editorial/tease/9282/" class="post ">
+    <h2 class="post-title"><a href="/editorial/2014/jul/8/forgetting?ref=tags_fiction_post_title">Forgetting the Internet</a></h2>
+    <div class="post-details clearfix">
+
+        <div class="post-meta">
+            
+            
+                <span class="authors bold-upper blue"><a href="/profile/nicholasobri/?ref=tags_fiction_post">Nicholas O&#39;Brien</a> </span>
+            
+                <span class="blue">|</span>
+                <span class="bold post-date">Tue Jul 8th, 2014 12:59 p.m.</span>
+            
+        </div>
+        
+        
+            
+<a class="comment-summary" href="/editorial/2014/jul/8/forgetting/#comments"><i class="fa fa-comment fa-lg"></i> (1)</a>
+
+<div class="new-share">
+    <a class="share-btn-cover" href="#">Share</a>
+
+    <a class="share-btn" href="https://twitter.com/share?url=rhizome.org/editorial/2014/jul/8/forgetting" target="_blank"><i class="fa fa-twitter"></i></a>
+
+    <a class="share-btn" href="http://www.tumblr.com/share/link?url=rhizome.org/editorial/2014/jul/8/forgetting" title="Share on Tumblr"><i class="fa fa-tumblr-square"></i></a>
+
+    <a class="share-btn" href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=rhizome.org/editorial/2014/jul/8/forgetting', 'facebook-share-dialog', 'width=626,height=436'); return false;"><i class="fa fa-facebook-square"></i></a>
+</div>
+        
+    </div>
+    <hr class="black-thin"></hr>
+
+    <div class="post-body">
+        
+            <p style="text-align: center;"><img src="http://media.rhizome.org/blog/9282/Curtain-City-resized.gif" alt="" /> </p>
+<blockquote>
+<p><em>San Francisco (AFP), June 26, 2014 - Google on Thursday said that it is "forgetting" things in Europe to comply with a legal ruling granting people the power to have certain information about them removed from searches.</em></p>
+</blockquote>
+<p>Even though it was sunny, I knew something was wrong the moment I woke up the day of The Ruling. I didn't check the news, I didn't read the paper, I just felt something in the air—an electric current of negativity buzzing in my back pocket where I keep my phone. All morning it shook. It vibrated until it died.</p>
+            
+                
+                    <p class="more span-15"><a href="/editorial/2014/jul/8/forgetting?ref=tags_fiction_post_readbtn">READ ON &raquo;</a></p>
+                
+            
+        
+        
+        
+    </div>
+    
+    
+    
+        <div class="post-tags-and-share span-15">
+            <span class="tags essay-tags">
+                <label>Tags:</label>
+                
+                    <a class="tag blue" href="/editorial/tags/fiction/?ref=tags_fiction_post">fiction</a>
+                
+                    <a class="tag blue" href="/editorial/tags/google/?ref=tags_fiction_post">Google</a>
+                
+                    <a class="tag blue" href="/editorial/tags/right-to-be-forgotten/?ref=tags_fiction_post">Right to be forgotten</a>
+                
+            </span>
+        </div>
+    
+    <hr class="black-thin">
+</div>
+
+            
+                
+
+<div data-live-url="/editorial/tease/9243/" class="post ">
+    <h2 class="post-title"><a href="/editorial/2014/may/6/quantified-self?ref=tags_fiction_post_title">Her Quantified Self</a></h2>
+    <div class="post-details clearfix">
+
+        <div class="post-meta">
+            
+            
+                <span class="authors bold-upper blue"><a href="/profile/martinesyms/?ref=tags_fiction_post">Martine Syms</a> </span>
+            
+                <span class="blue">|</span>
+                <span class="bold post-date">Tue May 6th, 2014 10 a.m.</span>
+            
+        </div>
+        
+        
+            
+<a class="comment-summary" href="/editorial/2014/may/6/quantified-self/#comments"><i class="fa fa-comment fa-lg"></i> (0)</a>
+
+<div class="new-share">
+    <a class="share-btn-cover" href="#">Share</a>
+
+    <a class="share-btn" href="https://twitter.com/share?url=rhizome.org/editorial/2014/may/6/quantified-self" target="_blank"><i class="fa fa-twitter"></i></a>
+
+    <a class="share-btn" href="http://www.tumblr.com/share/link?url=rhizome.org/editorial/2014/may/6/quantified-self" title="Share on Tumblr"><i class="fa fa-tumblr-square"></i></a>
+
+    <a class="share-btn" href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=rhizome.org/editorial/2014/may/6/quantified-self', 'facebook-share-dialog', 'width=626,height=436'); return false;"><i class="fa fa-facebook-square"></i></a>
+</div>
+        
+    </div>
+    <hr class="black-thin"></hr>
+
+    <div class="post-body">
+        
+            <p style="text-align: center;"><img src="http://media.rhizome.org/blog/9243/fuelband.jpg" alt="" /></p>
+<p style="text-align: center;"><span style="font-size: xx-small;"><em>Courtesy of Natalie James at <a href="http://njinla.com/">NJinLA.com</a></em></span></p>
+<p>The alarm on her FuelBand pulses at 5:30 am because she wants to be a better person. Studies show that early risers are more proactive, more likely to anticipate problems, and more optimistic than those who sleep in. She wakes up two hours later because no one is expecting her to be anywhere. She slept for 12 hours and worries for a moment that it means she is depressed. It's still early, she thinks aloud.</p>
+<p>From bed she scrolls through news, links, baby pictures, and other pieces of life. She composes an update to share and deletes it. She writes something else and deletes that too. She looks around the room. She's happy to be home even if it doesn't show. She chides herself for forgetting to practice gratitude. She closes her eyes and thinks about her family with gentle love and appreciation. Thank you, she whispers to the universe. Her goodwill quickly evaporates as she hears Deb, her mother, making a morning racket in the kitchen. She decides to wait until Deb leaves to get out of bed.</p>
+<p>Lately she finds herself eating almost exclusively from Trader Joe's because it's easier to track in MyFitnessPal. She thinks they probably have some kind of deal. She eats every three hours beginning an hour after she wakes up. Right now she's consuming 1500 calories a day, but she hasn't been counting. She might need some encouragement.</p>
+            
+                
+                    <p class="more span-15"><a href="/editorial/2014/may/6/quantified-self?ref=tags_fiction_post_readbtn">READ ON &raquo;</a></p>
+                
+            
+        
+        
+        
+    </div>
+    
+    
+    
+        <div class="post-tags-and-share span-15">
+            <span class="tags essay-tags">
+                <label>Tags:</label>
+                
+                    <a class="tag blue" href="/editorial/tags/affective-labor/?ref=tags_fiction_post">affective labor</a>
+                
+                    <a class="tag blue" href="/editorial/tags/app-review/?ref=tags_fiction_post">App Review</a>
+                
+                    <a class="tag blue" href="/editorial/tags/fiction/?ref=tags_fiction_post">fiction</a>
+                
+                    <a class="tag blue" href="/editorial/tags/fuelband/?ref=tags_fiction_post">FuelBand</a>
+                
+                    <a class="tag blue" href="/editorial/tags/quantified-self/?ref=tags_fiction_post">quantified self</a>
+                
+                    <a class="tag blue" href="/editorial/tags/surf-report/?ref=tags_fiction_post">surf report</a>
+                
+            </span>
+        </div>
+    
+    <hr class="black-thin">
+</div>
+
+            
+                
+
+<div data-live-url="/editorial/tease/9237/" class="post ">
+    <h2 class="post-title"><a href="/editorial/2014/apr/23/tweeting-fiction?ref=tags_fiction_post_title">Retweeting Fiction</a></h2>
+    <div class="post-details clearfix">
+
+        <div class="post-meta">
+            
+            
+                <span class="authors bold-upper blue"><a href="/profile/BrendanCByrne/?ref=tags_fiction_post">Brendan C. Byrne</a> </span>
+            
+                <span class="blue">|</span>
+                <span class="bold post-date">Wed Apr 23rd, 2014 10:53 a.m.</span>
+            
+        </div>
+        
+        
+            
+<a class="comment-summary" href="/editorial/2014/apr/23/tweeting-fiction/#comments"><i class="fa fa-comment fa-lg"></i> (0)</a>
+
+<div class="new-share">
+    <a class="share-btn-cover" href="#">Share</a>
+
+    <a class="share-btn" href="https://twitter.com/share?url=rhizome.org/editorial/2014/apr/23/tweeting-fiction" target="_blank"><i class="fa fa-twitter"></i></a>
+
+    <a class="share-btn" href="http://www.tumblr.com/share/link?url=rhizome.org/editorial/2014/apr/23/tweeting-fiction" title="Share on Tumblr"><i class="fa fa-tumblr-square"></i></a>
+
+    <a class="share-btn" href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=rhizome.org/editorial/2014/apr/23/tweeting-fiction', 'facebook-share-dialog', 'width=626,height=436'); return false;"><i class="fa fa-facebook-square"></i></a>
+</div>
+        
+    </div>
+    <hr class="black-thin"></hr>
+
+    <div class="post-body">
+        
+            <p style="text-align: center;"><img src="http://media.rhizome.org/blog/9237/Teju-Cole-New-York-2012.jpg" alt="" /><br /><span style="font-size: xx-small;"><em>New York City. </em>Photograph by Teju Cole, via <a href="https://www.flickr.com/photos/tejucole/8124758220/">Flickr</a>.</span></p>
+<p>On the morning of January 8th, Teju Cole published a fiction in the form of 33 tweets, each posted from the account of a different "collaborator," and then retweeted sequentially by Cole. Titled "<a href="http://www.theverge.com/2014/1/8/5288234/teju-cole-orchestrates-his-twitter-followers-into-a-collective-short">Hafiz</a>," it took three hours and fifteen minutes to be published. Like most of Cole's experiments in Twitter publishing, it generated much more social media heat than actual critique. (There are a few <a href="http://thenewinquiry.com/essays/death-by-twitter/">notable</a> <a href="http://meanjin.com.au/articles/post/twitter-the-novel-tejucole-teju-cole/">exceptions</a>.) But "Hafiz," both as a story and presentation, is worth examining, as it is both the closest @tejucole has come to Teju Cole's fiction and a singular commentary on it.</p>
+            
+                
+                    <p class="more span-15"><a href="/editorial/2014/apr/23/tweeting-fiction?ref=tags_fiction_post_readbtn">READ ON &raquo;</a></p>
+                
+            
+        
+        
+        
+    </div>
+    
+    
+    
+        <div class="post-tags-and-share span-15">
+            <span class="tags essay-tags">
+                <label>Tags:</label>
+                
+                    <a class="tag blue" href="/editorial/tags/fiction/?ref=tags_fiction_post">fiction</a>
+                
+                    <a class="tag blue" href="/editorial/tags/new-media-writing/?ref=tags_fiction_post">new media writing</a>
+                
+                    <a class="tag blue" href="/editorial/tags/teju-cole/?ref=tags_fiction_post">Teju Cole</a>
+                
+                    <a class="tag blue" href="/editorial/tags/twitter-literature/?ref=tags_fiction_post">Twitter literature</a>
+                
+            </span>
+        </div>
+    
+    <hr class="black-thin">
+</div>
+
+            
+                
+
+<div data-live-url="/editorial/tease/8800/" class="post ">
+    <h2 class="post-title"><a href="/editorial/2012/sep/19/jeff-noon-twitter?ref=tags_fiction_post_title">Jeff Noon's Sporecast</a></h2>
+    <div class="post-details clearfix">
+
+        <div class="post-meta">
+            
+            
+                <span class="authors bold-upper blue"><a href="/profile/joannemcneil/?ref=tags_fiction_post">Joanne McNeil</a> </span>
+            
+                <span class="blue">|</span>
+                <span class="bold post-date">Wed Sep 19th, 2012 2:45 p.m.</span>
+            
+        </div>
+        
+        
+            
+<a class="comment-summary" href="/editorial/2012/sep/19/jeff-noon-twitter/#comments"><i class="fa fa-comment fa-lg"></i> (0)</a>
+
+<div class="new-share">
+    <a class="share-btn-cover" href="#">Share</a>
+
+    <a class="share-btn" href="https://twitter.com/share?url=rhizome.org/editorial/2012/sep/19/jeff-noon-twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+
+    <a class="share-btn" href="http://www.tumblr.com/share/link?url=rhizome.org/editorial/2012/sep/19/jeff-noon-twitter" title="Share on Tumblr"><i class="fa fa-tumblr-square"></i></a>
+
+    <a class="share-btn" href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=rhizome.org/editorial/2012/sep/19/jeff-noon-twitter', 'facebook-share-dialog', 'width=626,height=436'); return false;"><i class="fa fa-facebook-square"></i></a>
+</div>
+        
+    </div>
+    <hr class="black-thin"></hr>
+
+    <div class="post-body">
+        
+            
+                <p><img src="http://media.rhizome.org/blog/8800/noon.png" alt="" width="600" /> </p>
+<p> </p>
+<p><a href="http://twitter.com/jeffnoon">Jeff Noon's tweets</a> are reliably among of the best contemporary fiction works today —beautiful stories told over short bursts, each under 140 characters. He calls the stories "microspores" and fans have <a href="http://microspores.tumblr.com/">submitted art and music to a tumblr collection</a>. Wedged in between Romney quips, #FFs, and everyday social media-ing, the economy of his words as well as the context makes them all the more satisfying; like momentarily fading out of a conversation to recall last night's dream.</p>
+<p> </p>
+<p><img src="http://media.rhizome.org/blog/8800/noon_1.png" alt="" width="520" height="438" /></p>
+<p> </p>
+<p>Last night, Noon, the author of several novels, (Vurt, Falling Out of Cars, the recently released <a href="http://www.metamorphiction.com/books/index.php/channel-sk1n/">Channel Sk1n</a>, among others), had an especially frenized twitter feed — posting <a href="http://twitter.com/jeffnoon/status/248072779939860480">50 stories at once and retweeting fiction responses</a>. The "Sporecast" was so active, Twitter <a href="http://twitter.com/jeffnoon/status/248138284520321025">throttled his account</a> multiple times that evening. </p>
+<p> </p>
+<script charset="utf-8" type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+                    
+                        
+                            
+                                
+                                    <p class="more span-15"><a href="http://twitter.com/jeffnoon">LINK &raquo;</a></p>
+                                
+                            
+                        
+                    
+            
+        
+        
+        
+    </div>
+    
+    
+    
+        <div class="post-tags-and-share span-15">
+            <span class="tags essay-tags">
+                <label>Tags:</label>
+                
+                    <a class="tag blue" href="/editorial/tags/fiction/?ref=tags_fiction_post">fiction</a>
+                
+                    <a class="tag blue" href="/editorial/tags/jeff-noon/?ref=tags_fiction_post">jeff noon</a>
+                
+                    <a class="tag blue" href="/editorial/tags/science-fiction/?ref=tags_fiction_post">science fiction</a>
+                
+                    <a class="tag blue" href="/editorial/tags/twitter/?ref=tags_fiction_post">twitter</a>
+                
+            </span>
+        </div>
+    
+    <hr class="black-thin">
+</div>
+
+            
+                
+
+<div data-live-url="/editorial/tease/8769/" class="post ">
+    <h2 class="post-title"><a href="/editorial/2012/aug/13/after-cloudy-doubly-beautifully-matthew-battles?ref=tags_fiction_post_title">After the Cloudy Doubly Beautifully by Matthew Battles</a></h2>
+    <div class="post-details clearfix">
+
+        <div class="post-meta">
+            
+                <span class="authors bold-upper">Rhizome</span>
+                <span class="blue">|</span>
+                <span class="bold post-date">Mon Aug 13th, 2012 10:49 a.m.</span>
+            
+        </div>
+        
+        
+            
+<a class="comment-summary" href="/editorial/2012/aug/13/after-cloudy-doubly-beautifully-matthew-battles/#comments"><i class="fa fa-comment fa-lg"></i> (0)</a>
+
+<div class="new-share">
+    <a class="share-btn-cover" href="#">Share</a>
+
+    <a class="share-btn" href="https://twitter.com/share?url=rhizome.org/editorial/2012/aug/13/after-cloudy-doubly-beautifully-matthew-battles" target="_blank"><i class="fa fa-twitter"></i></a>
+
+    <a class="share-btn" href="http://www.tumblr.com/share/link?url=rhizome.org/editorial/2012/aug/13/after-cloudy-doubly-beautifully-matthew-battles" title="Share on Tumblr"><i class="fa fa-tumblr-square"></i></a>
+
+    <a class="share-btn" href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=rhizome.org/editorial/2012/aug/13/after-cloudy-doubly-beautifully-matthew-battles', 'facebook-share-dialog', 'width=626,height=436'); return false;"><i class="fa fa-facebook-square"></i></a>
+</div>
+        
+    </div>
+    <hr class="black-thin"></hr>
+
+    <div class="post-body">
+        
+            
+                <p><em>The following short story is excerpted from <span style="text-decoration: underline;"><a href="http://www.amazon.com/The-Sovereignties-Invention-Matthew-Battles/dp/1935869124">The Sovereignties of Invention</a></span> by Matthew Battles. <a href="http://mcnallyjackson.com/event/matthew-battles-joanne-mcneil">Battles will be appearing at McNally-Jackson Books in New York City on August 16th, interviewed by Rhizome editor Joanne McNeil.</a></em></p>
+<p><img src="http://media.rhizome.org/blog/8769/SOI.jpeg" alt="" width="400" height="647" /></p>
+<p>BEFORE
+THE TURN of the millennium when the Web was new, I worked in the bowels of
+Harvard’s Widener Library. There was as yet no Twitter, no Facebook, no YouTube;
+blogs and wikis were the glamorous spells of a whispering cognoscenti. But a
+web there was—enough of one to encourage the library to send many books off to
+storage in dark, refrigerated warehouses, never to be read again. This was my
+work in the Widener deeps. I was one of Bradbury’s firemen, almost—though
+instead of heat and flame, we used the cool buzz of networked catalogs to put
+the books out of reach.</p>
+<p>Among the
+duties with which I had been charged was clearing out the “X-cage.” I wish I
+had made up this name; I wish I had made it up and then discarded it in
+embarrassment—alas, the X-cage was real. It was the repository of books,
+sheaves of paper, and artifacts in odd sizes and formats, of paper too fragile
+or content too salacious for the open stacks. Some of these I sent away to be
+stored elsewhere, while others I tried to place in more suitable libraries or
+museums. And some, frankly, I didn’t know what to do with. My fascination with
+one such item has lingered through the years. Although it never was listed in
+the online system, I found it recorded in the card catalog while it still could
+be browsed in the library’s attic. The card reads as follows:</p>
+<p style="text-align: center;"><span style="color: #800000;">Benjamin, Walter. Übersetzung
+Maschine. 1946. Gift of le bibliothèque Orléans, Fr.</span></p>
+<p>The
+device was ...</p>
+                    
+                        
+                            
+                                
+                                    <p class="more span-15"><a href="/editorial/2012/aug/13/after-cloudy-doubly-beautifully-matthew-battles?ref=tags_fiction_post_readbtn">MORE &raquo;</a></p>
+                                
+                            
+                        
+                    
+            
+        
+        
+        
+    </div>
+    
+    
+    
+        <div class="post-tags-and-share span-15">
+            <span class="tags essay-tags">
+                <label>Tags:</label>
+                
+                    <a class="tag blue" href="/editorial/tags/fiction/?ref=tags_fiction_post">fiction</a>
+                
+                    <a class="tag blue" href="/editorial/tags/matthew-battles/?ref=tags_fiction_post">matthew battles</a>
+                
+            </span>
+        </div>
+    
+    <hr class="black-thin">
+</div>
+
+            
+                
+
+<div data-live-url="/editorial/tease/8751/" class="post ">
+    <h2 class="post-title"><a href="/editorial/2012/aug/9/chris-kraus-interview?ref=tags_fiction_post_title">Exploring Bludgeoned Subjectivity: Talking to Chris Kraus</a></h2>
+    <div class="post-details clearfix">
+
+        <div class="post-meta">
+            
+            
+                <span class="authors bold-upper blue"><a href="/profile/Giampaolo_Bianconi/?ref=tags_fiction_post">Giampaolo Bianconi</a> </span>
+            
+                <span class="blue">|</span>
+                <span class="bold post-date">Thu Aug 9th, 2012 12:43 p.m.</span>
+            
+        </div>
+        
+        
+            
+<a class="comment-summary" href="/editorial/2012/aug/9/chris-kraus-interview/#comments"><i class="fa fa-comment fa-lg"></i> (0)</a>
+
+<div class="new-share">
+    <a class="share-btn-cover" href="#">Share</a>
+
+    <a class="share-btn" href="https://twitter.com/share?url=rhizome.org/editorial/2012/aug/9/chris-kraus-interview" target="_blank"><i class="fa fa-twitter"></i></a>
+
+    <a class="share-btn" href="http://www.tumblr.com/share/link?url=rhizome.org/editorial/2012/aug/9/chris-kraus-interview" title="Share on Tumblr"><i class="fa fa-tumblr-square"></i></a>
+
+    <a class="share-btn" href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=rhizome.org/editorial/2012/aug/9/chris-kraus-interview', 'facebook-share-dialog', 'width=626,height=436'); return false;"><i class="fa fa-facebook-square"></i></a>
+</div>
+        
+    </div>
+    <hr class="black-thin"></hr>
+
+    <div class="post-body">
+        
+            <p><em>Chris Kraus, author of </em>I Love Dick, Aliens &amp; Anorexia, Video Green<em>, among other titles; writes novels, criticism, and essays fluently addressing a range of subjects from from film to philosophy. Her forthcoming novel </em>Summer of Hate<em> is a love story that investigates recent American history all too eager to be forgotten on its own. We talked about her new book, its relation to other facets of her work, and other ideas.</em></p>
+<p><em> </em><img src="http://media.rhizome.org/blog/8751/SOH-Cover.jpg" alt="" width="400" /></p>
+<p><strong>Giampaolo Bianconi: Let's begin by talking about the beginning of your new book, <em>Summer of Hate</em>. It’s very different in tone from the rest of the book, very thrilling in its combination of sex, money, and fear.</strong></p>
+<p>Chris Kraus: The first two chapters set up each character’s situation before they meet—first Catt and then Paul. Catt is immersed in terror and flight: sex, murder, and delusional thinking. She’s panicked, hysterical. When she finally lands in Albuquerque in the third chapter, she re-enters real life. The movement of time changes once she gets there.  The book settles into a more normal, real-life progression. She’s driven into the story by her delirium. Paul enters the story with remorse, fear and shame. When they meet, the story continues on a different plateau.</p>
+<p><strong>GB: In relation to their meeting, I was struck by the fact that before Paul meets Catt he’s totally lost. Their meeting is so unexpected, and he’s so isolated and his possibility of interaction and collision is so small—especially in terms of their class differences.</strong></p>
+<p>CK: Right, it’s so farfetched. But given where she’s coming from, is it any more farfetched than meeting these lunatics online? She takes herself out of this delusional world and lands someplace else, where pretty much anything can happen. For Paul their meeting is improbable, but he’s already so far off the grid. This happens in life all the time! When people take themselves out of their normal, expected routines, other things can happen, and that’s what happens to these two.</p>
+<p><strong>GB: In one of your previous books, <em>I Love Dick</em>, there’s some discussion of the creation of a hybrid form of fiction and cultural criticism. <em>Summer of Hate </em>is a novel, but it fills a void in contemporary discussion about the incarceration industry.</strong></p>
+<p>CK: Yes … In <em>I Love Dick</em>, Dick has been charged with creating a new MFA program along those lines.  “Hybridity” was one of the funding buzzwords at that time.  But really, that is the definition of literature. If you look back to the great texts over the centuries, they’re hybrid forms of fiction and criticism. The great adventure stories: <em>Moby Dick</em>, <em>Robinson Crusoe</em>, <em>Moll Flanders</em>, and then Balzac’s novels, the list goes on. The definition of literary fiction has become so incredibly narrow: domestic dramas based on the romantic and career ambitions within the upper middle class, but it wasn’t always that way. The agenda of fiction used to be to describe the whole world.</p>
+<p><strong>GB: The world that you describe in <em>Summer of Hate</em> is so regularly overlooked, not only in fiction but also in art and other forms of cultural production.</strong></p>
+<p>CK: It’s true; it’s not very sexy. Narrative hinges on subjectivity, and we’re accustomed to a certain kind of subjectivity...</p>
+<p> </p>
+            
+                
+                    <p class="more span-15"><a href="/editorial/2012/aug/9/chris-kraus-interview?ref=tags_fiction_post_readbtn">READ ON &raquo;</a></p>
+                
+            
+        
+        
+        
+    </div>
+    
+    
+    
+        <div class="post-tags-and-share span-15">
+            <span class="tags essay-tags">
+                <label>Tags:</label>
+                
+                    <a class="tag blue" href="/editorial/tags/books/?ref=tags_fiction_post">books</a>
+                
+                    <a class="tag blue" href="/editorial/tags/chris-kraus/?ref=tags_fiction_post">Chris Kraus</a>
+                
+                    <a class="tag blue" href="/editorial/tags/fiction/?ref=tags_fiction_post">fiction</a>
+                
+                    <a class="tag blue" href="/editorial/tags/interview/?ref=tags_fiction_post">interview</a>
+                
+                    <a class="tag blue" href="/editorial/tags/summer-of-hate/?ref=tags_fiction_post">Summer of Hate</a>
+                
+            </span>
+        </div>
+    
+    <hr class="black-thin">
+</div>
+
+            
+                
+
+<div data-live-url="/editorial/tease/8470/" class="post ">
+    <h2 class="post-title"><a href="/editorial/2011/dec/7/jack-womack?ref=tags_fiction_post_title">Making Sense of Senseless Violence: An Interview with Jack Womack</a></h2>
+    <div class="post-details clearfix">
+
+        <div class="post-meta">
+            
+                <span class="authors bold-upper">Brendan Byrne</span>
+                <span class="blue">|</span>
+                <span class="bold post-date">Wed Dec 7th, 2011 9:12 a.m.</span>
+            
+        </div>
+        
+        
+            
+<a class="comment-summary" href="/editorial/2011/dec/7/jack-womack/#comments"><i class="fa fa-comment fa-lg"></i> (1)</a>
+
+<div class="new-share">
+    <a class="share-btn-cover" href="#">Share</a>
+
+    <a class="share-btn" href="https://twitter.com/share?url=rhizome.org/editorial/2011/dec/7/jack-womack" target="_blank"><i class="fa fa-twitter"></i></a>
+
+    <a class="share-btn" href="http://www.tumblr.com/share/link?url=rhizome.org/editorial/2011/dec/7/jack-womack" title="Share on Tumblr"><i class="fa fa-tumblr-square"></i></a>
+
+    <a class="share-btn" href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=rhizome.org/editorial/2011/dec/7/jack-womack', 'facebook-share-dialog', 'width=626,height=436'); return false;"><i class="fa fa-facebook-square"></i></a>
+</div>
+        
+    </div>
+    <hr class="black-thin"></hr>
+
+    <div class="post-body">
+        
+            <p><img style="display: block; margin-left: auto; margin-right: auto;" src="http://media.rhizome.org/blog/8470/london.jpeg" alt="" width="600" /></p>
+<p style="text-align: center;"><span style="color: #888888; font-size: xx-small;">Tottenham Aug. 7, 2011. (Lewis Whyld/PA/AP) via <a href="http://www.boston.com/bigpicture/2011/08/london_riots.html">The Big Picture</a></span></p>
+<p><font face="TimesNewRomanPSMT" size="4">This summer when Britain was gripped by civil disturbance, it was suggested by some in the SF community that if you wanted to understand the underlying psychology of those involved, you should read Jack Womack’s</font><font face="TimesNewRomanPS-ItalicMT" size="4"><em> <a href="http://en.wikipedia.org/wiki/Random_Acts_of_Senseless_Violence">Random Acts of Senseless Violence</a></em></font><font face="TimesNewRomanPSMT" size="4">, originally published in 1994. </font><font face="TimesNewRomanPS-ItalicMT" size="4"><em>Random Acts</em></font><font face="TimesNewRomanPSMT" size="4"> details in diary form the tribulations of twelve-year-old Lola Hart as her New York City, family, and persona come apart. It also serves as an entry point for Womack’s six-book Dryco series, which presents post-disaster America as trailer-trash corporate dystopia, complete with Elvis worship, unchecked rape and murder, and its own argot. Recently I met with Womack and asked him about the creation and particular prescience of these novels.</font></p>
+<p> </p>
+<p><hr />
+</p><p> </p>
+<p><strong><font face="TimesNewRomanPSMT" size="4">Your novels make me unbelievably anxious. </font> </strong></p>
+<p><font face="TimesNewRomanPSMT" size="4">I relieve my own anxiety by writing them. So, yeah, it’s transference. </font> </p>
+<p><strong><font face="TimesNewRomanPSMT" size="4">One of the things that’s so anxiety-inducing about </font><font face="TimesNewRomanPS-ItalicMT" size="4"><em>Random Acts</em></font><font face="TimesNewRomanPSMT" size="4">, as well as your first novel </font><font face="TimesNewRomanPS-ItalicMT" size="4"><em>Ambient</em></font><font face="TimesNewRomanPSMT" size="4">, is that there’s always scarcity: there’s never enough money, never enough food, never enough security. Which seems to me extremely, though not exclusively, New York. </font> </strong></p>
+<p><font face="TimesNewRomanPSMT" size="4">Oh, at the time it certainly was. The New York in </font><font face="TimesNewRomanPS-ItalicMT" size="4"><em>Ambient</em></font><font face="TimesNewRomanPSMT" size="4"> was what I saw happening if everything had kept getting worse. When O’Malley is walking home to his apartment in the Lower East Side, that’s the way it used to be. What the predictive element missed was that New York would skyrocket back, and that neighborhoods you couldn’t go into at night thirty years ago, you now couldn’t afford. I moved up here in 1977 right after the blackout and the Son of Sam summer. So the fear definitely comes across. When you see </font><font face="TimesNewRomanPS-ItalicMT" size="4"><em>Taxi Driver</em></font><font face="TimesNewRomanPSMT" size="4">, that’s what it looked</font></p>
+<p> </p>
+            
+                
+                    <p class="more span-15"><a href="/editorial/2011/dec/7/jack-womack?ref=tags_fiction_post_readbtn">READ ON &raquo;</a></p>
+                
+            
+        
+        
+        
+    </div>
+    
+    
+    
+        <div class="post-tags-and-share span-15">
+            <span class="tags essay-tags">
+                <label>Tags:</label>
+                
+                    <a class="tag blue" href="/editorial/tags/books/?ref=tags_fiction_post">books</a>
+                
+                    <a class="tag blue" href="/editorial/tags/fiction/?ref=tags_fiction_post">fiction</a>
+                
+                    <a class="tag blue" href="/editorial/tags/jack-womack/?ref=tags_fiction_post">jack womack</a>
+                
+                    <a class="tag blue" href="/editorial/tags/london/?ref=tags_fiction_post">london</a>
+                
+                    <a class="tag blue" href="/editorial/tags/nyc/?ref=tags_fiction_post">nyc</a>
+                
+                    <a class="tag blue" href="/editorial/tags/riots/?ref=tags_fiction_post">riots</a>
+                
+                    <a class="tag blue" href="/editorial/tags/scarcity/?ref=tags_fiction_post">scarcity</a>
+                
+                    <a class="tag blue" href="/editorial/tags/science-fiction/?ref=tags_fiction_post">science fiction</a>
+                
+                    <a class="tag blue" href="/editorial/tags/violence/?ref=tags_fiction_post">violence</a>
+                
+            </span>
+        </div>
+    
+    <hr class="black-thin">
+</div>
+
+            
+                
+
+<div data-live-url="/editorial/tease/7960/" class="post ">
+    <h2 class="post-title"><a href="/editorial/2011/feb/24/and-thought-2011-bffa3ae?ref=tags_fiction_post_title">This and that thought. (2011) - BFFA3AE (Daniel Chew, Micaela Durand, Maximiliano Ferro, Matthew Gaffney)</a></h2>
+    <div class="post-details clearfix">
+
+        <div class="post-meta">
+            
+            
+                <span class="authors bold-upper blue"><a href="/profile/cecimoss/?ref=tags_fiction_post">Ceci Moss</a> </span>
+            
+                <span class="blue">|</span>
+                <span class="bold post-date">Thu Feb 24th, 2011 10 a.m.</span>
+            
+        </div>
+        
+        
+            
+<a class="comment-summary" href="/editorial/2011/feb/24/and-thought-2011-bffa3ae/#comments"><i class="fa fa-comment fa-lg"></i> (0)</a>
+
+<div class="new-share">
+    <a class="share-btn-cover" href="#">Share</a>
+
+    <a class="share-btn" href="https://twitter.com/share?url=rhizome.org/editorial/2011/feb/24/and-thought-2011-bffa3ae" target="_blank"><i class="fa fa-twitter"></i></a>
+
+    <a class="share-btn" href="http://www.tumblr.com/share/link?url=rhizome.org/editorial/2011/feb/24/and-thought-2011-bffa3ae" title="Share on Tumblr"><i class="fa fa-tumblr-square"></i></a>
+
+    <a class="share-btn" href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=rhizome.org/editorial/2011/feb/24/and-thought-2011-bffa3ae', 'facebook-share-dialog', 'width=626,height=436'); return false;"><i class="fa fa-facebook-square"></i></a>
+</div>
+        
+    </div>
+    <hr class="black-thin"></hr>
+
+    <div class="post-body">
+        
+            
+                <p><center><a href="http://turbulence.org/Works/BFFA3AE/"><img src="http://media.rhizome.org/blog/7960/This-and-that-thought-(2011)---BFFA3AE_1.png" width="600" /></a></center><br />
+<center><a href="http://turbulence.org/Works/BFFA3AE/"><img src="http://media.rhizome.org/blog/7960/This-and-that-thought-(2011)---BFFA3AE.png" width="600" /></a></center><br />
+<center><a href="http://turbulence.org/Works/BFFA3AE/"><img src="http://media.rhizome.org/blog/7960/This-and-that-thought-(2011)---BFFA3AE_2.png" width="600" /></a></center><br />
+</p><p><i>This and that thought. takes the form of a narrative. Visually, the project consists of the hex codes of the 216 web safe colors and a colorless box next to each, arranged in a grid. The arrangement is based on the van der Corput seqeunce which orders the colors from black to white through an unintuitive trajectory. The user is invited to click on any hex code which triggers an aural narration based on a fictional narrative of an episodic nature, jumping from subject to subject through connections sometimes obvious, sometimes oblique. Each segment of the narrative is visually associated to one of the colors by a reveal in sync with the narration. Furthermore, attached to each segment is its own unique introduction to the story. Depending on what color is activated, the user experiences a variable story in so far as the introduction and length of the narrative will change. If the user happens to click on black, then the narrative will be “whole” in the sense that the story will utilize all the segments created for the project, whereas any other color incorporates only every color between itself until the end color; white. All other elements remain the same, including the order of the colors and their associated phrase within the narrative.</i></p>
+<p><font size="-2"> -- EXCERPT FROM THE <a href="http://turbulence.org/blog/2011/02/21/turbulence-commission-this-and-that-thought-by-bffa3ae/">PRESS RELEASE</a> FOR This and that thought.</font></p>
+<center>Commissioned by <a href="http://turbulence.org/">Turbulence.org</a></center>
+<p class="more span-15"><a href="http://turbulence.org/Works/BFFA3AE/">LINK &raquo;</a></p>
+                    
+            
+        
+        
+        
+    </div>
+    
+    
+    
+        <div class="post-tags-and-share span-15">
+            <span class="tags essay-tags">
+                <label>Tags:</label>
+                
+                    <a class="tag blue" href="/editorial/tags/fiction/?ref=tags_fiction_post">fiction</a>
+                
+                    <a class="tag blue" href="/editorial/tags/interactive/?ref=tags_fiction_post">interactive</a>
+                
+                    <a class="tag blue" href="/editorial/tags/interface/?ref=tags_fiction_post">interface</a>
+                
+                    <a class="tag blue" href="/editorial/tags/narrative/?ref=tags_fiction_post">narrative</a>
+                
+                    <a class="tag blue" href="/editorial/tags/sound/?ref=tags_fiction_post">sound</a>
+                
+            </span>
+        </div>
+    
+    <hr class="black-thin">
+</div>
+
+            
+                
+
+<div data-live-url="/editorial/tease/3080/" class="post ">
+    <h2 class="post-title"><a href="/editorial/2009/nov/18/interview-with-mark-amerika?ref=tags_fiction_post_title">Interview with Mark Amerika</a></h2>
+    <div class="post-details clearfix">
+
+        <div class="post-meta">
+            
+            
+                <span class="authors bold-upper blue"><a href="/profile/ricksilva/?ref=tags_fiction_post">Rick Silva</a> </span>
+            
+                <span class="blue">|</span>
+                <span class="bold post-date">Wed Nov 18th, 2009 12:45 p.m.</span>
+            
+        </div>
+        
+        
+            
+<a class="comment-summary" href="/editorial/2009/nov/18/interview-with-mark-amerika/#comments"><i class="fa fa-comment fa-lg"></i> (0)</a>
+
+<div class="new-share">
+    <a class="share-btn-cover" href="#">Share</a>
+
+    <a class="share-btn" href="https://twitter.com/share?url=rhizome.org/editorial/2009/nov/18/interview-with-mark-amerika" target="_blank"><i class="fa fa-twitter"></i></a>
+
+    <a class="share-btn" href="http://www.tumblr.com/share/link?url=rhizome.org/editorial/2009/nov/18/interview-with-mark-amerika" title="Share on Tumblr"><i class="fa fa-tumblr-square"></i></a>
+
+    <a class="share-btn" href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=rhizome.org/editorial/2009/nov/18/interview-with-mark-amerika', 'facebook-share-dialog', 'width=626,height=436'); return false;"><i class="fa fa-facebook-square"></i></a>
+</div>
+        
+    </div>
+    <hr class="black-thin"></hr>
+
+    <div class="post-body">
+        
+            
+                <p><i>Amerika describes himself as a "thoughtographer", an "artist-medium", a "fictional philosopher", a "remixologist", a "network conductor", a wanderer who constantly changes identities and roles in a fragmentary world where time acquires an a-synchronic and non real dimension. By trying to express the complexity and the interest of contemporary digital reality, he delves into different aspects of himself and draws on elements and traits that he transfers to the characters of his works, by using the media, the technological platforms of our time. Developing projects on the net, filming with mobile phones, remixing common moments and figures of today's culture in a VJ-like audiovisual rhythm, Amerika redefines the characteristics of today's culture and opens up the possibilities for new interpretations and thoughts from the audience itself. -- "<a href="http://www.emst.gr/EN/exhibitions/emst_exhibitions/main.aspx?ID=144">UNREALTIME</a>" at the <a href="http://www.emst.gr">National Museum of Contemporary Art</a> in Athens</i></p>
+                
+                    
+                        <p class="more span-15"><a href="/editorial/2009/nov/18/interview-with-mark-amerika?ref=tags_fiction_post_readbtn">READ ON &raquo;</a></p>
+                    
+                
+            
+        
+        
+        
+    </div>
+    
+    
+    
+        <div class="post-tags-and-share span-15">
+            <span class="tags essay-tags">
+                <label>Tags:</label>
+                
+                    <a class="tag blue" href="/editorial/tags/fiction/?ref=tags_fiction_post">fiction</a>
+                
+                    <a class="tag blue" href="/editorial/tags/film/?ref=tags_fiction_post">film</a>
+                
+                    <a class="tag blue" href="/editorial/tags/installation/?ref=tags_fiction_post">installation</a>
+                
+                    <a class="tag blue" href="/editorial/tags/mobile/?ref=tags_fiction_post">mobile</a>
+                
+                    <a class="tag blue" href="/editorial/tags/narrative/?ref=tags_fiction_post">narrative</a>
+                
+                    <a class="tag blue" href="/editorial/tags/network/?ref=tags_fiction_post">network</a>
+                
+                    <a class="tag blue" href="/editorial/tags/transmission/?ref=tags_fiction_post">transmission</a>
+                
+                    <a class="tag blue" href="/editorial/tags/video/?ref=tags_fiction_post">video</a>
+                
+            </span>
+        </div>
+    
+    <hr class="black-thin">
+</div>
+
+            
+        
+        <hr class="hr2" />
+        <div class="pagination">
+    <span class="step-links">
+        
+        
+        
+        
+        
+        <a class="selected"  href="/editorial/tags/fiction/?ref=fp_post&amp;page=1">
+            1
+        </a>
+        
+        <a class=""  href="/editorial/tags/fiction/?ref=fp_post&amp;page=2">
+            2
+        </a>
+        
+
+        
+        
+        
+        <a class="next" href="/editorial/tags/fiction/?ref=fp_post&amp;page=2">
+        </a>
+        
+    </span>
+</div>
+
+    </div>
+    
+    <div class= "right-column span-8">
+      <div id="nectar-ads">
+    <div id="featured-ad">
+        <div style="height: 600px; width: 300px" id="azk1"></div>    
+    </div>
+    
+    <div id="adsquares">
+        <div style="height: 141; width: 137;" id="azk2"></div>
+        
+        <div style="height: 141; width: 137;" id="azk3"></div>
+        
+        <div style="height: 141; width: 137;" id="azk4"></div>
+        
+        <div style="height: 141; width: 137;" id="azk5"></div>
+    </div>
+    <div>
+        <a style="font-weight:bold;" href="http://nectarads.com">Advertise on Rhizome with Nectar Ads</a>
+    </div>
+</div>
+        
+      
+<div id ="sidebar">
+
+    <div class="sidebar-element ">
+        <div class="section-title">
+            <a href="/editorial/">Featured Articles</a>
+        </div>
+        <div class="content-wrap ">
+            <div class="content ">
+                
+                
+                <div class="content-body ">
+                    <div class="sidebar-post">
+                        
+                        <div class = "post-image">
+                            <a class="bold" href="/editorial/2014/aug/28/first-look-miranda-july?ref=ftsidebar">
+			      
+                                <img src="http://media.rhizome.org/blog/9326/Miranda-July-Somebody.jpg.100x80_q95_crop.jpg">
+                            </a>
+                        </div>
+                        <div class="sidebar-post-title ">
+                            <a class = "bold" href="/editorial/2014/aug/28/first-look-miranda-july?ref=ftsidebar">Somebody: A New Messaging Service by Miranda July</a>                                   
+                        </div>
+                        
+                        <div class="sidebar-post-info ">
+                            <span class="descriptor">by 
+                                
+                                    
+                                        <span class="authors bold-upper blue">
+                                            <a href="/profile/lauren23/?ref=ftsidebar">Lauren Cornell</a> 
+                                        </span>
+                                    
+                                
+                            on Aug 28th, 2014</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-body ">
+                    <div class="sidebar-post">
+                        
+                        <div class = "post-image">
+                            <a class="bold" href="/editorial/2014/aug/27/artist-profile-femke-herregraven?ref=ftsidebar">
+			      
+                                <img src="http://media.rhizome.org/blog/9322/Taxodus.gif.100x80_q95_crop.png">
+                            </a>
+                        </div>
+                        <div class="sidebar-post-title ">
+                            <a class = "bold" href="/editorial/2014/aug/27/artist-profile-femke-herregraven?ref=ftsidebar">Artist Profile: Femke Herregraven</a>                                   
+                        </div>
+                        
+                        <div class="sidebar-post-info ">
+                            <span class="descriptor">by 
+                                
+                                    
+                                        <span class="authors bold-upper blue">
+                                            <a href="/profile/lucy_chinen/?ref=ftsidebar">Lucy Chinen</a> 
+                                        </span>
+                                    
+                                
+                            on Aug 27th, 2014</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-body ">
+                    <div class="sidebar-post">
+                        
+                        <div class = "post-image">
+                            <a class="bold" href="/editorial/2014/aug/20/twine-could-be-your-life?ref=ftsidebar">
+			      
+                                <img src="http://media.rhizome.org/blog/9315/Do-you-want.jpg.100x80_q95_crop.jpg">
+                            </a>
+                        </div>
+                        <div class="sidebar-post-title ">
+                            <a class = "bold" href="/editorial/2014/aug/20/twine-could-be-your-life?ref=ftsidebar">Hypertext and Destiny: This Twine Could be Your Life</a>                                   
+                        </div>
+                        
+                        <div class="sidebar-post-info ">
+                            <span class="descriptor">by 
+                                
+                                    
+                                        <span class="authors bold-upper blue">
+                                            <a href="/profile/Gconverse/?ref=ftsidebar">Grace Converse</a> 
+                                        </span>
+                                    
+                                
+                            on Aug 20th, 2014</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-body ">
+                    <div class="sidebar-post">
+                        
+                        <div class = "post-image">
+                            <a class="bold" href="/editorial/2014/aug/14/containers?ref=ftsidebar">
+			      
+                                <img src="http://media.rhizome.org/blog/9308/Allan-Sekula.jpg.100x80_q95_crop.jpg">
+                            </a>
+                        </div>
+                        <div class="sidebar-post-title ">
+                            <a class = "bold" href="/editorial/2014/aug/14/containers?ref=ftsidebar">Containers</a>                                   
+                        </div>
+                        
+                        <div class="sidebar-post-info ">
+                            <span class="descriptor">by 
+                                
+                                    
+                                        <span class="authors bold-upper blue">
+                                            <a href="/profile/interdome/?ref=ftsidebar">Adam Rothstein</a> 
+                                        </span>
+                                    
+                                
+                            on Aug 14th, 2014</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+      
+
+<div id ="sidebar">
+
+     <div class="sidebar-element ">
+        <div class="section-title"><a href="/announce/jobs/">Rhizome Jobs Board</a></div>
+        <div class="content-wrap ">
+            <div class="content ">
+                
+                
+                <div class="content-body  ">
+                    <div class="deadline ">
+                        
+                        <div class="announce-title-no-image">
+                            <a class = "bold" href="/announce/jobs/57350/view/">Assistant Professor- Graphic Design</a>                                   
+                        </div>                  
+                        
+
+                        <div class="announce-user">
+                            <span class="descriptor">Posted by</span> <a class = "bold" href="/profile/stephanierothenberg1/">Stephanie Rothenberg</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-body  ">
+                    <div class="deadline ">
+                        
+                        <div class="announce-title-no-image">
+                            <a class = "bold" href="/announce/jobs/57339/view/">Extended Media-Faculty Position</a>                                   
+                        </div>                  
+                        
+
+                        <div class="announce-user">
+                            <span class="descriptor">Posted by</span> <a class = "bold" href="/profile/bardc/">bardc</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-body  ">
+                    <div class="deadline ">
+                        
+                        <div class="announce-title-no-image">
+                            <a class = "bold" href="/announce/jobs/57337/view/">Senior Designer</a>                                   
+                        </div>                  
+                        
+
+                        <div class="announce-user">
+                            <span class="descriptor">Posted by</span> <a class = "bold" href="/profile/MCA_Chicago/">Design, Publishing &amp; New Media</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-body  ">
+                    <div class="deadline ">
+                        
+                        <div class="announce-title-no-image">
+                            <a class = "bold" href="/announce/jobs/57342/view/">Visual Technologist</a>                                   
+                        </div>                  
+                        
+
+                        <div class="announce-user">
+                            <span class="descriptor">Posted by</span> <a class = "bold" href="/profile/ajsaab/">ajsaab</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="sidebar-element">
+        <div class="section-title"><a href="/discuss">Active Discussions</a></div>
+        <div class="content-wrap">
+            <div class="content">
+                
+                
+                <div class="content-body">
+                    <div class="comment">
+                        <div class="comment-title">
+                        
+                        
+                            <a  href="/editorial/2014/aug/19/rhizome-today">Rhizome Today                                   
+                            (3 posts)   
+                            </a> 
+                        
+                        </div>
+                        <div class="comment-info right">
+                            <span class="descriptor">
+                                Last comment 1 week, 5 days ago by<br />
+                            </span>
+                            <a class = "bold" href="/profile/michaelconnor3/">                
+                                Michael Connor
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-body">
+                    <div class="comment">
+                        <div class="comment-title">
+                        
+                        
+                            <a class="discuss-title" href = "/discuss/view/208830">A Sense of Place                                   
+                            (1 post)  
+                            </a>                       
+                        
+                        </div>
+                        <div class="comment-info right">
+                            <span class="descriptor">
+                                Last comment 1 week, 5 days ago by<br />
+                            </span>
+                            <a class = "bold" href="/profile/michaelszpakowski/">                
+                                Michael Szpakowski
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-body">
+                    <div class="comment">
+                        <div class="comment-title">
+                        
+                        
+                            <a  href="/editorial/2014/aug/18/rhizome-today">Rhizome Today — 8.18                                   
+                            (2 posts)   
+                            </a> 
+                        
+                        </div>
+                        <div class="comment-info right">
+                            <span class="descriptor">
+                                Last comment 1 week, 6 days ago by<br />
+                            </span>
+                            <a class = "bold" href="/profile/zacharykaplan/">                
+                                Zachary Kaplan
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-body">
+                    <div class="comment">
+                        <div class="comment-title">
+                        
+                        
+                            <a  href="/editorial/2014/aug/15/rhizome-today">Rhizome Today—8.15                                   
+                            (2 posts)   
+                            </a> 
+                        
+                        </div>
+                        <div class="comment-info right">
+                            <span class="descriptor">
+                                Last comment 2 weeks, 1 day ago by<br />
+                            </span>
+                            <a class = "bold" href="/profile/zacharykaplan/">                
+                                Zachary Kaplan
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+     <div class="sidebar-element">
+        <div class="section-title"><a href="/announce/deadlines">Community Deadlines</a></div>
+        <div class="content-wrap">
+            <div class="content">
+                
+                
+                <div class="content-body ">
+                    <div class="deadline">
+                        <div class = "day ">
+                            <div class = "day-month">Aug</div>
+                            <div class = "day-number">31</div>
+                            <div class = "day-title">Sun </div>
+                        </div>
+                        <div class = "deadline-details">
+                            <div class="deadline-title">
+                                <b class="red">Call for Submissions:</b><br />
+                                <a class = "bold" href="/announce/opportunities/60493/view/">TheConceptBank.org</a>
+                            </div>
+                            <div class="deadline-user">
+                                <span class="descriptor">Posted by</span> <a class = "bold" href="/profile/Frans/">Frans Van Lent</a>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                
+                <div class="content-body ">
+                    <div class="deadline">
+                        <div class = "day ">
+                            <div class = "day-month">Aug</div>
+                            <div class = "day-number">31</div>
+                            <div class = "day-title">Sun </div>
+                        </div>
+                        <div class = "deadline-details">
+                            <div class="deadline-title">
+                                <b class="red">Call for Proposals:</b><br />
+                                <a class = "bold" href="/announce/opportunities/60526/view/">Piksel14 - open CALL for PROJECTS</a>
+                            </div>
+                            <div class="deadline-user">
+                                <span class="descriptor">Posted by</span> <a class = "bold" href="/profile/220hex/">220hex</a>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                
+                <div class="content-body ">
+                    <div class="deadline">
+                        <div class = "day ">
+                            <div class = "day-month">Aug</div>
+                            <div class = "day-number">31</div>
+                            <div class = "day-title">Sun </div>
+                        </div>
+                        <div class = "deadline-details">
+                            <div class="deadline-title">
+                                <b class="red">Call for Artists:</b><br />
+                                <a class = "bold" href="/announce/opportunities/60533/view/">Working Artist Org. / $1000 Working Art Grant / Art Purchase Award / Call for Submissions</a>
+                            </div>
+                            <div class="deadline-user">
+                                <span class="descriptor">Posted by</span> <a class = "bold" href="/profile/blzbuba_photography/">blzbuba_photography</a>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                
+                <div class="content-body ">
+                    <div class="deadline">
+                        <div class = "day ">
+                            <div class = "day-month">Aug</div>
+                            <div class = "day-number">31</div>
+                            <div class = "day-title">Sun </div>
+                        </div>
+                        <div class = "deadline-details">
+                            <div class="deadline-title">
+                                <b class="red">Call for Artists:</b><br />
+                                <a class = "bold" href="/announce/opportunities/60531/view/">ArtSlant – Georgia Fee Artist | Writer Residency</a>
+                            </div>
+                            <div class="deadline-user">
+                                <span class="descriptor">Posted by</span> <a class = "bold" href="/profile/joelk/">Joel Kuennen</a>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+     <div class="sidebar-element ">
+        <div class="section-title"><a href="/announce">Community Announcements</a></div>
+        <div class="content-wrap ">
+            <div class="content ">
+                
+                
+                <div class="content-body  ">
+                    <div class="deadline ">
+                        
+                        <div class = "announce-thumbnail ">
+                            <a href="/announce/opportunities/60574/view/">
+			      
+                                <img src="http://media.rhizome.org/announce/images/jobs/artcall2015.jpg.80x80_q95_crop.jpg"></img>
+                            </a>
+                        </div>
+                        <div class="announce-title ">
+                            <b class="red">Call for Artworks:</b>
+                            <a class = "bold" href="/announce/opportunities/60574/view/">SLINGSHOT Festival - Call for Art</a>                                   
+                        </div>
+                        
+
+                        <div class="announce-user">
+                            <span class="descriptor">Posted by</span> <a class = "bold" href="/profile/marty5/">marty5</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-body  ">
+                    <div class="deadline ">
+                        
+                        <div class = "announce-thumbnail ">
+                            <a href="/announce/opportunities/60575/view/">
+			      
+                                <img src="http://media.rhizome.org/announce/images/jobs/techcallimage2015.jpg.80x80_q95_crop.jpg"></img>
+                            </a>
+                        </div>
+                        <div class="announce-title ">
+                            <b class="red">Call for Submissions:</b>
+                            <a class = "bold" href="/announce/opportunities/60575/view/">SLINGSHOT Festival - Data Perceptualization Competition</a>                                   
+                        </div>
+                        
+
+                        <div class="announce-user">
+                            <span class="descriptor">Posted by</span> <a class = "bold" href="/profile/marty5/">marty5</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-body  ">
+                    <div class="deadline ">
+                        
+                        <div class = "announce-thumbnail ">
+                            <a href="/announce/events/60850/view/">
+			      
+                                <img src="http://media.rhizome.org/announce/images/jobs/RaspberryPi2.png.80x80_q95_crop.png"></img>
+                            </a>
+                        </div>
+                        <div class="announce-title ">
+                            <b class="red">Workshop:</b>
+                            <a class = "bold" href="/announce/events/60850/view/">Raspberry Pi for Artists</a>                                   
+                        </div>
+                        
+
+                        <div class="announce-user">
+                            <span class="descriptor">Posted by</span> <a class = "bold" href="/profile/REVERSE/">REVERSE</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-body  ">
+                    <div class="deadline ">
+                        
+                        <div class = "announce-thumbnail ">
+                            <a href="/announce/events/60851/view/">
+			      
+                                <img src="http://media.rhizome.org/announce/images/jobs/ProveItToMeWP3-2.jpg.80x80_q95_crop.jpg"></img>
+                            </a>
+                        </div>
+                        <div class="announce-title ">
+                            <b class="red">Exhibition:</b>
+                            <a class = "bold" href="/announce/events/60851/view/">&quot;Prove it to me&quot; Opening</a>                                   
+                        </div>
+                        
+
+                        <div class="announce-user">
+                            <span class="descriptor">Posted by</span> <a class = "bold" href="/profile/REVERSE/">REVERSE</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+ </div>
+
+      
+<div id ="sidebar">
+ <div class="sidebar-element">
+        <div class="section-title">Editorial Archives</div>
+        <div class="content-wrap">
+            <div class="content">
+            
+                
+                <div class="content-body">
+                    <div class = "archive-row  ">
+                        <div class = "year">
+                            <a class="year-link" href="/editorial/archive/2014">2014</a><br/>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2014/aug/">August</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2014/jul/">July</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2014/jun/">June</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2014/may/">May</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2014/apr/">April</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2014/mar/">March</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2014/feb/">February</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2014/jan/">January</a> 
+                                </span>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-body">
+                    <div class = "archive-row  ">
+                        <div class = "year">
+                            <a class="year-link" href="/editorial/archive/2013">2013</a><br/>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2013/dec/">December</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2013/nov/">November</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2013/oct/">October</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2013/sep/">September</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2013/aug/">August</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2013/jul/">July</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2013/jun/">June</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2013/may/">May</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2013/apr/">April</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2013/mar/">March</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2013/feb/">February</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2013/jan/">January</a> 
+                                </span>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-body">
+                    <div class = "archive-row  ">
+                        <div class = "year">
+                            <a class="year-link" href="/editorial/archive/2012">2012</a><br/>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2012/dec/">December</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2012/nov/">November</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2012/oct/">October</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2012/sep/">September</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2012/aug/">August</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2012/jul/">July</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2012/jun/">June</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2012/may/">May</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2012/apr/">April</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2012/mar/">March</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2012/feb/">February</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2012/jan/">January</a> 
+                                </span>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-body">
+                    <div class = "archive-row  ">
+                        <div class = "year">
+                            <a class="year-link" href="/editorial/archive/2011">2011</a><br/>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2011/dec/">December</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2011/nov/">November</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2011/oct/">October</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2011/sep/">September</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2011/aug/">August</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2011/jul/">July</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2011/jun/">June</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2011/may/">May</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2011/apr/">April</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2011/mar/">March</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2011/feb/">February</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2011/jan/">January</a> 
+                                </span>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-body">
+                    <div class = "archive-row  ">
+                        <div class = "year">
+                            <a class="year-link" href="/editorial/archive/2010">2010</a><br/>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2010/dec/">December</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2010/nov/">November</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2010/oct/">October</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2010/sep/">September</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2010/aug/">August</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2010/jul/">July</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2010/jun/">June</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2010/may/">May</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2010/apr/">April</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2010/mar/">March</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2010/feb/">February</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2010/jan/">January</a> 
+                                </span>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-body">
+                    <div class = "archive-row  ">
+                        <div class = "year">
+                            <a class="year-link" href="/editorial/archive/2009">2009</a><br/>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2009/dec/">December</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2009/nov/">November</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2009/oct/">October</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2009/sep/">September</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2009/aug/">August</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2009/jul/">July</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2009/jun/">June</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2009/may/">May</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2009/apr/">April</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2009/mar/">March</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2009/feb/">February</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2009/jan/">January</a> 
+                                </span>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-body">
+                    <div class = "archive-row  ">
+                        <div class = "year">
+                            <a class="year-link" href="/editorial/archive/2008">2008</a><br/>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2008/dec/">December</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2008/nov/">November</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2008/oct/">October</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2008/sep/">September</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2008/aug/">August</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2008/jul/">July</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2008/jun/">June</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2008/may/">May</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2008/apr/">April</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2008/mar/">March</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2008/feb/">February</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2008/jan/">January</a> 
+                                </span>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-body">
+                    <div class = "archive-row  ">
+                        <div class = "year">
+                            <a class="year-link" href="/editorial/archive/2007">2007</a><br/>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2007/dec/">December</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2007/nov/">November</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2007/oct/">October</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2007/sep/">September</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2007/aug/">August</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2007/jul/">July</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2007/jun/">June</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2007/may/">May</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2007/apr/">April</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2007/mar/">March</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2007/feb/">February</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2007/jan/">January</a> 
+                                </span>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-body">
+                    <div class = "archive-row  ">
+                        <div class = "year">
+                            <a class="year-link" href="/editorial/archive/2006">2006</a><br/>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2006/dec/">December</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2006/nov/">November</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2006/oct/">October</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2006/sep/">September</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2006/aug/">August</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2006/jul/">July</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2006/jun/">June</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2006/may/">May</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2006/apr/">April</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2006/mar/">March</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2006/feb/">February</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2006/jan/">January</a> 
+                                </span>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-body">
+                    <div class = "archive-row  ">
+                        <div class = "year">
+                            <a class="year-link" href="/editorial/archive/2005">2005</a><br/>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2005/dec/">December</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2005/nov/">November</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2005/oct/">October</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2005/sep/">September</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2005/aug/">August</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2005/jul/">July</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2005/jun/">June</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2005/may/">May</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2005/apr/">April</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2005/mar/">March</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2005/feb/">February</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2005/jan/">January</a> 
+                                </span>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-body">
+                    <div class = "archive-row  ">
+                        <div class = "year">
+                            <a class="year-link" href="/editorial/archive/2004">2004</a><br/>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2004/dec/">December</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2004/nov/">November</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2004/oct/">October</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2004/sep/">September</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2004/aug/">August</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2004/jul/">July</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2004/jun/">June</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2004/may/">May</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2004/apr/">April</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2004/mar/">March</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2004/feb/">February</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2004/jan/">January</a> 
+                                </span>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-body">
+                    <div class = "archive-row  ">
+                        <div class = "year">
+                            <a class="year-link" href="/editorial/archive/2003">2003</a><br/>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2003/dec/">December</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2003/nov/">November</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2003/oct/">October</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2003/sep/">September</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2003/aug/">August</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2003/jul/">July</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2003/jun/">June</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2003/may/">May</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2003/apr/">April</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2003/mar/">March</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2003/feb/">February</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2003/jan/">January</a> 
+                                </span>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-body">
+                    <div class = "archive-row  ">
+                        <div class = "year">
+                            <a class="year-link" href="/editorial/archive/2002">2002</a><br/>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2002/dec/">December</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2002/nov/">November</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2002/oct/">October</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2002/sep/">September</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2002/aug/">August</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2002/jul/">July</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2002/jun/">June</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2002/may/">May</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2002/apr/">April</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2002/mar/">March</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2002/feb/">February</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2002/jan/">January</a> 
+                                </span>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-body">
+                    <div class = "archive-row  last  ">
+                        <div class = "year">
+                            <a class="year-link" href="/editorial/archive/2001">2001</a><br/>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2001/dec/">December</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2001/nov/">November</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2001/oct/">October</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2001/sep/">September</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2001/aug/">August</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2001/jul/">July</a>, 
+                                </span>
+                            
+                               <span class="month">
+                                    <a href="/editorial/archive/2001/jun/">June</a> 
+                                </span>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+            </div>   
+        </div> 
+    </div>
+</div>
+    </div>
+</div>
+
+        </div>
+        
+        <div id="preload"></div>
+
+
+
+        <!-- Quantcast Tag, part 2 -->
+        <script type="text/javascript">
+            _qevents.push( { qacct:"p-1bU5CKetpvMBI", labels:"artmedia" } );
+        </script>
+        <noscript>
+            <div style="display: none;">
+                <img src="//pixel.quantserve.com/pixel/p-1bU5CKetpvMBI.gif?labels=artmedia" height="1" width="1" alt="Quantcast"/>
+            </div>
+        </noscript>
+
+        
+        
+
+        <script>
+        jQuery.noConflict();
+        (function($) {
+            $(function() {
+                $('.share-btn-cover').click(function() {
+                    $(this).hide();
+                    $(this).siblings('.share-btn').css({'display': 'inline-block'});
+                    return false;
+                });
+            });
+        })(jQuery);
+        </script>
+        <script type="text/javascript" src="/static/js/new_navbars.js"></script>
+        
+
+        
+            <script type="text/javascript">
+                var z=document.createElement("script");
+                z.type="text/javascript";
+                z.async=true;
+                z.src="//engine.nectarads.com/z/12843/azk1_2_43,azk2_2_16,azk3_2_16,azk4_2_16,azk5_2_16";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(z, s);
+            </script>
+        
+
+
+
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-768502-1', 'rhizome.org');
+          ga('send', 'pageview');
+
+        </script>
+    
+        <script type="text/javascript">
+            (function() {
+            var src = document.createElement('script'); 
+            src.async = true;
+            src.src = document.location.protocol + '//platform.twitter.com/widgets.js';
+            document.getElementsByTagName('head')[0].appendChild(src);
+            }());                        
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+            po.src = 'https://apis.google.com/js/plusone.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+          })();
+        </script>
+        
+        <script type="text/javascript">
+            var _sf_async_config={uid:26954,domain:"rhizome.org"};
+            (function(){
+              function loadChartbeat() {
+                window._sf_endpt=(new Date()).getTime();
+                var e = document.createElement('script');
+                e.setAttribute('language', 'javascript');
+                e.setAttribute('type', 'text/javascript');
+                e.setAttribute('src',
+                   (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+                   "js/chartbeat.js");
+                document.body.appendChild(e);
+              }
+              var oldonload = window.onload;
+              window.onload = (typeof window.onload != 'function') ?
+                 loadChartbeat : function() { oldonload(); loadChartbeat(); };
+            })();
+        </script>        
+    </body>
+</html>

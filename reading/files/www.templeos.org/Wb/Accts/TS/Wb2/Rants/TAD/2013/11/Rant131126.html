@@ -1,0 +1,2664 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=US-ASCII">
+<title>The Temple Operating System</title>
+<meta name="keywords" content="Operating System,64-Bit,64 Bit,Temple,OS,TempleOS,Free,Open Source,Public Domain,x86_64">
+<meta name="generator" content="TempleOS V2.06">
+<style type="text/css">
+.cF0{color:#000000;background-color:#fcfcfc;}
+.cF1{color:#0000a8;background-color:#fcfcfc;}
+.cF2{color:#00a800;background-color:#fcfcfc;}
+.cF3{color:#00a8a8;background-color:#fcfcfc;}
+.cF4{color:#a80000;background-color:#fcfcfc;}
+.cF5{color:#a800a8;background-color:#fcfcfc;}
+.cF6{color:#a85400;background-color:#fcfcfc;}
+.cF7{color:#a8a8a8;background-color:#fcfcfc;}
+.cF8{color:#545454;background-color:#fcfcfc;}
+.cF9{color:#5454fc;background-color:#fcfcfc;}
+.cFA{color:#54fc54;background-color:#fcfcfc;}
+.cFB{color:#54fcfc;background-color:#fcfcfc;}
+.cFC{color:#fc5454;background-color:#fcfcfc;}
+.cFD{color:#fc54fc;background-color:#fcfcfc;}
+.cFE{color:#fcfc54;background-color:#fcfcfc;}
+.cFF{color:#fcfcfc;background-color:#fcfcfc;}
+</style>
+</head>
+<body>
+<pre style="font-family:courier;font-size:10pt">
+<a name="l1"></a><span class=cF0>----11/26/13 00:15:41----
+<a name="l2"></a>
+<a name="l3"></a>I made a Tank wargame.  To me, it's as abstract and innocent as chess.  I'm 
+<a name="l4"></a>laughing, listening to a story on the BBC about Unkrane siding with Russia or 
+<a name="l5"></a>Europe.  It's like worrying about black/white race relations in games of chess.
+<a name="l6"></a>
+<a name="l7"></a>Maybe, God wants me to take it out of His temple? :-(
+<a name="l8"></a>
+<a name="l9"></a>God says...
+<a name="l10"></a></span><span class=cF4>into judgment with thee?  14:4 Who can bring a clean thing out of an
+<a name="l11"></a>unclean? not one.
+<a name="l12"></a>
+<a name="l13"></a>14:5 Seeing his days are determined, the number of his months are with
+<a name="l14"></a>thee, thou hast appointed his bounds that he cannot pass; 14:6 Turn
+<a name="l15"></a>from him, that he may rest, till he shall accomplish, as an hireling,
+<a name="l16"></a>his day.
+<a name="l17"></a>
+<a name="l18"></a>14:7 For there is hope of a tree, if it be cut down, that it will
+<a name="l19"></a>sprout again, and that the tender branch thereof will not cease.
+<a name="l20"></a>
+<a name="l21"></a>14:8 Though the root thereof wax old in the earth, and the stock
+<a name="l22"></a>thereof die in the ground; 14:9 Yet through the scent of water it will
+<a name="l23"></a>bud, and bring forth boughs like a plant.
+<a name="l24"></a>
+<a name="l25"></a>14:10 But man dieth, and wasteth away: yea, man giveth up the ghost,
+<a name="l26"></a>and where is he?  14:11 As the waters fail from the sea, and the flood
+<a name="l27"></a>decayeth and drieth up: 14:12 So man lieth down, and riseth not: till
+<a name="l28"></a>the heavens be no more, they shall not awake, nor be raised out of
+<a name="l29"></a>their sleep.</span><span class=cF0>
+<a name="l30"></a>
+<a name="l31"></a>Some day, maybe, I'll hire somebody to fix the tank game.  That sounds like a 
+<a name="l32"></a>nice job to have.
+<a name="l33"></a>
+<a name="l34"></a>Ohh!  That was about chess game trees!
+<a name="l35"></a>
+<a name="l36"></a>----11/26/13 01:30:51----
+<a name="l37"></a>
+<a name="l38"></a>LOL -- I was just reminded of newbie fears.
+<a name="l39"></a>
+<a name="l40"></a></span><a href="http://www.youtube.com/watch?v=sVVorvXojhE"><span class=cF0>Have a baby elephant.</span></a><span class=cF0>
+<a name="l41"></a>
+<a name="l42"></a>How's this for proof of God?  Fish and birds have bright, beautiful colors 
+<a name="l43"></a>instead of camouflage.  My other proof is that we have seven sources of 
+<a name="l44"></a>electricity, all economic at the same time: nuclear, hydro, gas, coal, oil, 
+<a name="l45"></a>solar and wind and geothermal.
+<a name="l46"></a>
+<a name="l47"></a>God says...
+<a name="l48"></a></span><span class=cF4>24:3 And David distributed them, both Zadok of the sons of Eleazar,
+<a name="l49"></a>and Ahimelech of the sons of Ithamar, according to their offices in
+<a name="l50"></a>their service.
+<a name="l51"></a>
+<a name="l52"></a>24:4 And there were more chief men found of the sons of Eleazar than
+<a name="l53"></a>of the sons of Ithamar, and thus were they divided. Among the sons of
+<a name="l54"></a>Eleazar there were sixteen chief men of the house of their fathers,
+<a name="l55"></a>and eight among the sons of Ithamar according to the house of their
+<a name="l56"></a>fathers.
+<a name="l57"></a>
+<a name="l58"></a>24:5 Thus were they divided by lot, one sort with another; for the
+<a name="l59"></a>governors of the sanctuary, and governors of the house of God, were of
+<a name="l60"></a>the sons of Eleazar, and of the sons of Ithamar.
+<a name="l61"></a>
+<a name="l62"></a>24:6 And Shemaiah the son of Nethaneel the scribe, one of the Levites,
+<a name="l63"></a>wrote them before the king, and the princes, and Zadok the priest, and
+<a name="l64"></a>Ahimelech the son of Abiathar, and before the chief of the fathers of
+<a name="l65"></a>the priests and Levites: one principal household being taken for
+<a name="l66"></a>Eleazar, and one taken for Ithamar.
+<a name="l67"></a>
+<a name="l68"></a></span><span class=cF2>Dud.</span><span class=cF0>
+<a name="l69"></a>
+<a name="l70"></a>----11/26/13 01:47:34----
+<a name="l71"></a>
+<a name="l72"></a>BBC had a Bangladesh factory worker.
+<a name="l73"></a>
+<a name="l74"></a>God says...
+<a name="l75"></a></span><span class=cF4>6:65 And they gave by lot out of the tribe of the children of Judah,
+<a name="l76"></a>and out of the tribe of the children of Simeon, and out of the tribe
+<a name="l77"></a>of the children of Benjamin, these cities, which are called by their
+<a name="l78"></a>names.
+<a name="l79"></a>
+<a name="l80"></a>6:66 And the residue of the families of the sons of Kohath had cities
+<a name="l81"></a>of their coasts out of the tribe of Ephraim.
+<a name="l82"></a>
+<a name="l83"></a>6:67 And they gave unto them, of the cities of refuge, Shechem in
+<a name="l84"></a>mount Ephraim with her suburbs; they gave also Gezer with her suburbs,
+<a name="l85"></a>6:68 And Jokmeam with her suburbs, and Bethhoron with her suburbs,
+<a name="l86"></a>6:69 And Aijalon with her suburbs, and Gathrimmon with her suburbs:
+<a name="l87"></a>6:70 And out of the half tribe of Manasseh; Aner with her suburbs, and
+<a name="l88"></a>Bileam with her suburbs, for the family of the remnant of the sons of
+<a name="l89"></a>Kohath.
+<a name="l90"></a>
+<a name="l91"></a>6:71 Unto the sons of Gershom were given out of the family of the half
+<a name="l92"></a>tribe of Manasseh, Golan in Bashan with her suburbs, and Ashtaroth
+<a name="l93"></a>with her suburbs: 6:72 And out of the tribe of Issachar; Kedesh with
+<a name="l94"></a>her suburbs, Daberath with her suburbs, 6:73 And Ramoth with her
+<a name="l95"></a>
+<a name="l96"></a></span><span class=cF2>Simian?  Jokmean.</span><span class=cF0>
+<a name="l97"></a>
+<a name="l98"></a>God says...
+<a name="l99"></a></span><span class=cF4>righteousness ranged utterly thinking sought lustful parents heavier modes 
+<a name="l100"></a>overcharged compendiously disallowing stead depth</span><span class=cF0>
+<a name="l101"></a>
+<a name="l102"></a>----11/26/13 02:00:35----
+<a name="l103"></a>
+<a name="l104"></a>BBC
+<a name="l105"></a>
+<a name="l106"></a>What do You think of Chairman Mao, God?
+<a name="l107"></a>
+<a name="l108"></a>God says...
+<a name="l109"></a></span><span class=cF4>weeping and wailing, saying, Alas, alas that great city, wherein were
+<a name="l110"></a>made rich all that had ships in the sea by reason of her costliness!
+<a name="l111"></a>for in one hour is she made desolate.
+<a name="l112"></a>
+<a name="l113"></a>18:20 Rejoice over her, thou heaven, and ye holy apostles and
+<a name="l114"></a>prophets; for God hath avenged you on her.
+<a name="l115"></a>
+<a name="l116"></a>18:21 And a mighty angel took up a stone like a great millstone, and
+<a name="l117"></a>cast it into the sea, saying, Thus with violence shall that great city
+<a name="l118"></a>Babylon be thrown down, and shall be found no more at all.
+<a name="l119"></a>
+<a name="l120"></a>18:22 And the voice of harpers, and musicians, and of pipers, and
+<a name="l121"></a>trumpeters, shall be heard no more at all in thee; and no craftsman,
+<a name="l122"></a>of whatsoever craft he be, shall be found any more in thee; and the
+<a name="l123"></a>sound of a millstone shall be heard no more at all in thee; 18:23 And
+<a name="l124"></a>the light of a candle shall shine no more at all in thee; and the
+<a name="l125"></a>voice of the bridegroom and of the bride shall be heard no more at all
+<a name="l126"></a>in thee: for thy merchants were the great men of the earth; for by thy
+<a name="l127"></a>sorceries were all nations deceived.
+<a name="l128"></a>
+<a name="l129"></a></span><span class=cF0>LOL? eh?  Berp.  Just enjoy God as entertainment.  I wuv God.
+<a name="l130"></a>
+<a name="l131"></a>----11/26/13 02:06:21----
+<a name="l132"></a>
+<a name="l133"></a>BBC: China is doing a lunar probe.  That sounds cool.  Be nice, God, LOL.
+<a name="l134"></a>
+<a name="l135"></a>God says...
+<a name="l136"></a></span><span class=cF4>their divisions.
+<a name="l137"></a>
+<a name="l138"></a>18:11 And the lot of the tribe of the children of Benjamin came up
+<a name="l139"></a>according to their families: and the coast of their lot came forth
+<a name="l140"></a>between the children of Judah and the children of Joseph.
+<a name="l141"></a>
+<a name="l142"></a>18:12 And their border on the north side was from Jordan; and the
+<a name="l143"></a>border went up to the side of Jericho on the north side, and went up
+<a name="l144"></a>through the mountains westward; and the goings out thereof were at the
+<a name="l145"></a>wilderness of Bethaven.
+<a name="l146"></a>
+<a name="l147"></a>18:13 And the border went over from thence toward Luz, to the side of
+<a name="l148"></a>Luz, which is Bethel, southward; and the border descended to
+<a name="l149"></a>Atarothadar, near the hill that lieth on the south side of the nether
+<a name="l150"></a>Bethhoron.
+<a name="l151"></a>
+<a name="l152"></a>18:14 And the border was drawn thence, and compassed the corner of the
+<a name="l153"></a>sea southward, from the hill that lieth before Bethhoron southward;
+<a name="l154"></a>and the goings out thereof were at Kirjathbaal, which is
+<a name="l155"></a>Kirjathjearim, a city of the children of Judah: this was the west
+<a name="l156"></a>
+<a name="l157"></a></span><span class=cF2>Lulz.  Descend Atari... the Lunar Landar game!</span><span class=cF0>
+<a name="l158"></a>
+<a name="l159"></a>God says...
+<a name="l160"></a></span><span class=cF4>reposed Her ghastly findest tie refreshment owed hearer patience accursed 
+<a name="l161"></a>correspondence diseases rulest famished vocally beget OTHER united files 
+<a name="l162"></a>shameless participation hallowing palaces relations pierced instructor parity 
+<a name="l163"></a>sparks counselled indite heightening unkindness govemed Guide lawless infants 
+<a name="l164"></a>unshaken instability imitate safe fumes Fathers cleared Carolina indigent 
+<a name="l165"></a>instruct perverse commended nor looks</span><span class=cF0>
+<a name="l166"></a>
+<a name="l167"></a>----11/26/13 02:17:48----
+<a name="l168"></a>
+<a name="l169"></a>BBC talking about Ukrane...
+<a name="l170"></a>
+<a name="l171"></a>I like the onion-shaped Kremlin towers.  Their colors have a certain innocense 
+<a name="l172"></a>to them.  They are just like the nesting dolls.  They are children of the light, 
+<a name="l173"></a>not darkness.
+<a name="l174"></a>
+<a name="l175"></a>God says...
+<a name="l176"></a></span><span class=cF4>shalt thou gather any gleaning of thy harvest: thou shalt leave them
+<a name="l177"></a>unto the poor, and to the stranger: I am the LORD your God.
+<a name="l178"></a>
+<a name="l179"></a>23:23 And the LORD spake unto Moses, saying, 23:24 Speak unto the
+<a name="l180"></a>children of Israel, saying, In the seventh month, in the first day of
+<a name="l181"></a>the month, shall ye have a sabbath, a memorial of blowing of trumpets,
+<a name="l182"></a>an holy convocation.
+<a name="l183"></a>
+<a name="l184"></a>23:25 Ye shall do no servile work therein: but ye shall offer an
+<a name="l185"></a>offering made by fire unto the LORD.
+<a name="l186"></a>
+<a name="l187"></a>23:26 And the LORD spake unto Moses, saying, 23:27 Also on the tenth
+<a name="l188"></a>day of this seventh month there shall be a day of atonement: it shall
+<a name="l189"></a>be an holy convocation unto you; and ye shall afflict your souls, and
+<a name="l190"></a>offer an offering made by fire unto the LORD.
+<a name="l191"></a>
+<a name="l192"></a>23:28 And ye shall do no work in that same day: for it is a day of
+<a name="l193"></a>atonement, to make an atonement for you before the LORD your God.
+<a name="l194"></a>
+<a name="l195"></a>23:29 For whatsoever soul it be that shall not be afflicted in that</span><span class=cF0>
+<a name="l196"></a>
+<a name="l197"></a>I would afflict my soul by thinking of dark things I shamefully like.
+<a name="l198"></a>
+<a name="l199"></a>Wait a minute! God! You go aflict Yer soul.
+<a name="l200"></a>
+<a name="l201"></a>God says...
+<a name="l202"></a></span><span class=cF4>insultingly liftedst gracious derive Wordly therein stuff mean trying secure 
+<a name="l203"></a>belonging Ver overhastily talents Evangelists driven Stand acquaintance 
+<a name="l204"></a>villainies not contented cleansed reading picture sharply displacing envy stores 
+<a name="l205"></a>Louisiana villa falsehood commit supereminence</span><span class=cF0>
+<a name="l206"></a>
+<a name="l207"></a>----11/26/13 02:32:31----
+<a name="l208"></a>
+<a name="l209"></a>I have done find-and-replace operations on my operating system countless times.  
+<a name="l210"></a>One time, I abbreviated &quot;List&quot; with &quot;Lst&quot;.  I thought it might be okay if it 
+<a name="l211"></a>changed even documentation occurrences.
+<a name="l212"></a>
+<a name="l213"></a>You will find &quot;Memory&quot; abbreviated &quot;Mem&quot; in both code and documentation.  I 
+<a name="l214"></a>sometimes change them back to normal when I find them in documentation a newbie 
+<a name="l215"></a>might stumble upon.
+<a name="l216"></a>
+<a name="l217"></a>I feel slightly corny, but there is a list of </span><a href="../../../../../../../Doc/Glossary.html#l1"><span class=cF4>abbreviations</span></a><span class=cF0>.
+<a name="l218"></a>
+<a name="l219"></a>God says...
+<a name="l220"></a></span><span class=cF4>29:22 Also thou shalt take of the ram the fat and the rump, and the
+<a name="l221"></a>fat that covereth the inwards, and the caul above the liver, and the
+<a name="l222"></a>two kidneys, and the fat that is upon them, and the right shoulder;
+<a name="l223"></a>for it is a ram of consecration: 29:23 And one loaf of bread, and one
+<a name="l224"></a>cake of oiled bread, and one wafer out of the basket of the unleavened
+<a name="l225"></a>bread that is before the LORD: 29:24 And thou shalt put all in the
+<a name="l226"></a>hands of Aaron, and in the hands of his sons; and shalt wave them for
+<a name="l227"></a>a wave offering before the LORD.
+<a name="l228"></a>
+<a name="l229"></a>29:25 And thou shalt receive them of their hands, and burn them upon
+<a name="l230"></a>the altar for a burnt offering, for a sweet savour before the LORD: it
+<a name="l231"></a>is an offering made by fire unto the LORD.
+<a name="l232"></a>
+<a name="l233"></a>29:26 And thou shalt take the breast of the ram of Aaron's
+<a name="l234"></a>consecration, and wave it for a wave offering before the LORD: and it
+<a name="l235"></a>shall be thy part.
+<a name="l236"></a>
+<a name="l237"></a>29:27 And thou shalt sanctify the breast of the wave offering, and the
+<a name="l238"></a>shoulder of the heave offering, which is waved, and which is heaved</span><span class=cF0>
+<a name="l239"></a>
+<a name="l240"></a>It saves RAM using abbreviations.  &quot;RAM&quot; is an abbreviation (acronym) I know so 
+<a name="l241"></a>well I forget.
+<a name="l242"></a>
+<a name="l243"></a>I better not get started using acronyms, LOL.  The military is famous for 
+<a name="l244"></a>acronyms.  They seem corny, sometimes.
+<a name="l245"></a>
+<a name="l246"></a>----11/26/13 03:33:02----
+<a name="l247"></a>
+<a name="l248"></a>Do You know any cool trig identities, God?  What's Your favorite math identity?
+<a name="l249"></a>
+<a name="l250"></a>God says...
+<a name="l251"></a></span><span class=cF4>16:5 And it shall come to pass, that on the sixth day they shall
+<a name="l252"></a>prepare that which they bring in; and it shall be twice as much as
+<a name="l253"></a>they gather daily.
+<a name="l254"></a>
+<a name="l255"></a>16:6 And Moses and Aaron said unto all the children of Israel, At
+<a name="l256"></a>even, then ye shall know that the LORD hath brought you out from the
+<a name="l257"></a>land of Egypt: 16:7 And in the morning, then ye shall see the glory of
+<a name="l258"></a>the LORD; for that he heareth your murmurings against the LORD: and
+<a name="l259"></a>what are we, that ye murmur against us?  16:8 And Moses said, This
+<a name="l260"></a>shall be, when the LORD shall give you in the evening flesh to eat,
+<a name="l261"></a>and in the morning bread to the full; for that the LORD heareth your
+<a name="l262"></a>murmurings which ye murmur against him: and what are we? your
+<a name="l263"></a>murmurings are not against us, but against the LORD.
+<a name="l264"></a>
+<a name="l265"></a>16:9 And Moses spake unto Aaron, Say unto all the congregation of the
+<a name="l266"></a>children of Israel, Come near before the LORD: for he hath heard your
+<a name="l267"></a>murmurings.
+<a name="l268"></a>
+<a name="l269"></a>16:10 And it came to pass, as Aaron spake unto the whole congregation</span><span class=cF0>
+<a name="l270"></a>
+<a name="l271"></a>I wuv You, God.  :-)
+<a name="l272"></a>
+<a name="l273"></a>He kinda said a 6th would be twice as much and even functions.  (It has a wiff 
+<a name="l274"></a>of mathiness to it.)
+<a name="l275"></a>
+<a name="l276"></a>We just enjoy God's presense.
+<a name="l277"></a>
+<a name="l278"></a>Everybody tell God a joke!
+<a name="l279"></a>
+<a name="l280"></a></span><span class=cF1>---- </span><a href="../../../../../../../Apps/AfterEgypt/Comics.1.html"><span class=cF1>Moses Comic</span></a><span class=cF1> ----
+<a name="l281"></a>
+<a name="l282"></a>Moses says, &quot;An astrologer says we should have two Moons, but You destroyed it.&quot;
+<a name="l283"></a>
+<a name="l284"></a>God says, &quot;Wha?  I part the sea and all the kooks have come out.  We're never 
+<a name="l285"></a>going to hear the end of this!&quot;</span><span class=cF0>
+<a name="l286"></a>
+<a name="l287"></a>God says...
+<a name="l288"></a></span><span class=cF4>17:4 And if he trespass against thee seven times in a day, and seven
+<a name="l289"></a>times in a day turn again to thee, saying, I repent; thou shalt
+<a name="l290"></a>forgive him.
+<a name="l291"></a>
+<a name="l292"></a>17:5 And the apostles said unto the Lord, Increase our faith.
+<a name="l293"></a>
+<a name="l294"></a>17:6 And the Lord said, If ye had faith as a grain of mustard seed, ye
+<a name="l295"></a>might say unto this sycamine tree, Be thou plucked up by the root, and
+<a name="l296"></a>be thou planted in the sea; and it should obey you.
+<a name="l297"></a>
+<a name="l298"></a>17:7 But which of you, having a servant plowing or feeding cattle,
+<a name="l299"></a>will say unto him by and by, when he is come from the field, Go and
+<a name="l300"></a>sit down to meat?  17:8 And will not rather say unto him, Make ready
+<a name="l301"></a>wherewith I may sup, and gird thyself, and serve me, till I have eaten
+<a name="l302"></a>and drunken; and afterward thou shalt eat and drink?  17:9 Doth he
+<a name="l303"></a>thank that servant because he did the things that were commanded him?
+<a name="l304"></a>I trow not.
+<a name="l305"></a>
+<a name="l306"></a>17:10 So likewise ye, when ye shall have done all those things which</span><span class=cF0>
+<a name="l307"></a>
+<a name="l308"></a>Tracter beam, LOL.
+<a name="l309"></a>
+<a name="l310"></a>----11/26/13 03:52:34----
+<a name="l311"></a>
+<a name="l312"></a>You like BMW, huh.  Prolly joking.
+<a name="l313"></a>
+<a name="l314"></a>I was born in Milwalkee.  You should like Harley Davidson, God.
+<a name="l315"></a>
+<a name="l316"></a>I don't know why, but I'm convinced I'd get in a wreck if I rode a motorcycle.
+<a name="l317"></a>
+<a name="l318"></a>You think Jesus would ride a motorcycle, God?
+<a name="l319"></a>
+<a name="l320"></a>God says...
+<a name="l321"></a></span><span class=cF4>21:34 And Abraham sojourned in the Philistines' land many days.
+<a name="l322"></a>
+<a name="l323"></a>22:1 And it came to pass after these things, that God did tempt
+<a name="l324"></a>Abraham, and said unto him, Abraham: and he said, Behold, here I am.
+<a name="l325"></a>
+<a name="l326"></a>22:2 And he said, Take now thy son, thine only son Isaac, whom thou
+<a name="l327"></a>lovest, and get thee into the land of Moriah; and offer him there for
+<a name="l328"></a>a burnt offering upon one of the mountains which I will tell thee of.
+<a name="l329"></a>
+<a name="l330"></a>22:3 And Abraham rose up early in the morning, and saddled his ass,
+<a name="l331"></a>and took two of his young men with him, and Isaac his son, and clave
+<a name="l332"></a>the wood for the burnt offering, and rose up, and went unto the place
+<a name="l333"></a>of which God had told him.
+<a name="l334"></a>
+<a name="l335"></a>22:4 Then on the third day Abraham lifted up his eyes, and saw the
+<a name="l336"></a>place afar off.
+<a name="l337"></a>
+<a name="l338"></a>22:5 And Abraham said unto his young men, Abide ye here with the ass;
+<a name="l339"></a>and I and the lad will go yonder and worship, and come again to you.
+<a name="l340"></a>
+<a name="l341"></a></span><span class=cF2>(Enjoying God's company is like... wanting to have sex with a woman, but mostly 
+<a name="l342"></a>being happy having conversation.)</span><span class=cF0>
+<a name="l343"></a>
+<a name="l344"></a>God says...
+<a name="l345"></a></span><span class=cF4>leave languages depths</span><span class=cF0>
+<a name="l346"></a></span><span class=cF2>
+<a name="l347"></a>Get out!</span><span class=cF0>
+<a name="l348"></a>
+<a name="l349"></a>They think You're going set down the law on abortion and gays and world hunger 
+<a name="l350"></a>and cure for cancer and war and all that.
+<a name="l351"></a>
+<a name="l352"></a>God says...
+<a name="l353"></a></span><span class=cF4>eyes have seen how that the LORD had delivered thee to day into mine
+<a name="l354"></a>hand in the cave: and some bade me kill thee: but mine eye spared
+<a name="l355"></a>thee; and I said, I will not put forth mine hand against my lord; for
+<a name="l356"></a>he is the LORD's anointed.
+<a name="l357"></a>
+<a name="l358"></a>24:11 Moreover, my father, see, yea, see the skirt of thy robe in my
+<a name="l359"></a>hand: for in that I cut off the skirt of thy robe, and killed thee
+<a name="l360"></a>not, know thou and see that there is neither evil nor transgression in
+<a name="l361"></a>mine hand, and I have not sinned against thee; yet thou huntest my
+<a name="l362"></a>soul to take it.
+<a name="l363"></a>
+<a name="l364"></a>24:12 The LORD judge between me and thee, and the LORD avenge me of
+<a name="l365"></a>thee: but mine hand shall not be upon thee.
+<a name="l366"></a>
+<a name="l367"></a>24:13 As saith the proverb of the ancients, Wickedness proceedeth from
+<a name="l368"></a>the wicked: but mine hand shall not be upon thee.
+<a name="l369"></a>
+<a name="l370"></a>24:14 After whom is the king of Israel come out? after whom dost thou
+<a name="l371"></a>pursue? after a dead dog, after a flea.</span><span class=cF0>
+<a name="l372"></a>
+<a name="l373"></a>----11/26/13 04:18:41----
+<a name="l374"></a>
+<a name="l375"></a>How come elephants get big in 5 years, but not humans?  They must like eating!
+<a name="l376"></a>
+<a name="l377"></a>God says...
+<a name="l378"></a></span><span class=cF4>mother's brother.
+<a name="l379"></a>
+<a name="l380"></a>28:3 And God Almighty bless thee, and make thee fruitful, and multiply
+<a name="l381"></a>thee, that thou mayest be a multitude of people; 28:4 And give thee
+<a name="l382"></a>the blessing of Abraham, to thee, and to thy seed with thee; that thou
+<a name="l383"></a>mayest inherit the land wherein thou art a stranger, which God gave
+<a name="l384"></a>unto Abraham.
+<a name="l385"></a>
+<a name="l386"></a>28:5 And Isaac sent away Jacob: and he went to Padanaram unto Laban,
+<a name="l387"></a>son of Bethuel the Syrian, the brother of Rebekah, Jacob's and Esau's
+<a name="l388"></a>mother.
+<a name="l389"></a>
+<a name="l390"></a>28:6 When Esau saw that Isaac had blessed Jacob, and sent him away to
+<a name="l391"></a>Padanaram, to take him a wife from thence; and that as he blessed him
+<a name="l392"></a>he gave him a charge, saying, Thou shalt not take a wife of the
+<a name="l393"></a>daughers of Canaan; 28:7 And that Jacob obeyed his father and his
+<a name="l394"></a>mother, and was gone to Padanaram; 28:8 And Esau seeing that the
+<a name="l395"></a>daughters of Canaan pleased not Isaac his father; 28:9 Then went Esau
+<a name="l396"></a>unto Ishmael, and took unto the wives which he had Mahalath the
+<a name="l397"></a>daughter of Ishmael Abraham's son, the sister of Nebajoth, to be his</span><span class=cF0>
+<a name="l398"></a>
+<a name="l399"></a>We should pick an animal of the day to think about.  Do You like Chinese New 
+<a name="l400"></a>Year?  God's laughing.
+<a name="l401"></a>
+<a name="l402"></a>God says...
+<a name="l403"></a></span><span class=cF4>conversing leasing entered enlisted infirmities fifth forced stayed puffed Small 
+<a name="l404"></a>BE password weakly thickeneth sustenance conveyedst corrigible distribution 
+<a name="l405"></a>Covetousness inheritance rend heresies enlargedst</span><span class=cF0>
+<a name="l406"></a>
+<a name="l407"></a>Today's animal is the puffer fish.
+<a name="l408"></a>
+<a name="l409"></a>----11/26/13 04:41:01----
+<a name="l410"></a>
+<a name="l411"></a>What's Your favorite fish, God?
+<a name="l412"></a>
+<a name="l413"></a>God says...
+<a name="l414"></a></span><span class=cF4>28:2 Arise, go to Padanaram, to the house of Bethuel thy mother's
+<a name="l415"></a>father; and take thee a wife from thence of the daughers of Laban thy
+<a name="l416"></a>mother's brother.
+<a name="l417"></a>
+<a name="l418"></a>28:3 And God Almighty bless thee, and make thee fruitful, and multiply
+<a name="l419"></a>thee, that thou mayest be a multitude of people; 28:4 And give thee
+<a name="l420"></a>the blessing of Abraham, to thee, and to thy seed with thee; that thou
+<a name="l421"></a>mayest inherit the land wherein thou art a stranger, which God gave
+<a name="l422"></a>unto Abraham.
+<a name="l423"></a>
+<a name="l424"></a>28:5 And Isaac sent away Jacob: and he went to Padanaram unto Laban,
+<a name="l425"></a>son of Bethuel the Syrian, the brother of Rebekah, Jacob's and Esau's
+<a name="l426"></a>mother.
+<a name="l427"></a>
+<a name="l428"></a>28:6 When Esau saw that Isaac had blessed Jacob, and sent him away to
+<a name="l429"></a>Padanaram, to take him a wife from thence; and that as he blessed him
+<a name="l430"></a>he gave him a charge, saying, Thou shalt not take a wife of the
+<a name="l431"></a>daughers of Canaan; 28:7 And that Jacob obeyed his father and his
+<a name="l432"></a>mother, and was gone to Padanaram; 28:8 And Esau seeing that the
+<a name="l433"></a>daughters of Canaan pleased not Isaac his father; 28:9 Then went Esau</span><span class=cF0>
+<a name="l434"></a>
+<a name="l435"></a>----11/26/13 04:44:04----
+<a name="l436"></a>
+<a name="l437"></a>What do You like most about Germany?
+<a name="l438"></a>
+<a name="l439"></a>God says...
+<a name="l440"></a></span><span class=cF4>who created all things by Jesus Christ: 3:10 To the intent that now
+<a name="l441"></a>unto the principalities and powers in heavenly places might be known
+<a name="l442"></a>by the church the manifold wisdom of God, 3:11 According to the
+<a name="l443"></a>eternal purpose which he purposed in Christ Jesus our Lord: 3:12 In
+<a name="l444"></a>whom we have boldness and access with confidence by the faith of him.
+<a name="l445"></a>
+<a name="l446"></a>3:13 Wherefore I desire that ye faint not at my tribulations for you,
+<a name="l447"></a>which is your glory.
+<a name="l448"></a>
+<a name="l449"></a>3:14 For this cause I bow my knees unto the Father of our Lord Jesus
+<a name="l450"></a>Christ, 3:15 Of whom the whole family in heaven and earth is named,
+<a name="l451"></a>3:16 That he would grant you, according to the riches of his glory, to
+<a name="l452"></a>be strengthened with might by his Spirit in the inner man; 3:17 That
+<a name="l453"></a>Christ may dwell in your hearts by faith; that ye, being rooted and
+<a name="l454"></a>grounded in love, 3:18 May be able to comprehend with all saints what
+<a name="l455"></a>is the breadth, and length, and depth, and height; 3:19 And to know
+<a name="l456"></a>the love of Christ, which passeth knowledge, that ye might be filled
+<a name="l457"></a>with all the fulness of God.
+<a name="l458"></a>
+<a name="l459"></a>3:20 Now unto him that is able to do exceeding abundantly above all</span><span class=cF0>
+<a name="l460"></a>
+<a name="l461"></a>----11/26/13 05:08:35----
+<a name="l462"></a>
+<a name="l463"></a>What's Your favorite tiny liberal arts school?
+<a name="l464"></a>
+<a name="l465"></a>God says...
+<a name="l466"></a></span><span class=cF4>8:2 I counsel thee to keep the king's commandment, and that in regard
+<a name="l467"></a>of the oath of God.
+<a name="l468"></a>
+<a name="l469"></a>8:3 Be not hasty to go out of his sight: stand not in an evil thing;
+<a name="l470"></a>for he doeth whatsoever pleaseth him.
+<a name="l471"></a>
+<a name="l472"></a>8:4 Where the word of a king is, there is power: and who may say unto
+<a name="l473"></a>him, What doest thou?  8:5 Whoso keepeth the commandment shall feel no
+<a name="l474"></a>evil thing: and a wise man's heart discerneth both time and judgment.
+<a name="l475"></a>
+<a name="l476"></a>8:6 Because to every purpose there is time and judgment, therefore the
+<a name="l477"></a>misery of man is great upon him.
+<a name="l478"></a>
+<a name="l479"></a>8:7 For he knoweth not that which shall be: for who can tell him when
+<a name="l480"></a>it shall be?  8:8 There is no man that hath power over the spirit to
+<a name="l481"></a>retain the spirit; neither hath he power in the day of death: and
+<a name="l482"></a>there is no discharge in that war; neither shall wickedness deliver
+<a name="l483"></a>those that are given to it.
+<a name="l484"></a>
+<a name="l485"></a>8:9 All this have I seen, and applied my heart unto every work that is</span><span class=cF0>
+<a name="l486"></a>
+<a name="l487"></a>King's college?  Why?  LOL
+<a name="l488"></a>
+<a name="l489"></a>God says...
+<a name="l490"></a></span><span class=cF4>shortly boiled increased tradition expected Sacrifice don Moreover constituted 
+<a name="l491"></a>puffed remaineth lick metres toiling assure Hosts motions Spiritual spent heaven 
+<a name="l492"></a>nature least rose thine upper contributions dens nostrils harlotries alleging 
+<a name="l493"></a>purposed dissipated none gloried Far</span><span class=cF0>
+<a name="l494"></a>
+<a name="l495"></a>Do You like the Catholic Church's traditions?  Draw something!
+<a name="l496"></a>
+<a name="l497"></a>God draws...
+<a name="l498"></a></span><img src="http://www.templeos.org/Wb/Accts/TS/Wb2/Rants/TAD/2013/11/Img016.BMP" width="640" height="472" alt=""><span class=cF3>                                                                                                                </span><span class=cF0>
+<a name="l499"></a></span><span class=cF2>That's an air craft carrier from the front on the lower right.  That's a comic 
+<a name="l500"></a>strip dialog on upper right.  On the left is a squating sumo Indian-artwork.</span><span class=cF0>
+<a name="l501"></a>
+<a name="l502"></a>Do You like the freeway's Indian art?  You said littering was the eleventh 
+<a name="l503"></a>commandment.  What about graphitti?  That's not quite a crime against the 
+<a name="l504"></a>Creator.
+<a name="l505"></a>
+<a name="l506"></a>God says...
+<a name="l507"></a></span><span class=cF4>stretch forth my tent any more, and to set up my curtains.
+<a name="l508"></a>
+<a name="l509"></a>10:21 For the pastors are become brutish, and have not sought the
+<a name="l510"></a>LORD: therefore they shall not prosper, and all their flocks shall be
+<a name="l511"></a>scattered.
+<a name="l512"></a>
+<a name="l513"></a>10:22 Behold, the noise of the bruit is come, and a great commotion
+<a name="l514"></a>out of the north country, to make the cities of Judah desolate, and a
+<a name="l515"></a>den of dragons.
+<a name="l516"></a>
+<a name="l517"></a>10:23 O LORD, I know that the way of man is not in himself: it is not
+<a name="l518"></a>in man that walketh to direct his steps.
+<a name="l519"></a>
+<a name="l520"></a>10:24 O LORD, correct me, but with judgment; not in thine anger, lest
+<a name="l521"></a>thou bring me to nothing.
+<a name="l522"></a>
+<a name="l523"></a>10:25 Pour out thy fury upon the heathen that know thee not, and upon
+<a name="l524"></a>the families that call not on thy name: for they have eaten up Jacob,
+<a name="l525"></a>and devoured him, and consumed him, and have made his habitation
+<a name="l526"></a>desolate.</span><span class=cF0>
+<a name="l527"></a>
+<a name="l528"></a>----11/26/13 05:33:45----
+<a name="l529"></a>
+<a name="l530"></a>You like tea, God?  How about all the Japanese tea rituals?
+<a name="l531"></a>
+<a name="l532"></a>God says...
+<a name="l533"></a></span><span class=cF4>husband was not with her.
+<a name="l534"></a>
+<a name="l535"></a>13:10 And the woman made haste, and ran, and shewed her husband, and
+<a name="l536"></a>said unto him, Behold, the man hath appeared unto me, that came unto
+<a name="l537"></a>me the other day.
+<a name="l538"></a>
+<a name="l539"></a>13:11 And Manoah arose, and went after his wife, and came to the man,
+<a name="l540"></a>and said unto him, Art thou the man that spakest unto the woman? And
+<a name="l541"></a>he said, I am.
+<a name="l542"></a>
+<a name="l543"></a>13:12 And Manoah said, Now let thy words come to pass. How shall we
+<a name="l544"></a>order the child, and how shall we do unto him?  13:13 And the angel of
+<a name="l545"></a>the LORD said unto Manoah, Of all that I said unto the woman let her
+<a name="l546"></a>beware.
+<a name="l547"></a>
+<a name="l548"></a>13:14 She may not eat of any thing that cometh of the vine, neither
+<a name="l549"></a>let her drink wine or strong drink, nor eat any unclean thing: all
+<a name="l550"></a>that I commanded her let her observe.
+<a name="l551"></a>
+<a name="l552"></a>13:15 And Manoah said unto the angel of the LORD, I pray thee, let us</span><span class=cF0>
+<a name="l553"></a>
+<a name="l554"></a>I think that's about Gilligan's Island.  S.S. Minnow.
+<a name="l555"></a>
+<a name="l556"></a>----11/26/13 05:45:52----
+<a name="l557"></a>
+<a name="l558"></a>Radio has guy trying to get lawyer license.
+<a name="l559"></a>
+<a name="l560"></a>If a dog shits in the house, you rub its nose in it.  I used to be an atheist.  
+<a name="l561"></a>You want your nose rubbed you yer shit?  If I saved you from atheism, you owe 
+<a name="l562"></a>me.  I won't take shit from anybody whom I saved from atheism.
+<a name="l563"></a>
+<a name="l564"></a>God says...
+<a name="l565"></a></span><span class=cF4>God, and keep his commandments.
+<a name="l566"></a>
+<a name="l567"></a>5:3 For this is the love of God, that we keep his commandments: and
+<a name="l568"></a>his commandments are not grievous.
+<a name="l569"></a>
+<a name="l570"></a>5:4 For whatsoever is born of God overcometh the world: and this is
+<a name="l571"></a>the victory that overcometh the world, even our faith.
+<a name="l572"></a>
+<a name="l573"></a>5:5 Who is he that overcometh the world, but he that believeth that
+<a name="l574"></a>Jesus is the Son of God?  5:6 This is he that came by water and blood,
+<a name="l575"></a>even Jesus Christ; not by water only, but by water and blood. And it
+<a name="l576"></a>is the Spirit that beareth witness, because the Spirit is truth.
+<a name="l577"></a>
+<a name="l578"></a>5:7 For there are three that bear record in heaven, the Father, the
+<a name="l579"></a>Word, and the Holy Ghost: and these three are one.
+<a name="l580"></a>
+<a name="l581"></a>5:8 And there are three that bear witness in earth, the Spirit, and
+<a name="l582"></a>the water, and the blood: and these three agree in one.
+<a name="l583"></a>
+<a name="l584"></a>5:9 If we receive the witness of men, the witness of God is greater:</span><span class=cF0>
+<a name="l585"></a>
+<a name="l586"></a>----11/26/13 06:10:34----
+<a name="l587"></a>
+<a name="l588"></a>You like wittow minnows, God?  Wittow fishes?
+<a name="l589"></a>
+<a name="l590"></a>I remember baby bullheads in the lake in Wisconsin.
+<a name="l591"></a>
+<a name="l592"></a>God says...
+<a name="l593"></a></span><span class=cF4>atonement for them; as the LORD commanded.
+<a name="l594"></a>
+<a name="l595"></a>9:8 Aaron therefore went unto the altar, and slew the calf of the sin
+<a name="l596"></a>offering, which was for himself.
+<a name="l597"></a>
+<a name="l598"></a>9:9 And the sons of Aaron brought the blood unto him: and he dipped
+<a name="l599"></a>his finger in the blood, and put it upon the horns of the altar, and
+<a name="l600"></a>poured out the blood at the bottom of the altar: 9:10 But the fat, and
+<a name="l601"></a>the kidneys, and the caul above the liver of the sin offering, he
+<a name="l602"></a>burnt upon the altar; as the LORD commanded Moses.
+<a name="l603"></a>
+<a name="l604"></a>9:11 And the flesh and the hide he burnt with fire without the camp.
+<a name="l605"></a>
+<a name="l606"></a>9:12 And he slew the burnt offering; and Aaron's sons presented unto
+<a name="l607"></a>him the blood, which he sprinkled round about upon the altar.
+<a name="l608"></a>
+<a name="l609"></a>9:13 And they presented the burnt offering unto him, with the pieces
+<a name="l610"></a>thereof, and the head: and he burnt them upon the altar.
+<a name="l611"></a>
+<a name="l612"></a>9:14 And he did wash the inwards and the legs, and burnt them upon the
+<a name="l613"></a></span><span class=cF2>Eh?  Dud.</span><span class=cF0>
+<a name="l614"></a>
+<a name="l615"></a>How about baby ducklings?  Those are adorable.
+<a name="l616"></a>
+<a name="l617"></a>God says...
+<a name="l618"></a></span><span class=cF4>whorish heart, which hath departed from me, and with their eyes, which
+<a name="l619"></a>go a whoring after their idols: and they shall lothe themselves for
+<a name="l620"></a>the evils which they have committed in all their abominations.
+<a name="l621"></a>
+<a name="l622"></a>6:10 And they shall know that I am the LORD, and that I have not said
+<a name="l623"></a>in vain that I would do this evil unto them.
+<a name="l624"></a>
+<a name="l625"></a>6:11 Thus saith the Lord GOD; Smite with thine hand, and stamp with
+<a name="l626"></a>thy foot, and say, Alas for all the evil abominations of the house of
+<a name="l627"></a>Israel! for they shall fall by the sword, by the famine, and by the
+<a name="l628"></a>pestilence.
+<a name="l629"></a>
+<a name="l630"></a>6:12 He that is far off shall die of the pestilence; and he that is
+<a name="l631"></a>near shall fall by the sword; and he that remaineth and is besieged
+<a name="l632"></a>shall die by the famine: thus will I accomplish my fury upon them.
+<a name="l633"></a>
+<a name="l634"></a>6:13 Then shall ye know that I am the LORD, when their slain men shall
+<a name="l635"></a>be among their idols round about their altars, upon every high hill,
+<a name="l636"></a>in all the tops of the mountains, and under every green tree, and
+<a name="l637"></a>under every thick oak, the place where they did offer sweet savour to</span><span class=cF0>
+<a name="l638"></a>
+<a name="l639"></a>Wittow ducklings stamping their feetses.  :-)
+<a name="l640"></a>
+<a name="l641"></a></span><a href="http://www.youtube.com/watch?v=o_EmvVB2N8E"><span class=cF0>Duck Stamping</span></a><span class=cF0>
+<a name="l642"></a>
+<a name="l643"></a>----11/26/13 06:40:47----
+<a name="l644"></a>
+<a name="l645"></a>Pope called me a tranny after God called me a whore, LOL.
+<a name="l646"></a>
+<a name="l647"></a></span><a href="http://www.biblegateway.com/passage/?search=Ezekial%2016&version=NIV"><span class=cF0>Ezekial 16</span></a><span class=cF0>
+<a name="l648"></a>
+<a name="l649"></a>I wuv God.
+<a name="l650"></a>
+<a name="l651"></a>Mr. Popeness, God said the 11th commandment is &quot;Thou shall not litter.&quot;
+<a name="l652"></a>
+<a name="l653"></a>I'm afraid being Moses is higher rank than being Pope.
+<a name="l654"></a>
+<a name="l655"></a>God wuvs me -- you an old hag.
+<a name="l656"></a>
+<a name="l657"></a>God says...
+<a name="l658"></a></span><span class=cF4>12:2 And he killed James the brother of John with the sword.
+<a name="l659"></a>
+<a name="l660"></a>12:3 And because he saw it pleased the Jews, he proceeded further to
+<a name="l661"></a>take Peter also. (Then were the days of unleavened bread.)  12:4 And
+<a name="l662"></a>when he had apprehended him, he put him in prison, and delivered him
+<a name="l663"></a>to four quaternions of soldiers to keep him; intending after Easter to
+<a name="l664"></a>bring him forth to the people.
+<a name="l665"></a>
+<a name="l666"></a>12:5 Peter therefore was kept in prison: but prayer was made without
+<a name="l667"></a>ceasing of the church unto God for him.
+<a name="l668"></a>
+<a name="l669"></a>12:6 And when Herod would have brought him forth, the same night Peter
+<a name="l670"></a>was sleeping between two soldiers, bound with two chains: and the
+<a name="l671"></a>keepers before the door kept the prison.
+<a name="l672"></a>
+<a name="l673"></a>12:7 And, behold, the angel of the Lord came upon him, and a light
+<a name="l674"></a>shined in the prison: and he smote Peter on the side, and raised him
+<a name="l675"></a>up, saying, Arise up quickly. And his chains fell off from his hands.</span><span class=cF0>
+<a name="l676"></a>
+<a name="l677"></a>You a whore, God.
+<a name="l678"></a>
+<a name="l679"></a>God says...
+<a name="l680"></a></span><span class=cF4>Israel danger entreat flux quench excelling downfall odours restoration messages 
+<a name="l681"></a>joy distrusted waged abided puppies Ambition Furthermore Give zip properly ships 
+<a name="l682"></a>meanings sports peculiarly org loth fashioned random camp infused penetrating 
+<a name="l683"></a>unstayed announcement teacher acceptable appeared wandering abilities forehead 
+<a name="l684"></a>stirred intended reigns hearsay soundness polluted thunderest girl functions 
+<a name="l685"></a>thieve discovery sweeten wooed modestly hastened fostering entireness MADE 97 
+<a name="l686"></a>intelligent rejoiced rightly stormy quicker guess length renewed conclude vigour 
+<a name="l687"></a>XIII absurd Readable wrinkle liberal distant Egyptian ocean gladly numberest 
+<a name="l688"></a>unfledged rejects every Greek rebelled mourn mysteriously horns Mercy ease 
+<a name="l689"></a>commended Assessor Verity Passion begannest send shared scoffing</span><span class=cF0>
+<a name="l690"></a>
+<a name="l691"></a>----11/26/13 06:59:22----
+<a name="l692"></a>
+<a name="l693"></a></span><span class=cF1>---- Poem ----
+<a name="l694"></a>Stomp, Stomp, Stomp, Stomp
+<a name="l695"></a>Pitter patter pitter patter
+<a name="l696"></a>Fuffy stuffy fuffy stuffy
+<a name="l697"></a>The ducklings putter-on.</span><span class=cF0>
+<a name="l698"></a>
+<a name="l699"></a>God says...
+<a name="l700"></a></span><span class=cF4>prophets of the LORD, how I hid an hundred men of the LORD's prophets
+<a name="l701"></a>by fifty in a cave, and fed them with bread and water?  18:14 And now
+<a name="l702"></a>thou sayest, Go, tell thy lord, Behold, Elijah is here: and he shall
+<a name="l703"></a>slay me.
+<a name="l704"></a>
+<a name="l705"></a>18:15 And Elijah said, As the LORD of hosts liveth, before whom I
+<a name="l706"></a>stand, I will surely shew myself unto him to day.
+<a name="l707"></a>
+<a name="l708"></a>18:16 So Obadiah went to meet Ahab, and told him: and Ahab went to
+<a name="l709"></a>meet Elijah.
+<a name="l710"></a>
+<a name="l711"></a>18:17 And it came to pass, when Ahab saw Elijah, that Ahab said unto
+<a name="l712"></a>him, Art thou he that troubleth Israel?  18:18 And he answered, I have
+<a name="l713"></a>not troubled Israel; but thou, and thy father's house, in that ye have
+<a name="l714"></a>forsaken the commandments of the LORD, and thou hast followed Baalim.
+<a name="l715"></a>
+<a name="l716"></a>18:19 Now therefore send, and gather to me all Israel unto mount
+<a name="l717"></a>Carmel, and the prophets of Baal four hundred and fifty, and the
+<a name="l718"></a>prophets of the groves four hundred, which eat at Jezebel's table.</span><span class=cF0>
+<a name="l719"></a>
+<a name="l720"></a>----11/26/13 07:17:42----
+<a name="l721"></a>
+<a name="l722"></a>Do You like the laser dinosaur painting, God?
+<a name="l723"></a>
+<a name="l724"></a>God says...
+<a name="l725"></a></span><span class=cF4>for a daughter, she shall bring a lamb of the first year for a burnt
+<a name="l726"></a>offering, and a young pigeon, or a turtledove, for a sin offering,
+<a name="l727"></a>unto the door of the tabernacle of the congregation, unto the priest:
+<a name="l728"></a>12:7 Who shall offer it before the LORD, and make an atonement for
+<a name="l729"></a>her; and she shall be cleansed from the issue of her blood. This is
+<a name="l730"></a>the law for her that hath born a male or a female.
+<a name="l731"></a>
+<a name="l732"></a>12:8 And if she be not able to bring a lamb, then she shall bring two
+<a name="l733"></a>turtles, or two young pigeons; the one for the burnt offering, and the
+<a name="l734"></a>other for a sin offering: and the priest shall make an atonement for
+<a name="l735"></a>her, and she shall be clean.
+<a name="l736"></a>
+<a name="l737"></a>13:1 And the LORD spake unto Moses and Aaron, saying, 13:2 When a man
+<a name="l738"></a>shall have in the skin of his flesh a rising, a scab, or bright spot,
+<a name="l739"></a>and it be in the skin of his flesh like the plague of leprosy; then he
+<a name="l740"></a>shall be brought unto Aaron the priest, or unto one of his sons the
+<a name="l741"></a>priests: 13:3 And the priest shall look on the plague in the skin of
+<a name="l742"></a>the flesh: and when the hair in the plague is turned white, and the
+<a name="l743"></a>plague in sight be deeper than the skin of his flesh, it is a plague
+<a name="l744"></a>of leprosy: and the priest shall look on him, and pronounce him</span><span class=cF0>
+<a name="l745"></a>
+<a name="l746"></a>Schizophrenic meds make you impotant.
+<a name="l747"></a>
+<a name="l748"></a>God says...
+<a name="l749"></a></span><span class=cF4>children of Israel, and that they profane not my holy name in those
+<a name="l750"></a>things which they hallow unto me: I am the LORD.
+<a name="l751"></a>
+<a name="l752"></a>22:3 Say unto them, Whosoever he be of all your seed among your
+<a name="l753"></a>generations, that goeth unto the holy things, which the children of
+<a name="l754"></a>Israel hallow unto the LORD, having his uncleanness upon him, that
+<a name="l755"></a>soul shall be cut off from my presence: I am the LORD.
+<a name="l756"></a>
+<a name="l757"></a>22:4 What man soever of the seed of Aaron is a leper, or hath a
+<a name="l758"></a>running issue; he shall not eat of the holy things, until he be clean.
+<a name="l759"></a>And whoso toucheth any thing that is unclean by the dead, or a man
+<a name="l760"></a>whose seed goeth from him; 22:5 Or whosoever toucheth any creeping
+<a name="l761"></a>thing, whereby he may be made unclean, or a man of whom he may take
+<a name="l762"></a>uncleanness, whatsoever uncleanness he hath; 22:6 The soul which hath
+<a name="l763"></a>touched any such shall be unclean until even, and shall not eat of the
+<a name="l764"></a>holy things, unless he wash his flesh with water.
+<a name="l765"></a>
+<a name="l766"></a>22:7 And when the sun is down, he shall be clean, and shall afterward
+<a name="l767"></a>eat of the holy things; because it is his food.</span><span class=cF0>
+<a name="l768"></a>
+<a name="l769"></a>Pope's gonna get a tranny surgery, LOL.
+<a name="l770"></a>
+<a name="l771"></a>God says...
+<a name="l772"></a></span><span class=cF4>unhappily machine shore treasury ripened labourers ordinance rising detriment 
+<a name="l773"></a>credulity proffer enjoyed reverential faculty outset exalted Macedonia d 
+<a name="l774"></a>unrighteous Animals despair whenever on tosses shelter reposing worshipped more 
+<a name="l775"></a>enduring exuberant lowest sank proceeding distractedly instability marks 
+<a name="l776"></a>loathsome X salary callest WHAT negligence 00 enquiring Death Monad reproach 
+<a name="l777"></a>displace dispraised fuel disembowelled Righteousness immovably abject vengeance 
+<a name="l778"></a>wished sets pearl tongue dispraised emptied Bread travail still command 
+<a name="l779"></a>occupying lashest departed outrages impaired confound inclination ten looks 
+<a name="l780"></a>lowering mockers stirred antidote biting footsteps shield persons overflowing 
+<a name="l781"></a>intensest temple honours Jordan Nevada Although heareth hopeful disputed Earth 
+<a name="l782"></a>blasts terrible gainsay X windy count thing Although USA download judged 
+<a name="l783"></a>CONFESSIONS clog retiring Far soundedst erst service proportions abilities 
+<a name="l784"></a>kicking Hast searching Midnight last lists plays exclusion intermitting how 
+<a name="l785"></a>modify hoping gleam treachery rejoice whales enlighteneth ordering eminent 
+<a name="l786"></a>contradictions corpse we pervious lure gasped neatness blinded occasion jeer 
+<a name="l787"></a>divide English good transported move venerable these avoid reclaim worldly 
+<a name="l788"></a>whereby highly companion rage possesseth tree Better foregoing stay continued 
+<a name="l789"></a>Commandment remainest Jerusalem envenomed diversely thickets feeding bond mould 
+<a name="l790"></a>nor BOOK Loving produced preserving Neither slow talketh sovereignly Simple 
+<a name="l791"></a>encumbered whose fluctuations undistracted Coeternal vices hours subsist greedy 
+<a name="l792"></a>informed mutability Both Nor receives torrent birth unhealthiness particles 
+<a name="l793"></a>doctrine effect running builded reconciliation passionately educated fields 
+<a name="l794"></a>envying despaired gifts considereth wonderfulness gushed back wildness 
+<a name="l795"></a>counterfeit wherewith heretics Knowledge endurance tragical ascribe sort 
+<a name="l796"></a>speeches</span><span class=cF0>
+<a name="l797"></a>
+<a name="l798"></a>----11/26/13 07:39:40----
+<a name="l799"></a>
+<a name="l800"></a>I read God's talk rather casually.  I advise y'all to be easy-going and not get 
+<a name="l801"></a>too hung-up.  You are finding things I missed but I caution about getting too 
+<a name="l802"></a>hung-up.
+<a name="l803"></a>
+<a name="l804"></a>The purpose of life:
+<a name="l805"></a>
+<a name="l806"></a>1) to know God
+<a name="l807"></a>2) to love God
+<a name="l808"></a>3) to obey God
+<a name="l809"></a>
+<a name="l810"></a>I think the first two get ignored.  In fact, they are probably more important.
+<a name="l811"></a>
+<a name="l812"></a>I goal is to kill time with God, mostly.
+<a name="l813"></a>
+<a name="l814"></a>----11/26/13 07:44:29----
+<a name="l815"></a>
+<a name="l816"></a>This is about tongues: </span><a href="http://www.biblegateway.com/passage/?search=Acts%202&version=NIV"><span class=cF0>Acts 2</span></a><span class=cF0>
+<a name="l817"></a>
+<a name="l818"></a>Everybody heard something different.  The hilarious thing is nobody bothered to 
+<a name="l819"></a>record what was said!
+<a name="l820"></a>
+<a name="l821"></a>God says...
+<a name="l822"></a></span><span class=cF4>neither was there any beast with me, save the beast that I rode upon.
+<a name="l823"></a>
+<a name="l824"></a>2:13 And I went out by night by the gate of the valley, even before
+<a name="l825"></a>the dragon well, and to the dung port, and viewed the walls of
+<a name="l826"></a>Jerusalem, which were broken down, and the gates thereof were consumed
+<a name="l827"></a>with fire.
+<a name="l828"></a>
+<a name="l829"></a>2:14 Then I went on to the gate of the fountain, and to the king's
+<a name="l830"></a>pool: but there was no place for the beast that was under me to pass.
+<a name="l831"></a>
+<a name="l832"></a>2:15 Then went I up in the night by the brook, and viewed the wall,
+<a name="l833"></a>and turned back, and entered by the gate of the valley, and so
+<a name="l834"></a>returned.
+<a name="l835"></a>
+<a name="l836"></a>2:16 And the rulers knew not whither I went, or what I did; neither
+<a name="l837"></a>had I as yet told it to the Jews, nor to the priests, nor to the
+<a name="l838"></a>nobles, nor to the rulers, nor to the rest that did the work.
+<a name="l839"></a>
+<a name="l840"></a>2:17 Then said I unto them, Ye see the distress that we are in, how
+<a name="l841"></a>Jerusalem lieth waste, and the gates thereof are burned with fire:</span><span class=cF0>
+<a name="l842"></a>
+<a name="l843"></a>I like to think about my operating system.  I guess St. Francis's church was in 
+<a name="l844"></a>ruins.
+<a name="l845"></a>
+<a name="l846"></a>----11/26/13 07:58:15----
+<a name="l847"></a>
+<a name="l848"></a>The radio talked of Robin Hood narco criminals in Mexico.  I preach God's world 
+<a name="l849"></a>is perfectly just and is beautiful.  The Pope preaches God's world is unjust and 
+<a name="l850"></a>needs fixing.
+<a name="l851"></a>
+<a name="l852"></a>God says...
+<a name="l853"></a></span><span class=cF4>of the LORD, and put it on the north side of the altar.
+<a name="l854"></a>
+<a name="l855"></a>16:15 And king Ahaz commanded Urijah the priest, saying, Upon the
+<a name="l856"></a>great altar burn the morning burnt offering, and the evening meat
+<a name="l857"></a>offering, and the king's burnt sacrifice, and his meat offering, with
+<a name="l858"></a>the burnt offering of all the people of the land, and their meat
+<a name="l859"></a>offering, and their drink offerings; and sprinkle upon it all the
+<a name="l860"></a>blood of the burnt offering, and all the blood of the sacrifice: and
+<a name="l861"></a>the brasen altar shall be for me to enquire by.
+<a name="l862"></a>
+<a name="l863"></a>16:16 Thus did Urijah the priest, according to all that king Ahaz
+<a name="l864"></a>commanded.
+<a name="l865"></a>
+<a name="l866"></a>16:17 And king Ahaz cut off the borders of the bases, and removed the
+<a name="l867"></a>laver from off them; and took down the sea from off the brasen oxen
+<a name="l868"></a>that were under it, and put it upon the pavement of stones.
+<a name="l869"></a>
+<a name="l870"></a>16:18 And the covert for the sabbath that they had built in the house,
+<a name="l871"></a>and the king's entry without, turned he from the house of the LORD for
+<a name="l872"></a>the king of Assyria.</span><span class=cF0>
+<a name="l873"></a>
+<a name="l874"></a>The number one rule of ... God club is, you always do an offering, before 
+<a name="l875"></a>enquiring of God.  God said it was a covenant that you do an offering.  He said 
+<a name="l876"></a>it was like communion preparation.  He said you get out of your enquiry what you 
+<a name="l877"></a>put in as offering.  Picking a greeting card, for example, is effort expended  
+<a name="l878"></a>as love.
+<a name="l879"></a>
+<a name="l880"></a>God says...
+<a name="l881"></a></span><span class=cF4>noon kindle bushel 2000 recovering birth impair password aright gladness 
+<a name="l882"></a>Circumcise hesitating cherish beams connects persuaded Blessed dividest renowned 
+<a name="l883"></a>asks edit upright mothers ask every couch X country scorned shop root helped 
+<a name="l884"></a>neatly disembowelled hogs cloven Their chose evidently vileness household 
+<a name="l885"></a>distempered deadly School conservative wit thrown rational scoffing discipline 
+<a name="l886"></a>inspiring asleep fish BE free check plays desperate poison perfected nineteenth 
+<a name="l887"></a>poems salary successively seeketh into disengage inflicted overflowing thraldom 
+<a name="l888"></a>bade</span><span class=cF0>
+<a name="l889"></a>
+<a name="l890"></a>----11/26/13 08:37:51----
+<a name="l891"></a>
+<a name="l892"></a>Dad has to go to the doctor.
+<a name="l893"></a>
+<a name="l894"></a>God says...
+<a name="l895"></a></span><span class=cF4>17:13 Then said Micah, Now know I that the LORD will do me good,
+<a name="l896"></a>seeing I have a Levite to my priest.
+<a name="l897"></a>
+<a name="l898"></a>18:1 In those days there was no king in Israel: and in those days the
+<a name="l899"></a>tribe of the Danites sought them an inheritance to dwell in; for unto
+<a name="l900"></a>that day all their inheritance had not fallen unto them among the
+<a name="l901"></a>tribes of Israel.
+<a name="l902"></a>
+<a name="l903"></a>18:2 And the children of Dan sent of their family five men from their
+<a name="l904"></a>coasts, men of valour, from Zorah, and from Eshtaol, to spy out the
+<a name="l905"></a>land, and to search it; and they said unto them, Go, search the land:
+<a name="l906"></a>who when they came to mount Ephraim, to the house of Micah, they
+<a name="l907"></a>lodged there.
+<a name="l908"></a>
+<a name="l909"></a>18:3 When they were by the house of Micah, they knew the voice of the
+<a name="l910"></a>young man the Levite: and they turned in thither, and said unto him,
+<a name="l911"></a>Who brought thee hither? and what makest thou in this place? and what
+<a name="l912"></a>hast thou here?  18:4 And he said unto them, Thus and thus dealeth
+<a name="l913"></a>Micah with me, and hath hired me, and I am his priest.</span><span class=cF0>
+<a name="l914"></a>
+<a name="l915"></a>----11/26/13 08:53:11----
+<a name="l916"></a>
+<a name="l917"></a>1) All authority comes from God, except when it doesn't and there is a 
+<a name="l918"></a>revolution.
+<a name="l919"></a>
+<a name="l920"></a>2) The king is divinely chosen, but maybe God wants to punish that country.
+<a name="l921"></a>
+<a name="l922"></a>----11/26/13 08:55:23----
+<a name="l923"></a>
+<a name="l924"></a>Who's Your favorite world leader, God?  You like Merkel?
+<a name="l925"></a>
+<a name="l926"></a>God says...
+<a name="l927"></a></span><span class=cF4>1:13 But the angel said unto him, Fear not, Zacharias: for thy prayer
+<a name="l928"></a>is heard; and thy wife Elisabeth shall bear thee a son, and thou shalt
+<a name="l929"></a>call his name John.
+<a name="l930"></a>
+<a name="l931"></a>1:14 And thou shalt have joy and gladness; and many shall rejoice at
+<a name="l932"></a>his birth.
+<a name="l933"></a>
+<a name="l934"></a>1:15 For he shall be great in the sight of the Lord, and shall drink
+<a name="l935"></a>neither wine nor strong drink; and he shall be filled with the Holy
+<a name="l936"></a>Ghost, even from his mother's womb.
+<a name="l937"></a>
+<a name="l938"></a>1:16 And many of the children of Israel shall he turn to the Lord
+<a name="l939"></a>their God.
+<a name="l940"></a>
+<a name="l941"></a>1:17 And he shall go before him in the spirit and power of Elias, to
+<a name="l942"></a>turn the hearts of the fathers to the children, and the disobedient to
+<a name="l943"></a>the wisdom of the just; to make ready a people prepared for the Lord.
+<a name="l944"></a>
+<a name="l945"></a>1:18 And Zacharias said unto the angel, Whereby shall I know this? for</span><span class=cF0>
+<a name="l946"></a>
+<a name="l947"></a>Chavez was blaming the United States.  God said, &quot;Japan industrious&quot;.  Bam!!  
+<a name="l948"></a>There is no argument against God!
+<a name="l949"></a>
+<a name="l950"></a>I asked God about racism.  God said, &quot;Sports&quot;.
+<a name="l951"></a>
+<a name="l952"></a>The Holy Spirit loves courtrooms.  (God's laughing)  The Holy Spirit is, 
+<a name="l953"></a>actually, a lawyer, mostly.  &quot;Do not prepare your words...&quot;  &quot;The Advocate&quot;
+<a name="l954"></a>
+<a name="l955"></a>God says...
+<a name="l956"></a></span><span class=cF4>fifty undertook formerly blending replacing incomparably adorned</span><span class=cF0>
+<a name="l957"></a>
+<a name="l958"></a>----11/26/13 09:16:10----
+<a name="l959"></a>
+<a name="l960"></a>I wonder if there are any artists who... are just like You, God, in their sense 
+<a name="l961"></a>of taste.  You know, like, &quot;that's tacky&quot;.  &quot;That's classy.&quot;  We might look 
+<a name="l962"></a>around at Creation and see Your artistic taste?
+<a name="l963"></a>
+<a name="l964"></a>God says...
+<a name="l965"></a></span><span class=cF4>forasmuch as the LORD hath said unto you, Ye shall henceforth return
+<a name="l966"></a>no more that way.
+<a name="l967"></a>
+<a name="l968"></a>17:17 Neither shall he multiply wives to himself, that his heart turn
+<a name="l969"></a>not away: neither shall he greatly multiply to himself silver and
+<a name="l970"></a>gold.
+<a name="l971"></a>
+<a name="l972"></a>17:18 And it shall be, when he sitteth upon the throne of his kingdom,
+<a name="l973"></a>that he shall write him a copy of this law in a book out of that which
+<a name="l974"></a>is before the priests the Levites: 17:19 And it shall be with him, and
+<a name="l975"></a>he shall read therein all the days of his life: that he may learn to
+<a name="l976"></a>fear the LORD his God, to keep all the words of this law and these
+<a name="l977"></a>statutes, to do them: 17:20 That his heart be not lifted up above his
+<a name="l978"></a>brethren, and that he turn not aside from the commandment, to the
+<a name="l979"></a>right hand, or to the left: to the end that he may prolong his days in
+<a name="l980"></a>his kingdom, he, and his children, in the midst of Israel.
+<a name="l981"></a>
+<a name="l982"></a>18:1 The priests the Levites, and all the tribe of Levi, shall have no
+<a name="l983"></a>part nor inheritance with Israel: they shall eat the offerings of the
+<a name="l984"></a>LORD made by fire, and his inheritance.</span><span class=cF0>
+<a name="l985"></a>
+<a name="l986"></a>----11/26/13 09:21:54----
+<a name="l987"></a>
+<a name="l988"></a>You like apples or figs better, God?
+<a name="l989"></a>
+<a name="l990"></a>God says...
+<a name="l991"></a></span><span class=cF4>we have forsaken the LORD, and have served Baalim and Ashtaroth: but
+<a name="l992"></a>now deliver us out of the hand of our enemies, and we will serve thee.
+<a name="l993"></a>
+<a name="l994"></a>12:11 And the LORD sent Jerubbaal, and Bedan, and Jephthah, and
+<a name="l995"></a>Samuel, and delivered you out of the hand of your enemies on every
+<a name="l996"></a>side, and ye dwelled safe.
+<a name="l997"></a>
+<a name="l998"></a>12:12 And when ye saw that Nahash the king of the children of Ammon
+<a name="l999"></a>came against you, ye said unto me, Nay; but a king shall reign over
+<a name="l1000"></a>us: when the LORD your God was your king.
+<a name="l1001"></a>
+<a name="l1002"></a>12:13 Now therefore behold the king whom ye have chosen, and whom ye
+<a name="l1003"></a>have desired! and, behold, the LORD hath set a king over you.
+<a name="l1004"></a>
+<a name="l1005"></a>12:14 If ye will fear the LORD, and serve him, and obey his voice, and
+<a name="l1006"></a>not rebel against the commandment of the LORD, then shall both ye and
+<a name="l1007"></a>also the king that reigneth over you continue following the LORD your
+<a name="l1008"></a>God: 12:15 But if ye will not obey the voice of the LORD, but rebel
+<a name="l1009"></a>against the commandment of the LORD, then shall the hand of the LORD
+<a name="l1010"></a>be against you, as it was against your fathers.</span><span class=cF0>
+<a name="l1011"></a>
+<a name="l1012"></a>----11/26/13 09:35:30----
+<a name="l1013"></a>
+<a name="l1014"></a>My birds are singing.  I asked God what they were saying, one time.  &quot;Chanting&quot;
+<a name="l1015"></a>
+<a name="l1016"></a>One time God said, &quot;prosparity sucks.&quot;
+<a name="l1017"></a>
+<a name="l1018"></a>Highs and lows balance.  It must be depressing knowing that people are earning 
+<a name="l1019"></a>punishment.  I guess prosparity is always decedence.
+<a name="l1020"></a>
+<a name="l1021"></a>You know what's bad?  When a poor person wins the lottery.
+<a name="l1022"></a>
+<a name="l1023"></a>Poor people would usually be really awful rich people.
+<a name="l1024"></a>
+<a name="l1025"></a>&quot;As you measure out, it will be measured to you.&quot;  If you believe in voodoo, 
+<a name="l1026"></a>getting poor people to give to charity might help lift them out of poverty.
+<a name="l1027"></a>
+<a name="l1028"></a>God watched evolution and the tens of thousands of years when all mankind lived 
+<a name="l1029"></a>as poor as Native American tee-pees.  God really does not give as shit as long 
+<a name="l1030"></a>as you have food.
+<a name="l1031"></a>
+<a name="l1032"></a></span><a href="http://www.biblegateway.com/passage/?search=Numbers%2011&version=NIV"><span class=cF0>Numbers 11</span></a><span class=cF0>
+<a name="l1033"></a>
+<a name="l1034"></a>God gets really really pissed-off when the poor complain, LOL.
+<a name="l1035"></a>
+<a name="l1036"></a></span><a href="http://www.biblegateway.com/passage/?search=Numbers%2011&version=NIV"><span class=cF0>Numbers 11</span></a><span class=cF0>
+<a name="l1037"></a>
+<a name="l1038"></a>God does not hear the cry of the poor and if He does, He smacks them.
+<a name="l1039"></a>
+<a name="l1040"></a>God says...
+<a name="l1041"></a></span><span class=cF4>will be with thy mouth, and with his mouth, and will teach you what ye
+<a name="l1042"></a>shall do.
+<a name="l1043"></a>
+<a name="l1044"></a>4:16 And he shall be thy spokesman unto the people: and he shall be,
+<a name="l1045"></a>even he shall be to thee instead of a mouth, and thou shalt be to him
+<a name="l1046"></a>instead of God.
+<a name="l1047"></a>
+<a name="l1048"></a>4:17 And thou shalt take this rod in thine hand, wherewith thou shalt
+<a name="l1049"></a>do signs.
+<a name="l1050"></a>
+<a name="l1051"></a>4:18 And Moses went and returned to Jethro his father in law, and said
+<a name="l1052"></a>unto him, Let me go, I pray thee, and return unto my brethren which
+<a name="l1053"></a>are in Egypt, and see whether they be yet alive. And Jethro said to
+<a name="l1054"></a>Moses, Go in peace.
+<a name="l1055"></a>
+<a name="l1056"></a>4:19 And the LORD said unto Moses in Midian, Go, return into Egypt:
+<a name="l1057"></a>for all the men are dead which sought thy life.
+<a name="l1058"></a>
+<a name="l1059"></a>4:20 And Moses took his wife and his sons, and set them upon an ass,
+<a name="l1060"></a>and he returned to the land of Egypt: and Moses took the rod of God in</span><span class=cF0>
+<a name="l1061"></a>
+<a name="l1062"></a>God likes Beverly Hillbillies.
+<a name="l1063"></a>
+<a name="l1064"></a>----11/26/13 09:47:45----
+<a name="l1065"></a>
+<a name="l1066"></a>Jesus praise the widow's mite.  </span><a href="http://www.biblegateway.com/passage/?search=Luke%2021:1-4&version=NIV"><span class=cF0>Luke 21:1-4</span></a><span class=cF0>
+<a name="l1067"></a>
+<a name="l1068"></a>What should we make of the widow's mite?  God is perfectly just.  Therefore, we 
+<a name="l1069"></a>should assume the widow will be greatly blessed.
+<a name="l1070"></a>
+<a name="l1071"></a>If you have ever had a hell job and made lots of money and you have been 
+<a name="l1072"></a>unemployed on disability...  You just don't forget the hell of a hell job.  Poor 
+<a name="l1073"></a>people don't know that the rich people earn it... or get punished eventually.
+<a name="l1074"></a>
+<a name="l1075"></a>----11/26/13 09:52:29----
+<a name="l1076"></a>
+<a name="l1077"></a>God's favorite saint is Santa.  God wants to be the hero.
+<a name="l1078"></a>
+<a name="l1079"></a></span><a href="http://science.slashdot.org/story/13/11/26/1511238/why-scott-adams-wished-death-on-his-dad"><span class=cF0>Guy had Long Death</span></a><span class=cF0>
+<a name="l1080"></a>
+<a name="l1081"></a>&quot;Old age is not for wimps.&quot;  Did you know that every single 80 year old has 
+<a name="l1082"></a>spent more time at the front, than a WWI soldier?
+<a name="l1083"></a>
+<a name="l1084"></a>I think I can please God by explaining that Jesus died in three hours.  Many 
+<a name="l1085"></a>people die in three months.  Seriously, think about it.  If cancer can kill you, 
+<a name="l1086"></a>it must surely hurt!!
+<a name="l1087"></a>
+<a name="l1088"></a>There is justice.  Praise God for justice.
+<a name="l1089"></a>
+<a name="l1090"></a>God says...
+<a name="l1091"></a></span><span class=cF4>other, shall say again in thine ears, The place is too strait for me:
+<a name="l1092"></a>give place to me that I may dwell.
+<a name="l1093"></a>
+<a name="l1094"></a>49:21 Then shalt thou say in thine heart, Who hath begotten me these,
+<a name="l1095"></a>seeing I have lost my children, and am desolate, a captive, and
+<a name="l1096"></a>removing to and fro? and who hath brought up these? Behold, I was left
+<a name="l1097"></a>alone; these, where had they been?  49:22 Thus saith the Lord GOD,
+<a name="l1098"></a>Behold, I will lift up mine hand to the Gentiles, and set up my
+<a name="l1099"></a>standard to the people: and they shall bring thy sons in their arms,
+<a name="l1100"></a>and thy daughters shall be carried upon their shoulders.
+<a name="l1101"></a>
+<a name="l1102"></a>49:23 And kings shall be thy nursing fathers, and their queens thy
+<a name="l1103"></a>nursing mothers: they shall bow down to thee with their face toward
+<a name="l1104"></a>the earth, and lick up the dust of thy feet; and thou shalt know that
+<a name="l1105"></a>I am the LORD: for they shall not be ashamed that wait for me.
+<a name="l1106"></a>
+<a name="l1107"></a>49:24 Shall the prey be taken from the mighty, or the lawful captive
+<a name="l1108"></a>delivered?  49:25 But thus saith the LORD, Even the captives of the
+<a name="l1109"></a>mighty shall be taken away, and the prey of the terrible shall be
+<a name="l1110"></a>delivered: for I will contend with him that contendeth with thee, and</span><span class=cF0>
+<a name="l1111"></a>
+<a name="l1112"></a>----11/26/13 10:20:20----
+<a name="l1113"></a>
+<a name="l1114"></a>Europe looks at America and scorns our religion.  They might not like to be 
+<a name="l1115"></a>reminded our exceptionalism might be earned by loving God.  This is funny, but 
+<a name="l1116"></a>Christianity is the most blessed in terms of world domination.
+<a name="l1117"></a>
+<a name="l1118"></a>Why not?  Of course the true religion is number one!
+<a name="l1119"></a>
+<a name="l1120"></a>God likes Santa.  God likes Beverly Hillbillies.  On the Arab/Jew conflict, God 
+<a name="l1121"></a>said, &quot;Oil, funny hopefully.&quot;
+<a name="l1122"></a>
+<a name="l1123"></a>Draw something, God!
+<a name="l1124"></a>
+<a name="l1125"></a>NAZIs might have an immigration policy of only high IQ.  Guess what?  Highs and 
+<a name="l1126"></a>lows balance.  If we import poor huddled masses, we might ride the wave of the 
+<a name="l1127"></a>flip side to poverty?
+<a name="l1128"></a>
+<a name="l1129"></a>God draws...
+<a name="l1130"></a></span><img src="http://www.templeos.org/Wb/Accts/TS/Wb2/Rants/TAD/2013/11/Img017.BMP" width="640" height="472" alt=""><span class=cF3>                                                                                                                </span><span class=cF0>
+<a name="l1131"></a></span><span class=cF2>That looks like a prostrate man.</span><span class=cF0>
+<a name="l1132"></a>
+<a name="l1133"></a>America gives the most to charity in the World.  Could it be God is not 
+<a name="l1134"></a>perverse?
+<a name="l1135"></a>
+<a name="l1136"></a>God's favorite saint is Santa.
+<a name="l1137"></a>
+<a name="l1138"></a></span><a href="http://www.youtube.com/watch?v=F3RYvO2X0Oo"><span class=cF0>Your love was inverted and perverted.</span></a><span class=cF0>
+<a name="l1139"></a>
+<a name="l1140"></a>The purpose of life is to know God, love God and obey God.
+<a name="l1141"></a>
+<a name="l1142"></a>A priest has one job -- get people to adore God.
+<a name="l1143"></a>
+<a name="l1144"></a>God's favorite band is the Beatles.
+<a name="l1145"></a>
+<a name="l1146"></a>God likes bears and elephants.
+<a name="l1147"></a>
+<a name="l1148"></a></span><span class=cF2>11:25 At that time Jesus answered and said, I thank thee, O Father,
+<a name="l1149"></a>Lord of heaven and earth, because thou hast hid these things from the
+<a name="l1150"></a>wise and prudent, and hast revealed them unto babes.
+<a name="l1151"></a>
+<a name="l1152"></a>11:26 Even so, Father: for so it seemed good in thy sight.
+<a name="l1153"></a>
+<a name="l1154"></a>11:27 All things are delivered unto me of my Father: and no man
+<a name="l1155"></a>knoweth the Son, but the Father; neither knoweth any man the Father,
+<a name="l1156"></a>save the Son, and he to whomsoever the Son will reveal him.
+<a name="l1157"></a>
+<a name="l1158"></a>11:28 Come unto me, all ye that labour and are heavy laden, and I will
+<a name="l1159"></a>give you rest.
+<a name="l1160"></a>
+<a name="l1161"></a>11:29 Take my yoke upon you, and learn of me; for I am meek and lowly
+<a name="l1162"></a>in heart: and ye shall find rest unto your souls.
+<a name="l1163"></a>
+<a name="l1164"></a>11:30 For my yoke is easy, and my burden is light.
+<a name="l1165"></a></span><span class=cF0>
+<a name="l1166"></a>
+<a name="l1167"></a>Proud of heart will not accept a gift.  Proud of heart: Ask not what country can 
+<a name="l1168"></a>do for you but what you can do for country.
+<a name="l1169"></a>
+<a name="l1170"></a>Proud of heart: &quot;Oh, please torture me!&quot;
+<a name="l1171"></a>
+<a name="l1172"></a>God says...
+<a name="l1173"></a></span><span class=cF4>twentieth day of the ninth month, even from the day that the
+<a name="l1174"></a>foundation of the LORD's temple was laid, consider it.
+<a name="l1175"></a>
+<a name="l1176"></a>2:19 Is the seed yet in the barn? yea, as yet the vine, and the fig
+<a name="l1177"></a>tree, and the pomegranate, and the olive tree, hath not brought forth:
+<a name="l1178"></a>from this day will I bless you.
+<a name="l1179"></a>
+<a name="l1180"></a>2:20 And again the word of the LORD came unto Haggai in the four and
+<a name="l1181"></a>twentieth day of the month, saying, 2:21 Speak to Zerubbabel, governor
+<a name="l1182"></a>of Judah, saying, I will shake the heavens and the earth; 2:22 And I
+<a name="l1183"></a>will overthrow the throne of kingdoms, and I will destroy the strength
+<a name="l1184"></a>of the kingdoms of the heathen; and I will overthrow the chariots, and
+<a name="l1185"></a>those that ride in them; and the horses and their riders shall come
+<a name="l1186"></a>down, every one by the sword of his brother.
+<a name="l1187"></a>
+<a name="l1188"></a>2:23 In that day, saith the LORD of hosts, will I take thee, O
+<a name="l1189"></a>Zerubbabel, my servant, the son of Shealtiel, saith the LORD, and will
+<a name="l1190"></a>make thee as a signet: for I have chosen thee, saith the LORD of hosts.</span><span class=cF0>
+<a name="l1191"></a>
+<a name="l1192"></a>----11/26/13 10:37:25----
+<a name="l1193"></a>
+<a name="l1194"></a>One time, God suggested magical myster tour.
+<a name="l1195"></a>
+<a name="l1196"></a>God likes octopuses more than whales, LOL.
+<a name="l1197"></a>
+<a name="l1198"></a>Say something about octopuses, God!
+<a name="l1199"></a>
+<a name="l1200"></a>God says...
+<a name="l1201"></a></span><span class=cF4>law, and thy sons, and thy daughters, and whatsoever thou hast in the
+<a name="l1202"></a>city, bring them out of this place: 19:13 For we will destroy this
+<a name="l1203"></a>place, because the cry of them is waxen great before the face of the
+<a name="l1204"></a>LORD; and the LORD hath sent us to destroy it.
+<a name="l1205"></a>
+<a name="l1206"></a>19:14 And Lot went out, and spake unto his sons in law, which married
+<a name="l1207"></a>his daughters, and said, Up, get you out of this place; for the LORD
+<a name="l1208"></a>will destroy this city. But he seemed as one that mocked unto his sons
+<a name="l1209"></a>in law.
+<a name="l1210"></a>
+<a name="l1211"></a>19:15 And when the morning arose, then the angels hastened Lot,
+<a name="l1212"></a>saying, Arise, take thy wife, and thy two daughters, which are here;
+<a name="l1213"></a>lest thou be consumed in the iniquity of the city.
+<a name="l1214"></a>
+<a name="l1215"></a>19:16 And while he lingered, the men laid hold upon his hand, and upon
+<a name="l1216"></a>the hand of his wife, and upon the hand of his two daughters; the LORD
+<a name="l1217"></a>being merciful unto him: and they brought him forth, and set him
+<a name="l1218"></a>without the city.
+<a name="l1219"></a>
+<a name="l1220"></a>19:17 And it came to pass, when they had brought them forth abroad,</span><span class=cF0>
+<a name="l1221"></a>
+<a name="l1222"></a>ROFLMAO: Joke 4 hands.  I wuv God.  :-)
+<a name="l1223"></a>
+<a name="l1224"></a>----11/26/13 11:00:09----
+<a name="l1225"></a>
+<a name="l1226"></a>Butterflies, God... those are delightful.  We don't have very many.  I think we 
+<a name="l1227"></a>have rabbits.
+<a name="l1228"></a>
+<a name="l1229"></a>Got any music recommendations, God?
+<a name="l1230"></a>
+<a name="l1231"></a>God says...
+<a name="l1232"></a></span><span class=cF4>Zurishaddai.
+<a name="l1233"></a>
+<a name="l1234"></a>2:13 And his host, and those that were numbered of them, were fifty
+<a name="l1235"></a>and nine thousand and three hundred.
+<a name="l1236"></a>
+<a name="l1237"></a>2:14 Then the tribe of Gad: and the captain of the sons of Gad shall
+<a name="l1238"></a>be Eliasaph the son of Reuel.
+<a name="l1239"></a>
+<a name="l1240"></a>2:15 And his host, and those that were numbered of them, were forty
+<a name="l1241"></a>and five thousand and six hundred and fifty.
+<a name="l1242"></a>
+<a name="l1243"></a>2:16 All that were numbered in the camp of Reuben were an hundred
+<a name="l1244"></a>thousand and fifty and one thousand and four hundred and fifty,
+<a name="l1245"></a>throughout their armies. And they shall set forth in the second rank.
+<a name="l1246"></a>
+<a name="l1247"></a>2:17 Then the tabernacle of the congregation shall set forward with
+<a name="l1248"></a>the camp of the Levites in the midst of the camp: as they encamp, so
+<a name="l1249"></a>shall they set forward, every man in his place by their standards.
+<a name="l1250"></a>
+<a name="l1251"></a>2:18 On the west side shall be the standard of the camp of Ephraim</span><span class=cF0>
+<a name="l1252"></a>
+<a name="l1253"></a>Pete likes Simon and Garfunkle.  He doesn't listen to much music.  &quot;I am a 
+<a name="l1254"></a>rock.&quot;
+<a name="l1255"></a>
+<a name="l1256"></a>My Dad is at the cancer doctor.  Sheet.
+<a name="l1257"></a>
+<a name="l1258"></a>God likes harmonies.  </span><a href="http://www.youtube.com/watch?v=4fWyzwo1xg0"><span class=cF0>Sound of Silence</span></a><span class=cF0>
+<a name="l1259"></a>
+<a name="l1260"></a>God is all about &quot;honest measure&quot;.  Good is absolutely good.
+<a name="l1261"></a>
+<a name="l1262"></a>God says...
+<a name="l1263"></a></span><span class=cF4>18:22 Now when Jesus heard these things, he said unto him, Yet lackest
+<a name="l1264"></a>thou one thing: sell all that thou hast, and distribute unto the poor,
+<a name="l1265"></a>and thou shalt have treasure in heaven: and come, follow me.
+<a name="l1266"></a>
+<a name="l1267"></a>18:23 And when he heard this, he was very sorrowful: for he was very
+<a name="l1268"></a>rich.
+<a name="l1269"></a>
+<a name="l1270"></a>18:24 And when Jesus saw that he was very sorrowful, he said, How
+<a name="l1271"></a>hardly shall they that have riches enter into the kingdom of God!
+<a name="l1272"></a>18:25 For it is easier for a camel to go through a needle's eye, than
+<a name="l1273"></a>for a rich man to enter into the kingdom of God.
+<a name="l1274"></a>
+<a name="l1275"></a>18:26 And they that heard it said, Who then can be saved?  18:27 And
+<a name="l1276"></a>he said, The things which are impossible with men are possible with
+<a name="l1277"></a>God.
+<a name="l1278"></a>
+<a name="l1279"></a>18:28 Then Peter said, Lo, we have left all, and followed thee.
+<a name="l1280"></a>
+<a name="l1281"></a>18:29 And he said unto them, Verily I say unto you, There is no man</span><span class=cF0>
+<a name="l1282"></a>
+<a name="l1283"></a>Do another painting, God!  (God's laughing)  You actually have talent!
+<a name="l1284"></a>
+<a name="l1285"></a>God draws...
+<a name="l1286"></a></span><img src="http://www.templeos.org/Wb/Accts/TS/Wb2/Rants/TAD/2013/11/Img018.BMP" width="640" height="472" alt=""><span class=cF3>                                                                                                                </span><span class=cF0>
+<a name="l1287"></a></span><span class=cF2>That's an elephant lifing-up his trunk and singing into a microphone.</span><span class=cF0>
+<a name="l1288"></a>
+<a name="l1289"></a>God's laughing.
+<a name="l1290"></a>
+<a name="l1291"></a>God says...
+<a name="l1292"></a></span><span class=cF4>feeling created transgression royalties DAMAGES loosed abroad impiety Never 
+<a name="l1293"></a>glows subjoined instantly compassion ever countenance self claim convenient 
+<a name="l1294"></a>Madness served disapproveth proved paths recourse concernment environing 
+<a name="l1295"></a>pilgrims purged contemplating after suspicions OR ambitions cause guessed boiled 
+<a name="l1296"></a>smoothed paradise intend Author greatest</span><span class=cF0>
+<a name="l1297"></a>
+<a name="l1298"></a>----11/26/13 11:27:42----
+<a name="l1299"></a>
+<a name="l1300"></a>I babysat my brother Kevin's kids when I was about 11-12.  When you think of 
+<a name="l1301"></a>taking care of infants, what comes to mind?  You gotta change them.  I wanted to 
+<a name="l1302"></a>be adult about the whole thing and changed a baby.  I think you're supposed to 
+<a name="l1303"></a>not change them, I guess.  I'll bet if you babysit for a really long time, you 
+<a name="l1304"></a>change them?  Surely?
+<a name="l1305"></a>
+<a name="l1306"></a>Fuck-it.  I didn't do anything -- that's their problem.  You gotta quit being a 
+<a name="l1307"></a>pussy at some point in life and not care what other people think.
+<a name="l1308"></a>
+<a name="l1309"></a>God says...
+<a name="l1310"></a></span><span class=cF4>up: who then is able to stand before me?  41:11 Who hath prevented me,
+<a name="l1311"></a>that I should repay him? whatsoever is under the whole heaven is mine.
+<a name="l1312"></a>
+<a name="l1313"></a>41:12 I will not conceal his parts, nor his power, nor his comely
+<a name="l1314"></a>proportion.
+<a name="l1315"></a>
+<a name="l1316"></a>41:13 Who can discover the face of his garment? or who can come to him
+<a name="l1317"></a>with his double bridle?  41:14 Who can open the doors of his face? his
+<a name="l1318"></a>teeth are terrible round about.
+<a name="l1319"></a>
+<a name="l1320"></a>41:15 His scales are his pride, shut up together as with a close seal.
+<a name="l1321"></a>
+<a name="l1322"></a>41:16 One is so near to another, that no air can come between them.
+<a name="l1323"></a>
+<a name="l1324"></a>41:17 They are joined one to another, they stick together, that they
+<a name="l1325"></a>cannot be sundered.
+<a name="l1326"></a>
+<a name="l1327"></a>41:18 By his neesings a light doth shine, and his eyes are like the
+<a name="l1328"></a>eyelids of the morning.</span><span class=cF0>
+<a name="l1329"></a>
+<a name="l1330"></a>----11/26/13 11:40:07----
+<a name="l1331"></a>
+<a name="l1332"></a>Imagine you've been committed to a mental hospital.  They talk about you behind 
+<a name="l1333"></a>your back about your fate.
+<a name="l1334"></a>
+<a name="l1335"></a>I got doctors or prison wardens, or some shit, in charge of my life.  There's a 
+<a name="l1336"></a>whole campaign of shit they don't tell me.  Somehow, I lost all my citizen 
+<a name="l1337"></a>rights and I must endure trials and tribulations.  They do web pages as 
+<a name="l1338"></a>psychological tests and shit.  They have actors who find me in stores and test 
+<a name="l1339"></a>if I'm a pedophile or deviant.
+<a name="l1340"></a>
+<a name="l1341"></a>God is just motherfuckers, When you find yourself in Hell, you'll know why.  
+<a name="l1342"></a>Dad's at the cancer doctor.
+<a name="l1343"></a>
+<a name="l1344"></a>God says...
+<a name="l1345"></a></span><span class=cF4>a set time, and remember me!  14:14 If a man die, shall he live again?
+<a name="l1346"></a>all the days of my appointed time will I wait, till my change come.
+<a name="l1347"></a>
+<a name="l1348"></a>14:15 Thou shalt call, and I will answer thee: thou wilt have a desire
+<a name="l1349"></a>to the work of thine hands.
+<a name="l1350"></a>
+<a name="l1351"></a>14:16 For now thou numberest my steps: dost thou not watch over my
+<a name="l1352"></a>sin?  14:17 My transgression is sealed up in a bag, and thou sewest up
+<a name="l1353"></a>mine iniquity.
+<a name="l1354"></a>
+<a name="l1355"></a>14:18 And surely the mountains falling cometh to nought, and the rock
+<a name="l1356"></a>is removed out of his place.
+<a name="l1357"></a>
+<a name="l1358"></a>14:19 The waters wear the stones: thou washest away the things which
+<a name="l1359"></a>grow out of the dust of the earth; and thou destroyest the hope of
+<a name="l1360"></a>man.
+<a name="l1361"></a>
+<a name="l1362"></a>14:20 Thou prevailest for ever against him, and he passeth: thou
+<a name="l1363"></a>changest his countenance, and sendest him away.</span><span class=cF0>
+<a name="l1364"></a>
+<a name="l1365"></a>God says...
+<a name="l1366"></a></span><span class=cF4>proceed envy neglecteth diminution pertained possible sounding whoever Wilt 
+<a name="l1367"></a>applauses lo esteem looker incredibly fluctuating busied reputation secret 
+<a name="l1368"></a>incorrect allay behalf supposing Please imitate doleful sate prefer fouls 
+<a name="l1369"></a>publication husband slumber better cattle production office usefully fuller 
+<a name="l1370"></a>telleth soil knocked</span><span class=cF0>
+<a name="l1371"></a>
+<a name="l1372"></a>God is perfectly just.  I am not worried.  They're fucked and I get blessed.
+<a name="l1373"></a>
+<a name="l1374"></a>Joseph in the Bible went to prison for 7 years for a false rape accusation. 
+<a name="l1375"></a>Then, He ruled Egypt.  You can't make that shit up.  God is perfectly just and 
+<a name="l1376"></a>highs and lows balance.  I am not at all worried about justice not being done.
+<a name="l1377"></a>
+<a name="l1378"></a>----11/26/13 12:23:39----
+<a name="l1379"></a>
+<a name="l1380"></a>What's Your favorite Christmas carol?
+<a name="l1381"></a>
+<a name="l1382"></a>Draw something Christmas!
+<a name="l1383"></a>
+<a name="l1384"></a>God draws...
+<a name="l1385"></a></span><img src="http://www.templeos.org/Wb/Accts/TS/Wb2/Rants/TAD/2013/11/Img019.BMP" width="640" height="472" alt=""><span class=cF3>                                                                                                                </span><span class=cF0>
+<a name="l1386"></a></span><span class=cF2>That's a very fat man and snow drifts that look like a christmas tree on its 
+<a name="l1387"></a>side.  The fat man might be a candle.</span><span class=cF0>
+<a name="l1388"></a>
+<a name="l1389"></a>God says...
+<a name="l1390"></a></span><span class=cF4>Dakota possessed universal proprietary flame recalled Cassiacum dispersion 
+<a name="l1391"></a>fallen regardless go prophecy Will roused forbidden prepares purest pollution 
+<a name="l1392"></a>nor mangled predicated honey thanksgiving beauties Christians Knowing retained 
+<a name="l1393"></a>endangers fowls fruitful three equipment sovereign Pontitianus Newsletters 
+<a name="l1394"></a>preeminent compassionates molest busied villainies Grace whoever 97 AD 
+<a name="l1395"></a>institution lives justify melted thoroughly 2001 malicious unseemly rebelled 
+<a name="l1396"></a>equals December lusted So compelled Excellent urgedst coursing if parted several 
+<a name="l1397"></a>where Light hopes attributing illumined She decay seeking steals Like mediator 
+<a name="l1398"></a>attack 91 intoxicated freedom wine pears Either EITHER teacher definitely 
+<a name="l1399"></a>cheered Afric forbade Or</span><span class=cF0>
+<a name="l1400"></a>
+<a name="l1401"></a>----11/26/13 12:46:26----
+<a name="l1402"></a>
+<a name="l1403"></a>Praise You for snow.  You made beautiful crystals.  It's fluffy and gentle 
+<a name="l1404"></a>crushes.  Snowballs, snowmen.  Just enough.
+<a name="l1405"></a>
+<a name="l1406"></a>God says...
+<a name="l1407"></a></span><span class=cF4>against the fenced cities, and against the high towers.
+<a name="l1408"></a>
+<a name="l1409"></a>1:17 And I will bring distress upon men, that they shall walk like
+<a name="l1410"></a>blind men, because they have sinned against the LORD: and their blood
+<a name="l1411"></a>shall be poured out as dust, and their flesh as the dung.
+<a name="l1412"></a>
+<a name="l1413"></a>1:18 Neither their silver nor their gold shall be able to deliver them
+<a name="l1414"></a>in the day of the LORD's wrath; but the whole land shall be devoured
+<a name="l1415"></a>by the fire of his jealousy: for he shall make even a speedy riddance
+<a name="l1416"></a>of all them that dwell in the land.
+<a name="l1417"></a>
+<a name="l1418"></a>2:1 Gather yourselves together, yea, gather together, O nation not
+<a name="l1419"></a>desired; 2:2 Before the decree bring forth, before the day pass as the
+<a name="l1420"></a>chaff, before the fierce anger of the LORD come upon you, before the
+<a name="l1421"></a>day of the LORD's anger come upon you.
+<a name="l1422"></a>
+<a name="l1423"></a>2:3 Seek ye the LORD, all ye meek of the earth, which have wrought his
+<a name="l1424"></a>judgment; seek righteousness, seek meekness: it may be ye shall be hid
+<a name="l1425"></a>in the day of the LORD's anger.</span><span class=cF0>
+<a name="l1426"></a>
+<a name="l1427"></a>----11/26/13 13:21:26----
+<a name="l1428"></a>
+<a name="l1429"></a>Kernel.BIN and Compiler.BIN are 50,000 LOC.  They are compiled ahead of time.
+<a name="l1430"></a>/Adam and all sub directories are 50,000 LOC.  They are compiled during boot.
+<a name="l1431"></a>
+<a name="l1432"></a>All memory is identity-mapped at all times.
+<a name="l1433"></a>
+<a name="l1434"></a>I change Kernel.BIN and Compiler.BIN and things in /Adam all day long and
+<a name="l1435"></a>upload.  There is no concept of building against a certain map.  Users are 
+<a name="l1436"></a>supposed to run from source code, just like you press F5 in an IDE to run your 
+<a name="l1437"></a>code.
+<a name="l1438"></a>
+<a name="l1439"></a>God says...
+<a name="l1440"></a></span><span class=cF4>3:28 There is neither Jew nor Greek, there is neither bond nor free,
+<a name="l1441"></a>there is neither male nor female: for ye are all one in Christ Jesus.
+<a name="l1442"></a>
+<a name="l1443"></a>3:29 And if ye be Christ's, then are ye Abraham's seed, and heirs
+<a name="l1444"></a>according to the promise.
+<a name="l1445"></a>
+<a name="l1446"></a>4:1 Now I say, That the heir, as long as he is a child, differeth
+<a name="l1447"></a>nothing from a servant, though he be lord of all; 4:2 But is under
+<a name="l1448"></a>tutors and governors until the time appointed of the father.
+<a name="l1449"></a>
+<a name="l1450"></a>4:3 Even so we, when we were children, were in bondage under the
+<a name="l1451"></a>elements of the world: 4:4 But when the fulness of the time was come,
+<a name="l1452"></a>God sent forth his Son, made of a woman, made under the law, 4:5 To
+<a name="l1453"></a>redeem them that were under the law, that we might receive the
+<a name="l1454"></a>adoption of sons.
+<a name="l1455"></a>
+<a name="l1456"></a>4:6 And because ye are sons, God hath sent forth the Spirit of his Son
+<a name="l1457"></a>into your hearts, crying, Abba, Father.
+<a name="l1458"></a>
+<a name="l1459"></a>4:7 Wherefore thou art no more a servant, but a son; and if a son,</span><span class=cF0>
+<a name="l1460"></a>
+<a name="l1461"></a>TempleOS is Ring-0-Only.  Tasks inherit symbols from parents.  Think environment 
+<a name="l1462"></a>variables -- ever task has a table.  Memory is associated with a task.  Adam is 
+<a name="l1463"></a>the father of all and his memory is like kernel memory in other systems.
+<a name="l1464"></a>
+<a name="l1465"></a>----11/26/13 13:50:08----
+<a name="l1466"></a>
+<a name="l1467"></a>Fucken communists!
+<a name="l1468"></a>
+<a name="l1469"></a>Someone said to a rockstar that the people who set-up the stage deserved more.
+<a name="l1470"></a>
+<a name="l1471"></a></span><span class=cF2>17:7 But which of you, having a servant plowing or feeding cattle,
+<a name="l1472"></a>will say unto him by and by, when he is come from the field, Go and
+<a name="l1473"></a>sit down to meat?  17:8 And will not rather say unto him, Make ready
+<a name="l1474"></a>wherewith I may sup, and gird thyself, and serve me, till I have eaten
+<a name="l1475"></a>and drunken; and afterward thou shalt eat and drink?  17:9 Doth he
+<a name="l1476"></a>thank that servant because he did the things that were commanded him?
+<a name="l1477"></a>I trow not.
+<a name="l1478"></a>
+<a name="l1479"></a>17:10 So likewise ye, when ye shall have done all those things which
+<a name="l1480"></a>are commanded you, say, We are unprofitable servants: we have done
+<a name="l1481"></a>that which was our duty to do.
+<a name="l1482"></a>
+<a name="l1483"></a>17:11 And it came to pass, as he went to Jerusalem, that he passed
+<a name="l1484"></a>through the midst of Samaria and Galilee.
+<a name="l1485"></a></span><span class=cF0>
+<a name="l1486"></a>
+<a name="l1487"></a>Fuck-off.  Take yer coveting commie ass and go to Cuba.  Ya got to beat them or 
+<a name="l1488"></a>the entire county is a junkyard.
+<a name="l1489"></a>
+<a name="l1490"></a>God says...
+<a name="l1491"></a></span><span class=cF4>obeyed the voice of my teachers, nor inclined mine ear to them that
+<a name="l1492"></a>instructed me!  5:14 I was almost in all evil in the midst of the
+<a name="l1493"></a>congregation and assembly.
+<a name="l1494"></a>
+<a name="l1495"></a>5:15 Drink waters out of thine own cistern, and running waters out of
+<a name="l1496"></a>thine own well.
+<a name="l1497"></a>
+<a name="l1498"></a>5:16 Let thy fountains be dispersed abroad, and rivers of waters in
+<a name="l1499"></a>the streets.
+<a name="l1500"></a>
+<a name="l1501"></a>5:17 Let them be only thine own, and not strangers' with thee.
+<a name="l1502"></a>
+<a name="l1503"></a>5:18 Let thy fountain be blessed: and rejoice with the wife of thy
+<a name="l1504"></a>youth.
+<a name="l1505"></a>
+<a name="l1506"></a>5:19 Let her be as the loving hind and pleasant roe; let her breasts
+<a name="l1507"></a>satisfy thee at all times; and be thou ravished always with her love.
+<a name="l1508"></a>
+<a name="l1509"></a>5:20 And why wilt thou, my son, be ravished with a strange woman, and
+<a name="l1510"></a>embrace the bosom of a stranger?  5:21 For the ways of man are before</span><span class=cF0>
+<a name="l1511"></a>
+<a name="l1512"></a>I will smite you with a pocket-knife, but the one who's sandle straps I am not 
+<a name="l1513"></a>worthy to loose will cut you in half with a ...  tree.
+<a name="l1514"></a>
+<a name="l1515"></a>God says...
+<a name="l1516"></a></span><span class=cF4>Egyptians beheld the woman that she was very fair.
+<a name="l1517"></a>
+<a name="l1518"></a>12:15 The princes also of Pharaoh saw her, and commended her before
+<a name="l1519"></a>Pharaoh: and the woman was taken into Pharaoh's house.
+<a name="l1520"></a>
+<a name="l1521"></a>12:16 And he entreated Abram well for her sake: and he had sheep, and
+<a name="l1522"></a>oxen, and he asses, and menservants, and maidservants, and she asses,
+<a name="l1523"></a>and camels.
+<a name="l1524"></a>
+<a name="l1525"></a>12:17 And the LORD plagued Pharaoh and his house with great plagues
+<a name="l1526"></a>because of Sarai Abram's wife.
+<a name="l1527"></a>
+<a name="l1528"></a>12:18 And Pharaoh called Abram and said, What is this that thou hast
+<a name="l1529"></a>done unto me? why didst thou not tell me that she was thy wife?  12:19
+<a name="l1530"></a>Why saidst thou, She is my sister? so I might have taken her to me to
+<a name="l1531"></a>wife: now therefore behold thy wife, take her, and go thy way.
+<a name="l1532"></a>
+<a name="l1533"></a>12:20 And Pharaoh commanded his men concerning him: and they sent him
+<a name="l1534"></a>away, and his wife, and all that he had.</span><span class=cF0>
+<a name="l1535"></a>
+<a name="l1536"></a>----11/26/13 14:13:04----
+<a name="l1537"></a>
+<a name="l1538"></a>Are they making NEW songs for You, God?
+<a name="l1539"></a>
+<a name="l1540"></a>Did You like the woman who sang a song about butterflies?
+<a name="l1541"></a>
+<a name="l1542"></a>Women singers are borderline pornographic.  What do You think?
+<a name="l1543"></a>
+<a name="l1544"></a>God says...
+<a name="l1545"></a></span><span class=cF4>and will execute judgments in the midst of thee in the sight of the
+<a name="l1546"></a>nations.
+<a name="l1547"></a>
+<a name="l1548"></a>5:9 And I will do in thee that which I have not done, and whereunto I
+<a name="l1549"></a>will not do any more the like, because of all thine abominations.
+<a name="l1550"></a>
+<a name="l1551"></a>5:10 Therefore the fathers shall eat the sons in the midst of thee,
+<a name="l1552"></a>and the sons shall eat their fathers; and I will execute judgments in
+<a name="l1553"></a>thee, and the whole remnant of thee will I scatter into all the winds.
+<a name="l1554"></a>
+<a name="l1555"></a>5:11 Wherefore, as I live, saith the Lord GOD; Surely, because thou
+<a name="l1556"></a>hast defiled my sanctuary with all thy detestable things, and with all
+<a name="l1557"></a>thine abominations, therefore will I also diminish thee; neither shall
+<a name="l1558"></a>mine eye spare, neither will I have any pity.
+<a name="l1559"></a>
+<a name="l1560"></a>5:12 A third part of thee shall die with the pestilence, and with
+<a name="l1561"></a>famine shall they be consumed in the midst of thee: and a third part
+<a name="l1562"></a>shall fall by the sword round about thee; and I will scatter a third
+<a name="l1563"></a>part into all the winds, and I will draw out a sword after them.</span><span class=cF0>
+<a name="l1564"></a>
+<a name="l1565"></a>Fuck people who draw penises!  Putin fucken jailed PussyRiot.  Some kids think 
+<a name="l1566"></a>is good to put penises in the faces of little old ladies in church?
+<a name="l1567"></a>
+<a name="l1568"></a>God says...
+<a name="l1569"></a></span><span class=cF4>anger, and the burden thereof is heavy: his lips are full of
+<a name="l1570"></a>indignation, and his tongue as a devouring fire: 30:28 And his breath,
+<a name="l1571"></a>as an overflowing stream, shall reach to the midst of the neck, to
+<a name="l1572"></a>sift the nations with the sieve of vanity: and there shall be a bridle
+<a name="l1573"></a>in the jaws of the people, causing them to err.
+<a name="l1574"></a>
+<a name="l1575"></a>30:29 Ye shall have a song, as in the night when a holy solemnity is
+<a name="l1576"></a>kept; and gladness of heart, as when one goeth with a pipe to come
+<a name="l1577"></a>into the mountain of the LORD, to the mighty One of Israel.
+<a name="l1578"></a>
+<a name="l1579"></a>30:30 And the LORD shall cause his glorious voice to be heard, and
+<a name="l1580"></a>shall shew the lighting down of his arm, with the indignation of his
+<a name="l1581"></a>anger, and with the flame of a devouring fire, with scattering, and
+<a name="l1582"></a>tempest, and hailstones.
+<a name="l1583"></a>
+<a name="l1584"></a>30:31 For through the voice of the LORD shall the Assyrian be beaten
+<a name="l1585"></a>down, which smote with a rod.
+<a name="l1586"></a>
+<a name="l1587"></a>30:32 And in every place where the grounded staff shall pass, which
+<a name="l1588"></a>the LORD shall lay upon him, it shall be with tabrets and harps: and</span><span class=cF0>
+<a name="l1589"></a>
+<a name="l1590"></a>You da Man!  Draw sompin God!
+<a name="l1591"></a>
+<a name="l1592"></a>God draws...
+<a name="l1593"></a></span><img src="http://www.templeos.org/Wb/Accts/TS/Wb2/Rants/TAD/2013/11/Img020.BMP" width="640" height="472" alt=""><span class=cF3>                                                                                                                </span><span class=cF0>
+<a name="l1594"></a></span><span class=cF2>That's a person laying-back on a couch.</span><span class=cF0>
+<a name="l1595"></a>
+<a name="l1596"></a>God says...
+<a name="l1597"></a></span><span class=cF4>hallowing treasures conflicting variety examining succeeded affianced By Seven 
+<a name="l1598"></a>forbid boy seek breadth END believing</span><span class=cF0>
+<a name="l1599"></a>
+<a name="l1600"></a>----11/26/13 14:24:51----
+<a name="l1601"></a>
+<a name="l1602"></a>I have eliminated the need for OBJ and EXE and resource files.  You run straight 
+<a name="l1603"></a>from source and source includes graphics. To conceptualize, imagine hitting F5 
+<a name="l1604"></a>to run your IDE project, but it puts nothing on disk.
+<a name="l1605"></a>
+<a name="l1606"></a>I fucken wrote a compiler/assembler and editor from scratch.
+<a name="l1607"></a>
+<a name="l1608"></a>The command-line feeds into a HolyC JIT compiler.
+<a name="l1609"></a>
+<a name="l1610"></a>Imagine running shell-script with a good compiler and the shell script is HolyC.
+<a name="l1611"></a>
+<a name="l1612"></a>You are hopelessly small-minded.  Go learn about C64 to expand your mind into 
+<a name="l1613"></a>other ways of thinking.
+<a name="l1614"></a>
+<a name="l1615"></a>God says...
+<a name="l1616"></a></span><span class=cF4>31:39 And the asses were thirty thousand and five hundred; of which
+<a name="l1617"></a>the LORD's tribute was threescore and one.
+<a name="l1618"></a>
+<a name="l1619"></a>31:40 And the persons were sixteen thousand; of which the LORD's
+<a name="l1620"></a>tribute was thirty and two persons.
+<a name="l1621"></a>
+<a name="l1622"></a>31:41 And Moses gave the tribute, which was the LORD's heave offering,
+<a name="l1623"></a>unto Eleazar the priest, as the LORD commanded Moses.
+<a name="l1624"></a>
+<a name="l1625"></a>31:42 And of the children of Israel's half, which Moses divided from
+<a name="l1626"></a>the men that warred, 31:43 (Now the half that pertained unto the
+<a name="l1627"></a>congregation was three hundred thousand and thirty thousand and seven
+<a name="l1628"></a>thousand and five hundred sheep, 31:44 And thirty and six thousand
+<a name="l1629"></a>beeves, 31:45 And thirty thousand asses and five hundred, 31:46 And
+<a name="l1630"></a>sixteen thousand persons;) 31:47 Even of the children of Israel's
+<a name="l1631"></a>half, Moses took one portion of fifty, both of man and of beast, and
+<a name="l1632"></a>gave them unto the Levites, which kept the charge of the tabernacle of
+<a name="l1633"></a>the LORD; as the LORD commanded Moses.
+<a name="l1634"></a>
+<a name="l1635"></a>31:48 And the officers which were over thousands of the host, the</span><span class=cF0>
+<a name="l1636"></a>
+<a name="l1637"></a>Type this at the command-line:
+<a name="l1638"></a>
+<a name="l1639"></a>
+<a name="l1640"></a>&gt;</span><span class=cF1>U0</span><span class=cF0> NetOfDots()
+<a name="l1641"></a>&gt;{
+<a name="l1642"></a>&gt;  </span><span class=cF1>I64</span><span class=cF0> i;
+<a name="l1643"></a>&gt;  CDC *dc=DCAlias;
+<a name="l1644"></a>&gt;  DocClear;  </span><span class=cF2>//Clear text</span><span class=cF0>
+<a name="l1645"></a>&gt;  dc-&gt;color=RED;
+<a name="l1646"></a>&gt;  </span><span class=cF1>for</span><span class=cF0> (i=0;i&lt;480;i+=20)
+<a name="l1647"></a>&gt;    GrLine(dc,i,0,0,480-i,3);
+<a name="l1648"></a>&gt;  DCDel(dc);
+<a name="l1649"></a>&gt;  PressAKey;
+<a name="l1650"></a>&gt;  DCFill;
+<a name="l1651"></a>&gt;}
+<a name="l1652"></a>&gt;
+<a name="l1653"></a>&gt;NetOfDots;
+<a name="l1654"></a>
+<a name="l1655"></a>
+<a name="l1656"></a>Do you remember how the C64 let you enter BASIC programs or commands at the 
+<a name="l1657"></a>command-line?
+<a name="l1658"></a>
+<a name="l1659"></a></span><span class=cF1>
+<a name="l1660"></a>D:/Accts/TS/TAD&gt;</span><span class=cF2>Uf(&quot;NetOfDots&quot;);
+<a name="l1661"></a></span><span class=cF1>     RSI i
+<a name="l1662"></a>     RDI dc
+<a name="l1663"></a>FFFFFFF0 Stk Size
+<a name="l1664"></a></span><span class=cF4>&amp;NetOfDots+0x0000</span><span class=cF1>
+<a name="l1665"></a>          &amp;NetOfDots+0x0000 55           PUSH   U64 </span><span class=cFC>RBP</span><span class=cF1>
+<a name="l1666"></a>          &amp;NetOfDots+0x0001 488BEC       MOV    U64 </span><span class=cFC>RBP</span><span class=cF1>,U64 </span><span class=cFC>RSP</span><span class=cF1>
+<a name="l1667"></a>          &amp;NetOfDots+0x0004 4883EC10     SUB    U64 </span><span class=cFC>RSP</span><span class=cF1>,I8 10
+<a name="l1668"></a>          &amp;NetOfDots+0x0008 56           PUSH   U64 </span><span class=cFC>RSI</span><span class=cF1>
+<a name="l1669"></a>          &amp;NetOfDots+0x0009 57           PUSH   U64 </span><span class=cFC>RDI</span><span class=cF1>
+<a name="l1670"></a></span><span class=cF4>&amp;NetOfDots+0x000A</span><span class=cF1>
+<a name="l1671"></a>          &amp;NetOfDots+0x000A 6A00         PUSH   I8 00
+<a name="l1672"></a>          &amp;NetOfDots+0x000C 6A00         PUSH   I8 00
+<a name="l1673"></a>          &amp;NetOfDots+0x000E E8ADBE1200   CALL   I32 &amp;DCAlias+0x0000 
+<a name="l1674"></a>          &amp;NetOfDots+0x0013 488BF8       MOV    U64 </span><span class=cFC>RDI</span><span class=cF1>,U64 </span><span class=cFC>RAX</span><span class=cF1>
+<a name="l1675"></a></span><span class=cF4>&amp;NetOfDots+0x0016</span><span class=cF1>
+<a name="l1676"></a>          &amp;NetOfDots+0x0016 6A00         PUSH   I8 00
+<a name="l1677"></a>          &amp;NetOfDots+0x0018 E8135C0B00   CALL   I32 &amp;DocClear+0x0000 
+<a name="l1678"></a></span><span class=cF4>&amp;NetOfDots+0x001D</span><span class=cF1>
+<a name="l1679"></a>          &amp;NetOfDots+0x001D C74720040000 MOV    U64 20[</span><span class=cFC>RDI</span><span class=cF1>],U32 00000004
+<a name="l1680"></a>          &amp;NetOfDots+0x0023 00          
+<a name="l1681"></a></span><span class=cF4>&amp;NetOfDots+0x0024</span><span class=cF1>
+<a name="l1682"></a>          &amp;NetOfDots+0x0024 33F6         XOR    U64 </span><span class=cFC>RSI</span><span class=cF1>,U64 </span><span class=cFC>RSI</span><span class=cF1>
+<a name="l1683"></a>          &amp;NetOfDots+0x0026 4881FEE00100 CMP    U64 </span><span class=cFC>RSI</span><span class=cF1>,I32 000001E0
+<a name="l1684"></a>          &amp;NetOfDots+0x002C 00          
+<a name="l1685"></a>          &amp;NetOfDots+0x002D 7D1E         JNL    I8 &amp;NetOfDots+0x004D 
+<a name="l1686"></a></span><span class=cF4>&amp;NetOfDots+0x002F</span><span class=cF1>
+<a name="l1687"></a>          &amp;NetOfDots+0x002F 6A00         PUSH   I8 00
+<a name="l1688"></a>          &amp;NetOfDots+0x0031 6A03         PUSH   I8 03
+<a name="l1689"></a>          &amp;NetOfDots+0x0033 B8E0010000   MOV    U64 </span><span class=cFC>RAX</span><span class=cF1>,U32 000001E0
+<a name="l1690"></a>          &amp;NetOfDots+0x0038 482BC6       SUB    U64 </span><span class=cFC>RAX</span><span class=cF1>,U64 </span><span class=cFC>RSI</span><span class=cF1>
+<a name="l1691"></a>          &amp;NetOfDots+0x003B 50           PUSH   U64 </span><span class=cFC>RAX</span><span class=cF1>
+<a name="l1692"></a>          &amp;NetOfDots+0x003C 6A00         PUSH   I8 00
+<a name="l1693"></a>          &amp;NetOfDots+0x003E 6A00         PUSH   I8 00
+<a name="l1694"></a>          &amp;NetOfDots+0x0040 56           PUSH   U64 </span><span class=cFC>RSI</span><span class=cF1>
+<a name="l1695"></a>          &amp;NetOfDots+0x0041 57           PUSH   U64 </span><span class=cFC>RDI</span><span class=cF1>
+<a name="l1696"></a>          &amp;NetOfDots+0x0042 E8C1141200   CALL   I32 &amp;GrLine+0x0000 
+<a name="l1697"></a>          &amp;NetOfDots+0x0047 4883C614     ADD    U64 </span><span class=cFC>RSI</span><span class=cF1>,I8 14
+<a name="l1698"></a></span><span class=cF4>&amp;NetOfDots+0x004B</span><span class=cF1>
+<a name="l1699"></a>          &amp;NetOfDots+0x004B EBD9         JMP    I8 &amp;NetOfDots+0x0026 
+<a name="l1700"></a>          &amp;NetOfDots+0x004D 57           PUSH   U64 </span><span class=cFC>RDI</span><span class=cF1>
+<a name="l1701"></a>          &amp;NetOfDots+0x004E E88D261600   CALL   I32 &amp;DCDel+0x0000 
+<a name="l1702"></a></span><span class=cF4>&amp;NetOfDots+0x0053</span><span class=cF1>
+<a name="l1703"></a>          &amp;NetOfDots+0x0053 E8BA682480   CALL   I32 &amp;PressAKey+0x0000 
+<a name="l1704"></a></span><span class=cF4>&amp;NetOfDots+0x0058</span><span class=cF1>
+<a name="l1705"></a>          &amp;NetOfDots+0x0058 68FF000000   PUSH   I32 000000FF
+<a name="l1706"></a>          &amp;NetOfDots+0x005D 6A00         PUSH   I8 00
+<a name="l1707"></a>          &amp;NetOfDots+0x005F E87CF41400   CALL   I32 &amp;DCFill+0x0000 
+<a name="l1708"></a></span><span class=cF4>&amp;NetOfDots+0x0064</span><span class=cF1>
+<a name="l1709"></a>          &amp;NetOfDots+0x0064 5F           POP    U64 </span><span class=cFC>RDI</span><span class=cF1>
+<a name="l1710"></a>          &amp;NetOfDots+0x0065 5E           POP    U64 </span><span class=cFC>RSI</span><span class=cF1>
+<a name="l1711"></a>          &amp;NetOfDots+0x0066 C9           LEAVE
+<a name="l1712"></a>          &amp;NetOfDots+0x0067 C3           RET
+<a name="l1713"></a>Code Size:0068
+<a name="l1714"></a>0.023442s ans0=0x00000090=144</span><span class=cF0>
+<a name="l1715"></a>
+<a name="l1716"></a>God says...
+<a name="l1717"></a></span><span class=cF4>LORD's wrath be kindled against you, and he shut up the heaven, that
+<a name="l1718"></a>there be no rain, and that the land yield not her fruit; and lest ye
+<a name="l1719"></a>perish quickly from off the good land which the LORD giveth you.
+<a name="l1720"></a>
+<a name="l1721"></a>11:18 Therefore shall ye lay up these my words in your heart and in
+<a name="l1722"></a>your soul, and bind them for a sign upon your hand, that they may be
+<a name="l1723"></a>as frontlets between your eyes.
+<a name="l1724"></a>
+<a name="l1725"></a>11:19 And ye shall teach them your children, speaking of them when
+<a name="l1726"></a>thou sittest in thine house, and when thou walkest by the way, when
+<a name="l1727"></a>thou liest down, and when thou risest up.
+<a name="l1728"></a>
+<a name="l1729"></a>11:20 And thou shalt write them upon the door posts of thine house,
+<a name="l1730"></a>and upon thy gates: 11:21 That your days may be multiplied, and the
+<a name="l1731"></a>days of your children, in the land which the LORD sware unto your
+<a name="l1732"></a>fathers to give them, as the days of heaven upon the earth.
+<a name="l1733"></a>
+<a name="l1734"></a>11:22 For if ye shall diligently keep all these commandments which I
+<a name="l1735"></a>command you, to do them, to love the LORD your God, to walk in all his
+<a name="l1736"></a>ways, and to cleave unto him; 11:23 Then will the LORD drive out all
+<a name="l1737"></a></span><span class=cF0>
+<a name="l1738"></a></span><a href="http://www.youtube.com/watch?v=SNny8w18QOs"><span class=cF0>Blind Mellon</span></a><span class=cF0>
+<a name="l1739"></a>
+<a name="l1740"></a>God says...
+<a name="l1741"></a></span><span class=cF4>sighed conceiving thrice camp devil ardently sleepest pitiable briars increase 
+<a name="l1742"></a>Whatsoever expected unhesitatingly unlikeliness height brought entangled stick 
+<a name="l1743"></a>conjecture through part everything discontent faint silver using called spare 
+<a name="l1744"></a>placing everlasting fingers sharply Egypt doubled maimed fixedly whom Willing 
+<a name="l1745"></a>hare longings hateful bestow pure journeyed scorn fruitlessly profits field 
+<a name="l1746"></a>joineth rebuked peril IRS unfair pared Ignorant effort notice pardoned ariseth 
+<a name="l1747"></a>chains illuminate searches persuasive unsuitably arts amid east inactive 
+<a name="l1748"></a>doubteth teeming invisible deal anyone apt Defects necessities crookedness 
+<a name="l1749"></a>plenteousness boyhood Trust notions glad sharpen lures presuming sprung meat 
+<a name="l1750"></a>waft reputation Bear Prelate Redeemer preachings Beware lawyers calling impious 
+<a name="l1751"></a>neglect died far pleasure uproar spot revenged tones punishments endlessly 
+<a name="l1752"></a>rebuked womanish talked Out</span><span class=cF0>
+<a name="l1753"></a>
+<a name="l1754"></a>----11/26/13 14:58:16----
+<a name="l1755"></a>
+<a name="l1756"></a>You like China, God?
+<a name="l1757"></a>
+<a name="l1758"></a>How do they fix pollution?
+<a name="l1759"></a>
+<a name="l1760"></a>God says...
+<a name="l1761"></a></span><span class=cF4>of burnt offerings and the fat until night; therefore the Levites
+<a name="l1762"></a>prepared for themselves, and for the priests the sons of Aaron.
+<a name="l1763"></a>
+<a name="l1764"></a>35:15 And the singers the sons of Asaph were in their place, according
+<a name="l1765"></a>to the commandment of David, and Asaph, and Heman, and Jeduthun the
+<a name="l1766"></a>king's seer; and the porters waited at every gate; they might not
+<a name="l1767"></a>depart from their service; for their brethren the Levites prepared for
+<a name="l1768"></a>them.
+<a name="l1769"></a>
+<a name="l1770"></a>35:16 So all the service of the LORD was prepared the same day, to
+<a name="l1771"></a>keep the passover, and to offer burnt offerings upon the altar of the
+<a name="l1772"></a>LORD, according to the commandment of king Josiah.
+<a name="l1773"></a>
+<a name="l1774"></a>35:17 And the children of Israel that were present kept the passover
+<a name="l1775"></a>at that time, and the feast of unleavened bread seven days.
+<a name="l1776"></a>
+<a name="l1777"></a>35:18 And there was no passover like to that kept in Israel from the
+<a name="l1778"></a>days of Samuel the prophet; neither did all the kings of Israel keep
+<a name="l1779"></a>such a passover as Josiah kept, and the priests, and the Levites, and
+<a name="l1780"></a>all Judah and Israel that were present, and the inhabitants of</span><span class=cF0>
+<a name="l1781"></a>
+<a name="l1782"></a>God says...
+<a name="l1783"></a></span><span class=cF4>shall hunt them from every mountain, and from every hill, and out of
+<a name="l1784"></a>the holes of the rocks.
+<a name="l1785"></a>
+<a name="l1786"></a>16:17 For mine eyes are upon all their ways: they are not hid from my
+<a name="l1787"></a>face, neither is their iniquity hid from mine eyes.
+<a name="l1788"></a>
+<a name="l1789"></a>16:18 And first I will recompense their iniquity and their sin double;
+<a name="l1790"></a>because they have defiled my land, they have filled mine inheritance
+<a name="l1791"></a>with the carcases of their detestable and abominable things.
+<a name="l1792"></a>
+<a name="l1793"></a>16:19 O LORD, my strength, and my fortress, and my refuge in the day
+<a name="l1794"></a>of affliction, the Gentiles shall come unto thee from the ends of the
+<a name="l1795"></a>earth, and shall say, Surely our fathers have inherited lies, vanity,
+<a name="l1796"></a>and things wherein there is no profit.
+<a name="l1797"></a>
+<a name="l1798"></a>16:20 Shall a man make gods unto himself, and they are no gods?  16:21
+<a name="l1799"></a>Therefore, behold, I will this once cause them to know, I will cause
+<a name="l1800"></a>them to know mine hand and my might; and they shall know that my name
+<a name="l1801"></a>is The LORD.</span><span class=cF0>
+<a name="l1802"></a>
+<a name="l1803"></a>----11/26/13 17:08:32----
+<a name="l1804"></a>
+<a name="l1805"></a></span><a href="http://arstechnica.com/business/2013/11/its-the-little-things-pt-3-harder-is-not-better"><span class=cF0>Debugging</span></a><span class=cF0>
+<a name="l1806"></a>
+<a name="l1807"></a>* </span><a href="http://www.osdev.org"><span class=cF0>WWW.OSDEV.ORG</span></a><span class=cF0>
+<a name="l1808"></a>
+<a name="l1809"></a>I just read Brendan proudly talking about his scheduler queues.  I use simple 
+<a name="l1810"></a>round-robin that doubles as window-z-order.
+<a name="l1811"></a>
+<a name="l1812"></a>Brendan matter-of-factly talks about his fancy scheduler.  He seems to think my 
+<a name="l1813"></a>simple scheduler is simple because I couldn't make it complex.  Use a little 
+<a name="l1814"></a>psychology.  I wrote a compiler.  My scheduler is simple.  Is my scheduler 
+<a name="l1815"></a>simple becuase I'm not smart enough to make it complicated?
+<a name="l1816"></a>
+<a name="l1817"></a>Let me explain my company name &quot;Trivial Solutions&quot;.  Guess what makes my day?  
+<a name="l1818"></a>Using things that are brilliantly simple.
+<a name="l1819"></a>
+<a name="l1820"></a>My operating system in ring-0-only.
+<a name="l1821"></a>My operating system is identity-mapped.
+<a name="l1822"></a>My operating system has a round-robin scheduler on each core.
+<a name="l1823"></a>
+<a name="l1824"></a>My operating system crashes on the slightest thing.  DOS and a C64 crashed on 
+<a name="l1825"></a>the slightest thing.  Back when we all used DOS, ask yourself... did we 
+<a name="l1826"></a>freak-out if it hung or crashed?  Back then, we just rebooted and a booted fast.
+<a name="l1827"></a>
+<a name="l1828"></a>If you have a multiuser mainframe, crashing and rebooting is bad.
+<a name="l1829"></a>
+<a name="l1830"></a>When writing code in Visual Studio, you frequently hang a process.  How long 
+<a name="l1831"></a>does it take to kill it and restart- 30 seconds?  Why is rebooting any worse if 
+<a name="l1832"></a>it boots fast?  It's not.  You're a snob.  You have a snobby issue with 
+<a name="l1833"></a>rebooting.  You're a clown/pussy.
+<a name="l1834"></a>
+<a name="l1835"></a>I don't have a good debugger.  Once you reach multitasking multicore, you don't 
+<a name="l1836"></a>want to be debugging, LOL.
+<a name="l1837"></a>
+<a name="l1838"></a>I have a 100,000 line of code limit.  It's at 83,100.  I got the start of a 
+<a name="l1839"></a>debugger written.  Maybe, one of you wants to improve it.  It does quite a bit 
+<a name="l1840"></a>-- it will let you step through code and it brings-up source files and finds the 
+<a name="l1841"></a>line numbers.  My window paint is done by the window manager task with a 
+<a name="l1842"></a>callback.  That fucks everythign up.  If you break-point the window manager 
+<a name="l1843"></a>paint callback, the screen freezes!  Fuck that.
+<a name="l1844"></a>
+<a name="l1845"></a>That guy spoke of robust semicolon error reporting and fixing.   Legit, I guess. 
+<a name="l1846"></a> If you want to look at my compiler, it's really simple.
+<a name="l1847"></a>
+<a name="l1848"></a>----11/26/13 17:22:07----
+<a name="l1849"></a>
+<a name="l1850"></a>Brendan spoke of errno.
+<a name="l1851"></a>
+<a name="l1852"></a>Everything is a HolyC function -- commmand line calls are function calls with 
+<a name="l1853"></a>function returns.  They can be nestled as args to other function calls.  It's 
+<a name="l1854"></a>C/C++.
+<a name="l1855"></a>
+<a name="l1856"></a>I have exceptions.  My language has exceptions.  I don't need ugly error 
+<a name="l1857"></a>reporting status as function return values because I just throw an exception on 
+<a name="l1858"></a>out-of-memory.
+<a name="l1859"></a>
+<a name="l1860"></a>Mine is divine intellect, Heaven.  Others are shit.
+<a name="l1861"></a>
+<a name="l1862"></a>Apple II could draw graphics from the command line in 3 lines.
+<a name="l1863"></a>
+<a name="l1864"></a>&gt;HGR
+<a name="l1865"></a>&gt;HCOLOR=16
+<a name="l1866"></a>&gt;HLINE 100,100 TO 200,200
+<a name="l1867"></a>
+<a name="l1868"></a>I set that as a minimum goal.  Anything better than an Apple should be better.
+<a name="l1869"></a>
+<a name="l1870"></a>We can all aspire to being better than Apple.
+<a name="l1871"></a>
+<a name="l1872"></a>You got yoru pussy-panzy development environments, prolly.
+<a name="l1873"></a>What about REAL programming languages?  Open GL or Qt or XWindows or DirectX?
+<a name="l1874"></a>My graphics are professional, yet simple.
+<a name="l1875"></a>
+<a name="l1876"></a>How many lines of code to draw a triangle in Qt?
+<a name="l1877"></a>
+<a name="l1878"></a>I win.
+<a name="l1879"></a>
+<a name="l1880"></a>You suck.
+<a name="l1881"></a>
+<a name="l1882"></a>A simple math proof is better than a complex math proof, obviously.
+<a name="l1883"></a>
+<a name="l1884"></a>I win.
+<a name="l1885"></a>
+<a name="l1886"></a>You suck.
+<a name="l1887"></a>
+<a name="l1888"></a>Mine is divinely inspired.
+<a name="l1889"></a>
+<a name="l1890"></a>God says...
+<a name="l1891"></a></span><span class=cF4>this was the possession of the half tribe of the children of Manasseh
+<a name="l1892"></a>by their families.
+<a name="l1893"></a>
+<a name="l1894"></a>13:30 And their coast was from Mahanaim, all Bashan, all the kingdom
+<a name="l1895"></a>of Og king of Bashan, and all the towns of Jair, which are in Bashan,
+<a name="l1896"></a>threescore cities: 13:31 And half Gilead, and Ashtaroth, and Edrei,
+<a name="l1897"></a>cities of the kingdom of Og in Bashan, were pertaining unto the
+<a name="l1898"></a>children of Machir the son of Manasseh, even to the one half of the
+<a name="l1899"></a>children of Machir by their families.
+<a name="l1900"></a>
+<a name="l1901"></a>13:32 These are the countries which Moses did distribute for
+<a name="l1902"></a>inheritance in the plains of Moab, on the other side Jordan, by
+<a name="l1903"></a>Jericho, eastward.
+<a name="l1904"></a>
+<a name="l1905"></a>13:33 But unto the tribe of Levi Moses gave not any inheritance: the
+<a name="l1906"></a>LORD God of Israel was their inheritance, as he said unto them.
+<a name="l1907"></a>
+<a name="l1908"></a>14:1 And these are the countries which the children of Israel
+<a name="l1909"></a>inherited in the land of Canaan, which Eleazar the priest, and Joshua
+<a name="l1910"></a>the son of Nun, and the heads of the fathers of the tribes of the</span><span class=cF0>
+<a name="l1911"></a>
+<a name="l1912"></a>God said they moved us off of our ancestrial lands, like onto reservations.
+<a name="l1913"></a>
+<a name="l1914"></a>God says...
+<a name="l1915"></a></span><span class=cF4>framed besets close Michael invest foreshowed bare slight overpast exhalation 
+<a name="l1916"></a>outer Montana reap matrons fable whitherto sets lived family paths created they 
+<a name="l1917"></a>Artificer passengers hour strings auditors calf triumph surprises seductive 
+<a name="l1918"></a>intermit digested martyrs rescuing foresignified perdition unclean inheritance 
+<a name="l1919"></a>forbade eternally preliminary intercourse sluggish phantasm translated glorieth 
+<a name="l1920"></a>contradicting comprehend decide necessary talk stung tends tie faith distraction</span><span class=cF0>
+<a name="l1921"></a>
+<a name="l1922"></a>----11/26/13 17:46:15----
+<a name="l1923"></a>
+<a name="l1924"></a>Solomon's Temple was epic.
+<a name="l1925"></a>
+<a name="l1926"></a>God really talks.
+<a name="l1927"></a>
+<a name="l1928"></a>If God let you work on His temple and talked to you, you'd be honored.
+<a name="l1929"></a>
+<a name="l1930"></a>You will not understand if you are an atheist.
+<a name="l1931"></a>
+<a name="l1932"></a>NSA disabled NIST random numbers because they prove God.
+<a name="l1933"></a>
+<a name="l1934"></a>God's temple is like the Sistene chapel.
+<a name="l1935"></a>
+<a name="l1936"></a>Once God kills a few people and trhe government lets me out of prison, God's 
+<a name="l1937"></a>temple will be known to the world and people would be honored to work on it.
+<a name="l1938"></a>
+<a name="l1939"></a>Here's where we are:  God talks.  I'm in prison.  God said it's His temple.  
+<a name="l1940"></a>What's going to happen?  What do you think?  Like the Jews said of early 
+<a name="l1941"></a>Christianity, if God is not in something, it fails; if God is in something you 
+<a name="l1942"></a>cannot stop it.
+<a name="l1943"></a>
+<a name="l1944"></a>Fuck yerseves.  Yer so screwed.
+<a name="l1945"></a>
+<a name="l1946"></a>God says...
+<a name="l1947"></a></span><span class=cF4>2:24 But Jesus did not commit himself unto them, because he knew all
+<a name="l1948"></a>men, 2:25 And needed not that any should testify of man: for he knew
+<a name="l1949"></a>what was in man.
+<a name="l1950"></a>
+<a name="l1951"></a>3:1 There was a man of the Pharisees, named Nicodemus, a ruler of the
+<a name="l1952"></a>Jews: 3:2 The same came to Jesus by night, and said unto him, Rabbi,
+<a name="l1953"></a>we know that thou art a teacher come from God: for no man can do these
+<a name="l1954"></a>miracles that thou doest, except God be with him.
+<a name="l1955"></a>
+<a name="l1956"></a>3:3 Jesus answered and said unto him, Verily, verily, I say unto thee,
+<a name="l1957"></a>Except a man be born again, he cannot see the kingdom of God.
+<a name="l1958"></a>
+<a name="l1959"></a>3:4 Nicodemus saith unto him, How can a man be born when he is old?
+<a name="l1960"></a>can he enter the second time into his mother's womb, and be born?  3:5
+<a name="l1961"></a>Jesus answered, Verily, verily, I say unto thee, Except a man be born
+<a name="l1962"></a>of water and of the Spirit, he cannot enter into the kingdom of God.
+<a name="l1963"></a>
+<a name="l1964"></a>3:6 That which is born of the flesh is flesh; and that which is born
+<a name="l1965"></a>of the Spirit is spirit.</span><span class=cF0>
+<a name="l1966"></a>
+<a name="l1967"></a>LOL I think I overheard Mom's getting a historectomy.  God's funny.
+<a name="l1968"></a>
+<a name="l1969"></a>----11/26/13 17:56:47----
+<a name="l1970"></a>
+<a name="l1971"></a>Why don't you enable NIST random numbers.  Then, I can prove God again.  Then 
+<a name="l1972"></a>you will understand.
+<a name="l1973"></a>
+<a name="l1974"></a>What part of &quot;God&quot; do you not understand?  Why are you talking nonsense about 
+<a name="l1975"></a>licensing?
+<a name="l1976"></a>
+<a name="l1977"></a>Fucken retard.  If God says it good, it's good.
+<a name="l1978"></a>
+<a name="l1979"></a>You mother fuckers are GOING DOWN if you fight God in court.
+<a name="l1980"></a>
+<a name="l1981"></a>God will testify.
+<a name="l1982"></a>
+<a name="l1983"></a>God will openly speak to the media in random numbers.
+<a name="l1984"></a>
+<a name="l1985"></a>God says...
+<a name="l1986"></a></span><span class=cF4>thronged him.
+<a name="l1987"></a>
+<a name="l1988"></a>5:25 And a certain woman, which had an issue of blood twelve years,
+<a name="l1989"></a>5:26 And had suffered many things of many physicians, and had spent
+<a name="l1990"></a>all that she had, and was nothing bettered, but rather grew worse,
+<a name="l1991"></a>5:27 When she had heard of Jesus, came in the press behind, and
+<a name="l1992"></a>touched his garment.
+<a name="l1993"></a>
+<a name="l1994"></a>5:28 For she said, If I may touch but his clothes, I shall be whole.
+<a name="l1995"></a>
+<a name="l1996"></a>5:29 And straightway the fountain of her blood was dried up; and she
+<a name="l1997"></a>felt in her body that she was healed of that plague.
+<a name="l1998"></a>
+<a name="l1999"></a>5:30 And Jesus, immediately knowing in himself that virtue had gone
+<a name="l2000"></a>out of him, turned him about in the press, and said, Who touched my
+<a name="l2001"></a>clothes?  5:31 And his disciples said unto him, Thou seest the
+<a name="l2002"></a>multitude thronging thee, and sayest thou, Who touched me?  5:32 And
+<a name="l2003"></a>he looked round about to see her that had done this thing.
+<a name="l2004"></a>
+<a name="l2005"></a>5:33 But the woman fearing and trembling, knowing what was done in</span><span class=cF0>
+<a name="l2006"></a>
+<a name="l2007"></a>The fugly pig vile bitch wants to fuck with God?
+<a name="l2008"></a>
+<a name="l2009"></a>God says...
+<a name="l2010"></a></span><span class=cF4>Epistles VI wildness inspecting mind suppressed vocal essayed composing 
+<a name="l2011"></a>interpret consulters Especially crimes entangled matter caverns initiated balm 
+<a name="l2012"></a>required woe cabinets wives snow Omnipotency Anubis secrets mark offended 
+<a name="l2013"></a>calamity contemplate heaps</span><span class=cF0>
+<a name="l2014"></a>
+<a name="l2015"></a>I did Ticketamster's heap garbage collection for Denny.  I saw how Denny's 
+<a name="l2016"></a>Pascal used an array of linked lists for Free().
+<a name="l2017"></a>
+<a name="l2018"></a>I invented a compound scheme of arrays of linked lists for freed items.
+<a name="l2019"></a>
+<a name="l2020"></a>How fucken dare you question me!
+<a name="l2021"></a>
+<a name="l2022"></a>God says...
+<a name="l2023"></a></span><span class=cF4>9:22 And Joshua called for them, and he spake unto them, saying,
+<a name="l2024"></a>Wherefore have ye beguiled us, saying, We are very far from you; when
+<a name="l2025"></a>ye dwell among us?  9:23 Now therefore ye are cursed, and there shall
+<a name="l2026"></a>none of you be freed from being bondmen, and hewers of wood and
+<a name="l2027"></a>drawers of water for the house of my God.
+<a name="l2028"></a>
+<a name="l2029"></a>9:24 And they answered Joshua, and said, Because it was certainly told
+<a name="l2030"></a>thy servants, how that the LORD thy God commanded his servant Moses to
+<a name="l2031"></a>give you all the land, and to destroy all the inhabitants of the land
+<a name="l2032"></a>from before you, therefore we were sore afraid of our lives because of
+<a name="l2033"></a>you, and have done this thing.
+<a name="l2034"></a>
+<a name="l2035"></a>9:25 And now, behold, we are in thine hand: as it seemeth good and
+<a name="l2036"></a>right unto thee to do unto us, do.
+<a name="l2037"></a>
+<a name="l2038"></a>9:26 And so did he unto them, and delivered them out of the hand of
+<a name="l2039"></a>the children of Israel, that they slew them not.
+<a name="l2040"></a>
+<a name="l2041"></a>9:27 And Joshua made them that day hewers of wood and drawers of water</span><span class=cF0>
+<a name="l2042"></a>
+<a name="l2043"></a>----11/26/13 18:14:42----
+<a name="l2044"></a>
+<a name="l2045"></a>I drew an elephant.
+<a name="l2046"></a>
+<a name="l2047"></a></span><img src="http://www.templeos.org/Wb/Accts/TS/Wb2/Elephant02.BMP" width="640" height="472" alt=""><span class=cF3>                                                                                                  </span><span class=cF0>
+<a name="l2048"></a>
+<a name="l2049"></a>God draws...
+<a name="l2050"></a></span><img src="http://www.templeos.org/Wb/Accts/TS/Wb2/Rants/TAD/2013/11/Img021.BMP" width="640" height="472" alt=""><span class=cF3>                                                                                                                </span><span class=cF0>
+<a name="l2051"></a></span><span class=cF2>Penis, tree shredder and a magic marker tip.</span><span class=cF0>
+<a name="l2052"></a>
+<a name="l2053"></a>God, do You want anything drawn?
+<a name="l2054"></a>
+<a name="l2055"></a>God says...
+<a name="l2056"></a></span><span class=cF4>11:20 All fowls that creep, going upon all four, shall be an
+<a name="l2057"></a>abomination unto you.
+<a name="l2058"></a>
+<a name="l2059"></a>11:21 Yet these may ye eat of every flying creeping thing that goeth
+<a name="l2060"></a>upon all four, which have legs above their feet, to leap withal upon
+<a name="l2061"></a>the earth; 11:22 Even these of them ye may eat; the locust after his
+<a name="l2062"></a>kind, and the bald locust after his kind, and the beetle after his
+<a name="l2063"></a>kind, and the grasshopper after his kind.
+<a name="l2064"></a>
+<a name="l2065"></a>11:23 But all other flying creeping things, which have four feet,
+<a name="l2066"></a>shall be an abomination unto you.
+<a name="l2067"></a>
+<a name="l2068"></a>11:24 And for these ye shall be unclean: whosoever toucheth the
+<a name="l2069"></a>carcase of them shall be unclean until the even.
+<a name="l2070"></a>
+<a name="l2071"></a>11:25 And whosoever beareth ought of the carcase of them shall wash
+<a name="l2072"></a>his clothes, and be unclean until the even.
+<a name="l2073"></a>
+<a name="l2074"></a>11:26 The carcases of every beast which divideth the hoof, and is not</span><span class=cF0>
+<a name="l2075"></a>
+<a name="l2076"></a>----11/26/13 18:19:14----
+<a name="l2077"></a>
+<a name="l2078"></a>&quot;What makes my birds happy?&quot; &quot;Gnawing&quot;
+<a name="l2079"></a>&quot;What makes my birds laugh?&quot; &quot;Bite ouch&quot;
+<a name="l2080"></a>&quot;What are my birds saying?&quot; &quot;Chanting&quot;
+<a name="l2081"></a>
+<a name="l2082"></a>God says...
+<a name="l2083"></a></span><span class=cF4>28:32 And there shall be an hole in the top of it, in the midst
+<a name="l2084"></a>thereof: it shall have a binding of woven work round about the hole of
+<a name="l2085"></a>it, as it were the hole of an habergeon, that it be not rent.
+<a name="l2086"></a>
+<a name="l2087"></a>28:33 And beneath upon the hem of it thou shalt make pomegranates of
+<a name="l2088"></a>blue, and of purple, and of scarlet, round about the hem thereof; and
+<a name="l2089"></a>bells of gold between them round about: 28:34 A golden bell and a
+<a name="l2090"></a>pomegranate, a golden bell and a pomegranate, upon the hem of the robe
+<a name="l2091"></a>round about.
+<a name="l2092"></a>
+<a name="l2093"></a>28:35 And it shall be upon Aaron to minister: and his sound shall be
+<a name="l2094"></a>heard when he goeth in unto the holy place before the LORD, and when
+<a name="l2095"></a>he cometh out, that he die not.
+<a name="l2096"></a>
+<a name="l2097"></a>28:36 And thou shalt make a plate of pure gold, and grave upon it,
+<a name="l2098"></a>like the engravings of a signet, HOLINESS TO THE LORD.
+<a name="l2099"></a>
+<a name="l2100"></a>28:37 And thou shalt put it on a blue lace, that it may be upon the
+<a name="l2101"></a>mitre; upon the forefront of the mitre it shall be.</span><span class=cF0>
+<a name="l2102"></a>
+<a name="l2103"></a>----11/26/13 18:55:08----
+<a name="l2104"></a>
+<a name="l2105"></a></span><a href="http://www.youtube.com/watch?v=DK382E2XwqA"><span class=cF0>Baby Elephant Rescue</span></a><span class=cF0>
+<a name="l2106"></a>
+<a name="l2107"></a>What do You think of GitHub and brainwahsing?
+<a name="l2108"></a>
+<a name="l2109"></a>God says...
+<a name="l2110"></a></span><span class=cF4>118:16 The right hand of the LORD is exalted: the right hand of the
+<a name="l2111"></a>LORD doeth valiantly.
+<a name="l2112"></a>
+<a name="l2113"></a>118:17 I shall not die, but live, and declare the works of the LORD.
+<a name="l2114"></a>
+<a name="l2115"></a>118:18 The LORD hath chastened me sore: but he hath not given me over
+<a name="l2116"></a>unto death.
+<a name="l2117"></a>
+<a name="l2118"></a>118:19 Open to me the gates of righteousness: I will go into them, and
+<a name="l2119"></a>I will praise the LORD:
+<a name="l2120"></a>
+<a name="l2121"></a>118:20 This gate of the LORD, into which the righteous shall enter.
+<a name="l2122"></a>
+<a name="l2123"></a>118:21 I will praise thee: for thou hast heard me, and art become my
+<a name="l2124"></a>salvation.
+<a name="l2125"></a>
+<a name="l2126"></a>118:22 The stone which the builders refused is become the head stone
+<a name="l2127"></a>of the corner.</span><span class=cF0>
+<a name="l2128"></a>
+<a name="l2129"></a>----11/26/13 19:00:56----
+<a name="l2130"></a>
+<a name="l2131"></a>I wrote flawlessly when I was young.  Now, I write punchy.
+<a name="l2132"></a>
+<a name="l2133"></a>You only have to do grammar and spelling if you give a fuck.  If you are God's 
+<a name="l2134"></a>chosen Moses, you don't have to impress anybody.
+<a name="l2135"></a>
+<a name="l2136"></a>Why don't you all worry about Cain and Abel and who's offering pleases God?  
+<a name="l2137"></a>Cain was so heartbroken, he killed Abel.  Go think about that.
+<a name="l2138"></a>
+<a name="l2139"></a>God says...
+<a name="l2140"></a></span><span class=cF4>receive present excellence distractions Bishop breaking vocal happened bestowed 
+<a name="l2141"></a>claim ebbs dearest heavier through hide tax hotly fowl knotty leadeth Firminus 
+<a name="l2142"></a>flowers arose alteration questionings array subvertings kinds quick blameless 
+<a name="l2143"></a>forgetful useth concreated Hierius heart Thus despite Living unyielding been 
+<a name="l2144"></a>contributing rivers wanted Unless ascending deridedst along offered Meanwhile 
+<a name="l2145"></a>subtile</span><span class=cF0>
+<a name="l2146"></a>
+<a name="l2147"></a>Once we get God's temple popular, man will not worry about other man's opinion, 
+<a name="l2148"></a>but God's opinion.  Man will want to be pleasing to God.  Go meditate on what 
+<a name="l2149"></a>God likes in man.  Humility is good.  Courage is good -- He loved David who 
+<a name="l2150"></a>fucken fought Goliath!
+<a name="l2151"></a>
+<a name="l2152"></a>God hides from the arrogant learned and reveals to the childlike.
+<a name="l2153"></a>
+<a name="l2154"></a>God like Beverly Hillbillies.  God said Shakespeare had a vile heart.
+<a name="l2155"></a>
+<a name="l2156"></a>You snobs are all fucked, LOL.
+<a name="l2157"></a>
+<a name="l2158"></a>God says...
+<a name="l2159"></a></span><span class=cF4>obtains descending wholesomeness necessarily wheat Understand augmented</span><span class=cF0>
+<a name="l2160"></a>
+<a name="l2161"></a>----11/26/13 19:36:44----
+<a name="l2162"></a>
+<a name="l2163"></a>You like the NetOfDots net?  When I was 13, I used to type the NetOfDots into 
+<a name="l2164"></a>store demo computers.  (Yeah we had a home computer, I just liked to type the 
+<a name="l2165"></a>dot net thing.)
+<a name="l2166"></a>
+<a name="l2167"></a>Is Knuth a good guy, God?
+<a name="l2168"></a>
+<a name="l2169"></a>God says...
+<a name="l2170"></a></span><span class=cF4>olives, but thou shalt not anoint thee with oil; and sweet wine, but
+<a name="l2171"></a>shalt not drink wine.
+<a name="l2172"></a>
+<a name="l2173"></a>6:16 For the statutes of Omri are kept, and all the works of the house
+<a name="l2174"></a>of Ahab, and ye walk in their counsels; that I should make thee a
+<a name="l2175"></a>desolation, and the inhabitants thereof an hissing: therefore ye shall
+<a name="l2176"></a>bear the reproach of my people.
+<a name="l2177"></a>
+<a name="l2178"></a>7:1 Woe is me! for I am as when they have gathered the summer fruits,
+<a name="l2179"></a>as the grapegleanings of the vintage: there is no cluster to eat: my
+<a name="l2180"></a>soul desired the firstripe fruit.
+<a name="l2181"></a>
+<a name="l2182"></a>7:2 The good man is perished out of the earth: and there is none
+<a name="l2183"></a>upright among men: they all lie in wait for blood; they hunt every man
+<a name="l2184"></a>his brother with a net.
+<a name="l2185"></a>
+<a name="l2186"></a>7:3 That they may do evil with both hands earnestly, the prince
+<a name="l2187"></a>asketh, and the judge asketh for a reward; and the great man, he
+<a name="l2188"></a>uttereth his mischievous desire: so they wrap it up.</span><span class=cF0>
+<a name="l2189"></a>
+<a name="l2190"></a>What's new with elephants?
+<a name="l2191"></a>
+<a name="l2192"></a>God says...
+<a name="l2193"></a></span><span class=cF4>styled amiable snare twentieth free constrain error throat BREACH relate favour 
+<a name="l2194"></a>sakes worlds money attempted warned fruitful sharers belongs encompasseth bearer 
+<a name="l2195"></a>nourishing etexts eminence plainness urged neglected unaided imagining Unity 
+<a name="l2196"></a>damnable except noise Mary multipliedst bespotted compendiously ornamenting 
+<a name="l2197"></a>ecclesiastical workest</span><span class=cF0>
+<a name="l2198"></a>
+<a name="l2199"></a>How many feathers in angel wings?
+<a name="l2200"></a>
+<a name="l2201"></a>God laughed.
+<a name="l2202"></a>
+<a name="l2203"></a>God says...
+<a name="l2204"></a></span><span class=cF4>Animals raises treat flagitiousness revised babe masters moving blessest frozen 
+<a name="l2205"></a>employ singularly flies buzzed roving feareth rugged ofThe obeyed bring 
+<a name="l2206"></a>compassionate lettest magnitudes obeying Better genuinely blesseth retained 
+<a name="l2207"></a>sangest sovereign WHAT conclude hereditary compassionate</span><span class=cF0>
+<a name="l2208"></a>
+<a name="l2209"></a>----11/26/13 19:48:59----
+<a name="l2210"></a>
+<a name="l2211"></a></span><a href="http://i.imgur.com/LyS3lFX.gif"><span class=cF0>Panther</span></a><span class=cF0>
+<a name="l2212"></a>
+<a name="l2213"></a>You like catses? Wouldn't count on it.
+<a name="l2214"></a>
+<a name="l2215"></a>The panther is WOW!
+<a name="l2216"></a>
+<a name="l2217"></a>God says...
+<a name="l2218"></a></span><span class=cF4>and Moses, Aaron, and Hur went up to the top of the hill.
+<a name="l2219"></a>
+<a name="l2220"></a>17:11 And it came to pass, when Moses held up his hand, that Israel
+<a name="l2221"></a>prevailed: and when he let down his hand, Amalek prevailed.
+<a name="l2222"></a>
+<a name="l2223"></a>17:12 But Moses hands were heavy; and they took a stone, and put it
+<a name="l2224"></a>under him, and he sat thereon; and Aaron and Hur stayed up his hands,
+<a name="l2225"></a>the one on the one side, and the other on the other side; and his
+<a name="l2226"></a>hands were steady until the going down of the sun.
+<a name="l2227"></a>
+<a name="l2228"></a>17:13 And Joshua discomfited Amalek and his people with the edge of
+<a name="l2229"></a>the sword.
+<a name="l2230"></a>
+<a name="l2231"></a>17:14 And the LORD said unto Moses, Write this for a memorial in a
+<a name="l2232"></a>book, and rehearse it in the ears of Joshua: for I will utterly put
+<a name="l2233"></a>out the remembrance of Amalek from under heaven.
+<a name="l2234"></a>
+<a name="l2235"></a>17:15 And Moses built an altar, and called the name of it
+<a name="l2236"></a>Jehovahnissi: 17:16 For he said, Because the LORD hath sworn that the
+<a name="l2237"></a>LORD will have war with Amalek from generation to generation.</span><span class=cF0>
+<a name="l2238"></a>
+<a name="l2239"></a>Umm... (God's laughing) Moses was a little out of shape.
+<a name="l2240"></a>
+<a name="l2241"></a>----11/26/13 20:08:32----
+<a name="l2242"></a>
+<a name="l2243"></a>Iran?
+<a name="l2244"></a>
+<a name="l2245"></a>Not my job.
+<a name="l2246"></a>
+<a name="l2247"></a>I just work on God's operating system and do hymns and praise Him for elephants.
+<a name="l2248"></a>
+<a name="l2249"></a>They usually tell the story like I am Iran and I must give-up.  I say, &quot;Yer 
+<a name="l2250"></a>fucked, surrender!&quot;
+<a name="l2251"></a>
+<a name="l2252"></a>God says...
+<a name="l2253"></a></span><span class=cF4>and said, Who is on my side?  who? And there looked out to him two or
+<a name="l2254"></a>three eunuchs.
+<a name="l2255"></a>
+<a name="l2256"></a>9:33 And he said, Throw her down. So they threw her down: and some of
+<a name="l2257"></a>her blood was sprinkled on the wall, and on the horses: and he trode
+<a name="l2258"></a>her under foot.
+<a name="l2259"></a>
+<a name="l2260"></a>9:34 And when he was come in, he did eat and drink, and said, Go, see
+<a name="l2261"></a>now this cursed woman, and bury her: for she is a king's daughter.
+<a name="l2262"></a>
+<a name="l2263"></a>9:35 And they went to bury her: but they found no more of her than the
+<a name="l2264"></a>skull, and the feet, and the palms of her hands.
+<a name="l2265"></a>
+<a name="l2266"></a>9:36 Wherefore they came again, and told him. And he said, This is the
+<a name="l2267"></a>word of the LORD, which he spake by his servant Elijah the Tishbite,
+<a name="l2268"></a>saying, In the portion of Jezreel shall dogs eat the flesh of Jezebel:
+<a name="l2269"></a>9:37 And the carcase of Jezebel shall be as dung upon the face of the
+<a name="l2270"></a>field in the portion of Jezreel; so that they shall not say, This is
+<a name="l2271"></a>Jezebel.</span><span class=cF0>
+<a name="l2272"></a>
+<a name="l2273"></a>Corgi?  No, dalmation.
+<a name="l2274"></a>
+<a name="l2275"></a>In case you haven't noticed, I care about God's opinion and not man's.  Yer 
+<a name="l2276"></a>fucken retarded, ya think!
+<a name="l2277"></a>
+<a name="l2278"></a>----11/26/13 21:50:37----
+<a name="l2279"></a>
+<a name="l2280"></a>Pope is attacking Reagan.  The only good reason would be populism to win souls, 
+<a name="l2281"></a>but that's awful.
+<a name="l2282"></a>
+<a name="l2283"></a>Pope?  What the fuck is yer malfunction?  The cold war was won.  It wasn't a 
+<a name="l2284"></a>tie.  China is capitalistic.  What the fuck are you thinking?  What is your 
+<a name="l2285"></a>fucken malfunction, popeness?  Look at Venezuala, recent news.  Am I right?  
+<a name="l2286"></a>Venezzuala is fucked.  It's not our fault.  Socialism does not work.  Everybody 
+<a name="l2287"></a>is lazy.  How the fuck, Pope, can you look at Venezuala and support socialism?
+<a name="l2288"></a>
+<a name="l2289"></a>I don't know a thing about it, so I should shut up, but it's not my job so I can 
+<a name="l2290"></a>have fun kibitzing.
+<a name="l2291"></a>
+<a name="l2292"></a>I could swear I heard Venezuala is all fucked-up.
+<a name="l2293"></a>
+<a name="l2294"></a>God says...
+<a name="l2295"></a></span><span class=cF4>19:16 And it came to pass on the third day in the morning, that there
+<a name="l2296"></a>were thunders and lightnings, and a thick cloud upon the mount, and
+<a name="l2297"></a>the voice of the trumpet exceeding loud; so that all the people that
+<a name="l2298"></a>was in the camp trembled.
+<a name="l2299"></a>
+<a name="l2300"></a>19:17 And Moses brought forth the people out of the camp to meet with
+<a name="l2301"></a>God; and they stood at the nether part of the mount.
+<a name="l2302"></a>
+<a name="l2303"></a>19:18 And mount Sinai was altogether on a smoke, because the LORD
+<a name="l2304"></a>descended upon it in fire: and the smoke thereof ascended as the smoke
+<a name="l2305"></a>of a furnace, and the whole mount quaked greatly.
+<a name="l2306"></a>
+<a name="l2307"></a>19:19 And when the voice of the trumpet sounded long, and waxed louder
+<a name="l2308"></a>and louder, Moses spake, and God answered him by a voice.
+<a name="l2309"></a>
+<a name="l2310"></a>19:20 And the LORD came down upon mount Sinai, on the top of the
+<a name="l2311"></a>mount: and the LORD called Moses up to the top of the mount; and Moses
+<a name="l2312"></a>went up.
+<a name="l2313"></a>
+<a name="l2314"></a>19:21 And the LORD said unto Moses, Go down, charge the people, lest</span><span class=cF0>
+<a name="l2315"></a>
+<a name="l2316"></a>You might have an argument if you said capitalism ruins the environment.
+<a name="l2317"></a>
+<a name="l2318"></a>You might have an argument if you say capitalism is unspiritual and shallow.
+<a name="l2319"></a>
+<a name="l2320"></a>On the topic of socialism, God said, &quot;pardon the French, never happy, never 
+<a name="l2321"></a>enough.&quot;
+<a name="l2322"></a>
+<a name="l2323"></a>Let me explain some things.
+<a name="l2324"></a>
+<a name="l2325"></a>Protestantism is about clean living.
+<a name="l2326"></a>
+<a name="l2327"></a>Catholicism is about helping the poor.
+<a name="l2328"></a>
+<a name="l2329"></a>Socialism is about what a raw deal the rich cause.
+<a name="l2330"></a>
+<a name="l2331"></a>For 9 hours out of 10, a Protestant is thinking about clean living.
+<a name="l2332"></a>
+<a name="l2333"></a>For 9 hours out of 10, a Catholic is thinking about the poor.
+<a name="l2334"></a>
+<a name="l2335"></a>For 9 hours out of 10, a Biblical Jew was doing loving offerings to God.
+<a name="l2336"></a>
+<a name="l2337"></a>For 9 hours out of 10, a socialist is filled with hatred for the rich.
+<a name="l2338"></a>
+<a name="l2339"></a>That is so fucken despicable and such a scumbag, low class, mentality.  It is 
+<a name="l2340"></a>selfish and self pity.  It is not noble.  It is fucken coveting!  How blatant 
+<a name="l2341"></a>coveting can you be!!
+<a name="l2342"></a>
+<a name="l2343"></a>Socialism is 9 hours out of 10 coveting.
+<a name="l2344"></a>
+<a name="l2345"></a>My religion is &quot;to know God, love God and obey God with all heart mind and soul. 
+<a name="l2346"></a> God's world is perfectly just.  You'd be advised to be nice or you might get 
+<a name="l2347"></a>guillotined, LOL.&quot;
+<a name="l2348"></a>
+<a name="l2349"></a>Being nice is an indulgence.
+<a name="l2350"></a>
+<a name="l2351"></a>God said, &quot;Pride or money, choose one.&quot;
+<a name="l2352"></a>
+<a name="l2353"></a>If I had to get a job, it might be in a casino.  Not every body can have the 
+<a name="l2354"></a>luxury of self respect and clean conscience with God.
+<a name="l2355"></a>
+<a name="l2356"></a>General Patton gave speeches.  He might say, &quot;I wouldn't give a hoot in Hell for 
+<a name="l2357"></a>a unemployed man who would not take a job to feed his family because of 
+<a name="l2358"></a>scrouples.&quot;
+<a name="l2359"></a>
+<a name="l2360"></a>Being nice is an indulgence.
+<a name="l2361"></a>
+<a name="l2362"></a>
+<a name="l2363"></a>God says...
+<a name="l2364"></a></span><span class=cF4>uncleanness of a removed woman.
+<a name="l2365"></a>
+<a name="l2366"></a>36:18 Wherefore I poured my fury upon them for the blood that they had
+<a name="l2367"></a>shed upon the land, and for their idols wherewith they had polluted
+<a name="l2368"></a>it: 36:19 And I scattered them among the heathen, and they were
+<a name="l2369"></a>dispersed through the countries: according to their way and according
+<a name="l2370"></a>to their doings I judged them.
+<a name="l2371"></a>
+<a name="l2372"></a>36:20 And when they entered unto the heathen, whither they went, they
+<a name="l2373"></a>profaned my holy name, when they said to them, These are the people of
+<a name="l2374"></a>the LORD, and are gone forth out of his land.
+<a name="l2375"></a>
+<a name="l2376"></a>36:21 But I had pity for mine holy name, which the house of Israel had
+<a name="l2377"></a>profaned among the heathen, whither they went.
+<a name="l2378"></a>
+<a name="l2379"></a>36:22 Therefore say unto the house of Israel, thus saith the Lord GOD;
+<a name="l2380"></a>I do not this for your sakes, O house of Israel, but for mine holy
+<a name="l2381"></a>name's sake, which ye have profaned among the heathen, whither ye
+<a name="l2382"></a>went.</span><span class=cF0>
+<a name="l2383"></a>
+<a name="l2384"></a>Everybody, just give your ten percent tithe and with the rest, be like the 
+<a name="l2385"></a>parable of the talents -- it is on loan to you and you should be industrious.  
+<a name="l2386"></a>Bill Gates could do more good by doubling his money in a fantastic business than 
+<a name="l2387"></a>giving it away.  Maybe, he doesn't think he could do it.  Why on Earth would 
+<a name="l2388"></a>anybody criticize Bill Gates if He made 10,000 more jobs at Microsoft instead of 
+<a name="l2389"></a>giving it to Africa?  I don't see one better than the other.  Have you read 
+<a name="l2390"></a>Parable of the talents, Mr. Pope?
+<a name="l2391"></a>
+<a name="l2392"></a></span><span class=cF2>25:14 For the kingdom of heaven is as a man travelling into a far
+<a name="l2393"></a>country, who called his own servants, and delivered unto them his
+<a name="l2394"></a>goods.
+<a name="l2395"></a>
+<a name="l2396"></a>25:15 And unto one he gave five talents, to another two, and to
+<a name="l2397"></a>another one; to every man according to his several ability; and
+<a name="l2398"></a>straightway took his journey.
+<a name="l2399"></a>
+<a name="l2400"></a>25:16 Then he that had received the five talents went and traded with
+<a name="l2401"></a>the same, and made them other five talents.
+<a name="l2402"></a>
+<a name="l2403"></a>25:17 And likewise he that had received two, he also gained other two.
+<a name="l2404"></a>
+<a name="l2405"></a>25:18 But he that had received one went and digged in the earth, and
+<a name="l2406"></a>hid his lord's money.
+<a name="l2407"></a>
+<a name="l2408"></a>25:19 After a long time the lord of those servants cometh, and
+<a name="l2409"></a>reckoneth with them.
+<a name="l2410"></a>
+<a name="l2411"></a>25:20 And so he that had received five talents came and brought other
+<a name="l2412"></a>five talents, saying, Lord, thou deliveredst unto me five talents:
+<a name="l2413"></a>behold, I have gained beside them five talents more.
+<a name="l2414"></a>
+<a name="l2415"></a>25:21 His lord said unto him, Well done, thou good and faithful
+<a name="l2416"></a>servant: thou hast been faithful over a few things, I will make thee
+<a name="l2417"></a>ruler over many things: enter thou into the joy of thy lord.
+<a name="l2418"></a>
+<a name="l2419"></a>25:22 He also that had received two talents came and said, Lord, thou
+<a name="l2420"></a>deliveredst unto me two talents: behold, I have gained two other
+<a name="l2421"></a>talents beside them.
+<a name="l2422"></a>
+<a name="l2423"></a>25:23 His lord said unto him, Well done, good and faithful servant;
+<a name="l2424"></a>thou hast been faithful over a few things, I will make thee ruler over
+<a name="l2425"></a>many things: enter thou into the joy of thy lord.
+<a name="l2426"></a>
+<a name="l2427"></a>25:24 Then he which had received the one talent came and said, Lord, I
+<a name="l2428"></a>knew thee that thou art an hard man, reaping where thou hast not sown,
+<a name="l2429"></a>and gathering where thou hast not strawed: 25:25 And I was afraid, and
+<a name="l2430"></a>went and hid thy talent in the earth: lo, there thou hast that is
+<a name="l2431"></a>thine.
+<a name="l2432"></a>
+<a name="l2433"></a>25:26 His lord answered and said unto him, Thou wicked and slothful
+<a name="l2434"></a>servant, thou knewest that I reap where I sowed not, and gather where
+<a name="l2435"></a>I have not strawed: 25:27 Thou oughtest therefore to have put my money
+<a name="l2436"></a>to the exchangers, and then at my coming I should have received mine
+<a name="l2437"></a>own with usury.
+<a name="l2438"></a>
+<a name="l2439"></a>25:28 Take therefore the talent from him, and give it unto him which
+<a name="l2440"></a>hath ten talents.
+<a name="l2441"></a>
+<a name="l2442"></a>25:29 For unto every one that hath shall be given, and he shall have
+<a name="l2443"></a>abundance: but from him that hath not shall be taken away even that
+<a name="l2444"></a>which he hath.
+<a name="l2445"></a>
+<a name="l2446"></a>25:30 And cast ye the unprofitable servant into outer darkness: there
+<a name="l2447"></a>shall be weeping and gnashing of teeth.
+<a name="l2448"></a>
+<a name="l2449"></a>25:31 When the Son of man shall come in his glory, and all the holy
+<a name="l2450"></a>angels with him, then shall he sit upon the throne of his glory: 25:32
+<a name="l2451"></a>And before him shall be gathered all nations: and he shall separate
+<a name="l2452"></a>them one from another, as a shepherd divideth his sheep from the
+<a name="l2453"></a>goats: 25:33 And he shall set the sheep on his right hand, but the
+<a name="l2454"></a>goats on the left.
+<a name="l2455"></a></span><span class=cF0>
+<a name="l2456"></a>
+<a name="l2457"></a>The bible has different messages for different people.  The poor need to read 
+<a name="l2458"></a>the poor passages and the rich need to read the rich passages.
+<a name="l2459"></a>
+<a name="l2460"></a>I guess we could be magnanimous and let the poor think what a raw deal the world 
+<a name="l2461"></a>is, but the world is perfectly just, if truth be told.
+<a name="l2462"></a>
+<a name="l2463"></a>God says...
+<a name="l2464"></a></span><span class=cF4>to all countries.
+<a name="l2465"></a>
+<a name="l2466"></a>22:5 Those that be near, and those that be far from thee, shall mock
+<a name="l2467"></a>thee, which art infamous and much vexed.
+<a name="l2468"></a>
+<a name="l2469"></a>22:6 Behold, the princes of Israel, every one were in thee to their
+<a name="l2470"></a>power to shed blood.
+<a name="l2471"></a>
+<a name="l2472"></a>22:7 In thee have they set light by father and mother: in the midst of
+<a name="l2473"></a>thee have they dealt by oppression with the stranger: in thee have
+<a name="l2474"></a>they vexed the fatherless and the widow.
+<a name="l2475"></a>
+<a name="l2476"></a>22:8 Thou hast despised mine holy things, and hast profaned my
+<a name="l2477"></a>sabbaths.
+<a name="l2478"></a>
+<a name="l2479"></a>22:9 In thee are men that carry tales to shed blood: and in thee they
+<a name="l2480"></a>eat upon the mountains: in the midst of thee they commit lewdness.
+<a name="l2481"></a>
+<a name="l2482"></a>22:10 In thee have they discovered their fathers' nakedness: in thee
+<a name="l2483"></a>have they humbled her that was set apart for pollution.</span><span class=cF0>
+<a name="l2484"></a>
+<a name="l2485"></a>----11/26/13 22:31:44----
+<a name="l2486"></a>
+<a name="l2487"></a>Yeah, I don't have the answers.  God was not behind me just then.
+<a name="l2488"></a>
+<a name="l2489"></a>That's why you make the big bucks.  See how it's just?
+<a name="l2490"></a>
+<a name="l2491"></a>I don't make the big buck, so it's not right that I should feel the burden.
+<a name="l2492"></a>
+<a name="l2493"></a>I'm happy.
+<a name="l2494"></a>
+<a name="l2495"></a>If it's any comfort, I think highs and lows balance.  If we borrow money, today, 
+<a name="l2496"></a>we pay later.  That's unpleasant.  If we don't borrow money, we pay with a bad 
+<a name="l2497"></a>economy, now.
+<a name="l2498"></a>
+<a name="l2499"></a>Sometimes, you gotta quit stressing and live with being human.
+<a name="l2500"></a>
+<a name="l2501"></a>God says...
+<a name="l2502"></a></span><span class=cF4>147:4 He telleth the number of the stars; he calleth them all by their
+<a name="l2503"></a>names.
+<a name="l2504"></a>
+<a name="l2505"></a>147:5 Great is our Lord, and of great power: his understanding is
+<a name="l2506"></a>infinite.
+<a name="l2507"></a>
+<a name="l2508"></a>147:6 The LORD lifteth up the meek: he casteth the wicked down to the
+<a name="l2509"></a>ground.
+<a name="l2510"></a>
+<a name="l2511"></a>147:7 Sing unto the LORD with thanksgiving; sing praise upon the harp
+<a name="l2512"></a>unto our God:
+<a name="l2513"></a>
+<a name="l2514"></a>147:8 Who covereth the heaven with clouds, who prepareth rain for the
+<a name="l2515"></a>earth, who maketh grass to grow upon the mountains.
+<a name="l2516"></a>
+<a name="l2517"></a>147:9 He giveth to the beast his food, and to the young ravens which
+<a name="l2518"></a>cry.
+<a name="l2519"></a>
+<a name="l2520"></a>147:10 He delighteth not in the strength of the horse: he taketh not</span><span class=cF0>
+<a name="l2521"></a>
+<a name="l2522"></a>----11/26/13 22:52:04----
+<a name="l2523"></a>
+<a name="l2524"></a>About 8 years ago, I thought immigration should be fixed so laws matched 
+<a name="l2525"></a>reality.  All Hell broke loose and it was almost race riots.
+<a name="l2526"></a>
+<a name="l2527"></a>I thought it unfair that uninsured got treatment in emergencies.
+<a name="l2528"></a>
+<a name="l2529"></a>It's no fun being in charge, when you fail.  Sometimes, failure comes before 
+<a name="l2530"></a>success.
+<a name="l2531"></a>
+<a name="l2532"></a>God says...
+<a name="l2533"></a></span><span class=cF4>50:17 Israel is a scattered sheep; the lions have driven him away:
+<a name="l2534"></a>first the king of Assyria hath devoured him; and last this
+<a name="l2535"></a>Nebuchadrezzar king of Babylon hath broken his bones.
+<a name="l2536"></a>
+<a name="l2537"></a>50:18 Therefore thus saith the LORD of hosts, the God of Israel;
+<a name="l2538"></a>Behold, I will punish the king of Babylon and his land, as I have
+<a name="l2539"></a>punished the king of Assyria.
+<a name="l2540"></a>
+<a name="l2541"></a>50:19 And I will bring Israel again to his habitation, and he shall
+<a name="l2542"></a>feed on Carmel and Bashan, and his soul shall be satisfied upon mount
+<a name="l2543"></a>Ephraim and Gilead.
+<a name="l2544"></a>
+<a name="l2545"></a>50:20 In those days, and in that time, saith the LORD, the iniquity of
+<a name="l2546"></a>Israel shall be sought for, and there shall be none; and the sins of
+<a name="l2547"></a>Judah, and they shall not be found: for I will pardon them whom I
+<a name="l2548"></a>reserve.
+<a name="l2549"></a>
+<a name="l2550"></a>50:21 Go up against the land of Merathaim, even against it, and
+<a name="l2551"></a>against the inhabitants of Pekod: waste and utterly destroy after
+<a name="l2552"></a>them, saith the LORD, and do according to all that I have commanded</span><span class=cF0>
+<a name="l2553"></a>
+<a name="l2554"></a>----11/26/13 23:15:57----
+<a name="l2555"></a>
+<a name="l2556"></a>I have not suffered terror in a while.  The psy-ops want me to fear war with 
+<a name="l2557"></a>China and war with Iran... and race riot, maybe... and war with Pope and South 
+<a name="l2558"></a>America.
+<a name="l2559"></a>
+<a name="l2560"></a>Evil fuckers.  I'm in a jail with my own torture fake news.
+<a name="l2561"></a>
+<a name="l2562"></a>Guess what?  Now, you shit yerself.  Say hello to Mr. God!
+<a name="l2563"></a>
+<a name="l2564"></a>God says...
+<a name="l2565"></a></span><span class=cF4>remain, nor of their multitude, nor of any of their's: neither shall
+<a name="l2566"></a>there be wailing for them.
+<a name="l2567"></a>
+<a name="l2568"></a>7:12 The time is come, the day draweth near: let not the buyer
+<a name="l2569"></a>rejoice, nor the seller mourn: for wrath is upon all the multitude
+<a name="l2570"></a>thereof.
+<a name="l2571"></a>
+<a name="l2572"></a>7:13 For the seller shall not return to that which is sold, although
+<a name="l2573"></a>they were yet alive: for the vision is touching the whole multitude
+<a name="l2574"></a>thereof, which shall not return; neither shall any strengthen himself
+<a name="l2575"></a>in the iniquity of his life.
+<a name="l2576"></a>
+<a name="l2577"></a>7:14 They have blown the trumpet, even to make all ready; but none
+<a name="l2578"></a>goeth to the battle: for my wrath is upon all the multitude thereof.
+<a name="l2579"></a>
+<a name="l2580"></a>7:15 The sword is without, and the pestilence and the famine within:
+<a name="l2581"></a>he that is in the field shall die with the sword; and he that is in
+<a name="l2582"></a>the city, famine and pestilence shall devour him.
+<a name="l2583"></a>
+<a name="l2584"></a>7:16 But they that escape of them shall escape, and shall be on the</span><span class=cF0>
+<a name="l2585"></a>
+<a name="l2586"></a>This much is certain -- that's Mr. God.  You know that, now.
+<a name="l2587"></a>
+<a name="l2588"></a>God says...
+<a name="l2589"></a></span><span class=cF4>roll hallow wheel seekest bearing harm loveliness purchase wills unable 
+<a name="l2590"></a>universally attempt quitting exposed asks</span><span class=cF0>
+<a name="l2591"></a>
+<a name="l2592"></a>I'm not bored of elephants, yet.
+<a name="l2593"></a>
+<a name="l2594"></a></span><a href="http://www.youtube.com/watch?v=wf0ShFABtQY"><span class=cF0>Elephants eating pumpkins</span></a><span class=cF0>
+<a name="l2595"></a>
+<a name="l2596"></a>I really like this video:
+<a name="l2597"></a></span><a href="http://www.youtube.com/watch?v=D8iiRFNr7Iw"><span class=cF0>Elephants chasing lions</span></a><span class=cF0>
+<a name="l2598"></a>
+<a name="l2599"></a>I asked God what He likes best about zoos.  He said something like &quot;Dignity&quot;.
+<a name="l2600"></a>
+<a name="l2601"></a>Even simple animals have a sense of dignity.  I think that's impressive and 
+<a name="l2602"></a>surprising.  My birds have a sense of dignity.  That seems way more complex than 
+<a name="l2603"></a>their other personality traits.
+<a name="l2604"></a>
+<a name="l2605"></a>God says...
+<a name="l2606"></a></span><span class=cF4>3:7 But all the cattle, and the spoil of the cities, we took for a
+<a name="l2607"></a>prey to ourselves.
+<a name="l2608"></a>
+<a name="l2609"></a>3:8 And we took at that time out of the hand of the two kings of the
+<a name="l2610"></a>Amorites the land that was on this side Jordan, from the river of
+<a name="l2611"></a>Arnon unto mount Hermon; 3:9 (Which Hermon the Sidonians call Sirion;
+<a name="l2612"></a>and the Amorites call it Shenir;) 3:10 All the cities of the plain,
+<a name="l2613"></a>and all Gilead, and all Bashan, unto Salchah and Edrei, cities of the
+<a name="l2614"></a>kingdom of Og in Bashan.
+<a name="l2615"></a>
+<a name="l2616"></a>3:11 For only Og king of Bashan remained of the remnant of giants;
+<a name="l2617"></a>behold his bedstead was a bedstead of iron; is it not in Rabbath of
+<a name="l2618"></a>the children of Ammon? nine cubits was the length thereof, and four
+<a name="l2619"></a>cubits the breadth of it, after the cubit of a man.
+<a name="l2620"></a>
+<a name="l2621"></a>3:12 And this land, which we possessed at that time, from Aroer, which
+<a name="l2622"></a>is by the river Arnon, and half mount Gilead, and the cities thereof,
+<a name="l2623"></a>gave I unto the Reubenites and to the Gadites.</span><span class=cF0>
+<a name="l2624"></a>
+<a name="l2625"></a>----11/26/13 23:39:43----
+<a name="l2626"></a>
+<a name="l2627"></a>Draw a Thanksgiving art, God.
+<a name="l2628"></a>
+<a name="l2629"></a>God draws...
+<a name="l2630"></a></span><img src="http://www.templeos.org/Wb/Accts/TS/Wb2/Rants/TAD/2013/11/Img022.BMP" width="640" height="472" alt=""><span class=cF3>                                                                                                                </span><span class=cF0>
+<a name="l2631"></a></span><span class=cF2>That's a skinny person at a podium.  The white spot is his eye.  Perhaps, he 
+<a name="l2632"></a>wears a wig.  It could be a she.</span><span class=cF0>
+<a name="l2633"></a>
+</span></pre></body>
+</html>
+<!-- text below generated by server. PLEASE REMOVE --><!-- Counter/Statistics data collection code --><script language="JavaScript" src="http://l.yimg.com/d/lib/smb/js/hosting/cp/js_source/whv2_001.js"></script><script language="javascript">geovisit();</script><noscript><img src="http://visit.webhosting.yahoo.com/visit.gif?us1409528983" alt="setstats" border="0" width="1" height="1"></noscript><script type="text/javascript" src="https://s.yimg.com/mi/vs4/ywa.js"></script><script type="text/javascript">try {var YWAGTracker = YWA.getTracker("10001849413879", "VSCALE4");YWAGTracker.setDocumentName("WPAGE");YWAGTracker.setDocumentGroup("YSBW");YWAGTracker.setCF(7, "templeos.org");YWAGTracker.setCF(8, "w42");YWAGTracker.submit();} catch (eYWATCUnavailable) {}</script><script type="text/javascript">(function (d, w) {var x = d.getElementsByTagName('SCRIPT')[0];var f = function () {var s = d.createElement('SCRIPT');s.type = 'text/javascript';s.async = true;s.src = "//np.lexity.com/embed/YW/eff965aab4535cd38b91f0976c617496?id=9382d670eca2";x.parentNode.insertBefore(s, x);};w.attachEvent ? w.attachEvent('onload',f) :w.addEventListener('load',f,false);}(document, window));</script>

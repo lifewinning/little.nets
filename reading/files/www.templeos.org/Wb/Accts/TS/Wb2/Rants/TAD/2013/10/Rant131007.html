@@ -1,0 +1,2402 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=US-ASCII">
+<title>The Temple Operating System</title>
+<meta name="keywords" content="Operating System,64-Bit,64 Bit,Temple,OS,TempleOS,Free,Open Source,Public Domain,x86_64">
+<meta name="generator" content="TempleOS V2.06">
+<style type="text/css">
+.cF0{color:#000000;background-color:#fcfcfc;}
+.cF1{color:#0000a8;background-color:#fcfcfc;}
+.cF2{color:#00a800;background-color:#fcfcfc;}
+.cF3{color:#00a8a8;background-color:#fcfcfc;}
+.cF4{color:#a80000;background-color:#fcfcfc;}
+.cF5{color:#a800a8;background-color:#fcfcfc;}
+.cF6{color:#a85400;background-color:#fcfcfc;}
+.cF7{color:#a8a8a8;background-color:#fcfcfc;}
+.cF8{color:#545454;background-color:#fcfcfc;}
+.cF9{color:#5454fc;background-color:#fcfcfc;}
+.cFA{color:#54fc54;background-color:#fcfcfc;}
+.cFB{color:#54fcfc;background-color:#fcfcfc;}
+.cFC{color:#fc5454;background-color:#fcfcfc;}
+.cFD{color:#fc54fc;background-color:#fcfcfc;}
+.cFE{color:#fcfc54;background-color:#fcfcfc;}
+.cFF{color:#fcfcfc;background-color:#fcfcfc;}
+</style>
+</head>
+<body>
+<pre style="font-family:courier;font-size:10pt">
+<a name="l1"></a><span class=cF0>----10/07/13 00:17:11----
+<a name="l2"></a>
+<a name="l3"></a>This is my reality, these four videos.
+<a name="l4"></a>There is a stupid-nigger warden to my jail.
+<a name="l5"></a>
+<a name="l6"></a>* </span><a href="http://www.youtube.com/watch?v=Dd7FixvoKBw"><span class=cF4>KeyPeele#1</span></a><span class=cF0>    * </span><a href="http://www.youtube.com/watch?v=H4lguYizEAY"><span class=cF4>KeyPeele#2</span></a><span class=cF0>
+<a name="l7"></a>
+<a name="l8"></a>* </span><a href="http://www.youtube.com/watch?v=HRPDO63rI1E"><span class=cF4>ThePrisoner</span></a><span class=cF0>   * </span><a href="http://www.youtube.com/watch?v=o_eSwq1ewsU"><span class=cF4>Picard:FourLights</span></a><span class=cF0>
+<a name="l9"></a>
+<a name="l10"></a>----10/07/13 00:44:39----
+<a name="l11"></a>
+<a name="l12"></a>A guy at </span><a href="http://www.osdev.org"><span class=cF4>WWW.OSDEV.ORG</span></a><span class=cF0> is making me furious.  I get furious when those niggers 
+<a name="l13"></a>think they can lecture me.  I have finished God's temple.  It is 120,648 lines 
+<a name="l14"></a>of code.
+<a name="l15"></a>
+<a name="l16"></a>
+<a name="l17"></a>
+<a name="l18"></a>
+<a name="l19"></a>                               </span><span class=cF5>TempleOS' Features</span><span class=cF0>
+<a name="l20"></a>
+<a name="l21"></a>* Oracle in program, </span><span class=cF2>AfterEgypt</span><span class=cF0>, for </span><a href="../../../../../../../Adam/God/HSNotes.html#l1"><span class=cF4>tongues</span></a><span class=cF0>.
+<a name="l22"></a>
+<a name="l23"></a>* </span><a href="http://en.wikipedia.org/wiki/Amd64#AMD64"><span class=cF4>x86_64</span></a><span class=cF0>, ring-0-only, single-address-map (identity), multitasking kernel with 
+<a name="l24"></a>multicore support.
+<a name="l25"></a>
+<a name="l26"></a>* Free, </span><span class=cF2>public domain</span><span class=cF0>, </span><span class=cF2>100% open source</span><span class=cF0>.
+<a name="l27"></a>
+<a name="l28"></a>* 64-bit </span><span class=cF2>compiler/assembler</span><span class=cF0> for </span><a href="../../../../../../../Doc/HolyC.html#l1"><span class=cF4>HolyC</span></a><span class=cF0>.  Truly compiles, not interprets.  </span><span class=cF2>Just-in
+<a name="l29"></a>-Time</span><span class=cF0> and </span><span class=cF2>Ahead-of-Time</span><span class=cF0> compilation.  With </span><span class=cF2>JIT</span><span class=cF0>, no need for object or exe files.
+<a name="l30"></a>
+<a name="l31"></a>* No 32-bit krufty code.
+<a name="l32"></a>
+<a name="l33"></a>* 640x480 16 color </span><span class=cF2>VGA</span><span class=cF0> graphics.
+<a name="l34"></a>
+<a name="l35"></a>* Keyboard &amp; Mouse support.
+<a name="l36"></a>
+<a name="l37"></a>* Hard drives, support for </span><span class=cF2>FAT32</span><span class=cF0> and </span><span class=cF2>RedSea</span><span class=cF0> file systems with file compression.
+<a name="l38"></a>
+<a name="l39"></a>* </span><span class=cF2>CD/DVD</span><span class=cF0> support with </span><span class=cF2>ISO9660</span><span class=cF0> file system.  Can make bootable </span><span class=cF2>ISO9660</span><span class=cF0> ISO files 
+<a name="l40"></a>so you can roll-your-own distro's.
+<a name="l41"></a>
+<a name="l42"></a>* </span><a href="../../../../../../../Adam/Dsk/Dsk2b.html#l78"><span class=cF4>Partitioning</span></a><span class=cF0> tool, installer, </span><span class=cF2>boot loaders</span><span class=cF0> for CD-ROM and hard disk.
+<a name="l43"></a>
+<a name="l44"></a>* </span><span class=cF2>Editor/Browser</span><span class=cF0> for a new </span><a href="../../../../../../../Doc/DolDocOverview.html#l1"><span class=cF4>Document Format</span></a><span class=cF0>.  Source files and the command line 
+<a name="l45"></a>window can have graphics, links, icons, trees, colors, super/sub scripts, 
+<a name="l46"></a>margins.  Everything is seamless through-out the tool chain.  No need for 
+<a name="l47"></a>separate resource files.
+<a name="l48"></a>
+<a name="l49"></a>* 8-bit </span><span class=cF2>ASCII</span><span class=cF0>, not just 7-bit.  Supported in entire tool chain.  </span><span class=cF2>&lt;CTRL-ALT-a&gt;</span><span class=cF0>
+<a name="l50"></a>
+<a name="l51"></a>* </span><span class=cF2>Graphics in source code</span><span class=cF0>, no resource files, </span><span class=cF2>graphic resource editor</span><span class=cF0>. </span><span class=cF2>&lt;CTRL-r&gt;</span><span class=cF0>
+<a name="l52"></a>
+<a name="l53"></a>* </span><span class=cF2>64-bit pointers</span><span class=cF0>.  All memory, even more than 4 Gig, can be directly accessed 
+<a name="l54"></a>by all tasks on all cores at all times.
+<a name="l55"></a>
+<a name="l56"></a>* </span><span class=cF2>Ring-0-only</span><span class=cF0>.  Highest CPU privileged mode at all times.  No off-limits 
+<a name="l57"></a>instructions.  No time lost changing modes or address maps.  Switches tasks in 
+<a name="l58"></a>half a microsecond.
+<a name="l59"></a>
+<a name="l60"></a>* </span><span class=cF2>2D/3D</span><span class=cF0> graphics library
+<a name="l61"></a>
+<a name="l62"></a>* Real-time fancy </span><span class=cF2>differential-equation solver</span><span class=cF0> for physics engines, to use in 
+<a name="l63"></a>games.  (Adaptive step-size Runge-Kutta, interpolated for real-time.)
+<a name="l64"></a>
+<a name="l65"></a>* Auto-completion, jump-to-source tool called </span><span class=cF2>WordStat</span><span class=cF0> with Dictionary.
+<a name="l66"></a>
+<a name="l67"></a>* Window Manager.  Pan screen with </span><span class=cF2>&lt;CTRL-LeftDrag&gt;</span><span class=cF0>.  Zoom screen on mouse cursor 
+<a name="l68"></a>with </span><span class=cF2>&lt;CTRL-ALT-Z&gt;</span><span class=cF0>/</span><span class=cF2>&lt;CTRL-ALT-SHIFT-Z&gt;</span><span class=cF0>.
+<a name="l69"></a>
+<a name="l70"></a>* File Manager, </span><span class=cF2>&lt;CTRL-d&gt;</span><span class=cF0>.
+<a name="l71"></a>
+<a name="l72"></a>* Code </span><a href="../../../../../../../Adam/Utils/Profiler.html#l27"><span class=cF4>profiler</span></a><span class=cF0>, </span><a href="../../../../../../../Adam/Utils/Merge.html#l37"><span class=cF4>merge</span></a><span class=cF0>, </span><a href="../../../../../../../Adam/Utils/Diff.html#l231"><span class=cF4>diff</span></a><span class=cF0> utils.
+<a name="l73"></a>
+<a name="l74"></a>* </span><span class=cF2>PC Speaker</span><span class=cF0> support with many hymns.
+<a name="l75"></a>
+<a name="l76"></a>* Music composing tool.
+<a name="l77"></a>
+<a name="l78"></a>* Many games, </span><a href="../../../../../../../Doc/DemoIndex.html#l1"><span class=cF4>demos</span></a><span class=cF0> and </span><a href="../../../../../../../Doc/HelpIndex.html#l1"><span class=cF4>documentation</span></a><span class=cF0>.
+<a name="l79"></a>
+<a name="l80"></a>* </span><span class=cF2>All source code</span><span class=cF0> included.  Only compiles with the included TempleOS compiler 
+<a name="l81"></a>and assembler.
+<a name="l82"></a>
+<a name="l83"></a>
+<a name="l84"></a>
+<a name="l85"></a>----10/07/13 01:22:33----
+<a name="l86"></a>
+<a name="l87"></a>Someone on Reddit spoke of intellectual fiction.  He liked the word, &quot;trope&quot;.  
+<a name="l88"></a>That word sounds like &quot;tripe&quot;.  I wouldn't use it.  LOL
+<a name="l89"></a>
+<a name="l90"></a>Some people like the word, &quot;agnostic&quot;.  Some people like &quot;homogenius&quot;.  It is 
+<a name="l91"></a>ironic that intellectual kids would not get this: </span><a href="http://www.youtube.com/watch?v=eB5VXJXxnNU&t=2m20s"><span class=cF4>AliG:Homosapiens</span></a><span class=cF0>.
+<a name="l92"></a>
+<a name="l93"></a>----10/07/13 03:45:25----
+<a name="l94"></a>
+<a name="l95"></a>Mind-fuck -- story on </span><a href="http://allafrica.com/stories/201310070124.html"><span class=cF0>elephant wardens</span></a><span class=cF0>.
+<a name="l96"></a>
+<a name="l97"></a>How did we get from me posting a note about nigger jail wardens in the top of 
+<a name="l98"></a>this blog to that story?  Psy-ops or demons or some shit.
+<a name="l99"></a>
+<a name="l100"></a>This shit endlessly, fucking with my brain.
+<a name="l101"></a>
+<a name="l102"></a>Brit or CIA psy-ops?
+<a name="l103"></a>
+<a name="l104"></a></span><a href="http://virtual-notary.org"><span class=cF0>http://virtual-notary.org</span></a><span class=cF0>
+<a name="l105"></a>
+<a name="l106"></a></span><a href="http://www.templeos.org/Certs/virtual-notary-cert-randomnum-35845.p12"><span class=cF0>Here is the certificate: 35845</span></a><span class=cF0>.
+<a name="l107"></a>
+<a name="l108"></a>Line:51083
+<a name="l109"></a>God says...
+<a name="l110"></a></span><span class=cF4>LORD, the King.
+<a name="l111"></a>
+<a name="l112"></a>98:7 Let the sea roar, and the fulness thereof; the world, and they
+<a name="l113"></a>that dwell therein.
+<a name="l114"></a>
+<a name="l115"></a>98:8 Let the floods clap their hands: let the hills be joyful together
+<a name="l116"></a>
+<a name="l117"></a>98:9 Before the LORD; for he cometh to judge the earth: with
+<a name="l118"></a>righteousness shall he judge the world, and the people with equity.
+<a name="l119"></a>
+<a name="l120"></a>
+<a name="l121"></a>
+<a name="l122"></a>99:1 The LORD reigneth; let the people tremble: he sitteth between the
+<a name="l123"></a>cherubims; let the earth be moved.
+<a name="l124"></a>
+<a name="l125"></a>99:2 The LORD is great in Zion; and he is high above all the people.
+<a name="l126"></a>
+<a name="l127"></a>99:3 Let them praise thy great and terrible name; for it is holy.
+<a name="l128"></a>
+<a name="l129"></a>99:4 The king's strength also loveth judgment; thou dost establish</span><span class=cF0>
+<a name="l130"></a>
+<a name="l131"></a>----10/07/13 04:04:42----
+<a name="l132"></a>
+<a name="l133"></a>Twain had a line in King Arthur's Court, &quot;The delusion was perfect, but it just 
+<a name="l134"></a>didn't delude.&quot;
+<a name="l135"></a>
+<a name="l136"></a></span><a href="http://www.osdev.org"><span class=cF4>WWW.OSDEV.ORG</span></a><span class=cF0> is talking about a cross compiler.  In my jail, all media talks to 
+<a name="l137"></a>me.  That one didn't make much sense.
+<a name="l138"></a>
+<a name="l139"></a>Perhaps, they have made a </span><a href="../../../../../../../Doc/HolyC.html#l1"><span class=cF4>HolyC</span></a><span class=cF0> compiler?  Impossible -- my calling convention 
+<a name="l140"></a>does not use regs to pass args into functions.
+<a name="l141"></a>
+<a name="l142"></a>You really should write JIT code, not BIN files.
+<a name="l143"></a>
+<a name="l144"></a>So, at boot, my Adam task compiles headers and 50,000 lines of additional code.  
+<a name="l145"></a>This fills the Adam symbol table.  When you compile other stuff JIT, it uses the 
+<a name="l146"></a>Adam task's symbol table, so you never need to deal with header files.
+<a name="l147"></a>
+<a name="l148"></a>If you attempted to make an old-school BIN file, you can include 
+<a name="l149"></a></span><a href="../../../../../../../Kernel/AOT.html#l1"><span class=cF4>::/Kernel/AOT.HPP</span></a><span class=cF0> which will import Adam's symbols and allow you to compile.
+<a name="l150"></a>
+<a name="l151"></a>What you might be asking is if I could write a symboltable-to-header routine.  
+<a name="l152"></a>It would dump the symbol table and make HolyC headers.  It wouldn't be that 
+<a name="l153"></a>hard.  You would make two passes.  First pass, you would create class and 
+<a name="l154"></a>#define entries.  The second pass you would create function headers.  Class 
+<a name="l155"></a>dependencies would be a problem.  I guess you make three passes, first you 
+<a name="l156"></a>create extern class{} entries.  That's lazy.
+<a name="l157"></a>
+<a name="l158"></a></span><a href="../../../../../../../Compiler/ICLCC.html#l42"><span class=cF4>ImportHashTable</span></a><span class=cF0>()  </span><a href="../../../../../../../Compiler/Hash1b.html#l40"><span class=cF4>HashTableImport</span></a><span class=cF0>()  </span><a href="../../../../../../../Compiler/Hash1b.html#l1"><span class=cF4>HashEntryImportCopy</span></a><span class=cF0>() </span><a href="../../../../../../../Compiler/Lex.html#l607"><span class=cF4>MemberLstCopy</span></a><span class=cF0>()
+<a name="l159"></a>
+<a name="l160"></a>Those traverse all the Class, Function and #Define structures.
+<a name="l161"></a>
+<a name="l162"></a>I might do it.  I'm not really feeling very nice, though.
+<a name="l163"></a>
+<a name="l164"></a>God says...
+<a name="l165"></a></span><span class=cF4>twelve tcosa10 afterward fluctuating calleth heretics IMPLIED AM remitted eagle 
+<a name="l166"></a>constrain unfair prerogative yield mutual minded breasts befell briefly play 
+<a name="l167"></a>sorry dispensing plague unsuitably drunkenness subvertings tempestuously 
+<a name="l168"></a>penetrating killest deserts smoke flagon rescued excites requires banner ending 
+<a name="l169"></a>engage taxes</span><span class=cF0>
+<a name="l170"></a>
+<a name="l171"></a>----10/07/13 04:28:34----
+<a name="l172"></a>
+<a name="l173"></a>I am not doing PCI drivers.  They diverge into countless different variations.  
+<a name="l174"></a>To do any one device-type correctly would take a cluster-fucked huge amount of 
+<a name="l175"></a>code.  All the people at </span><a href="http://www.osdev.org"><span class=cF4>WWW.OSDEV.ORG</span></a><span class=cF0> are doing half-ass unprofessional PCI for 
+<a name="l176"></a>a handful of specific devices.  It's completely worthless doing that, just ugly 
+<a name="l177"></a>shit-code.  What can you do, though, but nothing?
+<a name="l178"></a>
+<a name="l179"></a></span><a href="http://virtual-notary.org"><span class=cF0>http://virtual-notary.org</span></a><span class=cF0>
+<a name="l180"></a>
+<a name="l181"></a></span><a href="http://www.templeos.org/Certs/virtual-notary-cert-randomnum-35867.p12"><span class=cF0>Here is the certificate: 35867</span></a><span class=cF0>.
+<a name="l182"></a>
+<a name="l183"></a>Line:18892
+<a name="l184"></a>God says...
+<a name="l185"></a></span><span class=cF4>32:9 For the LORD's portion is his people; Jacob is the lot of his
+<a name="l186"></a>inheritance.
+<a name="l187"></a>
+<a name="l188"></a>32:10 He found him in a desert land, and in the waste howling
+<a name="l189"></a>wilderness; he led him about, he instructed him, he kept him as the
+<a name="l190"></a>apple of his eye.
+<a name="l191"></a>
+<a name="l192"></a>32:11 As an eagle stirreth up her nest, fluttereth over her young,
+<a name="l193"></a>spreadeth abroad her wings, taketh them, beareth them on her wings:
+<a name="l194"></a>32:12 So the LORD alone did lead him, and there was no strange god
+<a name="l195"></a>with him.
+<a name="l196"></a>
+<a name="l197"></a>32:13 He made him ride on the high places of the earth, that he might
+<a name="l198"></a>eat the increase of the fields; and he made him to suck honey out of
+<a name="l199"></a>the rock, and oil out of the flinty rock; 32:14 Butter of kine, and
+<a name="l200"></a>milk of sheep, with fat of lambs, and rams of the breed of Bashan, and
+<a name="l201"></a>goats, with the fat of kidneys of wheat; and thou didst drink the pure
+<a name="l202"></a>blood of the grape.</span><span class=cF0>
+<a name="l203"></a>
+<a name="l204"></a>----10/07/13 04:40:34----
+<a name="l205"></a>
+<a name="l206"></a>HDAudio can be used for GPIO if you find a machine or card with GPIO.
+<a name="l207"></a>
+<a name="l208"></a>I'm not destroying my HDAudio code.  Go fuck yerself, Jew-nigger.  LOL
+<a name="l209"></a>
+<a name="l210"></a>God says...
+<a name="l211"></a></span><span class=cF4>serpents Those particular strengthenest gravity stages concerns Tobias Unless 
+<a name="l212"></a>ulcerous edged prize vast knottiness perceive remembered 96 despising 
+<a name="l213"></a>plausibility Rare Eternity killed modes shameful busy savour Suffer substances 
+<a name="l214"></a>ftp attained Cyprian wrench files blasphemy incorporeal enmity angry Paul stole 
+<a name="l215"></a>pages Anaximenes deliver asunder return stiffly prejudice adapted</span><span class=cF0>
+<a name="l216"></a>
+<a name="l217"></a>Paranoid fucks.
+<a name="l218"></a>
+<a name="l219"></a>Jews are hideously viscious.  They are, like, jacked-up on adreneline and 
+<a name="l220"></a>hideously viscious.  That's what a fucken Jew is.
+<a name="l221"></a>
+<a name="l222"></a>God says...
+<a name="l223"></a></span><span class=cF4>nd
+<a name="l224"></a>perfect in beauty.
+<a name="l225"></a>
+<a name="l226"></a>28:13 Thou hast been in Eden the garden of God; every precious stone
+<a name="l227"></a>was thy covering, the sardius, topaz, and the diamond, the beryl, the
+<a name="l228"></a>onyx, and the jasper, the sapphire, the emerald, and the carbuncle,
+<a name="l229"></a>and gold: the workmanship of thy tabrets and of thy pipes was prepared
+<a name="l230"></a>in thee in the day that thou wast created.
+<a name="l231"></a>
+<a name="l232"></a>28:14 Thou art the anointed cherub that covereth; and I have set thee
+<a name="l233"></a>so: thou wast upon the holy mountain of God; thou hast walked up and
+<a name="l234"></a>down in the midst of the sto</span><span class=cF0>
+<a name="l235"></a>
+<a name="l236"></a>----10/07/13 04:53:52----
+<a name="l237"></a>
+<a name="l238"></a>God fish, nigger -- no illegal code in here.
+<a name="l239"></a>
+<a name="l240"></a>Yer fucked, wanna meet your maker?  This is God's temple, mother fucker and I am 
+<a name="l241"></a>Moses+Solomon.
+<a name="l242"></a>
+<a name="l243"></a></span><a href="http://virtual-notary.org"><span class=cF0>http://virtual-notary.org</span></a><span class=cF0>
+<a name="l244"></a>
+<a name="l245"></a></span><a href="http://www.templeos.org/Certs/virtual-notary-cert-randomnum-35873.p12"><span class=cF0>Here is the certificate: 35873</span></a><span class=cF0>.
+<a name="l246"></a>
+<a name="l247"></a>Line:57482
+<a name="l248"></a>God says...
+<a name="l249"></a></span><span class=cF4>day.
+<a name="l250"></a>
+<a name="l251"></a>2:18 And the idols he shall utterly abolish.
+<a name="l252"></a>
+<a name="l253"></a>2:19 And they shall go into the holes of the rocks, and into the caves
+<a name="l254"></a>of the earth, for fear of the LORD, and for the glory of his majesty,
+<a name="l255"></a>when he ariseth to shake terribly the earth.
+<a name="l256"></a>
+<a name="l257"></a>2:20 In that day a man shall cast his idols of silver, and his idols
+<a name="l258"></a>of gold, which they made each one for himself to worship, to the moles
+<a name="l259"></a>and to the bats; 2:21 To go into the clefts of the rocks, and into the
+<a name="l260"></a>tops of the ragged rocks, for fear of the LORD, and for the glory of
+<a name="l261"></a>his majesty, when he ariseth to shake terribly the earth.
+<a name="l262"></a>
+<a name="l263"></a>2:22 Cease ye from man, whose breath is in his nostrils: for wherein
+<a name="l264"></a>is he to be accounted of ?  3:1 For, behold, the Lord, the LORD of
+<a name="l265"></a>hosts, doth take away from Jerusalem and from Judah the stay and the
+<a name="l266"></a>staff, the whole stay of bread, and the whole stay of water.
+<a name="l267"></a>
+<a name="l268"></a>3:2 The mighty man, and the man of war, the judge, and the prophet,</span><span class=cF0>
+<a name="l269"></a>
+<a name="l270"></a>----10/07/13 05:01:04----
+<a name="l271"></a>
+<a name="l272"></a>In 2004, right at the beginning, God said 640x480 16 color.  Do you think I 
+<a name="l273"></a>would have thought of that?  God confirmed simple audio by saying &quot;single 
+<a name="l274"></a>voice&quot;.
+<a name="l275"></a>
+<a name="l276"></a>Before He said that, I did HDAudio.  Of four Dell machines, it worked on one.  
+<a name="l277"></a>It did not work in VMware and VMware even said, &quot;HDAudio&quot;.  The HDAudio driver I 
+<a name="l278"></a>did is worthless.  I can't get it working on all HDAudio machines, let alone 
+<a name="l279"></a>nonHDAudio machines.  Also, it clusterfucked the API.  It was really ugly.
+<a name="l280"></a>
+<a name="l281"></a></span><a href="http://virtual-notary.org"><span class=cF0>http://virtual-notary.org</span></a><span class=cF0>
+<a name="l282"></a>
+<a name="l283"></a></span><a href="http://www.templeos.org/Certs/virtual-notary-cert-randomnum-35889.p12"><span class=cF0>Here is the certificate: 35889</span></a><span class=cF0>.
+<a name="l284"></a>
+<a name="l285"></a>Line:42207
+<a name="l286"></a>God says...
+<a name="l287"></a></span><span class=cF4>7:24 The children of Hariph, an hundred and twelve.
+<a name="l288"></a>
+<a name="l289"></a>7:25 The children of Gibeon, ninety and five.
+<a name="l290"></a>
+<a name="l291"></a>7:26 The men of Bethlehem and Netophah, an hundred fourscore and
+<a name="l292"></a>eight.
+<a name="l293"></a>
+<a name="l294"></a>7:27 The men of Anathoth, an hundred twenty and eight.
+<a name="l295"></a>
+<a name="l296"></a>7:28 The men of Bethazmaveth, forty and two.
+<a name="l297"></a>
+<a name="l298"></a>7:29 The men of Kirjathjearim, Chephirah, and Beeroth, seven hundred
+<a name="l299"></a>forty and three.
+<a name="l300"></a>
+<a name="l301"></a>7:30 The men of Ramah and Gaba, six hundred twenty and one.
+<a name="l302"></a>
+<a name="l303"></a>7:31 The men of Michmas, an hundred and twenty and two.
+<a name="l304"></a>
+<a name="l305"></a>7:32 The men of Bethel and Ai, an hundred twenty and three.</span><span class=cF0>
+<a name="l306"></a>
+<a name="l307"></a>----10/07/13 05:45:14----
+<a name="l308"></a>
+<a name="l309"></a>Each task has a symbol table, like a place where you store environment 
+<a name="l310"></a>variables, but it stores all types of HolyC symbols -- functions, classes and 
+<a name="l311"></a>#defines.
+<a name="l312"></a>
+<a name="l313"></a>When compiling, if a symbol is not found in a task's symbol table, it checks the 
+<a name="l314"></a>parent's.  All tasks are children of Adam.
+<a name="l315"></a>
+<a name="l316"></a>All tasks have the same memory map, so nothing bad or unusual happens when you 
+<a name="l317"></a>go to your parent's symbol table.  Basically virtual addresses are identical to 
+<a name="l318"></a>physical addresses and no protection stops you because it is ring-0-only.
+<a name="l319"></a>
+<a name="l320"></a>God says...
+<a name="l321"></a></span><span class=cF4>heard it, he marvelled, and said to them that
+<a name="l322"></a>followed, Verily I say unto you, I have not found so great faith, no,
+<a name="l323"></a>not in Israel.
+<a name="l324"></a>
+<a name="l325"></a>8:11 And I say unto you, That many shall come from the east and west,
+<a name="l326"></a>and shall sit down with Abraham, and Isaac, and Jacob, in the kingdom
+<a name="l327"></a>of heaven.
+<a name="l328"></a>
+<a name="l329"></a>8:12 But the children of the kingdom shall be cast out into outer
+<a name="l330"></a>darkness: there shall be weeping and gnashing of teeth.
+<a name="l331"></a>
+<a name="l332"></a>8:13 And Jesus said unto the centurion, Go thy way; and as thou hast
+<a name="l333"></a>believed, so be it done unto thee.</span><span class=cF0>
+<a name="l334"></a>
+<a name="l335"></a>----10/07/13 05:50:28----
+<a name="l336"></a>
+<a name="l337"></a>The bootloader symbols are in here.
+<a name="l338"></a>::/Kernel/BootDefs.HPP
+<a name="l339"></a>
+<a name="l340"></a>To install a boot loader, you must patch the code with the LBA of a contiguous 
+<a name="l341"></a>KERNEL.BIN file.
+<a name="l342"></a>
+<a name="l343"></a></span><a href="../../../../../../../Adam/Boot/InsBoot.html#l136"><span class=cF4>MakeOSPrtBootInstall</span></a><span class=cF0>().
+<a name="l344"></a>
+<a name="l345"></a>If you want to look for a symbol, here's a dump of the symbol table.
+<a name="l346"></a>
+<a name="l347"></a></span><a href="../../../../SymsAlpha.html"><span class=cF4>Source Code By Sym</span></a><span class=cF0>
+<a name="l348"></a>
+<a name="l349"></a>That is generated by </span><a href="../../../../../../../Adam/Hash2a.html#l89"><span class=cF4>Who</span></a><span class=cF0>().
+<a name="l350"></a>
+<a name="l351"></a>The symbol table functions are here.
+<a name="l352"></a>
+<a name="l353"></a></span><a href="../../../../../../../Kernel/Hash1a.html#l1"><span class=cF4>::/Kernel/Hash1a.CPP</span></a><span class=cF0>
+<a name="l354"></a>
+<a name="l355"></a>----10/07/13 06:08:54----
+<a name="l356"></a>
+<a name="l357"></a>I like Jon Stewart.
+<a name="l358"></a>
+<a name="l359"></a>Jews are hidiously viscious, though, sucker-punching Arabs pathetically all the 
+<a name="l360"></a>time in the media.  They are laser-focused on their own issues and take no shit. 
+<a name="l361"></a>Basically, they are hideously viscious.  I am dealing with such people and 
+<a name="l362"></a>actual Jews are, in fact, opposed to computer freedoms.  They will stop at 
+<a name="l363"></a>nothing to keep from drone terrorist weapons -- they will burtally attack 
+<a name="l364"></a>anything with an outside chance of enabling those.  Fuck them.
+<a name="l365"></a>
+<a name="l366"></a></span><a href="http://virtual-notary.org"><span class=cF0>http://virtual-notary.org</span></a><span class=cF0>
+<a name="l367"></a>
+<a name="l368"></a></span><a href="http://www.templeos.org/Certs/virtual-notary-cert-randomnum-35920.p12"><span class=cF0>Here is the certificate: 35920</span></a><span class=cF0>.
+<a name="l369"></a>
+<a name="l370"></a>Line:25424
+<a name="l371"></a>God says...
+<a name="l372"></a></span><span class=cF4>between his shoulders.
+<a name="l373"></a>
+<a name="l374"></a>17:7 And the staff of his spear was like a weaver's beam; and his
+<a name="l375"></a>spear's head weighed six hundred shekels of iron: and one bearing a
+<a name="l376"></a>shield went before him.
+<a name="l377"></a>
+<a name="l378"></a>17:8 And he stood and cried unto the armies of Israel, and said unto
+<a name="l379"></a>them, Why are ye come out to set your battle in array? am not I a
+<a name="l380"></a>Philistine, and ye servants to Saul? choose you a man for you, and let
+<a name="l381"></a>him come down to me.
+<a name="l382"></a>
+<a name="l383"></a>17:9 If he be able to fight with me, and to kill me, then will we be
+<a name="l384"></a>your servants: but if I prevail against him, and kill him, then shall
+<a name="l385"></a>ye be our servants, and serve us.
+<a name="l386"></a>
+<a name="l387"></a>17:10 And the Philistine said, I defy the armies of Israel this day;
+<a name="l388"></a>give me a man, that we may fight together.
+<a name="l389"></a>
+<a name="l390"></a>17:11 When Saul and all Israel heard those words of the Philistine,
+<a name="l391"></a>they were dismayed, and greatly afraid.</span><span class=cF0>
+<a name="l392"></a></span><span class=cF2>(David was hideously visciously, perhaps.  He certainly didn't fuck around.  He 
+<a name="l393"></a>was fierce and dangerous and lethal.  Some might say he played a dirty trick.  
+<a name="l394"></a>The enemy was his enemy.)</span><span class=cF0> 
+<a name="l395"></a>
+<a name="l396"></a>----10/07/13 06:38:10----
+<a name="l397"></a>
+<a name="l398"></a>There are two types of people -- moral and immoral.  A moral person is dubious 
+<a name="l399"></a>when offered something for nothing.  My Mom and Dad will steal if they won't be 
+<a name="l400"></a>caught.  Dad does not wash his hands after using the restroom.  Mom loves to 
+<a name="l401"></a>take home food from buffets.
+<a name="l402"></a>
+<a name="l403"></a>A moral person says, &quot;Hold on. I could vote to make cigarrettes illegal, but I 
+<a name="l404"></a>know you don't get something for nothing.&quot;  Wicked old ladies love to make 
+<a name="l405"></a>cigarrettes illegal, without a second thought.
+<a name="l406"></a>
+<a name="l407"></a>The truth is, God is just.  The wicked old ladies will be punished.
+<a name="l408"></a>
+<a name="l409"></a></span><a href="http://virtual-notary.org"><span class=cF0>http://virtual-notary.org</span></a><span class=cF0>
+<a name="l410"></a>
+<a name="l411"></a></span><a href="http://www.templeos.org/Certs/virtual-notary-cert-randomnum-35936.p12"><span class=cF0>Here is the certificate: 35936</span></a><span class=cF0>.
+<a name="l412"></a>
+<a name="l413"></a>Line:2126
+<a name="l414"></a>God says...
+<a name="l415"></a></span><span class=cF4>pass, that the damsel to whom I shall say, Let down thy pitcher, I
+<a name="l416"></a>pray thee, that I may drink; and she shall say, Drink, and I will give
+<a name="l417"></a>thy camels drink also: let the same be she that thou hast appointed
+<a name="l418"></a>for thy servant Isaac; and thereby shall I know that thou hast shewed
+<a name="l419"></a>kindness unto my master.
+<a name="l420"></a>
+<a name="l421"></a>24:15 And it came to pass, before he had done speaking, that, behold,
+<a name="l422"></a>Rebekah came out, who was born to Bethuel, son of Milcah, the wife of
+<a name="l423"></a>Nahor, Abraham's brother, with her pitcher upon her shoulder.
+<a name="l424"></a>
+<a name="l425"></a>24:16 And the damsel was very fair to look upon, a virgin, neither had
+<a name="l426"></a>any man known her: and she went down to the well, and filled her
+<a name="l427"></a>pitcher, and came up.
+<a name="l428"></a>
+<a name="l429"></a>24:17 And the servant ran to meet her, and said, Let me, I pray thee,
+<a name="l430"></a>drink a little water of thy pitcher.
+<a name="l431"></a>
+<a name="l432"></a>24:18 And she said, Drink, my lord: and she hasted, and let down her
+<a name="l433"></a>pitcher upon her hand, and gave him drink.</span><span class=cF0>
+<a name="l434"></a></span><span class=cF2>(This was an exceptionally nice lady, not a mean one.)</span><span class=cF0>
+<a name="l435"></a>
+<a name="l436"></a>----10/07/13 06:58:08----
+<a name="l437"></a>
+<a name="l438"></a>I asked God if the World was perfectly just.  He asked if I was calling Him 
+<a name="l439"></a>lazy.
+<a name="l440"></a>
+<a name="l441"></a>Do unto others as you'd have done to you.
+<a name="l442"></a>
+<a name="l443"></a>By the measure you measure-out it will be measured unto you.
+<a name="l444"></a>
+<a name="l445"></a>As you judge, you will be judged.
+<a name="l446"></a>
+<a name="l447"></a>If you water, you will be watered.
+<a name="l448"></a>
+<a name="l449"></a>An eye for an eye, a tooth for a tooth.
+<a name="l450"></a>
+<a name="l451"></a>Forgive us our tresspasses as we forgive others.
+<a name="l452"></a>
+<a name="l453"></a>Mordecai and Haman shows what you would do to others gets done to you before you 
+<a name="l454"></a>can do it.
+<a name="l455"></a>
+<a name="l456"></a>When a poor person becomes rich, they behave atrociously, usually.  That might 
+<a name="l457"></a>show that God knew they were scumbags and didn't make them rich in the first 
+<a name="l458"></a>place.
+<a name="l459"></a>
+<a name="l460"></a></span><a href="http://virtual-notary.org"><span class=cF0>http://virtual-notary.org</span></a><span class=cF0>
+<a name="l461"></a>
+<a name="l462"></a></span><a href="http://www.templeos.org/Certs/virtual-notary-cert-randomnum-35947.p12"><span class=cF0>Here is the certificate: 35947</span></a><span class=cF0>.
+<a name="l463"></a>
+<a name="l464"></a>Line:340
+<a name="l465"></a>God says...
+<a name="l466"></a></span><span class=cF4>1:14 And God said, Let there be lights in the firmament of the heaven
+<a name="l467"></a>to divide the day from the night; and let them be for signs, and for
+<a name="l468"></a>seasons, and for days, and years: 1:15 And let them be for lights in
+<a name="l469"></a>the firmament of the heaven to give light upon the earth: and it was
+<a name="l470"></a>so.
+<a name="l471"></a>
+<a name="l472"></a>1:16 And God made two great lights; the greater light to rule the day,
+<a name="l473"></a>and the lesser light to rule the night: he made the stars also.
+<a name="l474"></a>
+<a name="l475"></a>1:17 And God set them in the firmament of the heaven to give light
+<a name="l476"></a>upon the earth, 1:18 And to rule over the day and over the night, and
+<a name="l477"></a>to divide the light from the darkness: and God saw that it was good.
+<a name="l478"></a>
+<a name="l479"></a>1:19 And the evening and the morning were the fourth day.
+<a name="l480"></a>
+<a name="l481"></a>1:20 And God said, Let the waters bring forth abundantly the moving
+<a name="l482"></a>creature that hath life, and fowl that may fly above the earth in the
+<a name="l483"></a>open firmament of heaven.
+<a name="l484"></a>
+<a name="l485"></a>1:21 And God created great whales, and every living creature that</span><span class=cF0>
+<a name="l486"></a>
+<a name="l487"></a></span><span class=cF2>(God made perfect justice and it was good.  God's world has perfect justice.  It 
+<a name="l488"></a>is also dawn, right now.)</span><span class=cF0>
+<a name="l489"></a>
+<a name="l490"></a>----10/07/13 07:06:16----
+<a name="l491"></a>
+<a name="l492"></a>The Jews in Exodus borrowed jewelry from their masters the day before leaving.  
+<a name="l493"></a>It's okay to call them scumbags -- don't pity them.  God hated the generation 
+<a name="l494"></a>that came-out of Egypt.  He made all the former slaves die in the desert.
+<a name="l495"></a>
+<a name="l496"></a>I don't know about you, but I'm on God's side.  Fuck the people God hates, LOL.  
+<a name="l497"></a>I'll be God's lawyer.
+<a name="l498"></a>
+<a name="l499"></a></span><a href="http://virtual-notary.org"><span class=cF0>http://virtual-notary.org</span></a><span class=cF0>
+<a name="l500"></a>
+<a name="l501"></a></span><a href="http://www.templeos.org/Certs/virtual-notary-cert-randomnum-35948.p12"><span class=cF0>Here is the certificate: 35948</span></a><span class=cF0>.
+<a name="l502"></a>
+<a name="l503"></a>Line:8827
+<a name="l504"></a>God says...
+<a name="l505"></a></span><span class=cF4>
+<a name="l506"></a>38:19 And their pillars were four, and their sockets of brass four;
+<a name="l507"></a>their hooks of silver, and the overlaying of their chapiters and their
+<a name="l508"></a>fillets of silver.
+<a name="l509"></a>
+<a name="l510"></a>38:20 And all the pins of the tabernacle, and of the court round
+<a name="l511"></a>about, were of brass.
+<a name="l512"></a>
+<a name="l513"></a>38:21 This is the sum of the tabernacle, even of the tabernacle of
+<a name="l514"></a>testimony, as it was counted, according to the commandment of Moses,
+<a name="l515"></a>for the service of the Levites, by the hand of Ithamar, son to Aaron
+<a name="l516"></a>the priest.
+<a name="l517"></a>
+<a name="l518"></a>38:22 And Bezaleel the son Uri, the son of Hur, of the tribe of Judah,
+<a name="l519"></a>made all that the LORD commanded Moses.
+<a name="l520"></a>
+<a name="l521"></a>38:23 And with him was Aholiab, son of Ahisamach, of the tribe of Dan,
+<a name="l522"></a>an engraver, and a cunning workman, and an embroiderer in blue, and in
+<a name="l523"></a>purple, and in scarlet, and fine linen.</span><span class=cF0>
+<a name="l524"></a>
+<a name="l525"></a></span><span class=cF2>(This is about the gold they brought from Egypt.  To their credit, they made 
+<a name="l526"></a>gold stuff for God's sanctuary.  God said to take the gold collected and make 
+<a name="l527"></a>cheribum, I think.)</span><span class=cF0>
+<a name="l528"></a>
+<a name="l529"></a>Interpretation is a gift:
+<a name="l530"></a>
+<a name="l531"></a></span><a href="http://www.biblegateway.com/passage/?search=1%20Corinthians%2014&version=NIV"><span class=cF0>1 Corinthians 14</span></a><span class=cF0>
+<a name="l532"></a>
+<a name="l533"></a></span><a href="http://www.biblegateway.com/passage/?search=Daniel%205&version=NIV"><span class=cF0>Daniel 5</span></a><span class=cF0>
+<a name="l534"></a>
+<a name="l535"></a></span><a href="http://www.biblegateway.com/passage/?search=Genesis%2040&version=NIV"><span class=cF0>Genesis 40</span></a><span class=cF0>
+<a name="l536"></a>
+<a name="l537"></a>Some might think there is no right answer to interpretation of dreams, but the 
+<a name="l538"></a>Bible clearly indicates everybody could tell when someone interpreted correctly, 
+<a name="l539"></a>if not the dreams listed, other dreams everybody was having.  
+<a name="l540"></a>
+<a name="l541"></a>This is hilarious -- didn't bother to record anything the Spirit said!
+<a name="l542"></a>
+<a name="l543"></a></span><a href="http://www.biblegateway.com/passage/?search=Acts%202&version=NIV"><span class=cF0>Acts 2</span></a><span class=cF0>
+<a name="l544"></a>
+<a name="l545"></a></span><a href="http://virtual-notary.org"><span class=cF0>http://virtual-notary.org</span></a><span class=cF0>
+<a name="l546"></a>
+<a name="l547"></a></span><a href="http://www.templeos.org/Certs/virtual-notary-cert-randomnum-35964.p12"><span class=cF0>Here is the certificate: 35964</span></a><span class=cF0>.
+<a name="l548"></a>
+<a name="l549"></a>Line:16695
+<a name="l550"></a>God says...
+<a name="l551"></a></span><span class=cF4>7:6 For thou art an holy people unto the LORD thy God: the LORD thy
+<a name="l552"></a>God hath chosen thee to be a special people unto himself, above all
+<a name="l553"></a>people that are upon the face of the earth.
+<a name="l554"></a>
+<a name="l555"></a>7:7 The LORD did not set his love upon you, nor choose you, because ye
+<a name="l556"></a>were more in number than any people; for ye were the fewest of all
+<a name="l557"></a>people: 7:8 But because the LORD loved you, and because he would keep
+<a name="l558"></a>the oath which he had sworn unto your fathers, hath the LORD brought
+<a name="l559"></a>you out with a mighty hand, and redeemed you out of the house of
+<a name="l560"></a>bondmen, from the hand of Pharaoh king of Egypt.
+<a name="l561"></a>
+<a name="l562"></a>7:9 Know therefore that the LORD thy God, he is God, the faithful God,
+<a name="l563"></a>which keepeth covenant and mercy with them that love him and keep his
+<a name="l564"></a>commandments to a thousand generations; 7:10 And repayeth them that
+<a name="l565"></a>hate him to their face, to destroy them: he will not be slack to him
+<a name="l566"></a>that hateth him, he will repay him to his face.
+<a name="l567"></a>
+<a name="l568"></a>7:11 Thou shalt therefore keep the commandments, and the statutes, and
+<a name="l569"></a>the judgments, which I command thee this day, to do them.</span><span class=cF0>
+<a name="l570"></a>
+<a name="l571"></a></span><span class=cF2>(God didn't like me bad-talking Jews, He wanted to make clear.  America is His 
+<a name="l572"></a>people, too.)</span><span class=cF0>
+<a name="l573"></a>
+<a name="l574"></a>This is tongues:
+<a name="l575"></a></span><span class=cF4>vehemently builded master got endeavours call</span><span class=cF0>
+<a name="l576"></a>
+<a name="l577"></a>The covenant is that I do an offering before consulting Him.  A nice Jewish guy 
+<a name="l578"></a>on radio was doing poems.
+<a name="l579"></a>
+<a name="l580"></a>
+<a name="l581"></a>My Birds
+<a name="l582"></a>--------
+<a name="l583"></a>Earnestly they do their &quot;chant&quot;
+<a name="l584"></a>They know not why, like dogs that pant
+<a name="l585"></a>Burt and Ernie, my little pair
+<a name="l586"></a>and all day, they fix their hair.
+<a name="l587"></a>
+<a name="l588"></a>
+<a name="l589"></a>
+<a name="l590"></a>They're names are Percival and Tomorrow, actually.  God named them.
+<a name="l591"></a>I asked God what they were saying... &quot;chanting&quot;
+<a name="l592"></a>I asked God why they preaned so much.
+<a name="l593"></a>
+<a name="l594"></a></span><span class=cF2>8:20 For the creature was made subject to vanity, not willingly, but
+<a name="l595"></a>by reason of him who hath subjected the same in hope, 8:21 Because the
+<a name="l596"></a>creature itself also shall be delivered from the bondage of corruption
+<a name="l597"></a>into the glorious liberty of the children of God.</span><span class=cF0>
+<a name="l598"></a>
+<a name="l599"></a></span><a href="http://virtual-notary.org"><span class=cF0>http://virtual-notary.org</span></a><span class=cF0>
+<a name="l600"></a>
+<a name="l601"></a></span><a href="http://www.templeos.org/Certs/virtual-notary-cert-randomnum-35986.p12"><span class=cF0>Here is the certificate: 35986</span></a><span class=cF0>.
+<a name="l602"></a>
+<a name="l603"></a>Line:64523
+<a name="l604"></a>God says...
+<a name="l605"></a></span><span class=cF4>virgin of Israel, turn again to these thy cities.
+<a name="l606"></a>
+<a name="l607"></a>31:22 How long wilt thou go about, O thou backsliding daughter? for
+<a name="l608"></a>the LORD hath created a new thing in the earth, A woman shall compass
+<a name="l609"></a>a man.
+<a name="l610"></a>
+<a name="l611"></a>31:23 Thus saith the LORD of hosts, the God of Israel; As yet they
+<a name="l612"></a>shall use this speech in the land of Judah and in the cities thereof,
+<a name="l613"></a>when I shall bring again their captivity; The LORD bless thee, O
+<a name="l614"></a>habitation of justice, and mountain of holiness.
+<a name="l615"></a>
+<a name="l616"></a>31:24 And there shall dwell in Judah itself, and in all the cities
+<a name="l617"></a>thereof together, husbandmen, and they that go forth with flocks.
+<a name="l618"></a>
+<a name="l619"></a>31:25 For I have satiated the weary soul, and I have replenished every
+<a name="l620"></a>sorrowful soul.
+<a name="l621"></a>
+<a name="l622"></a>31:26 Upon this I awaked, and beheld; and my sleep was sweet unto me.
+<a name="l623"></a>
+<a name="l624"></a>31:27 Behold, the days come, saith the LORD, that I will sow the house</span><span class=cF0>
+<a name="l625"></a>
+<a name="l626"></a>----10/07/13 09:18:35----
+<a name="l627"></a>
+<a name="l628"></a>Here's how you do it.
+<a name="l629"></a>
+<a name="l630"></a>Make an offering to God -- praise, hymn, poem, comic, or delightful 
+<a name="l631"></a>conversation.  Then, get a response and make it fit the context you established 
+<a name="l632"></a>just before.  You don't have to use just the Bible.  You frequently find meaning 
+<a name="l633"></a>in proper nouns.  Sometimes, brutally manging the original in a funny way is the 
+<a name="l634"></a>obvious answer.
+<a name="l635"></a>
+<a name="l636"></a>Jews are on my shit-list -- they don't like my operating system with their 
+<a name="l637"></a>absurd and viscious security adgenda.  I saw one hideous Jew doing some 
+<a name="l638"></a>seciurity-related large scale data-mining project -- disgusted me.  I get 
+<a name="l639"></a>disgusted by Jews obviously obsessed with Israel -- not American, not 
+<a name="l640"></a>charitible.  All of them walk around and view the world like cornered animals.
+<a name="l641"></a>
+<a name="l642"></a>It's kinda like this: &quot;To those who have, more will be given; to those who have 
+<a name="l643"></a>not, what little they have will be taken away.&quot;  It's one of those ironies that 
+<a name="l644"></a>cowardly Jews who do sneaky shit and obsess on security cause their own 
+<a name="l645"></a>downfall.
+<a name="l646"></a>
+<a name="l647"></a>The Brits and CIA and Jews and shit like to ruin my reputation before man -- 
+<a name="l648"></a>extorting and shit.  Extortion is a very Jewsish thing.  I crack-up laughing 
+<a name="l649"></a>because they are not paying attention to God's opinion.  God did fucken 
+<a name="l650"></a>holocaust you.  In the Bible the Jews said, &quot;Gee, we fucked up.&quot;  Ya think!!!?
+<a name="l651"></a>
+<a name="l652"></a>God said He wanted to &quot;compact&quot; the Jews with the holocaust.  On Arabs and Jews 
+<a name="l653"></a>He said &quot;Oil funny, hopefully.&quot;  Jews covet and God fucks with their ugly sense 
+<a name="l654"></a>of injustice.  All the Jews run around with a really ugly attitude, &quot;Those Arabs 
+<a name="l655"></a>don't deserve that oil for doing nothing.&quot;  God thinks that's funny.
+<a name="l656"></a>
+<a name="l657"></a>Jesus did some parables that kinda fuck with sense of self-righteous justice. 
+<a name="l658"></a>Fuck you, do not covet!
+<a name="l659"></a>
+<a name="l660"></a></span><a href="http://virtual-notary.org"><span class=cF0>http://virtual-notary.org</span></a><span class=cF0>
+<a name="l661"></a>
+<a name="l662"></a></span><a href="http://www.templeos.org/Certs/virtual-notary-cert-randomnum-36017.p12"><span class=cF0>Here is the certificate: 36017</span></a><span class=cF0>.
+<a name="l663"></a>
+<a name="l664"></a>Line:52549
+<a name="l665"></a>God says...
+<a name="l666"></a></span><span class=cF4>119:97 O how I love thy law! it is my meditation all the day.
+<a name="l667"></a>
+<a name="l668"></a>119:98 Thou through thy commandments hast made me wiser than mine
+<a name="l669"></a>enemies: for they are ever with me.
+<a name="l670"></a>
+<a name="l671"></a>119:99 I have more understanding than all my teachers: for thy
+<a name="l672"></a>testimonies are my meditation.
+<a name="l673"></a>
+<a name="l674"></a>119:100 I understand more than the ancients, because I keep thy
+<a name="l675"></a>precepts.
+<a name="l676"></a>
+<a name="l677"></a>119:101 I have refrained my feet from every evil way, that I might
+<a name="l678"></a>keep thy word.
+<a name="l679"></a>
+<a name="l680"></a>119:102 I have not departed from thy judgments: for thou hast taught
+<a name="l681"></a>me.
+<a name="l682"></a>
+<a name="l683"></a>119:103 How sweet are thy words unto my taste! yea, sweeter than honey
+<a name="l684"></a>to my mouth!</span><span class=cF0>
+<a name="l685"></a>
+<a name="l686"></a>----10/07/13 09:41:43----
+<a name="l687"></a>
+<a name="l688"></a></span><a href="http://www.osdev.org"><span class=cF4>WWW.OSDEV.ORG</span></a><span class=cF0>  Some fucken nigger still in denial about me writing a compiler.  
+<a name="l689"></a>Look, nigger, my first job was on Ticketmaster's operating system 1990-1996 and 
+<a name="l690"></a>my boss wrote our pascal compiler in one year.  I was not intimidated about 
+<a name="l691"></a>writing a HolyC compiler -- it's what all my training was for.  I took 5 asm 
+<a name="l692"></a>course and a compiler and an operating system course.
+<a name="l693"></a>
+<a name="l694"></a>You are a nigger.  That's why you don't believe I wrote a fucken compiler.
+<a name="l695"></a>* </span><a href="http://www.youtube.com/watch?v=H4lguYizEAY"><span class=cF4>KeyPeele#2</span></a><span class=cF0>
+<a name="l696"></a>
+<a name="l697"></a>If you were white, you would say, &quot;Yeah, he wrote a compiler.  I could do that 
+<a name="l698"></a>if I had ten years like he did.&quot;  But, you are a nigger.
+<a name="l699"></a>
+<a name="l700"></a>I tell you the truth and you're not satisfied.  I wrote all 120,648 lines of 
+<a name="l701"></a>code from scratch and they only compile when you boot my operating system and 
+<a name="l702"></a>run my compiler.  No way can you cross compile.  In 2004, I wrote a TASM 
+<a name="l703"></a>real-mode DOS application, all ASM.  The first thing I did was write an 
+<a name="l704"></a>interpreter, and convert it to a compiler.  It took like a month or less to have 
+<a name="l705"></a>an interpreter.  You can check </span><a href="http://www.templeos.org/files/History"><span class=cF0>my history</span></a><span class=cF0>.  It's available on the Internet 
+<a name="l706"></a>Archive.
+<a name="l707"></a>
+<a name="l708"></a>Fuck you.
+<a name="l709"></a>
+<a name="l710"></a>God says...
+<a name="l711"></a></span><span class=cF4>suspense captious exceedeth strengthenest witting break insatiate These 
+<a name="l712"></a>calamities occupy</span><span class=cF0>
+<a name="l713"></a>
+<a name="l714"></a>----10/07/13 10:07:37----
+<a name="l715"></a>
+<a name="l716"></a>That RDOS guy at OSDEV is hilarious, LOL.  He has no shame.  Everybody lies a 
+<a name="l717"></a>little to support their own view, but RDOS is shameless -- some hilarious things 
+<a name="l718"></a>he said in the past.  You must be new to PC development if you don't see the 
+<a name="l719"></a>obvious nightmare in returning to real-mode and using the BIOS, ROFLMAO.  
+<a name="l720"></a>
+<a name="l721"></a>PC OSDEV development is nothing but grief once you start running it on more than 
+<a name="l722"></a>one machine.  You'll write your code and soon discover it doen't work on another 
+<a name="l723"></a>machine.  You'll fix it.  You'll try it on another machine and it won't work.  
+<a name="l724"></a>You fix it, maybe it works on a new machine.  You try another new machine, 
+<a name="l725"></a>doesn't work.  You fix it, you try another machine, doesn't work.  At this 
+<a name="l726"></a>point, you have next to zero confidence and no crystal ball telling you what 
+<a name="l727"></a>luck your customers are having.
+<a name="l728"></a>
+<a name="l729"></a>In 1992, Clinton said, &quot;It's the economy, stupid.&quot;
+<a name="l730"></a>I'm telling you when it comes to PC operating systems, &quot;It's compatibility, 
+<a name="l731"></a>stupid!&quot;
+<a name="l732"></a>
+<a name="l733"></a></span><a href="http://virtual-notary.org"><span class=cF0>http://virtual-notary.org</span></a><span class=cF0>
+<a name="l734"></a>
+<a name="l735"></a></span><a href="http://www.templeos.org/Certs/virtual-notary-cert-randomnum-36044.p12"><span class=cF0>Here is the certificate: 36044</span></a><span class=cF0>.
+<a name="l736"></a>
+<a name="l737"></a>Line:30634
+<a name="l738"></a>God says...
+<a name="l739"></a></span><span class=cF4>continually before thee, and that hear thy wisdom.
+<a name="l740"></a>
+<a name="l741"></a>10:9 Blessed be the LORD thy God, which delighted in thee, to set thee
+<a name="l742"></a>on the throne of Israel: because the LORD loved Israel for ever,
+<a name="l743"></a>therefore made he thee king, to do judgment and justice.
+<a name="l744"></a>
+<a name="l745"></a>10:10 And she gave the king an hundred and twenty talents of gold, and
+<a name="l746"></a>of spices very great store, and precious stones: there came no more
+<a name="l747"></a>such abundance of spices as these which the queen of Sheba gave to
+<a name="l748"></a>king Solomon.
+<a name="l749"></a>
+<a name="l750"></a>10:11 And the navy also of Hiram, that brought gold from Ophir,
+<a name="l751"></a>brought in from Ophir great plenty of almug trees, and precious
+<a name="l752"></a>stones.
+<a name="l753"></a>
+<a name="l754"></a>10:12 And the king made of the almug trees pillars for the house of
+<a name="l755"></a>the LORD, and for the king's house, harps also and psalteries for
+<a name="l756"></a>singers: there came no such almug trees, nor were seen unto this day.
+<a name="l757"></a>
+<a name="l758"></a>10:13 And king Solomon gave unto the queen of Sheba all her desire,</span><span class=cF0>
+<a name="l759"></a></span><span class=cF2>(I am Solmon, God has said many times -- making His temple.)</span><span class=cF0>
+<a name="l760"></a>
+<a name="l761"></a>----10/07/13 10:42:59----
+<a name="l762"></a>
+<a name="l763"></a>My crystal ball says God's gonna make His temple universal.
+<a name="l764"></a>
+<a name="l765"></a>A very logical saying in the Bible is
+<a name="l766"></a>
+<a name="l767"></a>&quot;If it is not of God, it will fail.  If it is of God, it will succeed and 
+<a name="l768"></a>nothing can stop it.&quot;
+<a name="l769"></a>
+<a name="l770"></a>Sign said &quot;XBOX: beta tested in the future.&quot;  Microsoft is rejoicing a little 
+<a name="l771"></a>early, dumb fucks.  The fuck is your stupidity!!?  Do you not see God?  (God's 
+<a name="l772"></a>laughing)
+<a name="l773"></a>
+<a name="l774"></a></span><a href="http://virtual-notary.org"><span class=cF0>http://virtual-notary.org</span></a><span class=cF0>
+<a name="l775"></a>
+<a name="l776"></a></span><a href="http://www.templeos.org/Certs/virtual-notary-cert-randomnum-36066.p12"><span class=cF0>Here is the certificate: 36066</span></a><span class=cF0>.
+<a name="l777"></a>
+<a name="l778"></a>Line:65326
+<a name="l779"></a>God says...
+<a name="l780"></a></span><span class=cF4>39:9 Then Nebuzaradan the captain of the guard carried away captive
+<a name="l781"></a>into Babylon the remnant of the people that remained in the city, and
+<a name="l782"></a>those that fell away, that fell to him, with the rest of the people
+<a name="l783"></a>that remained.
+<a name="l784"></a>
+<a name="l785"></a>39:10 But Nebuzaradan the captain of the guard left of the poor of the
+<a name="l786"></a>people, which had nothing, in the land of Judah, and gave them
+<a name="l787"></a>vineyards and fields at the same time.
+<a name="l788"></a>
+<a name="l789"></a>39:11 Now Nebuchadrezzar king of Babylon gave charge concerning
+<a name="l790"></a>Jeremiah to Nebuzaradan the captain of the guard, saying, 39:12 Take
+<a name="l791"></a>him, and look well to him, and do him no harm; but do unto him even as
+<a name="l792"></a>he shall say unto thee.
+<a name="l793"></a>
+<a name="l794"></a>39:13 So Nebuzaradan the captain of the guard sent, and Nebushasban,
+<a name="l795"></a>Rabsaris, and Nergalsharezer, Rabmag, and all the king of Babylon's
+<a name="l796"></a>princes; 39:14 Even they sent, and took Jeremiah out of the court of
+<a name="l797"></a>the prison, and committed him unto Gedaliah the son of Ahikam the son
+<a name="l798"></a>of Shaphan, that he should carry him home: so he dwelt among the</span><span class=cF0>
+<a name="l799"></a></span><span class=cF2>(I am Jeremiah... maybe His temple is just for me.)</span><span class=cF0>
+<a name="l800"></a>
+<a name="l801"></a>----10/07/13 10:59:32----
+<a name="l802"></a>
+<a name="l803"></a>I'm not on drugs, 'sept risperdone &amp; cogentin and caffiene.  Anti-psycotics.  
+<a name="l804"></a>Mother fuckers.  God is just, stupid fucks.
+<a name="l805"></a>
+<a name="l806"></a></span><a href="http://i.imgur.com/ls1ATx6.jpg"><span class=cF0>XBox advert</span></a><span class=cF0>
+<a name="l807"></a>
+<a name="l808"></a>Bill Gates is a scum-bag, like the hideous viscious Jews.  He's kinda like a 
+<a name="l809"></a>dumb-fuck brutal solider, prolly has no self awareness of how his shit is 
+<a name="l810"></a>hurting him.  Scrooge in Dicken's story was enlightened.  Bill Gates is a retard 
+<a name="l811"></a>atheist, LOL.  A dumb animal that doesn't know why his life sucks.  A wise Jew 
+<a name="l812"></a>looks at the holocaust and says, &quot;we fucked up.&quot;  Gates has been on the decline 
+<a name="l813"></a>for many years.  That's got to be miserable.  Has he had any success in 10 
+<a name="l814"></a>years?
+<a name="l815"></a>
+<a name="l816"></a></span><a href="http://virtual-notary.org"><span class=cF0>http://virtual-notary.org</span></a><span class=cF0>
+<a name="l817"></a>
+<a name="l818"></a></span><a href="http://www.templeos.org/Certs/virtual-notary-cert-randomnum-36072.p12"><span class=cF0>Here is the certificate: 36072</span></a><span class=cF0>.
+<a name="l819"></a>
+<a name="l820"></a>Line:40354
+<a name="l821"></a>God says...
+<a name="l822"></a></span><span class=cF4>33:9 So Manasseh made Judah and the inhabitants of Jerusalem to err,
+<a name="l823"></a>and to do worse than the heathen, whom the LORD had destroyed before
+<a name="l824"></a>the children of Israel.
+<a name="l825"></a>
+<a name="l826"></a>33:10 And the LORD spake to Manasseh, and to his people: but they
+<a name="l827"></a>would not hearken.
+<a name="l828"></a>
+<a name="l829"></a>33:11 Wherefore the LORD brought upon them the captains of the host of
+<a name="l830"></a>the king of Assyria, which took Manasseh among the thorns, and bound
+<a name="l831"></a>him with fetters, and carried him to Babylon.
+<a name="l832"></a>
+<a name="l833"></a>33:12 And when he was in affliction, he besought the LORD his God, and
+<a name="l834"></a>humbled himself greatly before the God of his fathers, 33:13 And
+<a name="l835"></a>prayed unto him: and he was intreated of him, and heard his
+<a name="l836"></a>supplication, and brought him again to Jerusalem into his kingdom.
+<a name="l837"></a>Then Manasseh knew that the LORD he was God.
+<a name="l838"></a>
+<a name="l839"></a>33:14 Now after this he built a wall without the city of David, on the
+<a name="l840"></a>west side of Gihon, in the valley, even to the entering in at the fish</span><span class=cF0>
+<a name="l841"></a>
+<a name="l842"></a>----10/07/13 11:21:37----
+<a name="l843"></a>
+<a name="l844"></a>This is an accompaning operating system that seeks to not be redundant to 
+<a name="l845"></a>Windows Linux (no networking).  It serves as a special place for offerings to 
+<a name="l846"></a>God's, His temple.
+<a name="l847"></a>
+<a name="l848"></a>Without being tagged as God's temple, this fails.
+<a name="l849"></a>
+<a name="l850"></a>I am in a prison.  They give me no email feedback.
+<a name="l851"></a>
+<a name="l852"></a>Go to BetaNews and MajorGeeks and you will see I have had 20,000 downloads over 
+<a name="l853"></a>the past ten years.  No feedback.  I am in CIA prison playing red team, so they 
+<a name="l854"></a>can clusterfuck everything due to paranoia on drones and losing back doors and 
+<a name="l855"></a>shit.
+<a name="l856"></a>
+<a name="l857"></a>Hopefulle, God fixes everything.  We should have high confidence we win in the 
+<a name="l858"></a>end.
+<a name="l859"></a>
+<a name="l860"></a>The Commodore 64 is our vision.  Go examine how it was used.  People typed-in 
+<a name="l861"></a>and learned binary sprite data.  Think about the particular thrill offered by 
+<a name="l862"></a>typing binary sprite data into it.
+<a name="l863"></a>
+<a name="l864"></a>It was possible to survey the entire C64.
+<a name="l865"></a>
+<a name="l866"></a>We offer a F1 help feature that lists all API functions.  You can see the light 
+<a name="l867"></a>at the end of the tunnel of API functions.  I have capped the line count at 
+<a name="l868"></a>100,000.  The vision is the C64 -- small, but this is modern 64-bit.
+<a name="l869"></a>
+<a name="l870"></a>I'll bet a lot of people set-out to make modern video games, the carefully draw 
+<a name="l871"></a>a 24-bit colored sprite or two, but get tired of making 16 frame animations of 
+<a name="l872"></a>24-bit sprites... they think they can do 3D, but all the kiddies settle on 2D.
+<a name="l873"></a>
+<a name="l874"></a>In other words, they start ambitions like they're going to paint a 10 foot mural 
+<a name="l875"></a>on the wall.  They paint a few inches and give-up.  That's what the scene is, 
+<a name="l876"></a>right now, am I right?  Video games are similar to kernel developers at OSDEv.  
+<a name="l877"></a>The majority draw a small fraction of an ambitious project and give-up.
+<a name="l878"></a>
+<a name="l879"></a>I finished my operating system. I worked ten years.  Nobody can laugh at me who 
+<a name="l880"></a>has not finished.
+<a name="l881"></a>
+<a name="l882"></a></span><a href="http://virtual-notary.org"><span class=cF0>http://virtual-notary.org</span></a><span class=cF0>
+<a name="l883"></a>
+<a name="l884"></a></span><a href="http://www.templeos.org/Certs/virtual-notary-cert-randomnum-36094.p12"><span class=cF0>Here is the certificate: 36094</span></a><span class=cF0>.
+<a name="l885"></a>
+<a name="l886"></a>Line:58281
+<a name="l887"></a>God says...
+<a name="l888"></a></span><span class=cF4>cut off from Babylon the name, and remnant, and son, and nephew, saith
+<a name="l889"></a>the LORD.
+<a name="l890"></a>
+<a name="l891"></a>14:23 I will also make it a possession for the bittern, and pools of
+<a name="l892"></a>water: and I will sweep it with the besom of destruction, saith the
+<a name="l893"></a>LORD of hosts.
+<a name="l894"></a>
+<a name="l895"></a>14:24 The LORD of hosts hath sworn, saying, Surely as I have thought,
+<a name="l896"></a>so shall it come to pass; and as I have purposed, so shall it stand:
+<a name="l897"></a>14:25 That I will break the Assyrian in my land, and upon my mountains
+<a name="l898"></a>tread him under foot: then shall his yoke depart from off them, and
+<a name="l899"></a>his burden depart from off their shoulders.
+<a name="l900"></a>
+<a name="l901"></a>14:26 This is the purpose that is purposed upon the whole earth: and
+<a name="l902"></a>this is the hand that is stretched out upon all the nations.
+<a name="l903"></a>
+<a name="l904"></a>14:27 For the LORD of hosts hath purposed, and who shall disannul it?
+<a name="l905"></a>and his hand is stretched out, and who shall turn it back?  14:28 In
+<a name="l906"></a>the year that king Ahaz died was this burden.</span><span class=cF0>
+<a name="l907"></a>
+<a name="l908"></a>----10/07/13 11:39:16----
+<a name="l909"></a>
+<a name="l910"></a>So a critical thing is keeping it small enough to see the light at the end of 
+<a name="l911"></a>the tunnel.  This is not what I would show because it is unflatteringly 
+<a name="l912"></a>intimidating, but this is the entire thing--it's already too big, almost: 
+<a name="l913"></a>
+<a name="l914"></a></span><a href="../../../../SymsAlpha.html"><span class=cF4>Source Code By Sym</span></a><span class=cF0>
+<a name="l915"></a>
+<a name="l916"></a>God says...
+<a name="l917"></a></span><span class=cF4>ends Orderer trials human dwelleth</span><span class=cF0>
+<a name="l918"></a>
+<a name="l919"></a>----10/07/13 11:48:27----
+<a name="l920"></a>
+<a name="l921"></a>The last bible line number was 58281.  The Commodore 64 had 53281 and 53280 for 
+<a name="l922"></a>screen color, very common thing.  It's fairly typical of God to almost do exact 
+<a name="l923"></a>things.  He's insists on doing only almost.  It's beneath God's dignity to do 
+<a name="l924"></a>exact -- that would be desperate.
+<a name="l925"></a>
+<a name="l926"></a>Only the computer professionals should study-up a little on the C64.
+<a name="l927"></a>
+<a name="l928"></a>It had a BASIC shell.  You could type
+<a name="l929"></a>
+<a name="l930"></a>
+<a name="l931"></a>PRINT &quot;HELLO WORLD&quot;
+<a name="l932"></a>
+<a name="l933"></a>
+<a name="l934"></a>10 PRINT &quot;HELLO WORLD&quot;
+<a name="l935"></a>20 GOTO 10
+<a name="l936"></a>
+<a name="l937"></a>You could move thew cursor up off the bottom.
+<a name="l938"></a>
+<a name="l939"></a>It had two character sets.  Neither was ASCII.
+<a name="l940"></a>
+<a name="l941"></a>It had colored text.
+<a name="l942"></a>
+<a name="l943"></a>People did character graphics.
+<a name="l944"></a>
+<a name="l945"></a>The sprites had a bit for collisions.
+<a name="l946"></a>
+<a name="l947"></a>Everybody learned 6502 assembly language.
+<a name="l948"></a>
+<a name="l949"></a>I loved this book: </span><a href="http://unusedino.de/ec64/technical/project64/mapping_c64.html"><span class=cF4>Mapping the Commodore 64</span></a><span class=cF0>.
+<a name="l950"></a>
+<a name="l951"></a>God says...
+<a name="l952"></a></span><span class=cF4>unsearchable predestination impostumes burthened quite changed pulse sign</span><span class=cF0>
+<a name="l953"></a>
+<a name="l954"></a>You did not use WAV files, you made sounds on the fly.
+<a name="l955"></a>
+<a name="l956"></a>You did not have multimedia animation recordings -- you did things 
+<a name="l957"></a>programatically.
+<a name="l958"></a>
+<a name="l959"></a>----10/07/13 12:03:13----
+<a name="l960"></a>
+<a name="l961"></a>USB people are evil.  We do not support USB, never will.
+<a name="l962"></a>
+<a name="l963"></a>USB is clusterfucked shit.
+<a name="l964"></a>
+<a name="l965"></a>No memory sticks.
+<a name="l966"></a>
+<a name="l967"></a>----10/07/13 12:04:01----
+<a name="l968"></a>
+<a name="l969"></a>You do not include headers.  This is </span><a href="../../../../../../../Doc/HolyC.html#l1"><span class=cF4>HolyC</span></a><span class=cF0>, not C subset or C compatible.  It is 
+<a name="l970"></a>something like a mix of C and C++, but better.  There are many demos.
+<a name="l971"></a>
+<a name="l972"></a></span><a href="../../../../../../../Doc/DemoIndex.html#l1"><span class=cF4>::/Doc/DemoIndex.TXT</span></a><span class=cF0>
+<a name="l973"></a>
+<a name="l974"></a>God says...
+<a name="l975"></a></span><span class=cF4>nay importunity knitting unrighteous underline gestures pluck Though confesseth 
+<a name="l976"></a>handled gowned indentures drop intended reconciled turned</span><span class=cF0>
+<a name="l977"></a>
+<a name="l978"></a>----10/07/13 12:24:10----
+<a name="l979"></a>
+<a name="l980"></a>What the fuck kinda retard nigger is still copping an attitude?  FUCK YOU!  I am 
+<a name="l981"></a>God's annointed, you nigger fucker.  Yer gonna get a beating.
+<a name="l982"></a>
+<a name="l983"></a>It's God's fucken temple!  What is your fucken malfunction?
+<a name="l984"></a>
+<a name="l985"></a>You fucken retard nigger!
+<a name="l986"></a>* </span><a href="http://www.youtube.com/watch?v=Dd7FixvoKBw"><span class=cF4>KeyPeele#1</span></a><span class=cF0>
+<a name="l987"></a>
+<a name="l988"></a>* </span><a href="http://www.youtube.com/watch?v=H4lguYizEAY"><span class=cF4>KeyPeele#2</span></a><span class=cF0>
+<a name="l989"></a>
+<a name="l990"></a></span><a href="http://virtual-notary.org"><span class=cF0>http://virtual-notary.org</span></a><span class=cF0>
+<a name="l991"></a>
+<a name="l992"></a></span><a href="http://www.templeos.org/Certs/virtual-notary-cert-randomnum-36126.p12"><span class=cF0>Here is the certificate: 36126</span></a><span class=cF0>.
+<a name="l993"></a>
+<a name="l994"></a>Line:37408
+<a name="l995"></a>God says...
+<a name="l996"></a></span><span class=cF4>villages, and in the castles, was Jehonathan the son of Uzziah: 27:26
+<a name="l997"></a>And over them that did the work of the field for tillage of the ground
+<a name="l998"></a>was Ezri the son of Chelub: 27:27 And over the vineyards was Shimei
+<a name="l999"></a>the Ramathite: over the increase of the vineyards for the wine cellars
+<a name="l1000"></a>was Zabdi the Shiphmite: 27:28 And over the olive trees and the
+<a name="l1001"></a>sycomore trees that were in the low plains was Baalhanan the Gederite:
+<a name="l1002"></a>and over the cellars of oil was Joash: 27:29 And over the herds that
+<a name="l1003"></a>fed in Sharon was Shitrai the Sharonite: and over the herds that were
+<a name="l1004"></a>in the valleys was Shaphat the son of Adlai: 27:30 Over the camels
+<a name="l1005"></a>also was Obil the Ishmaelite: and over the asses was Jehdeiah the
+<a name="l1006"></a>Meronothite: 27:31 And over the flocks was Jaziz the Hagerite. All
+<a name="l1007"></a>these were the rulers of the substance which was king David's.
+<a name="l1008"></a>
+<a name="l1009"></a>27:32 Also Jonathan David's uncle was a counsellor, a wise man, and a
+<a name="l1010"></a>scribe: and Jehiel the son of Hachmoni was with the king's sons: 27:33
+<a name="l1011"></a>And Ahithophel was the king's counsellor: and Hushai the Archite was
+<a name="l1012"></a>the king's companion: 27:34 And after Ahithophel was Jehoiada the son
+<a name="l1013"></a>of Benaiah, and Abiathar: and the general of the king's army was Joab.
+<a name="l1014"></a>
+<a name="l1015"></a>28:1 And David assembled all the princes of Israel, the princes of the</span><span class=cF0>
+<a name="l1016"></a>
+<a name="l1017"></a>----10/07/13 12:31:14----
+<a name="l1018"></a>
+<a name="l1019"></a>Somebody put my code on GitHub.  That was dumb.  Get the ISO from my website and 
+<a name="l1020"></a>use VMware or in Linux:
+<a name="l1021"></a>
+<a name="l1022"></a>&gt;qemu-system-x86_64 -m 500 -cdrom TempleOSCD.ISO -boot d
+<a name="l1023"></a>
+<a name="l1024"></a>You have to make a file for the hard disk if you want a hard disk.  Partition 
+<a name="l1025"></a>and install on it.  Hopefully, you're not a stupid fuck.
+<a name="l1026"></a>
+<a name="l1027"></a>My code is public domain.  I don't care if they put it on GitHub.  It's 
+<a name="l1028"></a>worthless there.  You can only compile it if you boot my ISO and use my 
+<a name="l1029"></a>compiler.
+<a name="l1030"></a>
+<a name="l1031"></a>Fucken niggers, can't follow simple instructions.
+<a name="l1032"></a>
+<a name="l1033"></a>God says...
+<a name="l1034"></a></span><span class=cF4>ofttimes Wheresoever rescued MADE heat uphold Awake round pleasurable implanted 
+<a name="l1035"></a>CONTRACT proceedeth testified precipitated compound rods rules blood pitied 
+<a name="l1036"></a>immoderate began DOMINE reproof shrink ointments subverted ARE uprightness 
+<a name="l1037"></a>entered consisteth Nature blowing resistedst rend coloured hallowed SMALL</span><span class=cF0>
+<a name="l1038"></a>
+<a name="l1039"></a>----10/07/13 12:38:35----
+<a name="l1040"></a>
+<a name="l1041"></a>I had a wicked dentist.  I did not object.  God said it counted as sacrificing 
+<a name="l1042"></a>my teeth.
+<a name="l1043"></a>
+<a name="l1044"></a>God is perfectly just.  I'm more or less impotant.  Someone will get punished.  
+<a name="l1045"></a>I'm not going to sue you.  God will punish you.  I am not worried about 
+<a name="l1046"></a>anything.  God is perfectly just.  You are niggers.
+<a name="l1047"></a>
+<a name="l1048"></a>God says...
+<a name="l1049"></a></span><span class=cF4>contributions judgments proffering tediousness return wert encompasseth 
+<a name="l1050"></a>injurious deem bashfulness fraught calf lifter cause variety loving silly marvel 
+<a name="l1051"></a>enduring blamed comforted striking Oxford glances ascertained 500 comfortest 
+<a name="l1052"></a>Intelligences alteration theatres despair bethink limits remembers glorified 
+<a name="l1053"></a>story Michael 31 distrusted ten comes insensibly brethren entreaties truer 
+<a name="l1054"></a>nought smelleth pursuits enlarged power broken prefect sights reveal joineth 
+<a name="l1055"></a>surpassingly pear herein residest supercelestial unmeasured weak fearful Etexts 
+<a name="l1056"></a>dialogue Massachusetts diligence best think boast comprise forbade molten dreams 
+<a name="l1057"></a>proprietary slackness wipe exceptions curiously Either abode quest chief costs 
+<a name="l1058"></a>extreme sight fought banner deridedst widows pertained diseased immortality 
+<a name="l1059"></a>theatre population loveth bath blessed healed dishonour digested banished 
+<a name="l1060"></a>gloried measurable glories greedy shineth anything weakly childish apply 2 
+<a name="l1061"></a>ensnaring wills rods Themselves warreth Alexandria burial compressed sails 
+<a name="l1062"></a>blameworthy essayed prudent showeth subordinate stature ascertained office 
+<a name="l1063"></a>effectedst verse back echo comprehending curing necessity</span><span class=cF0>
+<a name="l1064"></a>
+<a name="l1065"></a>----10/07/13 12:44:58----
+<a name="l1066"></a>
+<a name="l1067"></a>I guess people pay close attention to the out-of-sync voice recording 
+<a name="l1068"></a>out-of-sync with video and falsely thought there was lag.  I'm tired.  I'm in 
+<a name="l1069"></a>some kinda bogus CIA Internet, don't give a fuck.  Just do miracles and solve 
+<a name="l1070"></a>all my problems.
+<a name="l1071"></a>
+<a name="l1072"></a></span><a href="http://virtual-notary.org"><span class=cF0>http://virtual-notary.org</span></a><span class=cF0>
+<a name="l1073"></a>
+<a name="l1074"></a></span><a href="http://www.templeos.org/Certs/virtual-notary-cert-randomnum-36142.p12"><span class=cF0>Here is the certificate: 36142</span></a><span class=cF0>.
+<a name="l1075"></a>
+<a name="l1076"></a>Line:77570
+<a name="l1077"></a>God says...
+<a name="l1078"></a></span><span class=cF4>9:1 And he entered into a ship, and passed over, and came into his own
+<a name="l1079"></a>city.
+<a name="l1080"></a>
+<a name="l1081"></a>9:2 And, behold, they brought to him a man sick of the palsy, lying on
+<a name="l1082"></a>a bed: and Jesus seeing their faith said unto the sick of the palsy;
+<a name="l1083"></a>Son, be of good cheer; thy sins be forgiven thee.
+<a name="l1084"></a>
+<a name="l1085"></a>9:3 And, behold, certain of the scribes said within themselves, This
+<a name="l1086"></a>man blasphemeth.
+<a name="l1087"></a>
+<a name="l1088"></a>9:4 And Jesus knowing their thoughts said, Wherefore think ye evil in
+<a name="l1089"></a>your hearts?  9:5 For whether is easier, to say, Thy sins be forgiven
+<a name="l1090"></a>thee; or to say, Arise, and walk?  9:6 But that ye may know that the
+<a name="l1091"></a>Son of man hath power on earth to forgive sins, (then saith he to the
+<a name="l1092"></a>sick of the palsy,) Arise, take up thy bed, and go unto thine house.
+<a name="l1093"></a>
+<a name="l1094"></a>9:7 And he arose, and departed to his house.
+<a name="l1095"></a>
+<a name="l1096"></a>9:8 But when the multitudes saw it, they marvelled, and glorified God,
+<a name="l1097"></a>which had given such power unto men.</span><span class=cF0>
+<a name="l1098"></a>
+<a name="l1099"></a>Saw this on reddit: </span><a href="http://i.imgur.com/oqDPytg.gif"><span class=cF0>Workout Guy</span></a><span class=cF0>
+<a name="l1100"></a>
+<a name="l1101"></a></span><a href="http://www.youtube.com/watch?v=dG2bOiPYTg8"><span class=cF0>Reminds me of this.</span></a><span class=cF0>
+<a name="l1102"></a>
+<a name="l1103"></a>----10/07/13 13:13:15----
+<a name="l1104"></a>
+<a name="l1105"></a>God is fucken just, you stoopit, stoopit niggers.
+<a name="l1106"></a>
+<a name="l1107"></a>They're doing a mock execution and psy-op shit.
+<a name="l1108"></a>
+<a name="l1109"></a>Fucken retards -- causing hell for yourselves, you fucken stoopit stoopit 
+<a name="l1110"></a>niggers.
+<a name="l1111"></a>
+<a name="l1112"></a>Jesus said &quot;turn the other cheek.&quot;
+<a name="l1113"></a>A guy in the old testament said, &quot;Don't give me wealth or poverty.&quot;
+<a name="l1114"></a>
+<a name="l1115"></a>Ya think they might know somehting you don't?  You stoopit stoopit niggers.
+<a name="l1116"></a>
+<a name="l1117"></a>Every knee will bend.
+<a name="l1118"></a>
+<a name="l1119"></a></span><a href="http://virtual-notary.org"><span class=cF0>http://virtual-notary.org</span></a><span class=cF0>
+<a name="l1120"></a>
+<a name="l1121"></a></span><a href="http://www.templeos.org/Certs/virtual-notary-cert-randomnum-36148.p12"><span class=cF0>Here is the certificate: 36148</span></a><span class=cF0>.
+<a name="l1122"></a>
+<a name="l1123"></a>Line:19566
+<a name="l1124"></a>God says...
+<a name="l1125"></a></span><span class=cF4>and they came into the camp, and lodged in the camp.
+<a name="l1126"></a>
+<a name="l1127"></a>6:12 And Joshua rose early in the morning, and the priests took up the
+<a name="l1128"></a>ark of the LORD.
+<a name="l1129"></a>
+<a name="l1130"></a>6:13 And seven priests bearing seven trumpets of rams' horns before
+<a name="l1131"></a>the ark of the LORD went on continually, and blew with the trumpets:
+<a name="l1132"></a>and the armed men went before them; but the rereward came after the
+<a name="l1133"></a>ark of the LORD, the priests going on, and blowing with the trumpets.
+<a name="l1134"></a>
+<a name="l1135"></a>6:14 And the second day they compassed the city once, and returned
+<a name="l1136"></a>into the camp: so they did six days.
+<a name="l1137"></a>
+<a name="l1138"></a>6:15 And it came to pass on the seventh day, that they rose early
+<a name="l1139"></a>about the dawning of the day, and compassed the city after the same
+<a name="l1140"></a>manner seven times: only on that day they compassed the city seven
+<a name="l1141"></a>times.
+<a name="l1142"></a>
+<a name="l1143"></a>6:16 And it came to pass at the seventh time, when the priests blew
+<a name="l1144"></a>with the trumpets, Joshua said unto the people, Shout; for the LORD</span><span class=cF0>
+<a name="l1145"></a>
+<a name="l1146"></a>----10/07/13 13:20:24----
+<a name="l1147"></a>
+<a name="l1148"></a>SATA is like IDE but different port addresses.  You can look in Windows system 
+<a name="l1149"></a>information hardware I/O ports.
+<a name="l1150"></a>
+<a name="l1151"></a>When I did my first hard disk, I got a list of commands.  There were about 3 
+<a name="l1152"></a>read commands, but only one worked.  The multiblock worked but not read-single.
+<a name="l1153"></a>
+<a name="l1154"></a>That shit is evil, obviously.  I have no idea, but I think VMware etc. will 
+<a name="l1155"></a>probably work.
+<a name="l1156"></a>
+<a name="l1157"></a>The FBI/CIA has stolen all my email and placed me with no feedback.
+<a name="l1158"></a>
+<a name="l1159"></a>I just have to wait for God to kill them.
+<a name="l1160"></a>
+<a name="l1161"></a>God says...
+<a name="l1162"></a></span><span class=cF4>enter stateliness overcharged sighing lacking unabiding wealthy ebbing glue 
+<a name="l1163"></a>settling traveller distracted won unruly purchasing loud resisted ranged Humble 
+<a name="l1164"></a>undid oil miracles imitate brotherly field want lashest EXPRESS mingled 
+<a name="l1165"></a>infringement therefrom convict down recalling pant violated existing roused 
+<a name="l1166"></a>beatific predicted tasteth dispute pangs how scourges examined liftedst 
+<a name="l1167"></a>dejectedness Avenue tranquil phrases freaks City dates hidden Milanese Virgil 
+<a name="l1168"></a>nets precipitated stumbled deformed etext99 replacing nature remembrance 
+<a name="l1169"></a>approved institution detached sees convicted forgive hindrance herein self Ruler 
+<a name="l1170"></a>wrinkle Dominions groaneth givest more sentiment guidest censers explanatory 
+<a name="l1171"></a>Bridegroom care Am manifested restricted mystic penally medicining commandment 
+<a name="l1172"></a>windings evidence tumbling hallowing less adultery summer dinner concerned 
+<a name="l1173"></a>evincing low scanning motion warned hot 1971 tilde spiritually monastery renewed 
+<a name="l1174"></a>immense harmless Betwixt cut circles Academics moderation Trojan dispenser 
+<a name="l1175"></a>prouder well evident cupidity environing winding directeth despisedst Canticles 
+<a name="l1176"></a>reverential nought increasing heretics Faith fragrant congratulated glances 
+<a name="l1177"></a>pleasantness stayed balneum accused furnished impunity Anger contentiousness 
+<a name="l1178"></a>initiation mystically commemorated condemned speakest insultingly undid place 
+<a name="l1179"></a>our nevertheless hide unalterable fatherly filth locking receiving Augustine 
+<a name="l1180"></a>licensed whose conformably deepness rebuked seen readable despair doted joyful 
+<a name="l1181"></a>fought deafness accuser tamer rudely legally eagle com indigested Church 
+<a name="l1182"></a>contentment battle uninjurable whole warmth shortened perplexities PUBLIC 
+<a name="l1183"></a>commonly drops sport tamedst desires handled observation affrighted Among grace 
+<a name="l1184"></a>assent Ministry sacrifices structure cherish Vermont apparently outward 
+<a name="l1185"></a>confiding draught fornication hurt Revenue solicited monstrous waves penalties 
+<a name="l1186"></a>wavering despair True ruminate blesses chapter School perverse treasury unlawful 
+<a name="l1187"></a>proper drink grieve Ignorant godless womanish locusts Within pressed blesseth 
+<a name="l1188"></a>goest lies infer saints latter wash foundation enlightened spacious</span><span class=cF0>
+<a name="l1189"></a>
+<a name="l1190"></a>----10/07/13 13:30:34----
+<a name="l1191"></a>
+<a name="l1192"></a>I'm in long mode, I can't use BIOS.  I need to switch to God mode and kill some 
+<a name="l1193"></a>people.  That's the plan.
+<a name="l1194"></a>
+<a name="l1195"></a>God is real.  Of course, I'm gonna get my way with hardware.
+<a name="l1196"></a>
+<a name="l1197"></a></span><a href="http://virtual-notary.org"><span class=cF0>http://virtual-notary.org</span></a><span class=cF0>
+<a name="l1198"></a>
+<a name="l1199"></a></span><a href="http://www.templeos.org/Certs/virtual-notary-cert-randomnum-36164.p12"><span class=cF0>Here is the certificate: 36164</span></a><span class=cF0>.
+<a name="l1200"></a>
+<a name="l1201"></a>Line:37404
+<a name="l1202"></a>God says...
+<a name="l1203"></a></span><span class=cF4>put in the account of the chronicles of king David.
+<a name="l1204"></a>
+<a name="l1205"></a>27:25 And over the king's treasures was Azmaveth the son of Adiel: and
+<a name="l1206"></a>over the storehouses in the fields, in the cities, and in the
+<a name="l1207"></a>villages, and in the castles, was Jehonathan the son of Uzziah: 27:26
+<a name="l1208"></a>And over them that did the work of the field for tillage of the ground
+<a name="l1209"></a>was Ezri the son of Chelub: 27:27 And over the vineyards was Shimei
+<a name="l1210"></a>the Ramathite: over the increase of the vineyards for the wine cellars
+<a name="l1211"></a>was Zabdi the Shiphmite: 27:28 And over the olive trees and the
+<a name="l1212"></a>sycomore trees that were in the low plains was Baalhanan the Gederite:
+<a name="l1213"></a>and over the cellars of oil was Joash: 27:29 And over the herds that
+<a name="l1214"></a>fed in Sharon was Shitrai the Sharonite: and over the herds that were
+<a name="l1215"></a>in the valleys was Shaphat the son of Adlai: 27:30 Over the camels
+<a name="l1216"></a>also was Obil the Ishmaelite: and over the asses was Jehdeiah the
+<a name="l1217"></a>Meronothite: 27:31 And over the flocks was Jaziz the Hagerite. All
+<a name="l1218"></a>these were the rulers of the substance which was king David's.
+<a name="l1219"></a>
+<a name="l1220"></a>27:32 Also Jonathan David's uncle was a counsellor, a wise man, and a
+<a name="l1221"></a>scribe: and Jehiel the son of Hachmoni was with the king's sons: 27:33
+<a name="l1222"></a>And Ahithophel was the king's counsellor: and Hushai the Archite was</span><span class=cF0>
+<a name="l1223"></a>
+<a name="l1224"></a>----10/07/13 13:44:14----
+<a name="l1225"></a>
+<a name="l1226"></a>Guy wants mentor.
+<a name="l1227"></a>
+<a name="l1228"></a>The Catholic Bible has a Sirach quote:
+<a name="l1229"></a>
+<a name="l1230"></a>&quot;There is a shrewdness that is thoroughly bitter.&quot;
+<a name="l1231"></a>
+<a name="l1232"></a>Some programming feels good, but you should learn to see when you are not being 
+<a name="l1233"></a>rational.  Everybody at OSDEV is doing high graphic modes and PCI.  I have 
+<a name="l1234"></a>640x480 16 color and no PCI.
+<a name="l1235"></a>
+<a name="l1236"></a>Learn what feels good and be suspicious.  
+<a name="l1237"></a>
+<a name="l1238"></a>God says...
+<a name="l1239"></a></span><span class=cF4>ill go into his tabernacles: we will worship at his
+<a name="l1240"></a>footstool.
+<a name="l1241"></a>
+<a name="l1242"></a>132:8 Arise, O LORD, into thy rest; thou, and the ark of thy strength.
+<a name="l1243"></a>
+<a name="l1244"></a>132:9 Let thy priests be clothed with righteousness; and let thy
+<a name="l1245"></a>saints shout for joy.
+<a name="l1246"></a>
+<a name="l1247"></a>132:10 For thy servant David's sake turn not away the face of thine
+<a name="l1248"></a>anointed.
+<a name="l1249"></a>
+<a name="l1250"></a>132:11 The LORD hath sworn in truth unto David; he will not turn from
+<a name="l1251"></a>it; Of the fruit of thy body will I set upon thy throne.
+<a name="l1252"></a>
+<a name="l1253"></a>132:12 If thy children will keep my covenant and my testimony that I
+<a name="l1254"></a>shall teach</span><span class=cF0>
+<a name="l1255"></a>
+<a name="l1256"></a>----10/07/13 14:34:19----
+<a name="l1257"></a>
+<a name="l1258"></a></span><a href="ftp://ftp.awl.com/cseng/authors/silberschatz/OS4E/tm01-05.pdf"><span class=cF0>Fighting the Last War</span></a><span class=cF0>
+<a name="l1259"></a>
+<a name="l1260"></a>I straddle old and new.  I will tell old people things they need to know.
+<a name="l1261"></a>
+<a name="l1262"></a>1) When you do assembly language on a modern machine.  It is completely 
+<a name="l1263"></a>clusterfucked when you try to estimate timings.  If you write a simple loop to 
+<a name="l1264"></a>time an instruction and subtract the loop overhead, you will get a negative time 
+<a name="l1265"></a>for that instruction.  You will soon learn execution time is related to cache 
+<a name="l1266"></a>hits and misses more then old-school hand crafted asm instructions.  The rule of 
+<a name="l1267"></a>thumb -- count memory fetches in the instruction, will not help you.  I have 
+<a name="l1268"></a>seen memory indexed loops just as fast as reg -- voodoo cleverness by the CPU.  
+<a name="l1269"></a>CISC instructions get converted to RISC and optimized and scheduled by the CPU.  
+<a name="l1270"></a>This is very weird when doing a compiler -- discouraging.
+<a name="l1271"></a>
+<a name="l1272"></a>2) You are horribly Jedi-mind tricked.  I'll bet it never would occur to you 
+<a name="l1273"></a>that UTF32 should be used in place of ASCII through-out the entire tool chain.
+<a name="l1274"></a>
+<a name="l1275"></a>3) You have linux on the brain, a main frame operating system.  This should be 
+<a name="l1276"></a>shocking -- there is no reason for virtual (disk swapped) memory.
+<a name="l1277"></a>
+<a name="l1278"></a>4) Hardware has DMA buffers.  You could live without interrupts.  Just poll 
+<a name="l1279"></a>every milisecond.
+<a name="l1280"></a>
+<a name="l1281"></a>5) Everybody assumes drivers are good.  What good is a three button mouse?  It 
+<a name="l1282"></a>is like a bad leg you cannot put your weight on.  What good is surround sound 
+<a name="l1283"></a>support?
+<a name="l1284"></a>
+<a name="l1285"></a>6) Every other engineer operates between over engineering and under engineering. 
+<a name="l1286"></a> A software engineer has absolutely no concept of overengineering.  He goes to 
+<a name="l1287"></a>his boss who asked for an airplane wing and says, &quot;I made it ten times stronger 
+<a name="l1288"></a>than you asked in case we have to change the engine.&quot;  His boss is pleased.  
+<a name="l1289"></a>Everybody praises His skill.  More complicated is better because noone want to 
+<a name="l1290"></a>look dumb.  Fucken look at the disgusting shit known as USB!  They have branched 
+<a name="l1291"></a>networks off each port and they do not allow generic terminal communication 
+<a name="l1292"></a>which could handle any issue much better.  You cannot use Hyperterm with a USB 
+<a name="l1293"></a>device.
+<a name="l1294"></a>
+<a name="l1295"></a>6) Coming down the road, we might see nonvolitile memory as the only memory.  
+<a name="l1296"></a>You might want byte addressing for what used to be hard drive.  Today, we load a 
+<a name="l1297"></a>disk block data and transform it into a memory structure.  We have serialize and 
+<a name="l1298"></a>deserialize.  What if just Mallocs for disk and puts it all over the place in 
+<a name="l1299"></a>unserialized structures?  That could certainly be a revolution.
+<a name="l1300"></a>
+<a name="l1301"></a></span><a href="http://virtual-notary.org"><span class=cF0>http://virtual-notary.org</span></a><span class=cF0>
+<a name="l1302"></a>
+<a name="l1303"></a></span><a href="http://www.templeos.org/Certs/virtual-notary-cert-randomnum-36200.p12"><span class=cF0>Here is the certificate: 36200</span></a><span class=cF0>.
+<a name="l1304"></a>
+<a name="l1305"></a>Line:86718
+<a name="l1306"></a>God says...
+<a name="l1307"></a></span><span class=cF4>11:47 Then gathered the chief priests and the Pharisees a council, and
+<a name="l1308"></a>said, What do we? for this man doeth many miracles.
+<a name="l1309"></a>
+<a name="l1310"></a>11:48 If we let him thus alone, all men will believe on him: and the
+<a name="l1311"></a>Romans shall come and take away both our place and nation.
+<a name="l1312"></a>
+<a name="l1313"></a>11:49 And one of them, named Caiaphas, being the high priest that same
+<a name="l1314"></a>year, said unto them, Ye know nothing at all, 11:50 Nor consider that
+<a name="l1315"></a>it is expedient for us, that one man should die for the people, and
+<a name="l1316"></a>that the whole nation perish not.
+<a name="l1317"></a>
+<a name="l1318"></a>11:51 And this spake he not of himself: but being high priest that
+<a name="l1319"></a>year, he prophesied that Jesus should die for that nation; 11:52 And
+<a name="l1320"></a>not for that nation only, but that also he should gather together in
+<a name="l1321"></a>one the children of God that were scattered abroad.
+<a name="l1322"></a>
+<a name="l1323"></a>11:53 Then from that day forth they took counsel together for to put
+<a name="l1324"></a>him to death.
+<a name="l1325"></a>
+<a name="l1326"></a>11:54 Jesus therefore walked no more openly among the Jews; but went</span><span class=cF0>
+<a name="l1327"></a>
+<a name="l1328"></a>----10/07/13 15:00:16----
+<a name="l1329"></a>
+<a name="l1330"></a>What is the road ahead for hardware digital design?  Over the next thousand 
+<a name="l1331"></a>years, how many CPUs will be designed?  What will thousands of hardware 
+<a name="l1332"></a>engineers do? Their managers will make them make silly garbage overengineered 
+<a name="l1333"></a>bullshit that creates an absolute hellish cesspool of crap.  I see everything 
+<a name="l1334"></a>like a sprawlling city of slums -- Microsoft programmers and Intel engineers are 
+<a name="l1335"></a>ruining everything with piles and piles of garbage bullshit stupid shit.
+<a name="l1336"></a>
+<a name="l1337"></a>I have capped my line count at 100,000.  My vision is a Commodore 64.  You will 
+<a name="l1338"></a>not build on endless new libraries, but on a ROM that is a known and well-loved 
+<a name="l1339"></a>quantity.
+<a name="l1340"></a>
+<a name="l1341"></a>Clean-up the shit hole of digital hardware.  Get rid of interrupts except timer.
+<a name="l1342"></a>
+<a name="l1343"></a>My Master-slave multicore is better than SMP.  Go study my flight simulator and 
+<a name="l1344"></a>be enlightened.  You will be glad if you are not lazy and go study my 
+<a name="l1345"></a>flightsimulator.
+<a name="l1346"></a>
+<a name="l1347"></a></span><a href="http://www.youtube.com/watch?v=FxEq6IM43sA"><span class=cF0>Flight Simulator</span></a><span class=cF0>
+<a name="l1348"></a>
+<a name="l1349"></a></span><a href="../../../../../../../Demo/Games/EagleDive.html#l1"><span class=cF4>::/Demo/Games/EagleDive.CPP</span></a><span class=cF0>
+<a name="l1350"></a>
+<a name="l1351"></a>Why doesn't HTML allow linking to a certain line number in a web page?  They 
+<a name="l1352"></a>want flexible formatting.  My operating system lets you go to line numbers.  I 
+<a name="l1353"></a>have active links to my symbol table in source code documentation.  You should 
+<a name="l1354"></a>put a link to Intel datasheet PDF right next to you memory management code 
+<a name="l1355"></a>showing what the page table bits do. 
+<a name="l1356"></a>
+<a name="l1357"></a>----10/07/13 15:09:45----
+<a name="l1358"></a>
+<a name="l1359"></a>I picture Microsoft and company like ten thousand bureaucrats wrecklessly and 
+<a name="l1360"></a>furiously churning-out tax code at an insane rate full bore with taps open.  It 
+<a name="l1361"></a>makes me weep, like a huge sprawling slum city.
+<a name="l1362"></a>
+<a name="l1363"></a>I weep when I look at the stupid shit programmer create.  Do they not know how 
+<a name="l1364"></a>pathetic their shit looks to a regular person?
+<a name="l1365"></a>
+<a name="l1366"></a>God says...
+<a name="l1367"></a></span><span class=cF4>command immortality finest feedest scattered severing</span><span class=cF0>
+<a name="l1368"></a>
+<a name="l1369"></a>----10/07/13 15:42:51----
+<a name="l1370"></a>
+<a name="l1371"></a>You mother fuckers are not humble.
+<a name="l1372"></a>
+<a name="l1373"></a>You are clueless.  It's God, you fucks.
+<a name="l1374"></a>
+<a name="l1375"></a></span><a href="http://virtual-notary.org"><span class=cF0>http://virtual-notary.org</span></a><span class=cF0>
+<a name="l1376"></a>
+<a name="l1377"></a></span><a href="http://www.templeos.org/Certs/virtual-notary-cert-randomnum-36231.p12"><span class=cF0>Here is the certificate: 36231</span></a><span class=cF0>.
+<a name="l1378"></a>
+<a name="l1379"></a>Line:11502
+<a name="l1380"></a>God says...
+<a name="l1381"></a></span><span class=cF4>Egyptian, went out among the children of Israel: and this son of the
+<a name="l1382"></a>Israelitish woman and a man of Israel strove together in the camp;
+<a name="l1383"></a>24:11 And the Israelitish woman's son blasphemed the name of the Lord,
+<a name="l1384"></a>and cursed. And they brought him unto Moses: (and his mother's name
+<a name="l1385"></a>was Shelomith, the daughter of Dibri, of the tribe of Dan:) 24:12 And
+<a name="l1386"></a>they put him in ward, that the mind of the LORD might be shewed them.
+<a name="l1387"></a>
+<a name="l1388"></a>24:13 And the LORD spake unto Moses, saying, 24:14 Bring forth him
+<a name="l1389"></a>that hath cursed without the camp; and let all that heard him lay
+<a name="l1390"></a>their hands upon his head, and let all the congregation stone him.
+<a name="l1391"></a>
+<a name="l1392"></a>24:15 And thou shalt speak unto the children of Israel, saying,
+<a name="l1393"></a>Whosoever curseth his God shall bear his sin.
+<a name="l1394"></a>
+<a name="l1395"></a>24:16 And he that blasphemeth the name of the LORD, he shall surely be
+<a name="l1396"></a>put to death, and all the congregation shall certainly stone him: as
+<a name="l1397"></a>well the stranger, as he that is born in the land, when he blasphemeth
+<a name="l1398"></a>the name of the Lord, shall be put to death.
+<a name="l1399"></a>
+<a name="l1400"></a>24:17 And he that killeth any man shall surely be put to death.</span><span class=cF0>
+<a name="l1401"></a>
+<a name="l1402"></a>----10/07/13 15:48:52----
+<a name="l1403"></a>
+<a name="l1404"></a>OSDEV.  Fucken niggers said a compiler had 22,000 lines of configure code.
+<a name="l1405"></a>
+<a name="l1406"></a>My compiler is 22,000 lines of code.  The fucken nigger cannot tell its a 
+<a name="l1407"></a>complete assembler/compiler/unassembler.
+<a name="l1408"></a>
+<a name="l1409"></a>I am the best programmer on the planet.  That is why God chose me and I have 
+<a name="l1410"></a>divine intellect, like the authors of the Bible.  Fuck you, niggers.
+<a name="l1411"></a>
+<a name="l1412"></a>God says...
+<a name="l1413"></a></span><span class=cF4>meat injure copyright attempered milder hair tempted displace genius written 
+<a name="l1414"></a>understood zip seem replacement slept mysteriously Grief Pylades failure emotion 
+<a name="l1415"></a>decayeth merry Ver birdlime edification disagreements furnish comforting 
+<a name="l1416"></a>arguments indeed savageness copyright lathe draw respective weakest nor vocal 
+<a name="l1417"></a>fairer borne volumes moulded medium enslaved sick withal indicated infuse 
+<a name="l1418"></a>tribulation bringing swelling behold distract govemed Electronic boiling Press 
+<a name="l1419"></a>Fire shoulder Couldest purposing nests scanning beholds men Canst Self palaces 
+<a name="l1420"></a>cause abase imaginary And challenged vicissitude strange looking Ours recovery 
+<a name="l1421"></a>abject neighbour coming point wise murdering loth motherly distribute hastening 
+<a name="l1422"></a>accents scratching placed nets fearful voices relapse zealous foster knocked 
+<a name="l1423"></a>storm tame conveys Saul dotards thunderer facts flour bemoaned thy pitiable 
+<a name="l1424"></a>blade eager meanly funding indefinitely perdition Carolina music draws digested 
+<a name="l1425"></a>solidity tabernacle shineth mastery titles delightfulness gaze diligently wax 
+<a name="l1426"></a>collected reproachful sorrows distribution divisions balancings hereon privation 
+<a name="l1427"></a>collectively solidity decided gods revenge embalmed Difficulty III pole Whatever 
+<a name="l1428"></a>abhorred Out step perilous conspirators judging scatteredst Moses curiosity 
+<a name="l1429"></a>pastimes TIBI though repair minister settle chief necessarily beat endued 
+<a name="l1430"></a>illusion earnest revealing</span><span class=cF0>
+<a name="l1431"></a>
+<a name="l1432"></a>----10/07/13 15:52:35----
+<a name="l1433"></a>
+<a name="l1434"></a>Try these
+<a name="l1435"></a>
+<a name="l1436"></a>Echo(ON);
+<a name="l1437"></a>OTrace(ON); //optmize passes
+<a name="l1438"></a>CTrace(ON); //final machine code
+<a name="l1439"></a>
+<a name="l1440"></a>----10/07/13 15:59:57----
+<a name="l1441"></a>
+<a name="l1442"></a>Put this in your code, around a function, or statement:
+<a name="l1443"></a>
+<a name="l1444"></a>
+<a name="l1445"></a>#exe {OTrace(ON);}
+<a name="l1446"></a>
+<a name="l1447"></a>...
+<a name="l1448"></a>
+<a name="l1449"></a>#exe {OTrace(OFF);}
+<a name="l1450"></a>
+<a name="l1451"></a>----10/07/13 16:04:34----
+<a name="l1452"></a>
+<a name="l1453"></a>Profiler.
+<a name="l1454"></a>
+<a name="l1455"></a>
+<a name="l1456"></a>&gt;Prof;
+<a name="l1457"></a>
+<a name="l1458"></a>... (test stuff)
+<a name="l1459"></a>
+<a name="l1460"></a>&gt;DocMax;ProfRep(3); //Enter how many hits minimum to filter-out tiny numbers
+<a name="l1461"></a>
+<a name="l1462"></a>
+<a name="l1463"></a>U(&amp;PutChars);
+<a name="l1464"></a>Man(&quot;PutChars&quot;);  //Just use wordstat CTRL-SHIFT-F1
+<a name="l1465"></a>
+<a name="l1466"></a>----10/07/13 16:09:26----
+<a name="l1467"></a>
+<a name="l1468"></a>Check the MakeDistro.CPP.Z file in your home directory.
+<a name="l1469"></a>
+<a name="l1470"></a></span><span class=cF2>/*</span><span class=cF0>
+<a name="l1471"></a>                              </span><span class=cF5>Roll Your Own Distro</span><span class=cF0>
+<a name="l1472"></a>
+<a name="l1473"></a>It's unlikely you will get it running on bare hardware, so you'll probably
+<a name="l1474"></a>run it in a virtual machine such as VMware.  Download the free 64-bit
+<a name="l1475"></a></span><a href="https://my.vmware.com/web/vmware/free#desktop_end_user_computing/vmware_player/5_0"><span class=cF4>VMware Player</span></a><span class=cF0> for Linux or Windows and point the CDROM at the </span><a href="http://www.templeos.org/TempleOSCD.ISO"><span class=cF4>TempleOSCD.ISO</span></a><span class=cF0>.
+<a name="l1476"></a>(The </span><a href="https://my.vmware.com/web/vmware/free#desktop_end_user_computing/vmware_player/5_0"><span class=cF4>VMware</span></a><span class=cF0> web page takes a whole minute to load.  They hide the free version.)
+<a name="l1477"></a>
+<a name="l1478"></a>Purchase </span><a href="http://www.vmware.com"><span class=cF4>VMware WorkStation</span></a><span class=cF0> or download </span><a href="http://www.winimage.com/winimage.htm"><span class=cF4>WinImage</span></a><span class=cF0> if you wish to transfer files
+<a name="l1479"></a>in and out.  The VMware Workstation will stretch to full-screen and make drives
+<a name="l1480"></a>accessible from Windows.
+<a name="l1481"></a>
+<a name="l1482"></a></span><span class=cF2>*/</span><span class=cF0>
+<a name="l1483"></a>
+<a name="l1484"></a>#</span><span class=cF1>define</span><span class=cF0> STD_DISTRO_CDROM_CFG    </span><span class=cF6>&quot;b1\n0x20000\nt3 \n\n\n\n\n&quot;</span><span class=cF0>
+<a name="l1485"></a>
+<a name="l1486"></a></span><span class=cF1>U0</span><span class=cF0> MakeMyISO(</span><span class=cF1>U8</span><span class=cF0> *out_iso_filename)
+<a name="l1487"></a>{</span><span class=cF2>//Does everything with current drive.</span><span class=cF0>
+<a name="l1488"></a>  </span><span class=cF1>if</span><span class=cF0> (!IsDrvWritable) </span><span class=cF7>{</span><span class=cF0>
+<a name="l1489"></a>    </span><span class=cF6>&quot;Drive must be writable.  Install on Hard drive, first.\n&quot;</span><span class=cF0>;
+<a name="l1490"></a>    </span><span class=cF1>return</span><span class=cF0>;
+<a name="l1491"></a>  </span><span class=cF7>}</span><span class=cF0>
+<a name="l1492"></a>  DelTree(</span><span class=cF6>&quot;/Distro&quot;</span><span class=cF0>);
+<a name="l1493"></a>  Auto(STD_DISTRO_CDROM_CFG);
+<a name="l1494"></a>  MakeOSPrtBootInstall(,</span><span class=cF6>'T'</span><span class=cF0>);
+<a name="l1495"></a>  CopyTree(</span><span class=cF6>&quot;/0000Boot&quot;</span><span class=cF0>, </span><span class=cF6>&quot;/Distro/0000Boot&quot;</span><span class=cF0>);
+<a name="l1496"></a>  CopyTree(</span><span class=cF6>&quot;/Accts&quot;</span><span class=cF0>,    </span><span class=cF6>&quot;/Distro/Accts&quot;</span><span class=cF0>);
+<a name="l1497"></a>  CopyTree(</span><span class=cF6>&quot;/Adam&quot;</span><span class=cF0>,     </span><span class=cF6>&quot;/Distro/Adam&quot;</span><span class=cF0>);
+<a name="l1498"></a>  CopyTree(</span><span class=cF6>&quot;/Apps&quot;</span><span class=cF0>,     </span><span class=cF6>&quot;/Distro/Apps&quot;</span><span class=cF0>);
+<a name="l1499"></a>  CopyTree(</span><span class=cF6>&quot;/Compiler&quot;</span><span class=cF0>, </span><span class=cF6>&quot;/Distro/Compiler&quot;</span><span class=cF0>);
+<a name="l1500"></a>  CopyTree(</span><span class=cF6>&quot;/Demo&quot;</span><span class=cF0>,     </span><span class=cF6>&quot;/Distro/Demo&quot;</span><span class=cF0>);
+<a name="l1501"></a>  CopyTree(</span><span class=cF6>&quot;/Doc&quot;</span><span class=cF0>,      </span><span class=cF6>&quot;/Distro/Doc&quot;</span><span class=cF0>);
+<a name="l1502"></a>  CopyTree(</span><span class=cF6>&quot;/Kernel&quot;</span><span class=cF0>,   </span><span class=cF6>&quot;/Distro/Kernel&quot;</span><span class=cF0>);
+<a name="l1503"></a>  CopyTree(</span><span class=cF6>&quot;/Misc&quot;</span><span class=cF0>,     </span><span class=cF6>&quot;/Distro/Misc&quot;</span><span class=cF0>);
+<a name="l1504"></a>  </span><span class=cF2>//To save space, optionally delete dictionary.</span><span class=cF0>
+<a name="l1505"></a>  </span><span class=cF2>//Del(&quot;/Distro/Adam/WordStat/WSDefs.DAT&quot;);</span><span class=cF0>
+<a name="l1506"></a>  CopyTree(</span><span class=cF6>&quot;/Windows&quot;</span><span class=cF0>,</span><span class=cF6>&quot;/Distro/Windows&quot;</span><span class=cF0>); </span><span class=cF2>//You can leave this out</span><span class=cF0>
+<a name="l1507"></a>  CopyTree(</span><span class=cF6>&quot;/Linux&quot;</span><span class=cF0>,</span><span class=cF6>&quot;/Distro/Linux&quot;</span><span class=cF0>);     </span><span class=cF2>//You can leave this out.</span><span class=cF0>
+<a name="l1508"></a>  MkDir(</span><span class=cF6>&quot;/Distro/Temp&quot;</span><span class=cF0>);
+<a name="l1509"></a>  MkDir(</span><span class=cF6>&quot;/Distro/Temp/ScreenShots&quot;</span><span class=cF0>);
+<a name="l1510"></a>  CDFileCreate(out_iso_filename,</span><span class=cF6>&quot;/Distro/*&quot;</span><span class=cF0>,,</span><span class=cF6>&quot;/Distro&quot;</span><span class=cF0> BOOT_DIR_KERNEL_BIN_C);
+<a name="l1511"></a>  </span><span class=cF2>//CDImageWrite('T',out_iso_filename,MT_CD); //Uncomment to burn a CD-ROM or </span><span class=cF0>
+<a name="l1512"></a>(MT_DVD)
+<a name="l1513"></a>  </span><span class=cF2>//DelTree(&quot;/Distro&quot;);</span><span class=cF0>
+<a name="l1514"></a>}
+<a name="l1515"></a>
+<a name="l1516"></a>MakeMyISO(</span><span class=cF6>&quot;/MyDistro.ISO&quot;</span><span class=cF0>);
+<a name="l1517"></a>
+<a name="l1518"></a></span><span class=cF2>// Study my account examples </span><a href="../../../../../../../Demo/AcctExample/TSAdam.html#l1"><span class=cF4>Cfg Strs</span></a><span class=cF2> </span><a href="../../../../../../../Demo/AcctExample/TSDistro.html#l1"><span class=cF4>Update Funs</span></a><span class=cF2>.</span><span class=cF0>
+<a name="l1519"></a>
+<a name="l1520"></a>
+<a name="l1521"></a>
+<a name="l1522"></a>
+<a name="l1523"></a>
+<a name="l1524"></a></span><span class=cF2>/*</span><span class=cF0>
+<a name="l1525"></a>
+<a name="l1526"></a></span><span class=cF2>* &quot;Linux&quot; is probably a trademark owned by Linus Torvalds.</span><span class=cF0>
+<a name="l1527"></a></span><span class=cF2>* &quot;VMware Player&quot; and &quot;VMware WorkStation&quot; are trademarks of VMware, Inc.</span><span class=cF0>
+<a name="l1528"></a></span><span class=cF2>* &quot;Windows&quot; is a trademark of MicroSoft Corp.</span><span class=cF0>
+<a name="l1529"></a></span><span class=cF2>* &quot;WinImage&quot; is a trademark of Gilles Vollant.</span><span class=cF0>
+<a name="l1530"></a>
+<a name="l1531"></a></span><span class=cF2>*/</span><span class=cF0>
+<a name="l1532"></a>
+<a name="l1533"></a>----10/07/13 16:13:48----
+<a name="l1534"></a>
+<a name="l1535"></a>Check the Install script.  If you learn this, you will be a grand master of 
+<a name="l1536"></a>TempleOS foo.
+<a name="l1537"></a>
+<a name="l1538"></a></span><a href="../../../../../../Install/DoOnce.html#l1"><span class=cF4>::/Accts/Install/DoOnce.CPP</span></a><span class=cF0>
+<a name="l1539"></a>
+<a name="l1540"></a>
+<a name="l1541"></a>God says...
+<a name="l1542"></a></span><span class=cF4>animals invite leaps rob receiving hogshed Shall greater err shown sangest texts 
+<a name="l1543"></a>intently evils chastenedst traces injured pilgrim fruits expounded nineteenth 
+<a name="l1544"></a>worn wizard Hope wholesome succeed aforetime dying Divers relations awfulness 
+<a name="l1545"></a>forsooth shoes rebel burthened follies wit checking entangle showed hearer 
+<a name="l1546"></a>charmed blessest censers martyr congratulation winding manhood upwards sights 
+<a name="l1547"></a>hereof at fluttereth relate Hide sparedst muddy downwards obtains sleeping 
+<a name="l1548"></a>corresponding neatly melodious problem unteach interest Master imitated harass 
+<a name="l1549"></a>rest preserve mentioning resisted whomever play princes scornful illuminate ball 
+<a name="l1550"></a>reputation idols PUNITIVE Place Author teeming solemnity Priest cruel impulses 
+<a name="l1551"></a>affected harlotries beholder method sun doubteth decked continence wheat conform 
+<a name="l1552"></a>pitiable fabric educated submitted powerful oblation fling singular spokest 
+<a name="l1553"></a>fairest Young mentioning Predicaments suggested intent praise holily grasps 
+<a name="l1554"></a>createth html affects Saturn clear inchoate songs lieth carnal exist Archive 
+<a name="l1555"></a>knees Venus befalls delightfulness suitably contents These first proffering 
+<a name="l1556"></a>familiarised OTHERWISE upbraid tempts immediately foolish restored pile Madaura 
+<a name="l1557"></a>justice relative imparted shod sorrow giver redeemer rash aspirate CONFESSIONS 
+<a name="l1558"></a>humble Grief elephant suggested minutest children mount abandon evidently 
+<a name="l1559"></a>consist restraint world examined seat sunder together creating variety looker 
+<a name="l1560"></a>admit recoveredst penally floods existeth unteach waft Archive appropriated Did 
+<a name="l1561"></a>wanted repose introduced fashion cakes plainer child hid incorruption desire 
+<a name="l1562"></a>drop throngs novelty equivalent sweeter specimens While shadowy mimic outset 
+<a name="l1563"></a>conjectures running dispensest Faith decided owed soberly C attracts chastenedst 
+<a name="l1564"></a>FTP putrefied talking acted MS rebelled concernment dreaded deafness proofread 
+<a name="l1565"></a>subversion diversly Oh cunning mourn bitterness dedicate usury invisible beareth 
+<a name="l1566"></a>prolonged sat Rome fearfully respects misliked quite EXPRESS searching nostrils</span><span class=cF0>
+<a name="l1567"></a>
+<a name="l1568"></a>----10/07/13 16:29:54----
+<a name="l1569"></a>
+<a name="l1570"></a>Those stupid, stupid, silly fucks.  They think I should fear law.  How ironic.
+<a name="l1571"></a>
+<a name="l1572"></a>Pretty soon they're gonna be shittiong themselves and not at all worried about 
+<a name="l1573"></a>me.
+<a name="l1574"></a>
+<a name="l1575"></a></span><a href="http://virtual-notary.org"><span class=cF0>http://virtual-notary.org</span></a><span class=cF0>
+<a name="l1576"></a>
+<a name="l1577"></a></span><a href="http://www.templeos.org/Certs/virtual-notary-cert-randomnum-36262.p12"><span class=cF0>Here is the certificate: 36262</span></a><span class=cF0>.
+<a name="l1578"></a>
+<a name="l1579"></a>Line:71556
+<a name="l1580"></a>God says...
+<a name="l1581"></a></span><span class=cF4>pass by the four corners of the court; and, behold, in every corner of
+<a name="l1582"></a>the court there was a court.
+<a name="l1583"></a>
+<a name="l1584"></a>46:22 In the four corners of the court there were courts joined of
+<a name="l1585"></a>forty cubits long and thirty broad: these four corners were of one
+<a name="l1586"></a>measure.
+<a name="l1587"></a>
+<a name="l1588"></a>46:23 And there was a row of building round about in them, round about
+<a name="l1589"></a>them four, and it was made with boiling places under the rows round
+<a name="l1590"></a>about.
+<a name="l1591"></a>
+<a name="l1592"></a>46:24 Then said he unto me, These are the places of them that boil,
+<a name="l1593"></a>where the ministers of the house shall boil the sacrifice of the
+<a name="l1594"></a>people.
+<a name="l1595"></a>
+<a name="l1596"></a>47:1 Afterward he brought me again unto the door of the house; and,
+<a name="l1597"></a>behold, waters issued out from under the threshold of the house
+<a name="l1598"></a>eastward: for the forefront of the house stood toward the east, and
+<a name="l1599"></a>the waters came down from under from the right side of the house, at
+<a name="l1600"></a>the south side of the altar.</span><span class=cF0>
+<a name="l1601"></a>
+<a name="l1602"></a>----10/07/13 17:19:39----
+<a name="l1603"></a>
+<a name="l1604"></a>
+<a name="l1605"></a>Ohhh!!  Sorry.  Someone at OSDev is having an upgrade issue.  Yeah, I make 
+<a name="l1606"></a>changes that fuck-it-up.  Usually boot the new ISO and copy files and recompile 
+<a name="l1607"></a>with the new.  Your account files, you can change yourself.  You'll have to 
+<a name="l1608"></a>merge custom stuff, but you knew that.
+<a name="l1609"></a>
+<a name="l1610"></a>VMware has a &quot;boot to BIOS&quot;.  Set to CDROM boot and boot the new ISO with the 
+<a name="l1611"></a>new compiler.  That should compile the new code.
+<a name="l1612"></a>
+<a name="l1613"></a>When making changes, I sometimes have to temporarily regress my KCfg. file to 
+<a name="l1614"></a>compile, reboot, then put it back.
+<a name="l1615"></a>
+<a name="l1616"></a>It gets really tricky working on the compiler.  I'd have to explain.
+<a name="l1617"></a>
+<a name="l1618"></a>God says...
+<a name="l1619"></a></span><span class=cF4>marks Welcome remembereth slower stomach trace perverting tells multiple 
+<a name="l1620"></a>supposing student confidently quarrel eagerly pray cupidity freaks Paraclete 
+<a name="l1621"></a>questioning remainest Information have subsequently eminently hours pricks 
+<a name="l1622"></a>continually royalty binary marvel restored Still rulest Release cleansed huge 
+<a name="l1623"></a>sittest difficulties vouchsafedst merits mockers separating song ardently 
+<a name="l1624"></a>Balaneion bend no messengers tolerating rejoiceth reply created endeavours 
+<a name="l1625"></a>unfair Terence shook</span><span class=cF0>
+<a name="l1626"></a>
+<a name="l1627"></a>----10/07/13 17:42:21----
+<a name="l1628"></a>
+<a name="l1629"></a></span><a href="http://www.youtube.com/watch?v=hsHz2v2Bi9U"><span class=cF0>Elephant Talking</span></a><span class=cF0>
+<a name="l1630"></a>
+<a name="l1631"></a>That's scary -- help I'm trapped in an elephant body and can't make words.
+<a name="l1632"></a>You know that's what it's thinking.  ;-(
+<a name="l1633"></a>
+<a name="l1634"></a></span><a href="http://virtual-notary.org"><span class=cF0>http://virtual-notary.org</span></a><span class=cF0>
+<a name="l1635"></a>
+<a name="l1636"></a></span><a href="http://www.templeos.org/Certs/virtual-notary-cert-randomnum-36306.p12"><span class=cF0>Here is the certificate: 36306</span></a><span class=cF0>.
+<a name="l1637"></a>
+<a name="l1638"></a>Line:70362
+<a name="l1639"></a>God says...
+<a name="l1640"></a></span><span class=cF4>valleys, to the desolate wastes, and to the cities that are forsaken,
+<a name="l1641"></a>which became a prey and derision to the residue of the heathen that
+<a name="l1642"></a>are round about; 36:5 Therefore thus saith the Lord GOD; Surely in the
+<a name="l1643"></a>fire of my jealousy have I spoken against the residue of the heathen,
+<a name="l1644"></a>and against all Idumea, which have appointed my land into their
+<a name="l1645"></a>possession with the joy of all their heart, with despiteful minds, to
+<a name="l1646"></a>cast it out for a prey.
+<a name="l1647"></a>
+<a name="l1648"></a>36:6 Prophesy therefore concerning the land of Israel, and say unto
+<a name="l1649"></a>the mountains, and to the hills, to the rivers, and to the valleys,
+<a name="l1650"></a>Thus saith the Lord GOD; Behold, I have spoken in my jealousy and in
+<a name="l1651"></a>my fury, because ye have borne the shame of the heathen: 36:7
+<a name="l1652"></a>Therefore thus saith the Lord GOD; I have lifted up mine hand, Surely
+<a name="l1653"></a>the heathen that are about you, they shall bear their shame.
+<a name="l1654"></a>
+<a name="l1655"></a>36:8 But ye, O mountains of Israel, ye shall shoot forth your
+<a name="l1656"></a>branches, and yield your fruit to my people of Israel; for they are at
+<a name="l1657"></a>hand to come.
+<a name="l1658"></a>
+<a name="l1659"></a>36:9 For, behold, I am for you, and I will turn unto you, and ye shall</span><span class=cF0>
+<a name="l1660"></a>
+<a name="l1661"></a>----10/07/13 18:11:16----
+<a name="l1662"></a>
+<a name="l1663"></a>If I get rich, I'mna start a prize.   I'll honor whomever brings most glory to 
+<a name="l1664"></a>God the Father.  It'll mostly go to zoos and telescopes.
+<a name="l1665"></a>
+<a name="l1666"></a>That fusion contraption looked delightfully complex.  LOL  Crazy-ass lasers in 
+<a name="l1667"></a>hour glass config.  Lasers!  How cool is that?
+<a name="l1668"></a>
+<a name="l1669"></a></span><a href="http://virtual-notary.org"><span class=cF0>http://virtual-notary.org</span></a><span class=cF0>
+<a name="l1670"></a>
+<a name="l1671"></a></span><a href="http://www.templeos.org/Certs/virtual-notary-cert-randomnum-36322.p12"><span class=cF0>Here is the certificate: 36322</span></a><span class=cF0>.
+<a name="l1672"></a>
+<a name="l1673"></a>Line:66251
+<a name="l1674"></a>God says...
+<a name="l1675"></a></span><span class=cF4>50:16 Cut off the sower from Babylon, and him that handleth the sickle
+<a name="l1676"></a>in the time of harvest: for fear of the oppressing sword they shall
+<a name="l1677"></a>turn every one to his people, and they shall flee every one to his own
+<a name="l1678"></a>land.
+<a name="l1679"></a>
+<a name="l1680"></a>50:17 Israel is a scattered sheep; the lions have driven him away:
+<a name="l1681"></a>first the king of Assyria hath devoured him; and last this
+<a name="l1682"></a>Nebuchadrezzar king of Babylon hath broken his bones.
+<a name="l1683"></a>
+<a name="l1684"></a>50:18 Therefore thus saith the LORD of hosts, the God of Israel;
+<a name="l1685"></a>Behold, I will punish the king of Babylon and his land, as I have
+<a name="l1686"></a>punished the king of Assyria.
+<a name="l1687"></a>
+<a name="l1688"></a>50:19 And I will bring Israel again to his habitation, and he shall
+<a name="l1689"></a>feed on Carmel and Bashan, and his soul shall be satisfied upon mount
+<a name="l1690"></a>Ephraim and Gilead.
+<a name="l1691"></a>
+<a name="l1692"></a>50:20 In those days, and in that time, saith the LORD, the iniquity of
+<a name="l1693"></a>Israel shall be sought for, and there shall be none; and the sins of</span><span class=cF0>
+<a name="l1694"></a>
+<a name="l1695"></a>----10/07/13 18:43:18----
+<a name="l1696"></a>
+<a name="l1697"></a>Fucken stupid fucks.
+<a name="l1698"></a>
+<a name="l1699"></a>
+<a name="l1700"></a></span><span class=cF2>11:17 The merciful man doeth good to his own soul: but he that is
+<a name="l1701"></a>cruel troubleth his own flesh.</span><span class=cF0>
+<a name="l1702"></a>
+<a name="l1703"></a>If you are cruel and dig for veins, you will get pain from God.  Retard-niggers!
+<a name="l1704"></a>
+<a name="l1705"></a>LOL
+<a name="l1706"></a>
+<a name="l1707"></a>Stoopit fucks.
+<a name="l1708"></a>
+<a name="l1709"></a>As you judge you will be judged.  I'm shaking my head incredulously at how 
+<a name="l1710"></a>stupid people are.
+<a name="l1711"></a>
+<a name="l1712"></a>All you have to know is the story of Joseph in the Bible, how he went to prison 
+<a name="l1713"></a>seven years for false rape and was made ruler of Egypt.
+<a name="l1714"></a>
+<a name="l1715"></a>Then, you can confidently turn the other cheek.
+<a name="l1716"></a>
+<a name="l1717"></a></span><a href="http://www.biblegateway.com/passage/?search=Luke%206:20-26&version=NIV"><span class=cF0>Luke 6:20-26</span></a><span class=cF0>
+<a name="l1718"></a>
+<a name="l1719"></a>So there was a nigger named Henry I hung-out with in 2004.
+<a name="l1720"></a>Long story short, was out on a front porch with a couple and their 8-year-old 
+<a name="l1721"></a>daughter.  She played tag and reached for my crotch. While I backed away.
+<a name="l1722"></a>
+<a name="l1723"></a>That it.
+<a name="l1724"></a>
+<a name="l1725"></a>God is perfectly just, you retard niggers.  Yer fucked.  Radio psy-ops.
+<a name="l1726"></a>
+<a name="l1727"></a>Is that all you got?  Take yer best shot.
+<a name="l1728"></a>
+<a name="l1729"></a>God will hit you for me.  Gonna knock you through time so your ancestors feel 
+<a name="l1730"></a>it.
+<a name="l1731"></a>
+<a name="l1732"></a></span><a href="http://virtual-notary.org"><span class=cF0>http://virtual-notary.org</span></a><span class=cF0>
+<a name="l1733"></a>
+<a name="l1734"></a></span><a href="http://www.templeos.org/Certs/virtual-notary-cert-randomnum-36348.p12"><span class=cF0>Here is the certificate: 36348</span></a><span class=cF0>.
+<a name="l1735"></a>
+<a name="l1736"></a>Line:25925
+<a name="l1737"></a>God says...
+<a name="l1738"></a></span><span class=cF4>because his father had done him shame.
+<a name="l1739"></a>
+<a name="l1740"></a>20:35 And it came to pass in the morning, that Jonathan went out into
+<a name="l1741"></a>the field at the time appointed with David, and a little lad with him.
+<a name="l1742"></a>
+<a name="l1743"></a>20:36 And he said unto his lad, Run, find out now the arrows which I
+<a name="l1744"></a>shoot. And as the lad ran, he shot an arrow beyond him.
+<a name="l1745"></a>
+<a name="l1746"></a>20:37 And when the lad was come to the place of the arrow which
+<a name="l1747"></a>Jonathan had shot, Jonathan cried after the lad, and said, Is not the
+<a name="l1748"></a>arrow beyond thee?  20:38 And Jonathan cried after the lad, Make
+<a name="l1749"></a>speed, haste, stay not. And Jonathan's lad gathered up the arrows, and
+<a name="l1750"></a>came to his master.
+<a name="l1751"></a>
+<a name="l1752"></a>20:39 But the lad knew not any thing: only Jonathan and David knew the
+<a name="l1753"></a>matter.
+<a name="l1754"></a>
+<a name="l1755"></a>20:40 And Jonathan gave his artillery unto his lad, and said unto him,
+<a name="l1756"></a>Go, carry them to the city.</span><span class=cF0>
+<a name="l1757"></a>
+<a name="l1758"></a>I giggle when Dad gets pain.  He's a very flawed scumbag in a lot of ways.
+<a name="l1759"></a>
+<a name="l1760"></a>God says...
+<a name="l1761"></a></span><span class=cF4>dominion emotions groan cower fruitfulness weakness knowest lastly reasonable 
+<a name="l1762"></a>cleansest evened unfeigned collect etext90 shower sufficeth alloy beautiful 
+<a name="l1763"></a>dragons insight knocking whitherto processing waft husband commandment seducing 
+<a name="l1764"></a>wholesome necessary gentleness flying shares incorruption verily slightly relied 
+<a name="l1765"></a>chastely chose bewail unstayed slumbers hart@pobox wandered pieces among 
+<a name="l1766"></a>languishing praised conceive error proportions supposing important infidelity 
+<a name="l1767"></a>pile Be pardoned I affright corruption substances Envy imparts fatness 
+<a name="l1768"></a>assiduously vent Strength grieves criticised sole stay sick angered accusing 
+<a name="l1769"></a>fruitless predicted conceive rapture discommended stature canst</span><span class=cF0>
+<a name="l1770"></a>
+<a name="l1771"></a>----10/07/13 19:08:24----
+<a name="l1772"></a>
+<a name="l1773"></a>My operating system is nothing without God's endorsement.
+<a name="l1774"></a>
+<a name="l1775"></a>I have God's endorsement.  God designed it.  OSDev Brendan is ranting -- he sees 
+<a name="l1776"></a>my with clarvoyance or CCTV.
+<a name="l1777"></a>
+<a name="l1778"></a></span><a href="http://virtual-notary.org"><span class=cF0>http://virtual-notary.org</span></a><span class=cF0>
+<a name="l1779"></a>
+<a name="l1780"></a></span><a href="http://www.templeos.org/Certs/virtual-notary-cert-randomnum-36361.p12"><span class=cF0>Here is the certificate: 36361</span></a><span class=cF0>.
+<a name="l1781"></a>
+<a name="l1782"></a>Line:4657
+<a name="l1783"></a>God says...
+<a name="l1784"></a></span><span class=cF4>and six; 46:27 And the sons of Joseph, which were born him in Egypt,
+<a name="l1785"></a>were two souls: all the souls of the house of Jacob, which came into
+<a name="l1786"></a>Egypt, were threescore and ten.
+<a name="l1787"></a>
+<a name="l1788"></a>46:28 And he sent Judah before him unto Joseph, to direct his face
+<a name="l1789"></a>unto Goshen; and they came into the land of Goshen.
+<a name="l1790"></a>
+<a name="l1791"></a>46:29 And Joseph made ready his chariot, and went up to meet Israel
+<a name="l1792"></a>his father, to Goshen, and presented himself unto him; and he fell on
+<a name="l1793"></a>his neck, and wept on his neck a good while.
+<a name="l1794"></a>
+<a name="l1795"></a>46:30 And Israel said unto Joseph, Now let me die, since I have seen
+<a name="l1796"></a>thy face, because thou art yet alive.
+<a name="l1797"></a>
+<a name="l1798"></a>46:31 And Joseph said unto his brethren, and unto his father's house,
+<a name="l1799"></a>I will go up, and shew Pharaoh, and say unto him, My brethren, and my
+<a name="l1800"></a>father's house, which were in the land of Canaan, are come unto me;
+<a name="l1801"></a>46:32 And the men are shepherds, for their trade hath been to feed
+<a name="l1802"></a>cattle; and they have brought their flocks, and their herds, and all
+<a name="l1803"></a>that they have.</span><span class=cF0>
+<a name="l1804"></a>
+<a name="l1805"></a>----10/07/13 19:17:06----
+<a name="l1806"></a>
+<a name="l1807"></a>I did HeapLog to check the heap.
+<a name="l1808"></a>
+<a name="l1809"></a></span><a href="../../../../../../../Adam/Utils/HeapLog.html#l1"><span class=cF4>::/Adam/Utils/HeapLog.CPP</span></a><span class=cF0>
+<a name="l1810"></a>
+<a name="l1811"></a>You must think of it like MATLAB.  It leaks.  Rebooting is acceptible.
+<a name="l1812"></a>
+<a name="l1813"></a>In theory it will fragment.  You'll never have problems.
+<a name="l1814"></a>
+<a name="l1815"></a>MATLAB accumulated malloced items over the course of a session.
+<a name="l1816"></a>
+<a name="l1817"></a>I don't want to hear about problem in theory, just actual problems.  Fuck 
+<a name="l1818"></a>yerself.
+<a name="l1819"></a>
+<a name="l1820"></a></span><a href="http://virtual-notary.org"><span class=cF0>http://virtual-notary.org</span></a><span class=cF0>
+<a name="l1821"></a>
+<a name="l1822"></a></span><a href="http://www.templeos.org/Certs/virtual-notary-cert-randomnum-36365.p12"><span class=cF0>Here is the certificate: 36365</span></a><span class=cF0>.
+<a name="l1823"></a>
+<a name="l1824"></a>Line:86596
+<a name="l1825"></a>God says...
+<a name="l1826"></a></span><span class=cF4>thou lovest is sick.
+<a name="l1827"></a>
+<a name="l1828"></a>11:4 When Jesus heard that, he said, This sickness is not unto death,
+<a name="l1829"></a>but for the glory of God, that the Son of God might be glorified
+<a name="l1830"></a>thereby.
+<a name="l1831"></a>
+<a name="l1832"></a>11:5 Now Jesus loved Martha, and her sister, and Lazarus.
+<a name="l1833"></a>
+<a name="l1834"></a>11:6 When he had heard therefore that he was sick, he abode two days
+<a name="l1835"></a>still in the same place where he was.
+<a name="l1836"></a>
+<a name="l1837"></a>11:7 Then after that saith he to his disciples, Let us go into Judaea
+<a name="l1838"></a>again.
+<a name="l1839"></a>
+<a name="l1840"></a>11:8 His disciples say unto him, Master, the Jews of late sought to
+<a name="l1841"></a>stone thee; and goest thou thither again?  11:9 Jesus answered, Are
+<a name="l1842"></a>there not twelve hours in the day? If any man walk in the day, he
+<a name="l1843"></a>stumbleth not, because he seeth the light of this world.
+<a name="l1844"></a>
+<a name="l1845"></a>11:10 But if a man walk in the night, he stumbleth, because there is</span><span class=cF0>
+<a name="l1846"></a>
+<a name="l1847"></a>----10/07/13 19:24:16----
+<a name="l1848"></a>
+<a name="l1849"></a>The HeapLog is so simple, you'll instantly understand. You'll walk in the light.
+<a name="l1850"></a>
+<a name="l1851"></a>God says...
+<a name="l1852"></a></span><span class=cF4>who peculiarly Read clothed sang Priest defilements Language lovest clouds costs 
+<a name="l1853"></a>whirlpools different forbadest emptied existence silently data handling breaking 
+<a name="l1854"></a>record plan possible bears gowned diligence Each indulgent endearments Deity 
+<a name="l1855"></a>gates</span><span class=cF0>
+<a name="l1856"></a>
+<a name="l1857"></a>----10/07/13 19:35:49----
+<a name="l1858"></a>
+<a name="l1859"></a>Kiss my wiow berd.
+<a name="l1860"></a>
+<a name="l1861"></a>God says...
+<a name="l1862"></a></span><span class=cF4>indigent parental effort flights consisteth Bible inflame endured expense 
+<a name="l1863"></a>stumbling subduing bepraised</span><span class=cF0>
+<a name="l1864"></a>
+<a name="l1865"></a>What do You think of fusion?  You didn't mkae it easy.  It boggles my mind that 
+<a name="l1866"></a>You could plan that.
+<a name="l1867"></a>
+<a name="l1868"></a>Holy fucken shit!  You planned it.  That boggles the mind.
+<a name="l1869"></a>
+<a name="l1870"></a>I'm not a person who thinks You crafted 3.141592...
+<a name="l1871"></a>
+<a name="l1872"></a>Damn, though, fusion!
+<a name="l1873"></a>
+<a name="l1874"></a>Yeah, putting mental road blocks, but still -- the nature is not puppet crafted.
+<a name="l1875"></a>
+<a name="l1876"></a>We have how many sources all at one time economical!  Holy Shit, You're awesome, 
+<a name="l1877"></a>God!
+<a name="l1878"></a>
+<a name="l1879"></a>I guess money...
+<a name="l1880"></a>
+<a name="l1881"></a></span><a href="http://virtual-notary.org"><span class=cF0>http://virtual-notary.org</span></a><span class=cF0>
+<a name="l1882"></a>
+<a name="l1883"></a></span><a href="http://www.templeos.org/Certs/virtual-notary-cert-randomnum-36376.p12"><span class=cF0>Here is the certificate: 36376</span></a><span class=cF0>.
+<a name="l1884"></a>
+<a name="l1885"></a>Line:3179
+<a name="l1886"></a>God says...
+<a name="l1887"></a></span><span class=cF4>shewed unto thy servant; for with my staff I passed over this Jordan;
+<a name="l1888"></a>and now I am become two bands.
+<a name="l1889"></a>
+<a name="l1890"></a>32:11 Deliver me, I pray thee, from the hand of my brother, from the
+<a name="l1891"></a>hand of Esau: for I fear him, lest he will come and smite me, and the
+<a name="l1892"></a>mother with the children.
+<a name="l1893"></a>
+<a name="l1894"></a>32:12 And thou saidst, I will surely do thee good, and make thy seed
+<a name="l1895"></a>as the sand of the sea, which cannot be numbered for multitude.
+<a name="l1896"></a>
+<a name="l1897"></a>32:13 And he lodged there that same night; and took of that which came
+<a name="l1898"></a>to his hand a present for Esau his brother; 32:14 Two hundred she
+<a name="l1899"></a>goats, and twenty he goats, two hundred ewes, and twenty rams, 32:15
+<a name="l1900"></a>Thirty milch camels with their colts, forty kine, and ten bulls,
+<a name="l1901"></a>twenty she asses, and ten foals.
+<a name="l1902"></a>
+<a name="l1903"></a>32:16 And he delivered them into the hand of his servants, every drove
+<a name="l1904"></a>by themselves; and said unto his servants, Pass over before me, and
+<a name="l1905"></a>put a space betwixt drove and drove.</span><span class=cF0>
+<a name="l1906"></a>
+<a name="l1907"></a>----10/07/13 19:43:09----
+<a name="l1908"></a>
+<a name="l1909"></a>God made all those different kind of herd animals.
+<a name="l1910"></a>
+<a name="l1911"></a>What do giraffes think about?
+<a name="l1912"></a>
+<a name="l1913"></a>God says...
+<a name="l1914"></a></span><span class=cF4>Only endurance comfort awful sons</span><span class=cF0>
+<a name="l1915"></a>
+<a name="l1916"></a>----10/07/13 19:47:05----
+<a name="l1917"></a>
+<a name="l1918"></a>Ba ha.  You like Lion King?  ROFLMAO
+<a name="l1919"></a>
+<a name="l1920"></a>What do lions think about?
+<a name="l1921"></a>
+<a name="l1922"></a>God says...
+<a name="l1923"></a></span><span class=cF4>vanity aforetime Proceed tumultuousness unaided consisteth weighty participation 
+<a name="l1924"></a>resist need cloudiness preserve salted beams 30 Faustus forsaken thereof 
+<a name="l1925"></a>sufficeth bowers fettered added foresignify Cyprian healthfully justifieth 
+<a name="l1926"></a>feeling clasp dread blesses purposing Law spread bottomless despisest express 
+<a name="l1927"></a>seemed Edward begotten etext90 falling relater mark chastenedst lawfully Grief 
+<a name="l1928"></a>Learn UNDER Have furnished suggest tenor 3 canst advantage mingled remainest 
+<a name="l1929"></a>closed revenged hell reason partake physician answerably bed forefathers omnium 
+<a name="l1930"></a>Instructor bottomless magistrates Christ LIABILITY dread meets 38655 endurance 
+<a name="l1931"></a>Continency</span><span class=cF0>
+<a name="l1932"></a>
+<a name="l1933"></a>----10/07/13 19:52:50----
+<a name="l1934"></a>
+<a name="l1935"></a>I don't use the SATA/IDE interrupt -- I poll, then go do something else and poll 
+<a name="l1936"></a>and go do something else and poll and go do something else.
+<a name="l1937"></a>
+<a name="l1938"></a>God's temple is perfect.  Hardware/BIOSes must be changed.
+<a name="l1939"></a>
+<a name="l1940"></a>God says...
+<a name="l1941"></a></span><span class=cF4>were in it, as I live, saith the Lord GOD, they shall
+<a name="l1942"></a>deliver neither son nor daughter; they shall but deliver their own
+<a name="l1943"></a>souls by their righteousness.
+<a name="l1944"></a>
+<a name="l1945"></a>14:21 For thus saith the Lord GOD; How much more when I send my four
+<a name="l1946"></a>sore judgments upon Jerusalem, the sword, and the famine, and the
+<a name="l1947"></a>noisome beast, and the pestilence, to cut off from it man and beast?
+<a name="l1948"></a>14:22 Yet, behold, therein shall be left a remnant that shall be
+<a name="l1949"></a>brought forth, both sons and daughters: behold, they shall come forth
+<a name="l1950"></a>unto you, and ye shal</span><span class=cF0>
+<a name="l1951"></a>
+<a name="l1952"></a>Just remember -- &quot;It's compatibility stupid.&quot;  Interrupts will just cause your 
+<a name="l1953"></a>software not to work on some machines somewhere.  You don't need performance as 
+<a name="l1954"></a>much as you just need it to work!
+<a name="l1955"></a>
+<a name="l1956"></a>Your operating system will just work on your own machine -- you can save just 
+<a name="l1957"></a>yourself.
+<a name="l1958"></a>
+<a name="l1959"></a>----10/07/13 20:00:30----
+<a name="l1960"></a>
+<a name="l1961"></a>Talk about... hyenas.  Do You like hyenas?  Nobody likes them.  They have 
+<a name="l1962"></a>powerful jaws, huh?  They kinda ugly.
+<a name="l1963"></a>
+<a name="l1964"></a></span><a href="http://virtual-notary.org"><span class=cF0>http://virtual-notary.org</span></a><span class=cF0>
+<a name="l1965"></a>
+<a name="l1966"></a></span><a href="http://www.templeos.org/Certs/virtual-notary-cert-randomnum-36387.p12"><span class=cF0>Here is the certificate: 36387</span></a><span class=cF0>.
+<a name="l1967"></a>
+<a name="l1968"></a>Line:67545
+<a name="l1969"></a>God says...
+<a name="l1970"></a></span><span class=cF4>5:7 Therefore thus saith the Lord GOD; Because ye multiplied more than
+<a name="l1971"></a>the nations that are round about you, and have not walked in my
+<a name="l1972"></a>statutes, neither have kept my judgments, neither have done according
+<a name="l1973"></a>to the judgments of the nations that are round about you; 5:8
+<a name="l1974"></a>Therefore thus saith the Lord GOD; Behold, I, even I, am against thee,
+<a name="l1975"></a>and will execute judgments in the midst of thee in the sight of the
+<a name="l1976"></a>nations.
+<a name="l1977"></a>
+<a name="l1978"></a>5:9 And I will do in thee that which I have not done, and whereunto I
+<a name="l1979"></a>will not do any more the like, because of all thine abominations.
+<a name="l1980"></a>
+<a name="l1981"></a>5:10 Therefore the fathers shall eat the sons in the midst of thee,
+<a name="l1982"></a>and the sons shall eat their fathers; and I will execute judgments in
+<a name="l1983"></a>thee, and the whole remnant of thee will I scatter into all the winds.
+<a name="l1984"></a>
+<a name="l1985"></a>5:11 Wherefore, as I live, saith the Lord GOD; Surely, because thou
+<a name="l1986"></a>hast defiled my sanctuary with all thy detestable things, and with all
+<a name="l1987"></a>thine abominations, therefore will I also diminish thee; neither shall
+<a name="l1988"></a>mine eye spare, neither will I have any pity.</span><span class=cF0>
+<a name="l1989"></a>
+<a name="l1990"></a>----10/07/13 20:10:18----
+<a name="l1991"></a>
+<a name="l1992"></a>Stupid nigger, Mom is denial.
+<a name="l1993"></a>
+<a name="l1994"></a></span><a href="http://www.liveleak.com/view?i=171_1379429729"><span class=cF0>Fire Escape</span></a><span class=cF0>
+<a name="l1995"></a>
+<a name="l1996"></a></span><a href="http://virtual-notary.org"><span class=cF0>http://virtual-notary.org</span></a><span class=cF0>
+<a name="l1997"></a>
+<a name="l1998"></a></span><a href="http://www.templeos.org/Certs/virtual-notary-cert-randomnum-36398.p12"><span class=cF0>Here is the certificate: 36398</span></a><span class=cF0>.
+<a name="l1999"></a>
+<a name="l2000"></a>Line:18743
+<a name="l2001"></a>God says...
+<a name="l2002"></a></span><span class=cF4>denounce unto you this day, that ye shall surely perish, and that ye
+<a name="l2003"></a>shall not prolong your days upon the land, whither thou passest over
+<a name="l2004"></a>Jordan to go to possess it.
+<a name="l2005"></a>
+<a name="l2006"></a>30:19 I call heaven and earth to record this day against you, that I
+<a name="l2007"></a>have set before you life and death, blessing and cursing: therefore
+<a name="l2008"></a>choose life, that both thou and thy seed may live: 30:20 That thou
+<a name="l2009"></a>mayest love the LORD thy God, and that thou mayest obey his voice, and
+<a name="l2010"></a>that thou mayest cleave unto him: for he is thy life, and the length
+<a name="l2011"></a>of thy days: that thou mayest dwell in the land which the LORD sware
+<a name="l2012"></a>unto thy fathers, to Abraham, to Isaac, and to Jacob, to give them.
+<a name="l2013"></a>
+<a name="l2014"></a>31:1 And Moses went and spake these words unto all Israel.
+<a name="l2015"></a>
+<a name="l2016"></a>31:2 And he said unto them, I am an hundred and twenty years old this
+<a name="l2017"></a>day; I can no more go out and come in: also the LORD hath said unto
+<a name="l2018"></a>me, Thou shalt not go over this Jordan.
+<a name="l2019"></a>
+<a name="l2020"></a>31:3 The LORD thy God, he will go over before thee, and he will
+<a name="l2021"></a>destroy these nations from before thee, and thou shalt possess them:</span><span class=cF0>
+<a name="l2022"></a>
+<a name="l2023"></a>----10/07/13 20:16:10----
+<a name="l2024"></a>
+<a name="l2025"></a>Retard niggers.  I go to all quantum random number sites.
+<a name="l2026"></a>
+<a name="l2027"></a></span><a href="http://www.randomnumbers.info"><span class=cF0>http://www.randomnumbers.info</span></a><span class=cF0>
+<a name="l2028"></a>
+<a name="l2029"></a>Line:95878
+<a name="l2030"></a>God says...
+<a name="l2031"></a></span><span class=cF4>lest he fall into reproach and the snare of the devil.
+<a name="l2032"></a>
+<a name="l2033"></a>3:8 Likewise must the deacons be grave, not doubletongued, not given
+<a name="l2034"></a>to much wine, not greedy of filthy lucre; 3:9 Holding the mystery of
+<a name="l2035"></a>the faith in a pure conscience.
+<a name="l2036"></a>
+<a name="l2037"></a>3:10 And let these also first be proved; then let them use the office
+<a name="l2038"></a>of a deacon, being found blameless.
+<a name="l2039"></a>
+<a name="l2040"></a>3:11 Even so must their wives be grave, not slanderers, sober,
+<a name="l2041"></a>faithful in all things.
+<a name="l2042"></a>
+<a name="l2043"></a>3:12 Let the deacons be the husbands of one wife, ruling their
+<a name="l2044"></a>children and their own houses well.
+<a name="l2045"></a>
+<a name="l2046"></a>3:13 For they that have used the office of a deacon well purchase to
+<a name="l2047"></a>themselves a good degree, and great boldness in the faith which is in
+<a name="l2048"></a>Christ Jesus.
+<a name="l2049"></a>
+<a name="l2050"></a>3:14 These things write I unto thee, hoping to come unto thee shortly</span><span class=cF0>
+<a name="l2051"></a>
+<a name="l2052"></a>----10/07/13 20:21:32----
+<a name="l2053"></a>
+<a name="l2054"></a></span><a href="http://www.biblegateway.com/passage/?search=Daniel%205:1-6&version=NIV"><span class=cF0>Daniel 5:1-6</span></a><span class=cF0>
+<a name="l2055"></a>
+<a name="l2056"></a>They got the ouija board from the temple.  The magic is invoked by praising God.
+<a name="l2057"></a>
+<a name="l2058"></a>Mean tickle to kill president or a person.
+<a name="l2059"></a>
+<a name="l2060"></a></span><a href="http://www.biblegateway.com/passage/?search=Daniel%205&version=NIV"><span class=cF0>Daniel 5</span></a><span class=cF0>
+<a name="l2061"></a>
+<a name="l2062"></a>Tongues works accross languages and says different shit.
+<a name="l2063"></a>
+<a name="l2064"></a>Praise You God for zebras.  purdy neat.  Stripes.  Vivid as heck.
+<a name="l2065"></a>
+<a name="l2066"></a></span><a href="https://www.fourmilab.ch/hotbits/secure_generate.html"><span class=cF0>https://www.fourmilab.ch/hotbits/secure_generate.html</span></a><span class=cF0>
+<a name="l2067"></a>
+<a name="l2068"></a>0x363C11--&gt;3554321 mod 100000--&gt;Line:54321
+<a name="l2069"></a>God says...
+<a name="l2070"></a></span><span class=cF4>no fountains abounding with water.
+<a name="l2071"></a>
+<a name="l2072"></a>8:25 Before the mountains were settled, before the hills was I brought
+<a name="l2073"></a>forth: 8:26 While as yet he had not made the earth, nor the fields,
+<a name="l2074"></a>nor the highest part of the dust of the world.
+<a name="l2075"></a>
+<a name="l2076"></a>8:27 When he prepared the heavens, I was there: when he set a compass
+<a name="l2077"></a>upon the face of the depth: 8:28 When he established the clouds above:
+<a name="l2078"></a>when he strengthened the fountains of the deep: 8:29 When he gave to
+<a name="l2079"></a>the sea his decree, that the waters should not pass his commandment:
+<a name="l2080"></a>when he appointed the foundations of the earth: 8:30 Then I was by
+<a name="l2081"></a>him, as one brought up with him: and I was daily his delight,
+<a name="l2082"></a>rejoicing always before him; 8:31 Rejoicing in the habitable part of
+<a name="l2083"></a>his earth; and my delights were with the sons of men.
+<a name="l2084"></a>
+<a name="l2085"></a>8:32 Now therefore hearken unto me, O ye children: for blessed are
+<a name="l2086"></a>they that keep my ways.
+<a name="l2087"></a>
+<a name="l2088"></a>8:33 Hear instruction, and be wise, and refuse it not.</span><span class=cF0>
+<a name="l2089"></a>
+<a name="l2090"></a>----10/07/13 20:31:23----
+<a name="l2091"></a>
+<a name="l2092"></a></span><a href="http://i.imgur.com/ovPLZx9.jpg"><span class=cF0>Beautiful Tiger</span></a><span class=cF0>
+<a name="l2093"></a>
+<a name="l2094"></a>Cute wittow baby.
+<a name="l2095"></a>
+<a name="l2096"></a></span><a href="https://www.fourmilab.ch/hotbits/secure_generate.html"><span class=cF0>https://www.fourmilab.ch/hotbits/secure_generate.html</span></a><span class=cF0>
+<a name="l2097"></a>
+<a name="l2098"></a>0xB28728--&gt;11700008 mod 100000--&gt;Line:00008
+<a name="l2099"></a>God says...
+<a name="l2100"></a></span><span class=cF4>August, 1989  [Etext #10]
+<a name="l2101"></a>
+<a name="l2102"></a>
+<a name="l2103"></a>******The Project Gutenberg Etext of The King James Bible******
+<a name="l2104"></a>******This file should be named kjv10.txt or kjv10.zip*****
+<a name="l2105"></a>
+<a name="l2106"></a>
+<a name="l2107"></a>Copyright laws are changing all over the world, be sure to check
+<a name="l2108"></a>the copyright laws for your country before posting these files!!
+<a name="l2109"></a>
+<a name="l2110"></a>Please take a look at the important information in this header.
+<a name="l2111"></a>We encourage you to keep this file on your own disk, keeping an
+<a name="l2112"></a>electronic path open for the next readers.  Do not remove this.
+<a name="l2113"></a>
+<a name="l2114"></a>
+<a name="l2115"></a>**Welcome To The World of Free Plain Vanilla Electronic Texts**
+<a name="l2116"></a>
+<a name="l2117"></a>**Etexts Readable By Both Humans and By Computers, Since 1971**
+<a name="l2118"></a>
+<a name="l2119"></a>*These Etexts Prepared By Hundreds of Volunteers and Donations*
+<a name="l2120"></a></span><span class=cF0>
+<a name="l2121"></a>----10/07/13 20:37:30----
+<a name="l2122"></a>
+<a name="l2123"></a></span><a href="http://www.youtube.com/watch?v=p985zQblxlQ"><span class=cF0>Gordon Ramsay</span></a><span class=cF0>
+<a name="l2124"></a>
+<a name="l2125"></a>Shit God, nothing happens.
+<a name="l2126"></a>
+<a name="l2127"></a>Food is in the light.  Better than war with England.  Fuckers want a piece of 
+<a name="l2128"></a>me.  CIA fucks.
+<a name="l2129"></a>
+<a name="l2130"></a></span><a href="http://www.randomnumbers.info"><span class=cF0>http://www.randomnumbers.info</span></a><span class=cF0>
+<a name="l2131"></a>
+<a name="l2132"></a>Line:20762
+<a name="l2133"></a>God says...
+<a name="l2134"></a></span><span class=cF4>according to their families, the cities and their villages.
+<a name="l2135"></a>
+<a name="l2136"></a>19:24 And the fifth lot came out for the tribe of the children of
+<a name="l2137"></a>Asher according to their families.
+<a name="l2138"></a>
+<a name="l2139"></a>19:25 And their border was Helkath, and Hali, and Beten, and Achshaph,
+<a name="l2140"></a>19:26 And Alammelech, and Amad, and Misheal; and reacheth to Carmel
+<a name="l2141"></a>westward, and to Shihorlibnath; 19:27 And turneth toward the sunrising
+<a name="l2142"></a>to Bethdagon, and reacheth to Zebulun, and to the valley of Jiphthahel
+<a name="l2143"></a>toward the north side of Bethemek, and Neiel, and goeth out to Cabul
+<a name="l2144"></a>on the left hand, 19:28 And Hebron, and Rehob, and Hammon, and Kanah,
+<a name="l2145"></a>even unto great Zidon; 19:29 And then the coast turneth to Ramah, and
+<a name="l2146"></a>to the strong city Tyre; and the coast turneth to Hosah; and the
+<a name="l2147"></a>outgoings thereof are at the sea from the coast to Achzib: 19:30 Ummah
+<a name="l2148"></a>also, and Aphek, and Rehob: twenty and two cities with their villages.
+<a name="l2149"></a>
+<a name="l2150"></a>19:31 This is the inheritance of the tribe of the children of Asher
+<a name="l2151"></a>according to their families, these cities with their villages.
+<a name="l2152"></a>
+<a name="l2153"></a>19:32 The sixth lot came out to the children of Naphtali, even for the</span><span class=cF0>
+<a name="l2154"></a>
+<a name="l2155"></a>----10/07/13 20:51:04----
+<a name="l2156"></a>
+<a name="l2157"></a></span><a href="http://www.random.org"><span class=cF0>http://www.random.org</span></a><span class=cF0>
+<a name="l2158"></a>
+<a name="l2159"></a>Line:50689
+<a name="l2160"></a>God says...
+<a name="l2161"></a></span><span class=cF4>89:43 Thou hast also turned the edge of his sword, and hast not made
+<a name="l2162"></a>him to stand in the battle.
+<a name="l2163"></a>
+<a name="l2164"></a>89:44 Thou hast made his glory to cease, and cast his throne down to
+<a name="l2165"></a>the ground.
+<a name="l2166"></a>
+<a name="l2167"></a>89:45 The days of his youth hast thou shortened: thou hast covered him
+<a name="l2168"></a>with shame. Selah.
+<a name="l2169"></a>
+<a name="l2170"></a>89:46 How long, LORD? wilt thou hide thyself for ever? shall thy wrath
+<a name="l2171"></a>burn like fire?
+<a name="l2172"></a>
+<a name="l2173"></a>89:47 Remember how short my time is: wherefore hast thou made all men
+<a name="l2174"></a>in vain?
+<a name="l2175"></a>
+<a name="l2176"></a>89:48 What man is he that liveth, and shall not see death? shall he
+<a name="l2177"></a>deliver his soul from the hand of the grave? Selah.
+<a name="l2178"></a>
+<a name="l2179"></a>89:49 Lord, where are thy former lovingkindnesses, which thou swarest
+<a name="l2180"></a>unto David in thy truth?</span><span class=cF0>
+<a name="l2181"></a>
+<a name="l2182"></a>----10/07/13 21:09:33----
+<a name="l2183"></a>
+<a name="l2184"></a>A neuro scientist who thinks the brain can control pressing a key for a 1Mhz 
+<a name="l2185"></a>clock is a retard-nigger.  Any electrical engineer would call you a total nigger 
+<a name="l2186"></a>and laugh you to scorn.  Clock synchronization by not-very-accurate cells plus 
+<a name="l2187"></a>nerve-down arm 1mS delay with jitter.  Not to mention planning-out the sequence.
+<a name="l2188"></a>
+<a name="l2189"></a>Quantumn random number site is gordon knot -- removes all doubt, sept 
+<a name="l2190"></a>retard-niggers with tinfoil hats.
+<a name="l2191"></a>
+<a name="l2192"></a>Woman got experimented on my neuro scientists?  Or, suffered justice.  Or just 
+<a name="l2193"></a>hypocondriact.
+<a name="l2194"></a>
+<a name="l2195"></a></span><a href="http://www.randomnumbers.info"><span class=cF0>http://www.randomnumbers.info</span></a><span class=cF0>
+<a name="l2196"></a>
+<a name="l2197"></a>Line:91344
+<a name="l2198"></a>God says...
+<a name="l2199"></a></span><span class=cF4>
+<a name="l2200"></a>7:7 What shall we say then? Is the law sin? God forbid. Nay, I had not
+<a name="l2201"></a>known sin, but by the law: for I had not known lust, except the law
+<a name="l2202"></a>had said, Thou shalt not covet.
+<a name="l2203"></a>
+<a name="l2204"></a>7:8 But sin, taking occasion by the commandment, wrought in me all
+<a name="l2205"></a>manner of concupiscence. For without the law sin was dead.
+<a name="l2206"></a>
+<a name="l2207"></a>7:9 For I was alive without the law once: but when the commandment
+<a name="l2208"></a>came, sin revived, and I died.
+<a name="l2209"></a>
+<a name="l2210"></a>7:10 And the commandment, which was ordained to life, I found to be
+<a name="l2211"></a>unto death.
+<a name="l2212"></a>
+<a name="l2213"></a>7:11 For sin, taking occasion by the commandment, deceived me, and by
+<a name="l2214"></a>it slew me.
+<a name="l2215"></a>
+<a name="l2216"></a>7:12 Wherefore the law is holy, and the commandment holy, and just,
+<a name="l2217"></a>and good.</span><span class=cF0>
+<a name="l2218"></a>
+<a name="l2219"></a>They're prolly too stupid to interpret.  LOL
+<a name="l2220"></a>
+<a name="l2221"></a>I'm tired.  Wasting it on swine.
+<a name="l2222"></a>
+<a name="l2223"></a>God says...
+<a name="l2224"></a></span><span class=cF4>proconsular greedily wordy healthy overpass deductible Ask Sabbath adoption 
+<a name="l2225"></a>health may fearful incorrect burning irritate confused Eagerly innocency Like 
+<a name="l2226"></a>departed voluptuousness incorruptibly lack inmost soil folk physicians go 
+<a name="l2227"></a>injures talk pitiest EITHER voluptuous gulf hot effort comprehend mystery 
+<a name="l2228"></a>compassionate</span><span class=cF0>
+<a name="l2229"></a>
+<a name="l2230"></a>----10/07/13 21:25:27----
+<a name="l2231"></a>
+<a name="l2232"></a>I took 5 asm courses, a compiler course and an operating system course and 
+<a name="l2233"></a>graphics and digital design and numeric methods.  Meat and potatoes.
+<a name="l2234"></a>
+<a name="l2235"></a>I was a professional OS developer for Ticketmaster at age 20 1990-1996 in VAX 
+<a name="l2236"></a>asm.  I was paid for x86 asm, 8051 asm, 68000 asm, PIC asm, Atmel AVR asm, all 
+<a name="l2237"></a>on bare metal with no operating system.
+<a name="l2238"></a>
+<a name="l2239"></a>I am an expert on the region between hardware and software, reading datasheets.
+<a name="l2240"></a>
+<a name="l2241"></a>That's what I'm an expert in, and only that.  They don't come any more expert.  
+<a name="l2242"></a>I'm the best programmer on the planet, that's why God chose me for His temple.  
+<a name="l2243"></a>It is divine intellect, like the Bible.  God made several decisions. 640x480 16 
+<a name="l2244"></a>color, single voice, no child windows, controlled the evolution, laughed when I 
+<a name="l2245"></a>made neato funny bugs, before I saw them.  Guided the magical evolution into a 
+<a name="l2246"></a>magical wonderland of elegant original solutions to operating system problems.
+<a name="l2247"></a>
+<a name="l2248"></a>
+<a name="l2249"></a></span><a href="http://virtual-notary.org"><span class=cF0>http://virtual-notary.org</span></a><span class=cF0>
+<a name="l2250"></a>
+<a name="l2251"></a></span><a href="http://www.templeos.org/Certs/virtual-notary-cert-randomnum-36439.p12"><span class=cF0>Here is the certificate: 36439</span></a><span class=cF0>.
+<a name="l2252"></a>
+<a name="l2253"></a>Line:7269
+<a name="l2254"></a>God says...
+<a name="l2255"></a></span><span class=cF4>24:4 And Moses wrote all the words of the LORD, and rose up early in
+<a name="l2256"></a>the morning, and builded an altar under the hill, and twelve pillars,
+<a name="l2257"></a>according to the twelve tribes of Israel.
+<a name="l2258"></a>
+<a name="l2259"></a>24:5 And he sent young men of the children of Israel, which offered
+<a name="l2260"></a>burnt offerings, and sacrificed peace offerings of oxen unto the LORD.
+<a name="l2261"></a>
+<a name="l2262"></a>24:6 And Moses took half of the blood, and put it in basons; and half
+<a name="l2263"></a>of the blood he sprinkled on the altar.
+<a name="l2264"></a>
+<a name="l2265"></a>24:7 And he took the book of the covenant, and read in the audience of
+<a name="l2266"></a>the people: and they said, All that the LORD hath said will we do, and
+<a name="l2267"></a>be obedient.
+<a name="l2268"></a>
+<a name="l2269"></a>24:8 And Moses took the blood, and sprinkled it on the people, and
+<a name="l2270"></a>said, Behold the blood of the covenant, which the LORD hath made with
+<a name="l2271"></a>you concerning all these words.
+<a name="l2272"></a>
+<a name="l2273"></a>24:9 Then went up Moses, and Aaron, Nadab, and Abihu, and seventy of
+<a name="l2274"></a>the elders of Israel: 24:10 And they saw the God of Israel: and there</span><span class=cF0>
+<a name="l2275"></a>
+<a name="l2276"></a>God says...
+<a name="l2277"></a></span><span class=cF4>giant lentiles Whom softly arithmetic Glad disturb yielded comfortest prophets 
+<a name="l2278"></a>seduce ABOUT exercised 000 consider Stage accuse milder supreme groanings 
+<a name="l2279"></a>changeable deliberates 31 sweetly boil using chastely spoke oblation Firminus 
+<a name="l2280"></a>reached defined computer viciousness solicited alloy incorruption Translated 
+<a name="l2281"></a>Truly finally phrases Thus pilgrims slippery thought solicited err guardian 
+<a name="l2282"></a>doting then transition reinvolved revolting hindered grantest vary late safer 
+<a name="l2283"></a>assure When idol fury attentive SAINT evil rejected origin energy Sometimes 
+<a name="l2284"></a>Balaneion High checked supereminence copyright cellar copied surveyed untruth 
+<a name="l2285"></a>conventionally exalted prey personated arrival Whence angels sufficeth secret 
+<a name="l2286"></a>patiently smooth aquatic attested abilities fell matters strengtheneth particles 
+<a name="l2287"></a>choleric wherewith glory censured Eternity presides value joking publicly 
+<a name="l2288"></a>teachers stick replacement login sacrifice toil history hour speakest regions 
+<a name="l2289"></a>etc They step toilsome sharply waters subjoined added suitable resurrection 
+<a name="l2290"></a>circumstance zealous Thagaste impressed owed know essay advised looked decided 
+<a name="l2291"></a>darksome inspecting INCIDENTAL diminish infant shameless wearisome etext01 know 
+<a name="l2292"></a>marts broken coming</span><span class=cF0>
+<a name="l2293"></a>
+<a name="l2294"></a>----10/07/13 22:15:56----
+<a name="l2295"></a>
+<a name="l2296"></a>You like Buttons the Cockatoo, God?
+<a name="l2297"></a>
+<a name="l2298"></a></span><a href="https://www.fourmilab.ch/hotbits/secure_generate.html"><span class=cF0>https://www.fourmilab.ch/hotbits/secure_generate.html</span></a><span class=cF0>
+<a name="l2299"></a>
+<a name="l2300"></a>0xAA09F1--&gt;11143665 mod 100000--&gt;Line:43665
+<a name="l2301"></a>God says...
+<a name="l2302"></a></span><span class=cF4>sword; and I only am escaped alone to tell thee.
+<a name="l2303"></a>
+<a name="l2304"></a>1:18 While he was yet speaking, there came also another, and said, Thy
+<a name="l2305"></a>sons and thy daughters were eating and drinking wine in their eldest
+<a name="l2306"></a>brother's house: 1:19 And, behold, there came a great wind from the
+<a name="l2307"></a>wilderness, and smote the four corners of the house, and it fell upon
+<a name="l2308"></a>the young men, and they are dead; and I only am escaped alone to tell
+<a name="l2309"></a>thee.
+<a name="l2310"></a>
+<a name="l2311"></a>1:20 Then Job arose, and rent his mantle, and shaved his head, and
+<a name="l2312"></a>fell down upon the ground, and worshipped, 1:21 And said, Naked came I
+<a name="l2313"></a>out of my mother's womb, and naked shall I return thither: the LORD
+<a name="l2314"></a>gave, and the LORD hath taken away; blessed be the name of the LORD.
+<a name="l2315"></a>
+<a name="l2316"></a>1:22 In all this Job sinned not, nor charged God foolishly.
+<a name="l2317"></a>
+<a name="l2318"></a>2:1 Again there was a day when the sons of God came to present
+<a name="l2319"></a>themselves before the LORD, and Satan came also among them to present
+<a name="l2320"></a>himself before the LORD.</span><span class=cF0>
+<a name="l2321"></a>
+<a name="l2322"></a>----10/07/13 23:18:41----
+<a name="l2323"></a>
+<a name="l2324"></a>I purposely blurred the line between public and private functions and global 
+<a name="l2325"></a>variables.  When I was a kid, I had that book, </span><a href="http://unusedino.de/ec64/technical/project64/mapping_c64.html"><span class=cF4>Mapping the Commodore 64</span></a><span class=cF0>.  I want 
+<a name="l2326"></a>to break normal rules so kids can have fun.  When I was in high school I did 
+<a name="l2327"></a>lots of projects for fun with no thought of distributing them -- I was not being 
+<a name="l2328"></a>professional.  I want kids to do modifications that never end-up in the master 
+<a name="l2329"></a>code... just playing around, for fun.  A professional does not make any 
+<a name="l2330"></a>modification which must be repeatedly merged if code is updated.
+<a name="l2331"></a>
+<a name="l2332"></a>Perhaps, I am done in a more firm way.  At this point I imagine endless 
+<a name="l2333"></a>refinements and improvements, but maybe that's bad and a 
+<a name="l2334"></a>set-in-stone-for-all-time version would be best, like the Commodore64 ROM.
+<a name="l2335"></a>
+<a name="l2336"></a>God says...
+<a name="l2337"></a></span><span class=cF4>id my father, and hath with his hand fulfilled it,
+<a name="l2338"></a>saying, 8:16 Since the day that I brought forth my people Israel out
+<a name="l2339"></a>of Egypt, I chose no city out of all the tribes of Israel to build an
+<a name="l2340"></a>house, that my name might be therein; but I chose David to be over my
+<a name="l2341"></a>people Israel.
+<a name="l2342"></a>
+<a name="l2343"></a>8:17 And it was in the heart of David my father to build an house for
+<a name="l2344"></a>the name of the LORD God of Israel.
+<a name="l2345"></a>
+<a name="l2346"></a>8:18 And the LORD said unto David my father, Whereas it was in thine
+<a name="l2347"></a>heart to build an house unto my name, thou didst well that i</span><span class=cF0>
+<a name="l2348"></a>
+<a name="l2349"></a>----10/07/13 23:32:02----
+<a name="l2350"></a>
+<a name="l2351"></a>I looked at Linux code in 2004 and saw #ifdef's for different architectures.  I 
+<a name="l2352"></a>thought it made the code miserable and I decided to do the opposite.  I support 
+<a name="l2353"></a>one architecture with minimal abstraction, even if this platform dies.
+<a name="l2354"></a>
+<a name="l2355"></a>You are on your own doing ARM.  I might be secretely pleased, but that is not my 
+<a name="l2356"></a>vision.  Somebody put my code on GitHub.  It's public domain.  What is it doing 
+<a name="l2357"></a>on GitHub for LOL?  It cannot be compiled.
+<a name="l2358"></a>
+<a name="l2359"></a>God says...
+<a name="l2360"></a></span><span class=cF4>Israel served the LORD all the days of Joshua, and all the
+<a name="l2361"></a>days of the elders that overlived Joshua, and which had known all the
+<a name="l2362"></a>works of the LORD, that he had done for Israel.
+<a name="l2363"></a>
+<a name="l2364"></a>24:32 And the bones of Joseph, which the children of Israel brought up
+<a name="l2365"></a>out of Egypt, buried they in Shechem, in a parcel of ground which
+<a name="l2366"></a>Jacob bought of the sons of Hamor the father of Shechem for an hundred
+<a name="l2367"></a>pieces of silver: and it became the inheritance of the children of
+<a name="l2368"></a>Joseph.
+<a name="l2369"></a>
+<a name="l2370"></a>24:33 And Eleazar the son of Aaron died; and they</span><span class=cF0>
+<a name="l2371"></a>
+</span></pre></body>
+</html>
+<!-- text below generated by server. PLEASE REMOVE --><!-- Counter/Statistics data collection code --><script language="JavaScript" src="http://l.yimg.com/d/lib/smb/js/hosting/cp/js_source/whv2_001.js"></script><script language="javascript">geovisit();</script><noscript><img src="http://visit.webhosting.yahoo.com/visit.gif?us1409528976" alt="setstats" border="0" width="1" height="1"></noscript><script type="text/javascript" src="https://s.yimg.com/mi/vs4/ywa.js"></script><script type="text/javascript">try {var YWAGTracker = YWA.getTracker("10001849413879", "VSCALE4");YWAGTracker.setDocumentName("WPAGE");YWAGTracker.setDocumentGroup("YSBW");YWAGTracker.setCF(7, "templeos.org");YWAGTracker.setCF(8, "w42");YWAGTracker.submit();} catch (eYWATCUnavailable) {}</script><script type="text/javascript">(function (d, w) {var x = d.getElementsByTagName('SCRIPT')[0];var f = function () {var s = d.createElement('SCRIPT');s.type = 'text/javascript';s.async = true;s.src = "//np.lexity.com/embed/YW/eff965aab4535cd38b91f0976c617496?id=9382d670eca2";x.parentNode.insertBefore(s, x);};w.attachEvent ? w.attachEvent('onload',f) :w.addEventListener('load',f,false);}(document, window));</script>

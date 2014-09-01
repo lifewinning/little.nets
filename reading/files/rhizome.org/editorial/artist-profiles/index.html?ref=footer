@@ -1,0 +1,674 @@
+
+
+
+<!doctype html>
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="Content-Language" content="en-us">
+        <title>Rhizome | Artist Profiles</title>                
+        <meta name="google-site-verification" content="AZfoqybynDh_0mjEBG_XwMZeCwiSE-GZ8BiQB5FZzDU" />        
+        <meta name="ROBOTS" content="ALL" />
+        <meta name="description" content="Rhizome is dedicated to the creation, presentation, preservation, and critique of emerging artistic practices that engage technology." />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <!-- Set viewport so we can have mobile styles -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+
+        <link rel="shortcut icon" href="/static/images/favicons/leyva.gif" />
+
+        <!-- google fonts -->
+        <link href='//fonts.googleapis.com/css?family=Titillium+Web:400,200,300' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Anaheim' rel='stylesheet' type='text/css'>
+
+        
+            <!--GLOBAL CSS-->
+            <link type="text/css" rel="stylesheet" href="/static/css/blueprint/screen.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/base.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/comments.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/sidebars.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/calendars.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/miniprofile.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/media_players.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/blueprint/print.css" media="print"/></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/new_navbars.css"/></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/top_banner.css"/></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/mobile.css"/></link>
+            <link type="text/css" rel="stylesheet" href="/static/font-awesome-4.0.0/css/font-awesome.min.css"/></link>
+            <!--[if lt IE 8]>
+                <link rel="stylesheet" href="/static/css/blueprint/ie.css" type="text/css" media="screen, projection"></link>
+            <![endif]-->
+         
+            <!--[if IE]>
+                <link rel="stylesheet" type="text/css" href="/static/css/ie.css"  />
+            <![endif]-->
+
+            <!-- LOCAL CSS -->
+            
+	<link rel="stylesheet" href="/static/css/editorial.css" type="text/css" media="screen" charset="utf-8" />
+
+            
+            
+            
+            
+            
+            
+
+            
+            
+        
+        
+        
+        
+            <!-- GLOBAL JAVASCRIPT -->
+            <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+            <script type="text/javascript">window.__admin_media_prefix__ = "/static/admin/";</script>
+            <script type="text/javascript">window.__static_url__ = "/static/";</script>
+            <script type="text/javascript">var STATIC_URL = "/static/";</script>
+            <script type="text/javascript">window.SERVER_NAME = "rhizome.org";</script>
+
+            <script type="text/javascript" src="/static/js/mootools-core-1.3.2-yc.js"></script>
+            <script type="text/javascript" src="/static/js/mootools-more-1.3.2.1.js"></script>
+            <script type="text/javascript" src="/static/js/rhizome.js"></script>
+            <script type="text/javascript" src="/static/media_players/flowplayer/flowplayer-3.2.2.min.js"></script>
+            <script type="text/javascript" src="/static/media_players/soundmanager/script/soundmanager2-nodebug-jsmin.js"></script>
+            <script type="text/javascript" src="/static/media_players/soundmanager/script/inlineplayer.js"></script>
+            <script type="text/javascript" src="/static/js/carousel/PeriodicalExecuter.js"></script>
+            <script type="text/javascript" src="/static/js/carousel/Carousel.js"></script>
+            
+            <script type="text/javascript">
+                soundManager.url = '/static/media_players/soundmanager/swf/';
+                //soundManager.flashVersion = 9; // optional: shiny features (default = 8)
+                soundManager.useFlashBlock = true; // optionally, enable when you're ready to dive in
+                // enable HTML5 audio support, if you're feeling adventurous.
+                soundManager.useHTML5Audio = true;
+                soundManager.debugMode = 0; // disable or enable debug output
+                soundManager.useFlashBlock = 0;
+                //soundManager.useMovieStar = true;
+            </script>
+
+            <script type="text/javascript" src="/static/js/jquery-1.10.2.min.js"></script>
+            <!-- LOCAL  JAVASCRIPT-->              
+            
+            
+                   
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <script type="text/javascript">
+                
+                
+                
+            </script>
+        
+        
+        <!--RSS HEADER -->
+        
+        
+
+        <!-- Quantcast Tag, part 1 -->
+        <script type="text/javascript">
+            var _qevents = _qevents || [];
+            (function() {
+                var elem = document.createElement('script');
+                elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge")  
+                            + ".quantserve.com/quant.js";
+                elem.async = true;
+                elem.type = "text/javascript";
+                var scpt = document.getElementsByTagName('script')[0];
+                scpt.parentNode.insertBefore(elem, scpt);  
+            })();
+        </script>
+    </head>
+        
+    <body class="blog post_list">
+        
+        
+        
+    <div id="new_header">
+    <ul>
+        
+            <li><a  href="/?ref=header">Rhizome</a></li>
+        
+            <li><a class="active" href="/editorial/?ref=header">Journal</a></li>
+        
+            <li><a  href="/artbase/featured/?ref=header">Artbase</a></li>
+        
+            <li><a  href="/community/?ref=header">Community</a></li>
+        
+            <li><a  href="/programs/?ref=header">Programs</a></li>
+        
+
+        <li id="search">
+            <form action="/search/" method="get">
+                <input type="text" name="q" placeholder=""><a id="search-addon"><i class="fa fa-search"></i></a>
+            </form>
+        </li>
+
+        <li id="account">
+            
+                <a href="/login/?ref=header"><i class="fa fa-key"></i></a>
+            
+        </li>
+    </ul>
+</div>
+
+<div id="new_footer">
+    <ul>
+        
+            
+        
+            <li><a class="active" href="/editorial/?ref=footer"><span class="underline">Journal</span> &raquo;</a></li>
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+
+        
+            <li><a class="active" href="/editorial/artist-profiles/?ref=footer">Artist Profiles</a></li>
+        
+            <li><a  href="/editorial/tag/surf-report/?ref=footer">Surf Reports</a></li>
+        
+            <li><a  href="/editorial/tag/e-cig-in-context/?ref=footer">E-Cig in Context</a></li>
+        
+
+        
+
+        
+            <li class="reversed"><a  href="/support/donate/?ref=footer">Membership</a></li>
+        
+            <li class="reversed"><a  href="/about/?ref=footer">About Us</a></li>
+        
+    </ul>
+</div>
+
+
+
+        
+                 
+          
+        
+
+                 
+        
+             
+         
+            
+                        
+        <div id="content" class="container ">
+            
+
+<div id = "artists-profiles" class="column-wrapper span-24">
+
+    <div class= "left-column span-15">
+        <div class="section-row-titles">Artist Profiles</div>   
+        <hr class="hr3">
+<!--
+        
+        
+        <div id="main-image">
+            <img height = "" width=""src = "http://media.rhizome.org/" />
+        </div>
+        
+-->
+        
+        <div id="groups">
+        
+            <div class="group">
+                <div class="group-letter">A</div>
+                
+                    <a href="/editorial/2014/jan/31/artist-profile-morehshin-allahyari"> Morehshin Allahyari</a> <span class="byline">by Daniel Rourke (Jan 31st, 2014)</span><br />
+                
+                    <a href="/editorial/2013/jan/21/artist-profile-ed-atkins"> Ed Atkins</a> <span class="byline">by Giampaolo Bianconi (Jan 21st, 2013)</span><br />
+                
+                    <a href="/editorial/2012/dec/11/artist-profile-rewell-altunaga"> Rewell Altunaga</a> <span class="byline">by Maura Lucking (Dec 11th, 2012)</span><br />
+                
+                    <a href="/editorial/2012/aug/6/artist-profile-michele-abeles"> Michele Abeles</a> <span class="byline">by Giampaolo Bianconi (Aug 6th, 2012)</span><br />
+                
+                    <a href="/editorial/2012/jul/12/artist-profile-nadim-abbas"> Nadim Abbas</a> <span class="byline">by Giampaolo Bianconi (Jul 12th, 2012)</span><br />
+                
+                    <a href="/editorial/2012/jul/2/artist-profile-korakrit"> Korakrit Arunanondchai</a> <span class="byline">by Giampaolo Bianconi (Jul 2nd, 2012)</span><br />
+                
+                    <a href="/editorial/2012/mar/1/artist-profile-heba-amin"> Heba Amin</a> <span class="byline">by Yin Ho (Mar 1st, 2012)</span><br />
+                
+                    <a href="/editorial/2011/dec/8/artist-profile-rene-abythe"> Rene Abythe</a> <span class="byline">by Orit Gat (Dec 8th, 2011)</span><br />
+                
+            </div>
+
+        
+            <div class="group">
+                <div class="group-letter">B</div>
+                
+                    <a href="/editorial/2014/jul/24/genevieve_belleveau"> Genevieve Belleveau</a> <span class="byline">by Jesse Darling (Jul 24th, 2014)</span><br />
+                
+                    <a href="/editorial/2013/jul/15/artist-profile-nick-briz"> Nick Briz</a> <span class="byline">by Daniel Rourke (Jul 15th, 2013)</span><br />
+                
+                    <a href="/editorial/2013/feb/26/artist-profile-jeff-baij"> Jeff Baij</a> <span class="byline">by Brian Droitcour (Feb 26th, 2013)</span><br />
+                
+                    <a href="/editorial/2012/nov/21/artist-profile-body-body"> Body by Body</a> <span class="byline">by Giampaolo Bianconi (Nov 21st, 2012)</span><br />
+                
+                    <a href="/editorial/2012/oct/16/artist-profile-katriona-beales"> Katriona Beales</a> <span class="byline">by Morgan Quaintance (Oct 16th, 2012)</span><br />
+                
+                    <a href="/editorial/2012/jun/18/artist-profile-christopher-baker"> Christopher Baker</a> <span class="byline">by Yin Ho (Jun 18th, 2012)</span><br />
+                
+                    <a href="/editorial/2012/mar/26/artist-profile-juliette-bonneviot"> Juliette Bonneviot</a> <span class="byline">by Orit Gat (Mar 26th, 2012)</span><br />
+                
+                    <a href="/editorial/2011/nov/21/artist-profile-steve-bishop"> Steve Bishop</a> <span class="byline">by Orit Gat (Nov 21st, 2011)</span><br />
+                
+                    <a href="/editorial/2011/sep/24/artist-profile-daniel-bejar"> Daniel Bejar</a> <span class="byline">by Jason Huff (Sep 24th, 2011)</span><br />
+                
+                    <a href="/editorial/2011/aug/24/artist-profile-aram-bartholl"> Aram Bartholl</a> <span class="byline">by Ian Glover (Aug 24th, 2011)</span><br />
+                
+                    <a href="/editorial/2011/aug/22/artist-profile-laura-brothers"> Laura Brothers</a> <span class="byline">by Jason Huff (Aug 22nd, 2011)</span><br />
+                
+            </div>
+
+        
+            <div class="group">
+                <div class="group-letter">C</div>
+                
+                    <a href="/editorial/2012/jul/23/artist-profile-paolo-cirio"> Paolo Cirio</a> <span class="byline">by Giampaolo Bianconi (Jul 23rd, 2012)</span><br />
+                
+                    <a href="/editorial/2012/apr/4/artist-profile-antoine-catala"> Antoine Catala</a> <span class="byline">by Rachel Wetzler (Apr 4th, 2012)</span><br />
+                
+                    <a href="/editorial/2011/dec/14/artist-profile-ofri-cnaani"> Ofri Cnaani</a> <span class="byline">by Orit Gat (Dec 14th, 2011)</span><br />
+                
+                    <a href="/editorial/2011/oct/11/artist-profile-keren-cytter"> Keren Cytter</a> <span class="byline">by Orit Gat (Oct 11th, 2011)</span><br />
+                
+                    <a href="/editorial/2011/sep/7/artist-profile-petra-cortright"> Petra Cortright</a> <span class="byline">by Ian Glover (Sep 7th, 2011)</span><br />
+                
+                    <a href="/editorial/2011/aug/4/artist-profile-jacob-ciocci"> Jacob Ciocci</a> <span class="byline">by Ian Glover (Aug 4th, 2011)</span><br />
+                
+            </div>
+
+        
+            <div class="group">
+                <div class="group-letter">D</div>
+                
+                    <a href="/editorial/2012/nov/5/artist-profile-jesse-darling"> Jesse Darling</a> <span class="byline">by Giampaolo Bianconi (Nov 5th, 2012)</span><br />
+                
+                    <a href="/editorial/2011/oct/31/artist-profile-aleksandra-domanovic"> Aleksandra Domanovic</a> <span class="byline">by Jason Huff (Oct 31st, 2011)</span><br />
+                
+                    <a href="/editorial/2011/oct/13/artist-profile-simon-denny"> Simon Denny</a> <span class="byline">by Orit Gat (Oct 13th, 2011)</span><br />
+                
+            </div>
+
+        
+            <div class="group">
+                <div class="group-letter">E</div>
+                
+                    <a href="/editorial/2012/aug/14/artist-profile-cecile-b-evans"> Cecile B. Evans </a> <span class="byline">by Ana Alvarez (Aug 14th, 2012)</span><br />
+                
+                    <a href="/editorial/2012/mar/13/artist-profile-cliff-evans"> Cliff Evans</a> <span class="byline">by Louis Doulas (Mar 13th, 2012)</span><br />
+                
+                    <a href="/editorial/2012/jan/17/artist-profile-jason-eppink"> Jason Eppink</a> <span class="byline">by Orit Gat (Jan 17th, 2012)</span><br />
+                
+            </div>
+
+        
+            <div class="group">
+                <div class="group-letter">F</div>
+                
+                    <a href="/editorial/2012/jul/30/artist-profile-flightphase"> Flightphase</a> <span class="byline">by Giampaolo Bianconi (Jul 30th, 2012)</span><br />
+                
+                    <a href="/editorial/2012/apr/2/artist-profile-ed-fornieles"> Ed Fornieles</a> <span class="byline">by joanne mcneil (Apr 2nd, 2012)</span><br />
+                
+            </div>
+
+        
+            <div class="group">
+                <div class="group-letter">G</div>
+                
+                    <a href="/editorial/2012/aug/2/artist-profile-simone-giordano"> Simone Giordano</a> <span class="byline">by Giampaolo Bianconi (Aug 2nd, 2012)</span><br />
+                
+                    <a href="/editorial/2012/may/30/artist-profile-jacqueline-kiyomi-gordon"> Jacqueline Kiyomi Gordon </a> <span class="byline">by Ceci Moss (May 30th, 2012)</span><br />
+                
+                    <a href="/editorial/2012/feb/22/artist-profile-michael-guidetti"> Michael Guidetti</a> <span class="byline">by Ceci Moss (Feb 22nd, 2012)</span><br />
+                
+                    <a href="/editorial/2011/nov/2/artist-profile-dave-greber"> Dave Greber</a> <span class="byline">by Ian Glover (Nov 2nd, 2011)</span><br />
+                
+            </div>
+
+        
+            <div class="group">
+                <div class="group-letter">H</div>
+                
+                    <a href="/editorial/2012/jun/11/artist-profile-adam-harvey"> Adam Harvey</a> <span class="byline">by Joanne McNeil (Jun 11th, 2012)</span><br />
+                
+                    <a href="/editorial/2012/mar/19/artist-profile-jesse-hulcher"> Jesse Hulcher</a> <span class="byline">by Louis Doulas (Mar 19th, 2012)</span><br />
+                
+                    <a href="/editorial/2012/mar/7/artist-profile"> Ann Hirsch</a> <span class="byline">by Karen Archey (Mar 7th, 2012)</span><br />
+                
+                    <a href="/editorial/2012/feb/14/tommy-hartung"> Tommy Hartung</a> <span class="byline">by Yin Ho (Feb 14th, 2012)</span><br />
+                
+                    <a href="/editorial/2011/sep/19/artist-profile-james-howard"> James Howard</a> <span class="byline">by Joanne McNeil (Sep 19th, 2011)</span><br />
+                
+            </div>
+
+        
+            <div class="group">
+                <div class="group-letter">J</div>
+                
+                    <a href="/editorial/2012/oct/23/artist-profile-matthew-johnstone"> Matthew Johnstone</a> <span class="byline">by Maura Lucking (Oct 23rd, 2012)</span><br />
+                
+            </div>
+
+        
+            <div class="group">
+                <div class="group-letter">K</div>
+                
+                    <a href="/editorial/2013/mar/21/artist-profile-paul-kneale"> Paul Kneale</a> <span class="byline">by Harry Burke (Mar 21st, 2013)</span><br />
+                
+                    <a href="/editorial/2012/jul/17/artist-profile-jk-keller"> JK Keller</a> <span class="byline">by Ana Alvarez (Jul 17th, 2012)</span><br />
+                
+                    <a href="/editorial/2012/may/29/artist-profile-lebohang-kganye"> Lebohang Kganye</a> <span class="byline">by Louis Doulas (May 29th, 2012)</span><br />
+                
+                    <a href="/editorial/2012/may/1/artist-profile-david-kraftsow"> David Kraftsow</a> <span class="byline">by Louis Doulas (May 1st, 2012)</span><br />
+                
+                    <a href="/editorial/2012/feb/23/artist-profile-mahmoud-khaled"> Mahmoud Khaled</a> <span class="byline">by Louis Doulas (Feb 23rd, 2012)</span><br />
+                
+            </div>
+
+        
+            <div class="group">
+                <div class="group-letter">L</div>
+                
+                    <a href="/editorial/2012/oct/25/artist-profile-andrea-longacre-white"> Andrea Longacre-White </a> <span class="byline">by Maura Lucking (Oct 25th, 2012)</span><br />
+                
+                    <a href="/editorial/2012/apr/25/artist-profile-sami-ben-larbi"> Sami Ben Larbi</a> <span class="byline">by Louis Doulas (Apr 25th, 2012)</span><br />
+                
+                    <a href="/editorial/2012/feb/9/artist-profile-liz-magic-laser"> Liz Magic Laser</a> <span class="byline">by Ian Glover (Feb 9th, 2012)</span><br />
+                
+                    <a href="/editorial/2011/dec/5/artist-profile-anna-lundh"> Anna Lundh</a> <span class="byline">by Orit Gat (Dec 5th, 2011)</span><br />
+                
+                    <a href="/editorial/2011/oct/12/artist-profile-sara-ludy"> Sara Ludy</a> <span class="byline">by Ian Glover (Oct 12th, 2011)</span><br />
+                
+                    <a href="/editorial/2011/aug/15/artist-profile-lovid"> LoVid (Tali Hinkis and Kyle Lapidus)</a> <span class="byline">by Jason Huff (Aug 15th, 2011)</span><br />
+                
+            </div>
+
+        
+            <div class="group">
+                <div class="group-letter">M</div>
+                
+                    <a href="/editorial/2014/apr/16/artist-profile-michael-manning"> Michael Manning</a> <span class="byline">by Lindsay Howard (Apr 16th, 2014)</span><br />
+                
+                    <a href="/editorial/2013/dec/18/artist-profile-kimmo-modig"> Kimmo Modig</a> <span class="byline">by Jesse Darling (Dec 18th, 2013)</span><br />
+                
+                    <a href="/editorial/2013/apr/3/artist-profile-alex-myers"> Alex Myers</a> <span class="byline">by Daniel Rourke (Apr 3rd, 2013)</span><br />
+                
+                    <a href="/editorial/2012/feb/16/artist-profile-haroon-mirza"> Haroon Mirza</a> <span class="byline">by Louis Doulas (Feb 16th, 2012)</span><br />
+                
+                    <a href="/editorial/2011/nov/8/artist-profile-jill-magid"> Jill Magid</a> <span class="byline">by Jason Huff (Nov 8th, 2011)</span><br />
+                
+                    <a href="/editorial/2011/oct/20/artist-profile-rosa-menkmen"> Rosa Menkman</a> <span class="byline">by Jason Huff (Oct 20th, 2011)</span><br />
+                
+                    <a href="/editorial/2011/sep/21/artist-profile-brenna-murphy"> Brenna Murphy</a> <span class="byline">by Ian Glover (Sep 21st, 2011)</span><br />
+                
+                    <a href="/editorial/2011/aug/10/artist-profile-duncan-malashock"> Duncan Malashock</a> <span class="byline">by Joanne McNeil (Aug 10th, 2011)</span><br />
+                
+            </div>
+
+        
+            <div class="group">
+                <div class="group-letter">N</div>
+                
+                    <a href="/editorial/2012/jan/19/artist-profile-huong-ngo"> Huong Ngo</a> <span class="byline">by Ian Glover (Jan 19th, 2012)</span><br />
+                
+            </div>
+
+        
+            <div class="group">
+                <div class="group-letter">O</div>
+                
+                    <a href="/editorial/2012/sep/5/artist-profile-julian-oliver"> Julian Oliver</a> <span class="byline">by Jason Huff (Sep 5th, 2012)</span><br />
+                
+                    <a href="/editorial/2011/sep/29/artist-profile-mendi-keith-obadike"> Mendi + Keith Obadike</a> <span class="byline">by Jason Huff (Sep 29th, 2011)</span><br />
+                
+            </div>
+
+        
+            <div class="group">
+                <div class="group-letter">P</div>
+                
+                    <a href="/editorial/2014/jul/29/artist-profile-heather-phillipson"> Heather Phillipson</a> <span class="byline">by Lindsay Howard (Jul 29th, 2014)</span><br />
+                
+                    <a href="/editorial/2013/mar/7/artist-profile-sascha-pohflepp"> Sascha Pohflepp</a> <span class="byline">by Giampaolo Bianconi (Mar 7th, 2013)</span><br />
+                
+                    <a href="/editorial/2012/jun/28/artist-profile-hannah-perry"> Hannah Perry</a> <span class="byline">by Alex Freedman (Jun 28th, 2012)</span><br />
+                
+                    <a href="/editorial/2012/jun/4/artist-profile-bradley-pitts"> Bradley Pitts </a> <span class="byline">by Louis Doulas (Jun 4th, 2012)</span><br />
+                
+                    <a href="/editorial/2012/apr/12/artist-profile-laure-prouvost"> Laure Prouvost</a> <span class="byline">by Louis Doulas (Apr 12th, 2012)</span><br />
+                
+                    <a href="/editorial/2012/mar/22/artist-profile-jaakko-pallasvuo"> Jaakko Pallasvuo</a> <span class="byline">by Louis Doulas (Mar 22nd, 2012)</span><br />
+                
+                    <a href="/editorial/2011/aug/18/artist-profile-angelo-plessas"> Angelo Plessas</a> <span class="byline">by Jason Huff (Aug 18th, 2011)</span><br />
+                
+            </div>
+
+        
+            <div class="group">
+                <div class="group-letter">R</div>
+                
+                    <a href="/editorial/2013/oct/25/artist-profile-steve-roggenbuck"> Steve Roggenbuck</a> <span class="byline">by Laura Davidson (Oct 25th, 2013)</span><br />
+                
+                    <a href="/editorial/2013/sep/19/artist-profile-rachel-reupke"> Rachel Reupke </a> <span class="byline">by Laura McLean-Ferris (Sep 19th, 2013)</span><br />
+                
+                    <a href="/editorial/2012/may/15/artist-profile-bunny-rogers"> Bunny Rogers</a> <span class="byline">by Louis Doulas (May 15th, 2012)</span><br />
+                
+                    <a href="/editorial/2012/mar/29/artist-profile-mike-ruiz"> Mike Ruiz</a> <span class="byline">by Louis Doulas (Mar 29th, 2012)</span><br />
+                
+                    <a href="/editorial/2011/dec/1/artist-profile-sabrina-ratte"> Sabrina Ratté</a> <span class="byline">by Zoë Salditch (Dec 1st, 2011)</span><br />
+                
+                    <a href="/editorial/2011/aug/8/artist-profile-tabor-robak"> Tabor Robak</a> <span class="byline">by Ian Glover (Aug 8th, 2011)</span><br />
+                
+            </div>
+
+        
+            <div class="group">
+                <div class="group-letter">S</div>
+                
+                    <a href="/editorial/2014/may/27/artist-profile-edward-marshall-shenk"> Edward Marshall Shenk</a> <span class="byline">by Zachary Kaplan (May 27th, 2014)</span><br />
+                
+                    <a href="/editorial/2014/jan/9/artist-profile-jacolby-satterwhite"> Jacolby Satterwhite</a> <span class="byline">by Kei Kreutler (Jan 9th, 2014)</span><br />
+                
+                    <a href="/editorial/2013/oct/8/artist-profile-erica-scourti"> Erica Scourti</a> <span class="byline">by Daniel Rourke (Oct 8th, 2013)</span><br />
+                
+                    <a href="/editorial/2012/apr/16/artist-profile-hannah-sawtell"> Hannah Sawtell</a> <span class="byline">by Yin Ho (Apr 16th, 2012)</span><br />
+                
+                    <a href="/editorial/2012/mar/28/artist-profile-kate-steciw"> Kate Steciw</a> <span class="byline">by Yin Ho (Mar 28th, 2012)</span><br />
+                
+                    <a href="/editorial/2012/feb/1/artist-profile-rick-silva"> Rick Silva</a> <span class="byline">by Zoë Salditch (Feb 1st, 2012)</span><br />
+                
+                    <a href="/editorial/2011/sep/27/artist-profile-paul-slocum"> Paul Slocum</a> <span class="byline">by Orit Gat (Sep 27th, 2011)</span><br />
+                
+            </div>
+
+        
+            <div class="group">
+                <div class="group-letter">T</div>
+                
+                    <a href="/editorial/2012/jun/13/artist-profile-daniel-temkin"> Daniel Temkin</a> <span class="byline">by Giampaolo Bianconi (Jun 13th, 2012)</span><br />
+                
+                    <a href="/editorial/2012/apr/18/artist-profile-jordan-tate"> Jordan Tate</a> <span class="byline">by Jason Huff (Apr 18th, 2012)</span><br />
+                
+            </div>
+
+        
+            <div class="group">
+                <div class="group-letter">U</div>
+                
+                    <a href="/editorial/2012/nov/7/artist-profile-amalia-ulman"> Amalia Ulman</a> <span class="byline">by Maura Lucking (Nov 7th, 2012)</span><br />
+                
+            </div>
+
+        
+            <div class="group">
+                <div class="group-letter">V</div>
+                
+                    <a href="/editorial/2012/jan/3/artist-profile-clement-valla"> Clement Valla</a> <span class="byline">by Zoë Salditch (Jan 3rd, 2012)</span><br />
+                
+                    <a href="/editorial/2011/nov/10/artist-profile-artie-vierkant"> Artie Vierkant</a> <span class="byline">by Ian Glover (Nov 10th, 2011)</span><br />
+                
+            </div>
+
+        
+            <div class="group">
+                <div class="group-letter">W</div>
+                
+                    <a href="/editorial/2013/feb/21/artist-profile-lance-wakeling"> Lance Wakeling</a> <span class="byline">by Karen Archey (Feb 21st, 2013)</span><br />
+                
+                    <a href="/editorial/2012/jan/31/artist-profile-joe-winter"> Joe Winter</a> <span class="byline">by Ceci Moss (Jan 31st, 2012)</span><br />
+                
+                    <a href="/editorial/2011/oct/6/artist-profile-krist-wood"> Krist Wood</a> <span class="byline">by Orit Gat (Oct 6th, 2011)</span><br />
+                
+            </div>
+
+        
+            <div class="group">
+                <div class="group-letter">Z</div>
+                
+                    <a href="/editorial/2011/oct/3/artist-profile-marina-zurkow"> Marina Zurkow</a> <span class="byline">by Orit Gat (Oct 3rd, 2011)</span><br />
+                
+            </div>
+
+            
+        </div>    
+    </div>
+
+    <div class= "right-column span-8">
+      <div id="nectar-ads">
+    <div id="featured-ad">
+        <div style="height: 600px; width: 300px" id="azk1"></div>    
+    </div>
+    
+    <div id="adsquares">
+        <div style="height: 141; width: 137;" id="azk2"></div>
+        
+        <div style="height: 141; width: 137;" id="azk3"></div>
+        
+        <div style="height: 141; width: 137;" id="azk4"></div>
+        
+        <div style="height: 141; width: 137;" id="azk5"></div>
+    </div>
+    <div>
+        <a style="font-weight:bold;" href="http://nectarads.com">Advertise on Rhizome with Nectar Ads</a>
+    </div>
+</div>
+        
+    </div>
+
+</div>
+
+        </div>
+        
+        <div id="preload"></div>
+
+
+
+        <!-- Quantcast Tag, part 2 -->
+        <script type="text/javascript">
+            _qevents.push( { qacct:"p-1bU5CKetpvMBI", labels:"artmedia" } );
+        </script>
+        <noscript>
+            <div style="display: none;">
+                <img src="//pixel.quantserve.com/pixel/p-1bU5CKetpvMBI.gif?labels=artmedia" height="1" width="1" alt="Quantcast"/>
+            </div>
+        </noscript>
+
+        
+        
+
+        <script>
+        jQuery.noConflict();
+        (function($) {
+            $(function() {
+                $('.share-btn-cover').click(function() {
+                    $(this).hide();
+                    $(this).siblings('.share-btn').css({'display': 'inline-block'});
+                    return false;
+                });
+            });
+        })(jQuery);
+        </script>
+        <script type="text/javascript" src="/static/js/new_navbars.js"></script>
+        
+
+        
+            <script type="text/javascript">
+                var z=document.createElement("script");
+                z.type="text/javascript";
+                z.async=true;
+                z.src="//engine.nectarads.com/z/12843/azk1_2_43,azk2_2_16,azk3_2_16,azk4_2_16,azk5_2_16";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(z, s);
+            </script>
+        
+
+
+
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-768502-1', 'rhizome.org');
+          ga('send', 'pageview');
+
+        </script>
+    
+        <script type="text/javascript">
+            (function() {
+            var src = document.createElement('script'); 
+            src.async = true;
+            src.src = document.location.protocol + '//platform.twitter.com/widgets.js';
+            document.getElementsByTagName('head')[0].appendChild(src);
+            }());                        
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+            po.src = 'https://apis.google.com/js/plusone.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+          })();
+        </script>
+        
+        <script type="text/javascript">
+            var _sf_async_config={uid:26954,domain:"rhizome.org"};
+            (function(){
+              function loadChartbeat() {
+                window._sf_endpt=(new Date()).getTime();
+                var e = document.createElement('script');
+                e.setAttribute('language', 'javascript');
+                e.setAttribute('type', 'text/javascript');
+                e.setAttribute('src',
+                   (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+                   "js/chartbeat.js");
+                document.body.appendChild(e);
+              }
+              var oldonload = window.onload;
+              window.onload = (typeof window.onload != 'function') ?
+                 loadChartbeat : function() { oldonload(); loadChartbeat(); };
+            })();
+        </script>        
+    </body>
+</html>

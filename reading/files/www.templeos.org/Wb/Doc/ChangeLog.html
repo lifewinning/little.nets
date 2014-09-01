@@ -1,0 +1,423 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=US-ASCII">
+<title>The Temple Operating System</title>
+<meta name="keywords" content="Operating System,64-Bit,64 Bit,Temple,OS,TempleOS,Free,Open Source,Public Domain,x86_64">
+<meta name="generator" content="TempleOS V2.15">
+<style type="text/css">
+.c0F{color:#fcfcfc;background-color:#000000;}
+.cF0{color:#000000;background-color:#fcfcfc;}
+.cF1{color:#0000a8;background-color:#fcfcfc;}
+.cF2{color:#00a800;background-color:#fcfcfc;}
+.cF3{color:#00a8a8;background-color:#fcfcfc;}
+.cF4{color:#a80000;background-color:#fcfcfc;}
+.cF5{color:#a800a8;background-color:#fcfcfc;}
+.cF6{color:#a85400;background-color:#fcfcfc;}
+.cF7{color:#a8a8a8;background-color:#fcfcfc;}
+.cF8{color:#545454;background-color:#fcfcfc;}
+.cF9{color:#5454fc;background-color:#fcfcfc;}
+.cFA{color:#54fc54;background-color:#fcfcfc;}
+.cFB{color:#54fcfc;background-color:#fcfcfc;}
+.cFC{color:#fc5454;background-color:#fcfcfc;}
+.cFD{color:#fc54fc;background-color:#fcfcfc;}
+.cFE{color:#fcfc54;background-color:#fcfcfc;}
+.cFF{color:#fcfcfc;background-color:#fcfcfc;}
+</style>
+</head>
+<body>
+<pre style="font-family:courier;font-size:10pt">
+<a name="l1"></a></blink><span class=cF0> </span><span class=cF5>                                  Change Log</span><span class=cF0>
+<a name="l2"></a>
+<a name="l3"></a>Use </span><a href="http://www.templeos.org/Wb/Accts/TS/TAD/Adam3dWrappers.html#l13"></blink><span class=cF4>R</span></a></blink><span class=cF0>() to rename if I change a label.
+<a name="l4"></a>
+<a name="l5"></a></span><span class=c0F>----08/29/14 15:45:55----</span><span class=cF0>
+<a name="l6"></a>* </span><span class=cF0><blink>TempleOS version 2.15 Released</blink></span><span class=cF0>
+<a name="l7"></a>
+<a name="l8"></a></span><span class=c0F>----08/24/14 22:23:25----</span><span class=cF0>
+<a name="l9"></a>* Added </span><a href="../Kernel/Adam1a.html#l348"></blink><span class=cF4>CSysLimitBase</span></a></blink><span class=cF0>.
+<a name="l10"></a>* </span><a href="http://www.templeos.org/Wb/Accts/TS/TAD/Adam3dWrappers.html#l13"></blink><span class=cF4>R</span></a></blink><span class=cF0>(&quot;SYS_BOOT_CODE&quot;,&quot;SYS_BOOT_SRC&quot;);
+<a name="l11"></a>* </span><a href="http://www.templeos.org/Wb/Accts/TS/TAD/Adam3dWrappers.html#l13"></blink><span class=cF4>R</span></a></blink><span class=cF0>(&quot;SoftBoot&quot;,&quot;RAMReboot&quot;);
+<a name="l12"></a>* Replaced </span><span class=cF4>SYS_GR_MODE</span><span class=cF0> with </span><a href="../Kernel/Adam1a.html#l455"></blink><span class=cF4>RLF_VGA</span></a></blink><span class=cF0>.
+<a name="l13"></a>* Improved </span><a href="../Adam/Boot/InsBoot.html#l58"></blink><span class=cF4>RAMReboot</span></a></blink><span class=cF0>().
+<a name="l14"></a>
+<a name="l15"></a></span><span class=c0F>----08/23/14 07:50:44----</span><span class=cF0>
+<a name="l16"></a>* Changed key cmd </span><span class=cF2>&lt;ALT-w&gt;</span><span class=cF0> to </span><span class=cF2>&lt;Alt-a&gt;</span><span class=cF0>.
+<a name="l17"></a>
+<a name="l18"></a></span><span class=c0F>----08/22/14 12:11:29----</span><span class=cF0>
+<a name="l19"></a>* </span><a href="http://www.templeos.org/Wb/Accts/TS/TAD/Adam3dWrappers.html#l13"></blink><span class=cF4>R</span></a></blink><span class=cF0>(&quot;VGA_SC_INDEX&quot;,&quot;VGAP_INDEX&quot;);
+<a name="l20"></a>
+<a name="l21"></a></span><span class=c0F>----08/18/14 16:25:32----</span><span class=cF0>
+<a name="l22"></a>* </span><span class=cF0><blink>TempleOS version 2.14 Released</blink></span><span class=cF0>
+<a name="l23"></a>
+<a name="l24"></a></span><span class=c0F>----08/11/14 16:13:49----</span><span class=cF0>
+<a name="l25"></a>* </span><a href="http://www.templeos.org/Wb/Accts/TS/TAD/Adam3dWrappers.html#l13"></blink><span class=cF4>R</span></a></blink><span class=cF0>(&quot;BOOT_HIGH_LOC&quot;,&quot;BOOT_HIGH_LOC_CD&quot;);
+<a name="l26"></a>
+<a name="l27"></a></span><span class=c0F>----08/10/14 11:54:16----</span><span class=cF0>
+<a name="l28"></a>* Added </span><a href="../Adam/Gr/GrDC.html#l44"></blink><span class=cF4>GrRotNormSqr65536</span></a></blink><span class=cF0>().
+<a name="l29"></a>* Improved </span><a href="../Demo/Games/BugBird.html#l1"></blink><span class=cF4>::/Demo/Games/BugBird.CPP.Z</span></a></blink><span class=cF0>.
+<a name="l30"></a>
+<a name="l31"></a></span><span class=c0F>----08/08/14 18:02:04----</span><span class=cF0>
+<a name="l32"></a>* Added </span><a href="../Apps/Psalmody/Examples/lob.html#l1"></blink><span class=cF4>::/Apps/Psalmody/Examples/lob.CPP</span></a></blink><span class=cF0>.
+<a name="l33"></a>
+<a name="l34"></a></span><span class=c0F>----08/08/14 11:03:13----</span><span class=cF0>
+<a name="l35"></a>* Improved </span><a href="../Demo/Snd/WaterFowl.html#l1"></blink><span class=cF4>::/Demo/Snd/WaterFowl.CPP</span></a></blink><span class=cF0>.
+<a name="l36"></a>* Added 24-Bit to </span><a href="../Adam/Utils/FileBMP.html#l196"></blink><span class=cF4>BMPFileRead</span></a></blink><span class=cF0>().
+<a name="l37"></a>
+<a name="l38"></a></span><span class=c0F>----08/06/14 05:14:23----</span><span class=cF0>
+<a name="l39"></a>* Fixed compiler bug in &quot;yoda conditionals&quot;.
+<a name="l40"></a>* Optimized compiler on float comparisons to zero. 
+<a name="l41"></a>
+<a name="l42"></a></span><span class=c0F>----08/05/14 14:12:02----</span><span class=cF0>
+<a name="l43"></a>* </span><span class=cF0><blink>TempleOS version 2.13 Released</blink></span><span class=cF0>
+<a name="l44"></a>
+<a name="l45"></a></span><span class=c0F>----08/04/14 05:06:02----</span><span class=cF0>
+<a name="l46"></a>* Got rid of markov matrix in AutoComplete.  Renamed &quot;WordStat&quot;, &quot;AutoComplete&quot;.
+<a name="l47"></a>
+<a name="l48"></a></span><span class=c0F>----07/30/14 20:27:02----</span><span class=cF0>
+<a name="l49"></a>* Added symmetry to </span><a href="../Adam/God/GodDoodle.html#l75"></blink><span class=cF4>GodDoodleSprite</span></a></blink><span class=cF0>().
+<a name="l50"></a>
+<a name="l51"></a></span><span class=c0F>----07/26/14 11:19:00----</span><span class=cF0>
+<a name="l52"></a>* Got rid of &quot;raw&quot; arg on disk I/O routines for uncompressed data.
+<a name="l53"></a>
+<a name="l54"></a></span><span class=c0F>----07/22/14 08:31:58----</span><span class=cF0>
+<a name="l55"></a>* </span><span class=cF0><blink>TempleOS version 2.12 Released</blink></span><span class=cF0>
+<a name="l56"></a>* Fixed bug in assembler in
+<a name="l57"></a>        MOV R8-R15,UIMM32
+<a name="l58"></a>
+<a name="l59"></a></span><span class=c0F>----07/12/14 02:06:10----</span><span class=cF0>
+<a name="l60"></a>* Fixed bug clicking on icon.
+<a name="l61"></a>
+<a name="l62"></a></span><span class=c0F>----07/08/14 04:33:20----</span><span class=cF0>
+<a name="l63"></a>* I changed </span><a href="../Adam/God/GodDoodle.html#l75"></blink><span class=cF4>GodDoodleSprite</span></a></blink><span class=cF0>().
+<a name="l64"></a>
+<a name="l65"></a></span><span class=c0F>----06/30/14 02:32:47----</span><span class=cF0>
+<a name="l66"></a>* Changed max FPS to 30 instead of 60.
+<a name="l67"></a>* Got rid of min and max FPS control.
+<a name="l68"></a>* </span><a href="http://www.templeos.org/Wb/Accts/TS/TAD/Adam3dWrappers.html#l13"></blink><span class=cF4>R</span></a></blink><span class=cF0>(&quot;refresh&quot;,&quot;FPS&quot;);
+<a name="l69"></a>
+<a name="l70"></a></span><span class=c0F>----06/20/14 12:02:44----</span><span class=cF0>
+<a name="l71"></a>* </span><span class=cF0><blink>TempleOS version 2.11 Released</blink></span><span class=cF0>
+<a name="l72"></a>
+<a name="l73"></a></span><span class=c0F>----06/16/14 13:09:10----</span><span class=cF0>
+<a name="l74"></a>* Added </span><a href="../Kernel/Adam1a.html#l925"></blink><span class=cF4>DOCT_LST</span></a></blink><span class=cF0>, list widgets.  See </span><a href="../Demo/DolDoc/Form.html#l1"></blink><span class=cF4>::/Demo/DolDoc/Form.CPP</span></a></blink><span class=cF0>.
+<a name="l75"></a>
+<a name="l76"></a></span><span class=c0F>----06/13/14 21:27:17----</span><span class=cF0>
+<a name="l77"></a>* </span><a href="http://www.templeos.org/Wb/Accts/TS/TAD/Adam3dWrappers.html#l13"></blink><span class=cF4>R</span></a></blink><span class=cF0>(&quot;BootDrv&quot;,&quot;BootRescueDrv&quot;);
+<a name="l78"></a>* Fixed bug in &quot;Boot Rescue Drive&quot; feature.
+<a name="l79"></a>
+<a name="l80"></a></span><span class=c0F>----06/10/14 03:11:14----</span><span class=cF0>
+<a name="l81"></a>* </span><span class=cF0><blink>TempleOS version 2.10 Released</blink></span><span class=cF0>
+<a name="l82"></a>* Got rid of </span><span class=cF4>ImportHashTable</span><span class=cF0>().
+<a name="l83"></a>* Got rid of </span><span class=cF4>OldSchool</span><span class=cF0> demos.
+<a name="l84"></a>* </span><span class=cF2>AOT</span><span class=cF0> compilation has been removed.  Use </span><span class=cF2>JIT</span><span class=cF0>.
+<a name="l85"></a>
+<a name="l86"></a></span><span class=c0F>----06/02/14 13:52:50----</span><span class=cF0>
+<a name="l87"></a>* Improved HelpIndex.
+<a name="l88"></a>* Improved </span><a href="../Apps/TimeOut/TimeOut.html#l1"></blink><span class=cF4>::/Apps/TimeOut/TimeOut.CPP</span></a></blink><span class=cF0>.
+<a name="l89"></a>
+<a name="l90"></a></span><span class=c0F>----05/26/14 16:13:11----</span><span class=cF0>
+<a name="l91"></a>* </span><span class=cF0><blink>TempleOS version 2.09 Released</blink></span><span class=cF0>
+<a name="l92"></a>* Added BLINK to </span><a href="../Adam/Utils/ToHtml.html#l280"></blink><span class=cF4>ToHtml</span></a></blink><span class=cF0>().
+<a name="l93"></a>* </span><a href="http://www.templeos.org/Wb/Accts/TS/TAD/Adam3dWrappers.html#l13"></blink><span class=cF4>R</span></a></blink><span class=cF0>(&quot;DocHome&quot;,&quot;DocTop&quot;);
+<a name="l94"></a>
+<a name="l95"></a></span><span class=c0F>----05/24/14 20:46:11----</span><span class=cF0>
+<a name="l96"></a>* Got rid of </span><span class=cF4>Day</span><span class=cF0>(), </span><span class=cF4>Month</span><span class=cF0>(), </span><span class=cF4>Year</span><span class=cF0>(), etc.
+<a name="l97"></a>* </span><a href="http://www.templeos.org/Wb/Accts/TS/TAD/Adam3dWrappers.html#l13"></blink><span class=cF4>R</span></a></blink><span class=cF0>(&quot;ACDDisplayDefs&quot;,&quot;ACDDefsPut&quot;);
+<a name="l98"></a>* </span><a href="http://www.templeos.org/Wb/Accts/TS/TAD/Adam3dWrappers.html#l13"></blink><span class=cF4>R</span></a></blink><span class=cF0>(&quot;ACDGetDef&quot;,&quot;ACDDefGet&quot;);
+<a name="l99"></a>* </span><a href="http://www.templeos.org/Wb/Accts/TS/TAD/Adam3dWrappers.html#l13"></blink><span class=cF4>R</span></a></blink><span class=cF0>(&quot;ACDGetWord&quot;,&quot;ACDDefsGet&quot;);
+<a name="l100"></a>* </span><a href="http://www.templeos.org/Wb/Accts/TS/TAD/Adam3dWrappers.html#l13"></blink><span class=cF4>R</span></a></blink><span class=cF0>(&quot;ACDPtAtWord&quot;,&quot;WSWordPtAt&quot;);
+<a name="l101"></a>* </span><a href="http://www.templeos.org/Wb/Accts/TS/TAD/Adam3dWrappers.html#l13"></blink><span class=cF4>R</span></a></blink><span class=cF0>(&quot;WSGetHits&quot;,&quot;WSHitsGet&quot;);
+<a name="l102"></a>
+<a name="l103"></a></span><span class=c0F>----05/23/14 04:50:25----</span><span class=cF0>
+<a name="l104"></a>* </span><a href="http://www.templeos.org/Wb/Accts/TS/TAD/Adam3dWrappers.html#l13"></blink><span class=cF4>R</span></a></blink><span class=cF0>(&quot;SqrDist&quot;,&quot;DistSqr&quot;);
+<a name="l105"></a>* </span><a href="http://www.templeos.org/Wb/Accts/TS/TAD/Adam3dWrappers.html#l13"></blink><span class=cF4>R</span></a></blink><span class=cF0>(&quot;SqrNorm&quot;,&quot;NormSqr&quot;);
+<a name="l106"></a>
+<a name="l107"></a></span><span class=c0F>----05/16/14 15:43:17----</span><span class=cF0>
+<a name="l108"></a>* Added </span><a href="../Kernel/Adam1a.html#l1203"></blink><span class=cF4>DOF_DONT_WINMGR_SYNC</span></a></blink><span class=cF0>.
+<a name="l109"></a>* Fetches comments for help index reports.
+<a name="l110"></a>* Made src line links more accurate.
+<a name="l111"></a>
+<a name="l112"></a></span><span class=c0F>----05/15/14 06:45:33----</span><span class=cF0>
+<a name="l113"></a>* Added INVERT to </span><a href="../Adam/Utils/ToHtml.html#l280"></blink><span class=cF4>ToHtml</span></a></blink><span class=cF0>().
+<a name="l114"></a>
+<a name="l115"></a></span><span class=c0F>----05/13/14 07:05:00----</span><span class=cF0>
+<a name="l116"></a>* </span><span class=cF0><blink>TempleOS version 2.08 Released</blink></span><span class=cF0>
+<a name="l117"></a>
+<a name="l118"></a></span><span class=c0F>----05/11/14 08:22:44----</span><span class=cF0>
+<a name="l119"></a>* Added </span><a href="../Adam/Dsk/Dsk2b.html#l392"></blink><span class=cF4>Zip</span></a></blink><span class=cF0>() and </span><a href="../Adam/Dsk/Dsk2b.html#l412"></blink><span class=cF4>Unzip</span></a></blink><span class=cF0>().
+<a name="l120"></a>
+<a name="l121"></a></span><span class=c0F>----05/09/14 09:30:39----</span><span class=cF0>
+<a name="l122"></a>* Added </span><a href="../Adam/DolDoc/DocPopUp.html#l432"></blink><span class=cF4>PopUpEd</span></a></blink><span class=cF0>().
+<a name="l123"></a>* </span><a href="http://www.templeos.org/Wb/Accts/TS/TAD/Adam3dWrappers.html#l13"></blink><span class=cF4>R</span></a></blink><span class=cF0>(&quot;PopUpViewStr&quot;,&quot;PopUpViewPrint&quot;);
+<a name="l124"></a>
+<a name="l125"></a></span><span class=c0F>----05/07/14 19:12:42----</span><span class=cF0>
+<a name="l126"></a>* Added classes to help index.
+<a name="l127"></a>* </span><a href="../Adam/Gr/GrGlbls.html#l3"></blink><span class=cF4>CGrGlbls</span></a></blink><span class=cF0>              gr;
+<a name="l128"></a>* </span><a href="../Adam/DolDoc/Doc.html#l67"></blink><span class=cF4>CDolDocGlbls</span></a></blink><span class=cF0>          doldoc;
+<a name="l129"></a>* </span><a href="../Kernel/Adam1a.html#l2120"></blink><span class=cF4>CCmpGlbls</span></a></blink><span class=cF0>             cmp;
+<a name="l130"></a>* </span><a href="../Kernel/Adam1a.html#l2140"></blink><span class=cF4>CUasmGlbls</span></a></blink><span class=cF0>            uasm;
+<a name="l131"></a>* </span><a href="../Kernel/Adam1a.html#l3506"></blink><span class=cF4>CTextGlbls</span></a></blink><span class=cF0>            text;
+<a name="l132"></a>
+<a name="l133"></a></span><span class=c0F>----05/05/14 23:37:52----</span><span class=cF0>
+<a name="l134"></a>* </span><a href="../Adam/God/GodExt.html#l6"></blink><span class=cF4>CGodGlbls</span></a></blink><span class=cF0>             god;
+<a name="l135"></a>* </span><a href="../Adam/Snd/Music.html#l3"></blink><span class=cF4>CMusicGlbls</span></a></blink><span class=cF0>           music;
+<a name="l136"></a>* </span><a href="../Adam/AutoComplete/AutoComplete.html#l11"></blink><span class=cF4>CAutoCompleteGlbls</span></a></blink><span class=cF0>    ws;
+<a name="l137"></a>* </span><a href="../Adam/AutoComplete/AutoComplete.html#l54"></blink><span class=cF4>CAutoCompleteDictGlbls</span></a></blink><span class=cF0>        acd;
+<a name="l138"></a>
+<a name="l139"></a></span><span class=c0F>----05/05/14 19:54:46----</span><span class=cF0>
+<a name="l140"></a>* </span><a href="../Adam/WallPaper.html#l3"></blink><span class=cF4>CWallPaperGlbls</span></a></blink><span class=cF0>       *wall;
+<a name="l141"></a>* </span><a href="../Kernel/Adam1a.html#l1428"></blink><span class=cF4>CWinMgrTimingGlbls</span></a></blink><span class=cF0>    *winmgr.t;
+<a name="l142"></a>* </span><a href="../Kernel/Adam1a.html#l1442"></blink><span class=cF4>CWinMgrGlbls</span></a></blink><span class=cF0>          winmgr;
+<a name="l143"></a>* </span><a href="../Kernel/Adam1a.html#l3742"></blink><span class=cF4>CSndGlbls</span></a></blink><span class=cF0>             snd;
+<a name="l144"></a>* </span><a href="../Kernel/Adam1a.html#l2820"></blink><span class=cF4>CDevGlbls</span></a></blink><span class=cF0>             dev;
+<a name="l145"></a>* </span><a href="../Kernel/Adam1a.html#l2656"></blink><span class=cF4>CDskGlbls</span></a></blink><span class=cF0>             dsk;
+<a name="l146"></a>* </span><a href="../Kernel/Adam1a.html#l3769"></blink><span class=cF4>CDbgGlbls</span></a></blink><span class=cF0>             dbg;
+<a name="l147"></a>* </span><a href="../Kernel/Adam1a.html#l534"></blink><span class=cF4>CCntsGlbls</span></a></blink><span class=cF0>            cnts;
+<a name="l148"></a>* </span><a href="../Kernel/Adam1a.html#l3723"></blink><span class=cF4>CKeyDevGlbls</span></a></blink><span class=cF0>          keydev;
+<a name="l149"></a>* </span><a href="../Kernel/Adam1a.html#l2943"></blink><span class=cF4>CIPStateGlbls</span></a></blink><span class=cF0>         ip;
+<a name="l150"></a>* </span><a href="../Kernel/Adam1a.html#l2921"></blink><span class=cF4>CMouseStateGlbls</span></a></blink><span class=cF0>      mouse;
+<a name="l151"></a>* </span><a href="../Kernel/Adam1a.html#l2901"></blink><span class=cF4>CKbdStateGlbls</span></a></blink><span class=cF0>        kbd;
+<a name="l152"></a>
+<a name="l153"></a></span><span class=c0F>----05/05/14 09:14:51----</span><span class=cF0>
+<a name="l154"></a>* Added </span><span class=cF9>::/Apps/Budget</span><span class=cF0>.
+<a name="l155"></a>
+<a name="l156"></a></span><span class=c0F>----05/03/14 23:31:50----</span><span class=cF0>
+<a name="l157"></a>* Added </span><a href="../Kernel/Adam1a.html#l972"></blink><span class=cF4>DOCEF_USER_DATA</span></a></blink><span class=cF0> </span><span class=cF2>arg=</span><span class=cF0> flag.
+<a name="l158"></a>* </span><a href="http://www.templeos.org/Wb/Accts/TS/TAD/Adam3dWrappers.html#l13"></blink><span class=cF4>R</span></a></blink><span class=cF0>(&quot;Backward&quot;,&quot;Bwd&quot;);
+<a name="l159"></a>* Added </span><a href="../Apps/Budget/Budget.html#l1"></blink><span class=cF4>::/Apps/Budget/Budget.CPP</span></a></blink><span class=cF0>.
+<a name="l160"></a>
+<a name="l161"></a></span><span class=c0F>----04/30/14 23:41:42----</span><span class=cF0>
+<a name="l162"></a>* Added </span><a href="../Kernel/Adam1a.html#l371"></blink><span class=cF4>CBinFile</span></a></blink><span class=cF0>.signature.
+<a name="l163"></a>
+<a name="l164"></a></span><span class=c0F>----04/29/14 15:43:22----</span><span class=cF0>
+<a name="l165"></a>* </span><span class=cF0><blink>TempleOS version 2.07 Released</blink></span><span class=cF0>
+<a name="l166"></a>
+<a name="l167"></a></span><span class=c0F>----04/27/14 05:19:18----</span><span class=cF0>
+<a name="l168"></a>* Improved documentation.
+<a name="l169"></a>* Changed </span><a href="../Kernel/Adam1a.html#l371"></blink><span class=cF4>CBinFile</span></a></blink><span class=cF0> format.
+<a name="l170"></a>* Locked-in 640x480 with </span><a href="../Adam/Gr/GrAsm.html#l406"></blink><span class=cF4>GrUpdateLine64</span></a></blink><span class=cF0>().
+<a name="l171"></a>
+<a name="l172"></a></span><span class=c0F>----04/23/14 22:14:43----</span><span class=cF0>
+<a name="l173"></a>* Added </span><a href="../Demo/Lectures/NegDisp.html#l1"></blink><span class=cF4>::/Demo/Lectures/NegDisp.CPP</span></a></blink><span class=cF0>.
+<a name="l174"></a>* </span><a href="http://www.templeos.org/Wb/Accts/TS/TAD/Adam3dWrappers.html#l13"></blink><span class=cF4>R</span></a></blink><span class=cF0>(&quot;GrLineRect4&quot;,&quot;GrBorder&quot;);
+<a name="l175"></a>* Changed </span><a href="../Adam/Gr/GrTextBase.html#l1"></blink><span class=cF4>::/Adam/Gr/GrTextBase.CPP</span></a></blink><span class=cF0>.
+<a name="l176"></a>* Fixed terminal button on wallpaper.  Yikes!
+<a name="l177"></a>
+<a name="l178"></a></span><span class=c0F>----04/21/14 16:29:00----</span><span class=cF0>
+<a name="l179"></a>* Got rid of </span><span class=cF4>Spaces</span><span class=cF0>() and </span><span class=cF4>NewLine</span><span class=cF0>().  Replaced </span><span class=cF4>NewLine</span><span class=cF0>(5) with &quot;%h*c&quot;,5,'\n';
+<a name="l180"></a>* Improved profiler.
+<a name="l181"></a>* Changed </span><span class=cF4>CCPU.chained_timer_irq</span><span class=cF0> to </span><a href="../Kernel/Adam1a.html#l3348"></blink><span class=cF4>CCPU</span></a></blink><span class=cF0>.profiler_timer_irq.
+<a name="l182"></a>
+<a name="l183"></a></span><span class=c0F>----04/19/14 18:05:09----</span><span class=cF0>
+<a name="l184"></a>* Got rid of double spacing.
+<a name="l185"></a>* Fixed bug in page down.
+<a name="l186"></a>* Sorted headers and externs.
+<a name="l187"></a>
+<a name="l188"></a></span><span class=c0F>----04/18/14 21:45:17----</span><span class=cF0>
+<a name="l189"></a>* Improved documentation.
+<a name="l190"></a>
+<a name="l191"></a></span><span class=c0F>----04/16/14 15:49:13----</span><span class=cF0>
+<a name="l192"></a>* </span><span class=cF0><blink>TempleOS version 2.06 Released</blink></span><span class=cF0>
+<a name="l193"></a>
+<a name="l194"></a></span><span class=c0F>----04/15/14 12:29:02----</span><span class=cF0>
+<a name="l195"></a>* Got rid of lock-to-page and lock-to-center document features.
+<a name="l196"></a>* Changed </span><span class=cF2>$DA...$</span><span class=cF0> data type to use an arg.  </span><span class=cF2>$DA,-U64+U16,...$</span><span class=cF0> is now changed to </span><span class=cF2>
+<a name="l197"></a>$DA,RT=I16,...$</span><span class=cF0>.
+<a name="l198"></a>* </span><a href="http://www.templeos.org/Wb/Accts/TS/TAD/Adam3dWrappers.html#l13"></blink><span class=cF4>R</span></a></blink><span class=cF0>(&quot;DOCEF1_&quot;,&quot;DOCEF_&quot;);
+<a name="l199"></a>* Changed Fs-&gt;</span><a href="../Kernel/Adam1a.html#l1382"></blink><span class=cF4>win_inhibits</span></a></blink><span class=cF0>.
+<a name="l200"></a>
+<a name="l201"></a></span><span class=c0F>----04/13/14 16:20:11----</span><span class=cF0>
+<a name="l202"></a>* Added </span><a href="../Adam/DolDoc/Doc.html#l60"></blink><span class=cF4>LK_DOC</span></a></blink><span class=cF0>, </span><a href="../Adam/DolDoc/Doc.html#l61"></blink><span class=cF4>LK_DOC_ANCHOR</span></a></blink><span class=cF0>, </span><a href="../Adam/DolDoc/Doc.html#l63"></blink><span class=cF4>LK_DOC_LINE</span></a></blink><span class=cF0> and </span><a href="../Adam/DolDoc/Doc.html#l62"></blink><span class=cF4>LK_DOC_FIND</span></a></blink><span class=cF0>.
+<a name="l203"></a>* </span><a href="http://www.templeos.org/Wb/Accts/TS/TAD/Adam3dWrappers.html#l13"></blink><span class=cF4>R</span></a></blink><span class=cF0>(&quot;Doc&quot;,&quot;DolDoc&quot;);
+<a name="l204"></a>* Improved documentation.
+<a name="l205"></a>* Added </span><a href="../Demo/LastClass.html#l1"></blink><span class=cF4>::/Demo/LastClass.CPP</span></a></blink><span class=cF0>.
+<a name="l206"></a>
+<a name="l207"></a></span><span class=c0F>----04/13/14 00:09:48----</span><span class=cF0>
+<a name="l208"></a>* Got rid of </span><span class=cF4>ProfBin()</span><span class=cF0> and </span><span class=cF4>ProfCPU()</span><span class=cF0>.
+<a name="l209"></a>* </span><a href="http://www.templeos.org/Wb/Accts/TS/TAD/Adam3dWrappers.html#l13"></blink><span class=cF4>R</span></a></blink><span class=cF0>(&quot;ProfAll&quot;,&quot;Prof&quot;);
+<a name="l210"></a>* Improved documentation.
+<a name="l211"></a>* Changed </span><a href="../Kernel/Adam1a.html#l1327"></blink><span class=cF4>CDoc</span></a></blink><span class=cF0>.desc.
+<a name="l212"></a>
+<a name="l213"></a></span><span class=c0F>----04/11/14 16:58:56----</span><span class=cF0>
+<a name="l214"></a>* Renamed Sprite functions and vars.
+<a name="l215"></a>* Added </span><a href="../Compiler/ExpParser.html#l1158"></blink><span class=cF4>LexExpressionI64</span></a></blink><span class=cF0>() and </span><a href="../Compiler/ExpParser.html#l1172"></blink><span class=cF4>LexExpressionF64</span></a></blink><span class=cF0>().  I'm chagrinned.
+<a name="l216"></a>
+<a name="l217"></a></span><span class=c0F>----04/11/14 11:55:36----</span><span class=cF0>
+<a name="l218"></a>* Added </span><a href="../Kernel/Dsk/DskStr.html#l372"></blink><span class=cF4>FileNameTempTxt</span></a></blink><span class=cF0>().
+<a name="l219"></a>* </span><span class=cF2>&lt;CTRL-r&gt;</span><span class=cF0> sprite edit-as-text is now much better.
+<a name="l220"></a>* Added </span><a href="../Kernel/Define1a.html#l156"></blink><span class=cF4>Str2ColorU16</span></a></blink><span class=cF0>(), </span><a href="../Kernel/Define1a.html#l200"></blink><span class=cF4>Str2ColorU32</span></a></blink><span class=cF0>(), </span><a href="../Compiler/Lex.html#l332"></blink><span class=cF4>LexFirstRem</span></a></blink><span class=cF0>(), </span><a href="../Adam/Gr/SpriteCode.html#l193"></blink><span class=cF4>Sprite2Code</span></a></blink><span class=cF0>() and </span><span class=cF4>
+<a name="l221"></a></span><a href="../Adam/Gr/SpriteCode.html#l567"></blink><span class=cF4>Code2Sprite</span></a></blink><span class=cF0>().
+<a name="l222"></a>* </span><a href="http://www.templeos.org/Wb/Accts/TS/TAD/Adam3dWrappers.html#l13"></blink><span class=cF4>R</span></a></blink><span class=cF0>(&quot;Color2Text&quot;,&quot;Color2Str&quot;);
+<a name="l223"></a>* </span><a href="http://www.templeos.org/Wb/Accts/TS/TAD/Adam3dWrappers.html#l13"></blink><span class=cF4>R</span></a></blink><span class=cF0>(&quot;Sprite2Text&quot;,&quot;SpriteElem2OneLineSummary&quot;);
+<a name="l224"></a>* </span><a href="http://www.templeos.org/Wb/Accts/TS/TAD/Adam3dWrappers.html#l13"></blink><span class=cF4>R</span></a></blink><span class=cF0>(&quot;DocPrintWhole&quot;,&quot;DocPrintAtomic&quot;);
+<a name="l225"></a>* Fixed bug in </span><a href="../Adam/Gr/GrBitMap.html#l885"></blink><span class=cF4>GrRect</span></a></blink><span class=cF0>() relating to dithering.
+<a name="l226"></a>* Got rid of </span><a href="../Kernel/Adam1a.html#l1327"></blink><span class=cF4>CDoc</span></a></blink><span class=cF0>.recalc_start.
+<a name="l227"></a>
+<a name="l228"></a></span><span class=c0F>----04/09/14 14:10:17----</span><span class=cF0>
+<a name="l229"></a>* Fixed compiler bug by adding a pass to overcome an optimization problem.
+<a name="l230"></a>* Improved </span><a href="../Apps/AfterEgypt/GodTalking.html#l1"></blink><span class=cF4>::/Apps/AfterEgypt/GodTalking.CPP</span></a></blink><span class=cF0>.
+<a name="l231"></a>* Improved </span><a href="../Demo/Graphics/Mountain.html#l1"></blink><span class=cF4>::/Demo/Graphics/Mountain.CPP</span></a></blink><span class=cF0>.
+<a name="l232"></a>* Improved </span><a href="../Demo/Graphics/Camp.html#l1"></blink><span class=cF4>::/Demo/Graphics/Camp.CPP</span></a></blink><span class=cF0>.
+<a name="l233"></a>* Improved </span><a href="../Demo/Graphics/SunMoon.html#l1"></blink><span class=cF4>::/Demo/Graphics/SunMoon.CPP</span></a></blink><span class=cF0>.
+<a name="l234"></a>* Improved </span><a href="../Demo/Games/DunGen.html#l1"></blink><span class=cF4>::/Demo/Games/DunGen.CPP</span></a></blink><span class=cF0>.
+<a name="l235"></a>* Improved </span><a href="../Demo/Games/FlatTops.html#l1"></blink><span class=cF4>::/Demo/Games/FlatTops.CPP</span></a></blink><span class=cF0>.
+<a name="l236"></a>
+<a name="l237"></a></span><span class=c0F>----04/07/14 07:46:56----</span><span class=cF0>
+<a name="l238"></a>* </span><span class=cF0><blink>TempleOS version 2.05 Released</blink></span><span class=cF0>
+<a name="l239"></a>
+<a name="l240"></a></span><span class=c0F>----04/05/14 03:09:18----</span><span class=cF0>
+<a name="l241"></a>* Got rid of </span><span class=cF2>Fs-&gt;answers_displayed</span><span class=cF0> and set it to a fixed value of one answer.
+<a name="l242"></a>* Improved documentation.
+<a name="l243"></a>* </span><a href="http://www.templeos.org/Wb/Accts/TS/TAD/Adam3dWrappers.html#l13"></blink><span class=cF4>R</span></a></blink><span class=cF0>(&quot;MusicOrgan&quot;,&quot;Psalmody&quot;);
+<a name="l244"></a>* Improved </span><a href="../Adam/AutoFile2a.html#l57"></blink><span class=cF4>AFGetChar</span></a></blink><span class=cF0>() and </span><a href="../Adam/AutoFile2a.html#l95"></blink><span class=cF4>AFUntilChar</span></a></blink><span class=cF0>().
+<a name="l245"></a>
+<a name="l246"></a></span><span class=c0F>----04/03/14 05:57:06----</span><span class=cF0>
+<a name="l247"></a>* Improved </span><span class=cF9>Tour</span><span class=cF0>.
+<a name="l248"></a>* </span><a href="http://www.templeos.org/Wb/Accts/TS/TAD/Adam3dWrappers.html#l13"></blink><span class=cF4>R</span></a></blink><span class=cF0>(&quot;ipx&quot;,&quot;ip.pos.x&quot;);
+<a name="l249"></a>* </span><a href="http://www.templeos.org/Wb/Accts/TS/TAD/Adam3dWrappers.html#l13"></blink><span class=cF4>R</span></a></blink><span class=cF0>(&quot;mxx&quot;,&quot;mouse.pos.x&quot;);
+<a name="l250"></a>* </span><a href="http://www.templeos.org/Wb/Accts/TS/TAD/Adam3dWrappers.html#l13"></blink><span class=cF4>R</span></a></blink><span class=cF0>(&quot;mxx_prescale&quot;,&quot;mouse.prescale.x&quot;);
+<a name="l251"></a>* </span><a href="http://www.templeos.org/Wb/Accts/TS/TAD/Adam3dWrappers.html#l13"></blink><span class=cF4>R</span></a></blink><span class=cF0>(&quot;A2Date&quot;,&quot;Str2Date&quot;);
+<a name="l252"></a>* </span><a href="http://www.templeos.org/Wb/Accts/TS/TAD/Adam3dWrappers.html#l13"></blink><span class=cF4>R</span></a></blink><span class=cF0>(&quot;A2I64&quot;,&quot;Str2I64&quot;);
+<a name="l253"></a>* </span><a href="http://www.templeos.org/Wb/Accts/TS/TAD/Adam3dWrappers.html#l13"></blink><span class=cF4>R</span></a></blink><span class=cF0>(&quot;A2F64&quot;,&quot;Str2F64&quot;);
+<a name="l254"></a>* </span><a href="http://www.templeos.org/Wb/Accts/TS/TAD/Adam3dWrappers.html#l13"></blink><span class=cF4>R</span></a></blink><span class=cF0>(&quot;SPrint&quot;,&quot;StrPrint&quot;);
+<a name="l255"></a>* </span><a href="http://www.templeos.org/Wb/Accts/TS/TAD/Adam3dWrappers.html#l13"></blink><span class=cF4>R</span></a></blink><span class=cF0>(&quot;MPrint&quot;,&quot;MStrPrint&quot;);
+<a name="l256"></a>* </span><a href="http://www.templeos.org/Wb/Accts/TS/TAD/Adam3dWrappers.html#l13"></blink><span class=cF4>R</span></a></blink><span class=cF0>(&quot;Scan&quot;,&quot;StrScan&quot;);
+<a name="l257"></a>
+<a name="l258"></a></span><span class=c0F>----04/01/14 08:49:57----</span><span class=cF0>
+<a name="l259"></a>* Added </span><a href="../Demo/Games/ElephantWalk.html#l1"></blink><span class=cF4>::/Demo/Games/ElephantWalk.CPP</span></a></blink><span class=cF0>.
+<a name="l260"></a>
+<a name="l261"></a></span><span class=c0F>----03/28/14 22:25:48----</span><span class=cF0>
+<a name="l262"></a>* </span><a href="http://www.templeos.org/Wb/Accts/TS/TAD/Adam3dWrappers.html#l13"></blink><span class=cF4>R</span></a></blink><span class=cF0>(&quot;COLOR_TRANSPARENT&quot;,&quot;TRANSPARENT&quot;);
+<a name="l263"></a>
+<a name="l264"></a></span><span class=c0F>----03/26/14 08:40:25----</span><span class=cF0>
+<a name="l265"></a>* </span><a href="http://www.templeos.org/Wb/Accts/TS/TAD/Adam3dWrappers.html#l13"></blink><span class=cF4>R</span></a></blink><span class=cF0>(&quot;_ATTR_DIR&quot;,&quot;RS_ATTR_DIR&quot;);
+<a name="l266"></a>
+<a name="l267"></a></span><span class=c0F>----03/24/14 15:17:14----</span><span class=cF0>
+<a name="l268"></a>* Coined &quot;DolDoc&quot; as a name for the TempleOS document type.
+<a name="l269"></a>* Added </span><a href="../Demo/DolDoc/ClickCallBack.html#l1"></blink><span class=cF4>::/Demo/DolDoc/ClickCallBack.CPP</span></a></blink><span class=cF0>.
+<a name="l270"></a>
+<a name="l271"></a></span><span class=c0F>----03/21/14 04:02:29----</span><span class=cF0>
+<a name="l272"></a>* </span><span class=cF0><blink>TempleOS version 2.04 Released</blink></span><span class=cF0>
+<a name="l273"></a>
+<a name="l274"></a></span><span class=c0F>----03/19/14 21:54:23----</span><span class=cF0>
+<a name="l275"></a>* </span><a href="http://www.templeos.org/Wb/Accts/TS/TAD/Adam3dWrappers.html#l13"></blink><span class=cF4>R</span></a></blink><span class=cF0>(&quot;BulgeBomber&quot;,&quot;BomberGolf&quot;);
+<a name="l276"></a>* Added </span><a href="../Demo/Dsk/SerializeTree.html#l1"></blink><span class=cF4>::/Demo/Dsk/SerializeTree.CPP</span></a></blink><span class=cF0>.
+<a name="l277"></a>* </span><a href="http://www.templeos.org/Wb/Accts/TS/TAD/Adam3dWrappers.html#l13"></blink><span class=cF4>R</span></a></blink><span class=cF0>(&quot;DirLstDel&quot;,&quot;DirTreeDel&quot;);
+<a name="l278"></a>* Added </span><a href="../Misc/Tour/Tour7.html#l1"></blink><span class=cF4>::/Misc/Tour/Tour7.AUT</span></a></blink><span class=cF0> which covers File Masks.
+<a name="l279"></a>* </span><a href="http://www.templeos.org/Wb/Accts/TS/TAD/Adam3dWrappers.html#l13"></blink><span class=cF4>R</span></a></blink><span class=cF0>(&quot;MGetS&quot;,&quot;GetStr&quot;);
+<a name="l280"></a>* </span><a href="http://www.templeos.org/Wb/Accts/TS/TAD/Adam3dWrappers.html#l13"></blink><span class=cF4>R</span></a></blink><span class=cF0>(&quot;PmtStr&quot;,&quot;GetStr&quot;);
+<a name="l281"></a>
+<a name="l282"></a></span><span class=c0F>----03/17/14 22:34:11----</span><span class=cF0>
+<a name="l283"></a>* Changed </span><span class=cF2>$MA</span><span class=cF0> to use &quot;tag&quot; instead of &quot;</span><span class=cF2>A=</span><span class=cF0>&quot;.
+<a name="l284"></a>* Changed </span><a href="../Kernel/Adam1a.html#l1006"></blink><span class=cF4>DOCEF_HAS_TERMINATOR</span></a></blink><span class=cF0> -T to -TRM.
+<a name="l285"></a>* Changed </span><a href="DolDocOverview.html#l1"></blink><span class=cF4>DolDoc</span></a></blink><span class=cF0> format.  Some flags are not at start.
+<a name="l286"></a>
+<a name="l287"></a></span><span class=c0F>----03/07/14 04:54:10----</span><span class=cF0>
+<a name="l288"></a>* Added </span><a href="../Demo/ReverseFileExample/Reverse.html#l1"></blink><span class=cF4>::/Demo/ReverseFileExample/Reverse.CPP</span></a></blink><span class=cF0>.
+<a name="l289"></a>
+<a name="l290"></a></span><span class=c0F>----03/03/14 00:18:47----</span><span class=cF0>
+<a name="l291"></a>* </span><span class=cF0><blink>TempleOS version 2.03 Released</blink></span><span class=cF0>
+<a name="l292"></a>* </span><a href="http://www.templeos.org/Wb/Accts/TS/TAD/Adam3dWrappers.html#l13"></blink><span class=cF4>R</span></a></blink><span class=cF0>(&quot;A2I&quot;,&quot;Str2I64&quot;);
+<a name="l293"></a>* Removed &quot;Binary Type&quot; from </span><a href="../Kernel/Adam1a.html#l1096"></blink><span class=cF4>CDocBin</span></a></blink><span class=cF0>.  Old sprites no longer work.
+<a name="l294"></a>
+<a name="l295"></a></span><span class=c0F>----02/25/14 16:09:01----</span><span class=cF0>
+<a name="l296"></a>* </span><a href="http://www.templeos.org/Wb/Accts/TS/TAD/Adam3dWrappers.html#l13"></blink><span class=cF4>R</span></a></blink><span class=cF0>(&quot;TaskTextInputQue&quot;,&quot;TaskText&quot;);
+<a name="l297"></a>* </span><a href="http://www.templeos.org/Wb/Accts/TS/TAD/Adam3dWrappers.html#l13"></blink><span class=cF4>R</span></a></blink><span class=cF0>(&quot;TaskExeStrQue&quot;,&quot;TaskExe&quot;);
+<a name="l298"></a>* </span><a href="http://www.templeos.org/Wb/Accts/TS/TAD/Adam3dWrappers.html#l13"></blink><span class=cF4>R</span></a></blink><span class=cF0>(&quot;TaskMsgQue&quot;,&quot;TaskMsg&quot;);
+<a name="l299"></a>
+<a name="l300"></a></span><span class=c0F>----02/21/14 13:56:02----</span><span class=cF0>
+<a name="l301"></a>* Converted </span><a href="../Kernel/Define1a.html#l49"></blink><span class=cF4>Define</span></a></blink><span class=cF0>() strings to constants.
+<a name="l302"></a>* </span><a href="http://www.templeos.org/Wb/Accts/TS/TAD/Adam3dWrappers.html#l13"></blink><span class=cF4>R</span></a></blink><span class=cF0>(&quot;Adam3d&quot;,&quot;Adam3c&quot;);
+<a name="l303"></a>* </span><a href="http://www.templeos.org/Wb/Accts/TS/TAD/Adam3dWrappers.html#l13"></blink><span class=cF4>R</span></a></blink><span class=cF0>(&quot;Adam3e&quot;,&quot;Adam3d&quot;);
+<a name="l304"></a>* </span><a href="http://www.templeos.org/Wb/Accts/TS/TAD/Adam3dWrappers.html#l13"></blink><span class=cF4>R</span></a></blink><span class=cF0>(&quot;Adam3f&quot;,&quot;Adam3e&quot;);
+<a name="l305"></a>* </span><a href="http://www.templeos.org/Wb/Accts/TS/TAD/Adam3dWrappers.html#l13"></blink><span class=cF4>R</span></a></blink><span class=cF0>(&quot;pattern&quot;,&quot;needle&quot;);
+<a name="l306"></a>
+<a name="l307"></a></span><span class=c0F>----02/19/14 22:13:04----</span><span class=cF0>
+<a name="l308"></a>* </span><a href="http://www.templeos.org/Wb/Accts/TS/TAD/Adam3dWrappers.html#l13"></blink><span class=cF4>R</span></a></blink><span class=cF0>(&quot;Limit&quot;,&quot;Clamp&quot;);
+<a name="l309"></a>* Overhauled </span><a href="../Kernel/Dsk/Dsk1b.html#l269"></blink><span class=cF4>FileRead</span></a></blink><span class=cF0>() and </span><a href="../Kernel/Dsk/Dsk1b.html#l436"></blink><span class=cF4>FileWrite</span></a></blink><span class=cF0>().
+<a name="l310"></a>* Got rid of </span><span class=cF4>TextFileRead</span><span class=cF0>() and </span><span class=cF4>TextFileWrite</span><span class=cF0>().
+<a name="l311"></a>
+<a name="l312"></a></span><span class=c0F>----02/17/14 20:50:58----</span><span class=cF0>
+<a name="l313"></a>* </span><span class=cF0><blink>TempleOS version 2.02 Released</blink></span><span class=cF0>
+<a name="l314"></a>* Added </span><span class=cF2>F7/SHIFT-F7</span><span class=cF0> for </span><a href="../Adam/God/HolySpirit.html#l122"></blink><span class=cF4>GodWord</span></a></blink><span class=cF0>()/</span><a href="../Adam/God/HolySpirit.html#l128"></blink><span class=cF4>GodPassage</span></a></blink><span class=cF0>().
+<a name="l315"></a>* Added </span><span class=cF2>F6/SHIFT-F6</span><span class=cF0> for </span><a href="../Adam/God/GodSong.html#l157"></blink><span class=cF4>GodSong</span></a></blink><span class=cF0>()/</span><a href="../Adam/God/GodDoodle.html#l167"></blink><span class=cF4>GodDoodle</span></a></blink><span class=cF0>().
+<a name="l316"></a>* </span><a href="http://www.templeos.org/Wb/Accts/TS/TAD/Adam3dWrappers.html#l13"></blink><span class=cF4>R</span></a></blink><span class=cF0>(&quot;Apps/HolySpirit&quot;,&quot;Adam/God&quot;);
+<a name="l317"></a>* </span><a href="http://www.templeos.org/Wb/Accts/TS/TAD/Adam3dWrappers.html#l13"></blink><span class=cF4>R</span></a></blink><span class=cF0>(&quot;DoItOnce&quot;,&quot;DoOnce&quot;);
+<a name="l318"></a>
+<a name="l319"></a></span><span class=c0F>----02/12/14 14:25:59----</span><span class=cF0>
+<a name="l320"></a>* Added BMP/GRA file save to </span><span class=cF2>&lt;CTRL-r&gt;</span><span class=cF0>.
+<a name="l321"></a>* Added </span><span class=cF2>&lt;CTRL-ALT-s&gt;</span><span class=cF0> for screen shot to clipboard.
+<a name="l322"></a>* Reformed </span><a href="../Kernel/Adam1a.html#l2968"></blink><span class=cF4>CGridGlbls</span></a></blink><span class=cF0> to be simple.
+<a name="l323"></a>
+<a name="l324"></a></span><span class=c0F>----02/10/14 09:19:59----</span><span class=cF0>
+<a name="l325"></a>* Added </span><a href="../Kernel/Hash1b.html#l163"></blink><span class=cF4>HashPublic</span></a></blink><span class=cF0>().
+<a name="l326"></a>* Changed FUF_WHOLE_LABELS </span><span class=cF2>+lf</span><span class=cF0>/</span><span class=cF2>+lb</span><span class=cF0> to </span><span class=cF2>+lb</span><span class=cF0>/</span><span class=cF2>+la</span><span class=cF0>.
+<a name="l327"></a>* Got rid of </span><span class=cF4>FilesOrder()</span><span class=cF0>, replacing it with </span><a href="../Kernel/Adam1a.html#l2520"></blink><span class=cF4>FUF_CLUSTER_ORDER</span></a></blink><span class=cF0>.
+<a name="l328"></a>* Added </span><a href="../Demo/Graphics/InputPointer.html#l1"></blink><span class=cF4>::/Demo/Graphics/InputPointer.CPP</span></a></blink><span class=cF0>.
+<a name="l329"></a>* Made </span><a href="../Adam/Gr/GrGlbls.html#l3"></blink><span class=cF4>gr.dc</span></a></blink><span class=cF0> the default device context for graphics routines.
+<a name="l330"></a>
+<a name="l331"></a></span><span class=c0F>----01/28/14 01:44:46----</span><span class=cF0>
+<a name="l332"></a>* In a function with an ASM{} blk, you can now JMP to a function goto label.
+<a name="l333"></a>
+<a name="l334"></a></span><span class=c0F>----01/27/14 09:02:20----</span><span class=cF0>
+<a name="l335"></a>* </span><span class=cF0><blink>TempleOS version 2.01 Released</blink></span><span class=cF0>
+<a name="l336"></a>* In a function with an ASM{} blk, you can now goto an ASM label.
+<a name="l337"></a>
+<a name="l338"></a></span><span class=c0F>----01/26/14 03:27:55----</span><span class=cF0>
+<a name="l339"></a>* Moved </span><span class=cF4>fun_class</span><span class=cF0> to </span><a href="../Kernel/Adam1a.html#l2068"></blink><span class=cF4>CLex</span></a></blink><span class=cF0>.htc.fun.
+<a name="l340"></a>* Got rid of K=1024 sub_fmt flag in </span><a href="../Kernel/StrPrint.html#l247"></blink><span class=cF4>StrPrintJoin</span></a></blink><span class=cF0>.
+<a name="l341"></a>* Changed MapFile code_heap line addresses to 32-bit.
+<a name="l342"></a>* Got rid of </span><a href="../Kernel/Adam1a.html#l3223"></blink><span class=cF4>CTask</span></a></blink><span class=cF0>.user_data1-3. 
+<a name="l343"></a>* Got rid of </span><span class=cF4>ExpressionBinDel</span><span class=cF0>().
+<a name="l344"></a>* Got rid of </span><a href="../Kernel/Adam1a.html#l1570"></blink><span class=cF4>CIntermediateCode</span></a></blink><span class=cF0>.ic_ext_body.
+<a name="l345"></a>* Cleaned-up </span><a href="../Compiler/ExpParser.html#l1"></blink><span class=cF4>::/Compiler/ExpParser.CPP</span></a></blink><span class=cF0>.
+<a name="l346"></a>
+<a name="l347"></a></span><span class=c0F>----01/24/14 06:40:47----</span><span class=cF0>
+<a name="l348"></a>* </span><a href="http://www.templeos.org/Wb/Accts/TS/TAD/Adam3dWrappers.html#l13"></blink><span class=cF4>R</span></a></blink><span class=cF0>(&quot;DocInsSafe&quot;,&quot;DocPrintAtomic&quot;);
+<a name="l349"></a>* </span><a href="http://www.templeos.org/Wb/Accts/TS/TAD/Adam3dWrappers.html#l13"></blink><span class=cF4>R</span></a></blink><span class=cF0>(&quot;DocPutSPartial&quot;,&quot;DocPrintPartial&quot;);
+<a name="l350"></a>* Made private AutoComplete links WHITE.
+<a name="l351"></a>* Added &quot;+s&quot; to </span><a href="../Kernel/Dsk/Dsk1b.html#l192"></blink><span class=cF4>FilesFind</span></a></blink><span class=cF0>().
+<a name="l352"></a>* Added &quot;+x&quot; to </span><a href="../Adam/Dsk/Dsk2a.html#l373"></blink><span class=cF4>Size</span></a></blink><span class=cF0>() and </span><a href="../Adam/Utils/LineRep.html#l90"></blink><span class=cF4>SizeRep</span></a></blink><span class=cF0>().
+<a name="l353"></a>* </span><a href="http://www.templeos.org/Wb/Accts/TS/TAD/Adam3dWrappers.html#l13"></blink><span class=cF4>R</span></a></blink><span class=cF0>(&quot;TreeSizeRep&quot;,&quot;SizeRep&quot;);
+<a name="l354"></a>* </span><a href="http://www.templeos.org/Wb/Accts/TS/TAD/Adam3dWrappers.html#l13"></blink><span class=cF4>R</span></a></blink><span class=cF0>(&quot;LineCntRep&quot;,&quot;LineRep&quot;);
+<a name="l355"></a>* </span><a href="http://www.templeos.org/Wb/Accts/TS/TAD/Adam3dWrappers.html#l13"></blink><span class=cF4>R</span></a></blink><span class=cF0>(&quot;TreeSize&quot;,&quot;Size&quot;);
+<a name="l356"></a>* </span><a href="http://www.templeos.org/Wb/Accts/TS/TAD/Adam3dWrappers.html#l13"></blink><span class=cF4>R</span></a></blink><span class=cF0>(&quot;FileSize&quot;,&quot;Size&quot;);
+<a name="l357"></a>* </span><a href="http://www.templeos.org/Wb/Accts/TS/TAD/Adam3dWrappers.html#l13"></blink><span class=cF4>R</span></a></blink><span class=cF0>(&quot;MergeChk&quot;,&quot;Merge&quot;);
+<a name="l358"></a>* Added </span><a href="../Demo/Graphics/Balloon.html#l1"></blink><span class=cF4>::/Demo/Graphics/Balloon.CPP</span></a></blink><span class=cF0>.
+<a name="l359"></a>* Added warning for 64-bit reg vars.
+<a name="l360"></a>
+<a name="l361"></a></span><span class=c0F>----01/13/14 14:39:34----</span><span class=cF0>
+<a name="l362"></a>* Optimized </span><span class=cF2>if (Carry)</span><span class=cF0>.  See </span><a href="../Demo/Carry.html#l1"></blink><span class=cF4>::/Demo/Carry.CPP</span></a></blink><span class=cF0>.
+<a name="l363"></a>
+<a name="l364"></a></span><span class=c0F>----01/11/14 21:52:00----</span><span class=cF0>
+<a name="l365"></a>* Added </span><a href="../Adam/God/GodBible.html#l144"></blink><span class=cF4>BibleLine2Verse</span></a></blink><span class=cF0>().
+<a name="l366"></a>* Shifted glbl vars from </span><a href="../Kernel/KStart.html#l1"></blink><span class=cF4>::/Kernel/KStart.CPP</span></a></blink><span class=cF0> to </span><a href="../Kernel/Adam1a.html#l3378"></blink><span class=cF4>CSysFixedArea</span></a></blink><span class=cF0>.
+<a name="l367"></a>* Added </span><a href="../Adam/LogIn.html#l129"></blink><span class=cF4>OneTimePopUp</span></a></blink><span class=cF0>() msg to </span><a href="../Apps/X-Caliber/X-Caliber.html#l1"></blink><span class=cF4>::/Apps/X-Caliber/X-Caliber.CPP</span></a></blink><span class=cF0>.  Delete registry 
+<a name="l368"></a>and reboot if you are upgrading.
+<a name="l369"></a>
+<a name="l370"></a></span><span class=c0F>----01/09/14 20:51:20----</span><span class=cF0>
+<a name="l371"></a>* Converted </span><span class=cF2>fp_plot()</span><span class=cF0> graphics routines to Bool with abort.
+<a name="l372"></a>* Made </span><a href="../Kernel/StrPrint.html#l940"></blink><span class=cF4>CatPrint</span></a></blink><span class=cF0>().
+<a name="l373"></a>* Added </span><span class=cF2>no_mask</span><span class=cF0> to </span><a href="../Kernel/Dsk/Dsk1b.html#l136"></blink><span class=cF4>FileAccessNew</span></a></blink><span class=cF0>() and </span><a href="../Adam/Dsk/Dsk2a.html#l135"></blink><span class=cF4>CopyTree</span></a></blink><span class=cF0>().
+<a name="l374"></a>
+<a name="l375"></a></span><span class=c0F>----01/07/14 11:46:38----</span><span class=cF0>
+<a name="l376"></a>* </span><span class=cF0><blink>TempleOS version 2.00 Released</blink></span><span class=cF0>
+<a name="l377"></a>* Created Lite and UltraLite distros.
+<a name="l378"></a>* Added score to </span><a href="../Demo/Games/BlackDiamond.html#l1"></blink><span class=cF4>::/Demo/Games/BlackDiamond.CPP</span></a></blink><span class=cF0>.
+<a name="l379"></a>* Improved </span><a href="../Demo/Games/Varoom.html#l1"></blink><span class=cF4>::/Demo/Games/Varoom.CPP</span></a></blink><span class=cF0>.
+<a name="l380"></a>
+<a name="l381"></a></span><span class=c0F>----01/06/14 19:22:53----</span><span class=cF0>
+<a name="l382"></a>* Added </span><a href="../Demo/Asm/AsmAndC3.html#l1"></blink><span class=cF4>::/Demo/Asm/AsmAndC3.CPP</span></a></blink><span class=cF0>.
+<a name="l383"></a>* Added </span><span class=cF4>::/Demo/OldSchool/SingleFileAOT/Single.CPP</span><span class=cF0>
+<a name="l384"></a>* Made compiler compile ASM instructions mixed-in with HolyC.
+<a name="l385"></a>* Improved </span><a href="../Demo/Graphics/Camp.html#l1"></blink><span class=cF4>::/Demo/Graphics/Camp.CPP</span></a></blink><span class=cF0>.
+<a name="l386"></a>
+<a name="l387"></a></span><span class=c0F>----01/03/14 03:39:30----</span><span class=cF0>
+<a name="l388"></a>* Fixed compiler bug relating to reg vars.  Fixed </span><a href="../Kernel/Ints.html#l94"></blink><span class=cF4>IntEntryGet</span></a></blink><span class=cF0>().
+<a name="l389"></a>
+<a name="l390"></a></span><span class=c0F>----01/01/14 13:16:59----</span><span class=cF0>
+<a name="l391"></a>* Got rid of XSUM in </span><a href="../Kernel/Adam1a.html#l371"></blink><span class=cF4>CBinFile</span></a></blink><span class=cF0> header.
+</span></pre></body>
+</html>
+<!-- text below generated by server. PLEASE REMOVE --><!-- Counter/Statistics data collection code --><script language="JavaScript" src="http://l.yimg.com/d/lib/smb/js/hosting/cp/js_source/whv2_001.js"></script><script language="javascript">geovisit();</script><noscript><img src="http://visit.webhosting.yahoo.com/visit.gif?us1409528688" alt="setstats" border="0" width="1" height="1"></noscript><script type="text/javascript" src="https://s.yimg.com/mi/vs4/ywa.js"></script><script type="text/javascript">try {var YWAGTracker = YWA.getTracker("10001849413879", "VSCALE4");YWAGTracker.setDocumentName("WPAGE");YWAGTracker.setDocumentGroup("YSBW");YWAGTracker.setCF(7, "templeos.org");YWAGTracker.setCF(8, "w42");YWAGTracker.submit();} catch (eYWATCUnavailable) {}</script><script type="text/javascript">(function (d, w) {var x = d.getElementsByTagName('SCRIPT')[0];var f = function () {var s = d.createElement('SCRIPT');s.type = 'text/javascript';s.async = true;s.src = "//np.lexity.com/embed/YW/eff965aab4535cd38b91f0976c617496?id=9382d670eca2";x.parentNode.insertBefore(s, x);};w.attachEvent ? w.attachEvent('onload',f) :w.addEventListener('load',f,false);}(document, window));</script>

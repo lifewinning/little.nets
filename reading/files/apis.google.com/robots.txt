@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /_/scs/
+Allow: /_/apps-static/
+Allow: /_/widget/render/
+Allow: /_/im/_widget/render/
+Disallow: /_/

@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=US-ASCII">
+<title>The Temple Operating System</title>
+<meta name="keywords" content="Operating System,64-Bit,64 Bit,Temple,OS,TempleOS,Free,Open Source,Public Domain,x86_64">
+<meta name="generator" content="TempleOS V2.08">
+<style type="text/css">
+.cF0{color:#000000;background-color:#fcfcfc;}
+.cF1{color:#0000a8;background-color:#fcfcfc;}
+.cF2{color:#00a800;background-color:#fcfcfc;}
+.cF3{color:#00a8a8;background-color:#fcfcfc;}
+.cF4{color:#a80000;background-color:#fcfcfc;}
+.cF5{color:#a800a8;background-color:#fcfcfc;}
+.cF6{color:#a85400;background-color:#fcfcfc;}
+.cF7{color:#a8a8a8;background-color:#fcfcfc;}
+.cF8{color:#545454;background-color:#fcfcfc;}
+.cF9{color:#5454fc;background-color:#fcfcfc;}
+.cFA{color:#54fc54;background-color:#fcfcfc;}
+.cFB{color:#54fcfc;background-color:#fcfcfc;}
+.cFC{color:#fc5454;background-color:#fcfcfc;}
+.cFD{color:#fc54fc;background-color:#fcfcfc;}
+.cFE{color:#fcfc54;background-color:#fcfcfc;}
+.cFF{color:#fcfcfc;background-color:#fcfcfc;}
+</style>
+</head>
+<body>
+<pre style="font-family:courier;font-size:10pt">
+<a name="l1"></a><span class=cF5>                                     Quirks</span><span class=cF0>
+<a name="l2"></a>
+<a name="l3"></a>* You run a risk of problems if you do file operations on the same files 
+<a name="l4"></a>simultaneously because there is </span><span class=cF0>no file sharing/locking mechanism</span><span class=cF0>.  Generally, 
+<a name="l5"></a>the last write wins.
+<a name="l6"></a>
+<a name="l7"></a>* When using </span><span class=cF2>FAT32</span><span class=cF0>, TempleOS does not generate unique short-entry names, the 
+<a name="l8"></a>ones with the </span><span class=cF2>~</span><span class=cF0>s.  Not all </span><span class=cF2>FAT32</span><span class=cF0> filenames are valid TempleOS names and it will 
+<a name="l9"></a>complain.  Do not access </span><span class=cF2>FAT32</span><span class=cF0> drives not dedicated to TempleOS.  Disable them 
+<a name="l10"></a>with </span><a href="../Kernel/Dsk/DskAddDev.html#l151"><span class=cF4>DrvEnable</span></a><span class=cF0>(OFF), or they will generate error messages.  </span><span class=cF2>FAT32</span><span class=cF0> involves a 
+<a name="l11"></a>long and short name for each file.
+<a name="l12"></a>
+<a name="l13"></a>* The stk does not grow because virtual mem is not used.  I recommend allocating 
+<a name="l14"></a>large local vars from the heap.  You can change </span><a href="../Kernel/Adam1a.html#l2774"><span class=cF4>DFT_STK</span></a><span class=cF0> and recompile </span><span class=cF2>Kernel</span><span class=cF0> or 
+<a name="l15"></a>request more when doing a </span><a href="../Kernel/Task1a.html#l222"><span class=cF4>Spawn</span></a><span class=cF0>().
+<a name="l16"></a>
+<a name="l17"></a>* The syntax highlighting occassionally glitches.  The compiler doesn't.
+<a name="l18"></a>
+<a name="l19"></a>* Call </span><a href="../Kernel/Dsk/Dsk1a.html#l407"><span class=cF4>ChgDsk</span></a><span class=cF0>() when you insert a new removable media.
+<a name="l20"></a>
+<a name="l21"></a>* Accessing CD-ROM's is flacky.  Try </span><a href="../Kernel/Dsk/Dsk1b.html#l12"><span class=cF4>Drv</span></a><span class=cF0>() or </span><a href="../Kernel/Dsk/Dsk1a.html#l407"><span class=cF4>ChgDsk</span></a><span class=cF0>() twice.
+<a name="l22"></a>
+<a name="l23"></a>* You can only </span><span class=cF2>extern</span><span class=cF0> something once.  There is a varient called </span><span class=cF2>_extern</span><span class=cF0> which 
+<a name="l24"></a>binds a HolyC definition to a asm sym.  This, too, can only be done once.
+<a name="l25"></a>
+<a name="l26"></a>* A terminal task has a </span><a href="../Kernel/Adam1a.html#l1313"><span class=cF4>CDoc</span></a><span class=cF0> document structure that remains active even when 
+<a name="l27"></a>you change </span><span class=cF4>Fs-&gt;draw_it</span><span class=cF0>.  To prevent links in the </span><a href="../Kernel/Adam1a.html#l1313"><span class=cF4>CDoc</span></a><span class=cF0> from being activated when 
+<a name="l28"></a>the user clicks in the window, do one of three things:
+<a name="l29"></a>  
+<a name="l30"></a>  A) </span><a href="../Adam/DolDoc/DocRecalc2a.html#l90"><span class=cF4>DocBottom</span></a><span class=cF0>() followed by </span><a href="../Adam/DolDoc/DocRecalc2a.html#l116"><span class=cF4>DocClear</span></a><span class=cF0>() to clear the </span><a href="../Kernel/Adam1a.html#l1313"><span class=cF4>CDoc</span></a><span class=cF0> so it has no active 
+<a name="l31"></a>  widgets.
+<a name="l32"></a>  
+<a name="l33"></a>  B) Disable window mgr button click checking with </span><span class=cF4>Fs-&gt;win_inhibit</span><span class=cF0> set to mask </span><span class=cF4>
+<a name="l34"></a>  </span><a href="../Kernel/Adam1a.html#l1371"><span class=cF4>WIF_SELF_IP_L</span></a><span class=cF0>|</span><a href="../Kernel/Adam1a.html#l1384"><span class=cF4>WIF_FOCUS_TASK_IP_L_D</span></a><span class=cF0>|</span><a href="../Kernel/Adam1a.html#l1373"><span class=cF4>WIF_SELF_IP_R</span></a><span class=cF0>|</span><a href="../Kernel/Adam1a.html#l1386"><span class=cF4>WIF_FOCUS_TASK_IP_R_D</span></a><span class=cF0>.  This 
+<a name="l35"></a>  inhibits window mgr operations but still generates messages from button 
+<a name="l36"></a>  clicks.
+<a name="l37"></a>
+<a name="l38"></a>* </span><span class=cF2>switch/case</span><span class=cF0> statements allocate a single jump table--do not use with wide, 
+<a name="l39"></a>sparse ranges of case values.
+<a name="l40"></a>
+<a name="l41"></a>* Don't do a </span><span class=cF2>goto</span><span class=cF0> out of a </span><span class=cF2>try{}</span><span class=cF0>.
+<a name="l42"></a>
+<a name="l43"></a>* A </span><span class=cF2>goto</span><span class=cF0> label name must not match a global scope object's name.  (It's not 
+<a name="l44"></a>worth slowing-down the compiler to handle this case.)
+<a name="l45"></a>
+<a name="l46"></a>* </span><a href="../Kernel/Adam1b.html#l155"><span class=cF4>MemCpy</span></a><span class=cF0>() only goes fwd.
+<a name="l47"></a>
+<a name="l48"></a>* A </span><a href="../Kernel/Dsk/Dsk1b.html#l37"><span class=cF4>Cd</span></a><span class=cF0>() cmd must be followed by two semicolons if a </span><span class=cF2>#include</span><span class=cF0> is after it.  This 
+<a name="l49"></a>is because the preprocessor processes the next token ahead.
+<a name="l50"></a>
+<a name="l51"></a>* The assembler's error msgs are often off by a line and undefines are cryptic.
+<a name="l52"></a>
+<a name="l53"></a>* The last semicolon on the cmd line is converted to a dbl semicolon because the 
+<a name="l54"></a>compiler looks ahead before doing a cmd.  This normally has no negative effect, 
+<a name="l55"></a>but when entering </span><span class=cF2>if</span><span class=cF0> statements with </span><span class=cF2>else</span><span class=cF0> clauses it presents problems.
+<a name="l56"></a>
+<a name="l57"></a>* You can do a </span><span class=cF2>class</span><span class=cF0> fwd reference by using </span><span class=cF2>extern</span><span class=cF0> on the first declaration, but 
+<a name="l58"></a>you can only do ptr references to the </span><span class=cF2>class</span><span class=cF0>.
+<a name="l59"></a>
+<a name="l60"></a>* When doing something like
+<a name="l61"></a></span><span class=cF2>    U0 Main()
+<a name="l62"></a>    {
+<a name="l63"></a>      U16 *_w=0xA0000;
+<a name="l64"></a>      *_w|=0x8000;
+<a name="l65"></a>    }
+<a name="l66"></a>  </span><span class=cF0>The </span><span class=cF2>|=</span><span class=cF0> will be coded as a </span><span class=cF2>U32 Bts</span><span class=cF0> instruction resulting in a </span><span class=cF2>U32</span><span class=cF0> access 
+<a name="l67"></a>  instead of a </span><span class=cF2>U16</span><span class=cF0> access.  This affects some hardware operations.
+<a name="l68"></a>
+<a name="l69"></a>* Compiler warning or error message line numbers will be off if you have a block 
+<a name="l70"></a>of word-wrapped comments.  You might press </span><span class=cF2>&lt;CTRL-t&gt;</span><span class=cF0> before doing an editor 
+<a name="l71"></a>goto-line-number command.
+</span></pre></body>
+</html>
+<!-- text below generated by server. PLEASE REMOVE --><!-- Counter/Statistics data collection code --><script language="JavaScript" src="http://l.yimg.com/d/lib/smb/js/hosting/cp/js_source/whv2_001.js"></script><script language="javascript">geovisit();</script><noscript><img src="http://visit.webhosting.yahoo.com/visit.gif?us1409528699" alt="setstats" border="0" width="1" height="1"></noscript><script type="text/javascript" src="https://s.yimg.com/mi/vs4/ywa.js"></script><script type="text/javascript">try {var YWAGTracker = YWA.getTracker("10001849413879", "VSCALE4");YWAGTracker.setDocumentName("WPAGE");YWAGTracker.setDocumentGroup("YSBW");YWAGTracker.setCF(7, "templeos.org");YWAGTracker.setCF(8, "w42");YWAGTracker.submit();} catch (eYWATCUnavailable) {}</script><script type="text/javascript">(function (d, w) {var x = d.getElementsByTagName('SCRIPT')[0];var f = function () {var s = d.createElement('SCRIPT');s.type = 'text/javascript';s.async = true;s.src = "//np.lexity.com/embed/YW/eff965aab4535cd38b91f0976c617496?id=9382d670eca2";x.parentNode.insertBefore(s, x);};w.attachEvent ? w.attachEvent('onload',f) :w.addEventListener('load',f,false);}(document, window));</script>

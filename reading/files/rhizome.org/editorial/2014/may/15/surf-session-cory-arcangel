@@ -1,0 +1,766 @@
+
+
+
+<!doctype html>
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="Content-Language" content="en-us">
+        <title>Rhizome | A Surf Session with Cory Arcangel</title>                
+        <meta name="google-site-verification" content="AZfoqybynDh_0mjEBG_XwMZeCwiSE-GZ8BiQB5FZzDU" />        
+        <meta name="ROBOTS" content="ALL" />
+        <meta name="description" content="Rhizome is dedicated to the creation, presentation, preservation, and critique of emerging artistic practices that engage technology." />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <!-- Set viewport so we can have mobile styles -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+
+        <!-- FB & Twitter meta -->
+
+        <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+ 
+        <meta property="og:site_name"              content="rhizome.org">
+        <meta name="twitter:site"                  content="@rhizome">
+
+        <meta property="og:type"                   content="article">
+        <meta name="twitter:card"                  content="summary">
+        <meta property="article:section"           content="Editorial">
+
+        <meta name="twitter:url"                   content="http://rhizome.org/editorial/2014/may/15/surf-session-cory-arcangel/">
+        <meta property="og:url"                    content="http://rhizome.org/editorial/2014/may/15/surf-session-cory-arcangel/">
+ 
+        <meta property="og:title"                  content="A Surf Session with Cory Arcangel">
+        <meta name="twitter:title"                 content="A Surf Session with Cory Arcangel">
+
+        <meta property="article:published_time"    content="2014-05-15T10:36:20"> 
+
+        
+        
+            
+        <meta property="article:tag"             content="Cory Arcangel">
+            
+        <meta property="article:tag"             content="fashion">
+            
+        <meta property="article:tag"             content="Holiday Inn">
+            
+        <meta property="article:tag"             content="interview">
+            
+        
+
+        <meta name="twitter:description" content="&quot;I still go pretty hard at night. Because the laptops are so light now.&quot;">
+        <meta property="og:description"          content="&quot;I still go pretty hard at night. Because the laptops are so light now.&quot;"> 
+        
+        
+            <meta name="twitter:image" content="http://media.rhizome.org/blog/9249/Arcangel-Surfware.jpg">
+            <meta property="og:image"  content="http://media.rhizome.org/blog/9249/Arcangel-Surfware.jpg">    
+        
+
+	<meta property="fb:admins" content="14500625" />
+	<meta property="fb:admins" content="1277404618" />
+
+
+        <link rel="shortcut icon" href="/static/images/favicons/leyva.gif" />
+
+        <!-- google fonts -->
+        <link href='//fonts.googleapis.com/css?family=Titillium+Web:400,200,300' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Anaheim' rel='stylesheet' type='text/css'>
+
+        
+            <!--GLOBAL CSS-->
+            <link type="text/css" rel="stylesheet" href="/static/css/blueprint/screen.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/base.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/comments.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/sidebars.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/calendars.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/miniprofile.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/media_players.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/blueprint/print.css" media="print"/></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/new_navbars.css"/></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/top_banner.css"/></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/mobile.css"/></link>
+            <link type="text/css" rel="stylesheet" href="/static/font-awesome-4.0.0/css/font-awesome.min.css"/></link>
+            <!--[if lt IE 8]>
+                <link rel="stylesheet" href="/static/css/blueprint/ie.css" type="text/css" media="screen, projection"></link>
+            <![endif]-->
+         
+            <!--[if IE]>
+                <link rel="stylesheet" type="text/css" href="/static/css/ie.css"  />
+            <![endif]-->
+
+            <!-- LOCAL CSS -->
+            
+	<link rel="stylesheet" href="/static/css/editorial.css" type="text/css" media="screen" charset="utf-8" />
+
+            
+            
+            
+            
+            
+            
+
+            
+            
+        
+        
+        
+        
+            <!-- GLOBAL JAVASCRIPT -->
+            <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+            <script type="text/javascript">window.__admin_media_prefix__ = "/static/admin/";</script>
+            <script type="text/javascript">window.__static_url__ = "/static/";</script>
+            <script type="text/javascript">var STATIC_URL = "/static/";</script>
+            <script type="text/javascript">window.SERVER_NAME = "rhizome.org";</script>
+
+            <script type="text/javascript" src="/static/js/mootools-core-1.3.2-yc.js"></script>
+            <script type="text/javascript" src="/static/js/mootools-more-1.3.2.1.js"></script>
+            <script type="text/javascript" src="/static/js/rhizome.js"></script>
+            <script type="text/javascript" src="/static/media_players/flowplayer/flowplayer-3.2.2.min.js"></script>
+            <script type="text/javascript" src="/static/media_players/soundmanager/script/soundmanager2-nodebug-jsmin.js"></script>
+            <script type="text/javascript" src="/static/media_players/soundmanager/script/inlineplayer.js"></script>
+            <script type="text/javascript" src="/static/js/carousel/PeriodicalExecuter.js"></script>
+            <script type="text/javascript" src="/static/js/carousel/Carousel.js"></script>
+            
+            <script type="text/javascript">
+                soundManager.url = '/static/media_players/soundmanager/swf/';
+                //soundManager.flashVersion = 9; // optional: shiny features (default = 8)
+                soundManager.useFlashBlock = true; // optionally, enable when you're ready to dive in
+                // enable HTML5 audio support, if you're feeling adventurous.
+                soundManager.useHTML5Audio = true;
+                soundManager.debugMode = 0; // disable or enable debug output
+                soundManager.useFlashBlock = 0;
+                //soundManager.useMovieStar = true;
+            </script>
+
+            <script type="text/javascript" src="/static/js/jquery-1.10.2.min.js"></script>
+            <!-- LOCAL  JAVASCRIPT-->              
+            
+            
+                   
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <script type="text/javascript">
+                
+                
+                
+            </script>
+        
+        
+        <!--RSS HEADER -->
+        
+        
+
+        <!-- Quantcast Tag, part 1 -->
+        <script type="text/javascript">
+            var _qevents = _qevents || [];
+            (function() {
+                var elem = document.createElement('script');
+                elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge")  
+                            + ".quantserve.com/quant.js";
+                elem.async = true;
+                elem.type = "text/javascript";
+                var scpt = document.getElementsByTagName('script')[0];
+                scpt.parentNode.insertBefore(elem, scpt);  
+            })();
+        </script>
+    </head>
+        
+    <body class="blog post_detail">
+        
+        
+        
+    <div id="new_header">
+    <ul>
+        
+            <li><a  href="/?ref=header">Rhizome</a></li>
+        
+            <li><a class="active" href="/editorial/?ref=header">Journal</a></li>
+        
+            <li><a  href="/artbase/featured/?ref=header">Artbase</a></li>
+        
+            <li><a  href="/community/?ref=header">Community</a></li>
+        
+            <li><a  href="/programs/?ref=header">Programs</a></li>
+        
+
+        <li id="search">
+            <form action="/search/" method="get">
+                <input type="text" name="q" placeholder=""><a id="search-addon"><i class="fa fa-search"></i></a>
+            </form>
+        </li>
+
+        <li id="account">
+            
+                <a href="/login/?ref=header"><i class="fa fa-key"></i></a>
+            
+        </li>
+    </ul>
+</div>
+
+<div id="new_footer">
+    <ul>
+        
+            
+        
+            <li><a class="active" href="/editorial/?ref=footer"><span class="underline">Journal</span> &raquo;</a></li>
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+
+        
+            <li><a  href="/editorial/artist-profiles/?ref=footer">Artist Profiles</a></li>
+        
+            <li><a  href="/editorial/tag/surf-report/?ref=footer">Surf Reports</a></li>
+        
+            <li><a  href="/editorial/tag/e-cig-in-context/?ref=footer">E-Cig in Context</a></li>
+        
+
+        
+
+        
+            <li class="reversed"><a  href="/support/donate/?ref=footer">Membership</a></li>
+        
+            <li class="reversed"><a  href="/about/?ref=footer">About Us</a></li>
+        
+    </ul>
+</div>
+
+
+
+        
+                 
+          
+        
+
+                 
+        
+             
+         
+            
+                        
+        <div id="content" class="container ">
+            
+
+
+
+
+
+    <script type="text/javascript" src="/static/discuss/scripts/add_comment_toggler.js"></script>
+    <script type="text/javascript" src="/static/js/bbcode/editor.js"></script>   
+    <script type="text/javascript" src="/static/js/bbcode/color_palette.js"></script>   
+    <script type="text/javascript" src="/static/js/loadingOverlay.js"></script>
+    <script type="text/javascript">
+        window.addEvent('domready', function() {
+            new Request({method: 'post',url: '/hit/update/',                     data:  {hitcount_pk : '137473' },                     onError: function(rtxt) {},                     onSuccess: function(rtxt,rxml) {}}).send();
+        });
+    </script>
+
+
+
+
+<div class="column-wrapper span-24">
+    <div id="editorial-posts"  class= "left-column span-15">
+        <div data-live-url="/editorial/body/9249/" class="single-post span-15 ">
+            
+                <h2 class="post-title"><a href="/editorial/2014/may/15/surf-session-cory-arcangel">A Surf Session with Cory Arcangel</a></h2>
+             
+
+            <div class="post-details clearfix">
+                <div class="post-meta">
+                    
+                        
+                            <span class="authors bold-upper blue">
+                                <a href="/profile/michaelconnor3//">Michael Connor</a> 
+                            </span>
+                        
+                        <span class="blue">|</span>
+                    
+                        <span class="bold">Thu May 15th, 2014 10:36 a.m.</span>
+                </div>
+                
+                
+                    
+<a class="comment-summary" href="/editorial/2014/may/15/surf-session-cory-arcangel/#comments"><i class="fa fa-comment fa-lg"></i> (0)</a>
+
+<div class="new-share">
+    <a class="share-btn-cover" href="#">Share</a>
+
+    <a class="share-btn" href="https://twitter.com/share?url=http://rhizome.org/editorial/2014/may/15/surf-session-cory-arcangel/" target="_blank"><i class="fa fa-twitter"></i></a>
+
+    <a class="share-btn" href="http://www.tumblr.com/share/link?url=http%3A//rhizome.org/editorial/2014/may/15/surf-session-cory-arcangel/" title="Share on Tumblr"><i class="fa fa-tumblr-square"></i></a>
+
+    <a class="share-btn" href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=http://rhizome.org/editorial/2014/may/15/surf-session-cory-arcangel/', 'facebook-share-dialog', 'width=626,height=436'); return false;"><i class="fa fa-facebook-square"></i></a>
+</div>
+                
+            </div>
+        
+            <hr class= "black-thin">
+            
+            <div class="post-body">
+                <p><img style="display: block; margin-left: auto; margin-right: auto;" src="http://media.rhizome.org/blog/9249/Arcangel-Surfware.jpg" alt="" width="590" /></p>
+<p style="text-align: center;"><span style="font-size: xx-small;">Arcangel Surfware.</span></p>
+<p><em>On Saturday, May 17, artist Cory Arcangel will present a solo exhibition and pop-up store, "You Only Live Once," at the Holiday Inn New York-Soho, featuring a new clothing and lifestyle merchandise line, <a href="http://www.arcangelsurfware.biz/">Arcangel Surfware</a>. We met for a session at his Brooklyn apartment to talk about surfing tricks and habits, gear, and how things change for each generation of surfers.</em></p>
+<p>Can you start by showing me something from your browsing history?</p>
+<p><font color="0000FF" face="'Comic Sans MS', cursive">Most, I'm not going to say all the time, but more often than not, my deep surfs revolve around late 80s/early- to mid-90s metal. (Laughter.) I've been going deep into Steve Vai lately.... Here's all my Steve Vai searches.</font></p>
+<p>Wow, that's a lot of Steve Vai.</p>
+<p><font color="0000FF" face="'Comic Sans MS', cursive">And look, it's a continual interest over months. </font></p>
+<p>Dating back to April 2013.</p>
+<p><font color="0000FF" face="'Comic Sans MS', cursive"></font><font color="0000FF" face="'Comic Sans MS', cursive">Probably my history got erased at that point, but this is as long as the history goes back. My favorite Steve Vai video is this "How to be Successful" Guitar Center Session one he did. Have you seen this?</font></p>
+<p>No, I haven't.</p>
+<p><font color="0000FF" face="'Comic Sans MS', cursive">This is the video. But my trick lately is to type in somebody that I like, a musician, and then type a year after it, and keep typing an earlier and earlier year and find out what is the earliest video of them on youtube. Like if you type in Guns N Roses 1986, you get videos of them playing in tiny, horrible clubs, you know what I mean?</font></p>
+<p>Right.</p>
+<p><font color="0000FF" face="'Comic Sans MS', cursive">So that's my trick. Lately, I have done that with Steve Vai, the Melvins, Pantera, Guns N' Roses, Van Halen, Godflesh, Joey Beltram (whose dream was to be a metal producer). This is an amazing video [referring to Steve Vai]. If we link to anything it should just be this video.</font></p>
+<p>This is Steve Vai speaking at a Guitar Center? </p>
+<p><font color="0000FF" face="'Comic Sans MS', cursive">Yeah. He's interesting because he was actually the protégé of Frank Zappa, which a lot of people don't know. So Steve Vai was in the Frank Zappa band when he was—I think—still a teenager. Look how cool he looks. So this is, to explain to people reading the interview, one of his Guitar Center lecture/performances edited into a kind of self-help video. We're just gonna watch this; it gets really amazing.</font></p>
+<p style="text-align: center;"><iframe src="//www.youtube.com/embed/atGBKuCJ-Jc?rel=0" frameborder="0" width="590" height="332" allowfullscreen=""></iframe></p>
+<p><font color="0000FF" face="'Comic Sans MS', cursive">Anyway, so this is a good example. After many many months of trawling in the middle of the night, this is the gold I was looking for. Self-help from Steve Vai. I'll show you <a href="http://www.youtube.com/watch?v=FJu4Fgl58Bs">the Melvins one</a>. It says 1984, I don't know if its 1984 but its like really early. And then the other one that I saw lately was Guns N Roses 1986. That one's amazing. "Don't Cry"—them playing it acoustically with nobody paying attention. It's so cool. Anyway, this would probably be the most emblematic of my surfing. This is really pretty much it.</font></p>
+<p style="text-align: center;"><iframe src="//www.youtube.com/embed/80XvSON6lHk?rel=0" frameborder="0" width="591" height="443" allowfullscreen=""></iframe></p>
+<p>Surfing as a cultural practice has obviously changed so much because of things like Facebook. Do you think that is more difficult to actively follow some research thread (such as 80s/90s metal) as opposed to just receiving a flow of content that's being presented to you, configured in a certain way depending on when you log on?</p>
+<p><font color="0000FF" face="'Comic Sans MS', cursive">Yeah, I do think that it's harder now in a certain way. There are a lot of structures that have been built up that are quite good at manipulating your attention. And that stuff didn't really exist maybe even ten years ago, right? There weren't sites that were like glue for your attention. k10k and Slashdot was as close as you could get, at least in my world. Something like Upworthy is a really good example of these really destructively honeypot link things. So yeah, I think it is a lot harder now just to mash around on the internet. I don't think its worse. I wouldn't put a hierarchy in terms of what's better or worse, but it is different.</font></p>
+<p>The word surfing, to me, suggests a more self-guided exploration than scrolling allows.</p>
+<p><font color="0000FF" face="'Comic Sans MS', cursive">Oh yeah, scrolling! That's the new thing. Lazy loading is a time killer! OMG. I can lose an hour, easy, like a drug addict, with a lazy loading page.</font></p>
+<p>When you told me you were doing <a href="http://www.arcangelsurfware.biz/">Arcangel Surfware</a> of course I thought it was for surfing in the ocean. I should have known... Maybe you're not making a value judgment, but the project is a kind of intervention into internet practice today, which involves quick flicks at the screen at in-between moments. Like, you're on the train for 10 min, or you're at dinner for 30 seconds and you're scrolling. So the thing that you proposed with Surfware, getting comfy and getting into things, suggests a different mode of attention.</p>
+<p><font color="0000FF" face="'Comic Sans MS', cursive">Maybe it's a mode of attention thats becoming obsolete in a weird way. I still go pretty hard though at night. Because the laptops are so light now. So I'll go pretty hard.</font></p>
+<p>Down the rabbit hole.</p>
+<p><font color="0000FF" face="'Comic Sans MS', cursive">Yeah like maybe at 9, 10 pm, like on the couch. But I do agree with you, I suppose there are different ways to surf now. Like on my phone, I'll grind hard on <em>New York Times</em>, I mean, I'll straight wear that battery down on <em>NY Times'</em> "most emailed"! Hahaha.</font></p>
+<p>Speaking of modes of surfing, can you tell me about your Subway project?</p>
+<p><font color="0000FF" face="'Comic Sans MS', cursive">Yeah. It's a series of movies I've been making which are basically desktop video screen captures of me surfing different websites. So each movie is a different website. So the one that's up in my show in Denmark ("All The Small Things," Herning Museum of Contemporary Art) right now is called <em>Freshbuzz (<a href="http://www.subway.com">subway.com</a>)</em> and it is an hour long video of me surfing Subway.com, both the actual Subway.com, but also the kind of auxiliary parts of the Subway brand—so it also includes Subway's Facebook, Vine, Pinterest, &amp; Youtube accounts. It's presented right now in a cinema so its kind of meant to be seen as a kind of cinematic piece—a movie. It's pretty intense. <em>Freshbuzz (<a href="http://www.subway.com">subway.com</a>)</em> is 60 minutes long.</font></p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="http://media.rhizome.org/blog/9249/Arcangel-Fresh-Buzz-www.subway.com.jpg" alt="" width="590" /></p>
+<p style="text-align: center;"><span style="font-size: xx-small;">Cory Arcangel,<em> Freshbuzz (subway.com)</em> (2013-14). Single-channel video, 60 minutes. Installation view, "All The Small Things," Herning Museum of Contemporary Art, 2014. Photo: Sacha Maric.</span></p>
+<p><span style="color: #000000;">It's like elongating the experience of looking at websites.</span></p>
+<p><font color="0000FF" face="'Comic Sans MS', cursive">Yeah, its the exact opposite of looking at the <em>NYTimes</em> on the subway. It's sitting down in a dark cinema and being pounded. I've done OfficeMax, Starbucks user forums, Dunkin' Donuts, and as mentioned above I've done Subway. So there are four at the moment in the series. The Dunkin' Donuts one is an hour and a half. I hope to make more. I'm looking at Cracker Barrel at the moment.</font></p>
+<p>I thought the Subway one was about health because Subway is very healthy I think.</p>
+<p><font color="0000FF" face="'Comic Sans MS', cursive">Yeah, I mean a lot of my interest in that end of it, the fast food end of it, is about like, health, yeah, to be honest. Personally, thats how I'm interested in that kind of stuff. I know that sounds so boring. Uuuugh.</font></p>
+<p>It's an interesting shift, because you're the <em>Pizza Party</em> artist. <em>[In 2004, Arcangel and Michael Frumin made Pizza Party, a software tool that allowed users to order Domino's via a command-line interface—Ed.]</em></p>
+<p><font color="0000FF" face="'Comic Sans MS', cursive">Yeah, I have a long history of making artwork that engages quite aggressively with fast food culture.</font></p>
+<p>You would only eat fast food not that long ago. Now you have a rice cooker.</p>
+<p><font color="0000FF" face="'Comic Sans MS', cursive">I don't even think I drank water until I was thirty. It's true. Seriously. [Laughter]</font></p>
+<p style="text-align: center;"><img src="http://media.rhizome.org/blog/9249/Arcangel-Surfware_1.jpg" alt="" width="590" /></p>
+<p style="text-align: center;"><span style="font-size: xx-small;">Arcangel Surfware.</span></p>
+<p>The body is a common thread among a few things you have going now. Super comfy surf clothes, subway, and the pool noodles, which you described as "accessorized."</p>
+<p><font color="0000FF" face="'Comic Sans MS', cursive">Yeah, the surf pieces are about forcing cinematic narrative onto surfing but they are also a little bit related to my own personal experience, which is health, the body, etc, etc. So it's complicated and at the same time of course, like a lot of my works, they do kind of stem from a kind of dare or a kind of joke, or a, I wonder whether people can handle this, sort of thing. And yeah, the noodle sculptures are really just "bodies" as well.</font></p>
+<p>So on the one hand your work is creating space for surfing and contemplating the web at a different pace. But on the other hand, you have projects like <em>Continuous Partial Awareness</em> (2008-2009)—basically a long list of project ideas, delivered both as a lecture and a publication—which fully conform to, even celebrate,  the pressures on our online attention.</p>
+<p><font color="0000FF" face="'Comic Sans MS', cursive">I don't have a real political stake, one way or another, but the situation is definitely changing—which is great because it means there's always new opportunities to play against or play with it. And when I did that <em>Continuous Partial Awareness</em> thing in 2008, I had noticed that the situation of "computing" was changing, and it was changing pretty quickly—on the internet, or with culture. And now its almost unrecognizable, even since then. Now everything is so fractured so much, you know? So now, to be honest, I'm just trying to keep up now. I'm an oldz now.</font></p>
+<p>Only the bots can keep up now.</p>
+<p><font color="0000FF" face="'Comic Sans MS', cursive">Definitely, yeah, one of the more exciting things lately in the last couple of years is bot culture. It's interesting that it's unclear whether a lot of sites these days are bots or not, and I think that's really one of the more cool things these days on the net.</font></p>
+<p>Is your <em>New Yorker</em> Tumblr a bot? <em>[</em>What a Misunderstanding! <em>(2009)</em><em> automatically appends the titular phrase to the weekly New Yorker Cartoon Caption Contest.]</em></p>
+<p><font color="0000FF" face="'Comic Sans MS', cursive">Yeah, <a href="http://www.what-a-misunderstanding.com/"><em>What a Misunderstanding!</em></a> is a bot. I have several bots I've made over the years but that's the latest one.</font></p>
+<p>What about the Spotify one?</p>
+<p><font color="0000FF" face="'Comic Sans MS', cursive">Ooops, forgot about that one, but yeah, that's the latest one. It's a Spotify bot—titled <em>On and On</em>—and it's basically an Applescript which runs Spotify which broadcasts to Facebook. I know that's a mouthful, but if you run it, it looks like (on Facebook) you are listening to the song Like A G6 by Far East Movement all night every night in the middle of the night. It starts at like, 9 pm and goes till 7 am or something. The code will be released as a zine at my May 17th pop up show. Have you ever seen my site solitaire-weekly.com?</font></p>
+<p>I never saw that one, no.</p>
+<p style="text-align: center;"><iframe src="//www.youtube.com/embed/L2UaYgX1HVc" frameborder="0" width="590" height="332" allowfullscreen=""></iframe></p>
+<p><font color="0000FF" face="'Comic Sans MS', cursive">That was kind of like a bot site but actually it was human done. That's the thing, some sites out there on the net these days, … it's unclear if they are bots, or just really depressing human efforts. solitaire-weekly.com is a really depressing invisible human effort.</font></p>
+<p>It's often a fine line with your work.</p>
+<p><font color="0000FF" face="'Comic Sans MS', cursive">LOL. I didn't tell anybody about it when it was happening. I didn't publish it because i didn't want people to know it was an art piece. I'll show it to you. How do you spell solitaire? It was a webisode series. There was a new episode every week, of solitaire. This was the last episode. I mean, you probably understand. That's all it is. <em><br /></em></font></p>
+<p>Did you see this Webdriver Torso YouTube channel? It seems that these videos are being uploaded automatically as a test for some kind of streaming tool, and they're quite elegant: a red and a blue rectangle accompanied by computer tones, ten seconds long. There are almost 80,000 of these videos on their channel, and it's not clear exactly where they're coming from.</p>
+<p>It's funny because the role of the artist has been under pressure from amateur production for a while now but now it's under pressure from bot production.</p>
+<p style="text-align: center;"><iframe src="//www.youtube.com/embed/m5r-aoNYfkk" frameborder="0" width="590" height="332" allowfullscreen=""></iframe></p>
+<p><font color="0000FF" face="'Comic Sans MS', cursive">Yeah, yeah. It's not under pressure but its certainly .. five years ago, I think a lot of artists were looking at things on YouTube and being like "uh, that is better than anything I've ever made." And now you're like looking at some robots like, "uh, that is better than anything I've ever made." So yeah, I kind of agree with you. And it means were in a really fun time right now. We're competing against these kind of things ... it's fantastic.</font></p>
+<p>When I saw the Surfware photos I thought about Spirit Surfers...so yeah, it made me think about how surfing has been changing, and keeps changing.</p>
+<p><font color="0000FF" face="'Comic Sans MS', cursive">I think that was a really special time for all of us, … the del.icio.us/surf blog era. I was happy to have participated, at least just through del.icio.us in that kind of community and I think of it very fondly now when I think back on it. I mean I made so many friends on del.icio.us. Like IRL friends. Who I still email every day. It's true, I think it might be the last social network that I really made good friends over. It doesn't mean that it can't happen again, but in my mind, that was my social network. That was like my jam, you know?</font></p>
+<p>But you know, even del.icio.us was a kind of step towards organizing people's attention. Before that it was much more chaotic, and you could come across something like Alexei Shulgin's <a href="http://www.desk.nl/~you/bla-bla/">bla-bla links</a> and just have no idea where it came from… You know, I lost my delicious account. </p>
+<p><font color="0000FF" face="'Comic Sans MS', cursive">Oh because it was probably sending that update to an old email.</font></p>
+<p>Exactly.</p>
+<p><font color="0000FF" face="'Comic Sans MS', cursive">I think my del.icio.us account is still up but I don't use it anymore.</font></p>
+<p>We're not kids anymore.</p>
+<p><font color="0000FF" face="'Comic Sans MS', cursive">I know! I think my delicious account started in '03 and so actually it's, I can't imagine that, but it's been over ten years since everyone was on del.icio.us. It makes me feel like old or something, which is kind of cool. I don't mind getting old. But its good to talk about all this stuff. Like therapy.</font></p> 
+            </div>
+                
+            
+              <!--TAGS-->	
+            
+            
+            <div class="post-tags-and-share span-15">
+                <span class="tags essay-tags">
+                    <label>Tags:</label>
+                    
+                        <a class="tag blue" href="/editorial/tags/cory-arcangel/">Cory Arcangel</a>
+                    
+                        <a class="tag blue" href="/editorial/tags/fashion/">fashion</a>
+                    
+                        <a class="tag blue" href="/editorial/tags/holiday-inn/">Holiday Inn</a>
+                    
+                        <a class="tag blue" href="/editorial/tags/interview/">interview</a>
+                    
+                </span>
+            </div>
+            
+            
+            
+                        
+            <hr class="black-thin span-15">
+            
+            <div class="post-nav last span-15">
+                
+                    <a class="previous span-7" href="/editorial/2014/may/14/go-fucking-do-it">Previous Post</a>
+                
+                
+                    
+                        <a class="next span-7" href="/editorial/2014/may/20/stealth-infrastructure">Next Post</a>
+                    
+                
+            </div>
+
+        </div> 
+        
+            
+                
+ 
+ <!--COMMENTS LIST-->
+
+
+<!--END COMMENTS LIST-->
+ <!--ADD COMMENT -->	
+
+ <!--ADD COMMENT -->
+    <div class="section-row-titles mini-nav">
+        <a name="comments" id="comments-section" class="anchor-name">Reply to this Post</a>
+    </div>
+    <hr class="hr3"> 	
+     
+        <div class= "login">
+            You must be logged in to post a comment.
+            <a id="section-login" class="round-blue" href = "/login/?next=/editorial/2014/may/15/surf-session-cory-arcangel/#comments">Log In</a>
+        </div>
+    
+
+<!--END ADD COMMENT -->
+
+<!--END ADD COMMENT -->
+
+            
+        
+    </div>
+   
+   <!--end left column-->
+    <div class= "right-column span-8">
+        <div id="nectar-ads">
+    <div id="featured-ad">
+        <div style="height: 600px; width: 300px" id="azk1"></div>    
+    </div>
+    
+    <div id="adsquares">
+        <div style="height: 141; width: 137;" id="azk2"></div>
+        
+        <div style="height: 141; width: 137;" id="azk3"></div>
+        
+        <div style="height: 141; width: 137;" id="azk4"></div>
+        
+        <div style="height: 141; width: 137;" id="azk5"></div>
+    </div>
+    <div>
+        <a style="font-weight:bold;" href="http://nectarads.com">Advertise on Rhizome with Nectar Ads</a>
+    </div>
+</div>
+        
+        
+
+<div id ="sidebar">
+  <div class="sidebar-element ">
+        <div class="section-title"><a href="/announce">Rhizome News</a></div>
+        <div class="content-wrap ">
+            <div class="content" id="subscribe">
+                <div class="content-body subscribe ">
+                    <div class="subscribe-description">
+                    Our weekly email newsletter including featured stories, events, job listings, announcements and opportunities in the fields of art & technology.
+                    </div>
+                    
+                    <div id="rhizome-news-signup-form">
+                        <!-- Begin MailChimp Signup Form -->
+<div id="mc_embed_signup">
+<form action="http://rhizome.us1.list-manage.com/subscribe/post?u=a1487b13ca8ed17d052f71f12&amp;id=6f6e0ea86b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+	<fieldset>
+	
+<div class="mc-field-group">
+<input type="text" placeholder="YOUR EMAIL" name="EMAIL" id="newsletter-input">
+</div>
+		<div id="mce-responses">
+			<div class="response" id="mce-error-response" style="display:none"></div>
+			<div class="response" id="mce-success-response" style="display:none"></div>
+		</div>
+		<div><input type="submit" value="Subscribe to Rhizome News" name="subscribe" id="mc-embedded-subscribe"></div>
+	</fieldset>	
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+                    </div>                
+                </div>
+                
+                 <div class="content-body subscribe ">
+                    <div id="connect-links">
+                        
+                        <!-- twitter follow button -->
+                        <a href="https://twitter.com/rhizomedotorg" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @rhizomedotorg</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                        
+                        <!-- fb like button -->
+                       <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Frhizome.org%2F&amp;send=false&amp;layout=button_count&amp;width=77&amp;show_faces=false&amp;font&amp;colorscheme=light&amp;action=like&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:77px; height:20px;" allowTransparency="true"></iframe>
+
+                        <!-- youtube subscribe button -->
+                        <a class="youtube-subscribe-button" href="http://www.youtube.com/subscription_center?add_user=RhizomeDotOrg1" title="Subscribe to Rhizome's YouTube Channel">Subscribe to Rhizome's YouTube Channel</a>
+
+                        <!-- vimeo button -->
+
+
+                        <!-- rss button -->
+                        <a class="rhizome-fp-rss" href="http://feeds.feedburner.com/rhizome-fp/" title="Rhizome RSS">Rhizome RSS</a>
+
+                        <!-- tumblr button -->
+                        <iframe class="btn" frameborder="0" border="0" scrolling="no" allowtransparency="true" height="18" width="18" src="http://platform.tumblr.com/v1/follow_button.html?button_type=3&tumblelog=rhizomedotorg&color_scheme=dark"></iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>    
+</div>
+
+        
+<div id ="sidebar">
+
+    <div class="sidebar-element ">
+        <div class="section-title">
+            <a href="/editorial/">Featured Articles</a>
+        </div>
+        <div class="content-wrap ">
+            <div class="content ">
+                
+                
+                <div class="content-body ">
+                    <div class="sidebar-post">
+                        
+                        <div class = "post-image">
+                            <a class="bold" href="/editorial/2014/aug/28/first-look-miranda-july?ref=ftsidebar">
+			      
+                                <img src="http://media.rhizome.org/blog/9326/Miranda-July-Somebody.jpg.100x80_q95_crop.jpg">
+                            </a>
+                        </div>
+                        <div class="sidebar-post-title ">
+                            <a class = "bold" href="/editorial/2014/aug/28/first-look-miranda-july?ref=ftsidebar">Somebody: A New Messaging Service by Miranda July</a>                                   
+                        </div>
+                        
+                        <div class="sidebar-post-info ">
+                            <span class="descriptor">by 
+                                
+                                    
+                                        <span class="authors bold-upper blue">
+                                            <a href="/profile/lauren23/?ref=ftsidebar">Lauren Cornell</a> 
+                                        </span>
+                                    
+                                
+                            on Aug 28th, 2014</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-body ">
+                    <div class="sidebar-post">
+                        
+                        <div class = "post-image">
+                            <a class="bold" href="/editorial/2014/aug/27/artist-profile-femke-herregraven?ref=ftsidebar">
+			      
+                                <img src="http://media.rhizome.org/blog/9322/Taxodus.gif.100x80_q95_crop.png">
+                            </a>
+                        </div>
+                        <div class="sidebar-post-title ">
+                            <a class = "bold" href="/editorial/2014/aug/27/artist-profile-femke-herregraven?ref=ftsidebar">Artist Profile: Femke Herregraven</a>                                   
+                        </div>
+                        
+                        <div class="sidebar-post-info ">
+                            <span class="descriptor">by 
+                                
+                                    
+                                        <span class="authors bold-upper blue">
+                                            <a href="/profile/lucy_chinen/?ref=ftsidebar">Lucy Chinen</a> 
+                                        </span>
+                                    
+                                
+                            on Aug 27th, 2014</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-body ">
+                    <div class="sidebar-post">
+                        
+                        <div class = "post-image">
+                            <a class="bold" href="/editorial/2014/aug/20/twine-could-be-your-life?ref=ftsidebar">
+			      
+                                <img src="http://media.rhizome.org/blog/9315/Do-you-want.jpg.100x80_q95_crop.jpg">
+                            </a>
+                        </div>
+                        <div class="sidebar-post-title ">
+                            <a class = "bold" href="/editorial/2014/aug/20/twine-could-be-your-life?ref=ftsidebar">Hypertext and Destiny: This Twine Could be Your Life</a>                                   
+                        </div>
+                        
+                        <div class="sidebar-post-info ">
+                            <span class="descriptor">by 
+                                
+                                    
+                                        <span class="authors bold-upper blue">
+                                            <a href="/profile/Gconverse/?ref=ftsidebar">Grace Converse</a> 
+                                        </span>
+                                    
+                                
+                            on Aug 20th, 2014</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-body ">
+                    <div class="sidebar-post">
+                        
+                        <div class = "post-image">
+                            <a class="bold" href="/editorial/2014/aug/14/containers?ref=ftsidebar">
+			      
+                                <img src="http://media.rhizome.org/blog/9308/Allan-Sekula.jpg.100x80_q95_crop.jpg">
+                            </a>
+                        </div>
+                        <div class="sidebar-post-title ">
+                            <a class = "bold" href="/editorial/2014/aug/14/containers?ref=ftsidebar">Containers</a>                                   
+                        </div>
+                        
+                        <div class="sidebar-post-info ">
+                            <span class="descriptor">by 
+                                
+                                    
+                                        <span class="authors bold-upper blue">
+                                            <a href="/profile/interdome/?ref=ftsidebar">Adam Rothstein</a> 
+                                        </span>
+                                    
+                                
+                            on Aug 14th, 2014</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+
+</div>
+
+
+        
+
+
+        </div>
+        
+        <div id="preload"></div>
+
+
+
+        <!-- Quantcast Tag, part 2 -->
+        <script type="text/javascript">
+            _qevents.push( { qacct:"p-1bU5CKetpvMBI", labels:"artmedia" } );
+        </script>
+        <noscript>
+            <div style="display: none;">
+                <img src="//pixel.quantserve.com/pixel/p-1bU5CKetpvMBI.gif?labels=artmedia" height="1" width="1" alt="Quantcast"/>
+            </div>
+        </noscript>
+
+        
+        
+
+        <script>
+        jQuery.noConflict();
+        (function($) {
+            $(function() {
+                $('.share-btn-cover').click(function() {
+                    $(this).hide();
+                    $(this).siblings('.share-btn').css({'display': 'inline-block'});
+                    return false;
+                });
+            });
+        })(jQuery);
+        </script>
+        <script type="text/javascript" src="/static/js/new_navbars.js"></script>
+        
+
+        
+            <script type="text/javascript">
+                var z=document.createElement("script");
+                z.type="text/javascript";
+                z.async=true;
+                z.src="//engine.nectarads.com/z/12843/azk1_2_43,azk2_2_16,azk3_2_16,azk4_2_16,azk5_2_16";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(z, s);
+            </script>
+        
+
+
+
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-768502-1', 'rhizome.org');
+          ga('send', 'pageview');
+
+        </script>
+    
+        <script type="text/javascript">
+            (function() {
+            var src = document.createElement('script'); 
+            src.async = true;
+            src.src = document.location.protocol + '//platform.twitter.com/widgets.js';
+            document.getElementsByTagName('head')[0].appendChild(src);
+            }());                        
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+            po.src = 'https://apis.google.com/js/plusone.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+          })();
+        </script>
+        
+        <script type="text/javascript">
+            var _sf_async_config={uid:26954,domain:"rhizome.org"};
+            (function(){
+              function loadChartbeat() {
+                window._sf_endpt=(new Date()).getTime();
+                var e = document.createElement('script');
+                e.setAttribute('language', 'javascript');
+                e.setAttribute('type', 'text/javascript');
+                e.setAttribute('src',
+                   (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+                   "js/chartbeat.js");
+                document.body.appendChild(e);
+              }
+              var oldonload = window.onload;
+              window.onload = (typeof window.onload != 'function') ?
+                 loadChartbeat : function() { oldonload(); loadChartbeat(); };
+            })();
+        </script>        
+    </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=US-ASCII">
+<title>The Temple Operating System</title>
+<meta name="keywords" content="Operating System,64-Bit,64 Bit,Temple,OS,TempleOS,Free,Open Source,Public Domain,x86_64">
+<meta name="generator" content="TempleOS V2.08">
+<style type="text/css">
+.cF0{color:#000000;background-color:#fcfcfc;}
+.cF1{color:#0000a8;background-color:#fcfcfc;}
+.cF2{color:#00a800;background-color:#fcfcfc;}
+.cF3{color:#00a8a8;background-color:#fcfcfc;}
+.cF4{color:#a80000;background-color:#fcfcfc;}
+.cF5{color:#a800a8;background-color:#fcfcfc;}
+.cF6{color:#a85400;background-color:#fcfcfc;}
+.cF7{color:#a8a8a8;background-color:#fcfcfc;}
+.cF8{color:#545454;background-color:#fcfcfc;}
+.cF9{color:#5454fc;background-color:#fcfcfc;}
+.cFA{color:#54fc54;background-color:#fcfcfc;}
+.cFB{color:#54fcfc;background-color:#fcfcfc;}
+.cFC{color:#fc5454;background-color:#fcfcfc;}
+.cFD{color:#fc54fc;background-color:#fcfcfc;}
+.cFE{color:#fcfc54;background-color:#fcfcfc;}
+.cFF{color:#fcfcfc;background-color:#fcfcfc;}
+</style>
+</head>
+<body>
+<pre style="font-family:courier;font-size:10pt">
+<a name="l1"></a><span class=cF5>                               DolDoc Widget Help</span><span class=cF0>
+<a name="l2"></a></span><span class=cF4>
+<a name="l3"></a></span><a href="DolDocOverview.html#l1"><span class=cF4>DolDoc</span></a><span class=cF0> is a propriatary TempleOS document type.
+<a name="l4"></a>
+<a name="l5"></a></span><span class=cF2>&quot;Expression&quot;</span><span class=cF0> a num or HolyC algebraic term with operators and HolyC syms can be 
+<a name="l6"></a>entered.
+<a name="l7"></a></span><span class=cF2>&quot;Macro&quot;</span><span class=cF0> Most entries can behave like macro entries if you assign them macro 
+<a name="l8"></a>strs.
+<a name="l9"></a></span><span class=cF2>&quot;AutoStr&quot;</span><span class=cF0> Like a macro except it is an </span><a href="Glossary.html#l208"><span class=cF4>AutoFile</span></a><span class=cF0>.  You can't have both an autostr 
+<a name="l10"></a>and macro text defined.  
+<a name="l11"></a>
+<a name="l12"></a></span><span class=cF5>Tag Text</span><span class=cF0> is the text that will be displayed for the item.  For links, you can 
+<a name="l13"></a>leave it blank and the details of the link will be shown.
+<a name="l14"></a></span><span class=cF5>Hide</span><span class=cF0> means display nothing, making an entry invisible.
+<a name="l15"></a>
+<a name="l16"></a></span><span class=cF5>Left X</span><span class=cF0> relative to the left margin.
+<a name="l17"></a></span><span class=cF5>Center X</span><span class=cF0> relative to the horizontal center of the window.
+<a name="l18"></a></span><span class=cF5>Right X</span><span class=cF0> relative to the right margin.
+<a name="l19"></a></span><span class=cF5>Top Y</span><span class=cF0> relative to the top of the window.
+<a name="l20"></a></span><span class=cF5>Center Y</span><span class=cF0> relative to the vertical center of the window.
+<a name="l21"></a></span><span class=cF5>Bottom Y</span><span class=cF0> relative to the bottom of the window.
+<a name="l22"></a>
+<a name="l23"></a></span><span class=cF5>Blink</span><span class=cF0> make the text blink.
+<a name="l24"></a></span><span class=cF5>Invert</span><span class=cF0> make the text inverted.
+<a name="l25"></a></span><span class=cF5>Underline</span><span class=cF0> make the text underlined. 
+<a name="l26"></a>
+<a name="l27"></a></span><span class=cF5>Scroll X Length Expression</span><span class=cF0> if a value is entered, the text will scroll in an 
+<a name="l28"></a>area of this width.
+<a name="l29"></a></span><span class=cF5>Y Offset Expression</span><span class=cF0> if a value is entered, the text will be shifted vertically 
+<a name="l30"></a>by this many pixs, so you can make superscripts or subscripts.
+<a name="l31"></a></span><span class=cF5>X Offset Expression</span><span class=cF0> if a value is entered, the text will be shifted horizontally 
+<a name="l32"></a>by this many pixs.
+<a name="l33"></a>
+<a name="l34"></a></span><span class=cF5>Tree</span><span class=cF0> The item will behave like a tree widget, with this as the root.
+<a name="l35"></a></span><span class=cF5>Collapsed</span><span class=cF0> The tree or hidden widget will begin collapsed.
+<a name="l36"></a></span><span class=cF5>Define Str</span><span class=cF0> will substitute a </span><span class=cF2>#define</span><span class=cF0> or </span><a href="../Kernel/Define1a.html#l1"><span class=cF4>DefineLoad</span></a><span class=cF0>() string for the tag.
+<a name="l37"></a>
+<a name="l38"></a></span><span class=cF5>Quote</span><span class=cF0> Make the result suitable for including in a program, in quotes, especially </span><span class=cF2>
+<a name="l39"></a>fmtstr</span><span class=cF0> entries in class definitions.
+<a name="l40"></a>
+<a name="l41"></a></span><span class=cF5>X Expression</span><span class=cF0> For cursor movements, the horizontal value.
+<a name="l42"></a></span><span class=cF5>Y Expression</span><span class=cF0> For cursor movements, the vertical value.
+<a name="l43"></a>
+<a name="l44"></a></span><span class=cF5>PopUp</span><span class=cF0> For macro's, run the macro in a PopUp window.  Do this when making a macro 
+<a name="l45"></a>to run a program, so it doesn't tie-up memory.
+<a name="l46"></a>
+<a name="l47"></a></span><span class=cF5>Escape</span><span class=cF0> For macro's, send an </span><span class=cF2>&lt;ESC&gt;</span><span class=cF0> char to exit before running the macro.  
+<a name="l48"></a>Without this, the macro runs in the wrong window, usually.
+<a name="l49"></a>
+<a name="l50"></a></span><span class=cF5>Refresh Data</span><span class=cF0>  updates </span><span class=cF2>$DA...$</span><span class=cF0> entry continuously.
+<a name="l51"></a>
+<a name="l52"></a></span><span class=cF5>Html Link</span><span class=cF0>  stores a link which will be embedded if you generate a html version 
+<a name="l53"></a>of a document with </span><a href="../Adam/Utils/ToHtml.html#l274"><span class=cF4>ToHtml</span></a><span class=cF0>() or </span><a href="../Adam/Utils/ToHtml.html#l113"><span class=cF4>Doc2Html</span></a><span class=cF0>().
+</span></pre></body>
+</html>
+<!-- text below generated by server. PLEASE REMOVE --><!-- Counter/Statistics data collection code --><script language="JavaScript" src="http://l.yimg.com/d/lib/smb/js/hosting/cp/js_source/whv2_001.js"></script><script language="javascript">geovisit();</script><noscript><img src="http://visit.webhosting.yahoo.com/visit.gif?us1409528703" alt="setstats" border="0" width="1" height="1"></noscript><script type="text/javascript" src="https://s.yimg.com/mi/vs4/ywa.js"></script><script type="text/javascript">try {var YWAGTracker = YWA.getTracker("10001849413879", "VSCALE4");YWAGTracker.setDocumentName("WPAGE");YWAGTracker.setDocumentGroup("YSBW");YWAGTracker.setCF(7, "templeos.org");YWAGTracker.setCF(8, "w42");YWAGTracker.submit();} catch (eYWATCUnavailable) {}</script><script type="text/javascript">(function (d, w) {var x = d.getElementsByTagName('SCRIPT')[0];var f = function () {var s = d.createElement('SCRIPT');s.type = 'text/javascript';s.async = true;s.src = "//np.lexity.com/embed/YW/eff965aab4535cd38b91f0976c617496?id=9382d670eca2";x.parentNode.insertBefore(s, x);};w.attachEvent ? w.attachEvent('onload',f) :w.addEventListener('load',f,false);}(document, window));</script>

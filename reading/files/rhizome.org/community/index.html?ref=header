@@ -1,0 +1,1150 @@
+
+
+
+<!doctype html>
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="Content-Language" content="en-us">
+        <title>Rhizome | Community</title>                
+        <meta name="google-site-verification" content="AZfoqybynDh_0mjEBG_XwMZeCwiSE-GZ8BiQB5FZzDU" />        
+        <meta name="ROBOTS" content="ALL" />
+        <meta name="description" content="Rhizome is dedicated to the creation, presentation, preservation, and critique of emerging artistic practices that engage technology." />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <!-- Set viewport so we can have mobile styles -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+
+        <link rel="shortcut icon" href="/static/images/favicons/leyva.gif" />
+
+        <!-- google fonts -->
+        <link href='//fonts.googleapis.com/css?family=Titillium+Web:400,200,300' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Anaheim' rel='stylesheet' type='text/css'>
+
+        
+            <!--GLOBAL CSS-->
+            <link type="text/css" rel="stylesheet" href="/static/css/blueprint/screen.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/base.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/comments.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/sidebars.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/calendars.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/miniprofile.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/media_players.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/blueprint/print.css" media="print"/></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/new_navbars.css"/></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/top_banner.css"/></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/mobile.css"/></link>
+            <link type="text/css" rel="stylesheet" href="/static/font-awesome-4.0.0/css/font-awesome.min.css"/></link>
+            <!--[if lt IE 8]>
+                <link rel="stylesheet" href="/static/css/blueprint/ie.css" type="text/css" media="screen, projection"></link>
+            <![endif]-->
+         
+            <!--[if IE]>
+                <link rel="stylesheet" type="text/css" href="/static/css/ie.css"  />
+            <![endif]-->
+
+            <!-- LOCAL CSS -->
+            
+	<link rel="stylesheet" href="/static/accounts/styles/accounts.css" type="text/css" charset="utf-8"></link>
+
+            
+            
+            
+            
+            
+            
+
+            
+            
+        
+        
+        
+        
+            <!-- GLOBAL JAVASCRIPT -->
+            <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+            <script type="text/javascript">window.__admin_media_prefix__ = "/static/admin/";</script>
+            <script type="text/javascript">window.__static_url__ = "/static/";</script>
+            <script type="text/javascript">var STATIC_URL = "/static/";</script>
+            <script type="text/javascript">window.SERVER_NAME = "rhizome.org";</script>
+
+            <script type="text/javascript" src="/static/js/mootools-core-1.3.2-yc.js"></script>
+            <script type="text/javascript" src="/static/js/mootools-more-1.3.2.1.js"></script>
+            <script type="text/javascript" src="/static/js/rhizome.js"></script>
+            <script type="text/javascript" src="/static/media_players/flowplayer/flowplayer-3.2.2.min.js"></script>
+            <script type="text/javascript" src="/static/media_players/soundmanager/script/soundmanager2-nodebug-jsmin.js"></script>
+            <script type="text/javascript" src="/static/media_players/soundmanager/script/inlineplayer.js"></script>
+            <script type="text/javascript" src="/static/js/carousel/PeriodicalExecuter.js"></script>
+            <script type="text/javascript" src="/static/js/carousel/Carousel.js"></script>
+            
+            <script type="text/javascript">
+                soundManager.url = '/static/media_players/soundmanager/swf/';
+                //soundManager.flashVersion = 9; // optional: shiny features (default = 8)
+                soundManager.useFlashBlock = true; // optionally, enable when you're ready to dive in
+                // enable HTML5 audio support, if you're feeling adventurous.
+                soundManager.useHTML5Audio = true;
+                soundManager.debugMode = 0; // disable or enable debug output
+                soundManager.useFlashBlock = 0;
+                //soundManager.useMovieStar = true;
+            </script>
+
+            <script type="text/javascript" src="/static/js/jquery-1.10.2.min.js"></script>
+            <!-- LOCAL  JAVASCRIPT-->              
+            
+<script type="text/javascript" src="/static/accounts/scripts/updated_portfolios.js"></script>
+<script type="text/javascript" src="/static/accounts/scripts/calendar.js"></script>
+<script type="text/javascript">
+window.addEvent("domready", init);
+function init() {show_updated_portfolios_community();}
+</script>
+
+            
+                   
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <script type="text/javascript">
+                
+                
+                
+            </script>
+        
+        
+        <!--RSS HEADER -->
+        
+        
+
+        <!-- Quantcast Tag, part 1 -->
+        <script type="text/javascript">
+            var _qevents = _qevents || [];
+            (function() {
+                var elem = document.createElement('script');
+                elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge")  
+                            + ".quantserve.com/quant.js";
+                elem.async = true;
+                elem.type = "text/javascript";
+                var scpt = document.getElementsByTagName('script')[0];
+                scpt.parentNode.insertBefore(elem, scpt);  
+            })();
+        </script>
+    </head>
+        
+    <body class="rhizome-base">
+        
+        
+        
+	<div id="new_header">
+    <ul>
+        
+            <li><a  href="/?ref=header">Rhizome</a></li>
+        
+            <li><a  href="/editorial/?ref=header">Journal</a></li>
+        
+            <li><a  href="/artbase/featured/?ref=header">Artbase</a></li>
+        
+            <li><a class="active" href="/community/?ref=header">Community</a></li>
+        
+            <li><a  href="/programs/?ref=header">Programs</a></li>
+        
+
+        <li id="search">
+            <form action="/search/" method="get">
+                <input type="text" name="q" placeholder=""><a id="search-addon"><i class="fa fa-search"></i></a>
+            </form>
+        </li>
+
+        <li id="account">
+            
+                <a href="/login/?ref=header"><i class="fa fa-key"></i></a>
+            
+        </li>
+    </ul>
+</div>
+
+<div id="new_footer">
+    <ul>
+        
+            
+        
+            
+        
+            
+        
+            <li><a class="active" href="/community/?ref=footer"><span class="underline">Community</span> &raquo;</a></li>
+        
+            
+        
+            
+        
+            
+        
+
+        
+            <li><a  href="/announce/?ref=footer">Announce</a></li>
+        
+            <li><a  href="/discuss/?ref=footer">Discuss</a></li>
+        
+            <li><a  href="/portfolios/?ref=footer">Portfolios</a></li>
+        
+            <li><a class="active" href="/profile/?ref=footer">Profiles</a></li>
+        
+            <li><a  href="/jobs/?ref=footer">Jobs Board</a></li>
+        
+            <li><a  href="/subscribe/?ref=footer">Mailing Lists</a></li>
+        
+
+        
+
+        
+            <li class="reversed"><a  href="/support/donate/?ref=footer">Membership</a></li>
+        
+            <li class="reversed"><a  href="/about/?ref=footer">About Us</a></li>
+        
+    </ul>
+</div>
+
+
+
+        
+                 
+          
+        
+
+                 
+        
+             
+         
+            
+                        
+        <div id="content" class="container ">
+            
+
+<div class = "span-24">
+
+    <div class="section span-11" style="padding-right:30px">
+        <div class="section-row-titles span-11">
+            <span class = "nav-item span-10">Recently Updated Portfolios</span>                      
+            <span class="carousel-scroll" id ="carousel-scroll-portfolios">
+                    <a href = "#" id = "previous"></a>
+                    <a href = "#" id = "next"></a>
+            </span>
+            <hr class="hr3">
+        </div>
+        <div id = "community-portfolios-wrapper" class = "span-13">            
+            <div id ="portfolios" class = "span-11">
+                
+                <div class = "work">
+                    <a href= "/portfolios/artwork/58407/">
+                        <img src="http://media.rhizome.org/artbase/images/58407_image_small.JPG" width = "135">
+                    </a>
+                    <div class = "work-details">
+                        <a href= "/portfolios/artwork/58407/">
+                            Akousmaflore 
+                        </a>
+                        <div class="italic bold">by</div>
+                        <a href= "/profile/scenocosme/">
+                            scenocosme : Grégory Lasserre &amp; Anaïs met den Ancxt
+                        </a>
+                    </div>
+                </div>
+                
+                <div class = "work">
+                    <a href= "/portfolios/artwork/58406/">
+                        <img src="http://media.rhizome.org/artbase/images/58406_image_small.jpg" width = "135">
+                    </a>
+                    <div class = "work-details">
+                        <a href= "/portfolios/artwork/58406/">
+                            Vom Vergessen
+                        </a>
+                        <div class="italic bold">by</div>
+                        <a href= "/profile/laurentziegler/">
+                            Laurent Ziegler
+                        </a>
+                    </div>
+                </div>
+                
+                <div class = "work">
+                    <a href= "/portfolios/artwork/58405/">
+                        <img src="http://media.rhizome.org/artbase/images/58405_image_small.jpg" width = "135">
+                    </a>
+                    <div class = "work-details">
+                        <a href= "/portfolios/artwork/58405/">
+                            Reversal of Fortune: Garden of Virtual Kinship
+                        </a>
+                        <div class="italic bold">by</div>
+                        <a href= "/profile/stephanierothenberg1/">
+                            Stephanie Rothenberg
+                        </a>
+                    </div>
+                </div>
+                
+                <div class = "work">
+                    <a href= "/portfolios/artwork/58401/">
+                        <img src="http://media.rhizome.org/artbase/images/58401_image_small.jpg" width = "135">
+                    </a>
+                    <div class = "work-details">
+                        <a href= "/portfolios/artwork/58401/">
+                            Invisible Threads
+                        </a>
+                        <div class="italic bold">by</div>
+                        <a href= "/profile/stephanierothenberg1/">
+                            Stephanie Rothenberg, Jeff Crouse
+                        </a>
+                    </div>
+                </div>
+                
+                <div class = "work">
+                    <a href= "/portfolios/artwork/58402/">
+                        <img src="http://media.rhizome.org/artbase/images/58402_image_small.jpg" width = "135">
+                    </a>
+                    <div class = "work-details">
+                        <a href= "/portfolios/artwork/58402/">
+                            Laborers of Love (LOL)
+                        </a>
+                        <div class="italic bold">by</div>
+                        <a href= "/profile/stephanierothenberg1/">
+                            Stephanie Rothenberg, Jeff Crouse
+                        </a>
+                    </div>
+                </div>
+                
+                <div class = "work">
+                    <a href= "/portfolios/artwork/58398/">
+                        <img src="http://media.rhizome.org/artbase/images/58398_image_small.jpg" width = "135">
+                    </a>
+                    <div class = "work-details">
+                        <a href= "/portfolios/artwork/58398/">
+                            The New Turing Test
+                        </a>
+                        <div class="italic bold">by</div>
+                        <a href= "/profile/ianhaig/">
+                            Ian Haig
+                        </a>
+                    </div>
+                </div>
+                
+                <div class = "work">
+                    <a href= "/portfolios/artwork/58397/">
+                        <img src="http://media.rhizome.org/artbase/images/58397_image_small.jpg" width = "135">
+                    </a>
+                    <div class = "work-details">
+                        <a href= "/portfolios/artwork/58397/">
+                            Offshoring Pathways
+                        </a>
+                        <div class="italic bold">by</div>
+                        <a href= "/profile/michelleletelier/">
+                            Michelle-Marie Letelier
+                        </a>
+                    </div>
+                </div>
+                
+                <div class = "work">
+                    <a href= "/portfolios/artwork/58396/">
+                        <img src="http://media.rhizome.org/artbase/images/58396_image_small.jpg" width = "135">
+                    </a>
+                    <div class = "work-details">
+                        <a href= "/portfolios/artwork/58396/">
+                            bodies+bags(moving-in-between)
+                        </a>
+                        <div class="italic bold">by</div>
+                        <a href= "/profile/kayathiea/">
+                            Kaya Barry
+                        </a>
+                    </div>
+                </div>
+                
+                <div class = "work">
+                    <a href= "/portfolios/artwork/58395/">
+                        <img src="http://media.rhizome.org/artbase/images/58395_image_small.jpg" width = "135">
+                    </a>
+                    <div class = "work-details">
+                        <a href= "/portfolios/artwork/58395/">
+                            How to have a conversation about backpacks
+                        </a>
+                        <div class="italic bold">by</div>
+                        <a href= "/profile/kayathiea/">
+                            Kaya Barry
+                        </a>
+                    </div>
+                </div>
+                
+                <div class = "work">
+                    <a href= "/portfolios/artwork/58394/">
+                        <img src="http://media.rhizome.org/artbase/images/58394_image_small.jpg" width = "135">
+                    </a>
+                    <div class = "work-details">
+                        <a href= "/portfolios/artwork/58394/">
+                            Expanding horizon (Reykjavík)
+                        </a>
+                        <div class="italic bold">by</div>
+                        <a href= "/profile/kayathiea/">
+                            Kaya Barry
+                        </a>
+                    </div>
+                </div>
+                
+                <div class = "work">
+                    <a href= "/portfolios/artwork/58391/">
+                        <img src="http://media.rhizome.org/artbase/images/58391_image_small.jpg" width = "135">
+                    </a>
+                    <div class = "work-details">
+                        <a href= "/portfolios/artwork/58391/">
+                            Atardece
+                        </a>
+                        <div class="italic bold">by</div>
+                        <a href= "/profile/mostrosarra/">
+                            Juan Manuel Morales
+                        </a>
+                    </div>
+                </div>
+                
+                <div class = "work">
+                    <a href= "/portfolios/artwork/55627/">
+                        <img src="http://media.rhizome.org/artbase/images/55627_image_small.gif" width = "135">
+                    </a>
+                    <div class = "work-details">
+                        <a href= "/portfolios/artwork/55627/">
+                            ¡Hallazgo Macabro!
+                        </a>
+                        <div class="italic bold">by</div>
+                        <a href= "/profile/mostrosarra/">
+                            Juan Manuel Morales
+                        </a>
+                    </div>
+                </div>
+                
+                <div class = "work">
+                    <a href= "/portfolios/artwork/58390/">
+                        <img src="http://media.rhizome.org/artbase/images/58390_image_small.png" width = "135">
+                    </a>
+                    <div class = "work-details">
+                        <a href= "/portfolios/artwork/58390/">
+                            Southgate Bridge Graffiti - III
+                        </a>
+                        <div class="italic bold">by</div>
+                        <a href= "/profile/rbeaumont/">
+                             Eszpebea 
+                        </a>
+                    </div>
+                </div>
+                
+                <div class = "work">
+                    <a href= "/portfolios/artwork/52743/">
+                        <img src="http://media.rhizome.org/artbase/images/52743_image_small.jpg" width = "135">
+                    </a>
+                    <div class = "work-details">
+                        <a href= "/portfolios/artwork/52743/">
+                            Luminous Point
+                        </a>
+                        <div class="italic bold">by</div>
+                        <a href= "/profile/alexhahn/">
+                            Alexander Hahn
+                        </a>
+                    </div>
+                </div>
+                
+                <div class = "work">
+                    <a href= "/portfolios/artwork/58385/">
+                        <img src="http://media.rhizome.org/artbase/images/58385_image_small.jpg" width = "135">
+                    </a>
+                    <div class = "work-details">
+                        <a href= "/portfolios/artwork/58385/">
+                            N 40º43&#39;16&quot; W 74º59&#39;11
+                        </a>
+                        <div class="italic bold">by</div>
+                        <a href= "/profile/alexhahn/">
+                            Alexander Hahn
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="section span-11 prepend-1">
+            <div class="section-row-titles">
+                <span class = "nav-item">Community Calendar</span>
+                <hr class="hr3">
+            </div>    
+            <div id = "announce-calendar" class = "span-11">
+                <table border="0" cellpadding="0" cellspacing="0" class="month">
+<tr><th colspan="7" class="month">August 2014</th></tr>
+<tr><th class="sun">Sun</th><th class="mon">Mon</th><th class="tue">Tue</th><th class="wed">Wed</th><th class="thu">Thu</th><th class="fri">Fri</th><th class="sat">Sat</th></tr>
+<tr><td class="noday"><span>&nbsp;</span></td><td class="noday"><span>&nbsp;</span></td><td class="noday"><span>&nbsp;</span></td><td class="noday"><span>&nbsp;</span></td><td class="noday"><span>&nbsp;</span></td><td class="day-number calendar-lookup-day" rel = "2014/8/1"><span>1 </span></td><td class="day-number calendar-lookup-day" rel = "2014/8/2"><span>2 </span></td></tr>
+<tr><td class="day-number calendar-lookup-day" rel = "2014/8/3"><span>3 </span></td><td class="day-number"><span>4</span></td><td class="day-number calendar-lookup-day" rel = "2014/8/5"><span>5 </span></td><td class="day-number calendar-lookup-day" rel = "2014/8/6"><span>6 </span></td><td class="day-number calendar-lookup-day" rel = "2014/8/7"><span>7 </span></td><td class="day-number calendar-lookup-day" rel = "2014/8/8"><span>8 </span></td><td class="day-number calendar-lookup-day" rel = "2014/8/9"><span>9 </span></td></tr>
+<tr><td class="day-number"><span>10</span></td><td class="day-number"><span>11</span></td><td class="day-number calendar-lookup-day" rel = "2014/8/12"><span>12 </span></td><td class="day-number calendar-lookup-day" rel = "2014/8/13"><span>13 </span></td><td class="day-number calendar-lookup-day" rel = "2014/8/14"><span>14 </span></td><td class="day-number calendar-lookup-day" rel = "2014/8/15"><span>15 </span></td><td class="day-number"><span>16</span></td></tr>
+<tr><td class="day-number"><span>17</span></td><td class="day-number"><span>18</span></td><td class="day-number calendar-lookup-day" rel = "2014/8/19"><span>19 </span></td><td class="day-number calendar-lookup-day" rel = "2014/8/20"><span>20 </span></td><td class="day-number"><span>21</span></td><td class="day-number"><span>22</span></td><td class="day-number calendar-lookup-day" rel = "2014/8/23"><span>23 </span></td></tr>
+<tr><td class="day-number"><span>24</span></td><td class="day-number"><span>25</span></td><td class="day-number"><span>26</span></td><td class="day-number calendar-lookup-day" rel = "2014/8/27"><span>27 </span></td><td class="day-number calendar-lookup-day" rel = "2014/8/28"><span>28 </span></td><td class="day-number"><span>29</span></td><td class="day-number"><span>30</span></td></tr>
+<tr><td class="day-number today"><span>31</span></td><td class="noday"><span>&nbsp;</span></td><td class="noday"><span>&nbsp;</span></td><td class="noday"><span>&nbsp;</span></td><td class="noday"><span>&nbsp;</span></td><td class="noday"><span>&nbsp;</span></td><td class="noday"><span>&nbsp;</span></td></tr>
+</table>
+            </div>
+    </div>
+
+</div>
+
+<div class = "span-24">
+    <div class="section span-11" style="padding-right:30px">
+        <div class="section-row-titles">
+            <span class = "nav-item">Active Discussions</span>
+            <hr class="hr3">
+        </div>
+        
+            <div class = "community-section-row  span-11">
+                <div class = "markdown span-8">
+                    <h3 class= "serif"> 
+                    <a href = "/discuss/view/208832">Rhizome Today</a>
+                    </h3>
+                </div>
+                
+                <div class = "right row-text span-2">
+                    
+                        
+                        Replies: 3
+                    
+                </div>
+                
+                
+                
+                
+                
+                    <div class = "row-text markdown span-5">
+                    
+                        
+                            Posted by <a href="/profile/zacharykaplan/">Zachary Kaplan</a>
+                        
+                    
+                    </div>   
+                       
+            
+                
+                <div class = "row-text right markdown span-5">
+                    Last Response by
+                    <a href = "/profile/michaelconnor3/">
+                        Michael Connor
+                    </a>
+                </div>
+                
+            
+            </div>
+        
+            <div class = "community-section-row  span-11">
+                <div class = "markdown span-8">
+                    <h3 class= "serif"> 
+                    <a href = "/discuss/view/208830">A Sense of Place</a>
+                    </h3>
+                </div>
+                
+                <div class = "right row-text span-2">
+                    
+                        
+                        Replies: 1      
+                    
+                </div>
+                
+                
+                
+                <div class = "row-text markdown span-5">
+                    Posted by 
+                        
+                        <a href = "/profile/michaelszpakowski/"> Michael Szpakowski</a>
+                    
+                </div>  
+                
+                
+                       
+            
+                
+                <div class = "row-text right markdown span-5">
+                    Last Response by
+                    <a href = "/profile/michaelszpakowski/">
+                        Michael Szpakowski
+                    </a>
+                </div>
+                
+            
+            </div>
+        
+            <div class = "community-section-row  span-11">
+                <div class = "markdown span-8">
+                    <h3 class= "serif"> 
+                    <a href = "/discuss/view/208829">Rhizome Today — 8.18</a>
+                    </h3>
+                </div>
+                
+                <div class = "right row-text span-2">
+                    
+                        
+                        Replies: 2
+                    
+                </div>
+                
+                
+                
+                
+                
+                    <div class = "row-text markdown span-5">
+                    
+                        
+                            Posted by <a href="/profile/michaelconnor3/">Michael Connor</a>
+                        
+                            Posted by <a href="/profile/zacharykaplan/">Zachary Kaplan</a>
+                        
+                    
+                    </div>   
+                       
+            
+                
+                <div class = "row-text right markdown span-5">
+                    Last Response by
+                    <a href = "/profile/zacharykaplan/">
+                        Zachary Kaplan
+                    </a>
+                </div>
+                
+            
+            </div>
+        
+            <div class = "community-section-row  span-11">
+                <div class = "markdown span-8">
+                    <h3 class= "serif"> 
+                    <a href = "/discuss/view/208828">Rhizome Today—8.15</a>
+                    </h3>
+                </div>
+                
+                <div class = "right row-text span-2">
+                    
+                        
+                        Replies: 2
+                    
+                </div>
+                
+                
+                
+                
+                
+                    <div class = "row-text markdown span-5">
+                    
+                        
+                            Posted by <a href="/profile/zacharykaplan/">Zachary Kaplan</a>
+                        
+                    
+                    </div>   
+                       
+            
+                
+                <div class = "row-text right markdown span-5">
+                    Last Response by
+                    <a href = "/profile/zacharykaplan/">
+                        Zachary Kaplan
+                    </a>
+                </div>
+                
+            
+            </div>
+        
+            <div class = "community-section-row  span-11">
+                <div class = "markdown span-8">
+                    <h3 class= "serif"> 
+                    <a href = "/discuss/view/208823">Rhizome Today 8.14</a>
+                    </h3>
+                </div>
+                
+                <div class = "right row-text span-2">
+                    
+                        
+                        Replies: 11
+                    
+                </div>
+                
+                
+                
+                
+                
+                    <div class = "row-text markdown span-5">
+                    
+                        
+                            Posted by <a href="/profile/Rhizomer/">Rhizome</a>
+                        
+                    
+                    </div>   
+                       
+            
+                
+                <div class = "row-text right markdown span-5">
+                    Last Response by
+                    <a href = "/profile/michaelconnor3/">
+                        Michael Connor
+                    </a>
+                </div>
+                
+            
+            </div>
+        
+            <div class = "community-section-row  span-11">
+                <div class = "markdown span-8">
+                    <h3 class= "serif"> 
+                    <a href = "/discuss/view/208812">A Stranger-Web: The Death and Rebirth of the Chatroom</a>
+                    </h3>
+                </div>
+                
+                <div class = "right row-text span-2">
+                    
+                        
+                        Replies: 2      
+                    
+                </div>
+                
+                
+                
+                <div class = "row-text markdown span-5">
+                    Posted by 
+                        
+                        <a href = "/profile/norbertogomezjr/"> Norberto Gomez Jr</a>
+                    
+                </div>  
+                
+                
+                       
+            
+                
+                <div class = "row-text right markdown span-5">
+                    Last Response by
+                    <a href = "/profile/wildtorus/">
+                        VV/LD TORVS
+                    </a>
+                </div>
+                
+            
+            </div>
+        
+            <div class = "community-section-row  span-11">
+                <div class = "markdown span-8">
+                    <h3 class= "serif"> 
+                    <a href = "/discuss/view/208822">Artist Profile: Genevieve Belleveau</a>
+                    </h3>
+                </div>
+                
+                <div class = "right row-text span-2">
+                    
+                        
+                        Replies: 0
+                    
+                </div>
+                
+                
+                
+                
+                
+                    <div class = "row-text markdown span-5">
+                    
+                        
+                            Posted by <a href="/profile/jessedarling/">Jesse  Darling</a>
+                        
+                    
+                    </div>   
+                       
+            
+                
+                <div class = "row-text right markdown span-5">
+                    Last Response by
+                    <a href = "/profile/greenlotus1/">
+                        Mingma Sherpa
+                    </a>
+                </div>
+                
+            
+            </div>
+        
+            <div class = "community-section-row  span-11">
+                <div class = "markdown span-8">
+                    <h3 class= "serif"> 
+                    <a href = "/discuss/view/208820">Trailblazers 7: Notes from the Game-Master</a>
+                    </h3>
+                </div>
+                
+                <div class = "right row-text span-2">
+                    
+                        
+                        Replies: 1
+                    
+                </div>
+                
+                
+                
+                
+                
+                    <div class = "row-text markdown span-5">
+                    
+                        
+                            Posted by <a href="/profile/despens/">Dragan Espenschied</a>
+                        
+                    
+                    </div>   
+                       
+            
+                
+                <div class = "row-text right markdown span-5">
+                    Last Response by
+                    <a href = "/profile/heathercorc/">
+                        Heather Corcoran
+                    </a>
+                </div>
+                
+            
+            </div>
+        
+            <div class = "community-section-row  span-11">
+                <div class = "markdown span-8">
+                    <h3 class= "serif"> 
+                    <a href = "/discuss/view/208819">sketch for &#39;anecdote of the jar&#39;</a>
+                    </h3>
+                </div>
+                
+                <div class = "right row-text span-2">
+                    
+                        
+                        Replies: 6      
+                    
+                </div>
+                
+                
+                
+                <div class = "row-text markdown span-5">
+                    Posted by 
+                        
+                        <a href = "/profile/michaelszpakowski/"> Michael Szpakowski</a>
+                    
+                </div>  
+                
+                
+                       
+            
+                
+                <div class = "row-text right markdown span-5">
+                    Last Response by
+                    <a href = "/profile/michaelszpakowski/">
+                        Michael Szpakowski
+                    </a>
+                </div>
+                
+            
+            </div>
+        
+            <div class = "community-section-row  community-section-row-last span-11">
+                <div class = "markdown span-8">
+                    <h3 class= "serif"> 
+                    <a href = "/discuss/view/208817">novaScotia transCryption Engines</a>
+                    </h3>
+                </div>
+                
+                <div class = "right row-text span-2">
+                    
+                        
+                        Replies: 1      
+                    
+                </div>
+                
+                
+                
+                <div class = "row-text markdown span-5">
+                    Posted by 
+                        
+                        <a href = "/profile/curtcloninger/"> curt cloninger</a>
+                    
+                </div>  
+                
+                
+                       
+            
+                
+                <div class = "row-text right markdown span-5">
+                    Last Response by
+                    <a href = "/profile/curtcloninger/">
+                        curt cloninger
+                    </a>
+                </div>
+                
+            
+            </div>
+          
+    </div>
+
+    <div class="section span-11 prepend-1">
+        <div class="section-row-titles last">
+            <span class = "nav-item">Recent Announcements</span>
+            <hr class="hr3">
+        </div>   
+         
+     
+        <div class = "community-section-row  span-11">
+         
+         
+             
+                <div class="community-announce-date span-2">
+                    <div class = "deadline">Starts:</div>
+                    <div class = "month">Sep</div>
+                    <div class = "day">12</div>
+                    <div class = "year">2014</div>
+                </div>
+                
+                
+                        
+            
+                <h3 class ="serif">
+                    <a href="/announce/events/60851/view/">&quot;Prove it to me&quot; Opening</a>   
+                </h3>
+                        
+                
+                <div class="item-listing span-8">   
+                        <span class = "row-text span-2">Location:</span>
+                        <div class = "span-5">
+                          
+                           Brooklyn
+                           New York<br/>  
+                           United States of America<br/>     
+                          
+                        </div>
+                    <hr class="thin-no-margin">
+                </div> 
+                
+                
+                
+                <div class="item-listing span-8">   
+                        <div class = "row-text span-2">Description:</div>  
+                        <div class = "span-8 indent">“Prove it to me”, curated by Natasha Marie Llorens, is a group show featuring the work of Shane Aslan Selzer, Stephanie Diamond, Dillon de Give, Mark Menjivar, Maria D. Rapicavoli, Julia Sherman, and Mary Walling Blackburn. Arguably the only thing that holds social practice art together as a genre is the fact that it takes place between people. It is an art-form that entails giving over meaning to subjects – to bodies, even – in ...</div>
+                    <hr class="thin-no-margin">
+                </div> 
+                
+    
+                
+                <div class="item-listing row-text-padding span-8 prepend-2">  
+                    <a href="http://reversespace.org/prove-it-to-me/">http://reversespace.org/prove-it-to-me/</a>
+                    <hr class="thin-no-margin">
+                </div> 
+                
+                
+                <div class="item-listing row-text-padding span-8 prepend-2">
+                        EVENT posted by <a href = "/profile/REVERSE/">REVERSE</a>
+                </div>
+                
+            
+            
+        </div>
+    
+        <div class = "community-section-row  span-11">
+         
+         
+             
+                
+                
+                <div class="community-announce-date span-2">
+                    <div class = "deadline">Deadline:</div>
+                    <div class = "month">Nov</div>
+                    <div class = "day">01</div>
+                    <div class = "year">2014</div>
+                </div>
+                        
+            
+                <h3 class ="serif">
+                    <a href="/announce/opportunities/60575/view/">SLINGSHOT Festival - Data Perceptualization Competition</a>   
+                </h3>
+                        
+                
+                <div class="item-listing span-8">   
+                        <span class = "row-text span-2">Location:</span>
+                        <div class = "span-5">
+                          
+                           Athens
+                           Georgia<br/>  
+                           United States of America<br/>     
+                          
+                        </div>
+                    <hr class="thin-no-margin">
+                </div> 
+                
+                
+                
+                <div class="item-listing span-8">   
+                        <div class = "row-text span-2">Description:</div>  
+                        <div class = "span-8 indent">The SLINGSHOT Festival of Music, Electronic Arts and Technology, and the University of Georgia’s College of Engineering announce the Data Perceptualization Competition. The competition is held in conjunction with SLINGSHOT&#39;s Sensory Overload conference on Big Data &amp; Data Perceptualization (part of the SLINGSHOT Festival in Athens, GA (USA), March 26-28, 2015). This competition seeks to discover and showcase creative and innovative approaches to data visualization, sonification, and other modes of data perceptualization. Entries selected for ...</div>
+                    <hr class="thin-no-margin">
+                </div> 
+                
+    
+                
+                <div class="item-listing row-text-padding span-8 prepend-2">  
+                    <a href="http://www.slingshotathens.com/submission">http://www.slingshotathens.com/submission</a>
+                    <hr class="thin-no-margin">
+                </div> 
+                
+                
+                <div class="item-listing row-text-padding span-8 prepend-2">
+                        OPPORTUNITY posted by <a href = "/profile/marty5/">marty5</a>
+                </div>
+                
+            
+            
+        </div>
+    
+        <div class = "community-section-row  community-section-row-last span-11">
+         
+         
+             
+                
+                
+                <div class="community-announce-date span-2">
+                    <div class = "deadline">Deadline:</div>
+                    <div class = "month">Dec</div>
+                    <div class = "day">05</div>
+                    <div class = "year">2014</div>
+                </div>
+                        
+            
+                <h3 class ="serif">
+                    <a href="/announce/jobs/57350/view/">Assistant Professor- Graphic Design</a>   
+                </h3>
+                        
+                
+                <div class="item-listing span-8">   
+                        <span class = "row-text span-2">Location:</span>
+                        <div class = "span-5">
+                          
+                           Buffalo
+                           New York<br/>  
+                           United States of America<br/>     
+                          
+                        </div>
+                    <hr class="thin-no-margin">
+                </div> 
+                
+                
+                
+                <div class="item-listing span-8">   
+                        <div class = "row-text span-2">Description:</div>  
+                        <div class = "span-8 indent">Department of Art at the University at Buffalo: Assistant Professor- Graphic Design Job Posting Number1400552 https://www.ubjobs.buffalo.edu/applicants/jsp/shared/position/JobDetails_css.jsp?postingId=196886 The Department of Art at the University at Buffalo expects to hire a faculty member at the level of Assistant Professor to begin in August 2015. The Department of Art at the University at Buffalo is dedicated to developing the creative skills of students in studio and post-studio art and graphic design, as well as their academic skills in ...</div>
+                    <hr class="thin-no-margin">
+                </div> 
+                
+    
+                
+                <div class="item-listing row-text-padding span-8 prepend-2">  
+                    <a href="https://www.ubjobs.buffalo.edu/applicants/jsp/shared/position/JobDetails_css.jsp?postingId=196886">https://www.ubjobs.buffalo.edu/applicants/jsp/shared/position/JobDetails_css.jsp?postingId=196886</a>
+                    <hr class="thin-no-margin">
+                </div> 
+                
+                
+                <div class="item-listing row-text-padding span-8 prepend-2">
+                        JOB posted by <a href = "/profile/stephanierothenberg1/">Stephanie Rothenberg</a>
+                </div>
+                
+            
+            
+        </div>
+      
+    </div>
+</div>
+
+        </div>
+        
+        <div id="preload"></div>
+
+
+
+        <!-- Quantcast Tag, part 2 -->
+        <script type="text/javascript">
+            _qevents.push( { qacct:"p-1bU5CKetpvMBI", labels:"artmedia" } );
+        </script>
+        <noscript>
+            <div style="display: none;">
+                <img src="//pixel.quantserve.com/pixel/p-1bU5CKetpvMBI.gif?labels=artmedia" height="1" width="1" alt="Quantcast"/>
+            </div>
+        </noscript>
+
+        
+        
+
+        <script>
+        jQuery.noConflict();
+        (function($) {
+            $(function() {
+                $('.share-btn-cover').click(function() {
+                    $(this).hide();
+                    $(this).siblings('.share-btn').css({'display': 'inline-block'});
+                    return false;
+                });
+            });
+        })(jQuery);
+        </script>
+        <script type="text/javascript" src="/static/js/new_navbars.js"></script>
+        
+
+        
+            <script type="text/javascript">
+                var z=document.createElement("script");
+                z.type="text/javascript";
+                z.async=true;
+                z.src="//engine.nectarads.com/z/12843/azk1_2_43,azk2_2_16,azk3_2_16,azk4_2_16,azk5_2_16";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(z, s);
+            </script>
+        
+
+
+
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-768502-1', 'rhizome.org');
+          ga('send', 'pageview');
+
+        </script>
+    
+        <script type="text/javascript">
+            (function() {
+            var src = document.createElement('script'); 
+            src.async = true;
+            src.src = document.location.protocol + '//platform.twitter.com/widgets.js';
+            document.getElementsByTagName('head')[0].appendChild(src);
+            }());                        
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+            po.src = 'https://apis.google.com/js/plusone.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+          })();
+        </script>
+        
+        <script type="text/javascript">
+            var _sf_async_config={uid:26954,domain:"rhizome.org"};
+            (function(){
+              function loadChartbeat() {
+                window._sf_endpt=(new Date()).getTime();
+                var e = document.createElement('script');
+                e.setAttribute('language', 'javascript');
+                e.setAttribute('type', 'text/javascript');
+                e.setAttribute('src',
+                   (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+                   "js/chartbeat.js");
+                document.body.appendChild(e);
+              }
+              var oldonload = window.onload;
+              window.onload = (typeof window.onload != 'function') ?
+                 loadChartbeat : function() { oldonload(); loadChartbeat(); };
+            })();
+        </script>        
+    </body>
+</html>

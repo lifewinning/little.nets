@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=US-ASCII">
+<title>The Temple Operating System</title>
+<meta name="keywords" content="Operating System,64-Bit,64 Bit,Temple,OS,TempleOS,Free,Open Source,Public Domain,x86_64">
+<meta name="generator" content="TempleOS V2.15">
+<style type="text/css">
+.cF0{color:#000000;background-color:#fcfcfc;}
+.cF1{color:#0000a8;background-color:#fcfcfc;}
+.cF2{color:#00a800;background-color:#fcfcfc;}
+.cF3{color:#00a8a8;background-color:#fcfcfc;}
+.cF4{color:#a80000;background-color:#fcfcfc;}
+.cF5{color:#a800a8;background-color:#fcfcfc;}
+.cF6{color:#a85400;background-color:#fcfcfc;}
+.cF7{color:#a8a8a8;background-color:#fcfcfc;}
+.cF8{color:#545454;background-color:#fcfcfc;}
+.cF9{color:#5454fc;background-color:#fcfcfc;}
+.cFA{color:#54fc54;background-color:#fcfcfc;}
+.cFB{color:#54fcfc;background-color:#fcfcfc;}
+.cFC{color:#fc5454;background-color:#fcfcfc;}
+.cFD{color:#fc54fc;background-color:#fcfcfc;}
+.cFE{color:#fcfc54;background-color:#fcfcfc;}
+.cFF{color:#fcfcfc;background-color:#fcfcfc;}
+</style>
+</head>
+<body>
+<pre style="font-family:courier;font-size:10pt">
+<a name="l1"></a></blink><span class=cF5>                          The Temple Operating System</span><span class=cF0>
+<a name="l2"></a>
+<a name="l3"></a></span><a href="http://www.templeos.org/TempleOSCD.ISO"></blink><span class=cF2>Download TempleOS V2.15 - Standard Distro (24.1 MB)</span></a></blink><span class=cF0>
+<a name="l4"></a>
+<a name="l5"></a>
+<a name="l6"></a></span><span class=cF5>                                    &lt;Native&gt;</span><span class=cF0>
+<a name="l7"></a>Burn a CD/DVD from TempleOSCD.ISO and boot it to run natively.
+<a name="l8"></a>
+<a name="l9"></a>
+<a name="l10"></a></span><span class=cF5>                                    &lt;VMware&gt;</span><span class=cF0>
+<a name="l11"></a>Use </span><a href="https://my.vmware.com/web/vmware/free#desktop_end_user_computing/vmware_player/5_0"></blink><span class=cF4>VMware</span></a></blink><span class=cF0> to run the ISO in a virtual machine.  Aim the CD/DVD at 
+<a name="l12"></a>TempleOSCD.ISO.  Downgrade to VMware Player 4.0 or VMware Workstation 8.0 if you 
+<a name="l13"></a>want sound and you have an internal PC speaker.
+<a name="l14"></a>
+<a name="l15"></a>Buy VMware Workstation for, like $250, and you can mount a drive to move files 
+<a name="l16"></a>in and out.  Multicore works in VMware.  I use VMware Workstation in Ubuntu.  
+<a name="l17"></a>Sound does not work.
+<a name="l18"></a>
+<a name="l19"></a>You might use </span><a href="http://www.winimage.com"></blink><span class=cF4>WinImage</span></a></blink><span class=cF0> or other software to get files in and out if you do not 
+<a name="l20"></a>purchase Workstation.
+<a name="l21"></a>
+<a name="l22"></a>We need to petition VMware to support PC Speaker.
+<a name="l23"></a>
+<a name="l24"></a>
+<a name="l25"></a></span><span class=cF5>                                  &lt;VirtualBox&gt;</span><span class=cF0>
+<a name="l26"></a>Use </span><a href="http://www.virtualbox.org"></blink><span class=cF4>VirtualBox</span></a></blink><span class=cF0> to run the ISO in a virtual machine by aiming the CD/DVD at 
+<a name="l27"></a>TempleOSCD.ISO.
+<a name="l28"></a>
+<a name="l29"></a>
+<a name="l30"></a></span><span class=cF5>                                     &lt;QEMU&gt;</span><span class=cF0>
+<a name="l31"></a>Use QEMU to run the ISO in a virtual machine.  QEMU does not support multicore.
+<a name="l32"></a>
+<a name="l33"></a></span><a href="http://en.wikibooks.org/wiki/QEMU/Images"></blink><span class=cF4>Wiki on QEMU Images</span></a></blink><span class=cF0>
+<a name="l34"></a>
+<a name="l35"></a>You need to make a file for your guest hard disk image.  This command creates a 
+<a name="l36"></a>file which is where you are going to install onto from the CDROM ISO file.  It 
+<a name="l37"></a>will behave as the hard drive for the guest operating system. 
+<a name="l38"></a>&gt;</span><span class=cF2>qemu-img create -f qcow2 my_disk.img 3G</span><span class=cF0>
+<a name="l39"></a>
+<a name="l40"></a>The first time, boot the CDROM ISO and install on a virtual machine.  (Type this 
+<a name="l41"></a>command on one line.)
+<a name="l42"></a>&gt;</span><span class=cF2>qemu-system-x86_64 -hda my_disk.img -enable-kvm -m 512 -cpu host -soundhw pcspk 
+<a name="l43"></a>-cdrom TempleOSCD.ISO -boot d</span><span class=cF0>
+<a name="l44"></a>
+<a name="l45"></a>After installing, boot the hard disk.
+<a name="l46"></a>&gt;</span><span class=cF2>qemu-system-x86_64 -hda my_disk.img -enable-kvm -m 512 -cpu host -soundhw pcspk</span><span class=cF0>
+<a name="l47"></a>
+<a name="l48"></a>This connects the image to /dev/nbd0.  It acts like any other block device.  It 
+<a name="l49"></a>mounts it to mount point, /mnt/my_disk.
+<a name="l50"></a>&gt;</span><span class=cF2>sudo modprobe nbd max_part=16</span><span class=cF0>
+<a name="l51"></a>&gt;</span><span class=cF2>sudo qemu-nbd -c /dev/nbd0 my_disk.img</span><span class=cF0>
+<a name="l52"></a>&gt;</span><span class=cF2>sudo partprobe /dev/nbd0</span><span class=cF0>
+<a name="l53"></a>&gt;</span><span class=cF2>sudo mkdir /mnt/my_disk</span><span class=cF0>
+<a name="l54"></a>&gt;</span><span class=cF2>sudo mount /dev/nbd0p1 /mnt/my_disk</span><span class=cF0>
+<a name="l55"></a>
+<a name="l56"></a>
+<a name="l57"></a></span><span class=cF8>
+<a name="l58"></a>* &quot;VMware Player&quot; and &quot;VMware WorkStation&quot; are trademarks of VMware, Inc.
+<a name="l59"></a>* &quot;VirtualBox&quot; is a trademark of Oracle.
+<a name="l60"></a>* &quot;WinImage&quot; is a trademark owned by Gilles Vollant.
+</span></pre></body>
+</html>
+<!-- text below generated by server. PLEASE REMOVE --><!-- Counter/Statistics data collection code --><script language="JavaScript" src="http://l.yimg.com/d/lib/smb/js/hosting/cp/js_source/whv2_001.js"></script><script language="javascript">geovisit();</script><noscript><img src="http://visit.webhosting.yahoo.com/visit.gif?us1409528570" alt="setstats" border="0" width="1" height="1"></noscript><script type="text/javascript" src="https://s.yimg.com/mi/vs4/ywa.js"></script><script type="text/javascript">try {var YWAGTracker = YWA.getTracker("10001849413879", "VSCALE4");YWAGTracker.setDocumentName("WPAGE");YWAGTracker.setDocumentGroup("YSBW");YWAGTracker.setCF(7, "templeos.org");YWAGTracker.setCF(8, "w42");YWAGTracker.submit();} catch (eYWATCUnavailable) {}</script><script type="text/javascript">(function (d, w) {var x = d.getElementsByTagName('SCRIPT')[0];var f = function () {var s = d.createElement('SCRIPT');s.type = 'text/javascript';s.async = true;s.src = "//np.lexity.com/embed/YW/eff965aab4535cd38b91f0976c617496?id=9382d670eca2";x.parentNode.insertBefore(s, x);};w.attachEvent ? w.attachEvent('onload',f) :w.addEventListener('load',f,false);}(document, window));</script>

@@ -1,0 +1,1856 @@
+
+
+
+<!doctype html>
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="Content-Language" content="en-us">
+        <title>Rhizome | Announce</title>                
+        <meta name="google-site-verification" content="AZfoqybynDh_0mjEBG_XwMZeCwiSE-GZ8BiQB5FZzDU" />        
+        <meta name="ROBOTS" content="ALL" />
+        <meta name="description" content="Rhizome is dedicated to the creation, presentation, preservation, and critique of emerging artistic practices that engage technology." />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <!-- Set viewport so we can have mobile styles -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+
+        <link rel="shortcut icon" href="/static/images/favicons/leyva.gif" />
+
+        <!-- google fonts -->
+        <link href='//fonts.googleapis.com/css?family=Titillium+Web:400,200,300' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Anaheim' rel='stylesheet' type='text/css'>
+
+        
+            <!--GLOBAL CSS-->
+            <link type="text/css" rel="stylesheet" href="/static/css/blueprint/screen.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/base.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/comments.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/sidebars.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/calendars.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/miniprofile.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/media_players.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/blueprint/print.css" media="print"/></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/new_navbars.css"/></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/top_banner.css"/></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/mobile.css"/></link>
+            <link type="text/css" rel="stylesheet" href="/static/font-awesome-4.0.0/css/font-awesome.min.css"/></link>
+            <!--[if lt IE 8]>
+                <link rel="stylesheet" href="/static/css/blueprint/ie.css" type="text/css" media="screen, projection"></link>
+            <![endif]-->
+         
+            <!--[if IE]>
+                <link rel="stylesheet" type="text/css" href="/static/css/ie.css"  />
+            <![endif]-->
+
+            <!-- LOCAL CSS -->
+            
+	<link rel="stylesheet" href="/static/announce/styles/announce.css" type="text/css" media="screen" charset="utf-8"></link>
+
+            
+            
+            
+            
+            
+            
+
+            
+            
+        
+        
+        
+        
+            <!-- GLOBAL JAVASCRIPT -->
+            <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+            <script type="text/javascript">window.__admin_media_prefix__ = "/static/admin/";</script>
+            <script type="text/javascript">window.__static_url__ = "/static/";</script>
+            <script type="text/javascript">var STATIC_URL = "/static/";</script>
+            <script type="text/javascript">window.SERVER_NAME = "rhizome.org";</script>
+
+            <script type="text/javascript" src="/static/js/mootools-core-1.3.2-yc.js"></script>
+            <script type="text/javascript" src="/static/js/mootools-more-1.3.2.1.js"></script>
+            <script type="text/javascript" src="/static/js/rhizome.js"></script>
+            <script type="text/javascript" src="/static/media_players/flowplayer/flowplayer-3.2.2.min.js"></script>
+            <script type="text/javascript" src="/static/media_players/soundmanager/script/soundmanager2-nodebug-jsmin.js"></script>
+            <script type="text/javascript" src="/static/media_players/soundmanager/script/inlineplayer.js"></script>
+            <script type="text/javascript" src="/static/js/carousel/PeriodicalExecuter.js"></script>
+            <script type="text/javascript" src="/static/js/carousel/Carousel.js"></script>
+            
+            <script type="text/javascript">
+                soundManager.url = '/static/media_players/soundmanager/swf/';
+                //soundManager.flashVersion = 9; // optional: shiny features (default = 8)
+                soundManager.useFlashBlock = true; // optionally, enable when you're ready to dive in
+                // enable HTML5 audio support, if you're feeling adventurous.
+                soundManager.useHTML5Audio = true;
+                soundManager.debugMode = 0; // disable or enable debug output
+                soundManager.useFlashBlock = 0;
+                //soundManager.useMovieStar = true;
+            </script>
+
+            <script type="text/javascript" src="/static/js/jquery-1.10.2.min.js"></script>
+            <!-- LOCAL  JAVASCRIPT-->              
+            
+            
+                   
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <script type="text/javascript">
+                
+                
+                
+            </script>
+        
+        
+        <!--RSS HEADER -->
+        
+    <link rel="alternate" type="application/rss+xml" title="Rhizome Announce" href="http://feeds.feedburner.com/rhizome-announce/" />
+
+
+        <!-- Quantcast Tag, part 1 -->
+        <script type="text/javascript">
+            var _qevents = _qevents || [];
+            (function() {
+                var elem = document.createElement('script');
+                elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge")  
+                            + ".quantserve.com/quant.js";
+                elem.async = true;
+                elem.type = "text/javascript";
+                var scpt = document.getElementsByTagName('script')[0];
+                scpt.parentNode.insertBefore(elem, scpt);  
+            })();
+        </script>
+    </head>
+        
+    <body class="announce">
+        
+        
+        
+	<div id="new_header">
+    <ul>
+        
+            <li><a  href="/?ref=header">Rhizome</a></li>
+        
+            <li><a  href="/editorial/?ref=header">Journal</a></li>
+        
+            <li><a  href="/artbase/featured/?ref=header">Artbase</a></li>
+        
+            <li><a class="active" href="/community/?ref=header">Community</a></li>
+        
+            <li><a  href="/programs/?ref=header">Programs</a></li>
+        
+
+        <li id="search">
+            <form action="/search/" method="get">
+                <input type="text" name="q" placeholder=""><a id="search-addon"><i class="fa fa-search"></i></a>
+            </form>
+        </li>
+
+        <li id="account">
+            
+                <a href="/login/?ref=header"><i class="fa fa-key"></i></a>
+            
+        </li>
+    </ul>
+</div>
+
+<div id="new_footer">
+    <ul>
+        
+            
+        
+            
+        
+            
+        
+            <li><a class="active" href="/community/?ref=footer"><span class="underline">Community</span> &raquo;</a></li>
+        
+            
+        
+            
+        
+            
+        
+
+        
+            <li><a class="active" href="/announce/?ref=footer">Announce</a></li>
+        
+            <li><a  href="/discuss/?ref=footer">Discuss</a></li>
+        
+            <li><a  href="/portfolios/?ref=footer">Portfolios</a></li>
+        
+            <li><a  href="/profile/?ref=footer">Profiles</a></li>
+        
+            <li><a  href="/jobs/?ref=footer">Jobs Board</a></li>
+        
+            <li><a  href="/subscribe/?ref=footer">Mailing Lists</a></li>
+        
+
+        
+
+        
+            <li class="reversed"><a  href="/support/donate/?ref=footer">Membership</a></li>
+        
+            <li class="reversed"><a  href="/about/?ref=footer">About Us</a></li>
+        
+    </ul>
+</div>
+
+
+
+        
+                 
+          
+        
+
+        
+        <div class="section-header-wrap">
+            
+            <div class ="section-header container">
+                <!-- Start Standard Section Header -->
+                
+                    <h6>Rhizome Announce</h6>
+                
+
+                <div id="section-description" class="span-15">Our announce channel will connect you to events and opportunities around the world. We welcome you to upload any event, opportunity or job relevant to artists and art professionals. Please make sure information in your post is clear and complete. Our editorial team may choose to re-post your announcement on our blog or in our weekly newsletter, Rhizome News.</div>
+                <div id="section-description"></div>
+                
+                
+                <div class ="section-action" class="span-9 last">
+                    <form action="submit">
+                        <button class="section-action submit-announce" type="submit"></button>
+                    </form>
+                </div>
+                
+                
+                
+                <!-- End Standard Section Header -->
+                
+                
+                <!-- End Custom Section Header -->
+            </div>
+
+            
+        </div>
+                 
+        
+             
+         
+            
+                        
+        <div id="content" class="container ">
+            
+<a name="filter-top"></a>
+<div class="section span-24">
+    <div class="section-row-titles mini-nav">
+        <span class = "nav-item first selected"><a href="/announce/#filter-top">Latest Announcements</a></span>
+        <span class = "nav-item"><a href="/announce/opportunities/#filter-top">Opportunities</a></span>
+        <span class = "nav-item"><a href="/announce/events/#filter-top">Events</a></span>
+        <span class = "nav-item"><a href="/announce/jobs/#filter-top">Jobs</a></span>
+        <span class = "nav-item last"><a href="/announce/deadlines/#filter-top">Upcoming Deadlines</a></span>
+    </div> 
+    <a class = "rss-link" href="http://feeds.feedburner.com/rhizome-announce/">RSS</a>
+    <hr class="hr2">
+</div>
+
+<div class="section-content span-24">
+    
+    <div class = "feed-item span-24">
+        
+            <div class = "feed-item-meta span-5">
+                
+                <div class = "prepend-2">
+                    <div class="start-date-no-image span-2 prepend-1">
+                        <div class = "deadline">Starts:</div>
+                        <div class = "month">Sep</div>
+                        <div class = "day">12</div>
+                        <div class = "year">2014</div>
+                    </div>
+                </div>
+                
+                
+                
+                
+            
+            
+            <div class = "feed-item-meta-data span-5 last">
+                <span class = "red">EVENT</span> posted by<br/>
+                <a href="/profile/REVERSE/">
+                REVERSE
+                </a><br/>
+                Sun Aug 31, 2014
+            </div>
+        </div><!-- end feed-item-meta -->
+        
+        
+        <div class="feed-item-listing span-16 prepend-1">   
+        
+            <h2 class ="item-listing-title">
+                     <a href="/announce/events/60851/view/">&quot;Prove it to me&quot; Opening</a>   
+                     
+            </h2>
+            <hr class="thin span-18">
+            
+            
+            <div class="feed-item-listing span-18">   
+                <div class ="feed-item-listing-row">
+                    <div class = "feed-item-listing-row-title span-2">Type:</div>  
+                    <div class = "feed-item-listing-row-details span-12">Exhibition</div>
+                </div>    
+                <hr class="thin">
+            </div> 
+            
+            
+            
+          
+            
+            <div class="feed-item-listing span-18">   
+                <div class ="feed-item-listing-row">
+                    <div class = "feed-item-listing-row-title span-2">Dates:</div>  
+                    <div class = "feed-item-listing-row-details span-12">Fri Sep 12, 2014 19:00 
+                    - Sun Oct 19, 2014
+                    </div>
+                </div>
+                <hr class="thin">
+            </div> 
+            
+           
+             
+            <div class="feed-item-listing span-18">   
+                <div class ="feed-item-listing-row">
+                    <div class = "feed-item-listing-row-title span-2">Location:</div>
+                    <div class = "feed-item-listing-row-details span-12">
+                      
+                       Brooklyn,
+                       New York<br/>  
+                       United States of America<br/>     
+                    </div>
+                </div>
+                <hr class="thin">
+            </div> 
+            
+            
+            
+            
+            <div class="feed-item-listing span-18">   
+                <div class ="feed-item-listing-row">
+                    <div class = "feed-item-listing-row-title span-2">Description:</div>  
+                    <div class = "feed-item-listing-row-details span-12">“Prove it to me”, curated by Natasha Marie Llorens, is a group show featuring the work of Shane Aslan Selzer, Stephanie Diamond, Dillon de Give, Mark Menjivar, Maria D. Rapicavoli, Julia Sherman, and Mary Walling Blackburn. Arguably the only thing that holds social practice art together as a genre is the fact that it takes place between people. It is an art-form that entails giving over meaning to subjects – to bodies, even – in ...</div>
+                </div>
+                <hr class="thin">
+            </div> 
+            
+
+            
+            <div class="feed-item-listing span-18">  
+                <div class ="feed-item-listing-row"><a href="http://reversespace.org/prove-it-to-me/">http://reversespace.org/prove-it-to-me/</a></div>
+            </div> 
+            
+         </div><!--END FEED ITEM LISTING-->
+    </div><!--END FEED ITEM-->
+    <hr class="hr2-blue">    
+
+    <div class = "feed-item span-24">
+        
+            <div class = "feed-item-meta span-5">
+                
+                <div class = "prepend-2">
+                    <div class="start-date-no-image span-2 prepend-1">
+                        <div class = "deadline">Starts:</div>
+                        <div class = "month">Sep</div>
+                        <div class = "day">20</div>
+                        <div class = "year">2014</div>
+                    </div>
+                </div>
+                
+                
+                
+                
+            
+            
+            <div class = "feed-item-meta-data span-5 last">
+                <span class = "red">EVENT</span> posted by<br/>
+                <a href="/profile/REVERSE/">
+                REVERSE
+                </a><br/>
+                Sun Aug 31, 2014
+            </div>
+        </div><!-- end feed-item-meta -->
+        
+        
+        <div class="feed-item-listing span-16 prepend-1">   
+        
+            <h2 class ="item-listing-title">
+                     <a href="/announce/events/60850/view/">Raspberry Pi for Artists</a>   
+                     
+            </h2>
+            <hr class="thin span-18">
+            
+            
+            <div class="feed-item-listing span-18">   
+                <div class ="feed-item-listing-row">
+                    <div class = "feed-item-listing-row-title span-2">Type:</div>  
+                    <div class = "feed-item-listing-row-details span-12">Workshop</div>
+                </div>    
+                <hr class="thin">
+            </div> 
+            
+            
+            
+          
+            
+            <div class="feed-item-listing span-18">   
+                <div class ="feed-item-listing-row">
+                    <div class = "feed-item-listing-row-title span-2">Dates:</div>  
+                    <div class = "feed-item-listing-row-details span-12">Sat Sep 20, 2014 12:00 
+                    - Sat Sep 20, 2014
+                    </div>
+                </div>
+                <hr class="thin">
+            </div> 
+            
+           
+             
+            <div class="feed-item-listing span-18">   
+                <div class ="feed-item-listing-row">
+                    <div class = "feed-item-listing-row-title span-2">Location:</div>
+                    <div class = "feed-item-listing-row-details span-12">
+                      
+                       Brooklyn,
+                       New York<br/>  
+                       United States of America<br/>     
+                    </div>
+                </div>
+                <hr class="thin">
+            </div> 
+            
+            
+            
+            
+            <div class="feed-item-listing span-18">   
+                <div class ="feed-item-listing-row">
+                    <div class = "feed-item-listing-row-title span-2">Description:</div>  
+                    <div class = "feed-item-listing-row-details span-12">This workshop is perfect for artists, developers, educators or anyone interested in experimenting with the Raspberry Pi. Learn how to setup and turn your Raspberry Pi into a standalone machine for installations from the ground up. Starting from a fresh Pi we’ll be learning how to install various flavors of linux, access basic networking and video playback. We’ll also dive into writing our first programs to wire LED’s, buttons and motors. Everything you need to ...</div>
+                </div>
+                <hr class="thin">
+            </div> 
+            
+
+            
+            <div class="feed-item-listing span-18">  
+                <div class ="feed-item-listing-row"><a href="http://reversespace.org/raspberry-pi-for-artists/">http://reversespace.org/raspberry-pi-for-artists/</a></div>
+            </div> 
+            
+         </div><!--END FEED ITEM LISTING-->
+    </div><!--END FEED ITEM-->
+    <hr class="hr2-blue">    
+
+    <div class = "feed-item span-24">
+        
+        <div class = "feed-item-meta span-6">
+                <div class="feed-item-image span-3">
+                    <img src="http://media.rhizome.org//sites/rhizome.org/site_media/media/announce/images/jobs/techcallimage2015.png.100x100_q95_crop_1.jpg" />
+                </div> 
+            
+                
+                
+                
+                <div class="start-date-single span-2">
+                    <div class = "deadline">Deadline:</div>
+                    <div class = "month">Nov</div>
+                    <div class = "day">01</div>
+                    <div class = "year">2014</div>
+                </div>
+                
+                
+            
+            
+            <div class = "feed-item-meta-data span-5 last">
+                <span class = "red">OPPORTUNITY</span> posted by<br/>
+                <a href="/profile/marty5/">
+                marty5
+                </a><br/>
+                Sun Aug 31, 2014
+            </div>
+        </div><!-- end feed-item-meta -->
+        
+        
+        <div class="feed-item-listing span-16">   
+        
+            <h2 class ="item-listing-title">
+                     <a href="/announce/opportunities/60575/view/">SLINGSHOT Festival - Data Perceptualization Competition</a>   
+                     
+            </h2>
+            <hr class="thin span-18">
+            
+            
+            <div class="feed-item-listing span-18">   
+                <div class ="feed-item-listing-row">
+                    <div class = "feed-item-listing-row-title span-2">Type:</div>  
+                    <div class = "feed-item-listing-row-details span-12">Call for Submissions</div>
+                </div>    
+                <hr class="thin">
+            </div> 
+            
+            
+            
+            <div class="feed-item-listing span-18">   
+                <div class ="feed-item-listing-row">
+                    <div class = "feed-item-listing-row-title span-2">Deadline:</div>  
+                    <div class = "feed-item-listing-row-details span-12">Sat Nov 01, 2014 23:59</div>
+                </div>    
+                <hr class="thin">
+            </div> 
+            
+          
+            
+           
+             
+            <div class="feed-item-listing span-18">   
+                <div class ="feed-item-listing-row">
+                    <div class = "feed-item-listing-row-title span-2">Location:</div>
+                    <div class = "feed-item-listing-row-details span-12">
+                      
+                       Athens,
+                       Georgia<br/>  
+                       United States of America<br/>     
+                    </div>
+                </div>
+                <hr class="thin">
+            </div> 
+            
+            
+            
+            
+            <div class="feed-item-listing span-18">   
+                <div class ="feed-item-listing-row">
+                    <div class = "feed-item-listing-row-title span-2">Description:</div>  
+                    <div class = "feed-item-listing-row-details span-12">The SLINGSHOT Festival of Music, Electronic Arts and Technology, and the University of Georgia’s College of Engineering announce the Data Perceptualization Competition. The competition is held in conjunction with SLINGSHOT&#39;s Sensory Overload conference on Big Data &amp; Data Perceptualization (part of the SLINGSHOT Festival in Athens, GA (USA), March 26-28, 2015). This competition seeks to discover and showcase creative and innovative approaches to data visualization, sonification, and other modes of data perceptualization. Entries selected for ...</div>
+                </div>
+                <hr class="thin">
+            </div> 
+            
+
+            
+            <div class="feed-item-listing span-18">  
+                <div class ="feed-item-listing-row"><a href="http://www.slingshotathens.com/submission">http://www.slingshotathens.com/submission</a></div>
+            </div> 
+            
+         </div><!--END FEED ITEM LISTING-->
+    </div><!--END FEED ITEM-->
+    <hr class="hr2-blue">    
+
+    <div class = "feed-item span-24">
+        
+        <div class = "feed-item-meta span-6">
+                <div class="feed-item-image span-3">
+                    <img src="http://media.rhizome.org//sites/rhizome.org/site_media/media/announce/images/jobs/artcall2015.jpg.100x100_q95_crop_1.jpg" />
+                </div> 
+            
+                
+                
+                
+                <div class="start-date-single span-2">
+                    <div class = "deadline">Deadline:</div>
+                    <div class = "month">Nov</div>
+                    <div class = "day">01</div>
+                    <div class = "year">2014</div>
+                </div>
+                
+                
+            
+            
+            <div class = "feed-item-meta-data span-5 last">
+                <span class = "red">OPPORTUNITY</span> posted by<br/>
+                <a href="/profile/marty5/">
+                marty5
+                </a><br/>
+                Sun Aug 31, 2014
+            </div>
+        </div><!-- end feed-item-meta -->
+        
+        
+        <div class="feed-item-listing span-16">   
+        
+            <h2 class ="item-listing-title">
+                     <a href="/announce/opportunities/60574/view/">SLINGSHOT Festival - Call for Art</a>   
+                     
+            </h2>
+            <hr class="thin span-18">
+            
+            
+            <div class="feed-item-listing span-18">   
+                <div class ="feed-item-listing-row">
+                    <div class = "feed-item-listing-row-title span-2">Type:</div>  
+                    <div class = "feed-item-listing-row-details span-12">Call for Artworks</div>
+                </div>    
+                <hr class="thin">
+            </div> 
+            
+            
+            
+            <div class="feed-item-listing span-18">   
+                <div class ="feed-item-listing-row">
+                    <div class = "feed-item-listing-row-title span-2">Deadline:</div>  
+                    <div class = "feed-item-listing-row-details span-12">Sat Nov 01, 2014 23:59</div>
+                </div>    
+                <hr class="thin">
+            </div> 
+            
+          
+            
+           
+             
+            <div class="feed-item-listing span-18">   
+                <div class ="feed-item-listing-row">
+                    <div class = "feed-item-listing-row-title span-2">Location:</div>
+                    <div class = "feed-item-listing-row-details span-12">
+                      
+                       Athens,
+                       Georgia<br/>  
+                       United States of America<br/>     
+                    </div>
+                </div>
+                <hr class="thin">
+            </div> 
+            
+            
+            
+            
+            <div class="feed-item-listing span-18">   
+                <div class ="feed-item-listing-row">
+                    <div class = "feed-item-listing-row-title span-2">Description:</div>  
+                    <div class = "feed-item-listing-row-details span-12">SLINGSHOT invites proposals for new or recent works for the SLINGSHOT Festival, March 26-28, 2015, in Athens, Georgia (USA). SLINGSHOT - the new international nexus for music and creative innovation - takes over downtown Athens, GA March 26-28, 2015. Spread over 5 city blocks, SLINGSHOT spotlights music on stage, boundary-pushing artworks throughout the urban environment and a tech conference with leading innovators. SLINGSHOT is a hybrid festival that allows a diverse audience to engage with ...</div>
+                </div>
+                <hr class="thin">
+            </div> 
+            
+
+            
+            <div class="feed-item-listing span-18">  
+                <div class ="feed-item-listing-row"><a href="http://www.slingshotathens.com/submission">http://www.slingshotathens.com/submission</a></div>
+            </div> 
+            
+         </div><!--END FEED ITEM LISTING-->
+    </div><!--END FEED ITEM-->
+    <hr class="hr2-blue">    
+
+    <div class = "feed-item span-24">
+        
+        <div class = "feed-item-meta span-6">
+                <div class="feed-item-image span-3">
+                    <img src="http://media.rhizome.org//sites/rhizome.org/site_media/media/announce/images/jobs/call-for-entry_1.jpg.100x100_q95_crop_1.jpg" />
+                </div> 
+            
+                
+                
+                
+                <div class="start-date-single span-2">
+                    <div class = "deadline">Deadline:</div>
+                    <div class = "month">Oct</div>
+                    <div class = "day">10</div>
+                    <div class = "year">2014</div>
+                </div>
+                
+                
+            
+            
+            <div class = "feed-item-meta-data span-5 last">
+                <span class = "red">OPPORTUNITY</span> posted by<br/>
+                <a href="/profile/ProArtsGallery/">
+                Pro Arts Gallery
+                </a><br/>
+                Fri Aug 29, 2014
+            </div>
+        </div><!-- end feed-item-meta -->
+        
+        
+        <div class="feed-item-listing span-16">   
+        
+            <h2 class ="item-listing-title">
+                     <a href="/announce/opportunities/60573/view/">Open Call: The Juried Annual 2015</a>   
+                     
+            </h2>
+            <hr class="thin span-18">
+            
+            
+            <div class="feed-item-listing span-18">   
+                <div class ="feed-item-listing-row">
+                    <div class = "feed-item-listing-row-title span-2">Type:</div>  
+                    <div class = "feed-item-listing-row-details span-12">Call for Artists</div>
+                </div>    
+                <hr class="thin">
+            </div> 
+            
+            
+            
+            <div class="feed-item-listing span-18">   
+                <div class ="feed-item-listing-row">
+                    <div class = "feed-item-listing-row-title span-2">Deadline:</div>  
+                    <div class = "feed-item-listing-row-details span-12">Fri Oct 10, 2014 00:00</div>
+                </div>    
+                <hr class="thin">
+            </div> 
+            
+          
+            
+           
+             
+            <div class="feed-item-listing span-18">   
+                <div class ="feed-item-listing-row">
+                    <div class = "feed-item-listing-row-title span-2">Location:</div>
+                    <div class = "feed-item-listing-row-details span-12">
+                      
+                       Oakland,
+                       California<br/>  
+                       United States of America<br/>     
+                    </div>
+                </div>
+                <hr class="thin">
+            </div> 
+            
+            
+            
+            
+            <div class="feed-item-listing span-18">   
+                <div class ="feed-item-listing-row">
+                    <div class = "feed-item-listing-row-title span-2">Description:</div>  
+                    <div class = "feed-item-listing-row-details span-12">Entry Deadline: Friday, October 10, 2014, midnight Exhibition Dates: December 2, 2014 - January 16, 2015 The Juried Annual presents a survey of Bay Area art at the creative edge. All submissions are reviewed online using a ‘blind’ jury system. Cesar Garcia (Founding Director and Chief Curator, The Mistake Room, Los Angeles) and Naima J. Keith (Assistant Curator, The Studio Museum in Harlem, New York) invite artists to consider the following prompt when submitting for ...</div>
+                </div>
+                <hr class="thin">
+            </div> 
+            
+
+            
+            <div class="feed-item-listing span-18">  
+                <div class ="feed-item-listing-row"><a href="http://www.proartsgallery.org/callforentry/2015_ta.php">http://www.proartsgallery.org/callforentry/2015_ta.php</a></div>
+            </div> 
+            
+         </div><!--END FEED ITEM LISTING-->
+    </div><!--END FEED ITEM-->
+    <hr class="hr2-blue">    
+
+    <div class = "feed-item span-24">
+        
+        <div class = "feed-item-meta span-6">
+                <div class="feed-item-image span-3">
+                    <img src="http://media.rhizome.org//sites/rhizome.org/site_media/media/announce/images/jobs/Sabrina-Ratté_The-Land-Behind.jpg.100x100_q95_crop_1.jpg" />
+                </div> 
+            
+                
+                <div class="start-date-single span-2">
+                    <div class = "deadline">Starts:</div>
+                    <div class = "month">Sep</div>
+                    <div class = "day">02</div>
+                    <div class = "year">2014</div>
+                </div>
+                
+                
+                
+                
+            
+            
+            <div class = "feed-item-meta-data span-5 last">
+                <span class = "red">EVENT</span> posted by<br/>
+                <a href="/profile/whiteboxny/">
+                Whitebox Art Center
+                </a><br/>
+                Fri Aug 29, 2014
+            </div>
+        </div><!-- end feed-item-meta -->
+        
+        
+        <div class="feed-item-listing span-16">   
+        
+            <h2 class ="item-listing-title">
+                     <a href="/announce/events/60849/view/">CLICK CLICK CLICK</a>   
+                     
+            </h2>
+            <hr class="thin span-18">
+            
+            
+            <div class="feed-item-listing span-18">   
+                <div class ="feed-item-listing-row">
+                    <div class = "feed-item-listing-row-title span-2">Type:</div>  
+                    <div class = "feed-item-listing-row-details span-12">Screening</div>
+                </div>    
+                <hr class="thin">
+            </div> 
+            
+            
+            
+          
+            
+            <div class="feed-item-listing span-18">   
+                <div class ="feed-item-listing-row">
+                    <div class = "feed-item-listing-row-title span-2">Dates:</div>  
+                    <div class = "feed-item-listing-row-details span-12">Tue Sep 02, 2014 19:00 
+                    - Tue Sep 02, 2014
+                    </div>
+                </div>
+                <hr class="thin">
+            </div> 
+            
+           
+             
+            <div class="feed-item-listing span-18">   
+                <div class ="feed-item-listing-row">
+                    <div class = "feed-item-listing-row-title span-2">Location:</div>
+                    <div class = "feed-item-listing-row-details span-12">
+                      
+                       New York, NY ,
+                       New York<br/>  
+                       United States of America<br/>     
+                    </div>
+                </div>
+                <hr class="thin">
+            </div> 
+            
+            
+            
+            
+            <div class="feed-item-listing span-18">   
+                <div class ="feed-item-listing-row">
+                    <div class = "feed-item-listing-row-title span-2">Description:</div>  
+                    <div class = "feed-item-listing-row-details span-12">Whitebox Art Center presents AS PART OF &quot;CODED AFTER LOVELACE’S&quot; CLOSING EVENT &quot;CLICK CLICK CLICK&quot; Click. Click. Click. Copy. Paste. Drag. Drop. These are the new gestures of digital image making. Click Click Click is a survey of contemporary digital moving image practices that span GIFs, augmented performances, green screen keying, collage, appropriation, Processing, 3D renders and more. Artists in the screening: Morehshin Allahyari, Claudia Bitran, Hannah Black, Gaby Cepeda and Adriana Minoliti, Jennifer Chan, ...</div>
+                </div>
+                <hr class="thin">
+            </div> 
+            
+
+            
+            <div class="feed-item-listing span-18">  
+                <div class ="feed-item-listing-row"><a href="http://whiteboxnyc.org/event/click-click-click-screening/">http://whiteboxnyc.org/event/click-click-click-screening/</a></div>
+            </div> 
+            
+         </div><!--END FEED ITEM LISTING-->
+    </div><!--END FEED ITEM-->
+    <hr class="hr2-blue">    
+
+    <div class = "feed-item span-24">
+        
+        <div class = "feed-item-meta span-6">
+                <div class="feed-item-image span-3">
+                    <img src="http://media.rhizome.org//sites/rhizome.org/site_media/media/announce/images/jobs/Jule15-Photos-(18-of-22).jpg.100x100_q95_crop_1.jpg" />
+                </div> 
+            
+                
+                <div class="start-date-single span-2">
+                    <div class = "deadline">Starts:</div>
+                    <div class = "month">Sep</div>
+                    <div class = "day">06</div>
+                    <div class = "year">2014</div>
+                </div>
+                
+                
+                
+                
+            
+            
+            <div class = "feed-item-meta-data span-5 last">
+                <span class = "red">EVENT</span> posted by<br/>
+                <a href="/profile/wahcenter/">
+                wahcenter
+                </a><br/>
+                Fri Aug 29, 2014
+            </div>
+        </div><!-- end feed-item-meta -->
+        
+        
+        <div class="feed-item-listing span-16">   
+        
+            <h2 class ="item-listing-title">
+                     <a href="/announce/events/60848/view/">&quot;Memorial&quot; Show and &quot;Gerard Barbot: Small Sculpture &amp; Assemblage&quot;</a>   
+                     
+            </h2>
+            <hr class="thin span-18">
+            
+            
+            <div class="feed-item-listing span-18">   
+                <div class ="feed-item-listing-row">
+                    <div class = "feed-item-listing-row-title span-2">Type:</div>  
+                    <div class = "feed-item-listing-row-details span-12">Exhibition</div>
+                </div>    
+                <hr class="thin">
+            </div> 
+            
+            
+            
+          
+            
+            <div class="feed-item-listing span-18">   
+                <div class ="feed-item-listing-row">
+                    <div class = "feed-item-listing-row-title span-2">Dates:</div>  
+                    <div class = "feed-item-listing-row-details span-12">Sat Sep 06, 2014 16:00 
+                    - Sun Sep 28, 2014
+                    </div>
+                </div>
+                <hr class="thin">
+            </div> 
+            
+           
+             
+            <div class="feed-item-listing span-18">   
+                <div class ="feed-item-listing-row">
+                    <div class = "feed-item-listing-row-title span-2">Location:</div>
+                    <div class = "feed-item-listing-row-details span-12">
+                      
+                       Brooklyn,
+                       New York<br/>  
+                       United States of America<br/>     
+                    </div>
+                </div>
+                <hr class="thin">
+            </div> 
+            
+            
+            
+            
+            <div class="feed-item-listing span-18">   
+                <div class ="feed-item-listing-row">
+                    <div class = "feed-item-listing-row-title span-2">Description:</div>  
+                    <div class = "feed-item-listing-row-details span-12">&quot;MEMORIAL&quot; Artworks by Estelle Levy &amp; Fernand Barbot Music by Elodie Lauten Saturday, September 6th - Sunday, September 28th, 2014 Opening Reception: Saturday, September 6th, 4-6pm Curated by Yuko Nii In the Main Gallery The WAH Center is pleased to present &quot;Memorial&quot; honoring our beloved artists - Estelle Levy, Fernand Barbot, and Elodie Lauten - who have passed away recently. During the fine arts show, the music of Elodie Lauten will be heard. Also featuring ...</div>
+                </div>
+                <hr class="thin">
+            </div> 
+            
+
+            
+            <div class="feed-item-listing span-18">  
+                <div class ="feed-item-listing-row"><a href="http://wahcenter.net/exhibits/2014/memorial/">http://wahcenter.net/exhibits/2014/memorial/</a></div>
+            </div> 
+            
+         </div><!--END FEED ITEM LISTING-->
+    </div><!--END FEED ITEM-->
+    <hr class="hr2-blue">    
+
+    <div class = "feed-item span-24">
+        
+            <div class = "feed-item-meta span-5">
+                
+                
+                
+                <div class = "prepend-2">
+                    <div class="start-date-no-image span-2 prepend-1">
+                        <div class = "deadline">Deadline:</div>
+                        <div class = "month">Sep</div>
+                        <div class = "day">26</div>
+                        <div class = "year">2014</div>
+                    </div>
+                </div>
+
+                
+                
+            
+            
+            <div class = "feed-item-meta-data span-5 last">
+                <span class = "red">OPPORTUNITY</span> posted by<br/>
+                <a href="/profile/wahcenter/">
+                wahcenter
+                </a><br/>
+                Fri Aug 29, 2014
+            </div>
+        </div><!-- end feed-item-meta -->
+        
+        
+        <div class="feed-item-listing span-16 prepend-1">   
+        
+            <h2 class ="item-listing-title">
+                     <a href="/announce/opportunities/60572/view/">OPEN CALL TO ARTISTS</a>   
+                     
+            </h2>
+            <hr class="thin span-18">
+            
+            
+            <div class="feed-item-listing span-18">   
+                <div class ="feed-item-listing-row">
+                    <div class = "feed-item-listing-row-title span-2">Type:</div>  
+                    <div class = "feed-item-listing-row-details span-12">Call for Submissions</div>
+                </div>    
+                <hr class="thin">
+            </div> 
+            
+            
+            
+            <div class="feed-item-listing span-18">   
+                <div class ="feed-item-listing-row">
+                    <div class = "feed-item-listing-row-title span-2">Deadline:</div>  
+                    <div class = "feed-item-listing-row-details span-12">Fri Sep 26, 2014 23:59</div>
+                </div>    
+                <hr class="thin">
+            </div> 
+            
+          
+            
+           
+             
+            <div class="feed-item-listing span-18">   
+                <div class ="feed-item-listing-row">
+                    <div class = "feed-item-listing-row-title span-2">Location:</div>
+                    <div class = "feed-item-listing-row-details span-12">
+                      
+                       Brooklyn,
+                       New York<br/>  
+                       United States of America<br/>     
+                    </div>
+                </div>
+                <hr class="thin">
+            </div> 
+            
+            
+            
+            
+            <div class="feed-item-listing span-18">   
+                <div class ="feed-item-listing-row">
+                    <div class = "feed-item-listing-row-title span-2">Description:</div>  
+                    <div class = "feed-item-listing-row-details span-12">The WAH Center presents “Over the Edge: Paperworks Unbound” – a group art exhibition exploring the many artistic usages of paper and how paper has the ability to connect people of all different backgrounds. We are now accepting submissions for the “Paperworks Unbound” show. Eligibility: Artists working on/with paper Deadline: Friday, September 26, 2014 Submission Fee: $25 for one artwork submission, $5 for each additional submission. Limit 3 submissions; can be paid by cash or ...</div>
+                </div>
+                <hr class="thin">
+            </div> 
+            
+
+            
+            <div class="feed-item-listing span-18">  
+                <div class ="feed-item-listing-row"><a href="http://wahcenter.net/exhibits/2014/paperunbound/opencall.html">http://wahcenter.net/exhibits/2014/paperunbound/opencall.html</a></div>
+            </div> 
+            
+         </div><!--END FEED ITEM LISTING-->
+    </div><!--END FEED ITEM-->
+    <hr class="hr2-blue">    
+
+    <div class = "feed-item span-24">
+        
+            <div class = "feed-item-meta span-5">
+                
+                
+                
+                <div class = "prepend-2">
+                    <div class="start-date-no-image span-2 prepend-1">
+                        <div class = "deadline">Deadline:</div>
+                        <div class = "month">Sep</div>
+                        <div class = "day">22</div>
+                        <div class = "year">2014</div>
+                    </div>
+                </div>
+
+                
+                
+            
+            
+            <div class = "feed-item-meta-data span-5 last">
+                <span class = "red">OPPORTUNITY</span> posted by<br/>
+                <a href="/profile/wahcenter/">
+                wahcenter
+                </a><br/>
+                Fri Aug 29, 2014
+            </div>
+        </div><!-- end feed-item-meta -->
+        
+        
+        <div class="feed-item-listing span-16 prepend-1">   
+        
+            <h2 class ="item-listing-title">
+                     <a href="/announce/opportunities/60571/view/">OPEN CALL TO STUDENT ARTISTS</a>   
+                     
+            </h2>
+            <hr class="thin span-18">
+            
+            
+            <div class="feed-item-listing span-18">   
+                <div class ="feed-item-listing-row">
+                    <div class = "feed-item-listing-row-title span-2">Type:</div>  
+                    <div class = "feed-item-listing-row-details span-12">Call for Submissions</div>
+                </div>    
+                <hr class="thin">
+            </div> 
+            
+            
+            
+            <div class="feed-item-listing span-18">   
+                <div class ="feed-item-listing-row">
+                    <div class = "feed-item-listing-row-title span-2">Deadline:</div>  
+                    <div class = "feed-item-listing-row-details span-12">Mon Sep 22, 2014 23:59</div>
+                </div>    
+                <hr class="thin">
+            </div> 
+            
+          
+            
+           
+             
+            <div class="feed-item-listing span-18">   
+                <div class ="feed-item-listing-row">
+                    <div class = "feed-item-listing-row-title span-2">Location:</div>
+                    <div class = "feed-item-listing-row-details span-12">
+                      
+                       Brooklyn,
+                       New York<br/>  
+                       United States of America<br/>     
+                    </div>
+                </div>
+                <hr class="thin">
+            </div> 
+            
+            
+            
+            
+            <div class="feed-item-listing span-18">   
+                <div class ="feed-item-listing-row">
+                    <div class = "feed-item-listing-row-title span-2">Description:</div>  
+                    <div class = "feed-item-listing-row-details span-12">The WAH Center presents “The New Academy: WAH Bridges Student Artists” – a multi-media group exhibition dedicated to presenting the work of students pursuing their undergraduate or Masters degrees in the arts. We are now accepting submissions for “The New Academy” Eligibility: Artists enrolled in undergraduate and Masters degree programs in the arts Deadline: Monday, September 22, 2014 Submission Fee: $15 for one artwork submission, $5 for each additional submission. Limit 3 submissions. Can be ...</div>
+                </div>
+                <hr class="thin">
+            </div> 
+            
+
+            
+            <div class="feed-item-listing span-18">  
+                <div class ="feed-item-listing-row"><a href="http://wahcenter.net/exhibits/2014/newacademy/opencall.html">http://wahcenter.net/exhibits/2014/newacademy/opencall.html</a></div>
+            </div> 
+            
+         </div><!--END FEED ITEM LISTING-->
+    </div><!--END FEED ITEM-->
+    <hr class="hr2-blue">    
+
+    <div class = "feed-item span-24">
+        
+            <div class = "feed-item-meta span-5">
+                
+                <div class = "prepend-2">
+                    <div class="start-date-no-image span-2 prepend-1">
+                        <div class = "deadline">Starts:</div>
+                        <div class = "month">Dec</div>
+                        <div class = "day">10</div>
+                        <div class = "year">2014</div>
+                    </div>
+                </div>
+                
+                
+                
+                
+            
+            
+            <div class = "feed-item-meta-data span-5 last">
+                <span class = "red">EVENT</span> posted by<br/>
+                <a href="/profile/The_New_School/">
+                The_New_School
+                </a><br/>
+                Fri Aug 29, 2014
+            </div>
+        </div><!-- end feed-item-meta -->
+        
+        
+        <div class="feed-item-listing span-16 prepend-1">   
+        
+            <h2 class ="item-listing-title">
+                     <a href="/announce/events/60847/view/">Poetry Forum: Mark Bibbins and Kathleen Ossip</a>   
+                     
+            </h2>
+            <hr class="thin span-18">
+            
+            
+            <div class="feed-item-listing span-18">   
+                <div class ="feed-item-listing-row">
+                    <div class = "feed-item-listing-row-title span-2">Type:</div>  
+                    <div class = "feed-item-listing-row-details span-12">Talk/Lecture</div>
+                </div>    
+                <hr class="thin">
+            </div> 
+            
+            
+            
+          
+            
+            <div class="feed-item-listing span-18">   
+                <div class ="feed-item-listing-row">
+                    <div class = "feed-item-listing-row-title span-2">Dates:</div>  
+                    <div class = "feed-item-listing-row-details span-12">Wed Dec 10, 2014 18:30 
+                    - Wed Dec 10, 2014
+                    </div>
+                </div>
+                <hr class="thin">
+            </div> 
+            
+           
+             
+            <div class="feed-item-listing span-18">   
+                <div class ="feed-item-listing-row">
+                    <div class = "feed-item-listing-row-title span-2">Location:</div>
+                    <div class = "feed-item-listing-row-details span-12">
+                      
+                       New York City,
+                       New York<br/>  
+                       United States of America<br/>     
+                    </div>
+                </div>
+                <hr class="thin">
+            </div> 
+            
+            
+            
+            
+            <div class="feed-item-listing span-18">   
+                <div class ="feed-item-listing-row">
+                    <div class = "feed-item-listing-row-title span-2">Description:</div>  
+                    <div class = "feed-item-listing-row-details span-12">New School Writing Program faculty and the authors respectively of They Don’t Kill You Because They’re Hungry, They Kill You Because They’re Full and The Do Over. Mark Bibbins received a Lambda Literary Award for his first collection of poems, Sky Lounge; his second, The Dance of No Hard Feelings was published by Copper Canyon Press (2009), and in 2014, his third They Don’t Kill You Because They’re Hungry, They Kill You Because They’re Full ...</div>
+                </div>
+                <hr class="thin">
+            </div> 
+            
+
+            
+            <div class="feed-item-listing span-18">  
+                <div class ="feed-item-listing-row"><a href="http://events.newschool.edu/event/poetry_forum_mark_bibbins_and_kathleen_ossip#.VACYbmRdUkc">http://events.newschool.edu/event/poetry_forum_mark_bibbins_and_kathleen_ossip#.VACYbmRdUkc</a></div>
+            </div> 
+            
+         </div><!--END FEED ITEM LISTING-->
+    </div><!--END FEED ITEM-->
+    <hr class="hr2-blue">    
+
+    <div class = "feed-item span-24">
+        
+            <div class = "feed-item-meta span-5">
+                
+                <div class = "prepend-2">
+                    <div class="start-date-no-image span-2 prepend-1">
+                        <div class = "deadline">Starts:</div>
+                        <div class = "month">Nov</div>
+                        <div class = "day">12</div>
+                        <div class = "year">2014</div>
+                    </div>
+                </div>
+                
+                
+                
+                
+            
+            
+            <div class = "feed-item-meta-data span-5 last">
+                <span class = "red">EVENT</span> posted by<br/>
+                <a href="/profile/The_New_School/">
+                The_New_School
+                </a><br/>
+                Fri Aug 29, 2014
+            </div>
+        </div><!-- end feed-item-meta -->
+        
+        
+        <div class="feed-item-listing span-16 prepend-1">   
+        
+            <h2 class ="item-listing-title">
+                     <a href="/announce/events/60846/view/">Fiction Forum: Tiphanie Yanique</a>   
+                     
+            </h2>
+            <hr class="thin span-18">
+            
+            
+            <div class="feed-item-listing span-18">   
+                <div class ="feed-item-listing-row">
+                    <div class = "feed-item-listing-row-title span-2">Type:</div>  
+                    <div class = "feed-item-listing-row-details span-12">Talk/Lecture</div>
+                </div>    
+                <hr class="thin">
+            </div> 
+            
+            
+            
+          
+            
+            <div class="feed-item-listing span-18">   
+                <div class ="feed-item-listing-row">
+                    <div class = "feed-item-listing-row-title span-2">Dates:</div>  
+                    <div class = "feed-item-listing-row-details span-12">Wed Nov 12, 2014 18:30 
+                    - Wed Nov 12, 2014
+                    </div>
+                </div>
+                <hr class="thin">
+            </div> 
+            
+           
+             
+            <div class="feed-item-listing span-18">   
+                <div class ="feed-item-listing-row">
+                    <div class = "feed-item-listing-row-title span-2">Location:</div>
+                    <div class = "feed-item-listing-row-details span-12">
+                      
+                       New York City,
+                       New York<br/>  
+                       United States of America<br/>     
+                    </div>
+                </div>
+                <hr class="thin">
+            </div> 
+            
+            
+            
+            
+            <div class="feed-item-listing span-18">   
+                <div class ="feed-item-listing-row">
+                    <div class = "feed-item-listing-row-title span-2">Description:</div>  
+                    <div class = "feed-item-listing-row-details span-12">Tiphanie Yanique is the author of the novel Land of Love and Drowning, (Riverhead/Penguin 2014), and the short story collection, How to Escape from a Leper Colony, published by Graywolf Press, 2010. BookPage listed her as one of the 14 Women to watch out for in 2014. Her writing has won the 2011 BOCAS Prize for Caribbean Fiction, Boston Review Prize in Fiction, a Rona Jaffe Foundation Writers Award, a Pushcart Prize, a Fulbright Scholarship ...</div>
+                </div>
+                <hr class="thin">
+            </div> 
+            
+
+            
+            <div class="feed-item-listing span-18">  
+                <div class ="feed-item-listing-row"><a href="http://events.newschool.edu/event/fiction_forum_tiphanie_yanique#.VACXgGRdUkc">http://events.newschool.edu/event/fiction_forum_tiphanie_yanique#.VACXgGRdUkc</a></div>
+            </div> 
+            
+         </div><!--END FEED ITEM LISTING-->
+    </div><!--END FEED ITEM-->
+    <hr class="hr2-blue">    
+
+    <div class = "feed-item span-24">
+        
+            <div class = "feed-item-meta span-5">
+                
+                <div class = "prepend-2">
+                    <div class="start-date-no-image span-2 prepend-1">
+                        <div class = "deadline">Starts:</div>
+                        <div class = "month">Oct</div>
+                        <div class = "day">15</div>
+                        <div class = "year">2014</div>
+                    </div>
+                </div>
+                
+                
+                
+                
+            
+            
+            <div class = "feed-item-meta-data span-5 last">
+                <span class = "red">EVENT</span> posted by<br/>
+                <a href="/profile/The_New_School/">
+                The_New_School
+                </a><br/>
+                Fri Aug 29, 2014
+            </div>
+        </div><!-- end feed-item-meta -->
+        
+        
+        <div class="feed-item-listing span-16 prepend-1">   
+        
+            <h2 class ="item-listing-title">
+                     <a href="/announce/events/60845/view/">Fiction Forum: Mira Jacob</a>   
+                     
+            </h2>
+            <hr class="thin span-18">
+            
+            
+            <div class="feed-item-listing span-18">   
+                <div class ="feed-item-listing-row">
+                    <div class = "feed-item-listing-row-title span-2">Type:</div>  
+                    <div class = "feed-item-listing-row-details span-12">Talk/Lecture</div>
+                </div>    
+                <hr class="thin">
+            </div> 
+            
+            
+            
+          
+            
+            <div class="feed-item-listing span-18">   
+                <div class ="feed-item-listing-row">
+                    <div class = "feed-item-listing-row-title span-2">Dates:</div>  
+                    <div class = "feed-item-listing-row-details span-12">Wed Oct 15, 2014 18:30 
+                    - Wed Oct 15, 2014
+                    </div>
+                </div>
+                <hr class="thin">
+            </div> 
+            
+           
+             
+            <div class="feed-item-listing span-18">   
+                <div class ="feed-item-listing-row">
+                    <div class = "feed-item-listing-row-title span-2">Location:</div>
+                    <div class = "feed-item-listing-row-details span-12">
+                      
+                       New York City,
+                       New York<br/>  
+                       United States of America<br/>     
+                    </div>
+                </div>
+                <hr class="thin">
+            </div> 
+            
+            
+            
+            
+            <div class="feed-item-listing span-18">   
+                <div class ="feed-item-listing-row">
+                    <div class = "feed-item-listing-row-title span-2">Description:</div>  
+                    <div class = "feed-item-listing-row-details span-12">Mira Jacob is the author of the novel, The Sleepwalker’s Guide to Dancing, published by Random House in July of 2014. She is the co-founder of Pete’s Reading Series in Brooklyn. Previously, she directed editorial content for various websites and wrote VH-1’s Pop-Up Video. She is a graduate of The New School MFA Program. Moderated by Luis Jaramillo, director and professor, the School of Writing. Preorder your book HERE for signing at the event. Sponsored ...</div>
+                </div>
+                <hr class="thin">
+            </div> 
+            
+
+            
+            <div class="feed-item-listing span-18">  
+                <div class ="feed-item-listing-row"><a href="http://events.newschool.edu/event/fiction_forum_mira_jacobs#.VACWaWRdUkc">http://events.newschool.edu/event/fiction_forum_mira_jacobs#.VACWaWRdUkc</a></div>
+            </div> 
+            
+         </div><!--END FEED ITEM LISTING-->
+    </div><!--END FEED ITEM-->
+    <hr class="hr2-blue">    
+
+    <div class = "feed-item span-24">
+        
+            <div class = "feed-item-meta span-5">
+                
+                <div class = "prepend-2">
+                    <div class="start-date-no-image span-2 prepend-1">
+                        <div class = "deadline">Starts:</div>
+                        <div class = "month">Sep</div>
+                        <div class = "day">22</div>
+                        <div class = "year">2014</div>
+                    </div>
+                </div>
+                
+                
+                
+                
+            
+            
+            <div class = "feed-item-meta-data span-5 last">
+                <span class = "red">EVENT</span> posted by<br/>
+                <a href="/profile/The_New_School/">
+                The_New_School
+                </a><br/>
+                Fri Aug 29, 2014
+            </div>
+        </div><!-- end feed-item-meta -->
+        
+        
+        <div class="feed-item-listing span-16 prepend-1">   
+        
+            <h2 class ="item-listing-title">
+                     <a href="/announce/events/60844/view/">Fiction Forum: Mitchell S. Jackson</a>   
+                     
+            </h2>
+            <hr class="thin span-18">
+            
+            
+            <div class="feed-item-listing span-18">   
+                <div class ="feed-item-listing-row">
+                    <div class = "feed-item-listing-row-title span-2">Type:</div>  
+                    <div class = "feed-item-listing-row-details span-12">Talk/Lecture</div>
+                </div>    
+                <hr class="thin">
+            </div> 
+            
+            
+            
+          
+            
+            <div class="feed-item-listing span-18">   
+                <div class ="feed-item-listing-row">
+                    <div class = "feed-item-listing-row-title span-2">Dates:</div>  
+                    <div class = "feed-item-listing-row-details span-12">Mon Sep 22, 2014 18:30 
+                    - Mon Sep 22, 2014
+                    </div>
+                </div>
+                <hr class="thin">
+            </div> 
+            
+           
+             
+            <div class="feed-item-listing span-18">   
+                <div class ="feed-item-listing-row">
+                    <div class = "feed-item-listing-row-title span-2">Location:</div>
+                    <div class = "feed-item-listing-row-details span-12">
+                      
+                       New York City,
+                       New York<br/>  
+                       United States of America<br/>     
+                    </div>
+                </div>
+                <hr class="thin">
+            </div> 
+            
+            
+            
+            
+            <div class="feed-item-listing span-18">   
+                <div class ="feed-item-listing-row">
+                    <div class = "feed-item-listing-row-title span-2">Description:</div>  
+                    <div class = "feed-item-listing-row-details span-12">Mitchell S. Jackson is the author of The Residue Years and published the eBook collection Oversoul Stories and Essays in the summer of 2012. He has been the recipient of fellowships from Urban Artist Initiative and The Center For Fiction. A former winner of the Hurston Wright Foundation’s award for college writers, he teaches writing at New York University and is the literary editor of Dossier Journal. He received an MA in writing from Portland ...</div>
+                </div>
+                <hr class="thin">
+            </div> 
+            
+
+            
+            <div class="feed-item-listing span-18">  
+                <div class ="feed-item-listing-row"><a href="http://events.newschool.edu/event/fiction_forum_mitchell_s_jackson#.VACVsmRdUkc">http://events.newschool.edu/event/fiction_forum_mitchell_s_jackson#.VACVsmRdUkc</a></div>
+            </div> 
+            
+         </div><!--END FEED ITEM LISTING-->
+    </div><!--END FEED ITEM-->
+    <hr class="hr2-blue">    
+
+    <div class = "feed-item span-24">
+        
+            <div class = "feed-item-meta span-5">
+                
+                <div class = "prepend-2">
+                    <div class="start-date-no-image span-2 prepend-1">
+                        <div class = "deadline">Starts:</div>
+                        <div class = "month">Sep</div>
+                        <div class = "day">17</div>
+                        <div class = "year">2014</div>
+                    </div>
+                </div>
+                
+                
+                
+                
+            
+            
+            <div class = "feed-item-meta-data span-5 last">
+                <span class = "red">EVENT</span> posted by<br/>
+                <a href="/profile/The_New_School/">
+                The_New_School
+                </a><br/>
+                Fri Aug 29, 2014
+            </div>
+        </div><!-- end feed-item-meta -->
+        
+        
+        <div class="feed-item-listing span-16 prepend-1">   
+        
+            <h2 class ="item-listing-title">
+                     <a href="/announce/events/60843/view/">Fiction Forum: Jeffery Renard Allen</a>   
+                     
+            </h2>
+            <hr class="thin span-18">
+            
+            
+            <div class="feed-item-listing span-18">   
+                <div class ="feed-item-listing-row">
+                    <div class = "feed-item-listing-row-title span-2">Type:</div>  
+                    <div class = "feed-item-listing-row-details span-12">Talk/Lecture</div>
+                </div>    
+                <hr class="thin">
+            </div> 
+            
+            
+            
+          
+            
+            <div class="feed-item-listing span-18">   
+                <div class ="feed-item-listing-row">
+                    <div class = "feed-item-listing-row-title span-2">Dates:</div>  
+                    <div class = "feed-item-listing-row-details span-12">Wed Sep 17, 2014 18:30 
+                    - Wed Sep 17, 2014
+                    </div>
+                </div>
+                <hr class="thin">
+            </div> 
+            
+           
+             
+            <div class="feed-item-listing span-18">   
+                <div class ="feed-item-listing-row">
+                    <div class = "feed-item-listing-row-title span-2">Location:</div>
+                    <div class = "feed-item-listing-row-details span-12">
+                      
+                       New York City,
+                       New York<br/>  
+                       United States of America<br/>     
+                    </div>
+                </div>
+                <hr class="thin">
+            </div> 
+            
+            
+            
+            
+            <div class="feed-item-listing span-18">   
+                <div class ="feed-item-listing-row">
+                    <div class = "feed-item-listing-row-title span-2">Description:</div>  
+                    <div class = "feed-item-listing-row-details span-12">Born and raised in Chicago, Jeffery Renard Allen is a Professor of English at Queens College of the City University of New York and an instructor in the Writing Program at The New School. Allen is the author of two collections of poetry, Stellar Places (Moyer Bell 2007) and Harbors and Spirits (Moyer Bell 1999), and three works of fiction, the novel Rails Under My Back (Farrar, Straus, and Giroux, 2000), which won The Chicago ...</div>
+                </div>
+                <hr class="thin">
+            </div> 
+            
+
+            
+            <div class="feed-item-listing span-18">  
+                <div class ="feed-item-listing-row"><a href="http://events.newschool.edu/event/fiction_forum_jeffery_renard_allen#.VACUaWRdUkc">http://events.newschool.edu/event/fiction_forum_jeffery_renard_allen#.VACUaWRdUkc</a></div>
+            </div> 
+            
+         </div><!--END FEED ITEM LISTING-->
+    </div><!--END FEED ITEM-->
+    <hr class="hr2-blue">    
+
+    <div class = "feed-item span-24">
+        
+            <div class = "feed-item-meta span-5">
+                
+                <div class = "prepend-2">
+                    <div class="start-date-no-image span-2 prepend-1">
+                        <div class = "deadline">Starts:</div>
+                        <div class = "month">Sep</div>
+                        <div class = "day">03</div>
+                        <div class = "year">2014</div>
+                    </div>
+                </div>
+                
+                
+                
+                
+            
+            
+            <div class = "feed-item-meta-data span-5 last">
+                <span class = "red">EVENT</span> posted by<br/>
+                <a href="/profile/The_New_School/">
+                The_New_School
+                </a><br/>
+                Fri Aug 29, 2014
+            </div>
+        </div><!-- end feed-item-meta -->
+        
+        
+        <div class="feed-item-listing span-16 prepend-1">   
+        
+            <h2 class ="item-listing-title">
+                     <a href="/announce/events/60842/view/">Poetry Forum: an Evening with Edward Hirsch</a>   
+                     
+            </h2>
+            <hr class="thin span-18">
+            
+            
+            <div class="feed-item-listing span-18">   
+                <div class ="feed-item-listing-row">
+                    <div class = "feed-item-listing-row-title span-2">Type:</div>  
+                    <div class = "feed-item-listing-row-details span-12">Talk/Lecture</div>
+                </div>    
+                <hr class="thin">
+            </div> 
+            
+            
+            
+          
+            
+            <div class="feed-item-listing span-18">   
+                <div class ="feed-item-listing-row">
+                    <div class = "feed-item-listing-row-title span-2">Dates:</div>  
+                    <div class = "feed-item-listing-row-details span-12">Wed Sep 03, 2014 18:30 
+                    - Wed Sep 03, 2014
+                    </div>
+                </div>
+                <hr class="thin">
+            </div> 
+            
+           
+             
+            <div class="feed-item-listing span-18">   
+                <div class ="feed-item-listing-row">
+                    <div class = "feed-item-listing-row-title span-2">Location:</div>
+                    <div class = "feed-item-listing-row-details span-12">
+                      
+                       New York City,
+                       New York<br/>  
+                       United States of America<br/>     
+                    </div>
+                </div>
+                <hr class="thin">
+            </div> 
+            
+            
+            
+            
+            <div class="feed-item-listing span-18">   
+                <div class ="feed-item-listing-row">
+                    <div class = "feed-item-listing-row-title span-2">Description:</div>  
+                    <div class = "feed-item-listing-row-details span-12">Edward Hirsch is the author most recently of A Poet’s Glossary (2014). His first collection of poems, For the Sleepwalkers, was published in 1981 and went on to receive the Lavan Younger Poets Award from the Academy of American Poets and the Delmore Schwartz Memorial Award from New York University. Wild Gratitude (1986), his second collection, received the National Book Critics Circle Award. Since then, he has published several books of poems, most recently The ...</div>
+                </div>
+                <hr class="thin">
+            </div> 
+            
+
+            
+            <div class="feed-item-listing span-18">  
+                <div class ="feed-item-listing-row"><a href="http://events.newschool.edu/event/an_evening_with_edward_hirsch#.VACT8GRdUkc">http://events.newschool.edu/event/an_evening_with_edward_hirsch#.VACT8GRdUkc</a></div>
+            </div> 
+            
+         </div><!--END FEED ITEM LISTING-->
+    </div><!--END FEED ITEM-->
+    <hr class="hr2-blue">    
+
+
+
+<span id="feed-paginator" class="span-24">
+    <div class="pagination">
+    <span class="step-links">
+        
+        
+        
+        
+        
+        <a class="selected"  href="/announce/?page=1">
+            1
+        </a>
+        
+        <a class=""  href="/announce/?page=2">
+            2
+        </a>
+        
+        <a class=""  href="/announce/?page=3">
+            3
+        </a>
+        
+        <a class=""  href="/announce/?page=4">
+            4
+        </a>
+        
+        <a class=""  href="/announce/?page=5">
+            5
+        </a>
+        
+        <a class=""  href="/announce/?page=6">
+            6
+        </a>
+        
+        <a class=""  href="/announce/?page=7">
+            7
+        </a>
+        
+        <a class=""  href="/announce/?page=8">
+            8
+        </a>
+        
+        <a class=""  href="/announce/?page=9">
+            9
+        </a>
+        
+        <a class=""  href="/announce/?page=10">
+            10
+        </a>
+        
+
+        
+        ...
+        <a class="last" href="/announce/?page=1240">1240</a>
+        
+        
+        
+        <a class="next" href="/announce/?page=2">
+        </a>
+        
+    </span>
+</div>
+
+</span>
+
+</div><!--END SECTION CONTENT-->
+
+
+        </div>
+        
+        <div id="preload"></div>
+
+
+
+        <!-- Quantcast Tag, part 2 -->
+        <script type="text/javascript">
+            _qevents.push( { qacct:"p-1bU5CKetpvMBI", labels:"artmedia" } );
+        </script>
+        <noscript>
+            <div style="display: none;">
+                <img src="//pixel.quantserve.com/pixel/p-1bU5CKetpvMBI.gif?labels=artmedia" height="1" width="1" alt="Quantcast"/>
+            </div>
+        </noscript>
+
+        
+        
+
+        <script>
+        jQuery.noConflict();
+        (function($) {
+            $(function() {
+                $('.share-btn-cover').click(function() {
+                    $(this).hide();
+                    $(this).siblings('.share-btn').css({'display': 'inline-block'});
+                    return false;
+                });
+            });
+        })(jQuery);
+        </script>
+        <script type="text/javascript" src="/static/js/new_navbars.js"></script>
+        
+
+        
+            <script type="text/javascript">
+                var z=document.createElement("script");
+                z.type="text/javascript";
+                z.async=true;
+                z.src="//engine.nectarads.com/z/12843/azk1_2_43,azk2_2_16,azk3_2_16,azk4_2_16,azk5_2_16";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(z, s);
+            </script>
+        
+
+
+
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-768502-1', 'rhizome.org');
+          ga('send', 'pageview');
+
+        </script>
+    
+        <script type="text/javascript">
+            (function() {
+            var src = document.createElement('script'); 
+            src.async = true;
+            src.src = document.location.protocol + '//platform.twitter.com/widgets.js';
+            document.getElementsByTagName('head')[0].appendChild(src);
+            }());                        
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+            po.src = 'https://apis.google.com/js/plusone.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+          })();
+        </script>
+        
+        <script type="text/javascript">
+            var _sf_async_config={uid:26954,domain:"rhizome.org"};
+            (function(){
+              function loadChartbeat() {
+                window._sf_endpt=(new Date()).getTime();
+                var e = document.createElement('script');
+                e.setAttribute('language', 'javascript');
+                e.setAttribute('type', 'text/javascript');
+                e.setAttribute('src',
+                   (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+                   "js/chartbeat.js");
+                document.body.appendChild(e);
+              }
+              var oldonload = window.onload;
+              window.onload = (typeof window.onload != 'function') ?
+                 loadChartbeat : function() { oldonload(); loadChartbeat(); };
+            })();
+        </script>        
+    </body>
+</html>

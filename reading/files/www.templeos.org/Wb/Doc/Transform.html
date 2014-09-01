@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=US-ASCII">
+<title>The Temple Operating System</title>
+<meta name="keywords" content="Operating System,64-Bit,64 Bit,Temple,OS,TempleOS,Free,Open Source,Public Domain,x86_64">
+<meta name="generator" content="TempleOS V2.08">
+<style type="text/css">
+.cF0{color:#000000;background-color:#fcfcfc;}
+.cF1{color:#0000a8;background-color:#fcfcfc;}
+.cF2{color:#00a800;background-color:#fcfcfc;}
+.cF3{color:#00a8a8;background-color:#fcfcfc;}
+.cF4{color:#a80000;background-color:#fcfcfc;}
+.cF5{color:#a800a8;background-color:#fcfcfc;}
+.cF6{color:#a85400;background-color:#fcfcfc;}
+.cF7{color:#a8a8a8;background-color:#fcfcfc;}
+.cF8{color:#545454;background-color:#fcfcfc;}
+.cF9{color:#5454fc;background-color:#fcfcfc;}
+.cFA{color:#54fc54;background-color:#fcfcfc;}
+.cFB{color:#54fcfc;background-color:#fcfcfc;}
+.cFC{color:#fc5454;background-color:#fcfcfc;}
+.cFD{color:#fc54fc;background-color:#fcfcfc;}
+.cFE{color:#fcfc54;background-color:#fcfcfc;}
+.cFF{color:#fcfcfc;background-color:#fcfcfc;}
+</style>
+</head>
+<body>
+<pre style="font-family:courier;font-size:10pt">
+<a name="l1"></a><a href="../Kernel/Adam1a.html#l3548"><span class=cF4>CDC</span></a><span class=cF0>'s have a 4x4 matrix for rotating, scaling, skewing and shifting in 3 
+<a name="l2"></a>dimensions.  To make the graphics routines use the transform, you must set the </span><span class=cF4>
+<a name="l3"></a></span><a href="../Kernel/Adam1a.html#l3522"><span class=cF4>DCF_TRANSFORMATION</span></a><span class=cF0> flag.
+<a name="l4"></a>
+<a name="l5"></a>The matrix consists of integers that have been scaled 32 bits (</span><a href="../Adam/Gr/GrDC.html#l4"><span class=cF4>GR_SCALE</span></a><span class=cF0>).  See </span><span class=cF4>
+<a name="l6"></a></span><a href="../Demo/Lectures/FixedPoint.html#l1"><span class=cF4>::/Demo/Lectures/FixedPoint.CPP</span></a><span class=cF0> to learn why.
+<a name="l7"></a>
+<a name="l8"></a>See </span><a href="../Adam/Gr/MathGr.html#l82"><span class=cF4>GrRotXNew</span></a><span class=cF0>(), </span><a href="../Adam/Gr/MathGr.html#l97"><span class=cF4>GrRotYNew</span></a><span class=cF0>(), </span><a href="../Adam/Gr/MathGr.html#l112"><span class=cF4>GrRotZNew</span></a><span class=cF0>(), </span><a href="../Adam/Gr/MathGr.html#l127"><span class=cF4>GrScaleNew</span></a><span class=cF0>(), </span><a href="../Adam/Gr/MathGr.html#l153"><span class=cF4>GrRotXEqu</span></a><span class=cF0>(), </span><a href="../Adam/Gr/MathGr.html#l172"><span class=cF4>GrRotYEqu</span></a><span class=cF0>(
+<a name="l9"></a>), </span><a href="../Adam/Gr/MathGr.html#l191"><span class=cF4>GrRotZEqu</span></a><span class=cF0>() and </span><a href="../Adam/Gr/MathGr.html#l210"><span class=cF4>GrScaleEqu</span></a><span class=cF0>() to rotate about axes and scale.  Combine them 
+<a name="l10"></a>with </span><a href="../Adam/Gr/MathGr.html#l135"><span class=cF4>GrMulMat</span></a><span class=cF0>() and assign them to the </span><a href="../Kernel/Adam1a.html#l3548"><span class=cF4>CDC</span></a><span class=cF0>.</span><span class=cF2>dc</span><span class=cF0> with </span><a href="../Adam/Gr/GrDC.html#l44"><span class=cF4>GrSetRotMat</span></a><span class=cF0>().  See </span><span class=cF4>
+<a name="l11"></a></span><a href="../Demo/Graphics/Box.html#l1"><span class=cF4>::/Demo/Graphics/Box.CPP</span></a><span class=cF0>.
+<a name="l12"></a>
+<a name="l13"></a>You can rotate single points using </span><a href="../Adam/Gr/GrDC.html#l6"><span class=cF4>GrRot</span></a><span class=cF0>().
+<a name="l14"></a>
+<a name="l15"></a>The 4th dimension allows a neat trick where you can place pos shifts 
+<a name="l16"></a>(translations), into the matrix and </span><a href="../Adam/Gr/MathGr.html#l135"><span class=cF4>GrMulMat</span></a><span class=cF0> them to combine rotation/shift 
+<a name="l17"></a>operations.  Normally, you can't combine pos shift operations.  See </span><span class=cF4>
+<a name="l18"></a></span><a href="../Adam/Gr/MathGr.html#l231"><span class=cF4>GrSetTranslation</span></a><span class=cF0>() and </span><a href="../Demo/Graphics/Transform.html#l1"><span class=cF4>::/Demo/Graphics/Transform.CPP</span></a><span class=cF0>.
+<a name="l19"></a>
+<a name="l20"></a>Finally, </span><a href="../Kernel/Adam1a.html#l3548"><span class=cF4>CDC</span></a><span class=cF0>'s have an </span><span class=cF2>x</span><span class=cF0>, </span><span class=cF2>y</span><span class=cF0> and </span><span class=cF2>z</span><span class=cF0> which is an additional shift (translation).
+<a name="l21"></a>
+<a name="l22"></a>The transformation is implemented as a callback on the </span><a href="../Kernel/Adam1a.html#l3548"><span class=cF4>CDC</span></a><span class=cF0>'s </span><span class=cF2>transform()</span><span class=cF0> member. 
+<a name="l23"></a> The default </span><span class=cF2>transfrom()</span><span class=cF0> callback is </span><a href="../Adam/Gr/GrDC.html#l15"><span class=cF4>GrTransform</span></a><span class=cF0>().  See </span><span class=cF4>
+<a name="l24"></a></span><a href="../Demo/Games/EagleDive.html#l1"><span class=cF4>::/Demo/Games/EagleDive.CPP</span></a><span class=cF0> or </span><a href="../Demo/Games/CastleFrankenstein.html#l1"><span class=cF4>::/Demo/Games/CastleFrankenstein.CPP</span></a><span class=cF0> to see how 
+<a name="l25"></a>to change the </span><span class=cF2>transfrom()</span><span class=cF0> callback for foreshortening.
+</span></pre></body>
+</html>
+<!-- text below generated by server. PLEASE REMOVE --><!-- Counter/Statistics data collection code --><script language="JavaScript" src="http://l.yimg.com/d/lib/smb/js/hosting/cp/js_source/whv2_001.js"></script><script language="javascript">geovisit();</script><noscript><img src="http://visit.webhosting.yahoo.com/visit.gif?us1409528702" alt="setstats" border="0" width="1" height="1"></noscript><script type="text/javascript" src="https://s.yimg.com/mi/vs4/ywa.js"></script><script type="text/javascript">try {var YWAGTracker = YWA.getTracker("10001849413879", "VSCALE4");YWAGTracker.setDocumentName("WPAGE");YWAGTracker.setDocumentGroup("YSBW");YWAGTracker.setCF(7, "templeos.org");YWAGTracker.setCF(8, "w42");YWAGTracker.submit();} catch (eYWATCUnavailable) {}</script><script type="text/javascript">(function (d, w) {var x = d.getElementsByTagName('SCRIPT')[0];var f = function () {var s = d.createElement('SCRIPT');s.type = 'text/javascript';s.async = true;s.src = "//np.lexity.com/embed/YW/eff965aab4535cd38b91f0976c617496?id=9382d670eca2";x.parentNode.insertBefore(s, x);};w.attachEvent ? w.attachEvent('onload',f) :w.addEventListener('load',f,false);}(document, window));</script>

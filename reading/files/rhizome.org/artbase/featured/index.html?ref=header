@@ -1,0 +1,954 @@
+
+
+
+<!doctype html>
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="Content-Language" content="en-us">
+        <title>Rhizome | ArtBase</title>                
+        <meta name="google-site-verification" content="AZfoqybynDh_0mjEBG_XwMZeCwiSE-GZ8BiQB5FZzDU" />        
+        <meta name="ROBOTS" content="ALL" />
+        <meta name="description" content="Rhizome is dedicated to the creation, presentation, preservation, and critique of emerging artistic practices that engage technology." />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <!-- Set viewport so we can have mobile styles -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+
+        <link rel="shortcut icon" href="/static/images/favicons/leyva.gif" />
+
+        <!-- google fonts -->
+        <link href='//fonts.googleapis.com/css?family=Titillium+Web:400,200,300' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Anaheim' rel='stylesheet' type='text/css'>
+
+        
+            <!--GLOBAL CSS-->
+            <link type="text/css" rel="stylesheet" href="/static/css/blueprint/screen.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/base.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/comments.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/sidebars.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/calendars.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/miniprofile.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/media_players.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/blueprint/print.css" media="print"/></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/new_navbars.css"/></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/top_banner.css"/></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/mobile.css"/></link>
+            <link type="text/css" rel="stylesheet" href="/static/font-awesome-4.0.0/css/font-awesome.min.css"/></link>
+            <!--[if lt IE 8]>
+                <link rel="stylesheet" href="/static/css/blueprint/ie.css" type="text/css" media="screen, projection"></link>
+            <![endif]-->
+         
+            <!--[if IE]>
+                <link rel="stylesheet" type="text/css" href="/static/css/ie.css"  />
+            <![endif]-->
+
+            <!-- LOCAL CSS -->
+            
+	<link type="text/css" rel="stylesheet" href="/static/artbase/styles/artbase.css" />
+	<link type="text/css" rel="stylesheet" href="/static/artbase/styles/featured.css" />
+	<link type="text/css" rel="stylesheet" href="/static/artbase/styles/collections.css" />
+    
+
+            
+            
+            
+            
+            
+            
+
+            
+            
+        
+        
+        
+        
+            <!-- GLOBAL JAVASCRIPT -->
+            <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+            <script type="text/javascript">window.__admin_media_prefix__ = "/static/admin/";</script>
+            <script type="text/javascript">window.__static_url__ = "/static/";</script>
+            <script type="text/javascript">var STATIC_URL = "/static/";</script>
+            <script type="text/javascript">window.SERVER_NAME = "rhizome.org";</script>
+
+            <script type="text/javascript" src="/static/js/mootools-core-1.3.2-yc.js"></script>
+            <script type="text/javascript" src="/static/js/mootools-more-1.3.2.1.js"></script>
+            <script type="text/javascript" src="/static/js/rhizome.js"></script>
+            <script type="text/javascript" src="/static/media_players/flowplayer/flowplayer-3.2.2.min.js"></script>
+            <script type="text/javascript" src="/static/media_players/soundmanager/script/soundmanager2-nodebug-jsmin.js"></script>
+            <script type="text/javascript" src="/static/media_players/soundmanager/script/inlineplayer.js"></script>
+            <script type="text/javascript" src="/static/js/carousel/PeriodicalExecuter.js"></script>
+            <script type="text/javascript" src="/static/js/carousel/Carousel.js"></script>
+            
+            <script type="text/javascript">
+                soundManager.url = '/static/media_players/soundmanager/swf/';
+                //soundManager.flashVersion = 9; // optional: shiny features (default = 8)
+                soundManager.useFlashBlock = true; // optionally, enable when you're ready to dive in
+                // enable HTML5 audio support, if you're feeling adventurous.
+                soundManager.useHTML5Audio = true;
+                soundManager.debugMode = 0; // disable or enable debug output
+                soundManager.useFlashBlock = 0;
+                //soundManager.useMovieStar = true;
+            </script>
+
+            <script type="text/javascript" src="/static/js/jquery-1.10.2.min.js"></script>
+            <!-- LOCAL  JAVASCRIPT-->              
+            
+    <script type="text/javascript" src="/static/artbase/scripts/featured-rotate.js"></script>
+    <script type="text/javascript" src="/static/artbase/scripts/highlights.js"></script>
+
+            
+                   
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <script type="text/javascript">
+                
+                
+    
+        var featured_works = [
+  {
+    "artist": "Richard Vijgen",
+    "url": "/artbase/artwork/53493/",
+    "image": "http://media.rhizome.org/artbase/images/53493_image_featured.jpg",
+    "created": "2011-10-27 12:19:24",
+    "tags": [
+      {
+        "url": "/artbase/tag/archive/",
+        "name": "archive"
+      },
+      {
+        "url": "/artbase/tag/browser/",
+        "name": "browser"
+      },
+      {
+        "url": "/artbase/tag/community/",
+        "name": "community"
+      },
+      {
+        "url": "/artbase/tag/documentary/",
+        "name": "Documentary"
+      },
+      {
+        "url": "/artbase/tag/geocities/",
+        "name": "geocities"
+      },
+      {
+        "url": "/artbase/tag/gif/",
+        "name": "gif"
+      },
+      {
+        "url": "/artbase/tag/history/",
+        "name": "History"
+      },
+      {
+        "url": "/artbase/tag/homepage/",
+        "name": "homepage"
+      },
+      {
+        "url": "/artbase/tag/informationmap/",
+        "name": "information map"
+      },
+      {
+        "url": "/artbase/tag/nostalgia/",
+        "name": "nostalgia"
+      }
+    ],
+    "artist_url": "/profile/richardvijgen/",
+    "title": "Deleted Cities",
+    "work_id": 53493
+  },
+  {
+    "artist": "Christine Love",
+    "url": "/artbase/artwork/54461/",
+    "image": "http://media.rhizome.org/artbase/images/54461_image_featured.png",
+    "created": "2010-01-01 00:00:00",
+    "tags": [
+      {
+        "url": "/artbase/tag/bbs/",
+        "name": "BBS"
+      },
+      {
+        "url": "/artbase/tag/biography/",
+        "name": "biography"
+      },
+      {
+        "url": "/artbase/tag/community/",
+        "name": "community"
+      },
+      {
+        "url": "/artbase/tag/history/",
+        "name": "History"
+      },
+      {
+        "url": "/artbase/tag/hypertext/",
+        "name": "Hypertext"
+      },
+      {
+        "url": "/artbase/tag/interactiveart/",
+        "name": "Interactive art"
+      },
+      {
+        "url": "/artbase/tag/interface/",
+        "name": "interface"
+      },
+      {
+        "url": "/artbase/tag/memory/",
+        "name": "memory"
+      },
+      {
+        "url": "/artbase/tag/narrative/",
+        "name": "Narrative"
+      },
+      {
+        "url": "/artbase/tag/software/",
+        "name": "software"
+      }
+    ],
+    "artist_url": "/profile/christinelove/",
+    "title": "Digital: A Love Story",
+    "work_id": 54461
+  },
+  {
+    "artist": "Takeshi Murata",
+    "url": "/artbase/artwork/54085/",
+    "image": "http://media.rhizome.org/artbase/images/54085_image_featured.jpg",
+    "created": "2010-01-01 00:00:00",
+    "tags": [
+      {
+        "url": "/artbase/tag/3d/",
+        "name": "3D"
+      },
+      {
+        "url": "/artbase/tag/animation/",
+        "name": "Animation"
+      },
+      {
+        "url": "/artbase/tag/appropriation/",
+        "name": "Appropriation"
+      },
+      {
+        "url": "/artbase/tag/copyright/",
+        "name": "copyright"
+      }
+    ],
+    "artist_url": "/profile/murata/",
+    "title": "I, Popeye",
+    "work_id": 54085
+  },
+  {
+    "artist": "Justin Kemp",
+    "url": "/artbase/artwork/53852/",
+    "image": "http://media.rhizome.org/artbase/images/53852_image_featured.jpg",
+    "created": "2010-04-20 00:00:00",
+    "tags": [
+      {
+        "url": "/artbase/tag/actions/",
+        "name": "Actions"
+      },
+      {
+        "url": "/artbase/tag/off-line/",
+        "name": "Off-line"
+      },
+      {
+        "url": "/artbase/tag/performance/",
+        "name": "performance"
+      }
+    ],
+    "artist_url": "/profile/justinkemp/",
+    "title": "Proclaiming My Love",
+    "work_id": 53852
+  },
+  {
+    "artist": "Sebastian Schmieg",
+    "url": "/artbase/artwork/54173/",
+    "image": "http://media.rhizome.org/artbase/images/54173_image_featured_1.png",
+    "created": "2011-12-28 12:00:00",
+    "tags": [
+      {
+        "url": "/artbase/tag/algorithm/",
+        "name": "algorithm"
+      },
+      {
+        "url": "/artbase/tag/google/",
+        "name": "Google"
+      },
+      {
+        "url": "/artbase/tag/series/",
+        "name": "series"
+      },
+      {
+        "url": "/artbase/tag/video/",
+        "name": "video"
+      }
+    ],
+    "artist_url": "/profile/sebastian11/",
+    "title": "Search by Image",
+    "work_id": 54173
+  },
+  {
+    "artist": "Alvar Freude, Peter Scheerer, Dragan Espenschied ",
+    "url": "/artbase/artwork/55316/",
+    "image": "http://media.rhizome.org/artbase/images/55316_image_featured.png",
+    "created": "1991-01-01 00:00:00",
+    "tags": [
+      {
+        "url": "/artbase/tag/freeware/",
+        "name": "freeware"
+      },
+      {
+        "url": "/artbase/tag/german/",
+        "name": "German"
+      },
+      {
+        "url": "/artbase/tag/graphics/",
+        "name": "graphics"
+      },
+      {
+        "url": "/artbase/tag/pixelart/",
+        "name": "pixel art"
+      },
+      {
+        "url": "/artbase/tag/screen-saver/",
+        "name": "screen saver"
+      }
+    ],
+    "artist_url": "/profile/despens/",
+    "title": "TwiLight",
+    "work_id": 55316
+  },
+  {
+    "artist": "Jon Rafman",
+    "url": "/artbase/artwork/53516/",
+    "image": "http://media.rhizome.org/artbase/images/53516_image_featured.jpg",
+    "created": "2010-01-01 00:00:00",
+    "tags": [
+      {
+        "url": "/artbase/tag/3d/",
+        "name": "3D"
+      },
+      {
+        "url": "/artbase/tag/antiquity/",
+        "name": "Antiquity"
+      },
+      {
+        "url": "/artbase/tag/appropriation/",
+        "name": "Appropriation"
+      },
+      {
+        "url": "/artbase/tag/digital/",
+        "name": "digital"
+      },
+      {
+        "url": "/artbase/tag/domain/",
+        "name": "Domain"
+      },
+      {
+        "url": "/artbase/tag/history/",
+        "name": "History"
+      }
+    ],
+    "artist_url": "/profile/jonrafman/",
+    "title": "Woods of Arcady",
+    "work_id": 53516
+  }
+];
+    
+
+                
+            </script>
+        
+        
+        <!--RSS HEADER -->
+        
+        
+
+        <!-- Quantcast Tag, part 1 -->
+        <script type="text/javascript">
+            var _qevents = _qevents || [];
+            (function() {
+                var elem = document.createElement('script');
+                elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge")  
+                            + ".quantserve.com/quant.js";
+                elem.async = true;
+                elem.type = "text/javascript";
+                var scpt = document.getElementsByTagName('script')[0];
+                scpt.parentNode.insertBefore(elem, scpt);  
+            })();
+        </script>
+    </head>
+        
+    <body class="artbase">
+        
+        
+        
+    <div id="new_header">
+    <ul>
+        
+            <li><a  href="/?ref=header">Rhizome</a></li>
+        
+            <li><a  href="/editorial/?ref=header">Journal</a></li>
+        
+            <li><a class="active" href="/artbase/featured/?ref=header">Artbase</a></li>
+        
+            <li><a  href="/community/?ref=header">Community</a></li>
+        
+            <li><a  href="/programs/?ref=header">Programs</a></li>
+        
+
+        <li id="search">
+            <form action="/search/" method="get">
+                <input type="text" name="q" placeholder=""><a id="search-addon"><i class="fa fa-search"></i></a>
+            </form>
+        </li>
+
+        <li id="account">
+            
+                <a href="/login/?ref=header"><i class="fa fa-key"></i></a>
+            
+        </li>
+    </ul>
+</div>
+
+<div id="new_footer">
+    <ul>
+        
+            
+        
+            
+        
+            <li><a class="active" href="/artbase/featured/?ref=footer"><span class="underline">Artbase</span> &raquo;</a></li>
+        
+            
+        
+            
+        
+            
+        
+            
+        
+
+        
+            <li><a  href="/artbase/browse/?ref=footer">Browse</a></li>
+        
+            <li><a  href="/artbase/exhibitions/?ref=footer">Member Exhibitions</a></li>
+        
+            <li><a  href="/artbase/about/?ref=footer">About</a></li>
+        
+            <li><a  href="/artbase/submit/?ref=footer">Submit</a></li>
+        
+
+        
+
+        
+            <li class="reversed"><a  href="/support/donate/?ref=footer">Membership</a></li>
+        
+            <li class="reversed"><a  href="/about/?ref=footer">About Us</a></li>
+        
+    </ul>
+</div>
+
+
+
+        
+                 
+          
+        
+
+        
+        <div class="section-header-wrap">
+            
+            <div class="container">
+                
+<div id="artbase-top">
+    <div id="featured-work">
+        <a href="/artbase/artwork/53493/" id="featured-work-image-link">
+            <img id="featured-work-image" class="image" width="950" src="http://media.rhizome.org/artbase/images/53493_image_featured.jpg"></img>
+        </a>
+    </div>
+    <img id="featured-details-triangle-flap" src="/static/images/small_triangle_flap.png"></img>
+    <div id="featured-details-bottom-left">
+        <div class="featured-mask"></div>
+        <div id="featured-work-content" class="content">
+            <div id="red-title-nav">
+    <div class="red-title">Featured work</div>
+    <div id="featured-nav">
+        
+            <button class="select-work selected "></button>
+        
+            <button class="select-work  "></button>
+        
+            <button class="select-work  "></button>
+        
+            <button class="select-work  "></button>
+        
+            <button class="select-work  "></button>
+        
+            <button class="select-work  "></button>
+        
+            <button class="select-work  last"></button>
+        
+        <button class="next-work"></button>
+    </div>
+</div>
+<div class="clear"></div>
+<div id="title-artist">
+    <div id="featured-title" class="title">
+        <a href="/artbase/artwork/53493/" title="Deleted Cities" id ="featured-work-link">
+            Deleted Cities
+        </a>
+        <div class="created-date">(2011)</div>
+    </div>
+    <div id="featured-artist">
+        
+        <a href="/profile/richardvijgen/" id = "featured-artist-link">
+            Richard Vijgen
+        </a>
+        
+    </div>
+</div>
+<div class="tags" id="featured_artwork_tags">
+    
+        <a class="tag" href="/artbase/tag/archive/">archive</a>
+    
+        <a class="tag" href="/artbase/tag/browser/">browser</a>
+    
+        <a class="tag" href="/artbase/tag/community/">community</a>
+    
+        <a class="tag" href="/artbase/tag/documentary/">documentary</a>
+    
+        <a class="tag" href="/artbase/tag/geocities/">geocities</a>
+    
+        <a class="tag" href="/artbase/tag/gif/">gif</a>
+    
+        <a class="tag" href="/artbase/tag/history/">history</a>
+    
+        <a class="tag" href="/artbase/tag/homepage/">homepage</a>
+    
+        <a class="tag" href="/artbase/tag/informationmap/">informationmap</a>
+    
+        <a class="tag" href="/artbase/tag/nostalgia/">nostalgia</a>
+    
+</div>
+
+        </div>
+    </div>
+</div>
+
+            </div>
+            
+        </div>
+                 
+        
+             
+         
+            
+                        
+        <div id="content" class="container artbase-featured-content">
+            
+<div class="span-24" id="artbase-featured-wrap">
+    
+    <div class="span-24" id="artbase-description-wrap">
+        <div class="span-12" id="section-description">
+            <p>Founded in 1999, the Rhizome ArtBase is an online archive of new media art containing some 2171 art works, and growing. The ArtBase encompasses a vast range of projects by artists all over the world that employ materials such as software, code, websites, moving images, games and browsers to aesthetics and critical ends. We welcome submissions to the ArtBase; they are reviewed by our curatorial staff on a monthly basis. <a href="/artbase/about/">Read More &raquo;</a></p>
+        </div>
+        
+        <div class="prepend-1" id="artbase-fp-browse-search">
+                
+            <form action="/search/" method="get" id="search-form">
+                <input id ="artbase-search-input" type="text" name="q" value="SEARCH THE ARTBASE" />
+                <input type="hidden" name="models" value="artbase.artworkstub" id="id_models_13" />
+                <button id ="search-button" class="round-blue-fat" type="submit"></button>
+            </form>
+                        
+            <div id="artbase-browse">
+                <span id="artbase-browse-browse">Browse:</span> 
+                <span class="artbase-browse-type"><a href="/artbase/browse/title/">Works</a></span> 
+                <span class="artbase-browse-type"><a href="/artbase/browse/artist/">Artists</a></span> 
+                <span class="artbase-browse-type"><a href="/artbase/browse/tag/">Tags</a></span></div>
+        </div>
+    </div>
+    
+    <h6>Collections</h6>
+    <hr class="hr3">
+<!--
+    
+    <div id="collection-left-nav"><</div>
+    <div id="collection-right-nav">></div>
+-->
+
+    <div class="span-24" id="artbase-collections">
+    
+        <a href="/artbase/collections/6" class="collection-link">
+            <div class="collection ">
+                <h3>Formalism &amp; Glitch</h3>
+                <div class="collection-artworks">
+                
+                    <img title="%20wrong by JODI" class="collection-artwork-image  first " src="http://media.rhizome.org/artbase/images/1678_image_small.tif" />
+                
+                    <img title="/*wIPhOME0701v1.2*/ by Christian Oyarzun" class="collection-artwork-image overlap" src="http://media.rhizome.org/artbase/images/5266.gif" />
+                
+                    <img title="505.VIRI by // jonCates" class="collection-artwork-image overlap" src="http://media.rhizome.org/artbase/images/34066_image_small.jpg" />
+                
+                    <img title="ascii rock by Yoshi Sodeoka" class="collection-artwork-image overlap" src="http://media.rhizome.org/artbase/images/41044_image_small.jpg" />
+                
+                    <img title="Chill Space by Daniel Leyva" class="collection-artwork-image overlap" src="http://media.rhizome.org/artbase/images/53903_image_small.jpeg" />
+                
+                    <img title="Dither Studies by Daniel Temkin" class="collection-artwork-image overlap" src="http://media.rhizome.org/artbase/images/53782_image_small.jpg" />
+                
+                </div>
+                <div class="collection-summary">
+                    These works highlight practices that embrace the aesthetics and formal qualities inherent in the web, operating systems, software errors, and glitches.
+                </div>
+            </div>
+        </a>
+    
+        <a href="/artbase/collections/5" class="collection-link">
+            <div class="collection middle">
+                <h3>Code</h3>
+                <div class="collection-artworks">
+                
+                    <img title="&quot;Brick&quot; Drawings by Jim Johnson" class="collection-artwork-image  first " src="http://media.rhizome.org/artbase/images/3455.gif" />
+                
+                    <img title="Babel by Simon Biggs" class="collection-artwork-image overlap" src="http://media.rhizome.org/artbase/images/2676_image_small.tif" />
+                
+                    <img title="Computational Expressionism by Joanna Berzowska" class="collection-artwork-image overlap" src="http://media.rhizome.org/artbase/images/1903_image_small.tif" />
+                
+                    <img title="Flight Patterns by Aaron Koblin" class="collection-artwork-image overlap" src="http://media.rhizome.org/artbase/images/40291.gif" />
+                
+                    <img title="IP-III by Annja Krautgasser" class="collection-artwork-image overlap" src="http://media.rhizome.org/artbase/images/8424.gif" />
+                
+                    <img title="Manhattan Timeformations by Brian McGrath and Mark Watkins" class="collection-artwork-image overlap" src="http://media.rhizome.org/artbase/images/2079_image_small.tif" />
+                
+                </div>
+                <div class="collection-summary">
+                    These works embody three of the oldest creative practices existing at the intersection of art &amp; computarion: Data Visualisation, and Generative, and parametric art.
+                </div>
+            </div>
+        </a>
+    
+        <a href="/artbase/collections/4" class="collection-link">
+            <div class="collection ">
+                <h3>Digital Archivalism</h3>
+                <div class="collection-artworks">
+                
+                    <img title="All My Life for Sale by John Freyer" class="collection-artwork-image  first " src="http://media.rhizome.org/artbase/images/47663_image_small.tif" />
+                
+                    <img title="automated beacon by Thomson &amp; Craighead" class="collection-artwork-image overlap" src="http://media.rhizome.org/artbase/images/46680_image_small.jpg" />
+                
+                    <img title="greek new media shit by sterling crispin" class="collection-artwork-image overlap" src="http://media.rhizome.org/artbase/images/53320_image_small.jpg" />
+                
+                    <img title="Hand Held by Brian Khek" class="collection-artwork-image overlap" src="http://media.rhizome.org/artbase/images/53960_image_small.jpg" />
+                
+                    <img title="I&#39;m Google by Dina Kelberman" class="collection-artwork-image overlap" src="http://media.rhizome.org/artbase/images/52910_image_small.jpg" />
+                
+                    <img title="Man With A Movie Camera:the Global Remake by Perry Bard" class="collection-artwork-image overlap" src="http://media.rhizome.org/artbase/images/49455_image_small.tif" />
+                
+                </div>
+                <div class="collection-summary">
+                    Artistic practices have long involved modes of collecting and archivalsim. This collection seeks to highlight these strategies in dialog with internet based practices.
+                </div>
+            </div>
+        </a>
+    
+        <a href="/artbase/collections/3" class="collection-link">
+            <div class="collection ">
+                <h3>Tactical Media</h3>
+                <div class="collection-artworks">
+                
+                    <img title="Add-Art by Steve Lambert" class="collection-artwork-image  first " src="http://media.rhizome.org/artbase/images/48316.gif" />
+                
+                    <img title="Average Shoveler by Carlo Zanni" class="collection-artwork-image overlap" src="http://media.rhizome.org/artbase/images/31867.gif" />
+                
+                    <img title="Biennale.py by Eva and Franco Mattes aka 0100101110101101.org" class="collection-artwork-image overlap" src="http://media.rhizome.org/artbase/images/47669_image_small.tif" />
+                
+                    <img title="Carnivore by RSG" class="collection-artwork-image overlap" src="http://media.rhizome.org/artbase/images/2904.gif" />
+                
+                    <img title="Google Will Eat Itself by HANS BERNHARD" class="collection-artwork-image overlap" src="http://media.rhizome.org/artbase/images/48115_image_small.jpg" />
+                
+                    <img title="Lakshmi by Thomas Laureyssens" class="collection-artwork-image overlap" src="http://media.rhizome.org/artbase/images/42657_image_small.jpg" />
+                
+                </div>
+                <div class="collection-summary">
+                    These works follow modes of institutional critique, activism and privacy, strategically employing technology to achieve these causes.
+                </div>
+            </div>
+        </a>
+    
+        <a href="/artbase/collections/2" class="collection-link">
+            <div class="collection middle">
+                <h3>Net.art and Hypertext</h3>
+                <div class="collection-artworks">
+                
+                    <img title="Absolut Net.Art by Eryk Salvaggio" class="collection-artwork-image  first " src="http://media.rhizome.org/artbase/images/1690_image_small.tif" />
+                
+                    <img title="Face Value by Nino Rodriguez" class="collection-artwork-image overlap" src="http://media.rhizome.org/artbase/images/3421_image_small.jpg" />
+                
+                    <img title="Flesh&amp;Blood by Mouchette" class="collection-artwork-image overlap" src="http://media.rhizome.org/artbase/images/1692_image_small.tif" />
+                
+                    <img title="History of Art for Airports by Vuc Cosic" class="collection-artwork-image overlap" src="http://media.rhizome.org/artbase/images/1725_image_small.tif" />
+                
+                    <img title="HTC1.0 by Mark Amerika" class="collection-artwork-image overlap" src="http://media.rhizome.org/artbase/images/1701_image_small.tif" />
+                
+                    <img title="I am not, served by by Annie Abrahams" class="collection-artwork-image overlap" src="http://media.rhizome.org/artbase/images/48501.gif" />
+                
+                </div>
+                <div class="collection-summary">
+                    This collection presents some of the earliest works in the ArtBase, leading off with works produced by the pioneers of net.art in the  early/mid 90’s.
+                </div>
+            </div>
+        </a>
+    
+        <a href="/artbase/collections/1" class="collection-link">
+            <div class="collection ">
+                <h3>Rendered Reality</h3>
+                <div class="collection-artworks">
+                
+                    <img title="Boolean Nature by Hugo Arcier" class="collection-artwork-image  first " src="http://media.rhizome.org/artbase/images/53996_image_small.png" />
+                
+                    <img title="Brand New Paint Job by Jon Rafman" class="collection-artwork-image overlap" src="http://media.rhizome.org/artbase/images/53521_image_small.png" />
+                
+                    <img title="Crystal Gallery by Timur Si-Qin &amp; contributors" class="collection-artwork-image overlap" src="http://media.rhizome.org/artbase/images/53995_image_small.png" />
+                
+                    <img title="Digital Crafts by Various artists" class="collection-artwork-image overlap" src="http://media.rhizome.org/artbase/images/54027_image_small.png" />
+                
+                    <img title="Dreamcaptchas by Kari Altmann" class="collection-artwork-image overlap" src="http://media.rhizome.org/artbase/images/54021_image_small.png" />
+                
+                    <img title="facingface~terrestrialtrancetree by Brenna Murphy" class="collection-artwork-image overlap" src="http://media.rhizome.org/artbase/images/54026_image_small.png" />
+                
+                </div>
+                <div class="collection-summary">
+                    Collected here are works that are emblematic of recent trends in the use of 3D modeling  and rendering tools by artists who largely work online.
+                </div>
+            </div>
+        </a>
+    
+    </div>
+    
+    <div class="span-24" id="artbase-fp-archived-favorite">
+        <div id="artbase-fp-favorite">
+            <h6><a class="anchor-name" href="/artbase/browse/favorites/">Member Favorite</a></h6>
+            <hr class="hr3">
+            <a href="/artbase/artwork/46642">
+                <img width="460" height="350" src="http://media.rhizome.org/artbase/images/46642.gif" />
+            </a>
+            <img id="favorite-triangle-flap" src="/static/images/small_triangle_flap.png"></img>
+            <div class="overlay">
+                <div class="overlay-mask"></div>
+                <div class="overlay-details">
+                    <div class="overlay-title"><a href="/artbase/artwork/46642">Cell in the New Body</a></div>
+                    <div class="overlay-byline">
+                        <a href="/profile/farbrook/"> Joseph Farbrook</a> (2006)
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="artbase-fp-archived">
+            <h6><a class="anchor-name" href="/artbase/browse/archived/">Recently Archived</h6>
+            <hr class="hr3">
+            <a href="/artbase/artwork/54085">
+                <img width="460" height="350" src="http://media.rhizome.org/artbase/images/54085_image_medium.jpg" />
+            </a>
+            <img id="archived-triangle-flap" src="/static/images/small_triangle_flap.png"></img>
+            <div class="overlay">
+                <div class="overlay-mask"></div>
+                <div class="overlay-details">
+                    <div class="overlay-title"><a href="/artbase/artwork/54085">I, Popeye</a></div>
+                    <div class="overlay-byline">
+                        <a href="/profile/murata/">Takeshi Murata</a> (2010)
+                    </div>                
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="span-24" id="artbase-fp-member-exhibitions">
+        <h6><a class="anchor-name" href="/artbase/exhibitions">Member Exhibitions</a></h6>
+        <hr class="hr3">
+        
+        <div class="exhibition ">
+            <a href="/artbase/exhibitions/view/1817"><img width="285" height="200" src="http://media.rhizome.org/artbase/exhibition_images/tmp/74913_555809394495131_1431341728_n_1.jpg"></img></a>
+            <a href="/artbase/exhibitions/view/1817"><h3>YOUR EXHIBITION SPACE AT THE INTERNATIONAL UAMO TOUR 2014 “PRETTY UGLY”</h3>
+            <h4></h4></a>
+            <hr class="thin">
+            <div class="bold-upper blue">Curated by
+                <a href="/profile/UAMO/">UAMO</a>
+            </div>
+            <div class="small-italic">
+                With works by
+                
+            </div>
+        </div>
+        
+        <div class="exhibition middle">
+            <a href="/artbase/exhibitions/view/1797"><img width="285" height="200" src="http://media.rhizome.org/artbase/exhibition_images/1797.jpg"></img></a>
+            <a href="/artbase/exhibitions/view/1797"><h3>Like, Favourite, Subscribe, Love Me!</h3>
+            <h4>Exploring people and communities online</h4></a>
+            <hr class="thin">
+            <div class="bold-upper blue">Curated by
+                <a href="/profile/Natalie_MacWilliam/">Natalie_MacWilliam</a>
+            </div>
+            <div class="small-italic">
+                With works by
+                
+                    <a href="/profile/chrisbasmajian/">
+                    Chris Basmajian</a>, 
+                
+                    <a href="/profile/christinelove/">
+                    christinelove</a>, 
+                
+                    <a href="/profile/richardvijgen/">
+                    Richard Vijgen</a>, 
+                
+                    <a href="/profile/angiewaller/">
+                    Angie Waller</a>, 
+                
+                    <a href="/profile/christopherbaker/">
+                    Christopher Baker</a>
+                
+            </div>
+        </div>
+        
+        <div class="exhibition ">
+            <a href="/artbase/exhibitions/view/1729"><img width="285" height="200" src="http://media.rhizome.org/artbase/exhibition_images/1729.gif"></img></a>
+            <a href="/artbase/exhibitions/view/1729"><h3>dis/Communication </h3>
+            <h4></h4></a>
+            <hr class="thin">
+            <div class="bold-upper blue">Curated by
+                <a href="/profile/jess_howard/">jess_howard</a>
+            </div>
+            <div class="small-italic">
+                With works by
+                
+                    <a href="/profile/maxmin/">
+                    max Min</a>, 
+                
+                    <a href="/profile/thomascharveriat/">
+                    thomas charveriat</a>, 
+                
+                    <a href="/profile/thomascharveriat/">
+                    thomas charveriat</a>, 
+                
+                    <a href="/profile/robertpetrosino/">
+                    Robert Petrosino</a>, 
+                
+                    <a href="/profile/jodyzellen/">
+                    Jody Zellen</a>
+                
+            </div>
+        </div>
+        
+        <hr class="hr2"></hr>
+        <a href="/artbase/exhibitions">
+            <button class="bold-upper more blue"><span>More</span><span class="more-arrow"></span></button>
+        </a>
+
+    </div>
+
+
+</div>
+
+        </div>
+        
+        <div id="preload"></div>
+
+
+
+        <!-- Quantcast Tag, part 2 -->
+        <script type="text/javascript">
+            _qevents.push( { qacct:"p-1bU5CKetpvMBI", labels:"artmedia" } );
+        </script>
+        <noscript>
+            <div style="display: none;">
+                <img src="//pixel.quantserve.com/pixel/p-1bU5CKetpvMBI.gif?labels=artmedia" height="1" width="1" alt="Quantcast"/>
+            </div>
+        </noscript>
+
+        
+        
+
+        <script>
+        jQuery.noConflict();
+        (function($) {
+            $(function() {
+                $('.share-btn-cover').click(function() {
+                    $(this).hide();
+                    $(this).siblings('.share-btn').css({'display': 'inline-block'});
+                    return false;
+                });
+            });
+        })(jQuery);
+        </script>
+        <script type="text/javascript" src="/static/js/new_navbars.js"></script>
+        
+
+        
+            <script type="text/javascript">
+                var z=document.createElement("script");
+                z.type="text/javascript";
+                z.async=true;
+                z.src="//engine.nectarads.com/z/12843/azk1_2_43,azk2_2_16,azk3_2_16,azk4_2_16,azk5_2_16";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(z, s);
+            </script>
+        
+
+
+
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-768502-1', 'rhizome.org');
+          ga('send', 'pageview');
+
+        </script>
+    
+        <script type="text/javascript">
+            (function() {
+            var src = document.createElement('script'); 
+            src.async = true;
+            src.src = document.location.protocol + '//platform.twitter.com/widgets.js';
+            document.getElementsByTagName('head')[0].appendChild(src);
+            }());                        
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+            po.src = 'https://apis.google.com/js/plusone.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+          })();
+        </script>
+        
+        <script type="text/javascript">
+            var _sf_async_config={uid:26954,domain:"rhizome.org"};
+            (function(){
+              function loadChartbeat() {
+                window._sf_endpt=(new Date()).getTime();
+                var e = document.createElement('script');
+                e.setAttribute('language', 'javascript');
+                e.setAttribute('type', 'text/javascript');
+                e.setAttribute('src',
+                   (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+                   "js/chartbeat.js");
+                document.body.appendChild(e);
+              }
+              var oldonload = window.onload;
+              window.onload = (typeof window.onload != 'function') ?
+                 loadChartbeat : function() { oldonload(); loadChartbeat(); };
+            })();
+        </script>        
+    </body>
+</html>

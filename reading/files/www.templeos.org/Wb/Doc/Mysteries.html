@@ -1,0 +1,168 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=US-ASCII">
+<title>The Temple Operating System</title>
+<meta name="keywords" content="Operating System,64-Bit,64 Bit,Temple,OS,TempleOS,Free,Open Source,Public Domain,x86_64">
+<meta name="generator" content="TempleOS V2.12">
+<style type="text/css">
+.cF0{color:#000000;background-color:#fcfcfc;}
+.cF1{color:#0000a8;background-color:#fcfcfc;}
+.cF2{color:#00a800;background-color:#fcfcfc;}
+.cF3{color:#00a8a8;background-color:#fcfcfc;}
+.cF4{color:#a80000;background-color:#fcfcfc;}
+.cF5{color:#a800a8;background-color:#fcfcfc;}
+.cF6{color:#a85400;background-color:#fcfcfc;}
+.cF7{color:#a8a8a8;background-color:#fcfcfc;}
+.cF8{color:#545454;background-color:#fcfcfc;}
+.cF9{color:#5454fc;background-color:#fcfcfc;}
+.cFA{color:#54fc54;background-color:#fcfcfc;}
+.cFB{color:#54fcfc;background-color:#fcfcfc;}
+.cFC{color:#fc5454;background-color:#fcfcfc;}
+.cFD{color:#fc54fc;background-color:#fcfcfc;}
+.cFE{color:#fcfc54;background-color:#fcfcfc;}
+.cFF{color:#fcfcfc;background-color:#fcfcfc;}
+</style>
+</head>
+<body>
+<pre style="font-family:courier;font-size:10pt">
+<a name="l1"></a></blink><span class=cF5>                                   Mysteries</span><span class=cF0>
+<a name="l2"></a>
+<a name="l3"></a>* TempleOS runs in </span><span class=cF2>VGA 640x480 16 color</span><span class=cF0> graphics mode, not text mode.  It 
+<a name="l4"></a>changes to this mode with a </span><a href="../Kernel/KStart.html#l89"></blink><span class=cF4>BIOS call</span></a></blink><span class=cF0> while in real-mode before it switches to 
+<a name="l5"></a>64-bit mode.  The text is </span><a href="../Adam/Gr/GrScreen.html#l266"></blink><span class=cF4>drawn manually</span></a></blink><span class=cF0>.  If graphics mode fails, it falls-back 
+<a name="l6"></a>on text mode.  You can force text mode with an </span><a href="../Kernel/KCfg.html#l1"></blink><span class=cF4>Kernel config</span></a></blink><span class=cF0> option.
+<a name="l7"></a>
+<a name="l8"></a>* TempleOS identity-maps all memory, all the time.  There is no </span><span class=cF2>high half</span><span class=cF0> memory 
+<a name="l9"></a>space.  TempleOS is ring-0-only, so everything is kernel, even user programs.  
+<a name="l10"></a>There is a special task called </span><span class=cF2>Adam</span><span class=cF0> and he doesn't die, so his heap never gets 
+<a name="l11"></a>freed.  That's as close to </span><span class=cF2>kernel memory</span><span class=cF0> as it gets.
+<a name="l12"></a>
+<a name="l13"></a>* TempleOS puts all code in the lowest 2 Gig, so that </span><span class=cF2>REL32</span><span class=cF0> addressing can be 
+<a name="l14"></a>used.  TempleOS is 64-bit, but I just thought </span><span class=cF2>2 Gig</span><span class=cF0> was enough for code.  It 
+<a name="l15"></a>actually puts global variables there, too, but you can turn that off with </span><span class=cF4>
+<a name="l16"></a></span><a href="../Kernel/Adam1a.html#l1463"></blink><span class=cF4>OPTf_GLBLS_ON_DATA_HEAP</span></a></blink><span class=cF0>.  </span><a href="../Kernel/Mem1b.html#l373"></blink><span class=cF4>MAlloc</span></a></blink><span class=cF0>() can allocate any memory, of course.
+<a name="l17"></a>
+<a name="l18"></a>* TempleOS doesn't use software interrupts or </span><span class=cF2>SYSCALL</span><span class=cF0> instructions because it 
+<a name="l19"></a>never needs to change out of ring-0, even running user programs.  Calls are 
+<a name="l20"></a>always </span><span class=cF2>CALL REL32</span><span class=cF0> instructions.
+<a name="l21"></a>
+<a name="l22"></a>* The stack does not grow.  In theory, memory gets fragmented, too.
+<a name="l23"></a>
+<a name="l24"></a>* There is no </span><span class=cF2>PATH</span><span class=cF0>.  You do not enter filenames at the command-line and expect 
+<a name="l25"></a>them to run.  You enter C-like code.  </span><a href="CmdLineOverview.html#l1"></blink><span class=cF4>Get Started Here</span></a></blink><span class=cF0>.
+<a name="l26"></a>
+<a name="l27"></a>* If you use </span><a href="Grub.html#l1"></blink><span class=cF4>Grub</span></a></blink><span class=cF0>, you </span><span class=cF2>chain-load</span><span class=cF0> like Windows.  You can use the TempleOS 
+<a name="l28"></a>boot-loader.  </span><a href="../Adam/Boot/BootMHD.html#l1"></blink><span class=cF4>Master-Boot-Loader-Stage1</span></a></blink><span class=cF0>, </span><a href="../Adam/Boot/BootMHD2.html#l1"></blink><span class=cF4>Master-Boot-Loader-Stage2</span></a></blink><span class=cF0>, </span><span class=cF4>
+<a name="l29"></a></span><a href="../Adam/Boot/BootHD.html#l1"></blink><span class=cF4>Partition-Boot-Loader</span></a></blink><span class=cF0>, </span><a href="../Adam/Boot/BootCD.html#l1"></blink><span class=cF4>CD-DVD-Boot-Loader</span></a></blink><span class=cF0>.
+<a name="l30"></a>
+<a name="l31"></a>* The boot-loaders must be patched by you running </span><a href="../Adam/Boot/InsBoot.html#l135"></blink><span class=cF4>MakeOSPrtBootInstall</span></a></blink><span class=cF0>() or </span><span class=cF4>
+<a name="l32"></a></span><a href="../Adam/Boot/InsBoot.html#l256"></blink><span class=cF4>MasterBootIntall</span></a></blink><span class=cF0>().  Those will write the block address into the boot-loader 
+<a name="l33"></a>because the boot-loaders do not navigate file systems to find the </span><a href="../Kernel/KStart.html#l1"></blink><span class=cF4>Stage2</span></a></blink><span class=cF0> if you 
+<a name="l34"></a>relocate it.
+<a name="l35"></a>
+<a name="l36"></a>* TempleOS is 64-bit.  Like all PC operating systems, the boot-loader starts in 
+<a name="l37"></a>16-bit real-mode.  TempleOS calls a few </span><span class=cF2>BIOS</span><span class=cF0> info routines, switches to 
+<a name="l38"></a>VGA-640x480x4bit, switches to 32-bit, then, 64-bit mode.  There is an odd thing 
+<a name="l39"></a>called a </span><a href="http://www.o3one.org/hwdocs/bios_doc/pci_bios_21.pdf"></blink><span class=cF2>PCI BIOS</span></a></blink><span class=cF0> which is 32-bit used for </span><span class=cF2>PCI</span><span class=cF0> config space access.  TempleOS 
+<a name="l40"></a>calls </span><a href="../Kernel/BIOS32.html#l1"></blink><span class=cF4>that</span></a></blink><span class=cF0> a couple times.  It must temporarily drop-out-of 64-bit mode for that 
+<a name="l41"></a>and stop multi-tasking.
+<a name="l42"></a>
+<a name="l43"></a>* </span><span class=cF2>PUSH EAX</span><span class=cF0> : All stack operations in 64-bit mode are 64-bits.
+<a name="l44"></a>
+<a name="l45"></a>* </span><span class=cF2>XOR EAX,EAX</span><span class=cF0> : Operations on 32-bit regs clear the high 32-bits.
+<a name="l46"></a>
+<a name="l47"></a>* </span><span class=cF2>MOV RAX,FS:[RAX]</span><span class=cF0> : FS can be set with a </span><span class=cF2>WRMSR</span><span class=cF0>, but displacement is RIP 
+<a name="l48"></a>relative, so it's tricky to use.  FS is used for the current </span><a href="../Kernel/Adam1a.html#l3214"></blink><span class=cF4>CTask</span></a></blink><span class=cF0>, GS for </span><a href="../Kernel/Adam1a.html#l3339"></blink><span class=cF4>CCPU</span></a></blink><span class=cF0>.
+<a name="l49"></a>
+<a name="l50"></a>* TempleOS uses </span><span class=cF2>JIT</span><span class=cF0> file compression on a file-by-file basis.  Files are </span><span class=cF4>
+<a name="l51"></a></span><a href="../Kernel/Compress.html#l1"></blink><span class=cF4>compressed</span></a></blink><span class=cF0>, not encrypted.
+<a name="l52"></a>
+<a name="l53"></a>* TempleOS has a dictionary that is shipped compressed.  When you boot the first 
+<a name="l54"></a>time it is uncompressed.  TempleOS has a Windows utility for uncompressing.  
+<a name="l55"></a>That utility needs </span><span class=cF2>Microsoft DLL</span><span class=cF0> files.  TempleOS does not use any libraries, 
+<a name="l56"></a>modules or code from other sources -- I wrote it all from scratch and it is 
+<a name="l57"></a>self-contained.
+<a name="l58"></a>
+<a name="l59"></a>* There are no OBJ or EXE files.  There are only two files compiled 
+<a name="l60"></a>ahead-of-time -- </span><span class=cF2>Kernel.BIN.C</span><span class=cF0> and </span><span class=cF2>Compiler.BIN.Z</span><span class=cF0>.  You can delete them and 
+<a name="l61"></a>recompile with </span><a href="../Adam/Boot/InsBoot.html#l135"></blink><span class=cF4>MakeOSPrtBootInstall</span></a></blink><span class=cF0>().  TempleOS is 121,147 lines.  Roughly 
+<a name="l62"></a>50,000 is compiled AOT and 50,000 during boot </span><span class=cF2>JIT</span><span class=cF0>.  The rest is </span><span class=cF2>JIT</span><span class=cF0> demos and 
+<a name="l63"></a>applications.
+<a name="l64"></a>
+<a name="l65"></a>* A major difference between TempleOS and other systems is that the heap and 
+<a name="l66"></a>compiler sym table are associated with tasks, not applications.
+<a name="l67"></a>
+<a name="l68"></a>* There are sym(hash) tables maintained by each task.  They are similar in scope 
+<a name="l69"></a>to environment variables.  When a symbol is not found, the parent task's symbol 
+<a name="l70"></a>table is checked.  All process chain back to the </span><span class=cF2>Adam</span><span class=cF0> process.  </span><span class=cF2>Adam</span><span class=cF0> has the 
+<a name="l71"></a>symbols from headers you normally </span><span class=cF2>#include</span><span class=cF0> in other operating systems, so you do 
+<a name="l72"></a>not need to </span><span class=cF2>#include</span><span class=cF0> any headers in TempleOS.
+<a name="l73"></a>
+<a name="l74"></a>* The compiler only creates </span><span class=cF2>pos independent</span><span class=cF0> code.  You can't create code which 
+<a name="l75"></a>is loaded at a fixed, specified location.  The code is pos independent by virtue 
+<a name="l76"></a>of the fact that abs addresses get patched.
+<a name="l77"></a>
+<a name="l78"></a>* Binary executable files have export syms which are loaded into the sym tables. 
+<a name="l79"></a> The operating system </span><span class=cF2>Kernel</span><span class=cF0> has such an export table.  In addition, some map 
+<a name="l80"></a>files are processed to provide more information on syms -- src file links.  This 
+<a name="l81"></a>is how the </span><a href="../Kernel/PSect.html#l283"></blink><span class=cF4>Man</span></a></blink><span class=cF0>()/</span><span class=cF2>AUTOCOMPLETE</span><span class=cF0> feature can find src lines.
+<a name="l82"></a>
+<a name="l83"></a>* </span><span class=cF2>#assert</span><span class=cF0> might print a message at COMPILE time, not run time.
+<a name="l84"></a>
+<a name="l85"></a>* The word </span><span class=cF2>public</span><span class=cF0> does very little except allow the </span><a href="HelpIndex.html#l1"></blink><span class=cF4>Help &amp; Index</span></a></blink><span class=cF0> and </span><a href="../Adam/Hash2a.html#l143"></blink><span class=cF4>Who</span></a></blink><span class=cF0>() to 
+<a name="l86"></a>exclude meaningless syms.  If you wish a full report of public and nonpublic 
+<a name="l87"></a>syms </span><span class=cF9>Click Here</span><span class=cF0>.
+<a name="l88"></a>
+<a name="l89"></a>* When compilation takes place, the structures used by the compiler stick 
+<a name="l90"></a>around.  Data on classes can be accessed by code.  See </span><a href="../Adam/Dbg2a.html#l152"></blink><span class=cF4>ClassRep</span></a></blink><span class=cF0>().
+<a name="l91"></a>
+<a name="l92"></a>* Filenames ending in </span><span class=cF2>.Z</span><span class=cF0> are automatically compressed and uncompressed when 
+<a name="l93"></a>writing to disk.  File size in directory listing is the compressed size.  See </span><span class=cF4>
+<a name="l94"></a></span><a href="TSZ.html#l1"></blink><span class=cF4>::/Doc/TSZ.TXT</span></a></blink><span class=cF0> for uncompressing from </span><span class=cF2>WINDOWS</span><span class=cF0>.
+<a name="l95"></a>
+<a name="l96"></a>* Some memory objects are allocated when needed and will decrease the available 
+<a name="l97"></a>memory displayed.  A task keeps mem objects smaller than a couple blocks in it's 
+<a name="l98"></a>own separate heap when freed and these are not counted in the available system 
+<a name="l99"></a>free memory, though they are free.  They get returned to the system when the 
+<a name="l100"></a>task is killed.  To get a sense of this, compile the operating system and see 
+<a name="l101"></a>the amount of mem used.  Then, compile it again and far less will be allocated.  
+<a name="l102"></a>This is because it is reusing the small chunks.  See </span><a href="MemOverview.html#l1"></blink><span class=cF4>Memory Overview</span></a></blink><span class=cF0> and </span><span class=cF4>
+<a name="l103"></a>Memory Routines</span><span class=cF0>.  </span><span class=cF9>Click Here</span><span class=cF0> for a </span><a href="../Adam/Utils/MemRep.html#l197"></blink><span class=cF4>MemRep</span></a></blink><span class=cF0>.
+<a name="l104"></a>
+<a name="l105"></a>* The cursor location is stored as an </span><span class=cF2>ASCII 5</span><span class=cF0> in files.  </span><span class=cF2>ASCII 31</span><span class=cF0> is </span><span class=cF2>SHIFT-SPACE</span><span class=cF0>
+<a name="l106"></a>, a character which does not get converted to tabs by space-to-tabs, </span><a href="../Adam/Utils/S2T.html#l48"></blink><span class=cF4>S2T</span></a></blink><span class=cF0>().  The </span><span class=cF2>
+<a name="l107"></a>ASCII 28</span><span class=cF0> is </span><span class=cF2>SHIFT-ESC</span><span class=cF0>. 
+<a name="l108"></a>
+<a name="l109"></a>* Binary data is stored beyond the terminating </span><span class=cF2>NULL</span><span class=cF0> in text files.  Map files 
+<a name="l110"></a>store debug src lines and other files store sprites.
+<a name="l111"></a>
+<a name="l112"></a>* Sprites can be stored as vector graphics so they might take shockingly little 
+<a name="l113"></a>room.  They can be converted to bitmaps.
+<a name="l114"></a>
+<a name="l115"></a>* If you change code in the </span><span class=cF2>/Adam</span><span class=cF0>, </span><span class=cF2>/Adam</span><span class=cF0> or your </span><span class=cF2>HOME</span><span class=cF0> directory, you don't need 
+<a name="l116"></a>to recompile, you just need to reboot because those directories get recompiled 
+<a name="l117"></a>when you boot.  It uses JIT compilation.  There is no </span><span class=cF2>.BIN</span><span class=cF0> file for </span><span class=cF2>JIT</span><span class=cF0> 
+<a name="l118"></a>compilation.
+<a name="l119"></a>
+<a name="l120"></a>* If not found, </span><span class=cF2>.Z</span><span class=cF0> is added or removed and a search is done again.  If a file is 
+<a name="l121"></a>still not found, the parent directories are searched for a file of the same 
+<a name="l122"></a>name.
+<a name="l123"></a>
+<a name="l124"></a>* TempleOS supports </span><span class=cF2>FAT32</span><span class=cF0> and </span><a href="RedSea.html#l1"></blink><span class=cF4>RedSea</span></a></blink><span class=cF0> file systems.  The </span><a href="RedSea.html#l1"></blink><span class=cF4>RedSea</span></a></blink><span class=cF0> partitions will 
+<a name="l125"></a>appear as </span><span class=cF2>FAT32</span><span class=cF0> to other operating systems, but will not work.  Do not access 
+<a name="l126"></a>the native TempleOS partitions from other operating systems.  This was to fool a 
+<a name="l127"></a>bootloader when I tricked it to use it's recovery partition feature.
+<a name="l128"></a>
+<a name="l129"></a>* The CPU usage during disk operation expands to 99%.  It polls while 
+<a name="l130"></a>swapping-out.  You can do other, non-disk activity during disk operations 
+<a name="l131"></a>because it swaps-out a lot and task swaps take only half a microsecond, probably 
+<a name="l132"></a>a hundred times faster than a typical OS.  See </span><a href="../Demo/Lectures/Spinning.html#l1"></blink><span class=cF4>Cooperative Multitasking</span></a></blink><span class=cF0>.  It 
+<a name="l133"></a>does not break-up disk operations into small pieces for sharing, however, so the 
+<a name="l134"></a>disk is lock onto that one task.
+<a name="l135"></a>
+<a name="l136"></a></span><span class=cF8>
+<a name="l137"></a>* &quot;Windows&quot; is a trademark of MicroSoft Corp.
+<a name="l138"></a></span></pre></body>
+</html>
+<!-- text below generated by server. PLEASE REMOVE --><!-- Counter/Statistics data collection code --><script language="JavaScript" src="http://l.yimg.com/d/lib/smb/js/hosting/cp/js_source/whv2_001.js"></script><script language="javascript">geovisit();</script><noscript><img src="http://visit.webhosting.yahoo.com/visit.gif?us1409528697" alt="setstats" border="0" width="1" height="1"></noscript><script type="text/javascript" src="https://s.yimg.com/mi/vs4/ywa.js"></script><script type="text/javascript">try {var YWAGTracker = YWA.getTracker("10001849413879", "VSCALE4");YWAGTracker.setDocumentName("WPAGE");YWAGTracker.setDocumentGroup("YSBW");YWAGTracker.setCF(7, "templeos.org");YWAGTracker.setCF(8, "w42");YWAGTracker.submit();} catch (eYWATCUnavailable) {}</script><script type="text/javascript">(function (d, w) {var x = d.getElementsByTagName('SCRIPT')[0];var f = function () {var s = d.createElement('SCRIPT');s.type = 'text/javascript';s.async = true;s.src = "//np.lexity.com/embed/YW/eff965aab4535cd38b91f0976c617496?id=9382d670eca2";x.parentNode.insertBefore(s, x);};w.attachEvent ? w.attachEvent('onload',f) :w.addEventListener('load',f,false);}(document, window));</script>

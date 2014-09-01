@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=US-ASCII">
+<title>The Temple Operating System</title>
+<meta name="keywords" content="Operating System,64-Bit,64 Bit,Temple,OS,TempleOS,Free,Open Source,Public Domain,x86_64">
+<meta name="generator" content="TempleOS V2.11">
+<style type="text/css">
+.cF0{color:#000000;background-color:#fcfcfc;}
+.cF1{color:#0000a8;background-color:#fcfcfc;}
+.cF2{color:#00a800;background-color:#fcfcfc;}
+.cF3{color:#00a8a8;background-color:#fcfcfc;}
+.cF4{color:#a80000;background-color:#fcfcfc;}
+.cF5{color:#a800a8;background-color:#fcfcfc;}
+.cF6{color:#a85400;background-color:#fcfcfc;}
+.cF7{color:#a8a8a8;background-color:#fcfcfc;}
+.cF8{color:#545454;background-color:#fcfcfc;}
+.cF9{color:#5454fc;background-color:#fcfcfc;}
+.cFA{color:#54fc54;background-color:#fcfcfc;}
+.cFB{color:#54fcfc;background-color:#fcfcfc;}
+.cFC{color:#fc5454;background-color:#fcfcfc;}
+.cFD{color:#fc54fc;background-color:#fcfcfc;}
+.cFE{color:#fcfc54;background-color:#fcfcfc;}
+.cFF{color:#fcfcfc;background-color:#fcfcfc;}
+</style>
+</head>
+<body>
+<pre style="font-family:courier;font-size:10pt">
+<a name="l1"></a></blink><span class=cF5>                                Acknowledgements</span><span class=cF0>
+<a name="l2"></a>
+<a name="l3"></a>1) The font, </span><a href="../Kernel/Font8x8.html#l1"></blink><span class=cF4>::/Kernel/Font8x8.CPP</span></a></blink><span class=cF0>, is taken from </span><a href="http://www.freedos.org"></blink><span class=cF4>FreeDOS</span></a></blink><span class=cF0>.  It's public domain.
+<a name="l4"></a>
+<a name="l5"></a>2) </span><a href="../Kernel/Adam1a.html#l2157"></blink><span class=cF4>ATA Reg and Cmd Definitions</span></a></blink><span class=cF0> are originally from Linux.  Later, I got the 
+<a name="l6"></a>spec.
+<a name="l7"></a>
+<a name="l8"></a>3) The heap algorithm, </span><a href="../Kernel/Mem1b.html#l1"></blink><span class=cF4>::/Kernel/Mem1b.CPP</span></a></blink><span class=cF0>, is adapted from one I saw at 
+<a name="l9"></a>Ticketmaster when I worked on their VAX operating system.
+<a name="l10"></a>
+<a name="l11"></a>4) The LZW compression algorithm, </span><a href="../Kernel/Compress.html#l1"></blink><span class=cF4>::/Kernel/Compress.CPP</span></a></blink><span class=cF0>, came from a magazine 
+<a name="l12"></a>and I implemented it when I worked for Ticketmaster.
+<a name="l13"></a>
+<a name="l14"></a>5) The adaptive-step-size-Runge-Kutta algorithm, </span><a href="../Adam/MathODE.html#l1"></blink><span class=cF4>::/Adam/MathODE.CPP</span></a></blink><span class=cF0>, is adapted 
+<a name="l15"></a>from the book, </span><span class=cF0>Numeric Recipies in C</span><span class=cF0>.
+<a name="l16"></a>
+<a name="l17"></a>6) The random number generator is from the book, </span><span class=cF0>Numeric Recipies in C</span><span class=cF0>.
+<a name="l18"></a>
+<a name="l19"></a>7) The mountain, palm trees, sheep and goats in AfterEgypt are from </span><span class=cF4>
+<a name="l20"></a></span><a href="http://www.public-domain-photos.com"></blink><span class=cF4>http://www.public-domain-photos.com</span></a></blink><span class=cF0>.
+<a name="l21"></a>
+<a name="l22"></a>8) The </span><span class=cF2>FAT32</span><span class=cF0> file system is owned by MicroSoft.
+<a name="l23"></a>
+<a name="l24"></a>9) A few features were inspired by </span><span class=cF2>MATLAB</span><span class=cF0>, such as </span><span class=cF2>ans</span><span class=cF0> in expressions at the 
+<a name="l25"></a>command-line.  There is a lot of </span><span class=cF2>MSDOS</span><span class=cF0> , </span><span class=cF2>Windows</span><span class=cF0>, </span><span class=cF2>VAXTMOS</span><span class=cF0> (VAX Ticketmaster 
+<a name="l26"></a>O.S.) and </span><span class=cF2>Unix</span><span class=cF0> inspiration, too, such as drive letters, command names, etc.
+<a name="l27"></a>
+<a name="l28"></a>10) I included </span><a href="http://www.pcidatabase.com/reports.php?type=tab-delimeted"></blink><span class=cF4>PCIDevice Lst File</span></a></blink><span class=cF0>.
+<a name="l29"></a>
+<a name="l30"></a>11) Thanks to whoever wrote this </span><a href="http://web.archive.org/web/20100325153025/http://home.scarlet.be/zoetrope/cpphtml.htm"></blink><span class=cF4>CppHtml.CPP.Z</span></a></blink><span class=cF0>.  I'm a novice on web stuff and 
+<a name="l31"></a>you helped me with html.  See </span><a href="../Adam/Utils/ToHtml.html#l1"></blink><span class=cF4>ToHtml</span></a></blink><span class=cF0>.
+<a name="l32"></a>
+<a name="l33"></a>12) I used </span><a href="http://www.magiciso.com"></blink><span class=cF4>MagicISO</span></a></blink><span class=cF0> to burn test CD's to help me understand the ISO9660 file 
+<a name="l34"></a>system format.  I mostly used the </span><a href="http://users.telenet.be/it3.consultants.bvba/handouts/ISO9960.html"></blink><span class=cF4>ISO9660</span></a></blink><span class=cF0> spec.
+<a name="l35"></a>
+<a name="l36"></a>13) I looked at bootable CD boot sects, but didn't learn anything, finding it 
+<a name="l37"></a>easier to make my own.
+<a name="l38"></a>
+<a name="l39"></a>14) I think I got my original PC speaker code from </span><span class=cF2>Borland C</span><span class=cF0>.
+<a name="l40"></a>
+<a name="l41"></a>15) I found PS/2 keyboard and mouse code on the net and documentation.  My code 
+<a name="l42"></a>is very different.  I found VGA reg info on the net.
+<a name="l43"></a>
+<a name="l44"></a>16) Thanks to </span><a href="http://www.osdev.org"></blink><span class=cF4>http://www.osdev.org</span></a></blink><span class=cF0> for a couple tips.
+<a name="l45"></a>
+<a name="l46"></a>17) God told me to stick with 640x480 16 color,  a single audio voice and kept 
+<a name="l47"></a>me from zombie-walking into making child windows like </span><span class=cF2>Windows</span><span class=cF0>.  Instead, I made 
+<a name="l48"></a>one window per task with no child windows.  He also guided my progress, very 
+<a name="l49"></a>obviously.
+<a name="l50"></a>
+<a name="l51"></a>18) I got </span><a href="http://www.templeos.org/files/DICTIONARY.TXT"></blink><span class=cF4>Webster's Dictionary</span></a></blink><span class=cF0> and </span><a href="http://www.templeos.org/files/BIBLE.TXT"></blink><span class=cF4>The King James Bible</span></a></blink><span class=cF0> from </span><a href="http://promo.net/pg/"></blink><span class=cF4>Project Gutenberg</span></a></blink><span class=cF0>.
+<a name="l52"></a>
+<a name="l53"></a>19) John Carmack inspired me to use &quot;</span><a href="../Kernel/Math1b.html#l1"></blink><span class=cF4>Clamp</span></a></blink><span class=cF0>&quot; as a name instead of &quot;Limit&quot;.  He 
+<a name="l54"></a>inspired me to use &quot;needle&quot; and &quot;haystack&quot; as names.  He inspired me to simplify 
+<a name="l55"></a>my Frames-Per-Second code.
+<a name="l56"></a>
+<a name="l57"></a>20) Bill Gates inspired me to add comments to my </span><a href="HelpIndex.html#l1"></blink><span class=cF4>Help &amp; Index</span></a></blink><span class=cF0>.
+<a name="l58"></a>
+<a name="l59"></a>In short, I wrote every one of the 121,463 lines myself, no </span><span class=cF2>GPL</span><span class=cF0> code, no linkage 
+<a name="l60"></a>or dependence on other code.  Anyone who says otherwise is being an ass.
+<a name="l61"></a></span><span class=cF8>
+<a name="l62"></a>* &quot;MSDOS&quot;, &quot;Windows&quot;, &quot;MovieMaker&quot; &quot;MS Paint&quot; and &quot;FAT32&quot; are trademarks of 
+<a name="l63"></a>MicroSoft Corp.
+<a name="l64"></a>* &quot;SiteBuilder&quot; is a trademark of Yahoo! Inc.
+<a name="l65"></a>* &quot;MagicISO&quot; is a trademark of MagicISO Corp.
+<a name="l66"></a>* &quot;MATLAB&quot; is a trademark of The Math Works, Inc.
+<a name="l67"></a>* &quot;</span><a href="http://www.freedos.org"></blink><span class=cF8>FreeDOS</span></a></blink><span class=cF8>&quot; is a trademark of Jim Hall.
+<a name="l68"></a>* &quot;VAX&quot; is a trademark of Digital Equipment Corp.
+<a name="l69"></a>* &quot;Linux&quot; is probably a trademark owned by Linus Torvalds.
+<a name="l70"></a>* &quot;VAXTMOS&quot; is a trademark of Ticketmaster.
+<a name="l71"></a></span></pre></body>
+</html>
+<!-- text below generated by server. PLEASE REMOVE --><!-- Counter/Statistics data collection code --><script language="JavaScript" src="http://l.yimg.com/d/lib/smb/js/hosting/cp/js_source/whv2_001.js"></script><script language="javascript">geovisit();</script><noscript><img src="http://visit.webhosting.yahoo.com/visit.gif?us1409528687" alt="setstats" border="0" width="1" height="1"></noscript><script type="text/javascript" src="https://s.yimg.com/mi/vs4/ywa.js"></script><script type="text/javascript">try {var YWAGTracker = YWA.getTracker("10001849413879", "VSCALE4");YWAGTracker.setDocumentName("WPAGE");YWAGTracker.setDocumentGroup("YSBW");YWAGTracker.setCF(7, "templeos.org");YWAGTracker.setCF(8, "w42");YWAGTracker.submit();} catch (eYWATCUnavailable) {}</script><script type="text/javascript">(function (d, w) {var x = d.getElementsByTagName('SCRIPT')[0];var f = function () {var s = d.createElement('SCRIPT');s.type = 'text/javascript';s.async = true;s.src = "//np.lexity.com/embed/YW/eff965aab4535cd38b91f0976c617496?id=9382d670eca2";x.parentNode.insertBefore(s, x);};w.attachEvent ? w.attachEvent('onload',f) :w.addEventListener('load',f,false);}(document, window));</script>

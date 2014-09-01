@@ -1,0 +1,257 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head prefix="og: http://ogp.me/ns#">
+        <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script> <!-- chartbeat -->
+        <meta charset="UTF-8">
+        <title>Rhizome</title>
+        <meta name="description" content="Rhizome is dedicated to the creation, presentation, preservation, and critique of emerging artistic practices that engage technology." />
+        <meta name="google-site-verification" content="AZfoqybynDh_0mjEBG_XwMZeCwiSE-GZ8BiQB5FZzDU" />
+
+        <meta content="Rhizome" property="og:title">
+        <meta content="website" property="og:type">
+        <meta content="" property="og:image">
+        <meta content="http://rhizome.org/support/donate/?ref=footer" property="og:url">
+        <meta content="Rhizome" property="og:site_name">
+
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@rhizome">
+        
+
+        <link rel="shortcut icon" href="/static/images/favicons/leyva.gif" />
+        <!-- google fonts -->
+        <link href='//fonts.googleapis.com/css?family=Titillium+Web:400,200,300' rel='stylesheet' type='text/css'>
+        <link type="text/css" rel="stylesheet" href="/static/font-awesome-4.0.0/css/font-awesome.min.css">
+        <link type="text/css" rel="stylesheet" href="/static/css/new_base.css">
+        <link type="text/css" rel="stylesheet" href="/static/css/new_navbars.css">
+        <link type="text/css" rel="stylesheet" href="/static/css/top_banner.css">
+        
+
+        <!-- Quantcast Tag, part 1 -->
+        <script type="text/javascript">
+            var _qevents = _qevents || [];
+            (function() {
+                var elem = document.createElement('script');
+                elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge")  
+                            + ".quantserve.com/quant.js";
+                elem.async = true;
+                elem.type = "text/javascript";
+                var scpt = document.getElementsByTagName('script')[0];
+                scpt.parentNode.insertBefore(elem, scpt);  
+            })();
+        </script>
+    </head>
+        
+    <body class="">
+        
+            
+        
+
+        
+    <div id="new_header">
+    <ul>
+        
+            <li><a  href="/?ref=header">Rhizome</a></li>
+        
+            <li><a  href="/editorial/?ref=header">Journal</a></li>
+        
+            <li><a  href="/artbase/featured/?ref=header">Artbase</a></li>
+        
+            <li><a  href="/community/?ref=header">Community</a></li>
+        
+            <li><a  href="/programs/?ref=header">Programs</a></li>
+        
+
+        <li id="search">
+            <form action="/search/" method="get">
+                <input type="text" name="q" placeholder=""><a id="search-addon"><i class="fa fa-search"></i></a>
+            </form>
+        </li>
+
+        <li id="account">
+            
+                <a href="/login/?ref=header"><i class="fa fa-key"></i></a>
+            
+        </li>
+    </ul>
+</div>
+
+<div id="new_footer">
+    <ul>
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            <li><a class="active" href="/support/donate/?ref=footer"><span class="underline">Membership</span> &raquo;</a></li>
+        
+
+        
+            <li><a class="active" href="/support/donate/?ref=footer">Donate</a></li>
+        
+            <li><a  href="/support/individual/?ref=footer">Membership</a></li>
+        
+            <li><a  href="/support/organizations/?ref=footer">Organizations</a></li>
+        
+            <li><a  href="/support/supporters/?ref=footer">Supporters</a></li>
+        
+
+        
+
+        
+            <li class="reversed"><a class="active" href="/support/donate/?ref=footer">Membership</a></li>
+        
+            <li class="reversed"><a  href="/about/?ref=footer">About Us</a></li>
+        
+    </ul>
+</div>
+
+
+                        
+        <div id="content" class="">
+            <div id="loading-indicator">
+                <img src="/static/images/loading_transparent.gif">
+            </div>
+            
+
+            
+    <div class="header">
+        <div class="section">
+            Thank you for considering a donation to Rhizome's 2014 Community Campaign. Your gift will directly impact our ability to fulfill our mission: supporting contemporary art that creates richer and more critical technology cultures.<br>
+<br>
+Gifts of $30 (USD) and above include a Rhizome Membership; if you join at the $1,000 level you can become a member of the Rhizome Leadership Council, benefits of which include a program of studio visits, conversations with tech start-ups, and more. More details about membership levels <a href="http://rhizome.org/support/individual/">here</a>.<br>
+<br>
+Questions? Email <a href="mailto:info@rhizome.org">info@rhizome.org</a>
+        </div>
+    </div>
+    <div class="section">
+        <div class="left-col">
+            <form id="donation-amount-form" action="/support/donate/" method="post"><input type='hidden' name='csrfmiddlewaretoken' value='66qUh7I6jtvVv17hnuPI4QTmyrcDbc9V' />
+                <input id="id_amount" name="amount" type="hidden" />
+
+                <div class="field col-2">
+                    <fieldset>
+                        <div class="field col-2">
+                            <label for="id_select_amount">Select your donation amount</label><br>
+                            <select id="id_select_amount" name="select_amount">
+<option value="" selected="selected"></option>
+<option value="30.00">$30.00 -- Basic Membership</option>
+<option value="50.00">$50.00</option>
+<option value="100.00">$100.00</option>
+<option value="300.00">$300.00</option>
+<option value="500.00">$500.00</option>
+<option value="1000.00">$1000.00 -- Rhizome Council</option>
+</select> USD
+                        </div>
+                        <div class="field col-2">
+                            <label for="id_custom_amount">Or enter your own amount</label><br>
+                            <input id="id_custom_amount" name="custom_amount" type="text" /> USD
+                            
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="field">
+                    <button id="login" class="round-blue" type="submit" value="Submit">Proceed with donation</button>
+                </div>
+            </form>
+
+            <h2>or Donate with Bitcoin</h2><br>
+            <a href="bitcoin:16kN2bhacYvAtLzSktbZft2aCJS2CyaycA?label=Rhizome%20Donation">
+                <img src="/static/images/qr.png">
+            </a>
+            <p>
+                <a href="bitcoin:16kN2bhacYvAtLzSktbZft2aCJS2CyaycA?label=Rhizome%20Donation">16kN2bhacYvAtLzSktbZft2aCJS2CyaycA</a>
+            </p>
+            <p>
+                To recieve benefits + donation receipt, you must email us with the details of the transaction (we don't learn your email from a Bitcoin donation).
+            </p>
+        </div>
+        <div class="right-col">
+            
+
+<div class="sidebar-module">
+    <div class="box">
+        <div class="content-body">
+            <h3>Benefits of <a href="/support/individual/">Membership:</a></h3>
+
+            
+            <ul>
+                
+                    <li> + <a  href="http://rhizome.org/artbase/featured/">Full ArtBase Access</a></li>
+                
+                    <li> + <a  href="http://rhizome.org/artbase/exhibitions/">Member Exhibitions</a></li>
+                
+                    <li> + <a  href="http://rhizome.org/commissions/">Commissions Jurying</a></li>
+                
+                    <li> + <a  href="http://rhizome.org/announce/jobs/">Free Job Postings</a></li>
+                
+            </ul>
+        </div>
+    </div>
+</div>    
+
+        </div>
+    </div>
+
+        </div>
+
+        <!-- Quantcast Tag, part 2 -->
+        <script type="text/javascript">
+            _qevents.push( { qacct:"p-1bU5CKetpvMBI", labels:"artmedia" } );
+        </script>
+        <noscript>
+            <div style="display: none;">
+                <img src="//pixel.quantserve.com/pixel/p-1bU5CKetpvMBI.gif?labels=artmedia" height="1" width="1" alt="Quantcast"/>
+            </div>
+        </noscript>
+        
+        <script type="text/javascript" src="/static/js/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="/static/js/new_navbars.js"></script>
+        
+        
+    <script type="text/javascript" src="/static/js/donation_amount_form.js"></script>
+
+
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-768502-1', 'rhizome.org');
+          ga('send', 'pageview');
+
+        </script>
+        
+        <!-- more chartbeat -->
+        <script type="text/javascript">
+        var _sf_async_config={};
+        /** CONFIGURATION START **/
+        _sf_async_config.uid = 26954;
+        _sf_async_config.domain = "rhizome.org"; /** CHANGE THIS **/
+        /** CONFIGURATION END **/
+        (function(){
+          function loadChartbeat() {
+            window._sf_endpt=(new Date()).getTime();
+            var e = document.createElement("script");
+            e.setAttribute("language", "javascript");
+            e.setAttribute("type", "text/javascript");
+            e.setAttribute('src', '//static.chartbeat.com/js/chartbeat.js');
+            document.body.appendChild(e);
+          }
+          var oldonload = window.onload;
+          window.onload = (typeof window.onload != "function") ?
+             loadChartbeat : function() { oldonload(); loadChartbeat(); };
+        })();
+        </script>
+    </body>
+</html>

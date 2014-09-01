@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" lang="en-US" xmlns:article="http://ogp.me/ns/article#" xmlns:og="http://ogp.me/ns#" >
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="en-US" xmlns:article="http://ogp.me/ns/article#" xmlns:og="http://ogp.me/ns#" >
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="en-US" xmlns:article="http://ogp.me/ns/article#" xmlns:og="http://ogp.me/ns#" >
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en-US" xmlns:article="http://ogp.me/ns/article#" xmlns:og="http://ogp.me/ns#"  prefix="og: http://ogp.me/ns#">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<title>The Anxieties of Big Data &ndash; The New Inquiry</title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="stylesheet" type="text/css" href="http://webfonts.fontslive.com/css/48ea6259-e0bc-4d73-9ad6-39803ebc5d81.css" />
+<link rel="stylesheet" type="text/css" media="all" href="http://thenewinquiry.com/wp-content/themes/tni/css/boilerplate.css" />
+<link rel="stylesheet" type="text/css" media="all" href="http://thenewinquiry.com/wp-content/themes/tni/css/screen.css?v=1" />
+<link rel="pingback" href="http://thenewinquiry.com/xmlrpc.php" />
+<script src="http://thenewinquiry.com/wp-content/themes/tni/js/modernizr.js" type="text/javascript"></script>
+<link rel="alternate" type="application/rss+xml" title="The New Inquiry &raquo; The Anxieties of Big Data Comments Feed" href="http://thenewinquiry.com/essays/the-anxieties-of-big-data/feed/" />
+<link rel='stylesheet' id='myFonts-css'  href='http://thenewinquiry.com/wp-content/themes/tni/css/MyFontsWebfontsKit.css?ver=3.7.1' type='text/css' media='all' />
+<link rel='stylesheet' id='portfolio_slideshow-css'  href='http://thenewinquiry.com/wp-content/plugins/portfolio-slideshow/css/portfolio-slideshow.min.css?ver=1.5.1' type='text/css' media='screen' />
+<link rel='stylesheet' id='wplike2get-css'  href='http://thenewinquiry.com/wp-content/plugins/wplike2get/css/wplike2get.css?ver=1.2.6' type='text/css' media='all' />
+<link rel='stylesheet' id='taxonomy-image-plugin-public-css'  href='http://thenewinquiry.com/wp-content/plugins/taxonomy-images/style.css?ver=0.7.3' type='text/css' media='screen' />
+<link rel='stylesheet' id='lightboxStyle-css'  href='http://thenewinquiry.com/wp-content/plugins/lightbox-plus/css/shadowed/colorbox.css?ver=2.6' type='text/css' media='screen' />
+<script type='text/javascript' src='http://thenewinquiry.com/wp-includes/js/jquery/jquery.js?ver=1.10.2'></script>
+<script type='text/javascript' src='http://thenewinquiry.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript' src='http://thenewinquiry.com/wp-includes/js/comment-reply.min.js?ver=3.7.1'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://thenewinquiry.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://thenewinquiry.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 3.7.1" />
+<link rel='canonical' href='http://thenewinquiry.com/essays/the-anxieties-of-big-data/' />
+<link rel='shortlink' href='http://thenewinquiry.com/?p=53421' />
+<script type="text/javascript" src="http://thenewinquiry.com/wp-content/plugins/audio-player/assets/audio-player.js?ver=2.0.4.1"></script>
+<script type="text/javascript">AudioPlayer.setup("http://thenewinquiry.com/wp-content/plugins/audio-player/assets/player.swf?ver=2.0.4.1", {width:"290",animation:"yes",encode:"yes",initialvolume:"60",remaining:"no",noinfo:"no",buffer:"5",checkpolicy:"no",rtl:"no",bg:"E5E5E5",text:"333333",leftbg:"CCCCCC",lefticon:"333333",volslider:"666666",voltrack:"FFFFFF",rightbg:"B4B4B4",rightbghover:"999999",righticon:"333333",righticonhover:"FFFFFF",track:"FFFFFF",loader:"009900",border:"CCCCCC",tracker:"DDDDDD",skip:"666666",pagebg:"FFFFFF",transparentpagebg:"yes"});</script>
+<!--Google Scholar tags by kblog-metadata.php-->
+<meta name="resource_type" content="knowledgeblog"/>
+<meta name="citation_journal_title" content="The New Inquiry"/>
+<meta name="citation_publication_date" content="2014/05/30"/>
+<meta name="citation_date" content="2014"/>
+<meta name="citation_author" content="Kate Crawford"/>
+<meta name="citation_authors" content="Crawford, Kate"/>
+<meta name="citation_title" content="The Anxieties of Big Data"/>
+<!--OGP tags by kblog-metadata.php-->
+<meta property="og:site_name" content="The New Inquiry"/>
+<meta property="og:title" content="The Anxieties of Big Data"/>
+<meta property="og:type" content="article"/>
+<meta property="og:url" content="http://thenewinquiry.com/essays/the-anxieties-of-big-data/"/>
+<meta property="og:author" content="http://thenewinquiry.com/?kblog-header-p=53421&amp;kblog-header-author=0"/>
+<meta property="article:published_time" content="2014-05-30"/>
+
+<!-- Portfolio Slideshow-->
+<noscript><link rel="stylesheet" type="text/css" href="http://thenewinquiry.com/wp-content/plugins/portfolio-slideshow/css/portfolio-slideshow-noscript.css?ver=1.5.1" /></noscript><script type="text/javascript">/* <![CDATA[ */var psTimeout = new Array();  var psAutoplay = new Array();  var psFluid = new Array(); var psTrans = new Array(); var psSpeed = new Array(); var psLoop = new Array();/* ]]> */</script>
+<!--//Portfolio Slideshow-->
+<meta name='parsely-page' content='{"title":"The Anxieties of Big Data","link":"http:\/\/thenewinquiry.com\/essays\/the-anxieties-of-big-data\/","image_url":"http:\/\/thenewinquiry.com\/wp-content\/uploads\/2014\/05\/Screen-Shot-2014-05-29-at-2.24.54-PM-174x224.png","type":"post","post_id":"53421","pub_date":"2014-05-30T13:23:08Z","section":"Uncategorized","author":"Kate Crawford"}' />
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-27506973-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</head>
+
+<body class="single single-essays postid-53421">
+
+<section id='container'>
+
+	<header id="branding">
+        <section id='banner'>
+			        
+            <a href="http://thenewinquiry.com/" title="The New Inquiry" rel="home"
+                ><img src="http://thenewinquiry.com/wp-content/uploads/2012/02/header1.jpg" alt="The New Inquiry" 
+            /></a>
+            <section class='ad'>
+                <a href="http://thenewinquiry.com/support-tni/"><img src="http://thenewinquiry.com/wp-content/uploads/ads/1.png" alt="" /></a>            </section>
+        </section>
+        <section id='quick' class='clear'>
+            <section id='tweet'>
+                <section id='tweet-icon'>
+                    <a href='https://twitter.com/newinquiry' target="_blank"><img src='http://thenewinquiry.com/wp-content/themes/tni/img/tweet.png' alt='twitter' /></a>
+                </section>
+                <a href='https://twitter.com/newinquiry' target="_blank"><section id='tweet-copy'></section></a>
+            </section>
+            <section id='search'>
+                <form method='get' action='/'>
+                    <section>
+                        <input type='hidden' name='cx' value='011508392565135751895:gsjnvtngmxa' />
+                        <input type='hidden' name='ie' value='UTF-8' />
+                        <input type='hidden' name='cof' value='FORID:11' />
+                        <input type='hidden' name='q' value='' />
+                        <input type='text' name='s' class='text'
+                        /><section id='search-button'
+                            ><input type='image' src='http://thenewinquiry.com/wp-content/themes/tni/img/btn-search.png' alt='search' 
+                        /></section>
+                    </section>
+                </form>
+            </section>
+        </section>
+        <nav id="access" role="navigation">
+            <section class="on"><a href="/essays"><img alt="Essays &amp; Reviews" src="http://thenewinquiry.com/wp-content/themes/tni/img/nav/essays-on.png" /></a></section><section class="off"><a href="/features"><img alt="Features" src="http://thenewinquiry.com/wp-content/themes/tni/img/nav/features-off.png" /></a></section><section class="off"><a href="/blogs"><img alt="Blogs" src="http://thenewinquiry.com/wp-content/themes/tni/img/nav/blogs-off.png" /></a></section><section class="off"><a href="/and-meanwhile"><img alt="&amp;, Meanwhile" src="http://thenewinquiry.com/wp-content/themes/tni/img/nav/and-meanwhile-off.png" /></a></section><section class="off"><a href="/news"><img alt="News" src="http://thenewinquiry.com/wp-content/themes/tni/img/nav/news-off.png" /></a></section><section class="off"><a href="/publications/magazines"><img alt="Magazine" src="http://thenewinquiry.com/wp-content/themes/tni/img/nav/magazine-off.png" /></a></section><section class="off"><a href="/publications/magazines/#listing"><img alt="Archive" src="http://thenewinquiry.com/wp-content/themes/tni/img/nav/archive-off.png" /></a></section><section class="off second-last"><a href="http://the-new-inquiry-store.myshopify.com"><img alt="Shop" src="http://thenewinquiry.com/wp-content/themes/tni/img/nav/shop-off.png" /></a></section><section class="off last"><a href="/about"><img alt="About" src="http://thenewinquiry.com/wp-content/themes/tni/img/nav/about-off.png" /></a></section>        </nav>
+	</header>
+
+    <section id='sideline'>
+        <div>
+            <a href="http://www.facebook.com/TheNewInquiry" id="sl-facebook"
+                ><img src="http://thenewinquiry.com/wp-content/themes/tni/img/sideline/facebook.png" alt="facebook" 
+            /></a>
+            <a href="http://twitter.com/newinquiry/" id="sl-twitter"
+                ><img src="http://thenewinquiry.com/wp-content/themes/tni/img/sideline/twitter.png" alt="twitter"
+            /></a>
+            <a href="http://thenewinquiry.tumblr.com" id="sl-tumblr"
+                ><img src="http://thenewinquiry.com/wp-content/themes/tni/img/sideline/tumblr.png" alt="tumblr"
+            /></a>
+            <a href="" id="sl-newsletter" rel='newsletter-popup'
+                ><img src="http://thenewinquiry.com/wp-content/themes/tni/img/sideline/newsletter.png" alt="newsletter"
+            /></a>
+                    </div>
+    </section>
+
+	<section id="body">
+                <section id='single' class='clear'>
+<div id='single-essays'>
+
+    
+<article class="essays entry clear">
+
+<div class="column column-left">&nbsp;</div>
+    <div class='column'>
+
+    <h1 id='page-title'>The Anxieties of Big Data</h1>
+
+<div class='author'>
+    By <em><a href="http://thenewinquiry.com/author/kate-crawford/" title="Posts by Kate Crawford" rel="author">Kate Crawford</a></em>
+</div>
+
+
+<div class='content'>
+    <!-- coins metadata inserted by kblog-metadata -->
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rfr_id=kblog-metadata.php&amp;rft.title=The+Anxieties+of+Big+Data&amp;rft.source=The+New+Inquiry&amp;rft.date=2014-05-30&amp;rft.identifier=http%3A%2F%2Fthenewinquiry.com%2Fessays%2Fthe-anxieties-of-big-data%2F&amp;rft.au=Kate+Crawford&amp;rft.format=text&amp;rft.language=English"></span><p><strong><a href="http://thenewinquiry.com/essays/the-anxieties-of-big-data/screen-shot-2014-05-29-at-2-20-31-pm/" rel="attachment wp-att-53484"><img class="aligncenter size-medium wp-image-53484" alt="Screen Shot 2014-05-29 at 2.20.31 PM" src="http://thenewinquiry.com/wp-content/uploads/2014/05/Screen-Shot-2014-05-29-at-2.20.31-PM-383x255.png" width="383" height="255" /></a></strong></p>
+<p><strong>What does the lived reality of big data <i>feel</i> like?</strong></p>
+<p>2014 is the year we learned about Squeaky Dolphin. That’s the Pynchon-worthy code name for a secret program created by British intelligence agency GCHQ to monitor millions of YouTube views and Facebook likes in real time. Of course, this was just one of many en masse data-collection programs exposed in Edward Snowden’s smuggled haul. But the Squeaky Dolphin PowerPoint deck reveals something more specific. It outlines an expansionist program to bring big data together with the more traditional approaches of the social and humanistic sciences: the worlds of small data. GCHQ calls it the Human Science Operations Cell, and it is all about supplementing data analysis with broader sociocultural tools from anthropology, sociology, political science, biology, history, psychology, and economics.</p>
+<p><a href="http://thenewinquiry.com/essays/the-anxieties-of-big-data/sqd1/" rel="attachment wp-att-53424"><img class="aligncenter size-medium wp-image-53424" alt="sqd1" src="http://thenewinquiry.com/wp-content/uploads/2014/05/sqd1-383x283.png" width="383" height="283" /></a><span data-type="note" data-side="right" data-align="left" class="margin-note margin-note-right margin-note-right-left">From British intelligence agency GCHQ&#8217;s &#8220;Squeaky Dolphin&#8221; presentation deck</span></p>
+<p>GCHQ and the NSA are the old guards of big data, and despite their enormous budgets, technical infrastructure, and trained analysts, the big-data bonanza is not enough: They are reaching for other epistemologies by the dozen to try and make sense of it all. Though, as the slide above demonstrates, the deck contains enough academic disciplines for a royal flush (including a pair of ethnographies), it will never be enough: It reads like an extraordinary testament to anxiety.<span id="more-53421"></span></p>
+<p>Already,<span data-type="note" data-side="right" data-align="left" class="margin-note margin-note-right margin-note-right-left"><a href="http://thenewinquiry.com/publications/magazines/"><img alt="margin-ad-right" src="http://thenewinquiry.com/wp-content/uploads/2014/05/margin-ad-right.png" width="180" height="339" /></a></span> the lived reality of big data is suffused with a kind of <i>surveillant anxiety — </i>the fear that all the data we are shedding every day is too revealing of our intimate selves but may also misrepresent us. Like a fluorescent light in a dark corridor, it can both show too much and not enough. Anxiety, as Sianne Ngai has written, has a temporality that is future oriented: it is an expectation emotion, and the expectation is generally of risk, exposure, and failure. British group Plan C in their blistering manifesto “<a href="http://www.weareplanc.org/we-are-all-very-anxious">We Are All Very Anxious</a>” argue that anxiety is the dominant affect of our current phase of capitalism, engendering political hopelessness, insecurity, and social separation.</p>
+<p>But the trick of a dominant cultural affect is that it functions as a kind of open secret: Everyone knows it, but nobody talks about it. In order to work against it, we first have to recognize the condition and trace its contours.</p>
+<p><a href="http://thenewinquiry.com/essays/the-anxieties-of-big-data/sqd4/" rel="attachment wp-att-53436"><img class="aligncenter size-medium wp-image-53436" alt="sqd4" src="http://thenewinquiry.com/wp-content/uploads/2014/05/sqd4-383x288.png" width="383" height="288" /></a><span data-type="note" data-side="right" data-align="left" class="margin-note margin-note-right margin-note-right-left">From British intelligence agency GCHQ&#8217;s &#8220;Squeaky Dolphin&#8221; presentation deck</span></p>
+<p>Surveillant anxiety is always a conjoined twin: The anxiety of those surveilled is deeply connected to the anxiety of the surveillers. But the anxiety of the surveillers is generally hard to see; it&#8217;s hidden in classified documents and delivered in highly coded languages in front of Senate committees. This is part of why Snowden&#8217;s revelations are so startling: They make it possible for us to see the often-obscured concerns of the intelligence agencies. And while there is an enormous structural power asymmetry between the surveillers and surveilled, neither are those with the greatest power free from being haunted by a very particular kind of data anxiety: that no matter how much data they have, it is always incomplete, and the sheer volume can overwhelm the critical signals in a <a href="http://www.tylervigen.com/">fog of possible correlations</a>.</p>
+<p>The current mythology of big data is that with more data comes greater accuracy and truth. This epistemological position is so seductive that many industries, from advertising to automobile manufacturing, are repositioning themselves for massive data gathering. The myth and the tools, as Donna Haraway once observed, mutually constitute each other, and the instruments of data gathering and analysis, too, act as agents that shape the social world. Bruno Latour put it this way: “Change the instruments, and you will change the entire social theory that goes with them.” The turn to big data is a political and cultural turn, and we are just beginning to see its scope.</p>
+<p>But what do you do when you realize that all that data is not enough? From the Boston bombings to Malaysian Airlines flight 370, we know that data black holes exist. Even when there were <a href="http://www.bostonmagazine.com/news/article/2014/02/25/waltham-murders-boston-marathon/">direct tip-offs</a> about the Tsarnaevs, the data didn’t set off the right red flags. These moments demonstrate why the epistemic big-data ambition — to collect it all — is both never-ending and deeply flawed. The bigger the data gets, the more small things can be overlooked. The risk of being seduced by ghost patterns in data increases with the size of the data sets. Meanwhile, two brothers carry bomb-laden backpacks to a marathon finish line, and a Boeing 777 disappears.</p>
+<p>So in the case of intelligence agencies, they grasp for the tools of small data in the hope that they can help mask over the black holes in big data. This admission is made multiple times in the NSA and GCHQ slides: Along with so much data come enormous technical and ethical difficulties. But the most resonant slide in the Squeaky Dolphin deck is this one, which asks the central question of surveillant anxiety:</p>
+<p><a href="http://thenewinquiry.com/essays/the-anxieties-of-big-data/sqd2/" rel="attachment wp-att-53426"><img class="aligncenter size-medium wp-image-53426" alt="sqd2" src="http://thenewinquiry.com/wp-content/uploads/2014/05/sqd2-383x288.png" width="383" height="288" /></a><span data-type="note" data-side="right" data-align="left" class="margin-note margin-note-right margin-note-right-left">From British intelligence agency GCHQ&#8217;s &#8220;Squeaky Dolphin&#8221; presentation deck</span></p>
+<p>“What can we tell?” Well might we ask: Fittingly, half the slide is blacked out — possibly redacted for national-security reasons or possibly it was always a black space. This difficult question, What can we tell, has its reflection on the opposite side of the dialectic, in the anxiety of the surveilled: “What can they tell about <i>me</i>?”</p>
+<p>To see the “consumer side” of surveillant anxiety, we can turn to K-Hole, a group of trend forecasters based in New York City, whose work straddles the gray zones between art and advertising. Whereas the NSA and GCHQ powerpoints are designed by government employees on a deadline, full of naïve clip art and network diagrams, K-Hole’s work is all about knowingness, the wink and the nudge, high-street design as critique and in-joke. The glossy PDFs they periodically issue look like spec work for a lifestyle-marketing client, but they carry cultural criticism like concealed hand grenades.</p>
+<p><a href="http://thenewinquiry.com/essays/the-anxieties-of-big-data/khole1/" rel="attachment wp-att-53430"><img class="aligncenter size-medium wp-image-53430" alt="khole1" src="http://thenewinquiry.com/wp-content/uploads/2014/05/khole1-383x310.png" width="383" height="310" /></a><span data-type="note" data-side="right" data-align="left" class="margin-note margin-note-right margin-note-right-left">From K-Hole&#8217;s &#8220;Youth Mode: A Report on Freedom&#8221;</span></p>
+<p>When K-Hole released its <a href="http://khole.net/issues/youth-mode/" target="_blank">report</a> “Youth Mode: A Report on Freedom,” it catapulted the term <i>normcore</i> onto the main stage. “Having mastered difference, the truly cool attempt to master sameness,” it argues, suggesting that the act of fitting in with the mainstream is the ultimate camouflage. Normcore is not about irony or looking normal with a twist, K-Hole insists, but “seeking the freedom that comes with non-exclusivity” and finding freedom “in being nothing special.” The PDF depicts a smartphone user scrolling through emoji, a perfectly normcore system of emotion: a taxonomy of feeling in a grid menu of ideograms. A Choose Your Own Adventure for affect.</p>
+<p><a href="http://thenewinquiry.com/essays/the-anxieties-of-big-data/khole2/" rel="attachment wp-att-53431"><img class="aligncenter size-full wp-image-53431" alt="khole2" src="http://thenewinquiry.com/wp-content/uploads/2014/05/khole2.png" width="313" height="394" /></a></p>
+<p>&nbsp;</p>
+<p>While terms like <i>normcore</i> sound like they’ve slithered out from “the lexicon of dickheads,” as <a href="http://rhizome.org/editorial/2013/mar/26/mission-creep/">Huw Lemmey</a> has argued, the word is part of K-Hole’s broader account of the complexities of life in an ever-present consumer market. In other words, they use the concept of normcore to gesture toward something much more ambiguous and interesting. I think it captures precisely this moment of <i>mass surveillance</i> meeting <i>mass consumerism.</i> It reflects the dispersed anxiety of a populace that wishes nothing more than to shed its own subjectivity.</p>
+<p>Normcore, as it was invented by K-Hole, is an eerily accurate model of cultural anxiety, but after the term was adopted by the mainstream fashion press, it became something else. It became “the look of nothing.” An article in <i></i><a href="http://nymag.com/thecut/2014/02/normcore-fashion-trend.html"><i>New York </i>magazine</a> by Fiona Duncan noted that some art kids were now dressing like middle-aged tourists from the midwest. Cool was supposedly now about nonironic T-shirts, New Balance sneakers, and Jerry Seinfeldian high-waist jeans. Where K-Hole’s account of normcore was about adaptability and “strategic misinterpretation,” the fashion press made it about championing generic &#8220;dork-wear&#8221; to create coolness out of anti-cool.</p>
+<p>Still, the rapid rise of the term<em> normcore</em> is an indication of how the cultural idea of disappearing has become cool at the very historical moment when it has become almost impossible because of big data and widespread surveillance. Blending in gives you a particular kind of power when standing out means being put on the <a href="http://www.techdirt.com/articles/20140206/22585526126/court-says-fbi-agents-wrong-checkmark-put-woman-no-fly-list-barred-her-us-10-years.shtml">no-fly list for 10 years</a> or a <a href="http://www.theverge.com/2014/2/19/5419854/the-minority-report-this-computer-predicts-crime-but-is-it-racist">predictive-policing heat list in Chicago</a>, or earns you a chilling <a href="http://www.theguardian.com/world/2014/jan/21/ukraine-unrest-text-messages-protesters-mass-riot">anonymous SMS for attending a street protest in Ukraine</a>.</p>
+<p>And it’s worth remembering that the other New York group that recently recommended dressing like a tourist: Occupy Wall Street. OWS hosted “civilians” workshops, where participants were encouraged to “dress to blend” and “look like tourists” as a way to avoid police attention. While OWS protesters were dressing like tourists to evade a specific threat, normcore is meant to be more dispersed and continuous: being permanently inconspicuous and opting for a comfortable sameness. What was a temporary tactic for Occupy has become an ongoing strategy for K-Hole. And what used to be about donning camouflage to confuse the NYPD at the barricades has now become a matter of resisting the fashion police as well as the socio-technical matrices of always been seen, photographed, and tracked.</p>
+<p><a href="http://thenewinquiry.com/essays/the-anxieties-of-big-data/ows/" rel="attachment wp-att-53434"><img class="aligncenter size-medium wp-image-53434" alt="ows" src="http://thenewinquiry.com/wp-content/uploads/2014/05/ows-383x298.png" width="383" height="298" /></a></p>
+<p>But being able to “blend in” or “pass” is a very exclusive form of privilege. In the words of <a href="http://www.thestylecon.com/2014/03/03/normcore-bullsht/">Cat Smith</a>, who writes about disability and fashion, “the ‘look of nothing’ is never going to be available to those who are marked as ‘other’ because the world has already placed identifiable markers on us.” So who can be normcore? Who can be just one of the mass, just one anonymized data point among millions? Or, in the classic formulation, who has nothing to hide?</p>
+<p><span data-type="note" data-side="left" data-align="left" class="margin-note margin-note-left margin-note-left-right"><a href="http://thenewinquiry.com/publications/magazines/"><img alt="margin-ad-left" src="http://thenewinquiry.com/wp-content/uploads/2014/05/margin-ad-left.png" width="180" height="339" /></a></span>There’s already a rich history to answer these questions. As Virginia Eubanks’s work has shown, <a href="http://prospect.org/article/want-predict-future-surveillance-ask-poor-communities">if you want to see the future of surveillance, look to poor communities</a>. Her work with low-income Americans on welfare benefits has shown the degree to which tracking for them has been normalized, from Electronic Benefit Transfer cards recording every purchase to higher levels of neighborhood police scrutiny and camera surveillance. While these tools and techniques of data tracking have now been broadened to ensnare the whole population, their greatest impact is still felt by marginalized communities.</p>
+<p>If we take these twinned anxieties — those of the surveillers and the surveilled — and push them to their natural extension, we reach an epistemological end point: on one hand, the fear that there can never be enough data, and on the other, the fear that one is standing out in the data. These fears reinforce each other in a feedback loop, becoming stronger with each turn of the ratchet. As people seek more ways to blend in — be it through normcore dressing or hardcore encryption — more intrusive data collection techniques are developed. And yet, this is in many ways the expected conclusion of big data’s neopositivist worldview. As historians of science Lorraine Daston and Peter Galison once wrote, all epistemology begins in fear — fear that the world cannot be threaded by reason, fear that memory fades, fear that authority will not be enough.</p>
+<p>If the big-data fundamentalists argue that more data is inherently better, closer to <i>the truth</i>, then there is no point in their theology at which enough is enough. This is the radical project of big data. It is epistemology taken to its limit. The affective residue from this experiment is the Janus-faced anxiety that is heavy in the air, and it leaves us with an open question: How might we find a radical potential in the surveillant anxieties of the big-data era?</p>
+<span data-type="note" data-side="right" data-align="left" class="margin-note margin-note-right margin-note-right-left"><a href="http://thenewinquiry.com/publications/magazines/#about-tni"><img title="learn-form" alt="" src="http://thenewinquiry.com/wp-content/uploads/ads/learn-form.svg" width="124" height="33" /></a></span>
+<p><img title="footer-post" alt="" src="http://thenewinquiry.com/wp-content/uploads/ads/footer-post.svg" width="383" height="116" /><section id='subscribe-form' class='mailinglist-form'>
+    <form method='post' id='subscribe'>
+        <section class='row field'>
+            <input type='text' name='first-name' placeholder="FIRST NAME *" />
+        </section>
+        <section class='row field'>
+            <input type='text' name='last-name' placeholder="LAST NAME *" />
+        </section>
+        <section class='row field field-subscribe'>
+            <input type='text' name='email' placeholder="EMAIL ADDRESS *" />
+        </section>
+        <section class='row field'>
+            <input type='text' name='city' placeholder="CITY *" />
+        </section>
+        <section class='row field'>
+            <input type='text' name='referral' placeholder="WHO REFERRED YOU? (optional)" />
+        </section>
+        <section class='row'>
+            <p class='required-fields'><em>* all fields required</em></p>
+        </section>
+        <section class='row button'>
+            <a>
+                <img src="http://g-ecx.images-amazon.com/images/G/01/asp/beige_medium_subscribe_withlogo_whitebg.gif" border="0">
+            </a>
+        </section>
+        <p class="result"></p>
+    </form>
+</section>
+</p>
+<div id="entry-meta">	<section class='blog-author-info'>
+	    <section class='author'>
+		Previously by<br>
+		<em><a href="http://thenewinquiry.com/author/kate-crawford/" title="Posts by Kate Crawford" rel="author">Kate Crawford</a></em>
+	    </section>
+	    <section class='posts'>
+		<ul>
+		    <li class="first"><a href="http://thenewinquiry.com/essays/the-anxieties-of-big-data/">The Anxieties of Big Data</a></li>		</ul>
+	    </section>
+	    	</section>
+	<section id='share-links'>
+    <a href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Fthenewinquiry.com%2Fessays%2Fthe-anxieties-of-big-data%2F" title="Share on Facebook"
+        ><img src='http://thenewinquiry.com/wp-content/themes/tni/img/icons/facebook.png' alt='' 
+    /></a>
+    <a href="https://twitter.com/share?url=http%3A%2F%2Fthenewinquiry.com%2Fessays%2Fthe-anxieties-of-big-data%2F" title="Share on Twitter"
+        ><img src='http://thenewinquiry.com/wp-content/themes/tni/img/icons/twitter.png' alt='' 
+    /></a>
+    <a href="http://www.tumblr.com/share" title="Share on Tumblr"
+        ><img src='http://thenewinquiry.com/wp-content/themes/tni/img/icons/tumblr.png' alt='' 
+    /></a>
+</section>
+</div></div>
+
+</div>
+<aside class='margin margin-right'>
+            <div class='date'>
+            May 30, 2014        </div>
+            &nbsp;
+</aside>
+</article>
+
+</div>
+</section>
+	</section>
+
+	<footer id="colophon" role="contentinfo">
+        <nav id='footer-links' class='clear'>
+            <section class="off" id="nav-contact-us"><a href="/contact-us/"><img id="nav-contact-us" alt="Contact Us" src="http://thenewinquiry.com/wp-content/themes/tni/img/nav/contact-us-off.png" /></a></section><section class="off" id="nav-terms-of-use"><a href="/terms-of-use/"><img id="nav-terms-of-use" alt="Terms of Use" src="http://thenewinquiry.com/wp-content/themes/tni/img/nav/terms-of-use-off.png" /></a></section><section class="off" id="nav-submit-to-tni"><a href="/submit-to-tni/"><img id="nav-submit-to-tni" alt="Submit" src="http://thenewinquiry.com/wp-content/themes/tni/img/nav/submit-to-tni-off.png" /></a></section><section class="off" id="nav-support-tni"><a href="/support-tni/"><img id="nav-support-tni" alt="Support TNI" src="http://thenewinquiry.com/wp-content/themes/tni/img/nav/support-tni-off.png" /></a></section>        </nav>
+        <section id='footer-info' class='clear'>
+            <section id='footer-info-by'>
+                Designed by <a href='//impkerr.com/'>Imp Kerr</a>
+            </section>
+            <section id='footer-built-by'>
+                Built by <a href='//www.kratedesign.com/'>Krate</a>
+            </section>
+            <section id='footer-info-copyright'>
+             
+            </section>
+        </section>
+	</footer>
+
+</section>
+
+<section id='popup-newsletter' class='mailinglist-form'>
+<a id='popup-newsletter-close'
+    ><img src='http://thenewinquiry.com/wp-content/themes/tni/img/newsletter/btn-close.png' alt='' 
+/></a>
+
+<h2>Newsletter signup</h2>
+
+<p>
+Subscribe to The New Inquiry's Newsletter to stay up to date on new 
+developments.
+</p>
+
+<form>
+    <section class='row field'>
+        <input type='text' name='first-name' placeholder="FIRST NAME *" />
+    </section>
+    <section class='row field'>
+        <input type='text' name='last-name' placeholder="LAST NAME *" />
+    </section>
+    <section class='row field'>
+        <input type='text' name='email' placeholder="EMAIL ADDRESS *" />
+    </section>
+    <section class='row field'>
+        <input type='text' name='city' placeholder="CITY *" />
+    </section>
+    <section class='row'>
+	<p><em>* all fields required.</em></p>
+    </section>
+    <section class='row button'>
+	    <button type='submit'>signup</button>
+    </section>
+    <p class="result"></p>
+</form>
+
+</section>
+
+<script src="http://thenewinquiry.com/wp-content/themes/tni/js/jquery.js" type="text/javascript"></script>
+<script type="text/javascript">jQuery.noConflict();</script>
+<script src="http://thenewinquiry.com/wp-content/themes/tni/js/jquery.fancybox.js" type="text/javascript"></script>
+<script src="http://thenewinquiry.com/wp-content/themes/tni/js/tni.js" type="text/javascript"></script>
+<script src="http://thenewinquiry.com/wp-content/themes/tni/js/subscribe.js" type="text/javascript"></script>
+
+<!--[if IE]>
+<script src="http://thenewinquiry.com/wp-content/themes/tni/js/tni-ie.js" type="text/javascript"></script>
+<![endif]-->
+
+<script type='text/javascript'>/* <![CDATA[ */ var portfolioSlideshowOptions = {  psHash:false, psLoader:false, psFluid:false };/* ]]> */</script>
+
+<!-- START Parse.ly Include: Standard -->
+<div id="parsely-root" style="display: none">
+  <div id="parsely-cfg" data-parsely-site="rKflkoHzmRbukHQyGXrVEPCML1jXHizsqlHqrC75l5s"></div>
+</div>
+<script>
+(function(s, p, d) {
+  var h=d.location.protocol, i=p+"-"+s,
+      e=d.getElementById(i), r=d.getElementById(p+"-root"),
+      u=h==="https:"?"d1z2jf7jlzjs58.cloudfront.net"
+      :"static."+p+".com";
+  if (e) return;
+  e = d.createElement(s); e.id = i; e.async = true;
+  e.src = h+"//"+u+"/p.js"; r.appendChild(e);
+})("script", "parsely", document);
+</script>
+<!-- END Parse.ly Include: Standard -->
+
+<!-- Lightbox Plus ColorBox v2.6/1.3.32 - 2013.01.24 - Message: 0-->
+<script type="text/javascript">
+jQuery(document).ready(function($){
+  $("a[rel*=lightbox]").colorbox({initialWidth:"30%",initialHeight:"30%",maxWidth:"90%",maxHeight:"90%",opacity:0.8});
+});
+</script>
+<script type='text/javascript' src='http://thenewinquiry.com/wp-content/plugins/portfolio-slideshow/js/jquery.cycle.all.min.js?ver=2.99'></script>
+<script type='text/javascript' src='http://thenewinquiry.com/wp-content/plugins/portfolio-slideshow/js/portfolio-slideshow.min.js?ver=1.5.1'></script>
+<script type='text/javascript' src='http://thenewinquiry.com/wp-content/plugins/wplike2get/js/jquery.cookie.js?ver=1.2.6'></script>
+<script type='text/javascript' src='http://thenewinquiry.com/wp-content/plugins/wplike2get/js/jquery.fbjlike.1.4.js?ver=1.2.6'></script>
+<script type='text/javascript' src='http://thenewinquiry.com/wp-content/plugins/wplike2get/js/jquery.twitterbutton.1.1.js?ver=1.2.6'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var l2g_options = {"ajaxurl":"http:\/\/thenewinquiry.com\/wp-admin\/admin-ajax.php","cookie_suffix":"\/essays\/the-anxieties-of-big-data\/","fb_activated":"1","tw_activated":"1","keep_after_reload":"1","l2g_link_identifier":"Download","fb_layout":"box_count","fb_action":"like","fb_font":"lucida grande","fb_colorscheme":"light","fb_buttonWidth":"","fb_lang":"en_US","fb_appID":"","fb_userID":"","fb_siteName":"","fb_ga_version":"pageTracker","tw_user":"","tw_user_description":"","tw_url":"","tw_title":"","tw_layout":"vertical","tw_count_url":"","tw_action":"tweet","tw_lang":"en","tw_ga_version":"pageTracker","gp_size":"tall","gp_count":"1","gp_url":"","gp_lang":"en-US","gp_ga_version":"pageTracker","version":"1.2.6"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://thenewinquiry.com/wp-content/plugins/wplike2get/js/l2g.custom.js?ver=1.2.6'></script>
+<script type='text/javascript' src='http://thenewinquiry.com/wp-content/plugins/lightbox-plus/js/jquery.colorbox.1.3.32.js?ver=1.3.32'></script>
+
+</body>
+</html>

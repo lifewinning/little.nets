@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title>LittleNets</title>
+	<title>LittleNets Library</title>
 </head>
 	<!-- fucking bootstrap -->
 	<link rel="stylesheet" type="text/css" href="src/bootstrap/css/bootstrap.css" />
@@ -20,99 +20,31 @@
 <body ng-app="thisApp">
 	<!-- introduction -->
 	<div class="jumbotron">
-		<h1>LittleNets</h1>
-		<p><strong>LittleNets</strong>, part of Eyebeam-Off-The-Grid, is a show of alternative networks offering different ways of being and making online.</p>
+		<h1>The LittleNets Little Library</h1>
 	</div>
 	<!-- about this network and things on it -->
-	<div class="green-light">
-		<div class="container" id="apps">
+	<div class="yellow-light pad">
+		<div class="container">
 			<div class="row">
-					<div class="col-md-12" style="text-align:center;">
-						<H1>No, you're not on the internet.</H1>
-						<p>You're on a local mesh network that's running applications from a tiny server. (Really tiny. Like a netbook.)
-						</p>
-						<p>
-						I know, you probably wanted to like check Twitter or something right now. But our little network has some things you might like. Please check them out!
-						</p>
-						<h1>What's On <em>This</em> Network?</h1>
+					<div class="col-md-12">
+					<p>When we talk about what the web could be, it is often with nostalgia for a web that was&mdash;or a web that we think might have been, but we missed it. We tend to trip over our words whenever we talk about the web in any non-trivial way. Anything we say is so easily dated, or sound incredibly pretentious, and nothing ever is true to the whole place, because it simply can't be true to the whole place.</p>
+					<p>These are some of the writings that have shaped the way I think about and talk about the network.  Some of them are kind of "weird old internet" texts of internet history and some of them are from now, and are a little bit urgent. All of them are probably important to me because they have this ideal mix of sincerity, uncertainty, and unexpected grace. 
+					<p>For texts that I read online, I've saved the pages as accurately as wget would allow. They're sort of like weird scrapbook objects that way.</p>
+					<p>Spend some time with them on this network and maybe they'll give you something to think about for <em>the</em> network.</p>
 					</div>
-					<div ng-controller="apps">
-						<div ng-repeat="app in apps">
-							<div class="col-md-4">
+					<div ng-controller="txts">
+						<div ng-repeat="txt in txts| orderBy:random">
+							<div class="col-md-6">
 								<div class="gray pad" style="text-align:center;">
-									<a href="{{app.link}}"><h2>{{app.name}}</h2></a>
-									<p>{{app.desc}}</p>
+									<a href="{{txt.link}}"><h3>{{txt.title}}</h3></a>
+									<h5>{{txt.author}} | {{txt.date}}</h5>
+									<h5>source: {{txt.src}}</h5>
+									<hr>
+									<p>{{txt.desc}}</p>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- about the networks -->
-	<div class="container" id="ntwks">
-		<div class="row">
-			<div class="col-md-8">
-				<div class="yellow-light pad">
-					<h1>The Networks</h1>
-
-				<div ng-controller="ntwks">
-					<div ng-repeat="net in ntwks">
-						<div class="gray pad">
-							<h2>{{net.name}}</h2>
-							<h3>Created by {{net.author}}</h3>
-							<p>{{net.desc}}</p>
-							<h4>To Connect: <span ng-bind-html="net.connect"></span></h4>
-						</div>
-					</div>
-				</div>				
-			</div>
-			</div>
-		</div>
-	</div>
-	<!-- artists -->
-	<div class="container" id="people">
-		<div class="row">
-			<div class="col-md-8 col-md-offset-4">
-				<div class="green-light pad">
-					<h1>Participants</h1>
-
-				<div ng-controller="people">
-					<div ng-repeat="hi in people">
-						<div class="gray pad">
-							<h2>{{hi.name}}</h2>
-							<p>{{hi.bio}}</p>
-						</div>
-					</div>
-				</div>
-			</div>				
-		</div>
-		</div>
-	</div>
-	<!-- curatorial statement -->
-	<div class="container" id="stmnt">
-		<div class="row">
-			<div class="col-md-8">
-				<div class="yellow-light pad">
-					<h1>Some Dumb Words About This Project</h1>
-					<p></p>
-					<h3><em>Is the internet working?</em></h3>
-					<p>
-					This is a question that seems pretty easy to answer. Open up a browser window, swipe down on your phone to see if Twitter loads--yes, no, the internet's working. But it's a question that I've been thinking really hard about because it is at the heart of a lot of other, harder, questions that people have been asking over the past few years, and with greater urgency in the past year.
-					</p><p>
-					Knowing whether or not the internet's working implies a common understanding of <em>how the internet works</em>. In the contexts in which we usually ask is the internet working? "work" means "accessible, in this moment." And we generally don't care that much about how it works when we're trying to access it. We just want it to work.
-					So we accept, endure, and don't question a number of personal risks and annoyances for an internet that, in a very broad sense, works. We use the password-free wifi in coffee shops. We blink through a barrage of ads. Increasingly, we accept network paywalls and subscription services and slouch toward a tiered access future. Is this the internet working?
-					</p><p>
-					Infrastructure is a thing people tend to notice when it's not working. Despite the growing ubiquity of network access and networked objects--from the black mirrors we value beyond measure to the wristbands that endlessly measure our movements--something about the network is not working, or no longer works the way it once did or the way we were promised it would a long time ago.
-					</p><p>
-					Exactly who made or broke that promise draws attention to another question implicit in whether the internet works: <em>who does the internet work for?</em> Who currently benefits from a privatized, hyper-surveilled, and hyper-monetized internet? Who doesn't? When the value or functionality for a network or a platform is basically determined by its ability to make money, can it retain the intimacy, the political broadcast power, the collapsed contexts and wonderful weirdness that is, for me, crucial to an internet that <em>works</em>?
-					</p><p>
-					But that's me talking. That's what I want from the network, and that's how I want to use the network. The artists involved in LittleNets making work on and with alternative wireless networks offer responses to the question what could alternative internets look like? The network can be really good at building intimacies across great distances. What can we build across a space as small as a house on a remote island? What would we put on an internet that is entirely our own? Whatever comes of this monthlong experiment, I hope that you can take those lessons and bring them to other small-yet-great distances--an apartment building, a city block, a neighborhood.
-					</p><p>
-					Something about the internet is not working. And if we want that to change, we need to get to work.
-					</p>
-					<p>&mdash;Ingrid Burrington</p>
 				</div>
 			</div>
 		</div>

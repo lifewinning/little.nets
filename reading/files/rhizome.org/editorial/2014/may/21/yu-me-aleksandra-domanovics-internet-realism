@@ -1,0 +1,710 @@
+
+
+
+<!doctype html>
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="Content-Language" content="en-us">
+        <title>Rhizome | Aleksandra Domanović&#39;s Internet Realism</title>                
+        <meta name="google-site-verification" content="AZfoqybynDh_0mjEBG_XwMZeCwiSE-GZ8BiQB5FZzDU" />        
+        <meta name="ROBOTS" content="ALL" />
+        <meta name="description" content="Rhizome is dedicated to the creation, presentation, preservation, and critique of emerging artistic practices that engage technology." />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <!-- Set viewport so we can have mobile styles -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+
+        <!-- FB & Twitter meta -->
+
+        <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+ 
+        <meta property="og:site_name"              content="rhizome.org">
+        <meta name="twitter:site"                  content="@rhizome">
+
+        <meta property="og:type"                   content="article">
+        <meta name="twitter:card"                  content="summary">
+        <meta property="article:section"           content="Editorial">
+
+        <meta name="twitter:url"                   content="http://rhizome.org/editorial/2014/may/21/yu-me-aleksandra-domanovics-internet-realism/">
+        <meta property="og:url"                    content="http://rhizome.org/editorial/2014/may/21/yu-me-aleksandra-domanovics-internet-realism/">
+ 
+        <meta property="og:title"                  content="Aleksandra Domanović&#39;s Internet Realism">
+        <meta name="twitter:title"                 content="Aleksandra Domanović&#39;s Internet Realism">
+
+        <meta property="article:published_time"    content="2014-05-21T00:00:00"> 
+
+        
+        
+            
+        <meta property="article:tag"             content="From yu to me">
+            
+        <meta property="article:tag"             content="internet realism">
+            
+        
+
+        <meta name="twitter:description" content="A Rhizome-commissioned artist&#39;s documentary offers a promising approach to the problem of representing the internet.">
+        <meta property="og:description"          content="A Rhizome-commissioned artist&#39;s documentary offers a promising approach to the problem of representing the internet."> 
+        
+        
+            <meta name="twitter:image" content="http://media.rhizome.org/blog/9253/new-still-right-size.jpg">
+            <meta property="og:image"  content="http://media.rhizome.org/blog/9253/new-still-right-size.jpg">    
+        
+
+	<meta property="fb:admins" content="14500625" />
+	<meta property="fb:admins" content="1277404618" />
+
+
+        <link rel="shortcut icon" href="/static/images/favicons/leyva.gif" />
+
+        <!-- google fonts -->
+        <link href='//fonts.googleapis.com/css?family=Titillium+Web:400,200,300' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Anaheim' rel='stylesheet' type='text/css'>
+
+        
+            <!--GLOBAL CSS-->
+            <link type="text/css" rel="stylesheet" href="/static/css/blueprint/screen.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/base.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/comments.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/sidebars.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/calendars.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/miniprofile.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/media_players.css" media="screen, projection"></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/blueprint/print.css" media="print"/></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/new_navbars.css"/></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/top_banner.css"/></link>
+            <link type="text/css" rel="stylesheet" href="/static/css/mobile.css"/></link>
+            <link type="text/css" rel="stylesheet" href="/static/font-awesome-4.0.0/css/font-awesome.min.css"/></link>
+            <!--[if lt IE 8]>
+                <link rel="stylesheet" href="/static/css/blueprint/ie.css" type="text/css" media="screen, projection"></link>
+            <![endif]-->
+         
+            <!--[if IE]>
+                <link rel="stylesheet" type="text/css" href="/static/css/ie.css"  />
+            <![endif]-->
+
+            <!-- LOCAL CSS -->
+            
+	<link rel="stylesheet" href="/static/css/editorial.css" type="text/css" media="screen" charset="utf-8" />
+
+            
+            
+            
+            
+            
+            
+
+            
+            
+        
+        
+        
+        
+            <!-- GLOBAL JAVASCRIPT -->
+            <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+            <script type="text/javascript">window.__admin_media_prefix__ = "/static/admin/";</script>
+            <script type="text/javascript">window.__static_url__ = "/static/";</script>
+            <script type="text/javascript">var STATIC_URL = "/static/";</script>
+            <script type="text/javascript">window.SERVER_NAME = "rhizome.org";</script>
+
+            <script type="text/javascript" src="/static/js/mootools-core-1.3.2-yc.js"></script>
+            <script type="text/javascript" src="/static/js/mootools-more-1.3.2.1.js"></script>
+            <script type="text/javascript" src="/static/js/rhizome.js"></script>
+            <script type="text/javascript" src="/static/media_players/flowplayer/flowplayer-3.2.2.min.js"></script>
+            <script type="text/javascript" src="/static/media_players/soundmanager/script/soundmanager2-nodebug-jsmin.js"></script>
+            <script type="text/javascript" src="/static/media_players/soundmanager/script/inlineplayer.js"></script>
+            <script type="text/javascript" src="/static/js/carousel/PeriodicalExecuter.js"></script>
+            <script type="text/javascript" src="/static/js/carousel/Carousel.js"></script>
+            
+            <script type="text/javascript">
+                soundManager.url = '/static/media_players/soundmanager/swf/';
+                //soundManager.flashVersion = 9; // optional: shiny features (default = 8)
+                soundManager.useFlashBlock = true; // optionally, enable when you're ready to dive in
+                // enable HTML5 audio support, if you're feeling adventurous.
+                soundManager.useHTML5Audio = true;
+                soundManager.debugMode = 0; // disable or enable debug output
+                soundManager.useFlashBlock = 0;
+                //soundManager.useMovieStar = true;
+            </script>
+
+            <script type="text/javascript" src="/static/js/jquery-1.10.2.min.js"></script>
+            <!-- LOCAL  JAVASCRIPT-->              
+            
+            
+                   
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <script type="text/javascript">
+                
+                
+                
+            </script>
+        
+        
+        <!--RSS HEADER -->
+        
+        
+
+        <!-- Quantcast Tag, part 1 -->
+        <script type="text/javascript">
+            var _qevents = _qevents || [];
+            (function() {
+                var elem = document.createElement('script');
+                elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge")  
+                            + ".quantserve.com/quant.js";
+                elem.async = true;
+                elem.type = "text/javascript";
+                var scpt = document.getElementsByTagName('script')[0];
+                scpt.parentNode.insertBefore(elem, scpt);  
+            })();
+        </script>
+    </head>
+        
+    <body class="blog post_detail">
+        
+        
+        
+    <div id="new_header">
+    <ul>
+        
+            <li><a  href="/?ref=header">Rhizome</a></li>
+        
+            <li><a class="active" href="/editorial/?ref=header">Journal</a></li>
+        
+            <li><a  href="/artbase/featured/?ref=header">Artbase</a></li>
+        
+            <li><a  href="/community/?ref=header">Community</a></li>
+        
+            <li><a  href="/programs/?ref=header">Programs</a></li>
+        
+
+        <li id="search">
+            <form action="/search/" method="get">
+                <input type="text" name="q" placeholder=""><a id="search-addon"><i class="fa fa-search"></i></a>
+            </form>
+        </li>
+
+        <li id="account">
+            
+                <a href="/login/?ref=header"><i class="fa fa-key"></i></a>
+            
+        </li>
+    </ul>
+</div>
+
+<div id="new_footer">
+    <ul>
+        
+            
+        
+            <li><a class="active" href="/editorial/?ref=footer"><span class="underline">Journal</span> &raquo;</a></li>
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+
+        
+            <li><a  href="/editorial/artist-profiles/?ref=footer">Artist Profiles</a></li>
+        
+            <li><a  href="/editorial/tag/surf-report/?ref=footer">Surf Reports</a></li>
+        
+            <li><a  href="/editorial/tag/e-cig-in-context/?ref=footer">E-Cig in Context</a></li>
+        
+
+        
+
+        
+            <li class="reversed"><a  href="/support/donate/?ref=footer">Membership</a></li>
+        
+            <li class="reversed"><a  href="/about/?ref=footer">About Us</a></li>
+        
+    </ul>
+</div>
+
+
+
+        
+                 
+          
+        
+
+                 
+        
+             
+         
+            
+                        
+        <div id="content" class="container ">
+            
+
+
+
+
+
+    <script type="text/javascript" src="/static/discuss/scripts/add_comment_toggler.js"></script>
+    <script type="text/javascript" src="/static/js/bbcode/editor.js"></script>   
+    <script type="text/javascript" src="/static/js/bbcode/color_palette.js"></script>   
+    <script type="text/javascript" src="/static/js/loadingOverlay.js"></script>
+    <script type="text/javascript">
+        window.addEvent('domready', function() {
+            new Request({method: 'post',url: '/hit/update/',                     data:  {hitcount_pk : '137588' },                     onError: function(rtxt) {},                     onSuccess: function(rtxt,rxml) {}}).send();
+        });
+    </script>
+
+
+
+
+<div class="column-wrapper span-24">
+    <div id="editorial-posts"  class= "left-column span-15">
+        <div data-live-url="/editorial/body/9253/" class="single-post span-15 ">
+            
+                <h2 class="post-title"><a href="/editorial/2014/may/21/yu-me-aleksandra-domanovics-internet-realism">Aleksandra Domanović&#39;s Internet Realism</a></h2>
+             
+
+            <div class="post-details clearfix">
+                <div class="post-meta">
+                    
+                        
+                            <span class="authors bold-upper blue">
+                                <a href="/profile/michaelconnor3//">Michael Connor</a> 
+                            </span>
+                        
+                        <span class="blue">|</span>
+                    
+                        <span class="bold">Wed May 21st, 2014 midnight</span>
+                </div>
+                
+                
+                    
+<a class="comment-summary" href="/editorial/2014/may/21/yu-me-aleksandra-domanovics-internet-realism/#comments"><i class="fa fa-comment fa-lg"></i> (0)</a>
+
+<div class="new-share">
+    <a class="share-btn-cover" href="#">Share</a>
+
+    <a class="share-btn" href="https://twitter.com/share?url=http://rhizome.org/editorial/2014/may/21/yu-me-aleksandra-domanovics-internet-realism/" target="_blank"><i class="fa fa-twitter"></i></a>
+
+    <a class="share-btn" href="http://www.tumblr.com/share/link?url=http%3A//rhizome.org/editorial/2014/may/21/yu-me-aleksandra-domanovics-internet-realism/" title="Share on Tumblr"><i class="fa fa-tumblr-square"></i></a>
+
+    <a class="share-btn" href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=http://rhizome.org/editorial/2014/may/21/yu-me-aleksandra-domanovics-internet-realism/', 'facebook-share-dialog', 'width=626,height=436'); return false;"><i class="fa fa-facebook-square"></i></a>
+</div>
+                
+            </div>
+        
+            <hr class= "black-thin">
+            
+            <div class="post-body">
+                <p><img style="display: block; margin-left: auto; margin-right: auto;" src="http://media.rhizome.org/blog/9253/new-still-right-size.jpg" alt="" /></p>
+<p style="text-align: center;"><span style="font-size: xx-small;"><em>From yu to me</em> (2014). Still frame from single-channel video with sound.</span></p>
+<p style="text-align: left;"><em>Aleksandra Domanović's </em>From yu to me <em>was commissioned by Rhizome, <a href="Abandon%20Normal%20Devices">Abandon Normal Devices</a>, and <a href="http://www.fridericianum.org/">Fridericianum</a>. View the work and read an accompanying text by Brian Droitcour <a href="http://rhizome.org/editorial/2014/may/22/unfinished-business-yugoslav-internet/?ref=fp_post_title">here</a>.</em></p>
+<p style="text-align: left;">"Every map of the internet looks the same."</p>
+<p>Multi-directional trees, hubs and spokes and branches, clouds of varying density: to Alex Galloway, writing in his book <em>The Interface Effect</em>, the many attempts to visualize information society all begin to look the same. Maps of the internet, he argues, tend to conceal more than they reveal; the main purpose they serve is to dazzle the beholder with the complexity of it all.</p>
+<p>Where does this leave the visual artist who aims to represent the internet today? Galloway raised two possible strategies—the glitched-out aesthetic of artists like <a href="http://www.jodi.org/">JODI</a>, who disrupt the workings of the internet, and the "counter-cartography" of artists like <a href="http://bureaudetudes.org/">Bureau d'études</a>, who attempt to map the power relations of control society. In his book, Galloway wasn't satisfied with either of these approaches—the former because it seemed to aestheticize the very systems it set out to break, and the latter because it offered its own totalizing image of the world—and he left the problem of representing the internet as an open question.</p>
+<p>A distinct and highly promising approach to this problem emerges in Aleksandra Domanović's new film <em>From yu to me</em> (2014), premiering on Rhizome today. Through a range of archival materials and several interviews, the film sketches a history of the internet in Yugoslavia through the assembly of small-scale technical, bureaucratic, and biographical detail.</p>
+<p>One of the film's paradoxical merits is that it never strays from its modest focus while somehow managing to offer critical insight into the surrounding historic events. <em>From yu to me</em> narrates a history of the top-level internet domain (TLD) for Yugoslavia, .yu, and the arrival of internet infrastructure in the country just as it began to break apart. It does so through a wide range of archival footage and several interviews, most importantly with the two women computer scientists who administered the domain: Borka Jerman-Blažič and Mirjana Tasić. Their accounts take place amid sweeping historical change—the fall of Communism, the rise of the internet, and the onset of globalization—but the film does not traffic in grand narratives. We listen at some length to explanations of the technical standards used by pre-internet computer networks in Europe and the formal education received by women computer scientists in 1970s Yugoslavia, but UN sanctions against Serbia warrant only a brief mention.</p>
+<p>Thanks in part to this leveling of the normal hierarchy of information, the film generously accommodates a wandering mind. This sense of openness is also helped along by the wide range of archival footage and the computer-generated image of a robotic hand that appears over certain scenes, evoking the hopes and fears and melancholy associated with human-technology relationships. </p>
+<p style="text-align: center;"><iframe src="//player.vimeo.com/video/95833310?title=0&amp;byline=0&amp;portrait=0" frameborder="0" width="500" height="281" allowfullscreen=""></iframe></p>
+<p style="text-align: center;"><span style="font-size: xx-small;">Aleksandra Domanović's <a href="http://vimeo.com/95833310">From yu to me</a>.<br /></span></p>
+<p>While watching <em>From yu to me</em> evolve over a period of months, I began to think about it in relation to the work of American artist Allan Sekula. Beginning in the 1970s and continuing until his death in 2013, Sekula developed a photographic and moving image documentary practice along the lines of what he called "critical realism," which he defined as "a realism not of appearances or social facts but of everyday experience in and against the grip of advanced capitalism." Perhaps the most thoroughly realized example of Sekula's critical realism is his 1996 work <em>Fish Story</em>. Produced over a period five years, <em>Fish Story</em> brought together photographs and research gathered by visiting ports and traveling on container ships, meeting with shipyard scavengers and bo'suns and engine room welders. Instead of a cartography of the seas, Sekula offered a partial and eye-level view, tied together by narrative threads woven from numerous conversations.</p>
+<p><em>Fish Story</em> was, in part, a reaction against the prevalence of internet mythology in intellectual discourse of the 1990s. In the catalog for his exhibition of the work at Witte de With in Rotterdam, Sekula wrote:</p>
+<blockquote>
+<p>I am arguing for the continued importance of maritime space in order to counter the exaggerated importance attached to that largely metaphysical construct, "cyberspace," and the corollary myth of "instantaneous" contact between distant spaces.</p>
+</blockquote>
+<p>While the word "cyberspace" is no longer used widely in intellectual discourse, the underlying myth of the internet's separation from everyday reality still persists. Evidence of this myth can be glimpsed in the suggestively immaterial metaphor of the "cloud," and in the abbreviation IRL (in real life), which implies that our internet lives are not "real." This myth of a separation between the real and the technologically mediated—dubbed "<a href="http://thesocietypages.org/cyborgology/2011/02/24/digital-dualism-versus-augmented-reality/">digital dualism</a>" by Nathan Jurgenson—is damaging in that it obscures the way things work, hiding (among other things) the power relations and environmental resources that undergird the internet.</p>
+<p>If Sekula's response to the fixation on "cyberspace" was to focus on the material flows of the sea, Domanović's response is to focus on the material flows of the internet. In place of the "'instantaneous' connection" derided by Sekula, <em>From yu to me </em>describes incredibly laborious and fragile ones. We learn that the entire nation of Yugoslavia was connected to the internet only because of the efforts of one woman (Jerman-Blažič), that Serbia was denied access to the .yu domain because of the disinterest of international administrators, that the early internet could not accommodate Yugoslavian characters, and that telecommunications transmitters were often targeted during the war.</p>
+<p>Where Sekula proposed a critical realism, perhaps <em>From yu to me</em> is a kind of internet realism: an approach to the problem of representing the internet that foregrounds its status as a material infrastructure and a site of human labor, one that is best narrated from the eye-level, open-ended point of view of the artist-documentarian rather than the gods-eye view of the cartographer. The representations of the internet that emerge from such an approach may not be as all-encompassing as a map, but they will certainly not all look the same.</p> 
+            </div>
+                
+            
+              <!--TAGS-->	
+            
+            
+            <div class="post-tags-and-share span-15">
+                <span class="tags essay-tags">
+                    <label>Tags:</label>
+                    
+                        <a class="tag blue" href="/editorial/tags/from-yu-to-me/">From yu to me</a>
+                    
+                        <a class="tag blue" href="/editorial/tags/internet-realism/">internet realism</a>
+                    
+                </span>
+            </div>
+            
+            
+            
+                        
+            <hr class="black-thin span-15">
+            
+            <div class="post-nav last span-15">
+                
+                    <a class="previous span-7" href="/editorial/2014/may/20/stealth-infrastructure">Previous Post</a>
+                
+                
+                    
+                        <a class="next span-7" href="/editorial/2014/may/22/unfinished-business-yugoslav-internet">Next Post</a>
+                    
+                
+            </div>
+
+        </div> 
+        
+            
+                
+ 
+ <!--COMMENTS LIST-->
+
+
+<!--END COMMENTS LIST-->
+ <!--ADD COMMENT -->	
+
+ <!--ADD COMMENT -->
+    <div class="section-row-titles mini-nav">
+        <a name="comments" id="comments-section" class="anchor-name">Reply to this Post</a>
+    </div>
+    <hr class="hr3"> 	
+     
+        <div class= "login">
+            You must be logged in to post a comment.
+            <a id="section-login" class="round-blue" href = "/login/?next=/editorial/2014/may/21/yu-me-aleksandra-domanovics-internet-realism/#comments">Log In</a>
+        </div>
+    
+
+<!--END ADD COMMENT -->
+
+<!--END ADD COMMENT -->
+
+            
+        
+    </div>
+   
+   <!--end left column-->
+    <div class= "right-column span-8">
+        <div id="nectar-ads">
+    <div id="featured-ad">
+        <div style="height: 600px; width: 300px" id="azk1"></div>    
+    </div>
+    
+    <div id="adsquares">
+        <div style="height: 141; width: 137;" id="azk2"></div>
+        
+        <div style="height: 141; width: 137;" id="azk3"></div>
+        
+        <div style="height: 141; width: 137;" id="azk4"></div>
+        
+        <div style="height: 141; width: 137;" id="azk5"></div>
+    </div>
+    <div>
+        <a style="font-weight:bold;" href="http://nectarads.com">Advertise on Rhizome with Nectar Ads</a>
+    </div>
+</div>
+        
+        
+
+<div id ="sidebar">
+  <div class="sidebar-element ">
+        <div class="section-title"><a href="/announce">Rhizome News</a></div>
+        <div class="content-wrap ">
+            <div class="content" id="subscribe">
+                <div class="content-body subscribe ">
+                    <div class="subscribe-description">
+                    Our weekly email newsletter including featured stories, events, job listings, announcements and opportunities in the fields of art & technology.
+                    </div>
+                    
+                    <div id="rhizome-news-signup-form">
+                        <!-- Begin MailChimp Signup Form -->
+<div id="mc_embed_signup">
+<form action="http://rhizome.us1.list-manage.com/subscribe/post?u=a1487b13ca8ed17d052f71f12&amp;id=6f6e0ea86b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+	<fieldset>
+	
+<div class="mc-field-group">
+<input type="text" placeholder="YOUR EMAIL" name="EMAIL" id="newsletter-input">
+</div>
+		<div id="mce-responses">
+			<div class="response" id="mce-error-response" style="display:none"></div>
+			<div class="response" id="mce-success-response" style="display:none"></div>
+		</div>
+		<div><input type="submit" value="Subscribe to Rhizome News" name="subscribe" id="mc-embedded-subscribe"></div>
+	</fieldset>	
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+                    </div>                
+                </div>
+                
+                 <div class="content-body subscribe ">
+                    <div id="connect-links">
+                        
+                        <!-- twitter follow button -->
+                        <a href="https://twitter.com/rhizomedotorg" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @rhizomedotorg</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                        
+                        <!-- fb like button -->
+                       <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Frhizome.org%2F&amp;send=false&amp;layout=button_count&amp;width=77&amp;show_faces=false&amp;font&amp;colorscheme=light&amp;action=like&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:77px; height:20px;" allowTransparency="true"></iframe>
+
+                        <!-- youtube subscribe button -->
+                        <a class="youtube-subscribe-button" href="http://www.youtube.com/subscription_center?add_user=RhizomeDotOrg1" title="Subscribe to Rhizome's YouTube Channel">Subscribe to Rhizome's YouTube Channel</a>
+
+                        <!-- vimeo button -->
+
+
+                        <!-- rss button -->
+                        <a class="rhizome-fp-rss" href="http://feeds.feedburner.com/rhizome-fp/" title="Rhizome RSS">Rhizome RSS</a>
+
+                        <!-- tumblr button -->
+                        <iframe class="btn" frameborder="0" border="0" scrolling="no" allowtransparency="true" height="18" width="18" src="http://platform.tumblr.com/v1/follow_button.html?button_type=3&tumblelog=rhizomedotorg&color_scheme=dark"></iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>    
+</div>
+
+        
+<div id ="sidebar">
+
+    <div class="sidebar-element ">
+        <div class="section-title">
+            <a href="/editorial/">Featured Articles</a>
+        </div>
+        <div class="content-wrap ">
+            <div class="content ">
+                
+                
+                <div class="content-body ">
+                    <div class="sidebar-post">
+                        
+                        <div class = "post-image">
+                            <a class="bold" href="/editorial/2014/aug/28/first-look-miranda-july?ref=ftsidebar">
+			      
+                                <img src="http://media.rhizome.org/blog/9326/Miranda-July-Somebody.jpg.100x80_q95_crop.jpg">
+                            </a>
+                        </div>
+                        <div class="sidebar-post-title ">
+                            <a class = "bold" href="/editorial/2014/aug/28/first-look-miranda-july?ref=ftsidebar">Somebody: A New Messaging Service by Miranda July</a>                                   
+                        </div>
+                        
+                        <div class="sidebar-post-info ">
+                            <span class="descriptor">by 
+                                
+                                    
+                                        <span class="authors bold-upper blue">
+                                            <a href="/profile/lauren23/?ref=ftsidebar">Lauren Cornell</a> 
+                                        </span>
+                                    
+                                
+                            on Aug 28th, 2014</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-body ">
+                    <div class="sidebar-post">
+                        
+                        <div class = "post-image">
+                            <a class="bold" href="/editorial/2014/aug/27/artist-profile-femke-herregraven?ref=ftsidebar">
+			      
+                                <img src="http://media.rhizome.org/blog/9322/Taxodus.gif.100x80_q95_crop.png">
+                            </a>
+                        </div>
+                        <div class="sidebar-post-title ">
+                            <a class = "bold" href="/editorial/2014/aug/27/artist-profile-femke-herregraven?ref=ftsidebar">Artist Profile: Femke Herregraven</a>                                   
+                        </div>
+                        
+                        <div class="sidebar-post-info ">
+                            <span class="descriptor">by 
+                                
+                                    
+                                        <span class="authors bold-upper blue">
+                                            <a href="/profile/lucy_chinen/?ref=ftsidebar">Lucy Chinen</a> 
+                                        </span>
+                                    
+                                
+                            on Aug 27th, 2014</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-body ">
+                    <div class="sidebar-post">
+                        
+                        <div class = "post-image">
+                            <a class="bold" href="/editorial/2014/aug/20/twine-could-be-your-life?ref=ftsidebar">
+			      
+                                <img src="http://media.rhizome.org/blog/9315/Do-you-want.jpg.100x80_q95_crop.jpg">
+                            </a>
+                        </div>
+                        <div class="sidebar-post-title ">
+                            <a class = "bold" href="/editorial/2014/aug/20/twine-could-be-your-life?ref=ftsidebar">Hypertext and Destiny: This Twine Could be Your Life</a>                                   
+                        </div>
+                        
+                        <div class="sidebar-post-info ">
+                            <span class="descriptor">by 
+                                
+                                    
+                                        <span class="authors bold-upper blue">
+                                            <a href="/profile/Gconverse/?ref=ftsidebar">Grace Converse</a> 
+                                        </span>
+                                    
+                                
+                            on Aug 20th, 2014</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-body ">
+                    <div class="sidebar-post">
+                        
+                        <div class = "post-image">
+                            <a class="bold" href="/editorial/2014/aug/14/containers?ref=ftsidebar">
+			      
+                                <img src="http://media.rhizome.org/blog/9308/Allan-Sekula.jpg.100x80_q95_crop.jpg">
+                            </a>
+                        </div>
+                        <div class="sidebar-post-title ">
+                            <a class = "bold" href="/editorial/2014/aug/14/containers?ref=ftsidebar">Containers</a>                                   
+                        </div>
+                        
+                        <div class="sidebar-post-info ">
+                            <span class="descriptor">by 
+                                
+                                    
+                                        <span class="authors bold-upper blue">
+                                            <a href="/profile/interdome/?ref=ftsidebar">Adam Rothstein</a> 
+                                        </span>
+                                    
+                                
+                            on Aug 14th, 2014</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+
+</div>
+
+
+        
+
+
+        </div>
+        
+        <div id="preload"></div>
+
+
+
+        <!-- Quantcast Tag, part 2 -->
+        <script type="text/javascript">
+            _qevents.push( { qacct:"p-1bU5CKetpvMBI", labels:"artmedia" } );
+        </script>
+        <noscript>
+            <div style="display: none;">
+                <img src="//pixel.quantserve.com/pixel/p-1bU5CKetpvMBI.gif?labels=artmedia" height="1" width="1" alt="Quantcast"/>
+            </div>
+        </noscript>
+
+        
+        
+
+        <script>
+        jQuery.noConflict();
+        (function($) {
+            $(function() {
+                $('.share-btn-cover').click(function() {
+                    $(this).hide();
+                    $(this).siblings('.share-btn').css({'display': 'inline-block'});
+                    return false;
+                });
+            });
+        })(jQuery);
+        </script>
+        <script type="text/javascript" src="/static/js/new_navbars.js"></script>
+        
+
+        
+            <script type="text/javascript">
+                var z=document.createElement("script");
+                z.type="text/javascript";
+                z.async=true;
+                z.src="//engine.nectarads.com/z/12843/azk1_2_43,azk2_2_16,azk3_2_16,azk4_2_16,azk5_2_16";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(z, s);
+            </script>
+        
+
+
+
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-768502-1', 'rhizome.org');
+          ga('send', 'pageview');
+
+        </script>
+    
+        <script type="text/javascript">
+            (function() {
+            var src = document.createElement('script'); 
+            src.async = true;
+            src.src = document.location.protocol + '//platform.twitter.com/widgets.js';
+            document.getElementsByTagName('head')[0].appendChild(src);
+            }());                        
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+            po.src = 'https://apis.google.com/js/plusone.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+          })();
+        </script>
+        
+        <script type="text/javascript">
+            var _sf_async_config={uid:26954,domain:"rhizome.org"};
+            (function(){
+              function loadChartbeat() {
+                window._sf_endpt=(new Date()).getTime();
+                var e = document.createElement('script');
+                e.setAttribute('language', 'javascript');
+                e.setAttribute('type', 'text/javascript');
+                e.setAttribute('src',
+                   (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+                   "js/chartbeat.js");
+                document.body.appendChild(e);
+              }
+              var oldonload = window.onload;
+              window.onload = (typeof window.onload != 'function') ?
+                 loadChartbeat : function() { oldonload(); loadChartbeat(); };
+            })();
+        </script>        
+    </body>
+</html>
